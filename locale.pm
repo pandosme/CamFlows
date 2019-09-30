@@ -1,3 +1,6 @@
-process.env.TZ = "Europe/Stockholm";
+## Setting TimeZOne
+Edit settings.js and add the to following before "module.exports = {"
 
-module.exports = {
+```
+process.env.TZ = "Europe/Stockholm";
+```
