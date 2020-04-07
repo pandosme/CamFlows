@@ -3,7 +3,7 @@ Sometimes you need to upload files to Node-Red.  File dropzones is a concinient 
 
 ## Required Nodes
 Additional nodes you need to install
-- None
+- node-red-dashboard
 
 ## Dashboard
 ![Dashboard](dashboard.jpeg)
