@@ -6,8 +6,8 @@ Additional nodes you need to install
 - node-red-dashboard
 
 ## Dashboard
-![Dashboard](dashboard.jpeg)
+![Dashboard](pictures/dashboard.jpeg)
 
 ## Flow
 
-![Flow](flow.jpeg)
+![Flow](pictures/flow.jpeg)
