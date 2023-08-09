@@ -50,8 +50,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 120,
-        "y": 260,
+        "x": 160,
+        "y": 240,
         "wires": [
             [
                 "d1f23583ad3fe295"
@@ -94,8 +94,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 260,
+        "x": 340,
+        "y": 240,
         "wires": [
             [
                 "b066e49fef3b43d2"
@@ -110,8 +110,8 @@
         "property": "payload",
         "attr": "",
         "chr": "",
-        "x": 530,
-        "y": 260,
+        "x": 510,
+        "y": 240,
         "wires": [
             [
                 "281783c839aaa086"
@@ -130,8 +130,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 260,
+        "x": 860,
+        "y": 240,
         "wires": []
     },
     {
@@ -153,8 +153,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 260,
+        "x": 680,
+        "y": 240,
         "wires": [
             [
                 "5156e2cb190430c0"
@@ -172,7 +172,7 @@
         "syntax": "mustache",
         "template": "<?xml version = \"1.0\" encoding = \"UTF-8\"?>\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n<Header/>\n<Body>\n  <AddScheduledEvent xmlns=\"http://www.axis.com/vapix/ws/event1\">\n   <NewScheduledEvent>\n    <Name>Test</Name>\n    <EventID>com.axis.schedules.genid.id-0</EventID>\n    <Schedule>\n     <ICalendar Dialect=\"http://www.axis.com/vapix/ws/ical1\">DTSTART:19700101T080000\nDTEND:19700101T170000\nRRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR</ICalendar>\n    </Schedule>\n   </NewScheduledEvent>\n  </AddScheduledEvent>\n </Body>\n</Envelope>\n",
         "output": "str",
-        "x": 340,
+        "x": 320,
         "y": 160,
         "wires": [
             [
@@ -246,70 +246,6 @@
                 "2cc424c175e5c5c9"
             ]
         ]
-    },
-    {
-        "id": "33d7a620fd3a8a97",
-        "type": "inject",
-        "z": "42b70bbab7662ad4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 360,
-        "wires": [
-            [
-                "003798f4b5950c0e"
-            ]
-        ]
-    },
-    {
-        "id": "003798f4b5950c0e",
-        "type": "Axis device",
-        "z": "42b70bbab7662ad4",
-        "name": "",
-        "preset": "8aa1a056f03e6912",
-        "action": "Device Info",
-        "cgi": "",
-        "data": "",
-        "options": "",
-        "filename": "",
-        "x": 400,
-        "y": 360,
-        "wires": [
-            [
-                "c5cbbec02f352bac"
-            ]
-        ]
-    },
-    {
-        "id": "c5cbbec02f352bac",
-        "type": "debug",
-        "z": "42b70bbab7662ad4",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 570,
-        "y": 360,
-        "wires": []
     },
     {
         "id": "8aa1a056f03e6912",
