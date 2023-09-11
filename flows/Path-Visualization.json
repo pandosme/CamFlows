@@ -1,0 +1,138 @@
+[
+    {
+        "id": "1d170cda46131f8f",
+        "type": "tab",
+        "label": "Path",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "19c77edd7ba9352f",
+        "type": "Objects",
+        "z": "1d170cda46131f8f",
+        "output": "3",
+        "classFilter": "-1",
+        "confidence": "40",
+        "rotation": "0",
+        "cog": "0",
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "d5e7dee09ede1622"
+            ]
+        ]
+    },
+    {
+        "id": "58b502253da2cf0c",
+        "type": "inject",
+        "z": "1d170cda46131f8f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "b3e3ad4572e5b8e8"
+            ]
+        ]
+    },
+    {
+        "id": "b3e3ad4572e5b8e8",
+        "type": "Camera",
+        "z": "1d170cda46131f8f",
+        "resolution": "1280x720",
+        "overlay": "yes",
+        "output": "base64",
+        "x": 340,
+        "y": 80,
+        "wires": [
+            [
+                "7c0d79db324a221a"
+            ]
+        ]
+    },
+    {
+        "id": "d5e7dee09ede1622",
+        "type": "ui_template",
+        "z": "1d170cda46131f8f",
+        "group": "f4be37ae311ba96e",
+        "name": "Path Visualization 16:9",
+        "order": 0,
+        "width": "18",
+        "height": "9",
+        "format": "<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px\">\n    <div id=\"{{'frame_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\"\n            style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\nvar transperancy = 1.0;\nvar objectpaths = [];\n\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n       \n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    ctx.stroke();\t\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y );\n    ctx.lineTo(last.x,last.y );\n    ctx.stroke();\t\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n    ctx.stroke();\t\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic ||  typeof msg.topic === undefined || !msg.payload )\n            return;\n        console.log(msg.topic);\n\n        if( msg.topic === \"image\") {\n            $(\"#image_\"+scope.$id).attr(\"src\", 'data:image/jpeg;base64, ' + msg.payload);\n            canvas = document.getElementById(\"canvas_\"+scope.$id);\n            ctx = canvas.getContext(\"2d\");\n            return;\n        }\n\n        if( msg.topic === \"path\" ) {\n            drawPath( msg.payload );\n\t\t\treturn;\n        }\n\n        if( msg.topic === \"reset\" ) {\n            ClearCanvas();\n            return;\n        }\n    });\n})(scope);\n</script>        \n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 760,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c0d79db324a221a",
+        "type": "change",
+        "z": "1d170cda46131f8f",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "image",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "d5e7dee09ede1622"
+            ]
+        ]
+    },
+    {
+        "id": "f4be37ae311ba96e",
+        "type": "ui_group",
+        "name": "Analytics",
+        "tab": "dc64706e12424691",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dc64706e12424691",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
