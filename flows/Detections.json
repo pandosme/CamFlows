@@ -11,12 +11,13 @@
         "id": "4fb47b353c69fc8a",
         "type": "Objects",
         "z": "6a094971e572f1a5",
+        "d": true,
         "output": "1",
-        "classFilter": "0",
+        "classFilter": "-1",
         "confidence": "50",
-        "rotation": "180",
+        "rotation": "0",
         "cog": "1",
-        "x": 190,
+        "x": 200,
         "y": 180,
         "wires": [
             [
@@ -131,6 +132,38 @@
         "statusType": "auto",
         "x": 470,
         "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fe166219f4711c85",
+        "type": "catch",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "ce55904699d19e86"
+            ]
+        ]
+    },
+    {
+        "id": "ce55904699d19e86",
+        "type": "debug",
+        "z": "6a094971e572f1a5",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 60,
         "wires": []
     },
     {
