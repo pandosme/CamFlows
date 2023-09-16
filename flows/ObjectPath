@@ -1,0 +1,657 @@
+[
+    {
+        "id": "6a094971e572f1a5",
+        "type": "tab",
+        "label": "Object Path",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2d8c9dfc397f412c",
+        "type": "junction",
+        "z": "6a094971e572f1a5",
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "de41f54fd9108e7d",
+                "4a2141dad06dce85"
+            ]
+        ]
+    },
+    {
+        "id": "4fb47b353c69fc8a",
+        "type": "Objects",
+        "z": "6a094971e572f1a5",
+        "output": "3",
+        "classFilter": "-1",
+        "confidence": "50",
+        "rotation": "0",
+        "cog": "0",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "9faa517ed2f1575c"
+            ]
+        ]
+    },
+    {
+        "id": "e7d0d626e6bb24ea",
+        "type": "inject",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 120,
+        "wires": [
+            [
+                "59af0c509844406a"
+            ]
+        ]
+    },
+    {
+        "id": "77cb5927cf7965a1",
+        "type": "Camera",
+        "z": "6a094971e572f1a5",
+        "resolution": "1280x720",
+        "overlay": "yes",
+        "output": "base64",
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "e57bd36c5f0a93f8"
+            ]
+        ]
+    },
+    {
+        "id": "ba69e4cda6897b00",
+        "type": "ui_template",
+        "z": "6a094971e572f1a5",
+        "group": "e673046ddd355b09",
+        "name": "Object Visualization (16:9)",
+        "order": 0,
+        "width": "18",
+        "height": "9",
+        "format": "<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px\">\n    <div id=\"{{'frame_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    if( data.active === false ) {\n        ClearCanvas();\n        return;\n    }\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    ctx.stroke();\t\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y );\n    ctx.lineTo(last.x,last.y );\n    ctx.stroke();\t\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n    ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg )\n            return;\n        console.log(msg.topic);\n\n        if( msg.topic === \"image\") {\n            $(\"#image_\"+scope.$id).attr(\"src\", 'data:image/jpeg;base64, ' + msg.payload);\n            canvas = document.getElementById(\"canvas_\"+scope.$id);\n            ctx = canvas.getContext(\"2d\");\n            return;\n        }\n\n        if( msg.topic === \"path\" )\n            drawPath( msg.payload );\n\n        if( msg.topic === \"tracker\" )\n            drawTracker( msg.payload );\n\n        if( msg.topic === \"detections\" )\n            drawDetections( msg.payload );\n\n        if( msg.topic === \"reset\" ) {\n            ClearCanvas();\n            return;\n        }\n    });\n})(scope);\n</script>        \n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e57bd36c5f0a93f8",
+        "type": "change",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "image",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "2a00c8e47279f094"
+            ]
+        ]
+    },
+    {
+        "id": "fe166219f4711c85",
+        "type": "catch",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 160,
+        "y": 60,
+        "wires": [
+            [
+                "ce55904699d19e86"
+            ]
+        ]
+    },
+    {
+        "id": "ce55904699d19e86",
+        "type": "debug",
+        "z": "6a094971e572f1a5",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "629797efb46315ad",
+        "type": "ui_switch",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "label": "Visualize",
+        "tooltip": "",
+        "group": "e673046ddd355b09",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 420,
+        "wires": [
+            [
+                "ead51a9f6d566ead"
+            ]
+        ]
+    },
+    {
+        "id": "ead51a9f6d566ead",
+        "type": "change",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "visualize",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 420,
+        "wires": [
+            [
+                "406c0585d4e5f8f1",
+                "d05deafd470c693e"
+            ]
+        ]
+    },
+    {
+        "id": "406c0585d4e5f8f1",
+        "type": "switch",
+        "z": "6a094971e572f1a5",
+        "name": "On",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 460,
+        "wires": [
+            [
+                "dddbedc37f209c2c"
+            ]
+        ]
+    },
+    {
+        "id": "dddbedc37f209c2c",
+        "type": "trigger",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "op1": "",
+        "op2": "false",
+        "op1type": "nul",
+        "op2type": "bool",
+        "duration": "30",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 720,
+        "y": 460,
+        "wires": [
+            [
+                "629797efb46315ad"
+            ]
+        ]
+    },
+    {
+        "id": "59af0c509844406a",
+        "type": "switch",
+        "z": "6a094971e572f1a5",
+        "name": "Visualize",
+        "property": "visualize",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "77cb5927cf7965a1"
+            ]
+        ]
+    },
+    {
+        "id": "8d1926d4f5dd7762",
+        "type": "switch",
+        "z": "6a094971e572f1a5",
+        "name": "Visualize?",
+        "property": "visualize",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 540,
+        "wires": [
+            [
+                "ba69e4cda6897b00"
+            ]
+        ]
+    },
+    {
+        "id": "d05deafd470c693e",
+        "type": "switch",
+        "z": "6a094971e572f1a5",
+        "name": "Off",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "e99cfef057137783"
+            ]
+        ]
+    },
+    {
+        "id": "e99cfef057137783",
+        "type": "change",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " ",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "image",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de41f54fd9108e7d",
+        "type": "ui_text",
+        "z": "6a094971e572f1a5",
+        "group": "e673046ddd355b09",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "Confidence",
+        "format": "{{msg.payload.confidence}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 480,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4a2141dad06dce85",
+        "type": "ui_text",
+        "z": "6a094971e572f1a5",
+        "group": "e673046ddd355b09",
+        "order": 2,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "Class",
+        "format": "{{msg.payload.class}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 460,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "75405e1e511ec6b7",
+        "type": "link out",
+        "z": "6a094971e572f1a5",
+        "name": "Path Data",
+        "mode": "link",
+        "links": [
+            "097ee4b7c9bb52df",
+            "61d5cc0a09c640f1",
+            "6051ee6881ce4245"
+        ],
+        "x": 575,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "8779dce2dc0db6af",
+        "type": "comment",
+        "z": "6a094971e572f1a5",
+        "name": "Path Data",
+        "info": "",
+        "x": 660,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9faa517ed2f1575c",
+        "type": "function",
+        "z": "6a094971e572f1a5",
+        "name": "Filter",
+        "func": "if(msg.payload.class === \"License plate\")\n    return;\nif(msg.payload.class === \"Face\")\n    return;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "75405e1e511ec6b7"
+            ]
+        ]
+    },
+    {
+        "id": "61d5cc0a09c640f1",
+        "type": "link in",
+        "z": "6a094971e572f1a5",
+        "name": "link in 4",
+        "links": [
+            "75405e1e511ec6b7",
+            "2a00c8e47279f094"
+        ],
+        "x": 105,
+        "y": 540,
+        "wires": [
+            [
+                "8d1926d4f5dd7762"
+            ]
+        ]
+    },
+    {
+        "id": "2a00c8e47279f094",
+        "type": "link out",
+        "z": "6a094971e572f1a5",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "61d5cc0a09c640f1",
+            "6051ee6881ce4245"
+        ],
+        "x": 805,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d8ab2ec939e0a427",
+        "type": "switch",
+        "z": "6a094971e572f1a5",
+        "name": "Visualize?",
+        "property": "visualize",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 260,
+        "y": 640,
+        "wires": [
+            [
+                "2d8c9dfc397f412c"
+            ]
+        ]
+    },
+    {
+        "id": "6051ee6881ce4245",
+        "type": "link in",
+        "z": "6a094971e572f1a5",
+        "name": "link in 5",
+        "links": [
+            "75405e1e511ec6b7",
+            "2a00c8e47279f094"
+        ],
+        "x": 105,
+        "y": 640,
+        "wires": [
+            [
+                "d8ab2ec939e0a427"
+            ]
+        ]
+    },
+    {
+        "id": "d30453540936b8e5",
+        "type": "function",
+        "z": "6a094971e572f1a5",
+        "name": "Payload",
+        "func": "msg.topic += \"/\" + global.get(\"device\").serial;\nmsg.payload.name = \"Front\";\nmsg.payload.device = global.get(\"device\").serial;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "48904f3c4fbbeab6"
+            ]
+        ]
+    },
+    {
+        "id": "097ee4b7c9bb52df",
+        "type": "link in",
+        "z": "6a094971e572f1a5",
+        "name": "link in 3",
+        "links": [
+            "75405e1e511ec6b7"
+        ],
+        "x": 225,
+        "y": 200,
+        "wires": [
+            [
+                "d30453540936b8e5"
+            ]
+        ]
+    },
+    {
+        "id": "55cd9aeba90d7882",
+        "type": "comment",
+        "z": "6a094971e572f1a5",
+        "name": "Path Data",
+        "info": "",
+        "x": 140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "48904f3c4fbbeab6",
+        "type": "mqtt out",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d6509f76c03f6cdb",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e673046ddd355b09",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "eefad88a5eb98423",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6509f76c03f6cdb",
+        "type": "mqtt-broker",
+        "name": "bull",
+        "broker": "10.13.8.92",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "eefad88a5eb98423",
+        "type": "ui_tab",
+        "name": "Detections",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
