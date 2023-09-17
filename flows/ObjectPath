@@ -11,15 +11,26 @@
         "id": "2d8c9dfc397f412c",
         "type": "junction",
         "z": "6a094971e572f1a5",
-        "x": 660,
-        "y": 260,
+        "x": 720,
+        "y": 380,
         "wires": [
             [
                 "de41f54fd9108e7d",
                 "4a2141dad06dce85",
                 "8107a5edef1d6c2c",
-                "cdaf1b0fae2f80db",
-                "5b53db100cb8a5c6"
+                "cdaf1b0fae2f80db"
+            ]
+        ]
+    },
+    {
+        "id": "28d5c8742b838608",
+        "type": "junction",
+        "z": "6a094971e572f1a5",
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "4d09846fd436fe1b"
             ]
         ]
     },
@@ -32,8 +43,9 @@
         "confidence": "50",
         "rotation": "0",
         "cog": "0",
-        "x": 170,
-        "y": 260,
+        "predictions": "1",
+        "x": 200,
+        "y": 380,
         "wires": [
             [
                 "9faa517ed2f1575c"
@@ -47,8 +59,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 160,
-        "y": 60,
+        "x": 180,
+        "y": 40,
         "wires": [
             [
                 "ce55904699d19e86"
@@ -68,8 +80,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 330,
-        "y": 60,
+        "x": 350,
+        "y": 40,
         "wires": []
     },
     {
@@ -91,8 +103,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 200,
+        "x": 570,
+        "y": 320,
         "wires": [
             []
         ]
@@ -114,8 +126,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 810,
-        "y": 260,
+        "x": 910,
+        "y": 380,
         "wires": []
     },
     {
@@ -135,8 +147,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 790,
-        "y": 300,
+        "x": 890,
+        "y": 420,
         "wires": []
     },
     {
@@ -151,8 +163,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 260,
+        "x": 390,
+        "y": 380,
         "wires": [
             [
                 "15e6a8f784aa23bd",
@@ -172,12 +184,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 320,
+        "x": 540,
+        "y": 440,
         "wires": [
             [
-                "48904f3c4fbbeab6",
-                "4b3e1390731ed789"
+                "48904f3c4fbbeab6"
             ]
         ]
     },
@@ -195,8 +206,8 @@
         "correl": "",
         "expiry": "",
         "broker": "d6509f76c03f6cdb",
-        "x": 630,
-        "y": 320,
+        "x": 690,
+        "y": 440,
         "wires": []
     },
     {
@@ -204,18 +215,18 @@
         "type": "ui_template",
         "z": "6a094971e572f1a5",
         "group": "5cae0d64404711c2",
-        "name": "Video",
+        "name": "Augmented Video",
         "order": 0,
         "width": "16",
         "height": "9",
-        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  console.log(\"path\");\n  if(!ctx)\n      return;\n\n  if( data.active === false ) {\n      ClearCanvas();\n      return;\n  }\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n</script>\n\n<script>\n    (function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg) {\n      $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n      if( msg.topic === \"video\" ) {\n        var width = 1280;\n        var height = 720;\n        $(\"#video_\"+scope.$id).empty();\n        ctx = null;\n        if( msg.payload ) {\n          var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n          $(\"#video_\"+scope.$id).append(player);\n          var canvas = document.getElementById(\"objects_\"+scope.$id);\n          ctx = canvas.getContext(\"2d\");\n        }\n      }\n\n      if( msg.topic === \"path\" )\n        drawPath( msg.payload );\n      \n      if( msg.topic === \"tracker\" )\n        drawTracker( msg.payload );\n      \n      if( msg.topic === \"detections\" )\n        drawDetections( msg.payload );\n      \n      if( msg.topic === \"reset\" ) {\n        ClearCanvas();\n        return;\n      }\n    }\n  });\n})(scope);\n</script>\n\n",
+        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\nvar hold = false;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  if(!ctx)\n      return;\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FFFF00';    \n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.fillText(data.class, first.x, first.y - 10 );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n\n    if( !hold ) {\n      ClearCanvas();\n      if( data.active === false )\n          return;\n    }\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.fillText(data.class, data.x, data.y - 10 );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    console.log(msg.topic);\n    \n    if( !hold )\n      ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n</script>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    \n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      var width = 1280;\n      var height = 720;\n      $(\"#video_\"+scope.$id).empty();\n      ctx = null;\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n        var canvas = document.getElementById(\"objects_\"+scope.$id);\n        ctx = canvas.getContext(\"2d\");\n      }\n    }\n\n    if( msg.topic === \"path\" )\n      drawPath( msg.payload );\n    \n    if( msg.topic === \"tracker\" )\n      drawTracker( msg.payload );\n      \n    if( msg.topic === \"detections\" )\n      drawDetections( msg.payload );\n      \n    if( msg.topic === \"reset\" ) {\n      ClearCanvas();\n      return;\n    }\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n  });\n})(scope);\n</script>\n\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 790,
-        "y": 160,
+        "x": 930,
+        "y": 240,
         "wires": [
             []
         ]
@@ -227,10 +238,10 @@
         "name": "",
         "label": "Play",
         "tooltip": "",
-        "group": "5cae0d64404711c2",
+        "group": "3b7868bc7d1eb2cf",
         "order": 1,
-        "width": "3",
-        "height": "1",
+        "width": "0",
+        "height": "0",
         "passthru": true,
         "decouple": "false",
         "topic": "video",
@@ -246,12 +257,12 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 150,
-        "y": 160,
+        "x": 350,
+        "y": 320,
         "wires": [
             [
-                "4d09846fd436fe1b",
-                "ead51a9f6d566ead"
+                "ead51a9f6d566ead",
+                "28d5c8742b838608"
             ]
         ]
     },
@@ -272,8 +283,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 490,
-        "y": 260,
+        "x": 550,
+        "y": 380,
         "wires": [
             [
                 "4d09846fd436fe1b",
@@ -298,8 +309,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 790,
-        "y": 340,
+        "x": 890,
+        "y": 460,
         "wires": []
     },
     {
@@ -319,31 +330,126 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 800,
-        "y": 380,
+        "x": 900,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "5b53db100cb8a5c6",
+        "id": "d3bb75bdc2d3bd74",
+        "type": "ui_switch",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "label": "Hold",
+        "tooltip": "",
+        "group": "3b7868bc7d1eb2cf",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "hold",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "28d5c8742b838608"
+            ]
+        ]
+    },
+    {
+        "id": "09690dddaaf1c08f",
+        "type": "ui_button",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "group": "3b7868bc7d1eb2cf",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "reset",
+        "topicType": "str",
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "28d5c8742b838608"
+            ]
+        ]
+    },
+    {
+        "id": "914bbd5b4b081674",
+        "type": "inject",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "88645043a8d61f0f",
+                "02268afd68247b5e"
+            ]
+        ]
+    },
+    {
+        "id": "88645043a8d61f0f",
+        "type": "Axis device",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "preset": "9e46f1e30ab43da7",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "384c9d4993b12603"
+            ]
+        ]
+    },
+    {
+        "id": "4fa5e34afa286d27",
         "type": "debug",
         "z": "6a094971e572f1a5",
         "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "4b3e1390731ed789",
-        "type": "debug",
-        "z": "6a094971e572f1a5",
-        "name": "debug 2",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -351,16 +457,94 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 630,
-        "y": 400,
+        "x": 800,
+        "y": 100,
         "wires": []
+    },
+    {
+        "id": "384c9d4993b12603",
+        "type": "change",
+        "z": "6a094971e572f1a5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [
+                "4fa5e34afa286d27"
+            ]
+        ]
+    },
+    {
+        "id": "02268afd68247b5e",
+        "type": "link out",
+        "z": "6a094971e572f1a5",
+        "name": "Reset",
+        "mode": "link",
+        "links": [
+            "2345cde273d8ab3d"
+        ],
+        "x": 315,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4fbbaff08a682cd3",
+        "type": "comment",
+        "z": "6a094971e572f1a5",
+        "name": "Reset",
+        "info": "",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "00c311e0c1de2805",
+        "type": "comment",
+        "z": "6a094971e572f1a5",
+        "name": "Reset",
+        "info": "",
+        "x": 170,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2345cde273d8ab3d",
+        "type": "link in",
+        "z": "6a094971e572f1a5",
+        "name": "link in 1",
+        "links": [
+            "02268afd68247b5e"
+        ],
+        "x": 245,
+        "y": 240,
+        "wires": [
+            [
+                "d3bb75bdc2d3bd74",
+                "07fa05a1545a9038",
+                "09690dddaaf1c08f"
+            ]
+        ]
     },
     {
         "id": "2c1f503c6e2e8684",
         "type": "ui_group",
         "name": "Info",
         "tab": "6baf6f94ae29c71d",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -402,16 +586,34 @@
         "type": "ui_group",
         "name": "Video",
         "tab": "6baf6f94ae29c71d",
-        "order": 1,
-        "disp": true,
+        "order": 2,
+        "disp": false,
         "width": "16",
         "collapse": false,
         "className": ""
     },
     {
+        "id": "3b7868bc7d1eb2cf",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "6baf6f94ae29c71d",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9e46f1e30ab43da7",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
         "id": "6baf6f94ae29c71d",
         "type": "ui_tab",
-        "name": "Player",
+        "name": "Object Path",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
