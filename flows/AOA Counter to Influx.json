@@ -1,0 +1,344 @@
+[
+    {
+        "id": "a05fc9d642da299e",
+        "type": "tab",
+        "label": "AOA Counter to Influx",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7dc7adb4f44c2f66",
+        "type": "Events",
+        "z": "a05fc9d642da299e",
+        "group": "application",
+        "initialization": false,
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "06f9b86b5f26ad5b"
+            ]
+        ]
+    },
+    {
+        "id": "85d3556156d1efa8",
+        "type": "switch",
+        "z": "a05fc9d642da299e",
+        "name": "Left",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cameraapplicationplatform/objectanalytics/device1scenario2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "39c6f38b0264fee4"
+            ]
+        ]
+    },
+    {
+        "id": "2fd1991c39251242",
+        "type": "switch",
+        "z": "a05fc9d642da299e",
+        "name": "Right",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cameraapplicationplatform/objectanalytics/device1scenario1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "a632086bfea8451d"
+            ]
+        ]
+    },
+    {
+        "id": "06f9b86b5f26ad5b",
+        "type": "function",
+        "z": "a05fc9d642da299e",
+        "name": "pre-process",
+        "func": "msg.payload = {\n    value: msg.payload.total,\n    car: msg.payload.totalcar,\n    bus: msg.payload.totalbus,\n    truck: msg.payload.totaltruck,\n    bike: msg.payload.totalmotorcyclebicycle,\n    human: msg.payload.totalhuman,\n    unkown: msg.payload.totalunknown\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "85d3556156d1efa8",
+                "2fd1991c39251242"
+            ]
+        ]
+    },
+    {
+        "id": "39c6f38b0264fee4",
+        "type": "change",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "left",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a632086bfea8451d",
+        "type": "change",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "right",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02903fe8c606b767",
+        "type": "inject",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "900",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "bab4872ad45607f5",
+                "1ab2574d073eaa1e"
+            ]
+        ]
+    },
+    {
+        "id": "20b31393b5691f00",
+        "type": "influxdb batch",
+        "z": "a05fc9d642da299e",
+        "influxdb": "14a4f93dd6178aca",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "counter",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "914bbd5b4b081674",
+        "type": "inject",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "88645043a8d61f0f"
+            ]
+        ]
+    },
+    {
+        "id": "88645043a8d61f0f",
+        "type": "Axis device",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "preset": "9e46f1e30ab43da7",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "384c9d4993b12603"
+            ]
+        ]
+    },
+    {
+        "id": "4fa5e34afa286d27",
+        "type": "debug",
+        "z": "a05fc9d642da299e",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "384c9d4993b12603",
+        "type": "change",
+        "z": "a05fc9d642da299e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "4fa5e34afa286d27"
+            ]
+        ]
+    },
+    {
+        "id": "bab4872ad45607f5",
+        "type": "function",
+        "z": "a05fc9d642da299e",
+        "name": "Left",
+        "func": "msg.payload = [\n    flow.get(\"left\")\n    ,\n    {\n        direction: \"Left\",\n        device: global.get(\"device\").serial\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "20b31393b5691f00"
+            ]
+        ]
+    },
+    {
+        "id": "1ab2574d073eaa1e",
+        "type": "function",
+        "z": "a05fc9d642da299e",
+        "name": "Right",
+        "func": "msg.payload = [\n    flow.get(\"right\")\n    ,\n    {\n        direction: \"Right\",\n        device: global.get(\"device\").serial\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "20b31393b5691f00"
+            ]
+        ]
+    },
+    {
+        "id": "14a4f93dd6178aca",
+        "type": "influxdb",
+        "hostname": "10.13.8.20",
+        "port": "8086",
+        "protocol": "http",
+        "database": "counter",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "9e46f1e30ab43da7",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
