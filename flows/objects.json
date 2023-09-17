@@ -1,6 +1,6 @@
 [
     {
-        "id": "57fbb47882538b97",
+        "id": "d72747adda9a706a",
         "type": "tab",
         "label": "Objects",
         "disabled": false,
@@ -8,26 +8,72 @@
         "env": []
     },
     {
-        "id": "6313b89937842f54",
-        "type": "Objects",
-        "z": "57fbb47882538b97",
-        "output": "1",
-        "classFilter": "-1",
-        "confidence": "50",
-        "rotation": "0",
-        "cog": "0",
-        "x": 200,
-        "y": 240,
+        "id": "bde8a1f6f4cbedde",
+        "type": "junction",
+        "z": "d72747adda9a706a",
+        "x": 360,
+        "y": 200,
         "wires": [
             [
-                "72c5c28eac524f44"
+                "62e79732f6db0cfc"
             ]
         ]
     },
     {
-        "id": "329b0992d19fb8cf",
+        "id": "4aa0a3181301b01e",
+        "type": "Objects",
+        "z": "d72747adda9a706a",
+        "output": "2",
+        "classFilter": "-1",
+        "confidence": "50",
+        "rotation": "0",
+        "cog": "0",
+        "predictions": "1",
+        "x": 210,
+        "y": 340,
+        "wires": [
+            [
+                "23e4f9bdeb123577",
+                "4f76b94e4e5386b4"
+            ]
+        ]
+    },
+    {
+        "id": "6ed27905e14f4dd1",
+        "type": "catch",
+        "z": "d72747adda9a706a",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "c416d324449504de"
+            ]
+        ]
+    },
+    {
+        "id": "c416d324449504de",
+        "type": "debug",
+        "z": "d72747adda9a706a",
+        "name": "Error",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c61ef6a613d5c2e0",
         "type": "change",
-        "z": "57fbb47882538b97",
+        "z": "d72747adda9a706a",
         "name": "",
         "rules": [
             {
@@ -43,16 +89,16 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 180,
+        "x": 390,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "72c5c28eac524f44",
+        "id": "23e4f9bdeb123577",
         "type": "function",
-        "z": "57fbb47882538b97",
+        "z": "d72747adda9a706a",
         "name": "Filter",
         "func": "if(msg.payload.class === \"License plate\")\n    return;\nif(msg.payload.class === \"Face\")\n    return;\nreturn msg;",
         "outputs": 1,
@@ -61,46 +107,46 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 240,
+        "x": 390,
+        "y": 340,
         "wires": [
             [
-                "70f4814d7b7f7a6a"
+                "c6ea89dbf087034d"
             ]
         ]
     },
     {
-        "id": "be27017d2356ee37",
+        "id": "62e79732f6db0cfc",
         "type": "ui_template",
-        "z": "57fbb47882538b97",
-        "group": "3ebc635baa9b7619",
-        "name": "Video",
+        "z": "d72747adda9a706a",
+        "group": "0d7b022bf27a54b7",
+        "name": "Augmented Video",
         "order": 0,
         "width": "16",
         "height": "9",
-        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  console.log(\"path\");\n  if(!ctx)\n      return;\n\n  if( data.active === false ) {\n      ClearCanvas();\n      return;\n  }\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.fillStyle = '#FFFF00';    \n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n    if( data.active === false )\n      return;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.fillStyle = '#FFFF00';    \n    ctx.font = \"30px Arial\";\n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.fillText(data.class, data.x, data.y - 10 );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n</script>\n\n<script>\n    (function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (msg) {\n      $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n      if( msg.topic === \"video\" ) {\n        var width = 1280;\n        var height = 720;\n        $(\"#video_\"+scope.$id).empty();\n        ctx = null;\n        if( msg.payload ) {\n          var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n          $(\"#video_\"+scope.$id).append(player);\n          var canvas = document.getElementById(\"objects_\"+scope.$id);\n          ctx = canvas.getContext(\"2d\");\n        }\n      }\n\n      if( msg.topic === \"path\" )\n        drawPath( msg.payload );\n      \n      if( msg.topic === \"tracker\" )\n        drawTracker( msg.payload );\n      \n      if( msg.topic === \"detections\" )\n        drawDetections( msg.payload );\n      \n      if( msg.topic === \"reset\" ) {\n        ClearCanvas();\n        return;\n      }\n    }\n  });\n})(scope);\n</script>\n\n",
+        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\nvar hold = false;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  if(!ctx)\n      return;\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FFFF00';    \n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.fillText(first.class, first.x, first.y - 10 );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n\n    if( !hold ) {\n      ClearCanvas();\n      if( data.active === false )\n          return;\n    }\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.fillText(data.class, data.x, data.y - 10 );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    console.log(msg.topic);\n    \n    if( !hold )\n      ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n</script>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    \n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      var width = 1280;\n      var height = 720;\n      $(\"#video_\"+scope.$id).empty();\n      ctx = null;\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n        var canvas = document.getElementById(\"objects_\"+scope.$id);\n        ctx = canvas.getContext(\"2d\");\n      }\n    }\n\n    if( msg.topic === \"path\" )\n      drawPath( msg.payload );\n    \n    if( msg.topic === \"tracker\" )\n      drawTracker( msg.payload );\n      \n    if( msg.topic === \"detections\" )\n      drawDetections( msg.payload );\n      \n    if( msg.topic === \"reset\" ) {\n      ClearCanvas();\n      return;\n    }\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n  });\n})(scope);\n</script>\n\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 800,
-        "y": 140,
+        "x": 790,
+        "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "88e7d868b180958a",
+        "id": "951ba948b30948b9",
         "type": "ui_switch",
-        "z": "57fbb47882538b97",
+        "z": "d72747adda9a706a",
         "name": "",
         "label": "Play",
         "tooltip": "",
-        "group": "3ebc635baa9b7619",
+        "group": "06aea9a59b2dd0e6",
         "order": 1,
-        "width": "3",
-        "height": "1",
+        "width": "0",
+        "height": "0",
         "passthru": true,
         "decouple": "false",
         "topic": "video",
@@ -116,19 +162,19 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 160,
-        "y": 140,
+        "x": 170,
+        "y": 280,
         "wires": [
             [
-                "be27017d2356ee37",
-                "329b0992d19fb8cf"
+                "c61ef6a613d5c2e0",
+                "bde8a1f6f4cbedde"
             ]
         ]
     },
     {
-        "id": "70f4814d7b7f7a6a",
+        "id": "c6ea89dbf087034d",
         "type": "switch",
-        "z": "57fbb47882538b97",
+        "z": "d72747adda9a706a",
         "name": "Visualize?",
         "property": "visualize",
         "propertyType": "flow",
@@ -143,26 +189,115 @@
         "repair": false,
         "outputs": 1,
         "x": 550,
-        "y": 240,
+        "y": 340,
         "wires": [
             [
-                "be27017d2356ee37"
+                "62e79732f6db0cfc"
             ]
         ]
     },
     {
-        "id": "3ebc635baa9b7619",
-        "type": "ui_group",
-        "name": "Player",
-        "tab": "eefad88a5eb98423",
+        "id": "806f481848f50e07",
+        "type": "ui_switch",
+        "z": "d72747adda9a706a",
+        "name": "",
+        "label": "Hold",
+        "tooltip": "",
+        "group": "06aea9a59b2dd0e6",
         "order": 1,
-        "disp": true,
-        "width": "18",
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "hold",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "bde8a1f6f4cbedde"
+            ]
+        ]
+    },
+    {
+        "id": "976dc072dbd5f406",
+        "type": "ui_button",
+        "z": "d72747adda9a706a",
+        "name": "",
+        "group": "06aea9a59b2dd0e6",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "reset",
+        "topicType": "str",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "bde8a1f6f4cbedde"
+            ]
+        ]
+    },
+    {
+        "id": "4f76b94e4e5386b4",
+        "type": "debug",
+        "z": "d72747adda9a706a",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "0d7b022bf27a54b7",
+        "type": "ui_group",
+        "name": "Video",
+        "tab": "b0934bc6da5a1654",
+        "order": 1,
+        "disp": false,
+        "width": "16",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "eefad88a5eb98423",
+        "id": "06aea9a59b2dd0e6",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "b0934bc6da5a1654",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b0934bc6da5a1654",
         "type": "ui_tab",
         "name": "Objects",
         "icon": "dashboard",
