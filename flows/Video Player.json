@@ -1,5 +1,112 @@
 [
     {
+        "id": "d9214106da92ca98",
+        "type": "tab",
+        "label": "Video Player",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cac4c6caee66e51a",
+        "type": "ui_template",
+        "z": "d9214106da92ca98",
+        "group": "0257200d2882b0d0",
+        "name": "Video Player",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    </div>\n</div>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    \n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      var width = msg.width || 1280;\n      var height = msg.height || 720;\n      $(\"#video_\"+scope.$id).empty();\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n      }\n    }\n  });\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4695227a9b940d09",
+        "type": "ui_dropdown",
+        "z": "d9214106da92ca98",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select resolution",
+        "group": "0257200d2882b0d0",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "No video",
+                "value": false,
+                "type": "bool"
+            },
+            {
+                "label": "2688x1512",
+                "value": "2688x1512",
+                "type": "str"
+            },
+            {
+                "label": "1920x1080",
+                "value": "1920x1080",
+                "type": "str"
+            },
+            {
+                "label": "1280x720",
+                "value": "1280x720",
+                "type": "str"
+            },
+            {
+                "label": "1024x576",
+                "value": "1024x579",
+                "type": "str"
+            },
+            {
+                "label": "800x450",
+                "value": "800x450",
+                "type": "str"
+            },
+            {
+                "label": "640x360",
+                "value": "640x360",
+                "type": "str"
+            },
+            {
+                "label": "480x270",
+                "value": "480x270",
+                "type": "str"
+            },
+            {
+                "label": "320x180",
+                "value": "320x180",
+                "type": "str"
+            },
+            {
+                "label": "160x90",
+                "value": "160x90",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "6bfb36bd1a4c2f2c"
+            ]
+        ]
+    },
+    {
         "id": "6bfb36bd1a4c2f2c",
         "type": "function",
         "z": "d9214106da92ca98",
@@ -18,5 +125,24 @@
                 "cac4c6caee66e51a"
             ]
         ]
+    },
+    {
+        "id": "0257200d2882b0d0",
+        "type": "ui_group",
+        "name": "Video",
+        "tab": "efa26bda65360324",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "efa26bda65360324",
+        "type": "ui_tab",
+        "name": "Video Player",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]
