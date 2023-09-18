@@ -1,0 +1,235 @@
+[
+    {
+        "id": "d9214106da92ca98",
+        "type": "tab",
+        "label": "Video Player",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cac4c6caee66e51a",
+        "type": "ui_template",
+        "z": "d9214106da92ca98",
+        "group": "0257200d2882b0d0",
+        "name": "Video Player",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    </div>\n</div>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    \n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      var width = msg.width || 1280;\n      var height = msg.height || 720;\n      $(\"#video_\"+scope.$id).empty();\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n      }\n    }\n  });\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 430,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8edbd7a25849d13",
+        "type": "inject",
+        "z": "d9214106da92ca98",
+        "name": "640x360",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "width",
+                "v": "640",
+                "vt": "num"
+            },
+            {
+                "p": "height",
+                "v": "360",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "cac4c6caee66e51a"
+            ]
+        ]
+    },
+    {
+        "id": "cf16a8ca96b73c23",
+        "type": "inject",
+        "z": "d9214106da92ca98",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "cac4c6caee66e51a"
+            ]
+        ]
+    },
+    {
+        "id": "a51d169fcf1ece46",
+        "type": "inject",
+        "z": "d9214106da92ca98",
+        "name": "1280x720",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "width",
+                "v": "1280",
+                "vt": "num"
+            },
+            {
+                "p": "height",
+                "v": "720",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "cac4c6caee66e51a"
+            ]
+        ]
+    },
+    {
+        "id": "aac8925b97a7c67e",
+        "type": "inject",
+        "z": "d9214106da92ca98",
+        "name": "1920x1080",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "width",
+                "v": "1920",
+                "vt": "num"
+            },
+            {
+                "p": "height",
+                "v": "1080",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "cac4c6caee66e51a"
+            ]
+        ]
+    },
+    {
+        "id": "aaf0d1ad6a6cd5f7",
+        "type": "inject",
+        "z": "d9214106da92ca98",
+        "name": "320x280",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "width",
+                "v": "320",
+                "vt": "num"
+            },
+            {
+                "p": "height",
+                "v": "180",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "video",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "cac4c6caee66e51a"
+            ]
+        ]
+    },
+    {
+        "id": "0257200d2882b0d0",
+        "type": "ui_group",
+        "name": "Video",
+        "tab": "efa26bda65360324",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "efa26bda65360324",
+        "type": "ui_tab",
+        "name": "Video Player",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
