@@ -1,0 +1,250 @@
+[
+    {
+        "id": "537e146babb16e9f",
+        "type": "ui_template",
+        "z": "4e7c413caefd423c",
+        "group": "b73159173695aa4a",
+        "name": "Select Box",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/media-stream-player.min.js\"></script>\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    </div>\n</div>\n\n\n<script>\nvar imageWidt = 1280;\nvar imageHeight = 720;\nvar viewWidth = 800;\nvar viewHeight = 450;\nvar selectBox = null;\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    console.log(msg.topic);\n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      width = msg.width || 1280;\n      height = msg.height || 720;\n      $(\"#video_\"+scope.$id).empty();\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n      }\n    }\n    if( msg.topic === \"box\") {\n      if( msg.payload === false ) {\n        if( selectBox )\n          selectBox.setOptions({hide: true});\n        return;\n      }\n      if( !selectBox ) {\n        selectBox = $(\"#image_\"+scope.$id).imgAreaSelect({\n            x1: parseInt((msg.payload.x1 / 1000) * viewWidth),\n            y1: parseInt((msg.payload.y1 / 1000) * viewHeight),\n            x2: parseInt((msg.payload.x2 / 1000) * viewWidth), \n            y2: parseInt((msg.payload.y2 / 1000) * viewHeight),\n            minHeight: 20,\n            minWidth: 20,\n            handles: true,\n            enable:true,movable:true,resizable:true,show:true,\n            instance: true,\n            onSelectEnd: function( image, area ) {\n              var box = {\n                  x1: parseInt((area.x1 / viewWidth) * 1000),\n                  x2: parseInt((area.x2 / viewWidth) * 1000),\n                  y1: parseInt((area.y1 / viewHeight) * 1000),\n                  y2: parseInt((area.y2 / viewHeight) * 1000)\n              }\n              scope.send({topic:\"box\",payload:box});\n            }\n        });\n      }\n      selectBox.setOptions({show: true});\n    }\n  });\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "13c0fb473cc64176"
+            ]
+        ]
+    },
+    {
+        "id": "81e86a0a11deb866",
+        "type": "debug",
+        "z": "4e7c413caefd423c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "cf466077ea21b232",
+        "type": "ui_dropdown",
+        "z": "4e7c413caefd423c",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Select resolution",
+        "group": "081d3aea57196c10",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "No video",
+                "value": false,
+                "type": "bool"
+            },
+            {
+                "label": "2688x1512",
+                "value": "2688x1512",
+                "type": "str"
+            },
+            {
+                "label": "1920x1080",
+                "value": "1920x1080",
+                "type": "str"
+            },
+            {
+                "label": "1280x720",
+                "value": "1280x720",
+                "type": "str"
+            },
+            {
+                "label": "1024x576",
+                "value": "1024x579",
+                "type": "str"
+            },
+            {
+                "label": "800x450",
+                "value": "800x450",
+                "type": "str"
+            },
+            {
+                "label": "640x360",
+                "value": "640x360",
+                "type": "str"
+            },
+            {
+                "label": "480x270",
+                "value": "480x270",
+                "type": "str"
+            },
+            {
+                "label": "320x180",
+                "value": "320x180",
+                "type": "str"
+            },
+            {
+                "label": "160x90",
+                "value": "160x90",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "a46f20697ffd55af"
+            ]
+        ]
+    },
+    {
+        "id": "a46f20697ffd55af",
+        "type": "function",
+        "z": "4e7c413caefd423c",
+        "name": "Format",
+        "func": "msg.topic = \"video\";\n\nif( msg.payload === false )\n    return msg;\n\nmsg.payload.true;\n\nswitch(msg.payload) {\n    case \"2688x1512\":\n        msg.width = 2688,\n        msg.height = 1512;\n        break; \n    case \"1920x1080\":\n        msg.width = 1920,\n        msg.height = 1080;\n        break; \n    case \"1280x720\":\n        msg.width = 1280,\n        msg.height = 720;\n        break; \n    case \"1024x576\":\n        msg.width = 1024,\n        msg.height = 576;\n        break; \n    case \"640x360\":\n        msg.width = 640,\n        msg.height = 360;\n        break; \n    case \"480x270\":\n        msg.width = 480,\n        msg.height = 270;\n        break; \n    case \"320x180\":\n        msg.width = 320,\n        msg.height = 180;\n        break; \n    case \"160x90\":\n        msg.width = 160,\n        msg.height = 90;\n        break; \n    default:\n        msg.width = 800,\n        msg.height = 450;\n        break; \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 120,
+        "wires": [
+            [
+                "537e146babb16e9f"
+            ]
+        ]
+    },
+    {
+        "id": "0144023e2f7ac38d",
+        "type": "function",
+        "z": "4e7c413caefd423c",
+        "name": "Box",
+        "func": "msg.topic = \"box\";\n\nif( msg.payload === false )\n    return msg;\n\nmsg.payload = flow.get(\"box\") || {\n    x1: 100,\n    y1: 100,\n    x2: 900,\n    y2: 900\n}\n\nflow.set(\"box\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "537e146babb16e9f"
+            ]
+        ]
+    },
+    {
+        "id": "580be4b59f48ee67",
+        "type": "ui_switch",
+        "z": "4e7c413caefd423c",
+        "name": "",
+        "label": "Box",
+        "tooltip": "",
+        "group": "081d3aea57196c10",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "0144023e2f7ac38d"
+            ]
+        ]
+    },
+    {
+        "id": "13c0fb473cc64176",
+        "type": "change",
+        "z": "4e7c413caefd423c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "box",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 120,
+        "wires": [
+            [
+                "81e86a0a11deb866"
+            ]
+        ]
+    },
+    {
+        "id": "b73159173695aa4a",
+        "type": "ui_group",
+        "name": "Select Box",
+        "tab": "be97fb6dc065098a",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "081d3aea57196c10",
+        "type": "ui_group",
+        "name": "Control",
+        "tab": "be97fb6dc065098a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "be97fb6dc065098a",
+        "type": "ui_tab",
+        "name": "Select box",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
