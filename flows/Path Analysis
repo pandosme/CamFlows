@@ -1,0 +1,995 @@
+[
+    {
+        "id": "6826885eba8f094e",
+        "type": "tab",
+        "label": "Path Analysis",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6507974bd02961b7",
+        "type": "junction",
+        "z": "6826885eba8f094e",
+        "x": 840,
+        "y": 320,
+        "wires": [
+            [
+                "40f91393025a602b"
+            ]
+        ]
+    },
+    {
+        "id": "5de18a219f14737a",
+        "type": "junction",
+        "z": "6826885eba8f094e",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "4d09846fd436fe1b"
+            ]
+        ]
+    },
+    {
+        "id": "34e3e2f7d219a97d",
+        "type": "junction",
+        "z": "6826885eba8f094e",
+        "x": 980,
+        "y": 640,
+        "wires": [
+            [
+                "09fa1c3952ca01f9"
+            ]
+        ]
+    },
+    {
+        "id": "ae340d49f231c401",
+        "type": "inject",
+        "z": "6826885eba8f094e",
+        "name": "Node-RED Started",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "62d085ff264fc68c",
+                "c5a50f5e52a4e420",
+                "59f1c6c667b02943",
+                "b1ae7fbcab877866"
+            ]
+        ]
+    },
+    {
+        "id": "62d085ff264fc68c",
+        "type": "Axis device",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "preset": "8851e1ed423632f9",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "fa62466d6304da5a"
+            ]
+        ]
+    },
+    {
+        "id": "fa62466d6304da5a",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "serial",
+                "pt": "flow",
+                "to": "payload.serial",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "flow",
+                "to": "payload.hostname",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43f4890b02f9cd24",
+        "type": "Objects",
+        "z": "6826885eba8f094e",
+        "output": "3",
+        "classFilter": "-1",
+        "confidence": "0",
+        "rotation": "0",
+        "cog": "0",
+        "predictions": "1",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "550a1bc38e04b32f"
+            ]
+        ]
+    },
+    {
+        "id": "550a1bc38e04b32f",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "Filter",
+        "func": "var classFilter = flow.get(\"classes\") || [\"Human\",\"Car\",\"Truck\",\"Bus\",\"Motorcycle\",\"Vehicle\",\"Face\",\"License plate\",\"Object\"];\nvar distanceFilter = flow.get(\"distance\") || 0;\nvar ageFilter = flow.get(\"age\") || 0;\n\n//Filter unwanted class types\nvar ignoreClass = true;\nclassFilter.forEach(function(element) {\n    if( element === msg.payload.class)\n        ignoreClass = false;\n});\nif(ignoreClass)\n    return;\n\n//Filter distance\nif( msg.payload.distance < distanceFilter )\n    return;\n\n//Filter age\nif( msg.payload.age < ageFilter )\n    return;\n\n//Filter if object never passed aoi\nvar pass = flow.get(\"pass\");\nif(!pass)\n    return msg;\nvar ignore = true;\nmsg.payload.path.forEach(function(position) {\n     if (ignore && position.x >= pass.x1 && position.x <= pass.x2 && position.y >= pass.y1 && position.y <= pass.y2)\n         ignore = false;\n});\nif( ignore )\n    return;\n\n//Object passed all filters\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "84a913dee9f42f91",
+                "4d09846fd436fe1b",
+                "f21f797a8210670b"
+            ]
+        ]
+    },
+    {
+        "id": "032191fa5d2b3877",
+        "type": "ui_numeric",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "label": "Min Age (seconds)",
+        "tooltip": "",
+        "group": "081d3aea57196c10",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": "0.5",
+        "className": "",
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "6906da54bf5a6c63"
+            ]
+        ]
+    },
+    {
+        "id": "72b82d46f10635ce",
+        "type": "ui_numeric",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "label": "Min Distance (% of view)",
+        "tooltip": "",
+        "group": "081d3aea57196c10",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "e74ee6e85cdb3a33"
+            ]
+        ]
+    },
+    {
+        "id": "6906da54bf5a6c63",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "age",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e74ee6e85cdb3a33",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "distance",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb9bd5646049789d",
+        "type": "ui_ui_control",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "events": "all",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "6988503e929d07a0"
+            ]
+        ]
+    },
+    {
+        "id": "6988503e929d07a0",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "Play control",
+        "func": "msg.topic = \"video\";\n\nif( msg.payload !== \"change\" )\n    return;\nif( msg.name === \"Path Analysis\" )\n    msg.payload = true;\nelse\n    msg.payload = false;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "5de18a219f14737a"
+            ]
+        ]
+    },
+    {
+        "id": "a8e14690cb3f00e4",
+        "type": "ui_button",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "group": "56b9bbc411ad705e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "33093d524cbe9227"
+            ]
+        ]
+    },
+    {
+        "id": "c5a50f5e52a4e420",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "flow.age",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "age",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "032191fa5d2b3877"
+            ]
+        ]
+    },
+    {
+        "id": "59f1c6c667b02943",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "flow.distance",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "distance",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 560,
+        "wires": [
+            [
+                "72b82d46f10635ce"
+            ]
+        ]
+    },
+    {
+        "id": "33093d524cbe9227",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "detections",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 320,
+        "wires": [
+            [
+                "6507974bd02961b7",
+                "5de18a219f14737a"
+            ]
+        ]
+    },
+    {
+        "id": "4d09846fd436fe1b",
+        "type": "ui_template",
+        "z": "6826885eba8f094e",
+        "group": "5cae0d64404711c2",
+        "name": "Augmented Video and Selectbox",
+        "order": 0,
+        "width": "16",
+        "height": "9",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/media-stream-player.min.js\"></script>\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\nvar imageWidth = 1280;\nvar imageHeight = 720;\nvar viewWidth = 800;\nvar viewHeight = 450;\nvar selectBox = null;\nvar hold = true;\nvar boxId = \"None\";\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  if(!ctx)\n      return;\n\n  if( !hold )\n    ClearCanvas();\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FFFF00';    \n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.fillText(data.class, first.x, first.y - 10 );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n\n    if( !hold ) {\n      ClearCanvas();\n      if( data.active === false )\n          return;\n    }\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.fillText(data.class, data.x, data.y - 10 );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    console.log(msg.topic);\n    \n    if( !hold )\n      ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    console.log(msg.topic);\n    if( msg.topic === \"video\" ) {\n        width = msg.width || 1280;\n        height = msg.height || 720;\n        ctx = null;\n        if( selectBox )\n            selectBox.setOptions({hide: true});\n\n        $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n        var canvas = document.getElementById(\"objects_\"+scope.$id);\n        ctx = canvas.getContext(\"2d\");\n        $(\"#video_\"+scope.$id).empty();\n        if( msg.payload ) {\n          var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n          $(\"#video_\"+scope.$id).append(player);\n        }\n    }\n\n    if( msg.topic === \"path\" )\n      drawPath( msg.payload );\n    \n    if( msg.topic === \"tracker\" )\n      drawTracker( msg.payload );\n      \n    if( msg.topic === \"detections\" )\n      drawDetections( msg.payload );\n      \n    if( msg.topic === \"reset\" ) {\n      ClearCanvas();\n      return;\n    }\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n\n    if( msg.topic === \"box\") {\n        if( selectBox ) {\n          selectBox.setOptions({hide: true});\n          selectBox = null;\n        }\n        if( typeof msg.payload !== \"object\" )\n          return;\n        boxId = msg.payload.id || \"None\";\n        selectBox = $(\"#image_\"+scope.$id).imgAreaSelect({\n            x1: parseInt((msg.payload.x1 / 1000) * viewWidth),\n            y1: parseInt((msg.payload.y1 / 1000) * viewHeight),\n            x2: parseInt((msg.payload.x2 / 1000) * viewWidth),\n            y2: parseInt((msg.payload.y2 / 1000) * viewHeight),\n            minHeight: 20,\n            minWidth: 20,\n            handles: true,\n            enable:true,movable:true,resizable:true,show:true,\n            instance: true,\n            onSelectEnd: function( image, area ) {\n                var box = {\n                    x1: parseInt((area.x1 / viewWidth) * 1000),\n                    x2: parseInt((area.x2 / viewWidth) * 1000),\n                    y1: parseInt((area.y1 / viewHeight) * 1000),\n                    y2: parseInt((area.y2 / viewHeight) * 1000)\n                }\n                scope.send({topic:boxId ||\"none\",payload:box});\n            }\n        });\n        selectBox.setOptions({show: true});\n    }\n  });\n})(scope);\n</script>\n\n",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 240,
+        "wires": [
+            [
+                "8033c61bc88b485b"
+            ]
+        ]
+    },
+    {
+        "id": "c3626cd2945bafcb",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "flow.pass",
+        "func": "msg.topic = \"box\";\nmsg.payload = flow.get(\"pass\") || {\n    id: \"pass\",\n    x1: 100,\n    x2: 900,\n    y1: 100,\n    y2: 900\n}\nmsg.payload.id = \"pass\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 600,
+        "wires": [
+            [
+                "09fa1c3952ca01f9"
+            ]
+        ]
+    },
+    {
+        "id": "7131d911ac4a5414",
+        "type": "ui_button",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "group": "081d3aea57196c10",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "box",
+        "topicType": "str",
+        "x": 670,
+        "y": 640,
+        "wires": [
+            [
+                "34e3e2f7d219a97d"
+            ]
+        ]
+    },
+    {
+        "id": "69bd140e54604154",
+        "type": "link in",
+        "z": "6826885eba8f094e",
+        "name": "link in 2",
+        "links": [
+            "4ad506bb78251feb",
+            "09fa1c3952ca01f9"
+        ],
+        "x": 335,
+        "y": 280,
+        "wires": [
+            [
+                "5de18a219f14737a"
+            ]
+        ]
+    },
+    {
+        "id": "8033c61bc88b485b",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "flow.box",
+        "func": "msg.payload.id = msg.topic;\nflow.set(msg.topic, msg.payload)\nreturn msg;",
+        "outputs": 0,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "dafeca6f89f1950f",
+        "type": "ui_button",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "group": "081d3aea57196c10",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Set area objects must pass",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 740,
+        "y": 600,
+        "wires": [
+            [
+                "c3626cd2945bafcb"
+            ]
+        ]
+    },
+    {
+        "id": "09fa1c3952ca01f9",
+        "type": "link out",
+        "z": "6826885eba8f094e",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "bd23f94792e0ae83",
+            "69bd140e54604154"
+        ],
+        "x": 1105,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f5e10899b464aae2",
+        "type": "ui_dropdown",
+        "z": "6826885eba8f094e",
+        "name": "Class selection",
+        "label": "",
+        "tooltip": "",
+        "place": "Select detection",
+        "group": "081d3aea57196c10",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Human",
+                "value": "Human",
+                "type": "str"
+            },
+            {
+                "label": "Car",
+                "value": "Car",
+                "type": "str"
+            },
+            {
+                "label": "Truck",
+                "value": "Truck",
+                "type": "str"
+            },
+            {
+                "label": "Bus",
+                "value": "Bus",
+                "type": "str"
+            },
+            {
+                "label": "Motorcycle",
+                "value": "Motorcycle",
+                "type": "str"
+            },
+            {
+                "label": "Other vehicle type",
+                "value": "Vehicle",
+                "type": "str"
+            },
+            {
+                "label": "Face",
+                "value": "Face",
+                "type": "str"
+            },
+            {
+                "label": "License plate",
+                "value": "License plate",
+                "type": "str"
+            },
+            {
+                "label": "Unknown type",
+                "value": "Object",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 700,
+        "y": 480,
+        "wires": [
+            [
+                "9b610998c239b9f3"
+            ]
+        ]
+    },
+    {
+        "id": "9b610998c239b9f3",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "flow.classes",
+        "rules": [
+            {
+                "t": "set",
+                "p": "classes",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40f91393025a602b",
+        "type": "ui_table",
+        "z": "6826885eba8f094e",
+        "group": "56b9bbc411ad705e",
+        "name": "Detection table",
+        "order": 0,
+        "width": "11",
+        "height": "12",
+        "columns": [
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "class",
+                "title": "Class",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "age",
+                "title": "Age",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "distance",
+                "title": "Distance",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "confidence",
+                "title": "Confidence",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 980,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "f21f797a8210670b",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "flow.detections",
+        "func": "var detections = flow.get(\"detections\") || [];\nif( flow.get(\"detections\") === false)\n    detections = [];\nif( flow.get(\"hold\") === false )\n    detections = [];\ndetections.push(msg.payload);\n\nwhile( detections.length > 20 )\n    detections.shift();\n\nflow.set(\"detections\",detections);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "16c0b61eeffde44b"
+            ]
+        ]
+    },
+    {
+        "id": "a272d547097102d9",
+        "type": "mqtt out",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "34d35ac878fbc6dc",
+        "x": 950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "84a913dee9f42f91",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "Path Analysis Database",
+        "func": "msg.topic = \"path/\" + flow.get(\"serial\"); \nmsg.payload.name = flow.get(\"name\");\nmsg.payload.device = flow.get(\"serial\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "a272d547097102d9",
+                "a4f5a4dabaf83d52"
+            ]
+        ]
+    },
+    {
+        "id": "b1ae7fbcab877866",
+        "type": "change",
+        "z": "6826885eba8f094e",
+        "name": "flow.classes",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "classes",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "f5e10899b464aae2"
+            ]
+        ]
+    },
+    {
+        "id": "8df29f9048f94d5c",
+        "type": "comment",
+        "z": "6826885eba8f094e",
+        "name": "Box control",
+        "info": "",
+        "x": 260,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "98559979788592be",
+        "type": "comment",
+        "z": "6826885eba8f094e",
+        "name": "Box control",
+        "info": "",
+        "x": 1180,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "16c0b61eeffde44b",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "list",
+        "func": "var detections = flow.get(\"detections\");\nvar list = [];\n\ndetections.forEach(function(detection){\n    list.push({\n        time: new Date(detection.timestamp).toTimeString().substr(0,8),\n        timestamp: detection.timestamp,\n        class: detection.class,\n        age: detection.age,\n        distance: detection.distance,\n        confidence: detection.confidence,\n        hor: detection.dx < 0 ? \"Left\":\"Right\",\n        ver: detection.dx < 0 ? \"Up\" : \"Down\",\n    });\n});\n\nlist.sort(function(a,b){return b.timestamp-a.timestamp});\nmsg.payload = list;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "40f91393025a602b"
+            ]
+        ]
+    },
+    {
+        "id": "3e3b49330104652f",
+        "type": "ui_button",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "group": "5cae0d64404711c2",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": false,
+        "label": "play",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "video",
+        "topicType": "str",
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "4d09846fd436fe1b"
+            ]
+        ]
+    },
+    {
+        "id": "a4f5a4dabaf83d52",
+        "type": "debug",
+        "z": "6826885eba8f094e",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8851e1ed423632f9",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "081d3aea57196c10",
+        "type": "ui_group",
+        "name": "Filter",
+        "tab": "6baf6f94ae29c71d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56b9bbc411ad705e",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "6baf6f94ae29c71d",
+        "order": 3,
+        "disp": false,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5cae0d64404711c2",
+        "type": "ui_group",
+        "name": "Video",
+        "tab": "6baf6f94ae29c71d",
+        "order": 2,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "34d35ac878fbc6dc",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "10.13.8.92",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6baf6f94ae29c71d",
+        "type": "ui_tab",
+        "name": "Path Analysis",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
