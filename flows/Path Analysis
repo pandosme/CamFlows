@@ -906,7 +906,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1140,
@@ -989,6 +990,7 @@
         "type": "ui_tab",
         "name": "Path Analysis",
         "icon": "dashboard",
+        "order": 1,
         "disabled": false,
         "hidden": false
     }
