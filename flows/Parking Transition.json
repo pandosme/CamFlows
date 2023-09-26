@@ -8,56 +8,134 @@
         "env": []
     },
     {
-        "id": "65261c8d5ca7f228",
-        "type": "ui_ui_control",
+        "id": "471323089555ed59",
+        "type": "group",
         "z": "378f2327429a44b8",
-        "name": "",
-        "events": "all",
-        "x": 140,
-        "y": 340,
-        "wires": [
-            [
-                "4fd57ad35d9e2e86"
-            ]
-        ]
+        "name": "Parking Space",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "fba6cca4238a6bec",
+            "4df05090b88890fe",
+            "cdd15f4320c4b2be",
+            "7c76a3b2c8b12385",
+            "380d9b6a71651529",
+            "b00cc4bc3bba79b9",
+            "79bca7f594928f04",
+            "132134b81f372290",
+            "23c895f4b76fdd72",
+            "679986952f4eb2c8",
+            "c7fedfd9c0258217",
+            "729655b11f5ecaa0",
+            "a743bfa8a5efcd48",
+            "c418b54fafe13cb7",
+            "03f91d0155cf8b9f",
+            "df2a883b9fa82b64",
+            "36f8d8cea8db5024",
+            "895399a9ca4fe61f",
+            "e45d67f08ef12290",
+            "8c6ad57556f53acd",
+            "116ac8c2f813389e",
+            "b8a96c2b22dd4100",
+            "a3b760d0df8bb253",
+            "e16d5c79645ed600",
+            "75e97e34c365379e",
+            "99c59969e7a56918",
+            "c18e6a8a2654839f",
+            "4372bf2033fccef3",
+            "659a695129e680cf",
+            "bc58747407b8cbae",
+            "7559802c976036ff",
+            "57a310f8a33dfa6b"
+        ],
+        "x": 114,
+        "y": 759,
+        "w": 832,
+        "h": 362
     },
     {
-        "id": "4fd57ad35d9e2e86",
-        "type": "function",
+        "id": "1040950f3a12e5f7",
+        "type": "group",
         "z": "378f2327429a44b8",
-        "name": "Tab Parking Transition",
-        "func": "msg.topic = \"video\";\n\nif( msg.payload !== \"change\" )\n    return;\nif( msg.name === \"Parking Transition\" )\n    msg.payload = true;\nelse\n    msg.payload = false;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 340,
-        "wires": [
-            [
-                "1fd4f651a05150d4"
-            ]
-        ]
+        "name": "Video and Augmentation",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "1fd4f651a05150d4",
+            "56e3e6ed56ac8761",
+            "0479f9dc055be213",
+            "18c84c856c114fd1",
+            "861c717c44f8c0df",
+            "d3047674f5184afd",
+            "e86b80435a51da66",
+            "52863cf447d850f8",
+            "d25eb1061be6c92e",
+            "20a7f04227ced058",
+            "d2227e5e38bf6d9d",
+            "6356c3082cb52180"
+        ],
+        "x": 114,
+        "y": 499,
+        "w": 1022,
+        "h": 222
+    },
+    {
+        "id": "4dc90addd7c0789b",
+        "type": "group",
+        "z": "378f2327429a44b8",
+        "name": "Initialization & configuration",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#dbcbe7",
+            "color": "#000000"
+        },
+        "nodes": [
+            "14e459b9994a6018",
+            "ecc84858c127480f",
+            "8d913dd1a30468b3",
+            "704325c0aa35e63c",
+            "1b1685e6f79cc08a",
+            "071c57d92d461b8b",
+            "23643048a21903d2",
+            "4fd57ad35d9e2e86",
+            "65261c8d5ca7f228",
+            "1c66e07fa5222635",
+            "633835917acee535",
+            "55eb6f75943454f1",
+            "bb604daae169b132"
+        ],
+        "x": 114,
+        "y": 239,
+        "w": 832,
+        "h": 222
     },
     {
         "id": "1fd4f651a05150d4",
         "type": "ui_template",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "group": "a39319e8fe427572",
         "name": "Augmented Video and Selectbox",
         "order": 0,
         "width": "16",
         "height": "9",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/media-stream-player.min.js\"></script>\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'vehicles_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n        <canvas id=\"{{'parkings_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>    </div>\n</div>\n\n<script>\nvar imageWidth = 1280;\nvar imageHeight = 720;\nvar viewWidth = 800;\nvar viewHeight = 450;\nvar selectBox = null;\nvar hold = false;\nvar boxId = \"None\";\n\nfunction drawVehicles( data, scope ) {\n    var canvas = document.getElementById(\"vehicles_\"+scope.$id);\n    var ctx = canvas.getContext(\"2d\");\n\n    ctx.beginPath();\n    ctx.clearRect(0, 0, 1000, 1000 );\n    ctx.stroke();\n\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#00FF00';\n    ctx.strokeStyle = '#00FF00';\n    data.forEach(function(item) {\n        if( item.state && item.active ) {\n          ctx.fillText(item.class, item.cx - 30, item.cy);\n        }\n    });\n    ctx.stroke();\n\n\n    ctx.fillStyle = '#FFFF00';\n    ctx.strokeStyle = '#FFFF00';\n    ctx.beginPath();\n    data.forEach(function(item) {\n      if( item.state === false || item.active === false ) {\n//        ctx.rect(item.x, item.y,item.w,item.h );\n        var hours = parseInt(item.age/3600);\n        var minutes = parseInt( (item.age - (hours * 3600)) / 60);\n        var seconds = parseInt( (item.age - (hours * 3600) - (minutes * 60) ));\n        var time = (\"000\" + hours).substr(-2);\n        var time = time + \":\" + (\"000\" + minutes).substr(-2);\n        var time = time + \":\" + (\"000\" + seconds).substr(-2);\n        ctx.fillText(item.class, item.cx - 30, item.cy );\n      }\n    });\n    ctx.stroke();\n}\n\n\nfunction drawParkings( data, scope ) {\n  var canvas = document.getElementById(\"parkings_\"+scope.$id);\n  var ctx = canvas.getContext(\"2d\");\n\n  ctx.beginPath();\n  ctx.clearRect(0, 0, 1000, 1000 );\n  ctx.stroke();\n\n  ctx.lineWidth = 3;\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FF0000';\n  ctx.strokeStyle = '#FF0000';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.active && item.state ) {\n          var hours = parseInt(item.age/3600);\n          var minutes = parseInt( (item.age - (hours * 3600)) / 60);\n          var seconds = parseInt( (item.age - (hours * 3600) - (minutes * 60) ));\n          var time = (\"000\" + hours).substr(-2);\n          var time = time + \":\" + (\"000\" + minutes).substr(-2);\n          var time = time + \":\" + (\"000\" + seconds).substr(-2);\n          ctx.rect(item.x1, item.y1,width,height );\n          ctx.fillText(item.name + \" \" + time, item.x1, item.y1 - 10 );\n      }\n  });\n  ctx.stroke();\n\n  ctx.fillStyle = '#FFFF00';\n  ctx.strokeStyle = '#FFFF00';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.active === true && item.state === false ) {\n        var hours = parseInt(item.age/3600);\n        var minutes = parseInt( (item.age - (hours * 3600)) / 60);\n        var seconds = parseInt( (item.age - (hours * 3600) - (minutes * 60) ));\n        var time = (\"000\" + hours).substr(-2);\n        var time = time + \":\" + (\"000\" + minutes).substr(-2);\n        var time = time + \":\" + (\"000\" + seconds).substr(-2);\n        ctx.rect(item.x1, item.y1,width,height );\n        ctx.fillText(item.name + \" \" + time, item.x1, item.y1 - 10 );\n      }\n   });\n  ctx.stroke();\n\n  ctx.fillStyle = '#00FF00';\n  ctx.strokeStyle = '#00FF00';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.active === false && item.state === false ) {\n          var hours = parseInt(item.age/3600);\n          var minutes = parseInt( (item.age - (hours * 3600)) / 60);\n          var seconds = parseInt( (item.age - (hours * 3600) - (minutes * 60) ));\n          var time = (\"000\" + hours).substr(-2);\n          var time = time + \":\" + (\"000\" + minutes).substr(-2);\n          var time = time + \":\" + (\"000\" + seconds).substr(-2);\n          ctx.rect(item.x1, item.y1,width,height );\n          ctx.fillText(item.name + \" \" + time, item.x1, item.y1 - 10 );\n      }\n  });\n  ctx.stroke();\n\n}\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    console.log(msg.topic);\n    if( msg.topic === \"video\" ) {\n        width = msg.width || 1280;\n        height = msg.height || 720;\n        if( selectBox )\n            selectBox.setOptions({hide: true});\n\n        $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n        $(\"#video_\"+scope.$id).empty();\n        if( msg.payload ) {\n          var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n          $(\"#video_\"+scope.$id).append(player);\n        }\n    }\n\n    if( msg.topic === \"vehicles\" )\n      drawVehicles( msg.payload, scope );\n\n    if( msg.topic === \"parkings\" )\n       drawParkings( msg.payload, scope );\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n\n    if( msg.topic === \"box\") {\n        if( selectBox ) {\n          selectBox.setOptions({hide: true});\n          selectBox = null;\n        }\n        if( typeof msg.payload !== \"object\" )\n          return;\n        boxId = msg.payload.id || \"None\";\n        selectBox = $(\"#image_\"+scope.$id).imgAreaSelect({\n            x1: parseInt((msg.payload.x1 / 1000) * viewWidth),\n            y1: parseInt((msg.payload.y1 / 1000) * viewHeight),\n            x2: parseInt((msg.payload.x2 / 1000) * viewWidth),\n            y2: parseInt((msg.payload.y2 / 1000) * viewHeight),\n            minHeight: 20,\n            minWidth: 20,\n            handles: true,\n            enable:true,movable:true,resizable:true,show:true,\n            instance: true,\n            onSelectEnd: function( image, area ) {\n                var box = {\n                    x1: parseInt((area.x1 / viewWidth) * 1000),\n                    x2: parseInt((area.x2 / viewWidth) * 1000),\n                    y1: parseInt((area.y1 / viewHeight) * 1000),\n                    y2: parseInt((area.y2 / viewHeight) * 1000)\n                }\n                scope.send({topic:boxId ||\"none\",payload:box});\n            }\n        });\n        selectBox.setOptions({show: true});\n    }\n  });\n})(scope);\n</script>\n\n",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/media-stream-player.min.js\"></script>\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'vehicles_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n        <canvas id=\"{{'parkings_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>    </div>\n</div>\n\n<script>\nvar imageWidth = 1280;\nvar imageHeight = 720;\nvar viewWidth = 800;\nvar viewHeight = 450;\nvar selectBox = null;\nvar hold = false;\nvar boxId = \"None\";\n\nfunction drawVehicles( data, scope ) {\n    var canvas = document.getElementById(\"vehicles_\"+scope.$id);\n    var ctx = canvas.getContext(\"2d\");\n\n    ctx.beginPath();\n    ctx.clearRect(0, 0, 1000, 1000 );\n    ctx.stroke();\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFFFF';\n    ctx.strokeStyle = '#FFFFFF';\n    ctx.beginPath();\n    data.forEach(function(detection) {\n          ctx.moveTo(detection.cx, detection.cy);\n          ctx.arc(detection.cx, detection.cy, 5, 0, 2 * Math.PI);\n          ctx.fillText(detection.class + ' (' + detection.confidence + ')', detection.cx - 40, detection.cy-10);\n    });\n    ctx.fill();\n}\n\n\nfunction drawParkings( data, scope ) {\n  var canvas = document.getElementById(\"parkings_\"+scope.$id);\n  var ctx = canvas.getContext(\"2d\");\n\n  ctx.beginPath();\n  ctx.clearRect(0, 0, 1000, 1000 );\n  ctx.stroke();\n\n  //Draw transitions\n  ctx.lineWidth = 3;\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FFFF00';\n  ctx.strokeStyle = '#FFFF00';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.transition === true ) {\n          ctx.rect(item.x1, item.y1,width,height );\n          ctx.fillText(item.name, item.x1, item.y1 - 10 );\n      }\n  });\n  ctx.stroke();\n\n  // Draw Occupied\n\n  ctx.fillStyle = '#FF0000';\n  ctx.strokeStyle = '#FF0000';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.state === true && item.transition === false ) {\n          ctx.rect(item.x1, item.y1,width,height );\n          ctx.fillText(item.name, item.x1, item.y1 - 10 );\n      }\n  });\n  ctx.stroke();\n\n  // Draw Free\n  \n  ctx.fillStyle = '#00FF00';\n  ctx.strokeStyle = '#00FF00';\n  ctx.beginPath();\n  data.forEach(function(item) {\n      var width = item.x2 - item.x1;\n      var height = item.y2 - item.y1;\n      if( item.state === false && item.transition === false ) {\n          ctx.rect(item.x1, item.y1,width,height );\n          ctx.fillText(item.name, item.x1, item.y1 - 10 );\n      }\n  });\n  ctx.stroke();\n\n}\n\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    console.log(msg.topic);\n    if( msg.topic === \"video\" ) {\n        width = msg.width || 1280;\n        height = msg.height || 720;\n        if( selectBox )\n            selectBox.setOptions({hide: true});\n\n        $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n        $(\"#video_\"+scope.$id).empty();\n        if( msg.payload ) {\n          var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n          $(\"#video_\"+scope.$id).append(player);\n        }\n    }\n\n    if( msg.topic === \"vehicles\" )\n      drawVehicles( msg.payload, scope );\n\n    if( msg.topic === \"parkings\" )\n       drawParkings( msg.payload, scope );\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n\n    if( msg.topic === \"box\") {\n        if( selectBox ) {\n          selectBox.setOptions({hide: true});\n          delete selectBox;\n          selectBox = 0;\n        }\n\n        if( typeof msg.payload !== \"object\" )\n          return;\n        boxId = msg.payload.id || \"None\";\n        selectBox = $(\"#image_\"+scope.$id).imgAreaSelect({\n            x1: parseInt((msg.payload.x1 / 1000) * viewWidth),\n            y1: parseInt((msg.payload.y1 / 1000) * viewHeight),\n            x2: parseInt((msg.payload.x2 / 1000) * viewWidth),\n            y2: parseInt((msg.payload.y2 / 1000) * viewHeight),\n            minHeight: 20,\n            minWidth: 20,\n            handles: true,\n            enable:true,movable:true,resizable:true,show:true,\n            instance: true,\n            onSelectEnd: function( image, area ) {\n                var box = {\n                    x1: parseInt((area.x1 / viewWidth) * 1000),\n                    x2: parseInt((area.x2 / viewWidth) * 1000),\n                    y1: parseInt((area.y1 / viewHeight) * 1000),\n                    y2: parseInt((area.y2 / viewHeight) * 1000)\n                }\n                scope.send({topic:boxId ||\"none\",payload:box});\n            }\n        });\n        selectBox.setOptions({show: true});\n    }\n  });\n})(scope);\n</script>\n\n",
         "storeOutMessages": true,
         "fwdInMessages": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 660,
-        "y": 340,
+        "x": 680,
+        "y": 580,
         "wires": [
             [
                 "e86b80435a51da66"
@@ -65,40 +143,10 @@
         ]
     },
     {
-        "id": "b6d034e75986a0f5",
-        "type": "link in",
-        "z": "378f2327429a44b8",
-        "name": "link in 4",
-        "links": [
-            "4ad506bb78251feb",
-            "09fa1c3952ca01f9",
-            "af0b70aa144b9ce9",
-            "52863cf447d850f8",
-            "679986952f4eb2c8"
-        ],
-        "x": 425,
-        "y": 420,
-        "wires": [
-            [
-                "1fd4f651a05150d4",
-                "8059e5d6dd86ac01"
-            ]
-        ]
-    },
-    {
-        "id": "d60f2f75a4d634f7",
-        "type": "comment",
-        "z": "378f2327429a44b8",
-        "name": "Box control",
-        "info": "",
-        "x": 320,
-        "y": 420,
-        "wires": []
-    },
-    {
         "id": "56e3e6ed56ac8761",
         "type": "ui_button",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "name": "",
         "group": "a39319e8fe427572",
         "order": 1,
@@ -115,8 +163,8 @@
         "payloadType": "bool",
         "topic": "video",
         "topicType": "str",
-        "x": 390,
-        "y": 300,
+        "x": 410,
+        "y": 580,
         "wires": [
             [
                 "1fd4f651a05150d4"
@@ -127,6 +175,7 @@
         "id": "0479f9dc055be213",
         "type": "ui_table",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "group": "fcce511190ce3119",
         "name": "",
         "order": 2,
@@ -144,8 +193,18 @@
                 }
             },
             {
-                "field": "state",
-                "title": "State",
+                "field": "status",
+                "title": "Status",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "time",
+                "title": "Time",
                 "width": "",
                 "align": "left",
                 "formatter": "plaintext",
@@ -156,8 +215,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 430,
-        "y": 580,
+        "x": 790,
+        "y": 640,
         "wires": [
             [
                 "d3047674f5184afd"
@@ -168,12 +227,13 @@
         "id": "fba6cca4238a6bec",
         "type": "ui_button",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "",
         "group": "fcce511190ce3119",
         "order": 1,
         "width": "0",
         "height": "0",
-        "passthru": true,
+        "passthru": false,
         "label": "Add",
         "tooltip": "",
         "color": "",
@@ -184,8 +244,8 @@
         "payloadType": "str",
         "topic": "box",
         "topicType": "str",
-        "x": 170,
-        "y": 520,
+        "x": 450,
+        "y": 800,
         "wires": [
             [
                 "4df05090b88890fe"
@@ -193,338 +253,24 @@
         ]
     },
     {
-        "id": "4040f0e428f6ca7c",
-        "type": "link in",
-        "z": "378f2327429a44b8",
-        "name": "link in 5",
-        "links": [
-            "fea1643ad7901a1f"
-        ],
-        "x": 245,
-        "y": 80,
-        "wires": [
-            [
-                "916d0a1bb82cb68d"
-            ]
-        ]
-    },
-    {
-        "id": "e9b6c6bce5e284fc",
-        "type": "comment",
-        "z": "378f2327429a44b8",
-        "name": "Presence active",
-        "info": "",
-        "x": 120,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "3115f39103d93835",
-        "type": "link in",
-        "z": "378f2327429a44b8",
-        "name": "link in 6",
-        "links": [
-            "bda050e29d37e22b"
-        ],
-        "x": 245,
-        "y": 120,
-        "wires": [
-            [
-                "7d3981673955df02"
-            ]
-        ]
-    },
-    {
-        "id": "91558e68ddbbce65",
-        "type": "comment",
-        "z": "378f2327429a44b8",
-        "name": "Presence inactive",
-        "info": "",
-        "x": 130,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "2f8f1e031cdc41cd",
-        "type": "function",
-        "z": "378f2327429a44b8",
-        "name": "Active vehicle",
-        "func": "var vehicles = flow.get(\"vehicles\") || {};\nif( vehicles.hasOwnProperty(msg.payload.id ) ) {\n    vehicles[msg.payload.id].lastupdate = new Date().getTime();\n    vehicles[msg.payload.id].x = msg.payload.x;\n    vehicles[msg.payload.id].y = msg.payload.y;\n    vehicles[msg.payload.id].w = msg.payload.w;\n    vehicles[msg.payload.id].h = msg.payload.h;\n    vehicles[msg.payload.id].cx = msg.payload.cx;\n    vehicles[msg.payload.id].cy = msg.payload.cy;\n    vehicles[msg.payload.id].active = true;\n} else {\n    vehicles[msg.payload.id] = msg.payload;\n    vehicles[msg.payload.id].lastupdate = new Date().getTime();\n    vehicles[msg.payload.id].state = false;\n    vehicles[msg.payload.id].birth = new Date().getTime();\n    vehicles[msg.payload.id].age = 0;    \n    vehicles[msg.payload.id].active = true;\n}\nflow.set(\"vehicles\",vehicles);\nmsg.topic = \"vehicles\";\nmsg.payload = vehicles;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 80,
-        "wires": [
-            [
-                "80ea3e34bc04155f"
-            ]
-        ]
-    },
-    {
-        "id": "7d3981673955df02",
-        "type": "function",
-        "z": "378f2327429a44b8",
-        "name": "Inactive vehiicle",
-        "func": "var vehicles = flow.get(\"vehicles\") || {};\nif( !vehicles.hasOwnProperty(msg.payload.id ) )\n    return;\n\nvehicles[msg.payload.id].lastupdate = new Date().getTime();\nvehicles[msg.payload.id].active = false;\nvehicles[msg.payload.id].age = (new Date().getTime() - vehicles[msg.payload.id].birth) / 1000;\n\nflow.set(\"vehicles\",vehicles);\nmsg.topic = \"vehicles\";\nmsg.payload = vehicles;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 120,
-        "wires": [
-            [
-                "80ea3e34bc04155f"
-            ]
-        ]
-    },
-    {
-        "id": "916d0a1bb82cb68d",
-        "type": "function",
-        "z": "378f2327429a44b8",
-        "name": "",
-        "func": "if( msg.payload.class === \"Human\")\n    return;\n\nif( msg.payload.class === \"Face\")\n    return;\n\nif( msg.payload.class === \"License plate\")\n    return;\n\nif( msg.payload.class === \"Object\")\n    return;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 80,
-        "wires": [
-            [
-                "2f8f1e031cdc41cd"
-            ]
-        ]
-    },
-    {
-        "id": "80ea3e34bc04155f",
-        "type": "link out",
-        "z": "378f2327429a44b8",
-        "name": "link out 5",
-        "mode": "link",
-        "links": [
-            "a8e8a0b71cfa99a5"
-        ],
-        "x": 785,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "12d85b43daee420d",
-        "type": "comment",
-        "z": "378f2327429a44b8",
-        "name": "vehicles",
-        "info": "",
-        "x": 880,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "704325c0aa35e63c",
-        "type": "inject",
-        "z": "378f2327429a44b8",
-        "name": "Node-RED Started",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 640,
-        "wires": [
-            [
-                "3d8196dbfb23ac9b",
-                "8d913dd1a30468b3"
-            ]
-        ]
-    },
-    {
-        "id": "3d8196dbfb23ac9b",
-        "type": "change",
-        "z": "378f2327429a44b8",
-        "name": "flow.transition",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "confidence",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 460,
-        "y": 700,
-        "wires": [
-            [
-                "1b1685e6f79cc08a"
-            ]
-        ]
-    },
-    {
-        "id": "1b1685e6f79cc08a",
-        "type": "ui_numeric",
-        "z": "378f2327429a44b8",
-        "name": "",
-        "label": "Transition",
-        "tooltip": "",
-        "group": "93de07998e2657d7",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": "5",
-        "max": "120",
-        "step": "5",
-        "className": "",
-        "x": 660,
-        "y": 640,
-        "wires": [
-            [
-                "071c57d92d461b8b"
-            ]
-        ]
-    },
-    {
-        "id": "071c57d92d461b8b",
-        "type": "change",
-        "z": "378f2327429a44b8",
-        "name": "flow.transition",
-        "rules": [
-            {
-                "t": "set",
-                "p": "transition",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8d913dd1a30468b3",
-        "type": "function",
-        "z": "378f2327429a44b8",
-        "name": "Transition",
-        "func": "msg.payload = flow.get(\"transition\") || 15;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 640,
-        "wires": [
-            [
-                "1b1685e6f79cc08a"
-            ]
-        ]
-    },
-    {
-        "id": "3cd9c6734f825fdd",
-        "type": "inject",
-        "z": "378f2327429a44b8",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 190,
-        "y": 240,
-        "wires": [
-            [
-                "6730a88e13a9e313"
-            ]
-        ]
-    },
-    {
-        "id": "6730a88e13a9e313",
-        "type": "function",
-        "z": "378f2327429a44b8",
-        "name": "Update",
-        "func": "msg.topic = \"vehicles\";\nvar vehicles = flow.get(\"vehicles\") || {};\nvar transition = flow.get(\"transition\") || 15;\n\nvar timestamp = new Date().getTime();\nvar list = [];\nvar changes = [];\n\nfor(var id in vehicles) {\n    if( vehicles[id].active ) {\n        if( vehicles[id].state === false && vehicles[id].age > transition )\n            vehicles[id].state = true;\n        vehicles[id].age = (timestamp - vehicles[id].birth) / 1000;\n        vehicles[id].lastupdate = timestamp;\n    } else {\n        if( vehicles[id].state && ((timestamp - vehicles[id].lastupdate) / 1000) > transition )\n            vehicles[id].state = false;\n    }\n    list.push(vehicles[id]);\n}\nlist.forEach(function(item){\n    if( item.state === false && item.active === false )\n        delete vehicles[item.id];\n})\n\nvar parkings = flow.get(\"parkings\") || [];\nparkings.forEach(function(parking) {\n    var changes = parking.state;\n    parking.state = false;\n    parking.active = false;\n    parking.age = 0;\n    list.forEach(function(vehicle) {\n        if( vehicle.cx > parking.x1 && vehicle.cx < parking.x2 && vehicle.cy > parking.y1 && vehicle.cy < parking.x2 ) {\n            if( parking.state !== vehicle.state )\n                changes = true;\n            else \n                changes = false;\n            parking.state = vehicle.state;\n            parking.active = vehicle.active;\n            parking.age = vehicle.age;\n            parking.update = vehicle.updated\n        } \n    });\n    if( changes )\n        changes.push(parking);\n})\n\nflow.set(\"parkings\",parkings);\n\nmsg.payload = changes;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 240,
-        "wires": [
-            [
-                "59a22ef3a3915c5d",
-                "caef5b4b354c39e6"
-            ]
-        ]
-    },
-    {
         "id": "4df05090b88890fe",
         "type": "function",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "Add",
-        "func": "var parkings = flow.get(\"parkings\") || [];\nvar parkingCounter = flow.get(\"parkingCounter\") || 1;\nvar parking = {\n    id: \"Space\" + parkingCounter,\n    state: false,\n    active: false,\n    lastUpdated: new Date().getTime(),\n    name:\" Space \" + parkingCounter,\n    x1: 400,\n    x2: 800,\n    y1: 400,\n    y2: 800\n}\nparkingCounter++;\nparkings.push(parking);\nflow.set(\"parkings\",parkings);\nflow.set(\"parkingCounter\",parkingCounter);\nmsg.payload = parking;\nreturn msg;",
+        "func": "var parkings = flow.get(\"parkings\") || [];\nvar parkingCounter = flow.get(\"parkingCounter\") || 1;\nvar parking = {\n    id: \"Space\" + parkingCounter,\n    name: \" Space \" + parkingCounter,\n    state: false,  //True = occupancy\n    transition: false,\n    timestamp: new Date().getTime(),\n    start: 0,\n    age: 0,\n    x1: 400,\n    x2: 800,\n    y1: 400,\n    y2: 800\n}\n\nparkingCounter++;\nparkings.push(parking);\nflow.set(\"parkings\",parkings);\nflow.set(\"parkingCounter\",parkingCounter);\nmsg.payload = parking;\nflow.set(\"parking\",parking);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 520,
+        "x": 590,
+        "y": 800,
         "wires": [
             [
-                "af0b70aa144b9ce9"
+                "a3b760d0df8bb253",
+                "bc58747407b8cbae"
             ]
         ]
     },
@@ -532,6 +278,7 @@
         "id": "18c84c856c114fd1",
         "type": "change",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "name": "",
         "rules": [
             {
@@ -541,6 +288,20 @@
                 "to": "parkings",
                 "tot": "flow",
                 "dc": true
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "parkings",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "json"
             }
         ],
         "action": "",
@@ -548,57 +309,33 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 260,
-        "y": 580,
+        "x": 400,
+        "y": 640,
         "wires": [
             [
-                "0479f9dc055be213"
+                "20a7f04227ced058",
+                "1fd4f651a05150d4"
             ]
         ]
-    },
-    {
-        "id": "402d295a7b2c87b6",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "af0b70aa144b9ce9",
-        "type": "link out",
-        "z": "378f2327429a44b8",
-        "name": "link out 6",
-        "mode": "link",
-        "links": [
-            "861c717c44f8c0df",
-            "b6d034e75986a0f5"
-        ],
-        "x": 415,
-        "y": 520,
-        "wires": []
     },
     {
         "id": "861c717c44f8c0df",
         "type": "link in",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "name": "link in 7",
         "links": [
             "af0b70aa144b9ce9",
             "e40ede34584c6a06",
             "79bca7f594928f04",
-            "679986952f4eb2c8"
+            "679986952f4eb2c8",
+            "1c66e07fa5222635",
+            "659a695129e680cf",
+            "a3b760d0df8bb253",
+            "c1ce34adcb92e6aa"
         ],
-        "x": 145,
-        "y": 580,
+        "x": 235,
+        "y": 640,
         "wires": [
             [
                 "18c84c856c114fd1"
@@ -609,6 +346,7 @@
         "id": "d3047674f5184afd",
         "type": "change",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "name": "",
         "rules": [
             {
@@ -631,36 +369,20 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 580,
+        "x": 960,
+        "y": 640,
         "wires": [
             [
-                "402d295a7b2c87b6",
                 "52863cf447d850f8"
             ]
         ]
     },
     {
-        "id": "fe60ca5123137b79",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1200,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "e86b80435a51da66",
         "type": "function",
         "z": "378f2327429a44b8",
-        "name": "function 1",
+        "g": "1040950f3a12e5f7",
+        "name": "Parking bounding box",
         "func": "var parkings = flow.get(\"parkings\") || [];\nvar id = msg.topic;\n\nparkings.forEach(function(item){\n    if( item.id === id ) {\n        item.x1 = msg.payload.x1;\n        item.x2 = msg.payload.x2;\n        item.y1 = msg.payload.y1;\n        item.y2 = msg.payload.y2;\n    }\n})\n\nflow.set(\"parkings\", parkings);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -668,123 +390,34 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
-        "y": 340,
+        "x": 960,
+        "y": 580,
         "wires": [
-            [
-                "e40ede34584c6a06"
-            ]
+            []
         ]
-    },
-    {
-        "id": "e40ede34584c6a06",
-        "type": "link out",
-        "z": "378f2327429a44b8",
-        "name": "link out 7",
-        "mode": "link",
-        "links": [
-            "861c717c44f8c0df"
-        ],
-        "x": 1055,
-        "y": 340,
-        "wires": []
     },
     {
         "id": "52863cf447d850f8",
         "type": "link out",
         "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
         "name": "link out 8",
         "mode": "link",
         "links": [
-            "b6d034e75986a0f5",
-            "7c76a3b2c8b12385"
+            "7c76a3b2c8b12385",
+            "d25eb1061be6c92e",
+            "895399a9ca4fe61f",
+            "729655b11f5ecaa0"
         ],
-        "x": 795,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "81c28ef5c4e595f4",
-        "type": "comment",
-        "z": "378f2327429a44b8",
-        "name": "Parkings",
-        "info": "",
-        "x": 180,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "1823d57c65715e97",
-        "type": "link in",
-        "z": "378f2327429a44b8",
-        "name": "Parkings",
-        "links": [
-            "679986952f4eb2c8",
-            "59a22ef3a3915c5d"
-        ],
-        "x": 255,
-        "y": 460,
-        "wires": [
-            [
-                "acf66f06292aae31"
-            ]
-        ]
-    },
-    {
-        "id": "acf66f06292aae31",
-        "type": "change",
-        "z": "378f2327429a44b8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "parkings",
-                "tot": "flow"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "parkings",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 460,
-        "wires": [
-            [
-                "1fd4f651a05150d4",
-                "d5370b526ddca50a"
-            ]
-        ]
-    },
-    {
-        "id": "d5370b526ddca50a",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 9",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 460,
+        "x": 1095,
+        "y": 640,
         "wires": []
     },
     {
         "id": "cdd15f4320c4b2be",
         "type": "ui_text_input",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "Name",
         "label": "Name",
         "tooltip": "",
@@ -792,19 +425,18 @@
         "order": 3,
         "width": "0",
         "height": "0",
-        "passthru": true,
+        "passthru": false,
         "mode": "text",
         "delay": 300,
         "topic": "topic",
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 510,
-        "y": 860,
+        "x": 450,
+        "y": 960,
         "wires": [
             [
-                "b00cc4bc3bba79b9",
-                "3a8665f1908ca3c5"
+                "b00cc4bc3bba79b9"
             ]
         ]
     },
@@ -812,12 +444,14 @@
         "id": "7c76a3b2c8b12385",
         "type": "link in",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "link in 9",
         "links": [
-            "52863cf447d850f8"
+            "52863cf447d850f8",
+            "a3b760d0df8bb253"
         ],
-        "x": 165,
-        "y": 860,
+        "x": 155,
+        "y": 960,
         "wires": [
             [
                 "380d9b6a71651529"
@@ -828,7 +462,8 @@
         "id": "380d9b6a71651529",
         "type": "change",
         "z": "378f2327429a44b8",
-        "name": "",
+        "g": "471323089555ed59",
+        "name": "Enable",
         "rules": [
             {
                 "t": "set",
@@ -836,6 +471,13 @@
                 "pt": "msg",
                 "to": "parking.name",
                 "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "json"
             }
         ],
         "action": "",
@@ -843,8 +485,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 860,
+        "x": 280,
+        "y": 960,
         "wires": [
             [
                 "cdd15f4320c4b2be"
@@ -855,7 +497,8 @@
         "id": "b00cc4bc3bba79b9",
         "type": "function",
         "z": "378f2327429a44b8",
-        "name": "function 2",
+        "g": "471323089555ed59",
+        "name": "Name",
         "func": "var parkings = flow.get(\"parkings\") || {};\nvar parking = flow.get(\"parking\");\n\nif( parking === null )\n    return;\n\nparking.name = msg.payload;\n\nparkings.forEach(function(item){\n    if( item.id === parking.id )\n        item.name = parking.name;\n})\n\n\nflow.set(\"parkings\",parkings);\nflow.set(\"parking\",parking);\nmsg.payload = parking;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -863,64 +506,33 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 860,
+        "x": 590,
+        "y": 960,
         "wires": [
             [
-                "331b7b4e118d59b3",
                 "79bca7f594928f04"
             ]
         ]
     },
     {
-        "id": "331b7b4e118d59b3",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 920,
-        "y": 860,
-        "wires": []
-    },
-    {
         "id": "79bca7f594928f04",
         "type": "link out",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "link out 9",
         "mode": "link",
         "links": [
             "861c717c44f8c0df"
         ],
-        "x": 865,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "3a8665f1908ca3c5",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 11",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 800,
+        "x": 695,
+        "y": 960,
         "wires": []
     },
     {
         "id": "132134b81f372290",
         "type": "ui_button",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "Save",
         "group": "fcce511190ce3119",
         "order": 4,
@@ -937,46 +549,12 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 190,
-        "y": 760,
+        "x": 450,
+        "y": 880,
         "wires": [
             [
-                "34f751c85913dbc9"
-            ]
-        ]
-    },
-    {
-        "id": "34f751c85913dbc9",
-        "type": "change",
-        "z": "378f2327429a44b8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "parking",
-                "pt": "flow",
-                "to": "null",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 760,
-        "wires": [
-            [
-                "cdd15f4320c4b2be",
-                "23c895f4b76fdd72"
+                "23c895f4b76fdd72",
+                "b8a96c2b22dd4100"
             ]
         ]
     },
@@ -984,6 +562,7 @@
         "id": "23c895f4b76fdd72",
         "type": "change",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "",
         "rules": [
             {
@@ -1006,8 +585,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 580,
-        "y": 760,
+        "x": 620,
+        "y": 880,
         "wires": [
             [
                 "679986952f4eb2c8"
@@ -1018,37 +597,22 @@
         "id": "679986952f4eb2c8",
         "type": "link out",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "link out 10",
         "mode": "link",
         "links": [
-            "b6d034e75986a0f5",
             "861c717c44f8c0df",
-            "1823d57c65715e97"
+            "d25eb1061be6c92e"
         ],
-        "x": 735,
-        "y": 760,
-        "wires": []
-    },
-    {
-        "id": "8059e5d6dd86ac01",
-        "type": "debug",
-        "z": "378f2327429a44b8",
-        "name": "debug 12",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 590,
-        "y": 420,
+        "x": 795,
+        "y": 880,
         "wires": []
     },
     {
         "id": "c7fedfd9c0258217",
         "type": "ui_button",
         "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
         "name": "",
         "group": "fcce511190ce3119",
         "order": 5,
@@ -1065,61 +629,136 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 200,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e02bdcb5e0295e2c",
-        "type": "link in",
-        "z": "378f2327429a44b8",
-        "name": "link in 10",
-        "links": [
-            "59a22ef3a3915c5d"
-        ],
-        "x": 265,
-        "y": 380,
+        "x": 460,
+        "y": 1040,
         "wires": [
             [
-                "16d8d8220f80b0ee"
+                "4372bf2033fccef3"
             ]
         ]
     },
     {
-        "id": "59a22ef3a3915c5d",
-        "type": "link out",
+        "id": "f76b3249d0c4b039",
+        "type": "debug",
         "z": "378f2327429a44b8",
-        "name": "link out 11",
-        "mode": "link",
-        "links": [
-            "1823d57c65715e97",
-            "e02bdcb5e0295e2c"
-        ],
-        "x": 635,
-        "y": 240,
+        "name": "Occupied",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "16d8d8220f80b0ee",
+        "id": "601829d8c9eef57f",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "name": "Parking Transition",
+        "func": "var vehicles = msg.payload;\nvar timestamp = new Date().getTime();\n\nvar parkings = flow.get(\"parkings\") || [];\n\nparkings.forEach(function(parking) {\n    if( !parking.start )\n        parking.start = timestamp;\n    parking.age = (timestamp - parking.start) / 1000;\n\n    vehicles.forEach(function(vehicle) {\n        if( vehicle.cx < parking.x1 || vehicle.cx > parking.x2 || vehicle.cy < parking.y1 || vehicle.cy > parking.y2 )\n            return;\n        parking.timestamp = timestamp;\n    });\n})\n\nflow.set(\"parkings\",parkings);\n\nvar transition = flow.get(\"transition\") || 15;\n\nparkings.forEach( function(parking) {\n    var sinceLastUpdate = (timestamp - parking.timestamp) / 1000;\n\n    if( parking.state === false && parking.transition === false && sinceLastUpdate < transition ) {\n        parking.transition = true;\n        parking.start = timestamp;\n        parking.age = 0;\n        flow.set(\"parkings\",parkings);\n        msg.payload = parking;\n        msg.topic = \"transition\";\n        node.send(msg);\n        return;\n    }\n\n//node.warn(\"Age:\" + parking.age + \" Limit:\" + transition);\n\n    if( parking.state === false && parking.transition === true && parking.age > transition ) {\n        parking.state = true;\n        parking.transition = false;\n        msg.payload = parking;\n        msg.topic = \"occupied\";\n        flow.set(\"parkings\",parkings);\n        node.send(msg);\n        return;\n    }\n\n    if( parking.state === true && parking.transition === true && sinceLastUpdate < 1 ) {\n        parking.transition = false;\n        return;\n    }\n\n    if( parking.state === true && parking.transition === false && sinceLastUpdate > 1 ) {\n        parking.transition = true;\n        flow.set(\"parkings\",parkings);\n        msg.payload = parking;\n        msg.topic = \"transition\";\n        flow.set(\"parkings\",parkings);\n        node.send(msg);\n        return;\n    }\n\n    if( parking.state === true && parking.transition === true && sinceLastUpdate > transition ) {\nnode.warn(\"Free\");\n        parking.state = false;\n        parking.transition = false;\n        msg.payload = parking;\n        msg.topic = \"free\";\n        flow.set(\"parkings\",parkings);\n        node.send(msg);\n        parking.age = 0;\n        parking.start = timestamp;\n        return;\n    }\n//node.warn(\"State: \" + parking.state + \" Transition: \" + parking.transition );\n\n});\n\nflow.set(\"parkings\",parkings);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 80,
+        "wires": [
+            [
+                "c1ce34adcb92e6aa",
+                "43b59ab5688ca0b4",
+                "9e690b9bab78cbba",
+                "9df29b3a2b981da2"
+            ]
+        ]
+    },
+    {
+        "id": "392f41805d89c10e",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "name": "Filter",
+        "func": "var detections = msg.payload.detections;\nvar timestamp = new Date().getTime();\nvar confidence = flow.get(\"confidence\") || 50;\n\nvar vehicles = [];\n\ndetections.forEach(function(detection) {\n    if( detection.confidence < confidence )\n        return;\n\n    if( detection.class === \"Human\" )\n        return;\n\n    if( detection.class === \"Face\")\n        return;\n\n    if( detection.class === \"License plate\")\n        return;\n\n    if( detection.class === \"Object\")\n        return;\n\n    if( detection.width < 20 )\n        return;\n\n    if( detection.hight < 20 )\n        return;\n    vehicles.push(detection);\n})\n\nmsg.topic = \"vehicles\";\nmsg.payload = vehicles;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "601829d8c9eef57f",
+                "6e7749d852998c51"
+            ]
+        ]
+    },
+    {
+        "id": "8d72f196a59ce718",
+        "type": "Objects",
+        "z": "378f2327429a44b8",
+        "output": "1",
+        "classFilter": "-1",
+        "confidence": "50",
+        "rotation": "0",
+        "cog": "1",
+        "predictions": "1",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "392f41805d89c10e"
+            ]
+        ]
+    },
+    {
+        "id": "14e459b9994a6018",
+        "type": "ui_numeric",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "",
+        "label": "Confidence",
+        "tooltip": "",
+        "group": "93de07998e2657d7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "120",
+        "step": "10",
+        "className": "",
+        "x": 650,
+        "y": 420,
+        "wires": [
+            [
+                "ecc84858c127480f"
+            ]
+        ]
+    },
+    {
+        "id": "ecc84858c127480f",
         "type": "change",
         "z": "378f2327429a44b8",
-        "name": "",
+        "g": "4dc90addd7c0789b",
+        "name": "flow.confidence",
         "rules": [
             {
                 "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "vehicles",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "vehicles",
-                "tot": "flow"
+                "p": "confidence",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
@@ -1127,8 +766,196 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 840,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d913dd1a30468b3",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "Transition",
+        "func": "msg.payload = flow.get(\"transition\") || 15;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
         "y": 380,
+        "wires": [
+            [
+                "1b1685e6f79cc08a"
+            ]
+        ]
+    },
+    {
+        "id": "704325c0aa35e63c",
+        "type": "inject",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "Node-RED Started",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "8d913dd1a30468b3",
+                "23643048a21903d2"
+            ]
+        ]
+    },
+    {
+        "id": "1b1685e6f79cc08a",
+        "type": "ui_numeric",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "",
+        "label": "Transition",
+        "tooltip": "",
+        "group": "93de07998e2657d7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}} s",
+        "min": "5",
+        "max": "120",
+        "step": "5",
+        "className": "",
+        "x": 640,
+        "y": 380,
+        "wires": [
+            [
+                "071c57d92d461b8b"
+            ]
+        ]
+    },
+    {
+        "id": "071c57d92d461b8b",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "flow.transition",
+        "rules": [
+            {
+                "t": "set",
+                "p": "transition",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23643048a21903d2",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "confidence",
+        "func": "msg.payload = flow.get(\"confidence\") || 50;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "14e459b9994a6018"
+            ]
+        ]
+    },
+    {
+        "id": "4fd57ad35d9e2e86",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "Tab Parking Transition",
+        "func": "msg.topic = \"video\";\n\nif( msg.payload !== \"change\" )\n    return;\nif( msg.name === \"Parking Transition\" )\n    msg.payload = true;\nelse\n    msg.payload = false;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 280,
+        "wires": [
+            [
+                "1c66e07fa5222635",
+                "55eb6f75943454f1"
+            ]
+        ]
+    },
+    {
+        "id": "65261c8d5ca7f228",
+        "type": "ui_ui_control",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "",
+        "events": "all",
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "4fd57ad35d9e2e86",
+                "633835917acee535"
+            ]
+        ]
+    },
+    {
+        "id": "d25eb1061be6c92e",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
+        "name": "link in 11",
+        "links": [
+            "1c66e07fa5222635",
+            "6e7749d852998c51",
+            "52863cf447d850f8",
+            "dfec3bf41706449b",
+            "679986952f4eb2c8",
+            "659a695129e680cf",
+            "57a310f8a33dfa6b"
+        ],
+        "x": 375,
+        "y": 540,
         "wires": [
             [
                 "1fd4f651a05150d4"
@@ -1136,40 +963,808 @@
         ]
     },
     {
-        "id": "8d44ea2e919136c7",
-        "type": "debug",
+        "id": "1c66e07fa5222635",
+        "type": "link out",
         "z": "378f2327429a44b8",
-        "name": "debug 13",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 180,
+        "g": "4dc90addd7c0789b",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "d25eb1061be6c92e",
+            "861c717c44f8c0df"
+        ],
+        "x": 615,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "caef5b4b354c39e6",
+        "id": "6e7749d852998c51",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "name": "Detections",
+        "mode": "link",
+        "links": [
+            "d25eb1061be6c92e"
+        ],
+        "x": 595,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "729655b11f5ecaa0",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 12",
+        "links": [
+            "a3b760d0df8bb253",
+            "52863cf447d850f8"
+        ],
+        "x": 155,
+        "y": 1040,
+        "wires": [
+            [
+                "a743bfa8a5efcd48"
+            ]
+        ]
+    },
+    {
+        "id": "a743bfa8a5efcd48",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 1040,
+        "wires": [
+            [
+                "c7fedfd9c0258217"
+            ]
+        ]
+    },
+    {
+        "id": "c418b54fafe13cb7",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 13",
+        "links": [
+            "b8a96c2b22dd4100",
+            "bb604daae169b132",
+            "659a695129e680cf"
+        ],
+        "x": 155,
+        "y": 1080,
+        "wires": [
+            [
+                "03f91d0155cf8b9f"
+            ]
+        ]
+    },
+    {
+        "id": "03f91d0155cf8b9f",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 1080,
+        "wires": [
+            [
+                "c7fedfd9c0258217"
+            ]
+        ]
+    },
+    {
+        "id": "df2a883b9fa82b64",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "  ",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 1000,
+        "wires": [
+            [
+                "cdd15f4320c4b2be"
+            ]
+        ]
+    },
+    {
+        "id": "36f8d8cea8db5024",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 14",
+        "links": [
+            "b8a96c2b22dd4100",
+            "bb604daae169b132",
+            "659a695129e680cf"
+        ],
+        "x": 155,
+        "y": 1000,
+        "wires": [
+            [
+                "df2a883b9fa82b64"
+            ]
+        ]
+    },
+    {
+        "id": "895399a9ca4fe61f",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 15",
+        "links": [
+            "52863cf447d850f8",
+            "a3b760d0df8bb253"
+        ],
+        "x": 155,
+        "y": 880,
+        "wires": [
+            [
+                "e45d67f08ef12290"
+            ]
+        ]
+    },
+    {
+        "id": "e45d67f08ef12290",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "parking.name",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "132134b81f372290"
+            ]
+        ]
+    },
+    {
+        "id": "8c6ad57556f53acd",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 920,
+        "wires": [
+            [
+                "132134b81f372290"
+            ]
+        ]
+    },
+    {
+        "id": "116ac8c2f813389e",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 16",
+        "links": [
+            "b8a96c2b22dd4100",
+            "bb604daae169b132",
+            "659a695129e680cf"
+        ],
+        "x": 155,
+        "y": 920,
+        "wires": [
+            [
+                "8c6ad57556f53acd"
+            ]
+        ]
+    },
+    {
+        "id": "b8a96c2b22dd4100",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link out 13",
+        "mode": "link",
+        "links": [
+            "36f8d8cea8db5024",
+            "116ac8c2f813389e",
+            "c418b54fafe13cb7",
+            "99c59969e7a56918"
+        ],
+        "x": 555,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "a3b760d0df8bb253",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link out 14",
+        "mode": "link",
+        "links": [
+            "895399a9ca4fe61f",
+            "7c76a3b2c8b12385",
+            "729655b11f5ecaa0",
+            "c18e6a8a2654839f",
+            "861c717c44f8c0df"
+        ],
+        "x": 745,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "e16d5c79645ed600",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Enable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "parking.name",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "true",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 800,
+        "wires": [
+            [
+                "fba6cca4238a6bec"
+            ]
+        ]
+    },
+    {
+        "id": "75e97e34c365379e",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "Disable",
+        "rules": [
+            {
+                "t": "set",
+                "p": "enabled",
+                "pt": "msg",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 840,
+        "wires": [
+            [
+                "fba6cca4238a6bec"
+            ]
+        ]
+    },
+    {
+        "id": "99c59969e7a56918",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 17",
+        "links": [
+            "b8a96c2b22dd4100",
+            "bb604daae169b132",
+            "659a695129e680cf"
+        ],
+        "x": 155,
+        "y": 800,
+        "wires": [
+            [
+                "e16d5c79645ed600"
+            ]
+        ]
+    },
+    {
+        "id": "c18e6a8a2654839f",
+        "type": "link in",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link in 18",
+        "links": [
+            "a3b760d0df8bb253"
+        ],
+        "x": 155,
+        "y": 840,
+        "wires": [
+            [
+                "75e97e34c365379e"
+            ]
+        ]
+    },
+    {
+        "id": "4372bf2033fccef3",
         "type": "function",
         "z": "378f2327429a44b8",
-        "name": "Changes",
-        "func": "if( msg.payload.length )\n    return msg;",
+        "g": "471323089555ed59",
+        "name": "Add",
+        "func": "var parkings = flow.get(\"parkings\") || [];\nvar parking = flow.get(\"parking\") || null;\n\nif(!parking)\n    return;\n\nvar keep = [];\n\nparkings.forEach(function(element) {\n    if( element.id !== parking.id )\n        keep.push(element);\n});\nflow.set(\"parkings\",keep);\nflow.set(\"parking\",null);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 180,
+        "x": 610,
+        "y": 1040,
         "wires": [
             [
-                "8d44ea2e919136c7"
+                "7559802c976036ff"
             ]
         ]
+    },
+    {
+        "id": "659a695129e680cf",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link out 15",
+        "mode": "link",
+        "links": [
+            "861c717c44f8c0df",
+            "99c59969e7a56918",
+            "116ac8c2f813389e",
+            "36f8d8cea8db5024",
+            "c418b54fafe13cb7",
+            "d25eb1061be6c92e"
+        ],
+        "x": 905,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "633835917acee535",
+        "type": "debug",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "debug 24",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "55eb6f75943454f1",
+        "type": "delay",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "bb604daae169b132"
+            ]
+        ]
+    },
+    {
+        "id": "bb604daae169b132",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "g": "4dc90addd7c0789b",
+        "name": "link out 16",
+        "mode": "link",
+        "links": [
+            "99c59969e7a56918",
+            "116ac8c2f813389e",
+            "36f8d8cea8db5024",
+            "c418b54fafe13cb7"
+        ],
+        "x": 815,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "bc58747407b8cbae",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "box",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 800,
+        "wires": [
+            [
+                "57a310f8a33dfa6b"
+            ]
+        ]
+    },
+    {
+        "id": "7559802c976036ff",
+        "type": "change",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "box",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "null",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1040,
+        "wires": [
+            [
+                "659a695129e680cf"
+            ]
+        ]
+    },
+    {
+        "id": "57a310f8a33dfa6b",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "g": "471323089555ed59",
+        "name": "link out 17",
+        "mode": "link",
+        "links": [
+            "d25eb1061be6c92e"
+        ],
+        "x": 905,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "c1ce34adcb92e6aa",
+        "type": "link out",
+        "z": "378f2327429a44b8",
+        "name": "link out 18",
+        "mode": "link",
+        "links": [
+            "861c717c44f8c0df"
+        ],
+        "x": 895,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "43b59ab5688ca0b4",
+        "type": "switch",
+        "z": "378f2327429a44b8",
+        "name": "parking cccupied state",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "occupied ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 980,
+        "y": 80,
+        "wires": [
+            [
+                "f76b3249d0c4b039"
+            ]
+        ]
+    },
+    {
+        "id": "9e690b9bab78cbba",
+        "type": "switch",
+        "z": "378f2327429a44b8",
+        "name": "parking free state",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "free",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 120,
+        "wires": [
+            [
+                "a16aca7c7ebe3c1b"
+            ]
+        ]
+    },
+    {
+        "id": "a16aca7c7ebe3c1b",
+        "type": "debug",
+        "z": "378f2327429a44b8",
+        "name": "Free",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "20a7f04227ced058",
+        "type": "function",
+        "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
+        "name": "List",
+        "func": "var parkings = flow.get(\"parkings\") || [];\nvar list = [];\nparkings.forEach(function(element) {\n    var time = element.age;\n    var hours = parseInt(time / 3600);\n    var minutes = parseInt((time - (hours*3600))/60);\n    var seconds =  parseInt(time - (hours*3600) - (minutes * 60));\n    var timestring = (\"00\" + hours).substr(-2) + \":\" + (\"00\" + minutes).substr(-2)+\":\"+(\"00\" + seconds).substr(-2);\n    var status = element.state?\"Occupied\":\"Free\";\n    if( element.transition )\n        status = \"Transition\";\n    element.time = timestring;\n    element.status = status;\n    list.push(element);\n});\n\nmsg.payload = list;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "0479f9dc055be213",
+                "6356c3082cb52180"
+            ]
+        ]
+    },
+    {
+        "id": "d2227e5e38bf6d9d",
+        "type": "inject",
+        "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 580,
+        "wires": [
+            [
+                "18c84c856c114fd1"
+            ]
+        ]
+    },
+    {
+        "id": "6356c3082cb52180",
+        "type": "debug",
+        "z": "378f2327429a44b8",
+        "g": "1040950f3a12e5f7",
+        "name": "debug 27",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "895133bbddfa7a24",
+        "type": "comment",
+        "z": "378f2327429a44b8",
+        "name": "Vehicle detections",
+        "info": "",
+        "x": 710,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "25eee060cb56c8fd",
+        "type": "comment",
+        "z": "378f2327429a44b8",
+        "name": "All transitions",
+        "info": "",
+        "x": 990,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9df29b3a2b981da2",
+        "type": "switch",
+        "z": "378f2327429a44b8",
+        "name": "transition state",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "transition ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "83ef1828b380d9b1"
+            ]
+        ]
+    },
+    {
+        "id": "83ef1828b380d9b1",
+        "type": "debug",
+        "z": "378f2327429a44b8",
+        "name": "Transition",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 160,
+        "wires": []
     },
     {
         "id": "a39319e8fe427572",
