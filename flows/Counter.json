@@ -1,0 +1,600 @@
+[
+    {
+        "id": "634e48357c9071de",
+        "type": "tab",
+        "label": "Counter",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a532a89905d7ad5d",
+        "type": "junction",
+        "z": "634e48357c9071de",
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "8f3070616c5042fe",
+                "7662de54c13ff6a9"
+            ]
+        ]
+    },
+    {
+        "id": "0476488f79b7bcb2",
+        "type": "Events",
+        "z": "634e48357c9071de",
+        "group": "application",
+        "initialization": true,
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "e06565a93ccfc8d2"
+            ]
+        ]
+    },
+    {
+        "id": "4a0e096e72963ff1",
+        "type": "debug",
+        "z": "634e48357c9071de",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2efd4b3043829f89",
+        "type": "debug",
+        "z": "634e48357c9071de",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "80944c596e69fef9",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Update Path",
+        "func": "var counter = flow.get(\"path\") || {\n    left: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    },\n    right: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    }\n}\n\nif( msg.payload.dx < 0 ) { //Left\n    counter.left.value++;\n    counter.left.car += msg.payload.class===\"Car\"?1:0;\n    counter.left.truck += msg.payload.class===\"Truck\"?1:0;\n    counter.left.bus += msg.payload.class===\"Bus\"?1:0;\n    counter.left.bike += msg.payload.class===\"Motorcycle\"?1:0;\n    counter.left.vehicle += msg.payload.class===\"Vehicle\"?1:0;\n}\n\nif (msg.payload.dx >= 0) { //Right\n    counter.right.value++;\n    counter.right.car += msg.payload.class===\"Car\"?1:0;\n    counter.right.truck += msg.payload.class===\"Truck\"?1:0;\n    counter.right.bus += msg.payload.class===\"Bus\"?1:0;\n    counter.right.bike += msg.payload.class===\"Motorcycle\"?1:0;\n    counter.right.vehicle += msg.payload.class===\"Vehicle\"?1:0;\n}\nflow.set(\"path\",counter);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 160,
+        "wires": [
+            [
+                "2efd4b3043829f89"
+            ]
+        ]
+    },
+    {
+        "id": "e06565a93ccfc8d2",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Update AoA",
+        "func": "var counter = flow.get(\"aoa\") || {\n    left: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    },\n    right: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    }\n}\n\nif (msg.topic === \"cameraapplicationplatform/objectanalytics/device1scenario2\") {\n    counter.left.value = msg.payload.total;\n    counter.left.car=msg.payload.totalcar;\n    counter.left.truck=msg.payload.totaltruck;\n    counter.left.bus=msg.payload.totalbus;\n    counter.left.bike=msg.payload.totalmotorcyclebicycle;\n    counter.left.vehicle =msg.payload.totalunknown;\n}\n\nif (msg.topic === \"cameraapplicationplatform/objectanalytics/device1scenario1\") {\n    counter.right.value = msg.payload.total;\n    counter.right.car=msg.payload.totalcar;\n    counter.right.truck=msg.payload.totaltruck;\n    counter.right.bus=msg.payload.totalbus;\n    counter.right.bike=msg.payload.totalmotorcyclebicycle;\n    counter.right.vehicle=msg.payload.totalunknown;\n}\n\nflow.set(\"aoa\",counter);\n\nmsg.payload = counter;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "4a0e096e72963ff1"
+            ]
+        ]
+    },
+    {
+        "id": "f5f1d4554c2a8f07",
+        "type": "Objects",
+        "z": "634e48357c9071de",
+        "version": "1",
+        "output": "2",
+        "classFilter": "-1",
+        "confidence": "50",
+        "rotation": "0",
+        "cog": "0",
+        "predictions": "1",
+        "x": 290,
+        "y": 160,
+        "wires": [
+            [
+                "3a954fe612771031"
+            ]
+        ]
+    },
+    {
+        "id": "3a954fe612771031",
+        "type": "switch",
+        "z": "634e48357c9071de",
+        "name": "Dead",
+        "property": "payload.active",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "5af39c139fb88b06"
+            ]
+        ]
+    },
+    {
+        "id": "5af39c139fb88b06",
+        "type": "switch",
+        "z": "634e48357c9071de",
+        "name": "Distance",
+        "property": "payload.distance",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "30",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "cc20bc304d5d51be"
+            ]
+        ]
+    },
+    {
+        "id": "23c748f8845291de",
+        "type": "inject",
+        "z": "634e48357c9071de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 240,
+        "y": 540,
+        "wires": [
+            [
+                "8d8879d7ca4cd1b0",
+                "1a836f04f420f042"
+            ]
+        ]
+    },
+    {
+        "id": "8d8879d7ca4cd1b0",
+        "type": "Axis device",
+        "z": "634e48357c9071de",
+        "name": "Reset AOA Right",
+        "preset": "8851e1ed423632f9",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "{\"apiVersion\":\"1.6\",\"context\":\"AOA_NATIVE_UI\",\"method\":\"resetAccumulatedCounts\",\"params\":{\"scenario\":1}}",
+        "options": "",
+        "filename": "",
+        "x": 460,
+        "y": 540,
+        "wires": [
+            [
+                "036b9d84b8e9b9c2"
+            ]
+        ]
+    },
+    {
+        "id": "036b9d84b8e9b9c2",
+        "type": "Axis device",
+        "z": "634e48357c9071de",
+        "name": "Reset AOA Left",
+        "preset": "8851e1ed423632f9",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "{\"apiVersion\":\"1.6\",\"context\":\"AOA_NATIVE_UI\",\"method\":\"resetAccumulatedCounts\",\"params\":{\"scenario\":2}}",
+        "options": "",
+        "filename": "",
+        "x": 700,
+        "y": 540,
+        "wires": [
+            [
+                "7829ef04461592a8"
+            ]
+        ]
+    },
+    {
+        "id": "d6cd9989ad49239b",
+        "type": "debug",
+        "z": "634e48357c9071de",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7829ef04461592a8",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Reset AoA",
+        "func": "flow.set(\"aoa\",{\n    left: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    },\n    right: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    }\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 540,
+        "wires": [
+            [
+                "d6cd9989ad49239b"
+            ]
+        ]
+    },
+    {
+        "id": "1a836f04f420f042",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Reset Path",
+        "func": "flow.set(\"path\",{\n    left: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    },\n    right: {\n        value: 0,\n        car: 0,\n        truck: 0,\n        bus: 0,\n        bike: 0,\n        vehicle: 0\n    }\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc20bc304d5d51be",
+        "type": "switch",
+        "z": "634e48357c9071de",
+        "name": "Where",
+        "property": "payload.dy",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "700",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 160,
+        "wires": [
+            [
+                "80944c596e69fef9"
+            ]
+        ]
+    },
+    {
+        "id": "c6796d11dfd30453",
+        "type": "inject",
+        "z": "634e48357c9071de",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "900",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "6c4f7a4a67a24b79",
+                "a2519209cabef2e6",
+                "1742151068fe71b1",
+                "232a903deefb3907"
+            ]
+        ]
+    },
+    {
+        "id": "6c4f7a4a67a24b79",
+        "type": "change",
+        "z": "634e48357c9071de",
+        "name": "AOA Left",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "aoa.left",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "d74ae98668a0855d"
+            ]
+        ]
+    },
+    {
+        "id": "a2519209cabef2e6",
+        "type": "change",
+        "z": "634e48357c9071de",
+        "name": "AOA Right",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "aoa.right",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 320,
+        "wires": [
+            [
+                "416d8e05774cd0a8"
+            ]
+        ]
+    },
+    {
+        "id": "232a903deefb3907",
+        "type": "change",
+        "z": "634e48357c9071de",
+        "name": "Path Left",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "path.left",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "15aa4d4faeec40fb"
+            ]
+        ]
+    },
+    {
+        "id": "1742151068fe71b1",
+        "type": "change",
+        "z": "634e48357c9071de",
+        "name": "Path Right",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "path.right",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "f8aac3ae208363fd"
+            ]
+        ]
+    },
+    {
+        "id": "8f3070616c5042fe",
+        "type": "influxdb out",
+        "z": "634e48357c9071de",
+        "influxdb": "c444aea88a2e2865",
+        "name": "",
+        "measurement": "vehicles",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "Pandos",
+        "bucket": "mybucket",
+        "x": 1100,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d74ae98668a0855d",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "AOA Left",
+        "func": "msg.payload = [\n    {\n        value: msg.payload.value,\n        car: msg.payload.car,\n        bus: msg.payload.bus,\n        truck: msg.payload.truck,\n        bike: msg.payload.bike,\n        vehicle: msg.payload.vehicle\n    },\n    {\n        counter: \"AOA\",\n        direction: \"Left\"\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 280,
+        "wires": [
+            [
+                "a532a89905d7ad5d"
+            ]
+        ]
+    },
+    {
+        "id": "416d8e05774cd0a8",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "AOA right",
+        "func": "msg.payload = [\n    {\n        value: msg.payload.value,\n        car: msg.payload.car,\n        bus: msg.payload.bus,\n        truck: msg.payload.truck,\n        bike: msg.payload.bike,\n        vehicle: msg.payload.vehicle\n    },\n    {\n        counter: \"AOA\",\n        direction: \"Right\"\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 320,
+        "wires": [
+            [
+                "a532a89905d7ad5d"
+            ]
+        ]
+    },
+    {
+        "id": "15aa4d4faeec40fb",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Path Left",
+        "func": "msg.payload = [\n    {\n        value: msg.payload.value,\n        car: msg.payload.car,\n        bus: msg.payload.bus,\n        truck: msg.payload.truck,\n        bike: msg.payload.bike,\n        vehicle: msg.payload.vehicle\n    },\n    {\n        counter: \"Path\",\n        direction: \"Left\"\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 360,
+        "wires": [
+            [
+                "a532a89905d7ad5d"
+            ]
+        ]
+    },
+    {
+        "id": "f8aac3ae208363fd",
+        "type": "function",
+        "z": "634e48357c9071de",
+        "name": "Path Right",
+        "func": "msg.payload = [\n    {\n        value: msg.payload.value,\n        car: msg.payload.car,\n        bus: msg.payload.bus,\n        truck: msg.payload.truck,\n        bike: msg.payload.bike,\n        vehicle: msg.payload.vehicle\n    },\n    {\n        counter: \"Path\",\n        direction: \"Right\"\n    }\n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 400,
+        "wires": [
+            [
+                "a532a89905d7ad5d"
+            ]
+        ]
+    },
+    {
+        "id": "7662de54c13ff6a9",
+        "type": "debug",
+        "z": "634e48357c9071de",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8851e1ed423632f9",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "c444aea88a2e2865",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "Bull Influx 2",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://10.13.8.92:8086",
+        "rejectUnauthorized": false
+    }
+]
