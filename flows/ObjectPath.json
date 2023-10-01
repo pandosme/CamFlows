@@ -1,4 +1,4 @@
-[[
+[
     {
         "id": "6826885eba8f094e",
         "type": "tab",
@@ -1060,47 +1060,6 @@
         "name": "ObjectPath",
         "icon": "dashboard",
         "order": 1,
-        "disabled": false,
-        "hidden": false
-    }
-]
-    {
-        "id": "4d09846fd436fe1b",
-        "type": "ui_template",
-        "z": "6a094971e572f1a5",
-        "group": "5cae0d64404711c2",
-        "name": "Augmented Video",
-        "order": 0,
-        "width": "16",
-        "height": "9",
-        "format": "<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"view\" style=\"width:800px; height:450px;\">\n    <div id=\"{{'canvas_'+$id}}\" style=\"width:100%; height:100%; position:relative\">\n        <img id=\"{{'image_'+$id}}\" class=\"card-img-top\" src=\"\" alt=\"Image\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n        <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n        <canvas id=\"{{'objects_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    </div>\n</div>\n\n<script>\nvar ctx = null;\nvar hold = false;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawPath( data ) {\n  if(!ctx)\n      return;\n\n  var first = data.path[0];\n  var last = data.path[data.path.length-1];\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#00FF00';\n  ctx.font = \"30px Arial\";\n  ctx.fillStyle = '#FFFF00';    \n  ctx.moveTo(first.x, first.y );\n  ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n  ctx.fillText(data.class, first.x, first.y - 10 );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.strokeStyle = '#FFFF00';\n  ctx.moveTo(data.path[0].x, data.path[0].y );\n  for( var i = 1; i < data.path.length; i++ )\n      ctx.lineTo(data.path[i].x,data.path[i].y );\n  ctx.lineTo(last.x,last.y );\n  ctx.stroke();\t\n\n  ctx.beginPath();\n  ctx.lineWidth = 3;\n  ctx.strokeStyle = '#FF0000';\n  ctx.moveTo(last.x, last.y );\n  ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n  ctx.stroke();\t\n}\n\nfunction drawTracker( data ) {\n    if(!ctx)\n        return;\n\n    if( !hold ) {\n      ClearCanvas();\n      if( data.active === false )\n          return;\n    }\n    \n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.moveTo(data.bx, data.by );\n    ctx.lineTo(data.cx, data.cy );\n    ctx.rect(data.x, data.y,data.w,data.h );\n    ctx.fillText(data.class, data.x, data.y - 10 );\n    ctx.stroke();\t\n}\n\nfunction drawDetections( data ) {\n    if(!ctx)\n        return;\n\n    console.log(msg.topic);\n    \n    if( !hold )\n      ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';    \n    ctx.strokeStyle = '#FFFF00';\n    data.detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        ctx.fillText(detection.class, detection.x, detection.y - 10 );\n    });\n    ctx.stroke();\t\n}\n</script>\n\n<script>\n(function(scope) {\n  scope.$watch('msg', function(msg) {\n    if (!msg)\n      return;\n    \n    $(\"#image_\"+scope.$id).attr('src','http://'+window.location.hostname+'/axis-cgi/jpg/image.cgi?_='+new Date().getTime());\n\n    if( msg.topic === \"video\" ) {\n      var width = 1280;\n      var height = 720;\n      $(\"#video_\"+scope.$id).empty();\n      ctx = null;\n      if( msg.payload ) {\n        var player = '<media-stream-player hostname=\"'+window.location.hostname+'\"  format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+width+'x'+height+'\" variant=\"basic\" autoplay></media-stream-player>';\n        $(\"#video_\"+scope.$id).append(player);\n        var canvas = document.getElementById(\"objects_\"+scope.$id);\n        ctx = canvas.getContext(\"2d\");\n      }\n    }\n\n    if( msg.topic === \"path\" )\n      drawPath( msg.payload );\n    \n    if( msg.topic === \"tracker\" )\n      drawTracker( msg.payload );\n      \n    if( msg.topic === \"detections\" )\n      drawDetections( msg.payload );\n      \n    if( msg.topic === \"reset\" ) {\n      ClearCanvas();\n      return;\n    }\n\n    if( msg.topic === \"hold\" ) {\n      hold = msg.payload;\n      return;\n    }\n  });\n})(scope);\n</script>\n\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 930,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5cae0d64404711c2",
-        "type": "ui_group",
-        "name": "Video",
-        "tab": "6baf6f94ae29c71d",
-        "order": 2,
-        "disp": false,
-        "width": "16",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "6baf6f94ae29c71d",
-        "type": "ui_tab",
-        "name": "Object Path",
-        "icon": "dashboard",
         "disabled": false,
         "hidden": false
     }
