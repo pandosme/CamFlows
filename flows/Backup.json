@@ -1,0 +1,490 @@
+[
+    {
+        "id": "a1d6e801c59055fb",
+        "type": "tab",
+        "label": "Backup",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "32e917f9c6f1ca9f",
+        "type": "inject",
+        "z": "a1d6e801c59055fb",
+        "name": "Backup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "9b9592f9be7ed98f"
+            ]
+        ]
+    },
+    {
+        "id": "42de68dc2d82a04c",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/settings.js",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "2ec8e5f9388d508d"
+            ]
+        ]
+    },
+    {
+        "id": "4bb2162e6ceadad5",
+        "type": "debug",
+        "z": "a1d6e801c59055fb",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "2ec8e5f9388d508d",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/settings.js",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1130,
+        "y": 280,
+        "wires": [
+            [
+                "54748f5664880e25"
+            ]
+        ]
+    },
+    {
+        "id": "54748f5664880e25",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/package.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 580,
+        "y": 340,
+        "wires": [
+            [
+                "4453f3a301a55da3"
+            ]
+        ]
+    },
+    {
+        "id": "4453f3a301a55da3",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/package.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1140,
+        "y": 340,
+        "wires": [
+            [
+                "7a5ef8dd978f2570"
+            ]
+        ]
+    },
+    {
+        "id": "9b9592f9be7ed98f",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/flows.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "45cd0ce42bb5cd74"
+            ]
+        ]
+    },
+    {
+        "id": "45cd0ce42bb5cd74",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/flows.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1130,
+        "y": 220,
+        "wires": [
+            [
+                "42de68dc2d82a04c"
+            ]
+        ]
+    },
+    {
+        "id": "7a5ef8dd978f2570",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/flows_cred.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "1266121f9f6bb803"
+            ]
+        ]
+    },
+    {
+        "id": "1266121f9f6bb803",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/flows_cred.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1140,
+        "y": 400,
+        "wires": [
+            [
+                "1cac94cba57794b6"
+            ]
+        ]
+    },
+    {
+        "id": "1cac94cba57794b6",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/package-lock.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 600,
+        "y": 460,
+        "wires": [
+            [
+                "c1f68d908735172a"
+            ]
+        ]
+    },
+    {
+        "id": "c1f68d908735172a",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/package-lock.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1150,
+        "y": 460,
+        "wires": [
+            [
+                "4bb2162e6ceadad5"
+            ]
+        ]
+    },
+    {
+        "id": "8b67519b7a2ca944",
+        "type": "inject",
+        "z": "a1d6e801c59055fb",
+        "name": "Restore",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "f1babc3bb99f2eb1"
+            ]
+        ]
+    },
+    {
+        "id": "681f0fac38c72db2",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/settings.js",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 600,
+        "wires": [
+            [
+                "f9aeeac911f7c9c5"
+            ]
+        ]
+    },
+    {
+        "id": "e2950d015f504e77",
+        "type": "debug",
+        "z": "a1d6e801c59055fb",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1720,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f9aeeac911f7c9c5",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/settings.js",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1210,
+        "y": 600,
+        "wires": [
+            [
+                "8691f010f54b5c10"
+            ]
+        ]
+    },
+    {
+        "id": "8691f010f54b5c10",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/package.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "4c26b3d988b1fa47"
+            ]
+        ]
+    },
+    {
+        "id": "4c26b3d988b1fa47",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/package.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1220,
+        "y": 660,
+        "wires": [
+            [
+                "9937ba02b8536d35"
+            ]
+        ]
+    },
+    {
+        "id": "f1babc3bb99f2eb1",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/flows.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 540,
+        "wires": [
+            [
+                "fcc31e263023e636"
+            ]
+        ]
+    },
+    {
+        "id": "fcc31e263023e636",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/flows.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1210,
+        "y": 540,
+        "wires": [
+            [
+                "681f0fac38c72db2"
+            ]
+        ]
+    },
+    {
+        "id": "9937ba02b8536d35",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/flows_cred.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 500,
+        "y": 720,
+        "wires": [
+            [
+                "c2bb097ab7a16d9d"
+            ]
+        ]
+    },
+    {
+        "id": "c2bb097ab7a16d9d",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/flows_cred.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1230,
+        "y": 720,
+        "wires": [
+            [
+                "e1882ac813660c22"
+            ]
+        ]
+    },
+    {
+        "id": "e1882ac813660c22",
+        "type": "file in",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/localdata/package-lock.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 780,
+        "wires": [
+            [
+                "e53e46c823a18444"
+            ]
+        ]
+    },
+    {
+        "id": "e53e46c823a18444",
+        "type": "file",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "filename": "/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/package-lock.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 780,
+        "wires": [
+            [
+                "e2950d015f504e77"
+            ]
+        ]
+    }
+]
