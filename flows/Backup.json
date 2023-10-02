@@ -90,8 +90,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 160,
+        "x": 830,
+        "y": 100,
         "wires": [
             [
                 "c44fa26bf34610e8"
@@ -110,8 +110,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 510,
-        "y": 160,
+        "x": 970,
+        "y": 100,
         "wires": [
             [],
             [],
@@ -158,7 +158,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "5097197d9960ca9d"
@@ -178,7 +178,7 @@
         "oldrc": false,
         "name": "",
         "x": 510,
-        "y": 220,
+        "y": 180,
         "wires": [
             [],
             [],
@@ -204,8 +204,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 670,
-        "y": 160,
+        "x": 1130,
+        "y": 100,
         "wires": [
             [
                 "dd856f2ca60d23f1"
@@ -230,7 +230,7 @@
         "repair": false,
         "outputs": 1,
         "x": 670,
-        "y": 220,
+        "y": 180,
         "wires": [
             [
                 "d74d142f68990b9c"
@@ -249,8 +249,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 280,
+        "x": 820,
+        "y": 180,
         "wires": [
             [
                 "e19af7f4ec445683"
@@ -269,12 +269,14 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 510,
-        "y": 280,
+        "x": 950,
+        "y": 180,
         "wires": [
             [],
             [],
-            []
+            [
+                "cc881e1029edeeba"
+            ]
         ]
     },
     {
@@ -290,7 +292,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 360,
+        "y": 440,
         "wires": [
             [
                 "b9f19e90d6342440"
@@ -319,7 +321,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 180,
-        "y": 360,
+        "y": 440,
         "wires": [
             [
                 "9097a85bf97232f5"
@@ -339,11 +341,161 @@
         "oldrc": false,
         "name": "",
         "x": 510,
-        "y": 360,
+        "y": 440,
+        "wires": [
+            [],
+            [],
+            [
+                "15211bf0dfd8286e"
+            ]
+        ]
+    },
+    {
+        "id": "488e9b966e1cbc13",
+        "type": "function",
+        "z": "a1d6e801c59055fb",
+        "name": ".config.json",
+        "func": "msg.payload = \"/usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data/.*.json /usr/local/packages/Nodered/localdata\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "566a84d159bf395d"
+            ]
+        ]
+    },
+    {
+        "id": "566a84d159bf395d",
+        "type": "exec",
+        "z": "a1d6e801c59055fb",
+        "command": "cp",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 550,
+        "y": 260,
+        "wires": [
+            [],
+            [],
+            [
+                "5efe9209e86d18b7"
+            ]
+        ]
+    },
+    {
+        "id": "5efe9209e86d18b7",
+        "type": "debug",
+        "z": "a1d6e801c59055fb",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "cc881e1029edeeba",
+        "type": "switch",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 180,
+        "wires": [
+            [
+                "488e9b966e1cbc13"
+            ]
+        ]
+    },
+    {
+        "id": "292d80a93b01da89",
+        "type": "function",
+        "z": "a1d6e801c59055fb",
+        "name": ".confic.*.json",
+        "func": "msg.payload = \"/usr/local/packages/Nodered/localdata/.[^.]* /usr/local/packages/Nodered/opt/sdcard/NodeRED/node-red-data\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 440,
+        "wires": [
+            [
+                "6ae3d7348c81359d"
+            ]
+        ]
+    },
+    {
+        "id": "6ae3d7348c81359d",
+        "type": "exec",
+        "z": "a1d6e801c59055fb",
+        "command": "cp",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1050,
+        "y": 440,
         "wires": [
             [],
             [],
             []
+        ]
+    },
+    {
+        "id": "15211bf0dfd8286e",
+        "type": "switch",
+        "z": "a1d6e801c59055fb",
+        "name": "",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "292d80a93b01da89"
+            ]
         ]
     }
 ]
