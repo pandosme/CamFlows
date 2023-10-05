@@ -8,6 +8,16 @@
         "env": []
     },
     {
+        "id": "20bfe2c286fb1cc6",
+        "type": "comment",
+        "z": "6826885eba8f094e",
+        "name": "Version 1.0",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
         "id": "f2e3604ff42ab3bc",
         "type": "group",
         "z": "6826885eba8f094e",
