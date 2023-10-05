@@ -8,22 +8,67 @@
         "env": []
     },
     {
-        "id": "6507974bd02961b7",
+        "id": "f2e3604ff42ab3bc",
+        "type": "group",
+        "z": "6826885eba8f094e",
+        "name": "Initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "ae340d49f231c401",
+            "62d085ff264fc68c",
+            "fa62466d6304da5a",
+            "032191fa5d2b3877",
+            "72b82d46f10635ce",
+            "6906da54bf5a6c63",
+            "e74ee6e85cdb3a33",
+            "c5a50f5e52a4e420",
+            "59f1c6c667b02943",
+            "f5e10899b464aae2",
+            "9b610998c239b9f3",
+            "b1ae7fbcab877866",
+            "802a7e2d821f924c"
+        ],
+        "x": 54,
+        "y": 479,
+        "w": 1022,
+        "h": 202
+    },
+    {
+        "id": "6901aff07ebe74aa",
         "type": "junction",
         "z": "6826885eba8f094e",
-        "x": 820,
-        "y": 360,
+        "x": 540,
+        "y": 240,
         "wires": [
             [
-                "40f91393025a602b"
+                "16c0b61eeffde44b",
+                "6c63e1c54ee3cf78",
+                "cf02dd48ae102d68"
             ]
         ]
     },
     {
-        "id": "5de18a219f14737a",
+        "id": "34e3e2f7d219a97d",
         "type": "junction",
         "z": "6826885eba8f094e",
-        "x": 430,
+        "x": 460,
+        "y": 380,
+        "wires": [
+            [
+                "cf02dd48ae102d68"
+            ]
+        ]
+    },
+    {
+        "id": "cf02dd48ae102d68",
+        "type": "junction",
+        "z": "6826885eba8f094e",
+        "x": 620,
         "y": 240,
         "wires": [
             [
@@ -32,21 +77,10 @@
         ]
     },
     {
-        "id": "34e3e2f7d219a97d",
-        "type": "junction",
-        "z": "6826885eba8f094e",
-        "x": 980,
-        "y": 640,
-        "wires": [
-            [
-                "09fa1c3952ca01f9"
-            ]
-        ]
-    },
-    {
         "id": "ae340d49f231c401",
         "type": "inject",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "Node-RED Started",
         "props": [
             {
@@ -64,8 +98,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 440,
+        "x": 190,
+        "y": 520,
         "wires": [
             [
                 "62d085ff264fc68c",
@@ -79,6 +113,7 @@
         "id": "62d085ff264fc68c",
         "type": "Axis device",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "preset": "8851e1ed423632f9",
         "action": "Device Info",
@@ -86,8 +121,8 @@
         "data": "",
         "options": "",
         "filename": "",
-        "x": 470,
-        "y": 440,
+        "x": 460,
+        "y": 520,
         "wires": [
             [
                 "fa62466d6304da5a"
@@ -98,22 +133,16 @@
         "id": "fa62466d6304da5a",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "serial",
+                "p": "device",
                 "pt": "flow",
-                "to": "payload.serial",
+                "to": "payload",
                 "tot": "msg",
                 "dc": true
-            },
-            {
-                "t": "set",
-                "p": "name",
-                "pt": "flow",
-                "to": "payload.hostname",
-                "tot": "msg"
             }
         ],
         "action": "",
@@ -121,23 +150,27 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 440,
+        "x": 690,
+        "y": 520,
         "wires": [
-            []
+            [
+                "802a7e2d821f924c"
+            ]
         ]
     },
     {
         "id": "43f4890b02f9cd24",
         "type": "Objects",
         "z": "6826885eba8f094e",
+        "version": "2",
         "output": "3",
         "classFilter": "-1",
         "confidence": "0",
         "rotation": "0",
         "cog": "0",
         "predictions": "1",
-        "x": 130,
+        "idle": "2",
+        "x": 140,
         "y": 100,
         "wires": [
             [
@@ -162,7 +195,7 @@
         "wires": [
             [
                 "84a913dee9f42f91",
-                "1a197e6ec4d2ad2c"
+                "f21f797a8210670b"
             ]
         ]
     },
@@ -170,6 +203,7 @@
         "id": "032191fa5d2b3877",
         "type": "ui_numeric",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "label": "Min Age (seconds)",
         "tooltip": "",
@@ -186,8 +220,8 @@
         "max": 10,
         "step": "0.5",
         "className": "",
-        "x": 710,
-        "y": 520,
+        "x": 700,
+        "y": 600,
         "wires": [
             [
                 "6906da54bf5a6c63"
@@ -198,6 +232,7 @@
         "id": "72b82d46f10635ce",
         "type": "ui_numeric",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "label": "Min Distance (% of view)",
         "tooltip": "",
@@ -214,8 +249,8 @@
         "max": "100",
         "step": "10",
         "className": "",
-        "x": 730,
-        "y": 560,
+        "x": 720,
+        "y": 640,
         "wires": [
             [
                 "e74ee6e85cdb3a33"
@@ -226,6 +261,7 @@
         "id": "6906da54bf5a6c63",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "rules": [
             {
@@ -241,8 +277,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 520,
+        "x": 960,
+        "y": 600,
         "wires": [
             []
         ]
@@ -251,6 +287,7 @@
         "id": "e74ee6e85cdb3a33",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "",
         "rules": [
             {
@@ -266,45 +303,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 560,
+        "x": 970,
+        "y": 640,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "eb9bd5646049789d",
-        "type": "ui_ui_control",
-        "z": "6826885eba8f094e",
-        "name": "",
-        "events": "all",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "6988503e929d07a0",
-                "e13b1552ad45692b"
-            ]
-        ]
-    },
-    {
-        "id": "6988503e929d07a0",
-        "type": "function",
-        "z": "6826885eba8f094e",
-        "name": "Play control",
-        "func": "msg.topic = \"video\";\n\nif( msg.payload !== \"change\" )\n    return;\nif( msg.name === \"Path Analysis\" )\n    msg.payload = true;\nelse\n    msg.payload = false;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 240,
-        "wires": [
-            [
-                "5de18a219f14737a"
-            ]
         ]
     },
     {
@@ -327,8 +329,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 90,
-        "y": 360,
+        "x": 110,
+        "y": 280,
         "wires": [
             [
                 "33093d524cbe9227"
@@ -339,6 +341,7 @@
         "id": "c5a50f5e52a4e420",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "flow.age",
         "rules": [
             {
@@ -354,8 +357,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 520,
+        "x": 450,
+        "y": 600,
         "wires": [
             [
                 "032191fa5d2b3877"
@@ -366,6 +369,7 @@
         "id": "59f1c6c667b02943",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "flow.distance",
         "rules": [
             {
@@ -381,8 +385,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 560,
+        "x": 460,
+        "y": 640,
         "wires": [
             [
                 "72b82d46f10635ce"
@@ -422,12 +426,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 260,
-        "y": 360,
+        "x": 280,
+        "y": 280,
         "wires": [
             [
-                "6507974bd02961b7",
-                "5de18a219f14737a"
+                "6901aff07ebe74aa"
             ]
         ]
     },
@@ -446,78 +449,11 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 630,
+        "x": 940,
         "y": 240,
         "wires": [
             [
                 "8033c61bc88b485b"
-            ]
-        ]
-    },
-    {
-        "id": "c3626cd2945bafcb",
-        "type": "function",
-        "z": "6826885eba8f094e",
-        "name": "flow.pass",
-        "func": "msg.topic = \"box\";\nmsg.payload = flow.get(\"pass\") || {\n    id: \"pass\",\n    x1: 100,\n    x2: 900,\n    y1: 100,\n    y2: 900\n}\nmsg.payload.id = \"pass\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 960,
-        "y": 600,
-        "wires": [
-            [
-                "09fa1c3952ca01f9"
-            ]
-        ]
-    },
-    {
-        "id": "7131d911ac4a5414",
-        "type": "ui_button",
-        "z": "6826885eba8f094e",
-        "name": "",
-        "group": "081d3aea57196c10",
-        "order": 5,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "label": "Save",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "green",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "box",
-        "topicType": "str",
-        "x": 670,
-        "y": 640,
-        "wires": [
-            [
-                "34e3e2f7d219a97d"
-            ]
-        ]
-    },
-    {
-        "id": "69bd140e54604154",
-        "type": "link in",
-        "z": "6826885eba8f094e",
-        "name": "link in 2",
-        "links": [
-            "4ad506bb78251feb",
-            "09fa1c3952ca01f9",
-            "1a197e6ec4d2ad2c"
-        ],
-        "x": 325,
-        "y": 280,
-        "wires": [
-            [
-                "5de18a219f14737a",
-                "f21f797a8210670b"
             ]
         ]
     },
@@ -533,56 +469,15 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 1180,
         "y": 240,
-        "wires": []
-    },
-    {
-        "id": "dafeca6f89f1950f",
-        "type": "ui_button",
-        "z": "6826885eba8f094e",
-        "name": "",
-        "group": "081d3aea57196c10",
-        "order": 4,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "label": "Set area objects must pass",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 740,
-        "y": 600,
-        "wires": [
-            [
-                "c3626cd2945bafcb"
-            ]
-        ]
-    },
-    {
-        "id": "09fa1c3952ca01f9",
-        "type": "link out",
-        "z": "6826885eba8f094e",
-        "name": "link out 4",
-        "mode": "link",
-        "links": [
-            "bd23f94792e0ae83",
-            "69bd140e54604154"
-        ],
-        "x": 1105,
-        "y": 600,
         "wires": []
     },
     {
         "id": "f5e10899b464aae2",
         "type": "ui_dropdown",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "Class selection",
         "label": "",
         "tooltip": "",
@@ -644,8 +539,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 700,
-        "y": 480,
+        "x": 690,
+        "y": 560,
         "wires": [
             [
                 "9b610998c239b9f3"
@@ -656,6 +551,7 @@
         "id": "9b610998c239b9f3",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "flow.classes",
         "rules": [
             {
@@ -672,8 +568,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 480,
+        "x": 960,
+        "y": 560,
         "wires": [
             []
         ]
@@ -741,7 +637,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 970,
+        "x": 880,
         "y": 280,
         "wires": []
     },
@@ -757,11 +653,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 280,
+        "x": 500,
+        "y": 200,
         "wires": [
             [
-                "16c0b61eeffde44b"
+                "6c63e1c54ee3cf78"
             ]
         ]
     },
@@ -779,7 +675,7 @@
         "correl": "",
         "expiry": "",
         "broker": "34d35ac878fbc6dc",
-        "x": 940,
+        "x": 930,
         "y": 100,
         "wires": []
     },
@@ -787,20 +683,19 @@
         "id": "84a913dee9f42f91",
         "type": "function",
         "z": "6826885eba8f094e",
-        "name": "Path Analysis Database",
-        "func": "msg.topic = \"path/\" + flow.get(\"serial\"); \nmsg.payload.name = flow.get(\"name\");\nmsg.payload.device = flow.get(\"serial\");\nreturn msg;",
+        "name": "Output format",
+        "func": "msg.topic = \"path/\" + flow.get(\"serial\"); \nmsg.payload.name = flow.get(\"device\").hostname;\nmsg.payload.device = flow.get(\"device\").serial;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
+        "x": 740,
         "y": 100,
         "wires": [
             [
-                "a272d547097102d9",
-                "a4f5a4dabaf83d52"
+                "a272d547097102d9"
             ]
         ]
     },
@@ -808,6 +703,7 @@
         "id": "b1ae7fbcab877866",
         "type": "change",
         "z": "6826885eba8f094e",
+        "g": "f2e3604ff42ab3bc",
         "name": "flow.classes",
         "rules": [
             {
@@ -823,8 +719,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 470,
-        "y": 480,
+        "x": 460,
+        "y": 560,
         "wires": [
             [
                 "f5e10899b464aae2"
@@ -832,20 +728,10 @@
         ]
     },
     {
-        "id": "98559979788592be",
-        "type": "comment",
-        "z": "6826885eba8f094e",
-        "name": "Box control",
-        "info": "",
-        "x": 1180,
-        "y": 600,
-        "wires": []
-    },
-    {
         "id": "16c0b61eeffde44b",
         "type": "function",
         "z": "6826885eba8f094e",
-        "name": "list",
+        "name": "List",
         "func": "var detections = flow.get(\"detections\");\nvar list = [];\n\ndetections.forEach(function(detection){\n    list.push({\n        time: new Date(detection.timestamp).toTimeString().substr(0,8),\n        timestamp: detection.timestamp,\n        class: detection.class,\n        age: detection.age,\n        distance: detection.distance,\n        confidence: detection.confidence,\n        hor: detection.dx < 0 ? \"Left\":\"Right\",\n        ver: detection.dx < 0 ? \"Up\" : \"Down\",\n    });\n});\n\nlist.sort(function(a,b){return b.timestamp-a.timestamp});\nmsg.payload = list;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -853,7 +739,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
+        "x": 690,
         "y": 280,
         "wires": [
             [
@@ -881,45 +767,13 @@
         "payloadType": "bool",
         "topic": "video",
         "topicType": "str",
-        "x": 300,
-        "y": 200,
+        "x": 110,
+        "y": 240,
         "wires": [
             [
-                "4d09846fd436fe1b",
-                "e13b1552ad45692b"
+                "6901aff07ebe74aa"
             ]
         ]
-    },
-    {
-        "id": "a4f5a4dabaf83d52",
-        "type": "debug",
-        "z": "6826885eba8f094e",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1130,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "1a197e6ec4d2ad2c",
-        "type": "link out",
-        "z": "6826885eba8f094e",
-        "name": "link out 5",
-        "mode": "link",
-        "links": [
-            "bbbe7ba0f5d24f33",
-            "69bd140e54604154"
-        ],
-        "x": 495,
-        "y": 140,
-        "wires": []
     },
     {
         "id": "6c63e1c54ee3cf78",
@@ -933,45 +787,96 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 320,
+        "x": 690,
+        "y": 200,
         "wires": [
             [
-                "4d09846fd436fe1b",
-                "870c93cd1ae7b155"
+                "4d09846fd436fe1b"
             ]
         ]
     },
     {
-        "id": "e13b1552ad45692b",
-        "type": "delay",
+        "id": "dafeca6f89f1950f",
+        "type": "ui_button",
         "z": "6826885eba8f094e",
         "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 280,
-        "y": 320,
+        "group": "081d3aea57196c10",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Set area objects must pass",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 340,
         "wires": [
             [
-                "6c63e1c54ee3cf78"
+                "c3626cd2945bafcb"
             ]
         ]
     },
     {
-        "id": "870c93cd1ae7b155",
+        "id": "c3626cd2945bafcb",
+        "type": "function",
+        "z": "6826885eba8f094e",
+        "name": "flow.pass",
+        "func": "msg.topic = \"box\";\nmsg.payload = flow.get(\"pass\") || {\n    id: \"pass\",\n    x1: 100,\n    x2: 900,\n    y1: 100,\n    y2: 900\n}\nmsg.payload.id = \"pass\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "cf02dd48ae102d68"
+            ]
+        ]
+    },
+    {
+        "id": "7131d911ac4a5414",
+        "type": "ui_button",
+        "z": "6826885eba8f094e",
+        "name": "",
+        "group": "081d3aea57196c10",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "box",
+        "topicType": "str",
+        "x": 110,
+        "y": 380,
+        "wires": [
+            [
+                "34e3e2f7d219a97d"
+            ]
+        ]
+    },
+    {
+        "id": "802a7e2d821f924c",
         "type": "debug",
         "z": "6826885eba8f094e",
-        "name": "debug 5",
+        "g": "f2e3604ff42ab3bc",
+        "name": "debug 1",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -979,8 +884,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 320,
+        "x": 940,
+        "y": 520,
         "wires": []
     },
     {
