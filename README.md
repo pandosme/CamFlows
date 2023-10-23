@@ -1,6 +1,6 @@
 # CamFlows
-A collection of flows that can solve various integration and administration use cases
-
+A collection of flows that can solve various integration and administration use cases with Axis Cameras  
+  
 ___
 ## Modify Axis Device Schedule
 Sometimes you need to automate devices schedule settings.  
