@@ -22,6 +22,10 @@ Required Nodes
 - [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
   
 ![Flow](pictures/ThermalOffsetFlow.jpeg)
+
 ![Flow](pictures/ThermalOffsetDashboard.jpeg)
   
 ### [View/copy flow](https://github.com/pandosme/flows/blob/master/flows/ThermalTresholdOffset.json)
+
+
+___
