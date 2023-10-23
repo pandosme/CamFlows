@@ -65,7 +65,6 @@
             "color": "#000000"
         },
         "nodes": [
-            "a8f52f66d62c59ba",
             "21722930a6f1505e",
             "d242e954aad16dec",
             "0052b6f72b9f7de0",
@@ -74,11 +73,12 @@
             "30d7259cff949ba3",
             "f2a24f7fe08eeeb5",
             "49b3ea9c89ec89f2",
-            "a6f93bcb2cc66c33"
+            "a6f93bcb2cc66c33",
+            "a8f52f66d62c59ba"
         ],
         "x": 294,
         "y": 39,
-        "w": 612,
+        "w": 632,
         "h": 162
     },
     {
@@ -119,8 +119,7 @@
             "71572d9318f9a434",
             "134b3715edca1e1f",
             "029b2ac8438bf1d6",
-            "cec47725b6ec4aa1",
-            "0dd11fa2faac7b1b"
+            "cec47725b6ec4aa1"
         ],
         "x": 294,
         "y": 499,
@@ -246,7 +245,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 550,
+        "x": 390,
         "y": 540,
         "wires": [
             [
@@ -284,33 +283,6 @@
         ]
     },
     {
-        "id": "a8f52f66d62c59ba",
-        "type": "ui_text_input",
-        "z": "f9024c38aa4c9aad",
-        "g": "6a2c738da9751952",
-        "name": "",
-        "label": "Address",
-        "tooltip": "",
-        "group": "e1e003efad395792",
-        "order": 1,
-        "width": "3",
-        "height": "1",
-        "passthru": true,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 620,
-        "y": 80,
-        "wires": [
-            [
-                "0052b6f72b9f7de0"
-            ]
-        ]
-    },
-    {
         "id": "21722930a6f1505e",
         "type": "ui_text_input",
         "z": "f9024c38aa4c9aad",
@@ -324,7 +296,7 @@
         "height": "1",
         "passthru": true,
         "mode": "text",
-        "delay": 300,
+        "delay": "300",
         "topic": "topic",
         "sendOnBlur": true,
         "className": "",
@@ -360,7 +332,8 @@
         "y": 160,
         "wires": [
             [
-                "a68d760f19f24bf1"
+                "a68d760f19f24bf1",
+                "f1f7e058c44d15f9"
             ]
         ]
     },
@@ -402,7 +375,8 @@
                 "p": "user",
                 "pt": "flow",
                 "to": "payload",
-                "tot": "msg"
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
@@ -425,10 +399,11 @@
         "rules": [
             {
                 "t": "set",
-                "p": "user",
+                "p": "password",
                 "pt": "flow",
-                "to": "password",
-                "tot": "msg"
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
@@ -436,7 +411,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
+        "x": 810,
         "y": 160,
         "wires": [
             []
@@ -483,7 +458,8 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "address",
-                "tot": "flow"
+                "tot": "flow",
+                "dc": true
             }
         ],
         "action": "",
@@ -511,7 +487,8 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "user",
-                "tot": "flow"
+                "tot": "flow",
+                "dc": true
             }
         ],
         "action": "",
@@ -539,7 +516,8 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "password",
-                "tot": "flow"
+                "tot": "flow",
+                "dc": true
             }
         ],
         "action": "",
@@ -925,7 +903,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 980,
+        "x": 960,
         "y": 540,
         "wires": [
             [
@@ -938,7 +916,7 @@
         "type": "change",
         "z": "f9024c38aa4c9aad",
         "g": "093bab86089b7e23",
-        "name": "",
+        "name": "Credentials",
         "rules": [
             {
                 "t": "set",
@@ -974,7 +952,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
+        "x": 590,
         "y": 600,
         "wires": [
             [
@@ -1020,7 +998,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
+        "x": 590,
         "y": 540,
         "wires": [
             [
@@ -1043,44 +1021,7 @@
         "x": 1100,
         "y": 740,
         "wires": [
-            [
-                "823eea2ae96390df"
-            ]
-        ]
-    },
-    {
-        "id": "0dd11fa2faac7b1b",
-        "type": "change",
-        "z": "f9024c38aa4c9aad",
-        "g": "093bab86089b7e23",
-        "name": "spot",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "spot",
-                "tot": "flow"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 370,
-        "y": 600,
-        "wires": [
-            [
-                "cac4c6caee66e51a"
-            ]
+            []
         ]
     },
     {
@@ -1400,35 +1341,6 @@
         ]
     },
     {
-        "id": "823eea2ae96390df",
-        "type": "link out",
-        "z": "f9024c38aa4c9aad",
-        "name": "link out 1",
-        "mode": "link",
-        "links": [
-            "fc68df4af672ee83"
-        ],
-        "x": 1255,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "fc68df4af672ee83",
-        "type": "link in",
-        "z": "f9024c38aa4c9aad",
-        "name": "link in 1",
-        "links": [
-            "823eea2ae96390df"
-        ],
-        "x": 145,
-        "y": 600,
-        "wires": [
-            [
-                "0dd11fa2faac7b1b"
-            ]
-        ]
-    },
-    {
         "id": "b4a533930f381b7b",
         "type": "ui_button",
         "z": "f9024c38aa4c9aad",
@@ -1478,7 +1390,7 @@
         "links": [
             "ac3699d1b6a310ac"
         ],
-        "x": 145,
+        "x": 245,
         "y": 540,
         "wires": [
             [
@@ -1517,7 +1429,7 @@
         "links": [
             "226e601c5c53814a"
         ],
-        "x": 815,
+        "x": 795,
         "y": 480,
         "wires": [
             [
@@ -1533,6 +1445,59 @@
         "info": "",
         "x": 2050,
         "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4653343b54a11239",
+        "type": "comment",
+        "z": "f9024c38aa4c9aad",
+        "name": "Video Settings",
+        "info": "",
+        "x": 140,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "a8f52f66d62c59ba",
+        "type": "ui_text_input",
+        "z": "f9024c38aa4c9aad",
+        "g": "6a2c738da9751952",
+        "name": "",
+        "label": "Address",
+        "tooltip": "",
+        "group": "e1e003efad395792",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 620,
+        "y": 80,
+        "wires": [
+            [
+                "0052b6f72b9f7de0"
+            ]
+        ]
+    },
+    {
+        "id": "f1f7e058c44d15f9",
+        "type": "debug",
+        "z": "f9024c38aa4c9aad",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 160,
         "wires": []
     },
     {
