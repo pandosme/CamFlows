@@ -27,7 +27,7 @@ Required Nodes that must be installed:
   
 ![Flow](pictures/ThermalOffsetDashboard.jpeg)
   
-### [View/copy flow](https://raw.githubusercontent.com/pandosme/CamFlows/master/flows/ThermalTresholdOffset.json)
+### [View/copy flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalTresholdOffset.json)
 
 
 ___
