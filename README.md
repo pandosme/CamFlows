@@ -1,5 +1,5 @@
-# Flows
-A collection of common flows
+# CamFlows
+A collection of flows that can solve various integration and administration use cases
 
 ___
 ## Modify Axis Device Schedule
