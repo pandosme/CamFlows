@@ -1,5 +1,5 @@
 # CamFlows
-A collection of flows that can solve various integration and administration use cases with Axis Cameras  
+A collection of flows that can solve various integration and administration use cases with Axis Cameras.  Node-RED can be hosted on any device, [including on the camera](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html)  
   
 ___
 ## Modify Axis Device Schedule
@@ -23,8 +23,10 @@ Required Nodes that must be installed:
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
   
+Update the orange nodes (marked red triangle) with you Axis device address and credentials
 ![Flow](pictures/ThermalOffsetFlow.jpeg)
   
+Use the dashboard to set offset and update the threshhold
 ![Flow](pictures/ThermalOffsetDashboard.jpeg)
   
 ### [View/copy flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalTresholdOffset.json)
