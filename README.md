@@ -11,7 +11,7 @@ Required Nodes that must be installed:
   
 ### Flow
 No adjustments needs to be done in the flow.
-![Flow](pictures/ThermalMonitoringFlowFlow.jpeg)
+![Flow](pictures/ThermalMonitoring.json)
   
 ### Dashboard
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
