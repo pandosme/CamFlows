@@ -10,7 +10,7 @@ In order to set a good temprature threshold alarm level, it is important that yo
 - [Node-RED](https://nodered.org/) installed on a host on the same network as the camera
 - Import [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) to your Node-RED.
 - Import [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com) to your Node-RED
-- Import the [Themral Monitoring Flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json) to your Node-RED
+- Import the [Thermal Monitoring Flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json) to your Node-RED
   
 ### Dashboard
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
