@@ -2,7 +2,7 @@
 A collection of flows that can solve various integration and administration use cases with Axis Cameras.  Node-RED can be hosted on any device, [including on the camera](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html)  
   
 ___
-## Montor Thermal camera temperature variations over time
+## Monitor Thermal camera temperature variations over time
 In order to set a good temprature threshold alarm level, it is important that you know the normal variations.  This may be hard to estimate.  This flow samples the tamperature over up to a week and display the temperature variations in a graph.  The Node-RED dashboard can provide a live video and by clicking anywhere on the video, a noew spot will be selected for monitoring.
 
 ## Prerequisite
