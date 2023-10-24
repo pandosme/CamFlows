@@ -9,15 +9,13 @@ Required Nodes that must be installed:
 - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 - [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
   
-### Flow
-No adjustments needs to be done in the flow.  
-![Flow](pictures/ThermalMonitoringFlow.jpeg)
-  
 ### Dashboard
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
-
   
-### [View/copy flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json)
+### Flow
+#### [View/copy the flow and import it into your Node-RED](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json)
+No adjustments needs to be done in the flow.  
+![Flow](pictures/ThermalMonitoringFlow.jpeg)
 
 ___
 ## Set Thermal alarm threshold offset based on normalized temperture
