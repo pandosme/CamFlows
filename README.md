@@ -10,7 +10,7 @@ Required Nodes that must be installed:
 - [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
   
 ### Flow
-No adjustments needs to be done in the flow.
+No adjustments needs to be done in the flow.  
 ![Flow](pictures/ThermalMonitoringFlow.jpeg)
   
 ### Dashboard
