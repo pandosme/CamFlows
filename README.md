@@ -11,10 +11,11 @@ Required Nodes that must be installed:
   
 ### Flow
 No adjustments needs to be done in the flow.
-![Flow](pictures/ThermalMonitoring.json)
+![Flow](pictures/ThermalMonitoringFlow.jpeg)
   
 ### Dashboard
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
+
   
 ### [View/copy flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json)
 
