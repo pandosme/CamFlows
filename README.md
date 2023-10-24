@@ -5,9 +5,12 @@ ___
 ## Montor Thermal camera temperature variations over time
 In order to set a good temprature threshold alarm level, it is important that you know the normal variations.  This may be hard to estimate.  This flow samples the tamperature over up to a week and display the temperature variations in a graph.  The Node-RED dashboard can provide a live video and by clicking anywhere on the video, a noew spot will be selected for monitoring.
 
-Required Nodes that must be installed:
-- [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
-- [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
+## Prerequisite
+- Axis Thermal camera
+- [Node-RED](https://nodered.org/) installed on a host on the same network as the camera
+- Import [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) to your Node-RED.
+- Import [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com) to your Node-RED
+- Import the [Themral Monitoring Flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json) to your Node-RED
   
 ### Dashboard
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
@@ -23,18 +26,20 @@ A way to configure the thermal cameras alarm threshold temperture based on the n
 the threshold value the the temperature + a user-defined offset value for each area.  The offset value can be set in the flow or dashboard.
 The reconfiguration of threshold can be triggered with a button in the Node-RED dashvoard or by an API.  With the API it is possible to setup a recipient to Node-RED server and trigger the cnfiguration with e.g. a Manual-Input-Button in the camera.  
 
-Required Nodes that must be installed:
-- [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
-- [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com)
+## Prerequisite
+- Axis Thermal camera
+- [Node-RED](https://nodered.org/) installed on a host on the same network as the camera
+- Import [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) to your Node-RED
+- Import [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com) to your Node-RED
+- Import the [Thermal offset flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalTresholdOffset.json) to you Node-RED
   
-Update the orange nodes (marked red triangle) with you Axis device address and credentials
-![Flow](pictures/ThermalOffsetFlow.jpeg)
-  
+## Dashboard
 Use the dashboard to set offset and update the threshhold
 ![Flow](pictures/ThermalOffsetDashboard.jpeg)
-  
-### [View/copy flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalTresholdOffset.json)
 
+## Flow
+Update the orange nodes (marked red triangle) with you Axis device address and credentials
+![Flow](pictures/ThermalOffsetFlow.jpeg)
 
 ___
 ## Modify Axis Device Schedule
