@@ -23,8 +23,7 @@ A way to configure the thermal cameras alarm threshold temperture based on the n
 ![Flow](pictures/ThermalMonitoringDashboard.jpeg)
   
 ### Flow
-#### [View/copy the flow and import it into your Node-RED](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalMonitoring.json)
-No adjustments needs to be done in the flow.  
+An overview of the flow.  No adjustments needs to be done in the flow.  
 ![Flow](pictures/ThermalMonitoringFlow.jpeg)
 
 
