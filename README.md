@@ -8,6 +8,7 @@ A way to configure the thermal cameras alarm threshold temperture based on the n
 * Monitor ambient temperture changes over time to understand how it fluctuates
 * Set all the area alarm threshold temperture based on the ambient temperature and a user-defined offset
 * Automatically change the area alarm threshold when the ambient temperature changes
+#### [View/Copy flow json](https://acap.juhlin.me/package/ThermalMonitoring)
 
 ## Prerequisite
 - Axis Thermal camera
