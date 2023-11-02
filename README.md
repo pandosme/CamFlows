@@ -3,10 +3,12 @@ A collection of flows that can solve various integration and administration use 
   
 
 ___
-## Monitor Thermal camera temperature variations over time
-A way to configure the thermal cameras alarm threshold temperture based on the normalized average temperture in areas.
-* Monitor ambient temperture changes over time to understand how it fluctuates
-* Set all the area alarm threshold temperture based on the ambient temperature and a user-defined offset
+## Thermal camera alarm temperature on ambient temperature changes
+When using a Thermal camera to alert on high/low temperature values, you may need to take ambient temperature variations into account.  This may be a challenge.  Also, the alarm area temperature thresholds may need to be adjust based on ambient temperature changes.
+This flow provides a user dashboard to:
+* View Live video of the Thermal Camera
+* Monitor ambient temperature changes over time to understand how it fluctuates
+* Set all the area alarm threshold temperature based on the ambient temperature at a user-defined offset
 * Automatically change the area alarm threshold when the ambient temperature changes
 #### [View/Copy flow json](https://acap.juhlin.me/package/ThermalMonitoring)
 
