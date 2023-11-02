@@ -4,7 +4,7 @@ A collection of flows that can solve various integration and administration use 
 
 ___
 ## Thermal camera alarm temperature on ambient temperature changes
-When using a Thermal camera to alert on high/low temperature values, you may need to take ambient temperature variations into account.  This may be a challenge.  Also, the alarm area temperature thresholds may need to be adjust based on ambient temperature changes.
+When using a Thermal camera to alert on high/low temperature values, you may need to take ambient temperature variations into account.  This may be a challenge.  Also, the alarm area temperature thresholds may need to be adjusted based on ambient temperature changes.
 
 
 This flow provides a user dashboard to:
