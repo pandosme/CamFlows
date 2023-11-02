@@ -14,7 +14,7 @@ A way to configure the thermal cameras alarm threshold temperture based on the n
 - [Node-RED](https://nodered.org/) installed on a host on the same network as the camera
 - Import [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) to your Node-RED.
 - Import [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com) to your Node-RED
-- Import (Copy/Paste) the [Thermal Monitoring Flow](https://raw.githubusercontent.com/pandosme/CamFlows/master/flows/ThermalMonitoring.json) to your Node-RED
+- Import (Copy/Paste) the [Thermal Monitoring Flow](https://acap.juhlin.me/package/ThermalMonitoring) to your Node-RED
 
 ## Limitations
 * Supports only a singel thermal camera.  The flow could be extended to support more.
