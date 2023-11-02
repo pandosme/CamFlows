@@ -21,10 +21,11 @@ No adjustments needs to be done in the flow.
 ![Flow](pictures/ThermalMonitoringFlow.jpeg)
 
 ___
-## Set Thermal alarm threshold offset based on normalized temperture
-A way to configure the thermal cameras alarm threshold temperture based on the normalized average temperture in areas.  The flow reads out the temperature for all areas and updates
-the threshold value the the temperature + a user-defined offset value for each area.  The offset value can be set in the flow or dashboard.
-The reconfiguration of threshold can be triggered with a button in the Node-RED dashvoard or by an API.  With the API it is possible to setup a recipient to Node-RED server and trigger the cnfiguration with e.g. a Manual-Input-Button in the camera.  
+## Set Thermal alarm threshold offset based on ambient temperture
+A way to configure the thermal cameras alarm threshold temperture based on the normalized average temperture in areas.
+* Monitor ambient temperture changes over time to understand how it fluctuates
+* Set all the area alarm threshold temperture based on the ambient temperature and a user-defined offset
+* Automatically change the area alarm threshold when the ambient temperature changes
 
 ## Prerequisite
 - Axis Thermal camera
@@ -32,7 +33,10 @@ The reconfiguration of threshold can be triggered with a button in the Node-RED 
 - Import [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard) to your Node-RED
 - Import [node-red-contrib-axis-com](https://flows.nodered.org/node/node-red-contrib-axis-com) to your Node-RED
 - Import the [Thermal offset flow](https://github.com/pandosme/CamFlows/blob/master/flows/ThermalTresholdOffset.json) to you Node-RED
-  
+
+## Limitations
+* Supports only a singel thermal camera.  The flow could be extended to support more.
+
 ## Dashboard
 Use the dashboard to set offset and update the threshhold
 ![Flow](pictures/ThermalOffsetDashboard.jpeg)
