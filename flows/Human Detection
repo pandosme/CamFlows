@@ -1,0 +1,68 @@
+[
+    {
+        "id": "ccee555989a00ad2",
+        "type": "Objects",
+        "z": "b422caa5c33c95a6",
+        "version": "2",
+        "output": "1",
+        "classFilter": "-1",
+        "confidence": "40",
+        "rotation": "0",
+        "cog": "0",
+        "predictions": "0",
+        "attributes": "50",
+        "idle": "0",
+        "x": 220,
+        "y": 80,
+        "wires": [
+            [
+                "d76c95cc698d3bc9"
+            ]
+        ]
+    },
+    {
+        "id": "d76c95cc698d3bc9",
+        "type": "function",
+        "z": "b422caa5c33c95a6",
+        "name": "Filter",
+        "func": "for(var i = 0; i < msg.payload.length; i++)\n    if( msg.payload[i].class === \"Human\" )\n        return msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "752ee77c9b43f19e"
+            ]
+        ]
+    },
+    {
+        "id": "752ee77c9b43f19e",
+        "type": "trigger",
+        "z": "b422caa5c33c95a6",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "json",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 540,
+        "y": 80,
+        "wires": [
+            [
+                "f45f7c3e7e2b9920"
+            ]
+        ]
+    }
+]
