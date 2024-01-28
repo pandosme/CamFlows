@@ -1,6 +1,6 @@
 [
     {
-        "id": "0ac396398ba6bce7",
+        "id": "ae59bef154e963a8",
         "type": "tab",
         "label": "Detection Recording Controller",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "94e86c2cb22bb290",
+        "id": "9b240589d5a32388",
         "type": "group",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Dashboard",
         "style": {
             "stroke": "#000000",
@@ -19,49 +19,49 @@
             "color": "#000000"
         },
         "nodes": [
-            "e9928706275f3e2b",
-            "d57b9c54e00269ed",
-            "d8de1951951fd651",
-            "cae2caf9a0a901d5",
-            "19f3feaefe9eadb8",
-            "a484c050c055dc86",
-            "27fef1dac85c0e25",
-            "b95e554b09f19e87",
-            "58c641038c28db4d",
-            "95ef875df544f0a7",
-            "4981e3ae4fe7dcb4",
-            "b0dafec5f0806e99",
-            "bc5b5c6e6e79f226",
-            "bd63ed657b201631",
-            "cf06b19f59f2bbfd",
-            "635add4c3e683940",
-            "c6e35cb7c8055810",
-            "15b2061fc694f812",
-            "27bd49271d139fee",
-            "884cd560a24961d5",
-            "9aecaea1a1f8937e",
-            "87e2476aac5b636d",
-            "b3731c029ac366d6",
-            "b08614c7fd97b349",
-            "21caf6692ea46fad",
-            "e1c0246be468a819",
-            "e624b6b1f65b3511",
-            "d68362bcc9fc2d98",
-            "df5674f854741738",
-            "73a704c70c735d00",
-            "20a516b4c7d9438f",
-            "f8486ffd59974cd0",
-            "8f01b96663574f2b",
-            "1090cd4187cf762d",
-            "f9dd4fa130744384",
-            "8994f7e02f1ccd70",
-            "5e8988930f2d0897",
-            "0005fc39e141213a",
-            "24218be0b91b9734",
-            "84fa3e1114958d32",
-            "2ce55bbb3a991498",
-            "984dc6f1c0ec8afd",
-            "38c5a852b5640e80"
+            "6f6767317e4ae90c",
+            "bec8f6029b51c2f8",
+            "d1c56e4bd4f26587",
+            "4c934366d3b6536d",
+            "e703c57c763aface",
+            "e2bff10f57fad142",
+            "2acc0166682b741e",
+            "441e6b7f4aaa5ec2",
+            "7a53d1b1ac889615",
+            "1695837fc01fc19c",
+            "7d20dcec941d1c2e",
+            "af6f8dbee81fe822",
+            "7a0f64f7ffb7e871",
+            "484305d50ec60c22",
+            "d47dc3c7e1c04dd7",
+            "8527b8bd3130a332",
+            "e7dc0d34bc779fab",
+            "77bfc9bd503b593b",
+            "50a2823780791afd",
+            "ef6659c57ca18278",
+            "5c346e00fcf54e07",
+            "8eae351f677bee20",
+            "f107dbc6f1403dd6",
+            "9eea200a06621eda",
+            "f0f6a20255a2503f",
+            "d3b77b7b76cdd064",
+            "5537e6bbdfbe331a",
+            "47ed52d82e768eda",
+            "569bcf3d105e2f01",
+            "4a77fa3c635ef6e1",
+            "d4857c13b1f2518b",
+            "60e70b3a178e12d3",
+            "e306d660928d8a0f",
+            "7a268576761a7904",
+            "273aa9c7924ee67d",
+            "9c4a17aa5a364bbb",
+            "edf6ee288be377ab",
+            "e22427270a657863",
+            "8d45667715620596",
+            "e2a0aa5b5f2b9284",
+            "e132979c1d4eb93e",
+            "7fc062f697003ba0",
+            "2fcbdf35c1ee03a5"
         ],
         "x": 254,
         "y": 739,
@@ -69,26 +69,26 @@
         "h": 782
     },
     {
-        "id": "34c7a1519ba616fa",
+        "id": "eb7c4ad21766d486",
         "type": "group",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Recording Method",
         "style": {
             "label": true
         },
         "nodes": [
-            "b1111b2652e96bf6",
-            "fe882694ee49fa50",
-            "e64dd8c685b8391c",
-            "351fa805ddaaf7b9",
-            "2a4ece199118360b",
-            "e1bcba3ded9a6277",
-            "642e3e9c7513041b",
-            "4e1d2678e05b623e",
-            "f48362a9c2a53573",
-            "4cfe87d72802fe07",
-            "3d9184a6ebecf7e5",
-            "1f9d25517145abb4"
+            "e958e994ee4ac3d0",
+            "3636e37af148d960",
+            "4444c1188b048e72",
+            "e4d57b9672540918",
+            "ed017a4f5618d253",
+            "d61c1625f93fbce1",
+            "5379c1b466e0a904",
+            "805a21247611febc",
+            "fbe3ddbc092cf01c",
+            "de0cc53ceaf5b2df",
+            "8465606b4eefb676",
+            "57f94133eee6908f"
         ],
         "x": 254,
         "y": 499,
@@ -96,19 +96,19 @@
         "h": 202
     },
     {
-        "id": "cab3b38bad09e5c1",
+        "id": "856334e11153b9b4",
         "type": "group",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Detection / Trigger",
         "style": {
             "label": true
         },
         "nodes": [
-            "704656b901fe94ca",
-            "60032f6ab17d898a",
-            "ca114ec07cb8c14a",
-            "21fa83f8bda58ea8",
-            "464dd830bc790782"
+            "bf38227290e5cd17",
+            "a77c7181b538cf9d",
+            "2b02739c84b282d1",
+            "428ddc9defcc8480",
+            "807e34b1854930bf"
         ],
         "x": 254,
         "y": 299,
@@ -116,21 +116,21 @@
         "h": 162
     },
     {
-        "id": "2705dbcb080872fd",
+        "id": "a3ca2fca866b72b8",
         "type": "group",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Init",
         "style": {
             "label": true
         },
         "nodes": [
-            "db23fe7a2459b9c8",
-            "030b13b36bc1223f",
-            "6219a8708b3566ee",
-            "29f58521b2d53d65",
-            "7f6e845b4438f9ea",
-            "74c45ff921303e03",
-            "868526529f2dd187"
+            "d2f7e48ff4ee9cff",
+            "f638a0056e80d4dc",
+            "fe9893a372bcb6a9",
+            "2cbd46bd1048e363",
+            "1b017c3cec594959",
+            "ce5b84efe2ec9e8b",
+            "7c55a50f01c21568"
         ],
         "x": 254,
         "y": 99,
@@ -138,70 +138,70 @@
         "h": 162
     },
     {
-        "id": "58c641038c28db4d",
+        "id": "7a53d1b1ac889615",
         "type": "junction",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "x": 1080,
         "y": 1240,
         "wires": [
             [
-                "1f0c73f6262ddfde"
+                "34493990f29dbd9b"
             ]
         ]
     },
     {
-        "id": "b3731c029ac366d6",
+        "id": "f107dbc6f1403dd6",
         "type": "junction",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "x": 280,
         "y": 860,
         "wires": [
             [
-                "8f01b96663574f2b",
-                "73a704c70c735d00",
-                "8994f7e02f1ccd70",
-                "24218be0b91b9734",
-                "b08614c7fd97b349",
-                "e624b6b1f65b3511",
-                "b0dafec5f0806e99"
+                "e306d660928d8a0f",
+                "4a77fa3c635ef6e1",
+                "9c4a17aa5a364bbb",
+                "8d45667715620596",
+                "9eea200a06621eda",
+                "5537e6bbdfbe331a",
+                "af6f8dbee81fe822"
             ]
         ]
     },
     {
-        "id": "3d9184a6ebecf7e5",
+        "id": "8465606b4eefb676",
         "type": "junction",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "x": 280,
         "y": 540,
         "wires": [
             [
-                "351fa805ddaaf7b9",
-                "e1bcba3ded9a6277"
+                "e4d57b9672540918",
+                "d61c1625f93fbce1"
             ]
         ]
     },
     {
-        "id": "1f9d25517145abb4",
+        "id": "57f94133eee6908f",
         "type": "junction",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "x": 280,
         "y": 580,
         "wires": [
             [
-                "2a4ece199118360b",
-                "642e3e9c7513041b"
+                "ed017a4f5618d253",
+                "5379c1b466e0a904"
             ]
         ]
     },
     {
-        "id": "704656b901fe94ca",
+        "id": "bf38227290e5cd17",
         "type": "trigger",
-        "z": "0ac396398ba6bce7",
-        "g": "cab3b38bad09e5c1",
+        "z": "ae59bef154e963a8",
+        "g": "856334e11153b9b4",
         "name": "",
         "op1": "true",
         "op2": "false",
@@ -219,18 +219,18 @@
         "y": 380,
         "wires": [
             [
-                "ee659b6e8f153493"
+                "a99c2cbe8eba75f8"
             ],
             [
-                "06fbaef0b56055cd"
+                "b19b3bddf4bf2c25"
             ]
         ]
     },
     {
-        "id": "b1111b2652e96bf6",
+        "id": "e958e994ee4ac3d0",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "http://[recorder]/record/startStart Request",
         "func": "msg.url = \"http://rec.juhlin.me/record/start\" ;\n\nmsg.payload = {\n    serial: flow.get(\"camera\").serial,\n    buffer: flow.get(\"bufferTime\") || 5,\n    tag: \"Detection\",\n    method: \"FMR\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -243,15 +243,15 @@
         "y": 540,
         "wires": [
             [
-                "e64dd8c685b8391c"
+                "4444c1188b048e72"
             ]
         ]
     },
     {
-        "id": "fe882694ee49fa50",
+        "id": "3636e37af148d960",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "http://[recorder]/record/startStart Request",
         "func": "msg.url = \"http://rec.juhlin.me/record/stop\" ;\n\nmsg.payload = {\n    serial: flow.get(\"camera\").serial,\n    buffer: 7,\n    tag: \"Detection\",\n    method: \"FMR\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -264,15 +264,15 @@
         "y": 580,
         "wires": [
             [
-                "e64dd8c685b8391c"
+                "4444c1188b048e72"
             ]
         ]
     },
     {
-        "id": "e64dd8c685b8391c",
+        "id": "4444c1188b048e72",
         "type": "http request",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -289,14 +289,14 @@
         "y": 540,
         "wires": [
             [
-                "4af5bf0c04ba4b7e"
+                "39bb50e2e92f8b40"
             ]
         ]
     },
     {
-        "id": "4af5bf0c04ba4b7e",
+        "id": "39bb50e2e92f8b40",
         "type": "debug",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "debug 21",
         "active": false,
         "tosidebar": true,
@@ -310,10 +310,10 @@
         "wires": []
     },
     {
-        "id": "db23fe7a2459b9c8",
+        "id": "d2f7e48ff4ee9cff",
         "type": "catch",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "",
         "scope": null,
         "uncaught": false,
@@ -321,15 +321,15 @@
         "y": 180,
         "wires": [
             [
-                "868526529f2dd187"
+                "7c55a50f01c21568"
             ]
         ]
     },
     {
-        "id": "030b13b36bc1223f",
+        "id": "f638a0056e80d4dc",
         "type": "ui_toast",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -348,30 +348,30 @@
         ]
     },
     {
-        "id": "8b6ee79f897cc28a",
+        "id": "ed62a6c0d90ca863",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 9",
         "links": [
             "f6164021f29559b5",
             "e13017242ba581b3",
             "7307295e0c7b7a1d",
             "d38073e88f076298",
-            "251353d825ba4f57",
-            "1f0c73f6262ddfde"
+            "f7fbcab9c00429d4",
+            "34493990f29dbd9b"
         ],
         "x": 215,
         "y": 1200,
         "wires": [
             [
-                "e9928706275f3e2b"
+                "6f6767317e4ae90c"
             ]
         ]
     },
     {
-        "id": "14989808a5992868",
+        "id": "a70b946243bc2601",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 10",
         "links": [
             "c3dd23ad9b62caf6",
@@ -381,17 +381,17 @@
         "y": 1360,
         "wires": [
             [
-                "a484c050c055dc86"
+                "e2bff10f57fad142"
             ]
         ]
     },
     {
-        "id": "bc5b5c6e6e79f226",
+        "id": "7a0f64f7ffb7e871",
         "type": "Axis device",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
-        "preset": "c32d3049700de36c",
+        "preset": "18dfc2f4f2c3d4cf",
         "action": "Device Info",
         "cgi": "",
         "data": "",
@@ -401,15 +401,15 @@
         "y": 780,
         "wires": [
             [
-                "bd63ed657b201631"
+                "484305d50ec60c22"
             ]
         ]
     },
     {
-        "id": "bd63ed657b201631",
+        "id": "484305d50ec60c22",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -429,15 +429,15 @@
         "y": 780,
         "wires": [
             [
-                "cf06b19f59f2bbfd"
+                "d47dc3c7e1c04dd7"
             ]
         ]
     },
     {
-        "id": "b0dafec5f0806e99",
+        "id": "af6f8dbee81fe822",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Authentication",
         "rules": [
             {
@@ -471,19 +471,19 @@
         "y": 780,
         "wires": [
             [
-                "bc5b5c6e6e79f226"
+                "7a0f64f7ffb7e871"
             ]
         ]
     },
     {
-        "id": "5e8988930f2d0897",
+        "id": "edf6ee288be377ab",
         "type": "ui_numeric",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "label": "Min Age (seconds)",
         "tooltip": "",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -500,19 +500,19 @@
         "y": 1080,
         "wires": [
             [
-                "0005fc39e141213a"
+                "e22427270a657863"
             ]
         ]
     },
     {
-        "id": "84fa3e1114958d32",
+        "id": "e2a0aa5b5f2b9284",
         "type": "ui_numeric",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "label": "Min Distance (% of view)",
         "tooltip": "",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -529,15 +529,15 @@
         "y": 1120,
         "wires": [
             [
-                "2ce55bbb3a991498"
+                "e132979c1d4eb93e"
             ]
         ]
     },
     {
-        "id": "0005fc39e141213a",
+        "id": "e22427270a657863",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -560,10 +560,10 @@
         ]
     },
     {
-        "id": "2ce55bbb3a991498",
+        "id": "e132979c1d4eb93e",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -586,10 +586,10 @@
         ]
     },
     {
-        "id": "8994f7e02f1ccd70",
+        "id": "9c4a17aa5a364bbb",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "flow.age",
         "rules": [
             {
@@ -609,15 +609,15 @@
         "y": 1080,
         "wires": [
             [
-                "5e8988930f2d0897"
+                "edf6ee288be377ab"
             ]
         ]
     },
     {
-        "id": "24218be0b91b9734",
+        "id": "8d45667715620596",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "flow.distance",
         "rules": [
             {
@@ -637,20 +637,20 @@
         "y": 1120,
         "wires": [
             [
-                "84fa3e1114958d32"
+                "e2a0aa5b5f2b9284"
             ]
         ]
     },
     {
-        "id": "20a516b4c7d9438f",
+        "id": "d4857c13b1f2518b",
         "type": "ui_dropdown",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "label": "Classes",
         "tooltip": "",
         "place": "Select detection",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -716,15 +716,15 @@
         "y": 1000,
         "wires": [
             [
-                "f8486ffd59974cd0"
+                "60e70b3a178e12d3"
             ]
         ]
     },
     {
-        "id": "f8486ffd59974cd0",
+        "id": "60e70b3a178e12d3",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -748,10 +748,10 @@
         ]
     },
     {
-        "id": "73a704c70c735d00",
+        "id": "4a77fa3c635ef6e1",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Classes",
         "func": "if( !flow.get(\"classes\") ) {\n    msg.payload = [ \"Human\", \"Car\" ];\n} else {\n    msg.payload = flow.get(\"classes\");\n}\n\nreturn msg;",
         "outputs": 1,
@@ -764,15 +764,15 @@
         "y": 1000,
         "wires": [
             [
-                "20a516b4c7d9438f"
+                "d4857c13b1f2518b"
             ]
         ]
     },
     {
-        "id": "cf06b19f59f2bbfd",
+        "id": "d47dc3c7e1c04dd7",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "flow.camera",
         "func": "msg.payload = flow.get(\"camera\") || {\n    aspect: \"16:9\",\n    rotation: \"Landscape\",\n    image: \"\"\n}    \nflow.set(\"camera\",msg.payload);\n\nreturn msg;\n",
         "outputs": 1,
@@ -785,21 +785,21 @@
         "y": 840,
         "wires": [
             [
-                "635add4c3e683940",
-                "c6e35cb7c8055810"
+                "8527b8bd3130a332",
+                "e7dc0d34bc779fab"
             ]
         ]
     },
     {
-        "id": "15b2061fc694f812",
+        "id": "77bfc9bd503b593b",
         "type": "ui_dropdown",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Aspect",
         "label": "Aspect",
         "tooltip": "",
         "place": "Select aspect",
-        "group": "6c8313788511e2cf",
+        "group": "60eee5508c1c9e33",
         "order": 7,
         "width": "3",
         "height": "1",
@@ -830,15 +830,15 @@
         "y": 840,
         "wires": [
             [
-                "984dc6f1c0ec8afd"
+                "7fc062f697003ba0"
             ]
         ]
     },
     {
-        "id": "635add4c3e683940",
+        "id": "8527b8bd3130a332",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -858,20 +858,20 @@
         "y": 840,
         "wires": [
             [
-                "15b2061fc694f812"
+                "77bfc9bd503b593b"
             ]
         ]
     },
     {
-        "id": "27bd49271d139fee",
+        "id": "50a2823780791afd",
         "type": "ui_dropdown",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Rotation",
         "label": "Rotation",
         "tooltip": "",
         "place": "Select rotation",
-        "group": "6c8313788511e2cf",
+        "group": "60eee5508c1c9e33",
         "order": 8,
         "width": "4",
         "height": "1",
@@ -897,15 +897,15 @@
         "y": 880,
         "wires": [
             [
-                "38c5a852b5640e80"
+                "2fcbdf35c1ee03a5"
             ]
         ]
     },
     {
-        "id": "c6e35cb7c8055810",
+        "id": "e7dc0d34bc779fab",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -925,15 +925,15 @@
         "y": 880,
         "wires": [
             [
-                "27bd49271d139fee"
+                "50a2823780791afd"
             ]
         ]
     },
     {
-        "id": "8f01b96663574f2b",
+        "id": "e306d660928d8a0f",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Confidence",
         "func": "msg.payload = flow.get(\"confidence\") || 10;\nreturn msg;",
         "outputs": 1,
@@ -946,20 +946,20 @@
         "y": 1040,
         "wires": [
             [
-                "1090cd4187cf762d"
+                "7a268576761a7904"
             ]
         ]
     },
     {
-        "id": "1090cd4187cf762d",
+        "id": "7a268576761a7904",
         "type": "ui_dropdown",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "label": "Min confidence",
         "tooltip": "",
         "place": "Select detection",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 7,
         "width": 0,
         "height": 0,
@@ -1020,15 +1020,15 @@
         "y": 1040,
         "wires": [
             [
-                "f9dd4fa130744384"
+                "273aa9c7924ee67d"
             ]
         ]
     },
     {
-        "id": "f9dd4fa130744384",
+        "id": "273aa9c7924ee67d",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -1052,18 +1052,18 @@
         ]
     },
     {
-        "id": "e9928706275f3e2b",
+        "id": "6f6767317e4ae90c",
         "type": "ui_template",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
-        "group": "6c8313788511e2cf",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
+        "group": "60eee5508c1c9e33",
         "name": "Visulize",
         "order": 3,
         "width": "16",
         "height": "16",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\n\nfunction setupVideo( scope, data ) {\n    var rotation = data.rotation;\n    var aspect = data.aspect;\n\n    if(aspect === \"1:1\") {\n        imageHeight = 800;\n        videoWidth = 800;\n        videoHeight = 800;\n    }\n\n    if(aspect === \"4:3\") {\n        imageHeight = 600;\n        videoWidth = 800;\n        videoHeight = 600;\n    }\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+videoWidth+'x'+videoHeight+'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n}\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || 0;\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800;  //Default for 16:9\n    imageHeight = 450;\n\n    if(aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawDetections( detections ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.strokeStyle = '#FFFF00';\n    detections.forEach( function(detection){\n        if( detection.hasOwnProperty(\"bx\")) {\n            ctx.moveTo(detection.bx,detection.by);\n            ctx.lineTo(detection.cx,detection.cy);\n        }\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" \" + detection.confidence;\n        if( detection.hasOwnProperty(\"age\") )\n            text += \" \" + detection.age + \"s\";\n        ctx.fillText(text, detection.x, detection.y-10 );\n    });\n    ctx.stroke();\n}\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            setupVideo(scope,msg.payload);\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"detections\":\n            drawDetections( msg.payload );\n        break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"strength\":\n            ClearCanvas();\n            strength = (parseInt(msg.payload) / 100.0 ) * 0.5;\n            pathList.forEach( function(path) {\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#image_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\n\nfunction setupVideo( scope, data ) {\n\n    var videoWidth = 800;\n    var videoHeight = 450;\n\n    if(data.aspect === \"1:1\") {\n        videoWidth = 800;\n        videoHeight = 800;\n    }\n\n    if(data.aspect === \"4:3\") {\n        videoWidth = 800;\n        videoHeight = 600;\n    }\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+videoWidth+'x'+videoHeight+'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n\n}\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || 0;\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800;  //Default for 16:9\n    imageHeight = 450;\n\n    if(aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawDetections( detections ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.strokeStyle = '#FFFF00';\n    detections.forEach( function(detection){\n        if( detection.hasOwnProperty(\"bx\")) {\n            ctx.moveTo(detection.bx,detection.by);\n            ctx.lineTo(detection.cx,detection.cy);\n        }\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" \" + detection.confidence;\n        if( detection.hasOwnProperty(\"age\") )\n            text += \" \" + detection.age + \"s\";\n        ctx.fillText(text, detection.x, detection.y-10 );\n    });\n    ctx.stroke();\n}\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            setupVideo(scope,msg.payload);\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            break;\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"detections\":\n            drawDetections( msg.payload );\n        break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"strength\":\n            ClearCanvas();\n            strength = (parseInt(msg.payload) / 100.0 ) * 0.5;\n            pathList.forEach( function(path) {\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#image_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
         "storeOutMessages": false,
-        "fwdInMessages": false,
+        "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
@@ -1071,17 +1071,17 @@
         "y": 1200,
         "wires": [
             [
-                "19f3feaefe9eadb8"
+                "e703c57c763aface"
             ]
         ]
     },
     {
-        "id": "d57b9c54e00269ed",
+        "id": "bec8f6029b51c2f8",
         "type": "ui_button",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -1096,19 +1096,19 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 450,
+        "x": 440,
         "y": 1240,
         "wires": [
             [
-                "d8de1951951fd651"
+                "d1c56e4bd4f26587"
             ]
         ]
     },
     {
-        "id": "d8de1951951fd651",
+        "id": "d1c56e4bd4f26587",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "aoi",
         "func": "msg.topic = \"aoi\";\nmsg.payload = flow.get(\"aoi\") || {\n    id: \"aoi\",\n    x1: 200,\n    y1: 200,\n    x2: 800,\n    y2: 800\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1121,17 +1121,17 @@
         "y": 1240,
         "wires": [
             [
-                "58c641038c28db4d"
+                "7a53d1b1ac889615"
             ]
         ]
     },
     {
-        "id": "cae2caf9a0a901d5",
+        "id": "4c934366d3b6536d",
         "type": "ui_button",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 8,
         "width": 0,
         "height": 0,
@@ -1146,19 +1146,19 @@
         "payloadType": "bool",
         "topic": "aoi",
         "topicType": "str",
-        "x": 420,
+        "x": 410,
         "y": 1280,
         "wires": [
             [
-                "58c641038c28db4d"
+                "7a53d1b1ac889615"
             ]
         ]
     },
     {
-        "id": "19f3feaefe9eadb8",
+        "id": "e703c57c763aface",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -1181,12 +1181,12 @@
         ]
     },
     {
-        "id": "a484c050c055dc86",
+        "id": "e2bff10f57fad142",
         "type": "ui_button",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
-        "group": "6c8313788511e2cf",
+        "group": "60eee5508c1c9e33",
         "order": 1,
         "width": "3",
         "height": "1",
@@ -1205,15 +1205,15 @@
         "y": 1360,
         "wires": [
             [
-                "b95e554b09f19e87"
+                "441e6b7f4aaa5ec2"
             ]
         ]
     },
     {
-        "id": "27fef1dac85c0e25",
+        "id": "2acc0166682b741e",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Update",
         "func": "msg.query = {\n    device: flow.get(\"device\").serial || \"Undefined\"\n}\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\nmsg.topic = \"image/\" + flow.get(\"device\").serial || \"Undefined\";\n\n\nreturn msg;",
         "outputs": 1,
@@ -1229,10 +1229,10 @@
         ]
     },
     {
-        "id": "b95e554b09f19e87",
+        "id": "441e6b7f4aaa5ec2",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Resolution",
         "func": "var camera = flow.get(\"camera\");\nif(!camera)\n    return;\n\nswitch( camera.aspect ) {\n    case \"4:3\":\n        msg.resolution = \"800x600\"\n        break;\n    case \"1:1\":\n        msg.resolution = \"800x800\"\n        break;\n    case \"16:9\":\n    default:\n        msg.resolution = \"1280x720\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1245,14 +1245,14 @@
         "y": 1360,
         "wires": [
             [
-                "4981e3ae4fe7dcb4"
+                "7d20dcec941d1c2e"
             ]
         ]
     },
     {
-        "id": "01b820fbca0716c0",
+        "id": "80e3746b5c311514",
         "type": "inject",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "",
         "props": [
             {
@@ -1274,15 +1274,15 @@
         "y": 860,
         "wires": [
             [
-                "b3731c029ac366d6"
+                "f107dbc6f1403dd6"
             ]
         ]
     },
     {
-        "id": "60032f6ab17d898a",
+        "id": "a77c7181b538cf9d",
         "type": "Objects",
-        "z": "0ac396398ba6bce7",
-        "g": "cab3b38bad09e5c1",
+        "z": "ae59bef154e963a8",
+        "g": "856334e11153b9b4",
         "version": "2",
         "output": "1",
         "classFilter": "-1",
@@ -1296,15 +1296,15 @@
         "y": 340,
         "wires": [
             [
-                "ca114ec07cb8c14a"
+                "2b02739c84b282d1"
             ]
         ]
     },
     {
-        "id": "ca114ec07cb8c14a",
+        "id": "2b02739c84b282d1",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "cab3b38bad09e5c1",
+        "z": "ae59bef154e963a8",
+        "g": "856334e11153b9b4",
         "name": "Detection Filter",
         "func": "msg.topic = \"detections\";\nvar distance = flow.get(\"distance\") || 0;\nvar confidence = flow.get(\"confidence\") || 10;\nvar age = flow.get(\"age\") || 0;\nvar classes = flow.get(\"classes\");\nvar aoi = flow.get(\"aoi\") || null;\nvar list = [];\n\nmsg.payload.forEach( function(item){\n    if (msg.payload.confidnece < confidence)\n        return;\n    if( item.age < 0)\n        return;\n    var dx = (item.cx - item.bx);\n    dx = dx * dx;\n    var dy = (item.cy - item.by);\n    dy = dy * dy;\n    item.distance = parseInt(Math.sqrt(dx+dy)/10);\n    if( item.distance < distance )\n        return;\n\n    var ignoreClass = true;\n    classes.forEach(function (element) {\n        if (element === item.class)\n            ignoreClass = false;\n    });\n    if (ignoreClass)\n        return;\n\n    if (aoi) {\n        if( item.cx < aoi.x1 )\n            return;\n        if (item.cx > aoi.x2)\n            return;\n        if (item.cy < aoi.y1)\n            return;\n        if (item.cy > aoi.y2)\n            return;\n    }\n    list.push(item);\n});\n\nif( list.length === 0 )\n    return 0;\nmsg.payload = list;\nnode.send(msg);\n\n\n",
         "outputs": 1,
@@ -1317,19 +1317,19 @@
         "y": 340,
         "wires": [
             [
-                "251353d825ba4f57",
-                "21fa83f8bda58ea8"
+                "f7fbcab9c00429d4",
+                "428ddc9defcc8480"
             ]
         ]
     },
     {
-        "id": "251353d825ba4f57",
+        "id": "f7fbcab9c00429d4",
         "type": "link out",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link out 14",
         "mode": "link",
         "links": [
-            "8b6ee79f897cc28a",
+            "ed62a6c0d90ca863",
             "5bdd7e0928396937"
         ],
         "x": 1105,
@@ -1337,10 +1337,10 @@
         "wires": []
     },
     {
-        "id": "95ef875df544f0a7",
+        "id": "1695837fc01fc19c",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Image",
         "func": "msg.topic = \"image\";\n\nmsg.payload = {\n    aspect: flow.get(\"aspect\") || \"16:9\",\n    rotation: flow.get(\"rotation\") || \"Landscape\",\n    image: msg.payload\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1353,16 +1353,16 @@
         "y": 1360,
         "wires": [
             [
-                "27fef1dac85c0e25",
-                "58c641038c28db4d"
+                "2acc0166682b741e",
+                "7a53d1b1ac889615"
             ]
         ]
     },
     {
-        "id": "4981e3ae4fe7dcb4",
+        "id": "7d20dcec941d1c2e",
         "type": "Camera",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "resolution": "1280x720",
         "overlay": "yes",
         "channel": "1",
@@ -1371,15 +1371,15 @@
         "y": 1360,
         "wires": [
             [
-                "95ef875df544f0a7"
+                "1695837fc01fc19c"
             ]
         ]
     },
     {
-        "id": "9aecaea1a1f8937e",
+        "id": "5c346e00fcf54e07",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Recording",
         "rules": [
             {
@@ -1406,15 +1406,15 @@
         "y": 1440,
         "wires": [
             [
-                "884cd560a24961d5"
+                "ef6659c57ca18278"
             ]
         ]
     },
     {
-        "id": "87e2476aac5b636d",
+        "id": "8eae351f677bee20",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Not Recording",
         "rules": [
             {
@@ -1441,15 +1441,15 @@
         "y": 1480,
         "wires": [
             [
-                "884cd560a24961d5"
+                "ef6659c57ca18278"
             ]
         ]
     },
     {
-        "id": "b08614c7fd97b349",
+        "id": "9eea200a06621eda",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Method",
         "func": "msg.payload = flow.get(\"method\") || \"None\";\nreturn msg;",
         "outputs": 1,
@@ -1462,20 +1462,20 @@
         "y": 920,
         "wires": [
             [
-                "21caf6692ea46fad"
+                "f0f6a20255a2503f"
             ]
         ]
     },
     {
-        "id": "21caf6692ea46fad",
+        "id": "f0f6a20255a2503f",
         "type": "ui_dropdown",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "Method",
         "label": "Method",
         "tooltip": "",
         "place": "Select detection",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1516,15 +1516,15 @@
         "y": 920,
         "wires": [
             [
-                "e1c0246be468a819"
+                "d3b77b7b76cdd064"
             ]
         ]
     },
     {
-        "id": "e1c0246be468a819",
+        "id": "d3b77b7b76cdd064",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -1548,10 +1548,10 @@
         ]
     },
     {
-        "id": "e624b6b1f65b3511",
+        "id": "5537e6bbdfbe331a",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "flow.bufferTime",
         "rules": [
             {
@@ -1571,19 +1571,19 @@
         "y": 960,
         "wires": [
             [
-                "d68362bcc9fc2d98"
+                "47ed52d82e768eda"
             ]
         ]
     },
     {
-        "id": "d68362bcc9fc2d98",
+        "id": "47ed52d82e768eda",
         "type": "ui_numeric",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "label": "Pre/Post buffer",
         "tooltip": "",
-        "group": "a0d4d504a3ac3a77",
+        "group": "ca56256e477dc8fc",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1600,15 +1600,15 @@
         "y": 960,
         "wires": [
             [
-                "df5674f854741738"
+                "569bcf3d105e2f01"
             ]
         ]
     },
     {
-        "id": "df5674f854741738",
+        "id": "569bcf3d105e2f01",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -1629,19 +1629,19 @@
         "y": 960,
         "wires": [
             [
-                "6215598a59ed3862"
+                "bfb701b278c2ad60"
             ]
         ]
     },
     {
-        "id": "ee659b6e8f153493",
+        "id": "a99c2cbe8eba75f8",
         "type": "link out",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Start recording",
         "mode": "link",
         "links": [
-            "316663ced90f4543",
-            "867ab01d1ef2c852",
+            "cb2aa6c989353a6c",
+            "0da1301c9e43cc45",
             "eaa5444880cf4e18"
         ],
         "x": 1105,
@@ -1649,30 +1649,30 @@
         "wires": []
     },
     {
-        "id": "316663ced90f4543",
+        "id": "cb2aa6c989353a6c",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 11",
         "links": [
-            "ee659b6e8f153493"
+            "a99c2cbe8eba75f8"
         ],
         "x": 215,
         "y": 1440,
         "wires": [
             [
-                "9aecaea1a1f8937e"
+                "5c346e00fcf54e07"
             ]
         ]
     },
     {
-        "id": "06fbaef0b56055cd",
+        "id": "b19b3bddf4bf2c25",
         "type": "link out",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Stop Recording",
         "mode": "link",
         "links": [
-            "d2da8e7758d00ef3",
-            "36cde1b5389145a9",
+            "e3bec00400416bf3",
+            "95a10159241084d0",
             "b9d1e11f0e364ade"
         ],
         "x": 1105,
@@ -1680,41 +1680,41 @@
         "wires": []
     },
     {
-        "id": "d2da8e7758d00ef3",
+        "id": "e3bec00400416bf3",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 12",
         "links": [
-            "06fbaef0b56055cd"
+            "b19b3bddf4bf2c25"
         ],
         "x": 215,
         "y": 1480,
         "wires": [
             [
-                "87e2476aac5b636d"
+                "8eae351f677bee20"
             ]
         ]
     },
     {
-        "id": "867ab01d1ef2c852",
+        "id": "0da1301c9e43cc45",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 13",
         "links": [
-            "ee659b6e8f153493"
+            "a99c2cbe8eba75f8"
         ],
         "x": 215,
         "y": 540,
         "wires": [
             [
-                "3d9184a6ebecf7e5"
+                "8465606b4eefb676"
             ]
         ]
     },
     {
-        "id": "a9a496d1ed865641",
+        "id": "bb2011232c7b08a4",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "LED On",
         "info": "",
         "x": 140,
@@ -1722,9 +1722,9 @@
         "wires": []
     },
     {
-        "id": "69bc5be0bcbbf08f",
+        "id": "927d59d8d9d93658",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "LED Off",
         "info": "",
         "x": 150,
@@ -1732,26 +1732,26 @@
         "wires": []
     },
     {
-        "id": "36cde1b5389145a9",
+        "id": "95a10159241084d0",
         "type": "link in",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "link in 14",
         "links": [
-            "06fbaef0b56055cd"
+            "b19b3bddf4bf2c25"
         ],
         "x": 215,
         "y": 580,
         "wires": [
             [
-                "1f9d25517145abb4"
+                "57f94133eee6908f"
             ]
         ]
     },
     {
-        "id": "351fa805ddaaf7b9",
+        "id": "e4d57b9672540918",
         "type": "switch",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "FMR",
         "property": "method",
         "propertyType": "flow",
@@ -1769,15 +1769,15 @@
         "y": 540,
         "wires": [
             [
-                "b1111b2652e96bf6"
+                "e958e994ee4ac3d0"
             ]
         ]
     },
     {
-        "id": "2a4ece199118360b",
+        "id": "ed017a4f5618d253",
         "type": "switch",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "FMR",
         "property": "method",
         "propertyType": "flow",
@@ -1795,15 +1795,15 @@
         "y": 580,
         "wires": [
             [
-                "fe882694ee49fa50"
+                "3636e37af148d960"
             ]
         ]
     },
     {
-        "id": "21fa83f8bda58ea8",
+        "id": "428ddc9defcc8480",
         "type": "switch",
-        "z": "0ac396398ba6bce7",
-        "g": "cab3b38bad09e5c1",
+        "z": "ae59bef154e963a8",
+        "g": "856334e11153b9b4",
         "name": "Method",
         "property": "method",
         "propertyType": "flow",
@@ -1821,14 +1821,14 @@
         "y": 380,
         "wires": [
             [
-                "704656b901fe94ca"
+                "bf38227290e5cd17"
             ]
         ]
     },
     {
-        "id": "657cb7f51effc10b",
+        "id": "f073c560c6fd1383",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Detections",
         "info": "",
         "x": 1190,
@@ -1836,9 +1836,9 @@
         "wires": []
     },
     {
-        "id": "299abf7be3c703f8",
+        "id": "0c37a634ef92fb55",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Start recording",
         "info": "",
         "x": 1220,
@@ -1846,9 +1846,9 @@
         "wires": []
     },
     {
-        "id": "57592a2fda062ab2",
+        "id": "e22790a585a4cc2b",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Stop recording",
         "info": "",
         "x": 1220,
@@ -1856,9 +1856,9 @@
         "wires": []
     },
     {
-        "id": "c60a7746d1e20d4b",
+        "id": "1ab5d4cf08863d16",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Start recording",
         "info": "",
         "x": 120,
@@ -1866,9 +1866,9 @@
         "wires": []
     },
     {
-        "id": "16de8e0df713e926",
+        "id": "089cc45c45976f22",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Stop recording",
         "info": "",
         "x": 120,
@@ -1876,9 +1876,9 @@
         "wires": []
     },
     {
-        "id": "75a6ced3deb8e039",
+        "id": "b66e7ea34d3049a0",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Visualize",
         "info": "",
         "x": 140,
@@ -1886,9 +1886,9 @@
         "wires": []
     },
     {
-        "id": "0b396773fa358fb3",
+        "id": "f4248cb6368f3829",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "Video",
         "info": "",
         "x": 150,
@@ -1896,22 +1896,22 @@
         "wires": []
     },
     {
-        "id": "1f0c73f6262ddfde",
+        "id": "34493990f29dbd9b",
         "type": "link out",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "AOI",
         "mode": "link",
         "links": [
-            "8b6ee79f897cc28a"
+            "ed62a6c0d90ca863"
         ],
         "x": 1315,
         "y": 1240,
         "wires": []
     },
     {
-        "id": "6215598a59ed3862",
+        "id": "bfb701b278c2ad60",
         "type": "debug",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "debug 159",
         "active": true,
         "tosidebar": true,
@@ -1925,12 +1925,12 @@
         "wires": []
     },
     {
-        "id": "884cd560a24961d5",
+        "id": "ef6659c57ca18278",
         "type": "ui_led",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "order": 2,
-        "group": "6c8313788511e2cf",
+        "group": "60eee5508c1c9e33",
         "width": "3",
         "height": "1",
         "label": "Recording",
@@ -1957,10 +1957,10 @@
         "wires": []
     },
     {
-        "id": "464dd830bc790782",
+        "id": "807e34b1854930bf",
         "type": "inject",
-        "z": "0ac396398ba6bce7",
-        "g": "cab3b38bad09e5c1",
+        "z": "ae59bef154e963a8",
+        "g": "856334e11153b9b4",
         "name": "Test",
         "props": [
             {
@@ -1982,15 +1982,15 @@
         "y": 420,
         "wires": [
             [
-                "704656b901fe94ca"
+                "bf38227290e5cd17"
             ]
         ]
     },
     {
-        "id": "e1bcba3ded9a6277",
+        "id": "d61c1625f93fbce1",
         "type": "switch",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "SD",
         "property": "method",
         "propertyType": "flow",
@@ -2008,15 +2008,15 @@
         "y": 620,
         "wires": [
             [
-                "4e1d2678e05b623e"
+                "805a21247611febc"
             ]
         ]
     },
     {
-        "id": "642e3e9c7513041b",
+        "id": "5379c1b466e0a904",
         "type": "switch",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "SD",
         "property": "method",
         "propertyType": "flow",
@@ -2034,15 +2034,15 @@
         "y": 660,
         "wires": [
             [
-                "f48362a9c2a53573"
+                "fbe3ddbc092cf01c"
             ]
         ]
     },
     {
-        "id": "4e1d2678e05b623e",
+        "id": "805a21247611febc",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "true",
         "rules": [
             {
@@ -2062,16 +2062,16 @@
         "y": 620,
         "wires": [
             [
-                "4cfe87d72802fe07",
-                "e8cbb8e5fac0c7de"
+                "de0cc53ceaf5b2df",
+                "2c4ec4b6e704d7f1"
             ]
         ]
     },
     {
-        "id": "f48362a9c2a53573",
+        "id": "fbe3ddbc092cf01c",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "name": "false",
         "rules": [
             {
@@ -2091,16 +2091,16 @@
         "y": 660,
         "wires": [
             [
-                "4cfe87d72802fe07",
-                "d95a73b68424ddd0"
+                "de0cc53ceaf5b2df",
+                "7bb4cd351772a0ee"
             ]
         ]
     },
     {
-        "id": "4cfe87d72802fe07",
+        "id": "de0cc53ceaf5b2df",
         "type": "Trigger",
-        "z": "0ac396398ba6bce7",
-        "g": "34c7a1519ba616fa",
+        "z": "ae59bef154e963a8",
+        "g": "eb7c4ad21766d486",
         "eventId": "state",
         "value": "",
         "x": 790,
@@ -2108,10 +2108,10 @@
         "wires": []
     },
     {
-        "id": "6219a8708b3566ee",
+        "id": "fe9893a372bcb6a9",
         "type": "mqtt out",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "exception/Detection_Recording_Control/",
         "topic": "",
         "qos": "",
@@ -2127,20 +2127,20 @@
         "wires": []
     },
     {
-        "id": "d3f0c9bc705d70a6",
+        "id": "11043da978925e92",
         "type": "comment",
-        "z": "0ac396398ba6bce7",
-        "name": "Version 1.1.0",
+        "z": "ae59bef154e963a8",
+        "name": "Version 1.1.1",
         "info": "",
         "x": 330,
         "y": 40,
         "wires": []
     },
     {
-        "id": "29f58521b2d53d65",
+        "id": "2cbd46bd1048e363",
         "type": "inject",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "",
         "props": [
             {
@@ -2162,17 +2162,17 @@
         "y": 140,
         "wires": [
             [
-                "7f6e845b4438f9ea"
+                "1b017c3cec594959"
             ]
         ]
     },
     {
-        "id": "7f6e845b4438f9ea",
+        "id": "1b017c3cec594959",
         "type": "Axis device",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "",
-        "preset": "c561ea2fd0249c4c",
+        "preset": "c6c85b8eab57cd44",
         "action": "Device Info",
         "cgi": "",
         "data": "",
@@ -2182,15 +2182,15 @@
         "y": 140,
         "wires": [
             [
-                "74c45ff921303e03"
+                "ce5b84efe2ec9e8b"
             ]
         ]
     },
     {
-        "id": "74c45ff921303e03",
+        "id": "ce5b84efe2ec9e8b",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "",
         "rules": [
             {
@@ -2213,10 +2213,10 @@
         ]
     },
     {
-        "id": "868526529f2dd187",
+        "id": "7c55a50f01c21568",
         "type": "function",
-        "z": "0ac396398ba6bce7",
-        "g": "2705dbcb080872fd",
+        "z": "ae59bef154e963a8",
+        "g": "a3ca2fca866b72b8",
         "name": "Message",
         "func": "msg.topic = \"exception/Detection_Recording_Control/\" + flow.get(\"camere\").serial;\nmsg.payload = msg.error.message;\nreturn msg;",
         "outputs": 1,
@@ -2229,15 +2229,15 @@
         "y": 180,
         "wires": [
             [
-                "6219a8708b3566ee",
-                "030b13b36bc1223f"
+                "fe9893a372bcb6a9",
+                "f638a0056e80d4dc"
             ]
         ]
     },
     {
-        "id": "e8cbb8e5fac0c7de",
+        "id": "2c4ec4b6e704d7f1",
         "type": "debug",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "debug 172",
         "active": true,
         "tosidebar": true,
@@ -2251,9 +2251,9 @@
         "wires": []
     },
     {
-        "id": "d95a73b68424ddd0",
+        "id": "7bb4cd351772a0ee",
         "type": "debug",
-        "z": "0ac396398ba6bce7",
+        "z": "ae59bef154e963a8",
         "name": "debug 173",
         "active": true,
         "tosidebar": true,
@@ -2267,10 +2267,10 @@
         "wires": []
     },
     {
-        "id": "984dc6f1c0ec8afd",
+        "id": "7fc062f697003ba0",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -2293,10 +2293,10 @@
         ]
     },
     {
-        "id": "38c5a852b5640e80",
+        "id": "2fcbdf35c1ee03a5",
         "type": "change",
-        "z": "0ac396398ba6bce7",
-        "g": "94e86c2cb22bb290",
+        "z": "ae59bef154e963a8",
+        "g": "9b240589d5a32388",
         "name": "",
         "rules": [
             {
@@ -2319,17 +2319,17 @@
         ]
     },
     {
-        "id": "c32d3049700de36c",
+        "id": "18dfc2f4f2c3d4cf",
         "type": "Device Access",
         "name": "Localhost",
         "address": "localhost",
         "protocol": "http"
     },
     {
-        "id": "a0d4d504a3ac3a77",
+        "id": "ca56256e477dc8fc",
         "type": "ui_group",
         "name": "Settings",
-        "tab": "f4c4806280c78d58",
+        "tab": "454117cc13449ebb",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -2337,10 +2337,10 @@
         "className": ""
     },
     {
-        "id": "6c8313788511e2cf",
+        "id": "60eee5508c1c9e33",
         "type": "ui_group",
         "name": "Visualize",
-        "tab": "f4c4806280c78d58",
+        "tab": "454117cc13449ebb",
         "order": 3,
         "disp": false,
         "width": "16",
@@ -2379,14 +2379,14 @@
         "sessionExpiry": ""
     },
     {
-        "id": "c561ea2fd0249c4c",
+        "id": "c6c85b8eab57cd44",
         "type": "Device Access",
         "name": "Localhost",
         "address": "localhost",
         "protocol": "http"
     },
     {
-        "id": "f4c4806280c78d58",
+        "id": "454117cc13449ebb",
         "type": "ui_tab",
         "name": "Detection Recording",
         "icon": "dashboard",
