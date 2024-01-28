@@ -99,7 +99,7 @@
         ],
         "x": 234,
         "y": 839,
-        "w": 432,
+        "w": 422,
         "h": 182
     },
     {
@@ -142,9 +142,9 @@
             "31146f8599b0db8a",
             "491e0afa0c278783"
         ],
-        "x": 204,
+        "x": 214,
         "y": 1271.5,
-        "w": 1012,
+        "w": 1002,
         "h": 97
     },
     {
@@ -407,7 +407,7 @@
         "z": "1a32648ea2d13f43",
         "g": "89d84fe29e9feb23",
         "name": "Complete",
-        "func": "var recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    name: camera.hostname || camera.serial,\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
+        "func": "msg.topic = \"storage/recording/mp4/\" + flow.get(\"camera\").serial\nvar recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    name: camera.hostname || camera.serial,\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -625,8 +625,8 @@
         "id": "9e60e241715fa6c2",
         "type": "mqtt out",
         "z": "1a32648ea2d13f43",
-        "name": "",
-        "topic": "recording/sd",
+        "name": "storage/recording/mp4/SERIAL",
+        "topic": "",
         "qos": "",
         "retain": "",
         "respTopic": "",
@@ -635,7 +635,7 @@
         "correl": "",
         "expiry": "",
         "broker": "d1d53d1e87be4083",
-        "x": 1190,
+        "x": 1250,
         "y": 760,
         "wires": []
     },
@@ -1030,10 +1030,9 @@
         "id": "2bf5b99126c5e1a2",
         "type": "link out",
         "z": "1a32648ea2d13f43",
-        "name": "SD Recording",
+        "name": "storage/recording/mp4",
         "mode": "link",
         "links": [
-            "28ce9f94da82be5a",
             "2f053a41e1e8855b"
         ],
         "x": 1135,
@@ -1330,7 +1329,7 @@
         "id": "bca42a8435b62ee2",
         "type": "comment",
         "z": "1a32648ea2d13f43",
-        "name": "Version 1.0.0",
+        "name": "Version 1.1.0",
         "info": "",
         "x": 310,
         "y": 40,
@@ -1339,8 +1338,8 @@
     {
         "id": "d1d53d1e87be4083",
         "type": "mqtt-broker",
-        "name": "mqtt.juhlin.me",
-        "broker": "mqtt.juhlin.me",
+        "name": "MQTT Broker",
+        "broker": "10.13.8.20",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
