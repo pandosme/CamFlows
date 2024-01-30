@@ -96,7 +96,7 @@
         ],
         "x": 254,
         "y": 399,
-        "w": 912,
+        "w": 952,
         "h": 282
     },
     {
@@ -303,7 +303,7 @@
         "z": "4d2a3af098557686",
         "g": "7a2ff2ef405803e4",
         "group": "7348b105173cd658",
-        "name": "Heatmap",
+        "name": "Visualization",
         "order": 6,
         "width": "16",
         "height": "16",
@@ -313,7 +313,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 920,
+        "x": 930,
         "y": 440,
         "wires": [
             [
@@ -657,7 +657,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
+        "x": 1110,
         "y": 440,
         "wires": [
             []
@@ -1168,7 +1168,7 @@
         "links": [
             "a6c071f176a5fdec"
         ],
-        "x": 1235,
+        "x": 1255,
         "y": 600,
         "wires": []
     },
@@ -1466,7 +1466,7 @@
         "z": "4d2a3af098557686",
         "name": "Image",
         "info": "",
-        "x": 1310,
+        "x": 1330,
         "y": 600,
         "wires": []
     },
