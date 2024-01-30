@@ -1,0 +1,50 @@
+[
+    {
+        "id": "c138508b668e2849",
+        "type": "function",
+        "z": "8f4dda01c6588bd2",
+        "g": "ae9127649f3cb0f1",
+        "name": "Allow X-frame",
+        "func": "msg.payload = {\n  \"apiVersion\": \"1.0\",\n  \"context\": \"OptionalContext\",\n  \"method\": \"set\",\n  \"params\": {\n    \"X-Frame-Options\": \"*\"\n  }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "0e45a5dc7e0acba9"
+            ]
+        ]
+    },
+    {
+        "id": "0e45a5dc7e0acba9",
+        "type": "Axis device",
+        "z": "8f4dda01c6588bd2",
+        "g": "ae9127649f3cb0f1",
+        "name": "/axis-cgi/customhttpheader.cgi",
+        "preset": "8419095db94f2c5f",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/customhttpheader.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 830,
+        "y": 240,
+        "wires": [
+            [
+                "ef9323625c51f940"
+            ]
+        ]
+    },
+    {
+        "id": "8419095db94f2c5f",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
