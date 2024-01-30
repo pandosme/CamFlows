@@ -2,7 +2,7 @@
     {
         "id": "f23f4456ccb14131",
         "type": "tab",
-        "label": "Path Ingestion",
+        "label": "Object Path",
         "disabled": false,
         "info": "",
         "env": []
@@ -746,7 +746,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "3600",
+        "repeat": "7200",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
