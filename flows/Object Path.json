@@ -1,6 +1,6 @@
 [
     {
-        "id": "4d2a3af098557686",
+        "id": "0aa8d529432bab40",
         "type": "tab",
         "label": "Object Path",
         "disabled": false,
@@ -8,10 +8,10 @@
         "env": []
     },
     {
-        "id": "6b6e8e5d88004813",
+        "id": "8f3283440d307c32",
         "type": "group",
-        "z": "4d2a3af098557686",
-        "name": "Initialization",
+        "z": "0aa8d529432bab40",
+        "name": "Settings",
         "style": {
             "stroke": "#000000",
             "fill": "#ffffbf",
@@ -19,41 +19,38 @@
             "color": "#000000"
         },
         "nodes": [
-            "feaeb86441a21d0f",
-            "c84cf62700f0cdfc",
-            "04a347412e98c00c",
-            "c26b8dc87bf63531",
-            "d59e39c5a0ced6b6",
-            "a7cfaa88545643ea",
-            "59c6a673885c2229",
-            "f945500bc89d4b76",
-            "057d62ed15e7e3e5",
-            "7eafbb298115348c",
-            "5f7d11daa124abdd",
-            "cb4429c4614656de",
-            "7636cd3d4447b0e8",
-            "5a65553cfedf4110",
-            "0a7139e5e8ecf93b",
-            "fa23009447afa883",
-            "b0f4d51f2f8a2069",
-            "a9144480f676e057",
-            "cef939dda5ff9e5b",
-            "dd4446a9465d2c38",
-            "c641d23ac93afa95",
-            "396f6c0a21306e14",
-            "ccb4d5f2755880e3",
-            "14150c37ef9f7b25",
-            "d1d775f40d499d0f"
+            "b072ef48514220e7",
+            "fe9cd19ccff9a37d",
+            "f0422c78f19dce74",
+            "64b186c05b1c7780",
+            "26b257f6f30d1fe0",
+            "7282025fdf101826",
+            "95164393cc4ad8ac",
+            "e5bdfc313e7d0f2c",
+            "82fcc5fcc02d0752",
+            "b96d1d038904bc38",
+            "47457ccf5e171144",
+            "ab710301900f6867",
+            "442b327cf1d33acf",
+            "d7d90d33e05129c8",
+            "a7d964339c279dd4",
+            "e36fa9a30ea57d32",
+            "912f5671ca006b8b",
+            "4eb6730fe28971ab",
+            "d886463dff3cab96",
+            "310bfc76ba80519f",
+            "545167ced83d4bb5",
+            "8333c4df2ef96a7f"
         ],
         "x": 254,
-        "y": 719,
-        "w": 772,
-        "h": 362
+        "y": 659,
+        "w": 1012,
+        "h": 342
     },
     {
-        "id": "a02c2456a2a0184f",
+        "id": "e41a97441e155ba2",
         "type": "group",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
         "name": "Path Data",
         "style": {
             "stroke": "#000000",
@@ -62,8 +59,8 @@
             "color": "#000000"
         },
         "nodes": [
-            "2e82c695741e716e",
-            "0b27949e423ff87d"
+            "c56fa27fb84c3da3",
+            "177df1c60dd8c427"
         ],
         "x": 254,
         "y": 99,
@@ -71,9 +68,9 @@
         "h": 82
     },
     {
-        "id": "7a2ff2ef405803e4",
+        "id": "7c13bd947651829e",
         "type": "group",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
         "name": "Dashboard",
         "style": {
             "stroke": "#000000",
@@ -82,95 +79,114 @@
             "color": "#000000"
         },
         "nodes": [
-            "ed40c99154fb8271",
-            "bd9f6ab1f0b8b13f",
-            "d5f12182607e876a",
-            "a0aa8a3c59a957b4",
-            "348d9372323eb53d",
-            "6e705161068fbc8c",
-            "8959debe6e6fd4d0",
-            "d653e1a89741c667",
-            "29c99b4395c44ec4",
-            "5a33a2defeb64456",
-            "22fe3a3a15d07513"
-        ],
-        "x": 254,
-        "y": 399,
-        "w": 952,
-        "h": 282
-    },
-    {
-        "id": "1b1e82a6f52ab006",
-        "type": "group",
-        "z": "4d2a3af098557686",
-        "name": "Output",
-        "style": {
-            "label": true,
-            "stroke": "#000000",
-            "fill": "#ffefbf",
-            "color": "#000000"
-        },
-        "nodes": [
-            "d06bea689ee6aaa1",
-            "f17846a95411b0bb",
-            "ba415c42b10fce69"
+            "fabeddd7b172cac3",
+            "33b0e09827aea164",
+            "12937a5e7fd81958",
+            "fb71792b1c5f338a",
+            "497b97e921a8e598"
         ],
         "x": 254,
         "y": 219,
-        "w": 292,
-        "h": 142
+        "w": 702,
+        "h": 122
     },
     {
-        "id": "22fe3a3a15d07513",
+        "id": "4338a9de9add118c",
+        "type": "group",
+        "z": "0aa8d529432bab40",
+        "name": "Initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "2652d6efabd14c5c",
+            "33b631f5c511421d",
+            "e6ee020f981c6cf7",
+            "b759ead971a9bb64",
+            "b923fa49390ed46e",
+            "317e03e133424e17",
+            "5dd50bda5a4410cf",
+            "69f4df72b66aab80",
+            "299b0b5bac1fd59f"
+        ],
+        "x": 254,
+        "y": 379,
+        "w": 652,
+        "h": 242
+    },
+    {
+        "id": "f4148ff9c2b7068e",
+        "type": "group",
+        "z": "0aa8d529432bab40",
+        "name": "Output",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#dbcbe7",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "07e5bd150d877243",
+            "6df5ed1a11dd9f53",
+            "adb9847f12eda152",
+            "ed8e01396281dfe7",
+            "a9e33b71b2ecf5f9",
+            "ae666910bc89db89",
+            "9946cad8383e93ed",
+            "513f2fe3ea066da2"
+        ],
+        "x": 254,
+        "y": 1079,
+        "w": 832,
+        "h": 262
+    },
+    {
+        "id": "e36fa9a30ea57d32",
         "type": "junction",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "x": 820,
-        "y": 440,
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "x": 1240,
+        "y": 700,
         "wires": [
             [
-                "ed40c99154fb8271"
+                "e05f51ddb9239a9f"
             ]
         ]
     },
     {
-        "id": "c641d23ac93afa95",
+        "id": "310bfc76ba80519f",
         "type": "junction",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "x": 280,
-        "y": 800,
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "x": 1000,
+        "y": 920,
         "wires": [
             [
-                "7636cd3d4447b0e8",
-                "fa23009447afa883",
-                "7eafbb298115348c",
-                "04a347412e98c00c",
-                "396f6c0a21306e14",
-                "ccb4d5f2755880e3",
-                "14150c37ef9f7b25",
-                "d1d775f40d499d0f"
+                "fa9c6ba5752d9d78"
             ]
         ]
     },
     {
-        "id": "ba415c42b10fce69",
+        "id": "513f2fe3ea066da2",
         "type": "junction",
-        "z": "4d2a3af098557686",
-        "g": "1b1e82a6f52ab006",
-        "x": 520,
-        "y": 260,
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
+        "x": 740,
+        "y": 1120,
         "wires": [
             [
-                "44f4eda7c6b594c3"
+                "3d409c678d9a4f7a"
             ]
         ]
     },
     {
-        "id": "2e82c695741e716e",
+        "id": "c56fa27fb84c3da3",
         "type": "Objects",
-        "z": "4d2a3af098557686",
-        "g": "a02c2456a2a0184f",
+        "z": "0aa8d529432bab40",
+        "g": "e41a97441e155ba2",
         "version": "2",
         "output": "3",
         "classFilter": "-1",
@@ -184,17 +200,17 @@
         "y": 140,
         "wires": [
             [
-                "0b27949e423ff87d"
+                "177df1c60dd8c427"
             ]
         ]
     },
     {
-        "id": "0b27949e423ff87d",
+        "id": "177df1c60dd8c427",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "a02c2456a2a0184f",
+        "z": "0aa8d529432bab40",
+        "g": "e41a97441e155ba2",
         "name": "Filter",
-        "func": "//Filter minimum distance\nvar distance = flow.get(\"distance\") || 0;\nif( msg.payload.distance < distance)  \n    return;\n\n//Filter minimum confidence\nvar confidence = flow.get(\"confidence\") || 10;\nif( msg.payload.confidnece < confidence )\n    return;\n\n//Filter minimum age\nvar age = flow.get(\"age\") || 0;\nif( msg.payload.age < age)  \n    return;\n\n//Filter object class type\nvar classes= flow.get(\"classes\");\nvar ignoreClass = true;\nclasses.forEach(function(element) {\n    if( element === msg.payload.class)\n        ignoreClass = false;\n});\nif(ignoreClass)\n    return;\n\n//Filter object passed Area Of Intrest\nvar aoi = flow.get(\"aoi\") ||null;\nif( aoi ) {\n    var ignore = true;\n    msg.payload.path.forEach(function(position) {\n        if (ignore && \n            position.x >= aoi.x1 && \n            position.x <= aoi.x2 &&\n            position.y >= aoi.y1 &&\n            position.y <= aoi.y2)\n                ignore = false;\n    });\n    if( ignore )\n        return;\n}\n\n//All filters passed\n\nreturn msg;",
+        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nif( msg.payload.distance < settings.distance) \n    return;\n\nif( msg.payload.confidence < settings.confidence )\n    return;\n\nif( msg.payload.age < settings.age)  \n    return;\n\nvar classMatch = false;\nsettings.classes.forEach(function(element) {\n    if( element === msg.payload.class )\n        classMatch = true;\n});\nif(!classMatch)\n    return;\n\nvar aoiMatch = false;\nmsg.payload.path.forEach(function(position) {\n    if (!aoiMatch && \n        position.x >= settings.aoi.x1 && \n        position.x <= settings.aoi.x2 &&\n        position.y >= settings.aoi.y1 &&\n        position.y <= settings.aoi.y2)\n            aoiMatch = true;\n});\n\nif( !aoiMatch )\n    return;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -205,190 +221,102 @@
         "y": 140,
         "wires": [
             [
-                "90c8c1e2905a5162"
+                "9fbd5387b1ad05c4"
             ]
         ]
     },
     {
-        "id": "feaeb86441a21d0f",
-        "type": "Axis device",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "",
-        "preset": "73fbb18d33a287f1",
-        "action": "Device Info",
-        "cgi": "",
-        "data": "",
-        "options": "",
-        "filename": "",
-        "x": 650,
-        "y": 760,
-        "wires": [
-            [
-                "c84cf62700f0cdfc"
-            ]
-        ]
-    },
-    {
-        "id": "c84cf62700f0cdfc",
-        "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "device",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "04a347412e98c00c",
-        "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Authentication",
-        "rules": [
-            {
-                "t": "set",
-                "p": "address",
-                "pt": "msg",
-                "to": "localhost",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "user",
-                "pt": "msg",
-                "to": "root",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "password",
-                "pt": "msg",
-                "to": "pass",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 440,
-        "y": 760,
-        "wires": [
-            [
-                "feaeb86441a21d0f"
-            ]
-        ]
-    },
-    {
-        "id": "ed40c99154fb8271",
+        "id": "fabeddd7b172cac3",
         "type": "ui_template",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "group": "7348b105173cd658",
+        "z": "0aa8d529432bab40",
+        "g": "7c13bd947651829e",
+        "group": "9cd006c8743bc9ed",
         "name": "Visualization",
         "order": 6,
         "width": "16",
         "height": "16",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n    if( selectArea )\n        selectArea.setOptions({ hide: true });\n    selectArea = null;        \n}\n\n\nfunction setupVideo( scope, data ) {\n    videoWidth = 800;\n    videoHeight = 450;\n\n    if(data.aspect === \"1:1\") {\n        videoWidth = 800;\n        videoHeight = 800;\n    }\n\n    if(data.aspect === \"4:3\") {\n        videoWidth = 800;\n        videoHeight = 600;\n    }\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+videoWidth+'x'+videoHeight+'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n}\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || 0;\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800;  //Default for 16:9\n    imageHeight = 450;\n\n    if(aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            setupVideo(scope,msg.payload);\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n    if( selectArea )\n        selectArea.setOptions({ hide: true });\n    selectArea = null;        \n}\n\nfunction setupVideo( scope, data ) {\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+ data.camera.largest +'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n}\n\nfunction setupImage( scope, data ) {\n    imageWidth = 800;\n    imageHeight = 450;\n\n    if( data.camera.aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(data.camera.aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( data.camera.rotation === 90 || data.camera.rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.payload )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.payload);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg);\n            setupVideo(scope,msg);\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
         "templateScope": "local",
         "className": "",
-        "x": 930,
-        "y": 440,
+        "x": 630,
+        "y": 260,
         "wires": [
             [
-                "348d9372323eb53d"
+                "33b0e09827aea164"
             ]
         ]
     },
     {
-        "id": "c26b8dc87bf63531",
+        "id": "b072ef48514220e7",
         "type": "ui_numeric",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
         "name": "",
-        "label": "Min Age (seconds)",
+        "label": "Age",
         "tooltip": "",
-        "group": "b14fab5b1dcb2b25",
+        "group": "51cb40ae86f7be91",
         "order": 3,
         "width": 0,
         "height": 0,
         "wrap": false,
-        "passthru": true,
+        "passthru": false,
         "topic": "topic",
         "topicType": "msg",
-        "format": "{{value}}",
+        "format": "{{value}}s",
         "min": 0,
         "max": 10,
         "step": "0.5",
         "className": "",
-        "x": 670,
-        "y": 920,
+        "x": 770,
+        "y": 820,
         "wires": [
             [
-                "a7cfaa88545643ea"
+                "f0422c78f19dce74"
             ]
         ]
     },
     {
-        "id": "d59e39c5a0ced6b6",
+        "id": "fe9cd19ccff9a37d",
         "type": "ui_numeric",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
         "name": "",
-        "label": "Min Distance (% of view)",
+        "label": "Distance",
         "tooltip": "",
-        "group": "b14fab5b1dcb2b25",
+        "group": "51cb40ae86f7be91",
         "order": 4,
         "width": 0,
         "height": 0,
         "wrap": false,
-        "passthru": true,
+        "passthru": false,
         "topic": "topic",
         "topicType": "msg",
-        "format": "{{value}}",
+        "format": "{{value}}%",
         "min": 0,
         "max": "100",
         "step": "10",
         "className": "",
-        "x": 690,
-        "y": 960,
+        "x": 780,
+        "y": 860,
         "wires": [
             [
-                "59c6a673885c2229"
+                "64b186c05b1c7780"
             ]
         ]
     },
     {
-        "id": "a7cfaa88545643ea",
+        "id": "f0422c78f19dce74",
         "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "age",
+                "p": "settings.age",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -399,22 +327,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
-        "y": 920,
+        "x": 1040,
+        "y": 820,
         "wires": [
-            []
+            [
+                "e36fa9a30ea57d32"
+            ]
         ]
     },
     {
-        "id": "59c6a673885c2229",
+        "id": "64b186c05b1c7780",
         "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "distance",
+                "p": "settings.distance",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -425,26 +355,28 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
-        "y": 960,
+        "x": 1030,
+        "y": 860,
         "wires": [
-            []
+            [
+                "e36fa9a30ea57d32"
+            ]
         ]
     },
     {
-        "id": "f945500bc89d4b76",
+        "id": "26b257f6f30d1fe0",
         "type": "ui_dropdown",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Class selection",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "Classes",
         "label": "Classes",
         "tooltip": "",
         "place": "Select detection",
-        "group": "b14fab5b1dcb2b25",
+        "group": "51cb40ae86f7be91",
         "order": 2,
         "width": 0,
         "height": 0,
-        "passthru": true,
+        "passthru": false,
         "multiple": true,
         "options": [
             {
@@ -502,24 +434,24 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 660,
-        "y": 880,
+        "x": 780,
+        "y": 780,
         "wires": [
             [
-                "057d62ed15e7e3e5"
+                "7282025fdf101826"
             ]
         ]
     },
     {
-        "id": "057d62ed15e7e3e5",
+        "id": "7282025fdf101826",
         "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "flow.classes",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "classes",
+                "p": "settings.classes",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg",
@@ -531,122 +463,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7eafbb298115348c",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Classes",
-        "func": "if( !flow.get(\"classes\") ) {\n    msg.payload = [ \"Human\", \"Car\" ];\n} else {\n    msg.payload = flow.get(\"classes\");\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 880,
+        "x": 1030,
+        "y": 780,
         "wires": [
             [
-                "f945500bc89d4b76"
+                "e36fa9a30ea57d32"
             ]
         ]
     },
     {
-        "id": "bd9f6ab1f0b8b13f",
-        "type": "ui_button",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "name": "",
-        "group": "b14fab5b1dcb2b25",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Set area objects must pass",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 400,
-        "y": 480,
-        "wires": [
-            [
-                "d5f12182607e876a"
-            ]
-        ]
-    },
-    {
-        "id": "d5f12182607e876a",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "name": "aoi",
-        "func": "msg.topic = \"aoi\";\nmsg.payload = flow.get(\"aoi\") || {\n    id: \"aoi\",\n    x1: 200,\n    y1: 200,\n    x2: 800,\n    y2: 800\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 670,
-        "y": 480,
-        "wires": [
-            [
-                "22fe3a3a15d07513"
-            ]
-        ]
-    },
-    {
-        "id": "a0aa8a3c59a957b4",
-        "type": "ui_button",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "name": "",
-        "group": "b14fab5b1dcb2b25",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Save",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "green",
-        "className": "",
-        "icon": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "topic": "aoi",
-        "topicType": "str",
-        "x": 670,
-        "y": 520,
-        "wires": [
-            [
-                "22fe3a3a15d07513"
-            ]
-        ]
-    },
-    {
-        "id": "348d9372323eb53d",
+        "id": "33b0e09827aea164",
         "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
+        "z": "0aa8d529432bab40",
+        "g": "7c13bd947651829e",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "aoi",
+                "p": "settings.aoi",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -657,19 +491,21 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1110,
-        "y": 440,
+        "x": 840,
+        "y": 260,
         "wires": [
-            []
+            [
+                "b85188971f46a16e"
+            ]
         ]
     },
     {
-        "id": "6e705161068fbc8c",
+        "id": "12937a5e7fd81958",
         "type": "ui_button",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
+        "z": "0aa8d529432bab40",
+        "g": "7c13bd947651829e",
         "name": "",
-        "group": "7348b105173cd658",
+        "group": "9cd006c8743bc9ed",
         "order": 4,
         "width": "3",
         "height": "1",
@@ -685,216 +521,61 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 330,
-        "y": 640,
+        "y": 300,
         "wires": [
             [
-                "5a33a2defeb64456"
+                "497b97e921a8e598"
             ]
         ]
     },
     {
-        "id": "8959debe6e6fd4d0",
+        "id": "fb71792b1c5f338a",
         "type": "Camera",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
+        "z": "0aa8d529432bab40",
+        "g": "7c13bd947651829e",
         "resolution": "1280x720",
         "overlay": "yes",
         "channel": "1",
         "output": "base64",
-        "x": 540,
-        "y": 640,
+        "x": 680,
+        "y": 300,
         "wires": [
             [
-                "d653e1a89741c667"
+                "fabeddd7b172cac3",
+                "a89f8b154958b5f5"
             ]
         ]
     },
     {
-        "id": "d653e1a89741c667",
+        "id": "497b97e921a8e598",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "name": "Image",
-        "func": "msg.topic = \"image\";\n\nmsg.payload = {\n    aspect: flow.get(\"aspect\") || \"16:9\",\n    rotation: flow.get(\"rotation\") || \"Landscape\",\n    image: msg.payload\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 600,
-        "wires": [
-            [
-                "22fe3a3a15d07513",
-                "3c4747e73a1f4e9d"
-            ]
-        ]
-    },
-    {
-        "id": "29c99b4395c44ec4",
-        "type": "inject",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
-        "name": "Every hour",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "7200",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 370,
-        "y": 600,
-        "wires": [
-            [
-                "5a33a2defeb64456"
-            ]
-        ]
-    },
-    {
-        "id": "5f7d11daa124abdd",
-        "type": "ui_dropdown",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Aspect",
-        "label": "Image aspect",
-        "tooltip": "",
-        "place": "Select aspect",
-        "group": "b14fab5b1dcb2b25",
-        "order": 7,
-        "width": "6",
-        "height": "1",
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "16:9",
-                "value": "16:9",
-                "type": "str"
-            },
-            {
-                "label": "4:3",
-                "value": "4:3",
-                "type": "str"
-            },
-            {
-                "label": "1:1",
-                "value": "1:1",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "aspect",
-        "topicType": "str",
-        "className": "",
-        "x": 630,
-        "y": 1000,
-        "wires": [
-            [
-                "cef939dda5ff9e5b"
-            ]
-        ]
-    },
-    {
-        "id": "cb4429c4614656de",
-        "type": "ui_dropdown",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Rotation",
-        "label": "Image rotation",
-        "tooltip": "",
-        "place": "Select rotation",
-        "group": "b14fab5b1dcb2b25",
-        "order": 8,
-        "width": "6",
-        "height": "1",
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Landscape",
-                "value": "Landscape",
-                "type": "str"
-            },
-            {
-                "label": "Portrait",
-                "value": "Portrait",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "rotation",
-        "topicType": "str",
-        "className": "",
-        "x": 640,
-        "y": 1040,
-        "wires": [
-            [
-                "dd4446a9465d2c38"
-            ]
-        ]
-    },
-    {
-        "id": "5a33a2defeb64456",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "7a2ff2ef405803e4",
+        "z": "0aa8d529432bab40",
+        "g": "7c13bd947651829e",
         "name": "Resolution",
-        "func": "var aspect = flow.get(\"aspect\") || \"16:9\";\n\nswitch( aspect ) {\n    case \"4:3\":\n        msg.resolution = \"800x600\"\n        break;\n    case \"1:1\":\n        msg.resolution = \"800x800\"\n        break;\n    case \"16:9\":\n    default:\n        msg.resolution = \"1280x720\"\n}\n\nreturn msg;",
+        "func": "var device = global.get(\"device\");\nif(!device) {\n    node.error(\"Missing global.device\",msg);\n    return;\n}\nif(!device.hasOwnProperty(\"camera\")) {\n    node.error(\"Missing global.device.camera\",msg);\n    return;\n}\n\nmsg.topic = \"image\";\nmsg.camera = device.camera;\nmsg.resolution = device.camera.medium;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 600,
+        "x": 490,
+        "y": 300,
         "wires": [
             [
-                "8959debe6e6fd4d0"
+                "fb71792b1c5f338a"
             ]
         ]
     },
     {
-        "id": "7636cd3d4447b0e8",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "name",
-        "func": "msg.payload = flow.get(\"name\") || \"\";\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 410,
-        "y": 800,
-        "wires": [
-            [
-                "5a65553cfedf4110"
-            ]
-        ]
-    },
-    {
-        "id": "5a65553cfedf4110",
+        "id": "95164393cc4ad8ac",
         "type": "ui_text_input",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
         "name": "",
         "label": "Name",
         "tooltip": "",
-        "group": "b14fab5b1dcb2b25",
+        "group": "51cb40ae86f7be91",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -905,24 +586,24 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 630,
-        "y": 800,
+        "x": 770,
+        "y": 700,
         "wires": [
             [
-                "0a7139e5e8ecf93b"
+                "e5bdfc313e7d0f2c"
             ]
         ]
     },
     {
-        "id": "0a7139e5e8ecf93b",
+        "id": "e5bdfc313e7d0f2c",
         "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "flow.name",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "name",
+                "p": "settings.name",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg",
@@ -934,43 +615,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fa23009447afa883",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Confidence",
-        "func": "msg.payload = flow.get(\"confidence\") || 10;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 840,
+        "x": 1040,
+        "y": 700,
         "wires": [
             [
-                "b0f4d51f2f8a2069"
+                "e36fa9a30ea57d32"
             ]
         ]
     },
     {
-        "id": "b0f4d51f2f8a2069",
+        "id": "82fcc5fcc02d0752",
         "type": "ui_dropdown",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "Confidence selection",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "Confidence",
         "label": "Min confidence",
         "tooltip": "",
         "place": "Select detection",
-        "group": "b14fab5b1dcb2b25",
+        "group": "51cb40ae86f7be91",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -1027,239 +689,77 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 680,
-        "y": 840,
+        "x": 790,
+        "y": 740,
         "wires": [
             [
-                "a9144480f676e057"
+                "8333c4df2ef96a7f"
             ]
         ]
     },
     {
-        "id": "a9144480f676e057",
-        "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "flow.confidence",
-        "rules": [
-            {
-                "t": "set",
-                "p": "confidence",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "90c8c1e2905a5162",
+        "id": "9fbd5387b1ad05c4",
         "type": "link out",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
         "name": "Path",
         "mode": "link",
         "links": [
-            "1db7eb81da375feb",
-            "9db1f470b7372e91",
-            "75186e190b087513",
-            "716f549853593db1",
-            "19630bb825bef086"
+            "b34ecf1b46c2afd6",
+            "ee9978043b0a9286"
         ],
-        "x": 645,
+        "x": 685,
         "y": 140,
         "wires": []
     },
     {
-        "id": "1db7eb81da375feb",
+        "id": "b34ecf1b46c2afd6",
         "type": "link in",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
         "name": "link in 1",
         "links": [
             "63a0b93e33536372",
-            "90c8c1e2905a5162",
+            "9fbd5387b1ad05c4",
             "7307295e0c7b7a1d",
-            "d38073e88f076298"
+            "d38073e88f076298",
+            "fa9c6ba5752d9d78"
         ],
-        "x": 185,
-        "y": 440,
+        "x": 215,
+        "y": 260,
         "wires": [
             [
-                "22fe3a3a15d07513"
+                "fabeddd7b172cac3"
             ]
         ]
     },
     {
-        "id": "43750492e3442e5c",
-        "type": "link in",
-        "z": "4d2a3af098557686",
-        "name": "link in 2",
-        "links": [
-            "cc6983fceb95a4af",
-            "64d0beb8e1423bb7"
-        ],
-        "x": 185,
-        "y": 640,
-        "wires": [
-            [
-                "6e705161068fbc8c"
-            ]
-        ]
-    },
-    {
-        "id": "19630bb825bef086",
-        "type": "link in",
-        "z": "4d2a3af098557686",
-        "name": "link in 7",
-        "links": [
-            "90c8c1e2905a5162"
-        ],
-        "x": 205,
-        "y": 260,
-        "wires": [
-            [
-                "d06bea689ee6aaa1"
-            ]
-        ]
-    },
-    {
-        "id": "444dc6894e9ed71e",
-        "type": "comment",
-        "z": "4d2a3af098557686",
-        "name": "Path",
-        "info": "",
-        "x": 130,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "44f4eda7c6b594c3",
-        "type": "mqtt out",
-        "z": "4d2a3af098557686",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "d1d53d1e87be4083",
-        "x": 630,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "3c4747e73a1f4e9d",
+        "id": "a89f8b154958b5f5",
         "type": "link out",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
         "name": "link out 10",
         "mode": "link",
         "links": [
-            "a6c071f176a5fdec"
+            "3396e776db30c3c6",
+            "ccae04e6d6201f8d"
         ],
-        "x": 1255,
-        "y": 600,
+        "x": 1015,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "cef939dda5ff9e5b",
-        "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "aspect",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 1000,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dd4446a9465d2c38",
-        "type": "change",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "rotation",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 1040,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d06bea689ee6aaa1",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "1b1e82a6f52ab006",
-        "name": "path/SERIAL",
-        "func": "msg.payload.device = flow.get(\"device\").serial;\nmsg.payload.name = flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name;\nmsg.topic = \"path/\" + msg.payload.device;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 260,
-        "wires": [
-            [
-                "ba415c42b10fce69"
-            ]
-        ]
-    },
-    {
-        "id": "62f2fa1813893d81",
+        "id": "363d0bdad030309e",
         "type": "comment",
-        "z": "4d2a3af098557686",
-        "name": "Version 1.6",
-        "info": "",
-        "x": 320,
+        "z": "0aa8d529432bab40",
+        "name": "Version 1.8 [README]",
+        "info": "This flow requires a tab that sets global.device.  Import the following json into your Node-RED, then set the camera credentials and MQTT settings.\n\n[\n    {\n        \"id\": \"68857a1340618959\",\n        \"type\": \"tab\",\n        \"label\": \"Common flows\",\n        \"disabled\": false,\n        \"info\": \"\",\n        \"env\": []\n    },\n    {\n        \"id\": \"b0c67b7bf0be503c\",\n        \"type\": \"change\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 690,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"f67a47f0d3d8d4eb\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"231ecb218fc036b5\",\n        \"type\": \"inject\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 250,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"40dc58a84e7179c6\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"f67a47f0d3d8d4eb\",\n        \"type\": \"debug\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"debug 187\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 100,\n        \"wires\": []\n    },\n    {\n        \"id\": \"fdc6aa278612ff22\",\n        \"type\": \"link in\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"Service Output\",\n        \"links\": [\n            \"495e22f712af6155\",\n            \"33c72d05a993f998\",\n            \"36a1c5493dd38891\"\n        ],\n        \"x\": 245,\n        \"y\": 340,\n        \"wires\": [\n            [\n                \"9b2c899ef2440061\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"9b2c899ef2440061\",\n        \"type\": \"mqtt out\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 410,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"2647e0e7551bb6c8\",\n        \"type\": \"comment\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"Service Output\",\n        \"info\": \"\",\n        \"x\": 150,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"40dc58a84e7179c6\",\n        \"type\": \"Axis device\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"preset\": \"e446d3eb32e2d9dd\",\n        \"action\": \"Device Info\",\n        \"cgi\": \"\",\n        \"data\": \"\",\n        \"options\": \"\",\n        \"filename\": \"\",\n        \"x\": 470,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"b0c67b7bf0be503c\",\n                \"5117ab2e8db7e64d\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"5117ab2e8db7e64d\",\n        \"type\": \"Axis camera\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"preset\": \"e446d3eb32e2d9dd\",\n        \"action\": \"Camera Info\",\n        \"resolution\": \"640x360\",\n        \"output\": \"Base64\",\n        \"filename\": \"\",\n        \"options\": \"\",\n        \"data\": \"\",\n        \"x\": 470,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"6f581b79d2e02a74\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"38c5a37847c4015a\",\n        \"type\": \"debug\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"debug 193\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 160,\n        \"wires\": []\n    },\n    {\n        \"id\": \"6f581b79d2e02a74\",\n        \"type\": \"change\",\n        \"z\": \"68857a1340618959\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device.camera\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 710,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"38c5a37847c4015a\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"d1d53d1e87be4083\",\n        \"type\": \"mqtt-broker\",\n        \"name\": \"Broker\",\n        \"broker\": \"10.13.8.20\",\n        \"port\": \"1883\",\n        \"clientid\": \"\",\n        \"autoConnect\": true,\n        \"usetls\": false,\n        \"protocolVersion\": \"4\",\n        \"keepalive\": \"60\",\n        \"cleansession\": true,\n        \"autoUnsubscribe\": true,\n        \"birthTopic\": \"\",\n        \"birthQos\": \"0\",\n        \"birthRetain\": \"false\",\n        \"birthPayload\": \"\",\n        \"birthMsg\": {},\n        \"closeTopic\": \"\",\n        \"closeQos\": \"0\",\n        \"closeRetain\": \"false\",\n        \"closePayload\": \"\",\n        \"closeMsg\": {},\n        \"willTopic\": \"\",\n        \"willQos\": \"0\",\n        \"willRetain\": \"false\",\n        \"willPayload\": \"\",\n        \"willMsg\": {},\n        \"userProps\": \"\",\n        \"sessionExpiry\": \"\"\n    },\n    {\n        \"id\": \"e446d3eb32e2d9dd\",\n        \"type\": \"Device Access\",\n        \"name\": \"Localhost\",\n        \"address\": \"localhost\",\n        \"protocol\": \"http\"\n    }\n]\n",
+        "x": 350,
         "y": 60,
         "wires": []
     },
     {
-        "id": "b75cb5d20deb0d91",
+        "id": "a1d8cd6d3008d729",
         "type": "inject",
-        "z": "4d2a3af098557686",
-        "name": "",
+        "z": "0aa8d529432bab40",
+        "name": "On start",
         "props": [
             {
                 "p": "payload"
@@ -1272,93 +772,62 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "0.5",
+        "onceDelay": "5",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 800,
+        "x": 140,
+        "y": 420,
         "wires": [
             [
-                "c641d23ac93afa95"
+                "2652d6efabd14c5c"
             ]
         ]
     },
     {
-        "id": "5736c5dc251b7801",
+        "id": "07e5bd150d877243",
         "type": "catch",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
         "name": "",
         "scope": null,
-        "uncaught": false,
-        "x": 100,
-        "y": 1160,
+        "uncaught": true,
+        "x": 360,
+        "y": 1240,
         "wires": [
             [
-                "1922b0122cc26a03"
+                "6df5ed1a11dd9f53"
             ]
         ]
     },
     {
-        "id": "1922b0122cc26a03",
+        "id": "6df5ed1a11dd9f53",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "name": "Format",
-        "func": "msg.topic = \"exception/pathingestion/\" + flow.get(\"camera\").serial\nmsg.payload = msg.error;\nreturn msg;",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
+        "name": "Message",
+        "func": "var settings = flow.get(\"settings\")\nif(!settings)\n    return;\n\nmsg.topic = \"exception/\" + settings.service + \"/\" + settings.name;\nmsg.payload = msg.error;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 270,
-        "y": 1160,
+        "x": 580,
+        "y": 1240,
         "wires": [
             [
-                "b607027d24def50f",
-                "39dceeb321319a52",
-                "83d9852e8805f499"
+                "adb9847f12eda152",
+                "513f2fe3ea066da2",
+                "9946cad8383e93ed"
             ]
         ]
     },
     {
-        "id": "b607027d24def50f",
-        "type": "mqtt out",
-        "z": "4d2a3af098557686",
-        "name": "",
-        "topic": "exception/objectpath/SERIAL",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "d1d53d1e87be4083",
-        "x": 530,
-        "y": 1160,
-        "wires": []
-    },
-    {
-        "id": "39dceeb321319a52",
-        "type": "debug",
-        "z": "4d2a3af098557686",
-        "name": "debug 181",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "83d9852e8805f499",
+        "id": "adb9847f12eda152",
         "type": "change",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
         "name": "",
         "rules": [
             {
@@ -1374,18 +843,19 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 1200,
+        "x": 780,
+        "y": 1240,
         "wires": [
             [
-                "4ea3a8588e15f0e1"
+                "ed8e01396281dfe7"
             ]
         ]
     },
     {
-        "id": "4ea3a8588e15f0e1",
+        "id": "ed8e01396281dfe7",
         "type": "ui_toast",
-        "z": "4d2a3af098557686",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -1397,35 +867,39 @@
         "className": "",
         "topic": "",
         "name": "",
-        "x": 700,
-        "y": 1200,
+        "x": 990,
+        "y": 1240,
         "wires": [
             []
         ]
     },
     {
-        "id": "a6c071f176a5fdec",
-        "type": "link in",
-        "z": "4d2a3af098557686",
-        "name": "link in 15",
-        "links": [
-            "3c4747e73a1f4e9d"
-        ],
-        "x": 215,
-        "y": 320,
-        "wires": [
-            [
-                "f17846a95411b0bb"
-            ]
-        ]
+        "id": "2cca2436c79ab0e4",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Path putput for other flows",
+        "info": "",
+        "x": 830,
+        "y": 140,
+        "wires": []
     },
     {
-        "id": "f17846a95411b0bb",
+        "id": "dfe29dac7158fbf6",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Image",
+        "info": "",
+        "x": 1110,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2652d6efabd14c5c",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "1b1e82a6f52ab006",
-        "name": "image/SERIAL",
-        "func": "msg.topic = \"image/\" + flow.get(\"device\").serial || \"Undefined\";\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\n\nreturn msg;",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "Default settings",
+        "func": "msg.payload = {\n    service: \"ObjectPath\",\n    name: global.get(\"device\").serial || \"Undefined\",\n    aoi: {\n        id: \"aoi\",\n        x1: 200,\n        y1: 200,\n        x2: 800,\n        y2: 800\n    },\n    age: 1,\n    distance: 20,\n    confidence: 30,\n    classes: [\"Human\", \"Car\"],\n    aspect: \"16:9\",\n    rotation: \"Landscape\"\n}\n\nvar device = global.get(\"device\");\nif( !device) \n    return msg;\n\nif( device.hostname )\n    msg.payload.name = device.hostname;\n\nif( device.hasOwnProperty(\"camera\") ) {\n    msg.payload.aspect = device.camera.aspect;\n    if(device.camera.rotation === 90 || device.camera.rotation === 270 )\n    msg.payload.rotation = \"Portrait\";\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1433,139 +907,808 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 320,
+        "y": 420,
         "wires": [
             [
-                "ba415c42b10fce69"
+                "33b631f5c511421d"
             ]
         ]
     },
     {
-        "id": "df76f32938c10e11",
-        "type": "comment",
-        "z": "4d2a3af098557686",
-        "name": "Image",
-        "info": "",
-        "x": 130,
-        "y": 320,
+        "id": "33b631f5c511421d",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 420,
+        "wires": [
+            [
+                "e6ee020f981c6cf7"
+            ]
+        ]
+    },
+    {
+        "id": "e6ee020f981c6cf7",
+        "type": "file in",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "",
+        "filename": "sdcard/ObjectPath.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 430,
+        "y": 460,
+        "wires": [
+            [
+                "b759ead971a9bb64"
+            ]
+        ]
+    },
+    {
+        "id": "b759ead971a9bb64",
+        "type": "json",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "b923fa49390ed46e"
+            ]
+        ]
+    },
+    {
+        "id": "b923fa49390ed46e",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 460,
+        "wires": [
+            [
+                "6134590284858599"
+            ]
+        ]
+    },
+    {
+        "id": "6134590284858599",
+        "type": "link out",
+        "z": "0aa8d529432bab40",
+        "name": "Initialized",
+        "mode": "link",
+        "links": [
+            "6d4f3ebc918652d7"
+        ],
+        "x": 985,
+        "y": 460,
         "wires": []
     },
     {
-        "id": "3fe4f34010d94881",
-        "type": "comment",
-        "z": "4d2a3af098557686",
-        "name": "Image",
-        "info": "",
-        "x": 730,
-        "y": 140,
-        "wires": []
+        "id": "317e03e133424e17",
+        "type": "catch",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "",
+        "scope": [
+            "e6ee020f981c6cf7"
+        ],
+        "uncaught": false,
+        "x": 330,
+        "y": 520,
+        "wires": [
+            [
+                "5dd50bda5a4410cf"
+            ]
+        ]
     },
     {
-        "id": "70c2565ef7c3fa19",
-        "type": "comment",
-        "z": "4d2a3af098557686",
-        "name": "Image",
-        "info": "",
-        "x": 1330,
-        "y": 600,
-        "wires": []
+        "id": "5dd50bda5a4410cf",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "69f4df72b66aab80"
+            ]
+        ]
     },
     {
-        "id": "396f6c0a21306e14",
+        "id": "8ae57f764a1b2209",
+        "type": "link in",
+        "z": "0aa8d529432bab40",
+        "name": "Update Settings",
+        "links": [
+            "b85188971f46a16e",
+            "e05f51ddb9239a9f"
+        ],
+        "x": 205,
+        "y": 580,
+        "wires": [
+            [
+                "5dd50bda5a4410cf"
+            ]
+        ]
+    },
+    {
+        "id": "69f4df72b66aab80",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "age",
-        "func": "if( !flow.get(\"age\") ) {\n    msg.payload = 1;\n} else {\n    msg.payload = flow.get(\"age\");\n}\n\nreturn msg;",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "pretty",
+        "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "299b0b5bac1fd59f"
+            ]
+        ]
+    },
+    {
+        "id": "299b0b5bac1fd59f",
+        "type": "file",
+        "z": "0aa8d529432bab40",
+        "g": "4338a9de9add118c",
+        "name": "",
+        "filename": "sdcard/ObjectPath.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 770,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73fcc9b35376cc0d",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Init",
+        "info": "",
+        "x": 1070,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b85188971f46a16e",
+        "type": "link out",
+        "z": "0aa8d529432bab40",
+        "name": "link out 17",
+        "mode": "link",
+        "links": [
+            "8ae57f764a1b2209"
+        ],
+        "x": 1015,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6bec7da9175d43f3",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Update",
+        "info": "",
+        "x": 110,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6d4f3ebc918652d7",
+        "type": "link in",
+        "z": "0aa8d529432bab40",
+        "name": "link in 18",
+        "links": [
+            "6134590284858599"
+        ],
+        "x": 195,
+        "y": 700,
+        "wires": [
+            [
+                "b96d1d038904bc38"
+            ]
+        ]
+    },
+    {
+        "id": "b96d1d038904bc38",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "47457ccf5e171144",
+                "ab710301900f6867",
+                "442b327cf1d33acf",
+                "d7d90d33e05129c8",
+                "a7d964339c279dd4"
+            ]
+        ]
+    },
+    {
+        "id": "47457ccf5e171144",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 700,
+        "wires": [
+            [
+                "95164393cc4ad8ac"
+            ]
+        ]
+    },
+    {
+        "id": "ab710301900f6867",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "confidence",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.confidence",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 740,
+        "wires": [
+            [
+                "82fcc5fcc02d0752"
+            ]
+        ]
+    },
+    {
+        "id": "442b327cf1d33acf",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "classes",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.classes",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 780,
+        "wires": [
+            [
+                "26b257f6f30d1fe0"
+            ]
+        ]
+    },
+    {
+        "id": "d7d90d33e05129c8",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "age",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.age",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "b072ef48514220e7"
+            ]
+        ]
+    },
+    {
+        "id": "a7d964339c279dd4",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "distance",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.distance",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 860,
+        "wires": [
+            [
+                "fe9cd19ccff9a37d"
+            ]
+        ]
+    },
+    {
+        "id": "e05f51ddb9239a9f",
+        "type": "link out",
+        "z": "0aa8d529432bab40",
+        "name": "Settings updated",
+        "mode": "link",
+        "links": [
+            "8ae57f764a1b2209"
+        ],
+        "x": 1325,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "0ce55a48ad3935cd",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Init",
+        "info": "",
+        "x": 130,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "29c888efc8519863",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Updated",
+        "info": "",
+        "x": 1410,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "3642b14311332477",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Visualize",
+        "info": "",
+        "x": 120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "912f5671ca006b8b",
+        "type": "ui_button",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
+        "group": "51cb40ae86f7be91",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set area objects must pass",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 400,
         "y": 920,
         "wires": [
             [
-                "c26b8dc87bf63531"
+                "4eb6730fe28971ab"
             ]
         ]
     },
     {
-        "id": "ccb4d5f2755880e3",
-        "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "distance",
-        "func": "if( !flow.get(\"distance\") ) {\n    msg.payload = 20;\n} else {\n    msg.payload = flow.get(\"distance\");\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
+        "id": "4eb6730fe28971ab",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings.aoi",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "aoi",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 920,
+        "wires": [
+            [
+                "310bfc76ba80519f"
+            ]
+        ]
+    },
+    {
+        "id": "fa9c6ba5752d9d78",
+        "type": "link out",
+        "z": "0aa8d529432bab40",
+        "name": "link out 19",
+        "mode": "link",
+        "links": [
+            "b34ecf1b46c2afd6"
+        ],
+        "x": 1305,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "d886463dff3cab96",
+        "type": "ui_button",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "",
+        "group": "51cb40ae86f7be91",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "aoi",
+        "topicType": "str",
+        "x": 670,
         "y": 960,
         "wires": [
             [
-                "d59e39c5a0ced6b6"
+                "545167ced83d4bb5"
             ]
         ]
     },
     {
-        "id": "14150c37ef9f7b25",
+        "id": "e0ba34e900229b33",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Updated",
+        "info": "",
+        "x": 1120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5e93d966b6417944",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Visualize",
+        "info": "",
+        "x": 1420,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ee9978043b0a9286",
+        "type": "link in",
+        "z": "0aa8d529432bab40",
+        "name": "link in 19",
+        "links": [
+            "9fbd5387b1ad05c4"
+        ],
+        "x": 205,
+        "y": 1120,
+        "wires": [
+            [
+                "a9e33b71b2ecf5f9"
+            ]
+        ]
+    },
+    {
+        "id": "bcead3e398a4e3a0",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Path",
+        "info": "",
+        "x": 130,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "ccae04e6d6201f8d",
+        "type": "link in",
+        "z": "0aa8d529432bab40",
+        "name": "link in 20",
+        "links": [
+            "a89f8b154958b5f5"
+        ],
+        "x": 205,
+        "y": 1180,
+        "wires": [
+            [
+                "ae666910bc89db89"
+            ]
+        ]
+    },
+    {
+        "id": "ad7a7a926e02b8c2",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "Image",
+        "info": "",
+        "x": 130,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "a9e33b71b2ecf5f9",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "aspect",
-        "func": "if( !flow.get(\"aspect\") ) {\n    msg.payload = \"16:9\";\n} else {\n    msg.payload = flow.get(\"aspect\");\n}\n\nreturn msg;",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
+        "name": "path/SERIAL",
+        "func": "var device = global.get(\"device\");\nif(!device)\n    return;\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nmsg.topic = \"path/\" + device.serial;\nmsg.payload.name = settings.name || device.name || device.serial;\nmsg.payload.serial = device.serial;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 1000,
+        "x": 350,
+        "y": 1120,
         "wires": [
             [
-                "5f7d11daa124abdd"
+                "513f2fe3ea066da2"
             ]
         ]
     },
     {
-        "id": "d1d775f40d499d0f",
+        "id": "ae666910bc89db89",
         "type": "function",
-        "z": "4d2a3af098557686",
-        "g": "6b6e8e5d88004813",
-        "name": "rotation",
-        "func": "if( !flow.get(\"rotation\") ) {\n    msg.payload = \"Landscape\";\n} else {\n    msg.payload = flow.get(\"rotation\");\n}\n\nreturn msg;",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
+        "name": "image/SERIAL",
+        "func": "var device = global.get(\"device\");\nif(!device)\n    return;\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nmsg.topic = \"image/\" + device.serial;\nmsg.payload = {\n    name: settings.name || device.hostname || device.serial,\n    serial: device.serial,\n    service: settings.service,\n    rotation: msg.camera.rotation,\n    aspect: msg.camera.aspect,\n    timestamp: new Date().getTime(),\n    image: msg.payload,\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 1040,
+        "x": 360,
+        "y": 1180,
         "wires": [
             [
-                "cb4429c4614656de"
+                "513f2fe3ea066da2"
             ]
         ]
     },
     {
-        "id": "73fbb18d33a287f1",
-        "type": "Device Access",
-        "name": "Localhost",
-        "address": "localhost",
-        "protocol": "http"
+        "id": "3d409c678d9a4f7a",
+        "type": "link out",
+        "z": "0aa8d529432bab40",
+        "name": "ObjectPath Output",
+        "mode": "link",
+        "links": [
+            "cbf7e3d5e60ba35a"
+        ],
+        "x": 1255,
+        "y": 1120,
+        "wires": []
     },
     {
-        "id": "7348b105173cd658",
+        "id": "8ecf1984ed3222d6",
+        "type": "comment",
+        "z": "0aa8d529432bab40",
+        "name": "ObjectPath Output (MQTT)",
+        "info": "",
+        "x": 1400,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "9946cad8383e93ed",
+        "type": "debug",
+        "z": "0aa8d529432bab40",
+        "g": "f4148ff9c2b7068e",
+        "name": "debug 189",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "545167ced83d4bb5",
+        "type": "change",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "Hide AOI",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "aoi",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 960,
+        "wires": [
+            [
+                "310bfc76ba80519f"
+            ]
+        ]
+    },
+    {
+        "id": "8333c4df2ef96a7f",
+        "type": "function",
+        "z": "0aa8d529432bab40",
+        "g": "8f3283440d307c32",
+        "name": "set flow.settings.confidence",
+        "func": "var settings = flow.get(\"settings\");\nsettings.confidence = parseInt(msg.payload);\nflow.set(\"settings\", settings);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 740,
+        "wires": [
+            [
+                "e36fa9a30ea57d32"
+            ]
+        ]
+    },
+    {
+        "id": "9cd006c8743bc9ed",
         "type": "ui_group",
-        "name": "Heatmap",
-        "tab": "531dc7602bdeef80",
+        "name": "Visualization",
+        "tab": "de785a585f9b40cd",
         "order": 1,
         "disp": false,
         "width": "16",
@@ -1573,10 +1716,10 @@
         "className": ""
     },
     {
-        "id": "b14fab5b1dcb2b25",
+        "id": "51cb40ae86f7be91",
         "type": "ui_group",
         "name": "Settings",
-        "tab": "531dc7602bdeef80",
+        "tab": "de785a585f9b40cd",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -1584,38 +1727,7 @@
         "className": ""
     },
     {
-        "id": "d1d53d1e87be4083",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "10.13.8.20",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "531dc7602bdeef80",
+        "id": "de785a585f9b40cd",
         "type": "ui_tab",
         "name": "Object Path",
         "icon": "dashboard",
