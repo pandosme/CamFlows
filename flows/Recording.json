@@ -1,0 +1,2189 @@
+[
+    {
+        "id": "7b18b12f1a69a9ba",
+        "type": "tab",
+        "label": "Recording",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4a819d5daece1d52",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "6cf8c2721c797a90",
+            "280bd4bfee7a2bd1",
+            "599c9d2deb128e5d",
+            "9af56f208a723445",
+            "4c8059c10f983984",
+            "caec14ee87358f45",
+            "c9333089748a261d",
+            "970f5434f15d36d2",
+            "2bf38b1db5131e69",
+            "79bff435f7709f93"
+        ],
+        "x": 274,
+        "y": 999,
+        "w": 1132,
+        "h": 242
+    },
+    {
+        "id": "707d5de12d001cc0",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Trigger",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "color": "#000000"
+        },
+        "nodes": [
+            "341f224d2e32c295",
+            "5767af54df334bf0",
+            "5f6eacfe0f4e7e33",
+            "b55b7332c344766a",
+            "4ccdb1a63db24275",
+            "1c16716dae6e0db5",
+            "40176fb41031dc36",
+            "012e07bb24794369",
+            "e26a594b8bf0ec0f"
+        ],
+        "x": 274,
+        "y": 119,
+        "w": 892,
+        "h": 242
+    },
+    {
+        "id": "104ce285e5513ed4",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Recording Controller",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "30589f91134f1493",
+            "8c18d877038d9d4b",
+            "44d857ca79498eac",
+            "38782d5bbcbfdbf8",
+            "499a521dba6942ff",
+            "a9fbe3e9f51cb51c",
+            "1f78619e58c62e4b",
+            "47d19d48a1b89a65",
+            "ed19fbb214b8ca7b",
+            "05b613496642d1f3",
+            "bb1184b16fecb137",
+            "ad9db9577c9e159d",
+            "de4d306ff3a5a95d",
+            "afbd81d6023cb5ac",
+            "0205f78c842cf0cc",
+            "6d7f2a8fd4cf7d81",
+            "46b12fe88449fc4b"
+        ],
+        "x": 274,
+        "y": 419,
+        "w": 972,
+        "h": 322
+    },
+    {
+        "id": "7b85c9a99623a74a",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Eception handling",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e389dc50e6c2b6bc",
+            "72f3f32667138811",
+            "a18bf4942f8d5a1b",
+            "0e71077f7278905e"
+        ],
+        "x": 274,
+        "y": 1559,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "cba201612d522f39",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Recording Table",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4170a48a8ef563c3",
+            "b8ed43ad61af5a54",
+            "d77e5280d4925583",
+            "21db24be3a384f63",
+            "618856c67ab967d4",
+            "38bafab7103e3bff"
+        ],
+        "x": 274,
+        "y": 799,
+        "w": 852,
+        "h": 142
+    },
+    {
+        "id": "07a8c15b6f80ae58",
+        "type": "group",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Configuration",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "11af1acd15c7e648",
+            "3ad056096fa3aebb",
+            "642da8718fa96ab4",
+            "b1b41d496666e929",
+            "7302732a7875a33e",
+            "8af331918ab58e1d",
+            "dd1219b684e814aa",
+            "df30acfb119dc5bc",
+            "bbbce72861b6a3c3",
+            "3a6ba446d4a329a9",
+            "26437cd3c2823e32",
+            "5a7d9d4a7d71c084",
+            "d737951a17ba39b7",
+            "03b55fd74bb4cb9b",
+            "ec7c626d3d23b30c",
+            "40fcc9924e72e8ca",
+            "064d31c8c6a7113e",
+            "382f35e3adb93164",
+            "4e0859b0312fc351"
+        ],
+        "x": 274,
+        "y": 1299,
+        "w": 1212,
+        "h": 242
+    },
+    {
+        "id": "03b55fd74bb4cb9b",
+        "type": "junction",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "x": 580,
+        "y": 1340,
+        "wires": [
+            [
+                "dd1219b684e814aa",
+                "642da8718fa96ab4",
+                "bbbce72861b6a3c3",
+                "26437cd3c2823e32"
+            ]
+        ]
+    },
+    {
+        "id": "ec7c626d3d23b30c",
+        "type": "junction",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "x": 1460,
+        "y": 1380,
+        "wires": [
+            [
+                "85f9bc993ce72534"
+            ]
+        ]
+    },
+    {
+        "id": "e26a594b8bf0ec0f",
+        "type": "junction",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "x": 1140,
+        "y": 160,
+        "wires": [
+            [
+                "db70e45dc7f18aa3"
+            ]
+        ]
+    },
+    {
+        "id": "40fcc9924e72e8ca",
+        "type": "junction",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "x": 300,
+        "y": 1340,
+        "wires": [
+            [
+                "8af331918ab58e1d"
+            ]
+        ]
+    },
+    {
+        "id": "de4d306ff3a5a95d",
+        "type": "junction",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "30589f91134f1493"
+            ]
+        ]
+    },
+    {
+        "id": "341f224d2e32c295",
+        "type": "trigger",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "bool",
+        "op2type": "bool",
+        "duration": "5",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "b55b7332c344766a"
+            ]
+        ]
+    },
+    {
+        "id": "30589f91134f1493",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "FMR Controller",
+        "func": "var device = global.get(\"device\");\nif( !device ) {\n    node.error(\"No device defined\",msg);\n    return;\n}\n\nvar settings = flow.get(\"settings\");\nif( !settings ) {\n    node.error(\"No settings defined\",msg);\n    return;\n}\n\nif( settings.method !== \"FMR\")\n    return;\n\nif( settings.server.length < 5 ) {\n    node.error(\"No Server defined\",msg);\n    return;\n}\n\nif( msg.payload === true ) {\n    msg.url = \"http://\" +settings.server + \"/record/start\" ;\n\n    msg.payload = {\n        serial: device.serial,\n        buffer: settings.bufferSeconds,\n        tag: msg.tag || \"Recording\",\n        method: \"FMR\"\n    }\n    return msg;\n}\n\n\nif (msg.payload === false) {\n    msg.url = \"http://\" + settings.server + \"/record/stop\";\n\n    msg.payload = {\n        serial: device.serial,\n        buffer: settings.bufferSeconds,\n        tag: msg.tag || \"Recording\",\n        method: \"FMR\"\n    }\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 460,
+        "wires": [
+            [
+                "8c18d877038d9d4b"
+            ]
+        ]
+    },
+    {
+        "id": "8c18d877038d9d4b",
+        "type": "http request",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "44d857ca79498eac"
+            ]
+        ]
+    },
+    {
+        "id": "79bff435f7709f93",
+        "type": "ui_button",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "",
+        "group": "d789f1130a584ec2",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 350,
+        "y": 1040,
+        "wires": [
+            [
+                "6cf8c2721c797a90"
+            ]
+        ]
+    },
+    {
+        "id": "11af1acd15c7e648",
+        "type": "ui_dropdown",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "Method",
+        "label": "",
+        "tooltip": "",
+        "place": "Select method",
+        "group": "d789f1130a584ec2",
+        "order": 5,
+        "width": "8",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "None",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "FMR",
+                "value": "FMR",
+                "type": "str"
+            },
+            {
+                "label": "Event SD Card (Event/Action configuration)",
+                "value": "SD_Event",
+                "type": "str"
+            },
+            {
+                "label": "Direct SD Card (No pre-buffer recording)",
+                "value": "SD_Direct",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 920,
+        "y": 1420,
+        "wires": [
+            [
+                "3ad056096fa3aebb"
+            ]
+        ]
+    },
+    {
+        "id": "3ad056096fa3aebb",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.method",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 1420,
+        "wires": [
+            [
+                "ec7c626d3d23b30c"
+            ]
+        ]
+    },
+    {
+        "id": "642da8718fa96ab4",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings.bufferSeconds",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1460,
+        "wires": [
+            [
+                "b1b41d496666e929"
+            ]
+        ]
+    },
+    {
+        "id": "b1b41d496666e929",
+        "type": "ui_numeric",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "label": "Pre/Post buffer",
+        "tooltip": "",
+        "group": "d789f1130a584ec2",
+        "order": 8,
+        "width": "5",
+        "height": "1",
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}s",
+        "min": "1",
+        "max": "30",
+        "step": 1,
+        "className": "",
+        "x": 940,
+        "y": 1460,
+        "wires": [
+            [
+                "7302732a7875a33e"
+            ]
+        ]
+    },
+    {
+        "id": "7302732a7875a33e",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.bufferSeconds",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1190,
+        "y": 1460,
+        "wires": [
+            [
+                "ec7c626d3d23b30c"
+            ]
+        ]
+    },
+    {
+        "id": "db70e45dc7f18aa3",
+        "type": "link out",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Detection",
+        "mode": "link",
+        "links": [
+            "a2953c93c4a69fb4"
+        ],
+        "x": 1345,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a2953c93c4a69fb4",
+        "type": "link in",
+        "z": "7b18b12f1a69a9ba",
+        "name": "link in 13",
+        "links": [
+            "db70e45dc7f18aa3"
+        ],
+        "x": 105,
+        "y": 460,
+        "wires": [
+            [
+                "de4d306ff3a5a95d"
+            ]
+        ]
+    },
+    {
+        "id": "f91523f419b947f9",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Record",
+        "info": "",
+        "x": 190,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5767af54df334bf0",
+        "type": "ui_button",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "",
+        "group": "d789f1130a584ec2",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "label": "Test 5 second recording",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "5f6eacfe0f4e7e33"
+            ]
+        ]
+    },
+    {
+        "id": "2cd7e57c3a006cce",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Version 1.0 [README]",
+        "info": "This flow requiers that you have installed \"Recorder\" on a server.\nhttps://github.com/pandosme/recorder\n\nIf you have not already imported \"Common Flows\", do so.\nUf you want to record on SD Card, import the \"Convert SD Recording to MP4\" flow.",
+        "x": 380,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "084c1332e10a279d",
+        "type": "ui_toast",
+        "z": "7b18b12f1a69a9ba",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1050,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2067af5e01c55c4",
+        "type": "link out",
+        "z": "7b18b12f1a69a9ba",
+        "name": "exception/service/SERIAL",
+        "mode": "link",
+        "links": [
+            "aa43617de91eb980"
+        ],
+        "x": 1125,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "e389dc50e6c2b6bc",
+        "type": "catch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "7b85c9a99623a74a",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 380,
+        "y": 1600,
+        "wires": [
+            [
+                "72f3f32667138811",
+                "0e71077f7278905e"
+            ]
+        ]
+    },
+    {
+        "id": "72f3f32667138811",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "7b85c9a99623a74a",
+        "name": "Message",
+        "func": "var device = global.get(\"device\");\nif(!device)\n    return;\nvar service = flow.get(\"service\")\nif(!service)\n    return;\nmsg.topic = \"exception/\" + service.name + \"/\" + device.serial;\nmsg.payload = msg.error;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1600,
+        "wires": [
+            [
+                "a18bf4942f8d5a1b",
+                "d2067af5e01c55c4"
+            ]
+        ]
+    },
+    {
+        "id": "a18bf4942f8d5a1b",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "7b85c9a99623a74a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 1660,
+        "wires": [
+            [
+                "084c1332e10a279d"
+            ]
+        ]
+    },
+    {
+        "id": "22175a750a1e24bb",
+        "type": "inject",
+        "z": "7b18b12f1a69a9ba",
+        "name": "On start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1040,
+        "wires": [
+            [
+                "79bff435f7709f93"
+            ]
+        ]
+    },
+    {
+        "id": "de8a5e5e2cb27a9b",
+        "type": "link out",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Initialized",
+        "mode": "link",
+        "links": [
+            "2bf6c2312566bdbc",
+            "d13370e650e05312",
+            "a0928131ca946860",
+            "338c26761a633ad5"
+        ],
+        "x": 1585,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "7629d04ef4c084e4",
+        "type": "link in",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Update Settings",
+        "links": [
+            "337a5d3c4859afbe",
+            "8063132e4678e4de",
+            "85f9bc993ce72534",
+            "3fcf9d35c680732e",
+            "7437f3299275bbb4",
+            "7cd22aae86dc94e6",
+            "03d4d4ea47ae1a22"
+        ],
+        "x": 125,
+        "y": 1200,
+        "wires": [
+            [
+                "c9333089748a261d"
+            ]
+        ]
+    },
+    {
+        "id": "77b3c613064d3bb5",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Init",
+        "info": "",
+        "x": 1490,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "4ae34b616828b9ae",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Update",
+        "info": "",
+        "x": 210,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "6cf8c2721c797a90",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "Default settings",
+        "func": "var device = global.get(\"device\");\n\nif(!device) {\n    node.error(\"Missing global.device. Check Readme\",msg);\n    return;\n}\n\nif(!device.hasOwnProperty(\"camera\")) {\n    node.error(\"Missing global.device.camera. Check Readme\",msg);\n    return;\n}\n\nmsg.payload = {\n    service: \"Recording\",\n    name: device.serial,\n    server: \"\",\n    method: \"None\",\n    trigger: \"None\",\n    bufferSeconds: 0\n}\n\nif( device.hostname )\n    msg.payload.name = device.hostname;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1040,
+        "wires": [
+            [
+                "280bd4bfee7a2bd1"
+            ]
+        ]
+    },
+    {
+        "id": "280bd4bfee7a2bd1",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1040,
+        "wires": [
+            [
+                "599c9d2deb128e5d"
+            ]
+        ]
+    },
+    {
+        "id": "599c9d2deb128e5d",
+        "type": "file in",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "",
+        "filename": "sdcard/Recording.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 970,
+        "y": 1040,
+        "wires": [
+            [
+                "9af56f208a723445"
+            ]
+        ]
+    },
+    {
+        "id": "9af56f208a723445",
+        "type": "json",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1170,
+        "y": 1040,
+        "wires": [
+            [
+                "4c8059c10f983984"
+            ]
+        ]
+    },
+    {
+        "id": "4c8059c10f983984",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 1040,
+        "wires": [
+            [
+                "de8a5e5e2cb27a9b"
+            ]
+        ]
+    },
+    {
+        "id": "caec14ee87358f45",
+        "type": "catch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "",
+        "scope": [
+            "599c9d2deb128e5d"
+        ],
+        "uncaught": false,
+        "x": 360,
+        "y": 1120,
+        "wires": [
+            [
+                "c9333089748a261d"
+            ]
+        ]
+    },
+    {
+        "id": "c9333089748a261d",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1200,
+        "wires": [
+            [
+                "970f5434f15d36d2"
+            ]
+        ]
+    },
+    {
+        "id": "970f5434f15d36d2",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "pretty",
+        "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1200,
+        "wires": [
+            [
+                "2bf38b1db5131e69"
+            ]
+        ]
+    },
+    {
+        "id": "2bf38b1db5131e69",
+        "type": "file",
+        "z": "7b18b12f1a69a9ba",
+        "g": "4a819d5daece1d52",
+        "name": "",
+        "filename": "sdcard/Recording.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 890,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8af331918ab58e1d",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1340,
+        "wires": [
+            [
+                "03b55fd74bb4cb9b"
+            ]
+        ]
+    },
+    {
+        "id": "d13370e650e05312",
+        "type": "link in",
+        "z": "7b18b12f1a69a9ba",
+        "name": "link in 29",
+        "links": [
+            "de8a5e5e2cb27a9b"
+        ],
+        "x": 125,
+        "y": 1340,
+        "wires": [
+            [
+                "40fcc9924e72e8ca"
+            ]
+        ]
+    },
+    {
+        "id": "dd1219b684e814aa",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.method",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1420,
+        "wires": [
+            [
+                "11af1acd15c7e648"
+            ]
+        ]
+    },
+    {
+        "id": "85f9bc993ce72534",
+        "type": "link out",
+        "z": "7b18b12f1a69a9ba",
+        "name": "link out 22",
+        "mode": "link",
+        "links": [
+            "7629d04ef4c084e4"
+        ],
+        "x": 1685,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "460395825cf2a929",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Update",
+        "info": "",
+        "x": 1570,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "df30acfb119dc5bc",
+        "type": "ui_text_input",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "label": "Storage server address",
+        "tooltip": "",
+        "group": "d789f1130a584ec2",
+        "order": 3,
+        "width": "8",
+        "height": "1",
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 970,
+        "y": 1380,
+        "wires": [
+            [
+                "3a6ba446d4a329a9"
+            ]
+        ]
+    },
+    {
+        "id": "bbbce72861b6a3c3",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.server",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1380,
+        "wires": [
+            [
+                "df30acfb119dc5bc"
+            ]
+        ]
+    },
+    {
+        "id": "3a6ba446d4a329a9",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.server",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 1380,
+        "wires": [
+            [
+                "ec7c626d3d23b30c"
+            ]
+        ]
+    },
+    {
+        "id": "5f6eacfe0f4e7e33",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "Validate",
+        "func": "var settings = flow.get(\"settings\");\nif( !settings ) {\n    node.error(\"No settings detected\",msg);\n    return;\n}\n\nif( settings.server.length < 5 ) {\n    node.error(\"No recording server defined\");\n    return;\n}\n\nif( settings.method === \"None\" ) {\n    node.error(\"No method server defined\");\n    return;\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 160,
+        "wires": [
+            [
+                "341f224d2e32c295"
+            ]
+        ]
+    },
+    {
+        "id": "b55b7332c344766a",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "test",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "tag",
+                "pt": "msg",
+                "to": "Test",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "e26a594b8bf0ec0f"
+            ]
+        ]
+    },
+    {
+        "id": "44d857ca79498eac",
+        "type": "switch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "Error",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "400",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "38782d5bbcbfdbf8"
+            ]
+        ]
+    },
+    {
+        "id": "38782d5bbcbfdbf8",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "Throw",
+        "func": "node.error(\"Recording failed\",msg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "499a521dba6942ff",
+        "type": "mqtt in",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "topic": "recorder/starting/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1d53d1e87be4083",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 640,
+        "wires": [
+            [
+                "1f78619e58c62e4b"
+            ]
+        ]
+    },
+    {
+        "id": "a9fbe3e9f51cb51c",
+        "type": "mqtt in",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "topic": "recorder/stopped/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d1d53d1e87be4083",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 700,
+        "wires": [
+            [
+                "47d19d48a1b89a65"
+            ]
+        ]
+    },
+    {
+        "id": "1f78619e58c62e4b",
+        "type": "switch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "This camera",
+        "property": "payload.serial",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "device.serial",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 640,
+        "wires": [
+            [
+                "05b613496642d1f3"
+            ]
+        ]
+    },
+    {
+        "id": "47d19d48a1b89a65",
+        "type": "switch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "This camera",
+        "property": "payload.serial",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "device.serial",
+                "vt": "global"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 700,
+        "wires": [
+            [
+                "bb1184b16fecb137"
+            ]
+        ]
+    },
+    {
+        "id": "ed19fbb214b8ca7b",
+        "type": "ui_text",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "group": "736f3657f6d89230",
+        "order": 2,
+        "width": "5",
+        "height": "1",
+        "name": "",
+        "label": "Ongoing recording:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1130,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "05b613496642d1f3",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.tag",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 640,
+        "wires": [
+            [
+                "ed19fbb214b8ca7b"
+            ]
+        ]
+    },
+    {
+        "id": "bb1184b16fecb137",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "-",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 700,
+        "wires": [
+            [
+                "ed19fbb214b8ca7b"
+            ]
+        ]
+    },
+    {
+        "id": "26437cd3c2823e32",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.trigger",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 1500,
+        "wires": [
+            [
+                "5a7d9d4a7d71c084"
+            ]
+        ]
+    },
+    {
+        "id": "5a7d9d4a7d71c084",
+        "type": "ui_dropdown",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "Trigger",
+        "label": "",
+        "tooltip": "",
+        "place": "Select Trigger",
+        "group": "d789f1130a584ec2",
+        "order": 7,
+        "width": "8",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "No trigger (or External Trigger)",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "Presence (Object Detections)",
+                "value": "presence",
+                "type": "str"
+            },
+            {
+                "label": "Axis AOA Detection",
+                "value": "aoa",
+                "type": "str"
+            },
+            {
+                "label": "Axis Motion Detection",
+                "value": "vmd",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 920,
+        "y": 1500,
+        "wires": [
+            [
+                "d737951a17ba39b7"
+            ]
+        ]
+    },
+    {
+        "id": "d737951a17ba39b7",
+        "type": "change",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.trigger",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 1500,
+        "wires": [
+            [
+                "ec7c626d3d23b30c"
+            ]
+        ]
+    },
+    {
+        "id": "8fe5aff87ba5ba3b",
+        "type": "link in",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Presence Detection",
+        "links": [
+            "f2db1cc6ac8e0108"
+        ],
+        "x": 115,
+        "y": 220,
+        "wires": [
+            [
+                "4ccdb1a63db24275"
+            ]
+        ]
+    },
+    {
+        "id": "4ccdb1a63db24275",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "Presense",
+        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\nif( settings.trigger !== \"presence\")\n    return;\nmsg.tag = \"Presence\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 220,
+        "wires": [
+            [
+                "e26a594b8bf0ec0f"
+            ]
+        ]
+    },
+    {
+        "id": "1c16716dae6e0db5",
+        "type": "Events",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "group": "application",
+        "initialization": false,
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "40176fb41031dc36",
+                "012e07bb24794369"
+            ]
+        ]
+    },
+    {
+        "id": "40176fb41031dc36",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "AOA Detection",
+        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\nif( settings.trigger !== \"aoa\")\n    return;\nif (msg.topic !== \"cameraapplicationplatform/objectanalytics/device1scenarioany\")\n    return; \n\nmsg.tag = \"AOA\";\nmsg.topic = \"AOA\";\nmsg.payload = msg.payload.active;\n\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 280,
+        "wires": [
+            [
+                "e26a594b8bf0ec0f"
+            ]
+        ]
+    },
+    {
+        "id": "012e07bb24794369",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "707d5de12d001cc0",
+        "name": "Motion Detection",
+        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\nif( settings.trigger !== \"vmd\")\n    return;\nif (msg.topic !== \"cameraapplicationplatform/vmd/camera1profileany\")\n    return; \n\nmsg.tag = \"VMD\";\nmsg.topic = \"VMD\";\nmsg.payload = msg.payload.active;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 320,
+        "wires": [
+            [
+                "e26a594b8bf0ec0f"
+            ]
+        ]
+    },
+    {
+        "id": "d60c1ec928edea09",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Presence",
+        "info": "",
+        "x": 200,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7c3cb615da77a1dc",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Detection",
+        "info": "",
+        "x": 1240,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2ac3d6ee27da87f8",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "MQTT",
+        "info": "",
+        "x": 1030,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "4170a48a8ef563c3",
+        "type": "ui_button",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "name": "",
+        "group": "736f3657f6d89230",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 840,
+        "wires": [
+            [
+                "b8ed43ad61af5a54"
+            ]
+        ]
+    },
+    {
+        "id": "b8ed43ad61af5a54",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "name": "List Last Hour",
+        "func": "var device = global.get(\"device\");\nif (!device) {\n    node.error(\"No device defined\", msg);\n    return;\n}\n\nvar settings = flow.get(\"settings\");\nif (!settings) {\n    node.error(\"No settings defined\", msg);\n    return;\n}\n\nmsg.url = \"http://\" + settings.server + \"/list?serial=\" + device.serial;\nmsg.url += \"&from=\" + (new Date().getTime() - (1 * 3600 * 1000));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 840,
+        "wires": [
+            [
+                "d77e5280d4925583"
+            ]
+        ]
+    },
+    {
+        "id": "d77e5280d4925583",
+        "type": "http request",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 790,
+        "y": 840,
+        "wires": [
+            [
+                "21db24be3a384f63"
+            ]
+        ]
+    },
+    {
+        "id": "21db24be3a384f63",
+        "type": "ui_table",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "group": "736f3657f6d89230",
+        "name": "",
+        "order": 0,
+        "width": "13",
+        "height": "12",
+        "columns": [
+            {
+                "field": "time",
+                "title": "Time",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "duration",
+                "title": "Duration (s)",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "tag",
+                "title": "Tag",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 550,
+        "y": 900,
+        "wires": [
+            [
+                "618856c67ab967d4"
+            ]
+        ]
+    },
+    {
+        "id": "618856c67ab967d4",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "name": "Video player",
+        "func": "var recording = msg.payload;\nvar settings = flow.get(\"settings\");\nmsg.payload = '<video controls autoplay>';\nmsg.payload += '<source src=\"' + recording.url + '\" type=\"video/mp4\">';\nmsg.payload += '</video>';\nmsg.topic = recording.time + \" [\" + recording.tag + \"]\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 900,
+        "wires": [
+            [
+                "38bafab7103e3bff"
+            ]
+        ]
+    },
+    {
+        "id": "38bafab7103e3bff",
+        "type": "ui_toast",
+        "z": "7b18b12f1a69a9ba",
+        "g": "cba201612d522f39",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1030,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e4495a0ca21b0b6",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Init",
+        "info": "",
+        "x": 210,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "50dec7a17c4fe4ab",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Common Flows [Import]",
+        "info": "NOTE: This flow requires the \"Common Flows\".\nImport the following flow into your Node-RED and set the cameras and MQTT Settings.\n\n[\n    {\n        \"id\": \"5c11fed7a3291d98\",\n        \"type\": \"tab\",\n        \"label\": \"Common flows\",\n        \"disabled\": false,\n        \"info\": \"\",\n        \"env\": []\n    },\n    {\n        \"id\": \"02db7f93b04a492f\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 690,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"b5b64f4f7b769d83\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"fa380eb259be45b7\",\n        \"type\": \"inject\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 250,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"c8ef8d97328edd23\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5b64f4f7b769d83\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 187\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 100,\n        \"wires\": []\n    },\n    {\n        \"id\": \"aa43617de91eb980\",\n        \"type\": \"link in\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"links\": [\n            \"36a1c5493dd38891\",\n            \"87da02126678c337\",\n            \"dc22d2beb6b89bfc\",\n            \"9322bf42526aebb4\",\n            \"0d0b351adc05d714\",\n            \"3d409c678d9a4f7a\"\n        ],\n        \"x\": 245,\n        \"y\": 340,\n        \"wires\": [\n            [\n                \"b5d16c19b87890af\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5d16c19b87890af\",\n        \"type\": \"mqtt out\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 410,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"b95457e9f5c0bad5\",\n        \"type\": \"comment\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"info\": \"\",\n        \"x\": 140,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"c8ef8d97328edd23\",\n        \"type\": \"Axis device\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Device Info\",\n        \"cgi\": \"\",\n        \"data\": \"\",\n        \"options\": \"\",\n        \"filename\": \"\",\n        \"x\": 470,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"02db7f93b04a492f\",\n                \"c73446698e69b019\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"c73446698e69b019\",\n        \"type\": \"Axis camera\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Camera Info\",\n        \"resolution\": \"640x360\",\n        \"output\": \"Base64\",\n        \"filename\": \"\",\n        \"options\": \"\",\n        \"data\": \"\",\n        \"x\": 470,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"83dd6a8c155a030a\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"1d5013c65acf6edc\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 193\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 160,\n        \"wires\": []\n    },\n    {\n        \"id\": \"83dd6a8c155a030a\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device.camera\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 710,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"1d5013c65acf6edc\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"d1d53d1e87be4083\",\n        \"type\": \"mqtt-broker\",\n        \"name\": \"MQTT Broker\",\n        \"broker\": \"10.13.8.20\",\n        \"port\": \"1883\",\n        \"clientid\": \"\",\n        \"autoConnect\": true,\n        \"usetls\": false,\n        \"protocolVersion\": \"4\",\n        \"keepalive\": \"60\",\n        \"cleansession\": true,\n        \"autoUnsubscribe\": true,\n        \"birthTopic\": \"\",\n        \"birthQos\": \"0\",\n        \"birthRetain\": \"false\",\n        \"birthPayload\": \"\",\n        \"birthMsg\": {},\n        \"closeTopic\": \"\",\n        \"closeQos\": \"0\",\n        \"closeRetain\": \"false\",\n        \"closePayload\": \"\",\n        \"closeMsg\": {},\n        \"willTopic\": \"\",\n        \"willQos\": \"0\",\n        \"willRetain\": \"false\",\n        \"willPayload\": \"\",\n        \"willMsg\": {},\n        \"userProps\": \"\",\n        \"sessionExpiry\": \"\"\n    },\n    {\n        \"id\": \"a5d60ef5587cc8fc\",\n        \"type\": \"Device Access\",\n        \"name\": \"Localhost\",\n        \"address\": \"localhost\",\n        \"protocol\": \"http\"\n    }\n]\n\n",
+        "x": 640,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e4915669b6e3978a",
+        "type": "comment",
+        "z": "7b18b12f1a69a9ba",
+        "name": "Convert SD Recording to MP4 [Import]",
+        "info": "Import this flow into your Node-RED if you intend to use SD Recording.\nYou also need to import the node node-red-contrib-fs\n\n[\n    {\n        \"id\": \"1a32648ea2d13f43\",\n        \"type\": \"tab\",\n        \"label\": \"Convert SD Recording to MP4\",\n        \"disabled\": false,\n        \"info\": \"\",\n        \"env\": []\n    },\n    {\n        \"id\": \"555a5e33a7db697e\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Monitor changes on SD Card\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"99fa105f2ab681d2\",\n            \"ffa6c49fc84ac290\",\n            \"32b96eeedd643b79\",\n            \"0dfd1f4d59b1c2b4\"\n        ],\n        \"x\": 234,\n        \"y\": 339,\n        \"w\": 552,\n        \"h\": 122\n    },\n    {\n        \"id\": \"44f3aebb73b9e7b5\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Initialization\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"1785905268588188\",\n            \"a6e48175e923dc23\",\n            \"97acee97582947bd\",\n            \"63f3017103502707\",\n            \"acbbbad3abd27f5d\",\n            \"20b15f1016ee00b0\",\n            \"ef0b5e572a87e51f\",\n            \"b0cfe77b0c2b3a56\"\n        ],\n        \"x\": 234,\n        \"y\": 71.5,\n        \"w\": 792,\n        \"h\": 249.5\n    },\n    {\n        \"id\": \"89d84fe29e9feb23\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"On recording SD Recording complete\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"be6606a4b3fb30e3\",\n            \"e755cacb3d2a5c56\",\n            \"e48ee23dd474b296\",\n            \"fdaf7029c528784c\",\n            \"09940289127eaa87\",\n            \"3036c781ed8d934c\",\n            \"91ad1e99f666dba8\",\n            \"63730cdb4e0cada5\",\n            \"60d02c5063dfe497\",\n            \"df21ecc12edc8446\",\n            \"29cdab8f595754ab\",\n            \"e282c072b9040bf4\",\n            \"49e4d6ce311aac58\",\n            \"0aef5de651af7447\",\n            \"8df0df9128bddadc\",\n            \"c0bff1ecfb240486\",\n            \"1577a0bcbb716e59\",\n            \"37cbc94953a99965\",\n            \"e2744e7fa73e19d2\",\n            \"78f2449fd707ee28\"\n        ],\n        \"x\": 214,\n        \"y\": 499,\n        \"w\": 812,\n        \"h\": 302\n    },\n    {\n        \"id\": \"ab321d081d56c21a\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Error handling\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"b7bd573c1284beb9\",\n            \"92e4d6c51ca98588\",\n            \"a769aafc79345792\"\n        ],\n        \"x\": 234,\n        \"y\": 839,\n        \"w\": 432,\n        \"h\": 182\n    },\n    {\n        \"id\": \"33cc373b2dcca3bb\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Recording export\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"975c8a3f0d2991b2\",\n            \"34f0be791e72125c\",\n            \"0875672962956c29\",\n            \"0b41b282acdb49bc\",\n            \"738711cd50716e55\",\n            \"09c0a8a041614d24\",\n            \"91a96925d58d5c77\",\n            \"3a8b79161a6317bd\",\n            \"c5665453ddb3abf3\",\n            \"93841b42139e396c\"\n        ],\n        \"x\": 214,\n        \"y\": 1059,\n        \"w\": 942,\n        \"h\": 182\n    },\n    {\n        \"id\": \"bfbceca570ecfa90\",\n        \"type\": \"group\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Retention period\",\n        \"style\": {\n            \"label\": true\n        },\n        \"nodes\": [\n            \"becd69317241cbaf\",\n            \"d8b8102fa00e2fa9\",\n            \"5939d7f4951b44b4\",\n            \"31146f8599b0db8a\",\n            \"491e0afa0c278783\"\n        ],\n        \"x\": 214,\n        \"y\": 1271.5,\n        \"w\": 1002,\n        \"h\": 97\n    },\n    {\n        \"id\": \"78f2449fd707ee28\",\n        \"type\": \"junction\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"x\": 920,\n        \"y\": 760,\n        \"wires\": [\n            [\n                \"9e60e241715fa6c2\",\n                \"2bf5b99126c5e1a2\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"1785905268588188\",\n        \"type\": \"inject\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"Create mp4 directory on SD Card\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 430,\n        \"y\": 120,\n        \"wires\": [\n            [\n                \"a6e48175e923dc23\",\n                \"97acee97582947bd\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"a6e48175e923dc23\",\n        \"type\": \"exec\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"command\": \"mkdir sdcard/mp4\",\n        \"addpay\": \"\",\n        \"append\": \"\",\n        \"useSpawn\": \"false\",\n        \"timer\": \"\",\n        \"winHide\": false,\n        \"oldrc\": false,\n        \"name\": \"\",\n        \"x\": 730,\n        \"y\": 120,\n        \"wires\": [\n            [],\n            [],\n            []\n        ]\n    },\n    {\n        \"id\": \"b261fc1992a35ca0\",\n        \"type\": \"debug\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"debug 34\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 910,\n        \"y\": 420,\n        \"wires\": []\n    },\n    {\n        \"id\": \"041f9f397d99e807\",\n        \"type\": \"debug\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"debug 36\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 1180,\n        \"y\": 580,\n        \"wires\": []\n    },\n    {\n        \"id\": \"dd671bc5d7b9c5fb\",\n        \"type\": \"debug\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"debug 45\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"payload\",\n        \"targetType\": \"msg\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 1180,\n        \"y\": 640,\n        \"wires\": []\n    },\n    {\n        \"id\": \"be6606a4b3fb30e3\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"GStreamer\",\n        \"func\": \"msg.payload = 'gst-launch-1.0 filesrc location=' + msg.payload.fullpath + ' ! matroskademux ! h264parse ! mp4mux ! filesink location=sdcard/mp4/' + msg.payload.name + '.mp4';\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 410,\n        \"y\": 700,\n        \"wires\": [\n            [\n                \"09940289127eaa87\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"e755cacb3d2a5c56\",\n        \"type\": \"Events\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"group\": \"storage\",\n        \"initialization\": false,\n        \"x\": 320,\n        \"y\": 540,\n        \"wires\": [\n            [\n                \"e48ee23dd474b296\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"e48ee23dd474b296\",\n        \"type\": \"switch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Recording Event?\",\n        \"property\": \"topic\",\n        \"propertyType\": \"msg\",\n        \"rules\": [\n            {\n                \"t\": \"eq\",\n                \"v\": \"storage/recording\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"checkall\": \"true\",\n        \"repair\": false,\n        \"outputs\": 1,\n        \"x\": 430,\n        \"y\": 580,\n        \"wires\": [\n            [\n                \"fdaf7029c528784c\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"fdaf7029c528784c\",\n        \"type\": \"switch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Recording stopped?\",\n        \"property\": \"payload.recording\",\n        \"propertyType\": \"msg\",\n        \"rules\": [\n            {\n                \"t\": \"eq\",\n                \"v\": \"0\",\n                \"vt\": \"num\"\n            }\n        ],\n        \"checkall\": \"true\",\n        \"repair\": false,\n        \"outputs\": 1,\n        \"x\": 660,\n        \"y\": 580,\n        \"wires\": [\n            [\n                \"60d02c5063dfe497\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"09940289127eaa87\",\n        \"type\": \"exec\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"command\": \"\",\n        \"addpay\": \"payload\",\n        \"append\": \"\",\n        \"useSpawn\": \"true\",\n        \"timer\": \"\",\n        \"winHide\": false,\n        \"oldrc\": false,\n        \"name\": \"\",\n        \"x\": 610,\n        \"y\": 700,\n        \"wires\": [\n            [],\n            [\n                \"49e4d6ce311aac58\"\n            ],\n            [\n                \"3036c781ed8d934c\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"3036c781ed8d934c\",\n        \"type\": \"switch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"OK\",\n        \"property\": \"payload.code\",\n        \"propertyType\": \"msg\",\n        \"rules\": [\n            {\n                \"t\": \"eq\",\n                \"v\": \"0\",\n                \"vt\": \"num\"\n            }\n        ],\n        \"checkall\": \"true\",\n        \"repair\": false,\n        \"outputs\": 1,\n        \"x\": 390,\n        \"y\": 760,\n        \"wires\": [\n            [\n                \"91ad1e99f666dba8\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"91ad1e99f666dba8\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Complete\",\n        \"func\": \"msg.topic = \\\"storage/recording/mp4/\\\" + flow.get(\\\"camera\\\").serial\\nvar recording = flow.get(\\\"recording\\\");\\nvar camera = flow.get(\\\"camera\\\");\\nrecording.mp4 = recording.name + \\\".mp4\\\";\\nflow.set(\\\"recording\\\",recording);\\nmsg.payload = {\\n    name: camera.hostname || camera.serial,\\n    serial: camera.serial,\\n    address: camera.IPv4,\\n    model: camera.model,\\n    id: recording.name,\\n    source: \\\"SD\\\",\\n    url: \\\"http://\\\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\\n    mkv: \\\"http://\\\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\\n    start: recording.start,\\n    end: recording.end,\\n    duration: recording.duration,\\n    resolution: recording.width + \\\"x\\\" + recording.height,\\n    fps: recording.fps\\n}\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 620,\n        \"y\": 760,\n        \"wires\": [\n            [\n                \"78f2449fd707ee28\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"63730cdb4e0cada5\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Get Video Data\",\n        \"func\": \"var recording = flow.get(\\\"recording\\\");\\nvar items = recording.fullpath.split('/');\\nmsg.filename = items[0] + '/' + items[1] + '/' + items[2] + '/' + items[3] + '/recording.xml';\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 420,\n        \"y\": 640,\n        \"wires\": [\n            [\n                \"df21ecc12edc8446\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"60d02c5063dfe497\",\n        \"type\": \"trigger\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"\",\n        \"op1\": \"\",\n        \"op2\": \"\",\n        \"op1type\": \"nul\",\n        \"op2type\": \"payl\",\n        \"duration\": \"500\",\n        \"extend\": true,\n        \"overrideDelay\": false,\n        \"units\": \"ms\",\n        \"reset\": \"\",\n        \"bytopic\": \"all\",\n        \"topic\": \"topic\",\n        \"outputs\": 1,\n        \"x\": 880,\n        \"y\": 580,\n        \"wires\": [\n            [\n                \"63730cdb4e0cada5\",\n                \"041f9f397d99e807\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"df21ecc12edc8446\",\n        \"type\": \"file in\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"\",\n        \"filename\": \"filename\",\n        \"filenameType\": \"msg\",\n        \"format\": \"utf8\",\n        \"chunk\": false,\n        \"sendError\": false,\n        \"encoding\": \"none\",\n        \"allProps\": false,\n        \"x\": 620,\n        \"y\": 640,\n        \"wires\": [\n            [\n                \"29cdab8f595754ab\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"29cdab8f595754ab\",\n        \"type\": \"xml\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"\",\n        \"property\": \"payload\",\n        \"attr\": \"\",\n        \"chr\": \"\",\n        \"x\": 770,\n        \"y\": 640,\n        \"wires\": [\n            [\n                \"e282c072b9040bf4\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"e282c072b9040bf4\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Data\",\n        \"func\": \"var recording = flow.get(\\\"recording\\\");\\nrecording.token = msg.payload.Recording.$.RecordingToken;\\nrecording.start = new Date(msg.payload.Recording.StartTime[0]).getTime();\\nrecording.end = new Date(msg.payload.Recording.StopTime[0]).getTime();\\nrecording.duration = (recording.end - recording.start) / 1000;\\nrecording.width = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Width[0]);\\nrecording.height = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Height[0]);\\nrecording.fps = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Framerate[0]);\\nrecording.tag = msg.payload.Recording.CustomAttributes[0].TriggerName[0];\\nrecording.mp4 = null;\\nflow.set(\\\"recording\\\",recording);\\nmsg.payload = recording;\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 910,\n        \"y\": 640,\n        \"wires\": [\n            [\n                \"be6606a4b3fb30e3\",\n                \"dd671bc5d7b9c5fb\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"99fa105f2ab681d2\",\n        \"type\": \"watch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"555a5e33a7db697e\",\n        \"name\": \"\",\n        \"files\": \"sdcard\",\n        \"recursive\": true,\n        \"x\": 310,\n        \"y\": 380,\n        \"wires\": [\n            [\n                \"ffa6c49fc84ac290\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"ffa6c49fc84ac290\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"555a5e33a7db697e\",\n        \"name\": \"msg.recording\",\n        \"func\": \"msg.recording = {\\n    fullpath: msg.payload\\n}\\nvar pathItems = msg.recording.fullpath.split(\\\"/\\\");\\nmsg.recording.file = pathItems[pathItems.length-1];\\nmsg.recording.name = msg.recording.file.split(\\\".\\\")[0];\\nmsg.recording.ext = msg.recording.file.split(\\\".\\\")[1];\\n\\nmsg.payload = msg.recording;\\n return msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 500,\n        \"y\": 380,\n        \"wires\": [\n            [\n                \"0dfd1f4d59b1c2b4\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"32b96eeedd643b79\",\n        \"type\": \"change\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"555a5e33a7db697e\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"recording\",\n                \"pt\": \"flow\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 670,\n        \"y\": 420,\n        \"wires\": [\n            [\n                \"b261fc1992a35ca0\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"0dfd1f4d59b1c2b4\",\n        \"type\": \"switch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"555a5e33a7db697e\",\n        \"name\": \"Only MKV\",\n        \"property\": \"payload.ext\",\n        \"propertyType\": \"msg\",\n        \"rules\": [\n            {\n                \"t\": \"eq\",\n                \"v\": \"mkv\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"checkall\": \"true\",\n        \"repair\": false,\n        \"outputs\": 1,\n        \"x\": 480,\n        \"y\": 420,\n        \"wires\": [\n            [\n                \"32b96eeedd643b79\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"9e60e241715fa6c2\",\n        \"type\": \"mqtt out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"storage/recording/mp4/SERIAL\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 1250,\n        \"y\": 760,\n        \"wires\": []\n    },\n    {\n        \"id\": \"49e4d6ce311aac58\",\n        \"type\": \"change\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Message\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"payload\",\n                \"pt\": \"msg\",\n                \"to\": \"GStreamer conversion failed\",\n                \"tot\": \"str\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 760,\n        \"y\": 700,\n        \"wires\": [\n            [\n                \"0aef5de651af7447\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"92e4d6c51ca98588\",\n        \"type\": \"mqtt out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"ab321d081d56c21a\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 510,\n        \"y\": 920,\n        \"wires\": []\n    },\n    {\n        \"id\": \"365d7f84d9bd0e4f\",\n        \"type\": \"debug\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"debug 165\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"payload\",\n        \"targetType\": \"msg\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 770,\n        \"y\": 880,\n        \"wires\": []\n    },\n    {\n        \"id\": \"97acee97582947bd\",\n        \"type\": \"Axis device\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Device Info\",\n        \"cgi\": \"\",\n        \"data\": \"\",\n        \"options\": \"\",\n        \"filename\": \"\",\n        \"x\": 720,\n        \"y\": 180,\n        \"wires\": [\n            [\n                \"63f3017103502707\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"63f3017103502707\",\n        \"type\": \"change\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"camera\",\n                \"pt\": \"flow\",\n                \"to\": \"msg.payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 920,\n        \"y\": 180,\n        \"wires\": [\n            []\n        ]\n    },\n    {\n        \"id\": \"b0eaf2382a9b44e3\",\n        \"type\": \"link in\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"link in 17\",\n        \"links\": [\n            \"37cbc94953a99965\",\n            \"0aef5de651af7447\"\n        ],\n        \"x\": 175,\n        \"y\": 880,\n        \"wires\": [\n            [\n                \"b7bd573c1284beb9\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"0aef5de651af7447\",\n        \"type\": \"link out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"link out 16\",\n        \"mode\": \"link\",\n        \"links\": [\n            \"b0eaf2382a9b44e3\"\n        ],\n        \"x\": 875,\n        \"y\": 700,\n        \"wires\": []\n    },\n    {\n        \"id\": \"0c3e043fd5593ad6\",\n        \"type\": \"comment\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Error\",\n        \"info\": \"\",\n        \"x\": 90,\n        \"y\": 880,\n        \"wires\": []\n    },\n    {\n        \"id\": \"8df0df9128bddadc\",\n        \"type\": \"comment\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Error\",\n        \"info\": \"\",\n        \"x\": 950,\n        \"y\": 700,\n        \"wires\": []\n    },\n    {\n        \"id\": \"b7bd573c1284beb9\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"ab321d081d56c21a\",\n        \"name\": \"Message\",\n        \"func\": \"var name = flow.get(\\\"camera\\\").hostname || flow.get(\\\"camera\\\").serial;\\nmsg.topic = \\\"exception/Convert_SD_Recording_to_MP4/\\\" + name;\\nmsg.åayload = msg.error.message\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 320,\n        \"y\": 880,\n        \"wires\": [\n            [\n                \"92e4d6c51ca98588\",\n                \"a769aafc79345792\",\n                \"365d7f84d9bd0e4f\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"c0bff1ecfb240486\",\n        \"type\": \"catch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"\",\n        \"scope\": [\n            \"e755cacb3d2a5c56\"\n        ],\n        \"uncaught\": false,\n        \"x\": 530,\n        \"y\": 540,\n        \"wires\": [\n            [\n                \"1577a0bcbb716e59\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"1577a0bcbb716e59\",\n        \"type\": \"change\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Message\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"payload\",\n                \"pt\": \"msg\",\n                \"to\": \"error.message\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 680,\n        \"y\": 540,\n        \"wires\": [\n            [\n                \"37cbc94953a99965\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"37cbc94953a99965\",\n        \"type\": \"link out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"link out 15\",\n        \"mode\": \"link\",\n        \"links\": [\n            \"b0eaf2382a9b44e3\"\n        ],\n        \"x\": 805,\n        \"y\": 540,\n        \"wires\": []\n    },\n    {\n        \"id\": \"e2744e7fa73e19d2\",\n        \"type\": \"comment\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"89d84fe29e9feb23\",\n        \"name\": \"Error\",\n        \"info\": \"\",\n        \"x\": 890,\n        \"y\": 540,\n        \"wires\": []\n    },\n    {\n        \"id\": \"975c8a3f0d2991b2\",\n        \"type\": \"http in\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"url\": \"/mp4\",\n        \"method\": \"get\",\n        \"upload\": false,\n        \"swaggerDoc\": \"\",\n        \"x\": 300,\n        \"y\": 1100,\n        \"wires\": [\n            [\n                \"34f0be791e72125c\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"34f0be791e72125c\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"file\",\n        \"func\": \"msg.filename = 'sdcard/mp4/' + msg.payload.file;\\nmsg.name = msg.payload.file;\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 460,\n        \"y\": 1100,\n        \"wires\": [\n            [\n                \"0875672962956c29\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"0875672962956c29\",\n        \"type\": \"file in\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"filename\": \"filename\",\n        \"filenameType\": \"msg\",\n        \"format\": \"\",\n        \"chunk\": false,\n        \"sendError\": false,\n        \"encoding\": \"none\",\n        \"allProps\": false,\n        \"x\": 670,\n        \"y\": 1100,\n        \"wires\": [\n            [\n                \"93841b42139e396c\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"0b41b282acdb49bc\",\n        \"type\": \"http response\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"statusCode\": \"\",\n        \"headers\": {},\n        \"x\": 1010,\n        \"y\": 1100,\n        \"wires\": []\n    },\n    {\n        \"id\": \"738711cd50716e55\",\n        \"type\": \"catch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"scope\": [\n            \"0875672962956c29\"\n        ],\n        \"uncaught\": false,\n        \"x\": 600,\n        \"y\": 1160,\n        \"wires\": [\n            [\n                \"09c0a8a041614d24\",\n                \"3a8b79161a6317bd\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"09c0a8a041614d24\",\n        \"type\": \"change\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"payload\",\n                \"pt\": \"msg\",\n                \"to\": \"No recording found\",\n                \"tot\": \"str\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 790,\n        \"y\": 1160,\n        \"wires\": [\n            [\n                \"91a96925d58d5c77\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"91a96925d58d5c77\",\n        \"type\": \"http response\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"statusCode\": \"400\",\n        \"headers\": {},\n        \"x\": 990,\n        \"y\": 1160,\n        \"wires\": []\n    },\n    {\n        \"id\": \"2bf5b99126c5e1a2\",\n        \"type\": \"link out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"storage/recording/mp4\",\n        \"mode\": \"link\",\n        \"links\": [\n            \"2f053a41e1e8855b\"\n        ],\n        \"x\": 1135,\n        \"y\": 720,\n        \"wires\": []\n    },\n    {\n        \"id\": \"94da5e36c44de2a6\",\n        \"type\": \"comment\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"SD MP4 Recording\",\n        \"info\": \"\",\n        \"x\": 1270,\n        \"y\": 720,\n        \"wires\": []\n    },\n    {\n        \"id\": \"3a8b79161a6317bd\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"exception/SERIAL\",\n        \"func\": \"var name = flow.get(\\\"camera\\\").hostname || flow.get(\\\"camera\\\").serial;\\nmsg.topic = \\\"exception/\\\" + name;\\nmsg.payload = msg.error.message;\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 790,\n        \"y\": 1200,\n        \"wires\": [\n            [\n                \"c5665453ddb3abf3\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"c5665453ddb3abf3\",\n        \"type\": \"mqtt out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"\",\n        \"topic\": \"exception/democam\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 1030,\n        \"y\": 1200,\n        \"wires\": []\n    },\n    {\n        \"id\": \"93841b42139e396c\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"33cc373b2dcca3bb\",\n        \"name\": \"function 1\",\n        \"func\": \"msg.headers = {\\n    \\\"Content-type\\\": \\\"video/mp4\\\",\\n//    \\\"Content-Disposition\\\": \\\"attachment; filename=\\\" + msg.name,\\n    \\\"Content-Length\\\": msg.payload.length\\n}\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 840,\n        \"y\": 1100,\n        \"wires\": [\n            [\n                \"0b41b282acdb49bc\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"d8b8102fa00e2fa9\",\n        \"type\": \"split\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"bfbceca570ecfa90\",\n        \"name\": \"For Each\",\n        \"splt\": \"\\\\n\",\n        \"spltType\": \"str\",\n        \"arraySplt\": 1,\n        \"arraySpltType\": \"len\",\n        \"stream\": false,\n        \"addname\": \"\",\n        \"x\": 720,\n        \"y\": 1320,\n        \"wires\": [\n            [\n                \"5939d7f4951b44b4\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"5939d7f4951b44b4\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"bfbceca570ecfa90\",\n        \"name\": \"Retention 5 days\",\n        \"func\": \"if( new Date(msg.payload.stat.created).getTime() < new Date().getTime() - ( 5 * 24 * 3600 * 1000) ) {\\n    msg.payload = msg.payload.name;\\n    return msg;\\n}\\n\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 920,\n        \"y\": 1320,\n        \"wires\": [\n            [\n                \"491e0afa0c278783\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"31146f8599b0db8a\",\n        \"type\": \"inject\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"bfbceca570ecfa90\",\n        \"name\": \"Every midnight\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"00 00 * * *\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 340,\n        \"y\": 1320,\n        \"wires\": [\n            [\n                \"becd69317241cbaf\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"491e0afa0c278783\",\n        \"type\": \"exec\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"bfbceca570ecfa90\",\n        \"command\": \"rm \",\n        \"addpay\": \"payload\",\n        \"append\": \"\",\n        \"useSpawn\": \"false\",\n        \"timer\": \"\",\n        \"winHide\": false,\n        \"oldrc\": false,\n        \"name\": \"\",\n        \"x\": 1140,\n        \"y\": 1320,\n        \"wires\": [\n            [],\n            [],\n            []\n        ]\n    },\n    {\n        \"id\": \"becd69317241cbaf\",\n        \"type\": \"fs-file-lister\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"bfbceca570ecfa90\",\n        \"name\": \"\",\n        \"start\": \"sdcard/mp4\",\n        \"pattern\": \"*.*\",\n        \"folders\": \"*\",\n        \"hidden\": true,\n        \"lstype\": \"files\",\n        \"path\": true,\n        \"single\": true,\n        \"depth\": 0,\n        \"stat\": true,\n        \"showWarnings\": true,\n        \"x\": 540,\n        \"y\": 1320,\n        \"wires\": [\n            [\n                \"d8b8102fa00e2fa9\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"acbbbad3abd27f5d\",\n        \"type\": \"catch\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"\",\n        \"scope\": null,\n        \"uncaught\": true,\n        \"x\": 340,\n        \"y\": 240,\n        \"wires\": [\n            [\n                \"20b15f1016ee00b0\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"ef0b5e572a87e51f\",\n        \"type\": \"ui_toast\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"position\": \"dialog\",\n        \"displayTime\": \"3\",\n        \"highlight\": \"\",\n        \"sendall\": true,\n        \"outputs\": 1,\n        \"ok\": \"OK\",\n        \"cancel\": \"\",\n        \"raw\": false,\n        \"className\": \"\",\n        \"topic\": \"\",\n        \"name\": \"\",\n        \"x\": 770,\n        \"y\": 240,\n        \"wires\": [\n            []\n        ]\n    },\n    {\n        \"id\": \"b0cfe77b0c2b3a56\",\n        \"type\": \"mqtt out\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 750,\n        \"y\": 280,\n        \"wires\": []\n    },\n    {\n        \"id\": \"20b15f1016ee00b0\",\n        \"type\": \"function\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"44f3aebb73b9e7b5\",\n        \"name\": \"Message\",\n        \"func\": \"msg.topic = \\\"exception/exception/Convert_SD_Recording_to_MP4//\\\" + flow.get(\\\"camere\\\").serial;\\nmsg.payload = msg.error.message;\\nreturn msg;\",\n        \"outputs\": 1,\n        \"timeout\": 0,\n        \"noerr\": 0,\n        \"initialize\": \"\",\n        \"finalize\": \"\",\n        \"libs\": [],\n        \"x\": 560,\n        \"y\": 240,\n        \"wires\": [\n            [\n                \"b0cfe77b0c2b3a56\",\n                \"ef0b5e572a87e51f\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"a769aafc79345792\",\n        \"type\": \"ui_toast\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"g\": \"ab321d081d56c21a\",\n        \"position\": \"top right\",\n        \"displayTime\": \"5\",\n        \"highlight\": \"red\",\n        \"sendall\": true,\n        \"outputs\": 0,\n        \"ok\": \"OK\",\n        \"cancel\": \"\",\n        \"raw\": false,\n        \"className\": \"\",\n        \"topic\": \"\",\n        \"name\": \"\",\n        \"x\": 550,\n        \"y\": 980,\n        \"wires\": []\n    },\n    {\n        \"id\": \"bca42a8435b62ee2\",\n        \"type\": \"comment\",\n        \"z\": \"1a32648ea2d13f43\",\n        \"name\": \"Version 1.1.0\",\n        \"info\": \"\",\n        \"x\": 310,\n        \"y\": 40,\n        \"wires\": []\n    },\n    {\n        \"id\": \"d1d53d1e87be4083\",\n        \"type\": \"mqtt-broker\",\n        \"name\": \"MQTT Broker\",\n        \"broker\": \"10.13.8.20\",\n        \"port\": \"1883\",\n        \"clientid\": \"\",\n        \"autoConnect\": true,\n        \"usetls\": false,\n        \"protocolVersion\": \"4\",\n        \"keepalive\": \"60\",\n        \"cleansession\": true,\n        \"autoUnsubscribe\": true,\n        \"birthTopic\": \"\",\n        \"birthQos\": \"0\",\n        \"birthRetain\": \"false\",\n        \"birthPayload\": \"\",\n        \"birthMsg\": {},\n        \"closeTopic\": \"\",\n        \"closeQos\": \"0\",\n        \"closeRetain\": \"false\",\n        \"closePayload\": \"\",\n        \"closeMsg\": {},\n        \"willTopic\": \"\",\n        \"willQos\": \"0\",\n        \"willRetain\": \"false\",\n        \"willPayload\": \"\",\n        \"willMsg\": {},\n        \"userProps\": \"\",\n        \"sessionExpiry\": \"\"\n    },\n    {\n        \"id\": \"a5d60ef5587cc8fc\",\n        \"type\": \"Device Access\",\n        \"name\": \"Localhost\",\n        \"address\": \"localhost\",\n        \"protocol\": \"http\"\n    }\n]",
+        "x": 920,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "064d31c8c6a7113e",
+        "type": "ui_template",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "group": "d789f1130a584ec2",
+        "name": "Storage",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "format": "<h3>Storage</h3>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "382f35e3adb93164",
+        "type": "ui_template",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "group": "d789f1130a584ec2",
+        "name": "Trigger",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "format": "<h3>Trigger</h3>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e0859b0312fc351",
+        "type": "ui_template",
+        "z": "7b18b12f1a69a9ba",
+        "g": "07a8c15b6f80ae58",
+        "group": "d789f1130a584ec2",
+        "name": "Server",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "format": "<h3>Server</h3>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 490,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad9db9577c9e159d",
+        "type": "function",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "SD Direct",
+        "func": "var device = global.get(\"device\");\nif( !device ) {\n    node.error(\"No device defined\",msg);\n    return;\n}\n\nvar settings = flow.get(\"settings\");\nif( !settings ) {\n    node.error(\"No settings defined\",msg);\n    return;\n}\n\nif( settings.method !== \"SD_Direct\")\n    return;\n\nif( settings.server.length < 5 ) {\n    node.error(\"No Server defined\",msg);\n    return;\n}\n\nif( msg.payload === true ) {\n    return msg;\n}\n\n\nif (msg.payload === false) {\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 520,
+        "wires": [
+            [
+                "0205f78c842cf0cc",
+                "6d7f2a8fd4cf7d81"
+            ]
+        ]
+    },
+    {
+        "id": "afbd81d6023cb5ac",
+        "type": "Axis camera",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Start recording",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 780,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0205f78c842cf0cc",
+        "type": "switch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "afbd81d6023cb5ac"
+            ]
+        ]
+    },
+    {
+        "id": "6d7f2a8fd4cf7d81",
+        "type": "switch",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "false",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 560,
+        "wires": [
+            [
+                "46b12fe88449fc4b"
+            ]
+        ]
+    },
+    {
+        "id": "46b12fe88449fc4b",
+        "type": "Axis camera",
+        "z": "7b18b12f1a69a9ba",
+        "g": "104ce285e5513ed4",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Stop recording",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 780,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e71077f7278905e",
+        "type": "debug",
+        "z": "7b18b12f1a69a9ba",
+        "g": "7b85c9a99623a74a",
+        "name": "debug 195",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "490d44b9e1facfcc",
+        "type": "inject",
+        "z": "7b18b12f1a69a9ba",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 840,
+        "wires": [
+            [
+                "4170a48a8ef563c3"
+            ]
+        ]
+    },
+    {
+        "id": "c3338421ce3bf434",
+        "type": "inject",
+        "z": "7b18b12f1a69a9ba",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "5767af54df334bf0"
+            ]
+        ]
+    },
+    {
+        "id": "d789f1130a584ec2",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "8b0e3a9980a13884",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d1d53d1e87be4083",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "10.13.8.20",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "736f3657f6d89230",
+        "type": "ui_group",
+        "name": "Recordings",
+        "tab": "8b0e3a9980a13884",
+        "order": 2,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "8b0e3a9980a13884",
+        "type": "ui_tab",
+        "name": "Recording",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    }
+]
