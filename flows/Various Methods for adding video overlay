@@ -1,0 +1,1882 @@
+[
+    {
+        "id": "5ba8e216a11fc282",
+        "type": "tab",
+        "label": "Overlay",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2ef94a2b874e3cf1",
+        "type": "group",
+        "z": "5ba8e216a11fc282",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "76ba4a5853f64d0e",
+            "eba1d4accae60675",
+            "be971700549b2588"
+        ],
+        "x": 184,
+        "y": 159,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "dd2ff02fe5254a50",
+        "type": "group",
+        "z": "5ba8e216a11fc282",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5cc9dd03d80d44ab",
+            "2d4f891306dc5d4f",
+            "529549ce9ec5f626",
+            "fac036acbfe30842",
+            "7c65c9de820202f0",
+            "4d0812e2eae2dd15",
+            "a3f5b95779230ac0",
+            "84ed3ea53d43af89",
+            "6a298726e11658b0",
+            "7730f095f6ce4341",
+            "59f2f5eaa81f9b8e",
+            "d1e9ee55b3f580ce",
+            "b49a781a12526b47",
+            "656d1028ac8978be",
+            "68d7fcf733914019",
+            "3d4d05a39d8591d6",
+            "c19f5fb614ede661",
+            "aed5692eb91c987b",
+            "d3264bc0f80736db"
+        ],
+        "x": 194,
+        "y": 339,
+        "w": 1172,
+        "h": 402
+    },
+    {
+        "id": "0a11e7c396233a97",
+        "type": "group",
+        "z": "5ba8e216a11fc282",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "463410580a048b2d",
+            "676831e8c30f986a",
+            "d0b4d98b52e79c95",
+            "bc224b9d9f548871",
+            "4ffb85345c2a0920",
+            "6538a55887b44210",
+            "98c66a0433fcc77d",
+            "a466d1a7d49a2cc5",
+            "65d946f25cecc109",
+            "27c60a2447bfb3da",
+            "ba66a028e18cc516",
+            "2c88557d2c46f169",
+            "af24169f6bd7b963",
+            "761eef5d0505dd6a",
+            "bb58f058812647fc",
+            "a4b9b94884042185",
+            "ed213509076c1b62",
+            "981a3e07236ef505",
+            "6ab7257e3e0b2048",
+            "ea13065c82ca2f92",
+            "cf6e27bf6d758521",
+            "1647428fe195863f",
+            "3044c9ebc9cc2d0d",
+            "4dcedf7f08c47fd4",
+            "bb2e154fb61383a4",
+            "4ca6cc94475da0b5",
+            "c8ca64a42a59eed3",
+            "823ba948ee4dd8bb",
+            "86daac5f2ee6545a",
+            "90bffa9c26960ff6",
+            "c21508c17c042fef",
+            "8ec4e7f821027eb5",
+            "51b2737d5dfb4204",
+            "dc40ed30f64d02cf",
+            "cefe29c3517309cb",
+            "4259b53802cc9a6e",
+            "5c28a10fbee2f081",
+            "e8f5fa68f9eebe2a"
+        ],
+        "x": 194,
+        "y": 799,
+        "w": 1372,
+        "h": 542
+    },
+    {
+        "id": "77f0623101177cd6",
+        "type": "group",
+        "z": "5ba8e216a11fc282",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "28e864c390085eef",
+            "5b2f15261c0e08ec",
+            "5850d98e21de6d0b",
+            "ce7f5395df0a036c",
+            "a21d33191947395e",
+            "e3ce9c77c47c5a21",
+            "4996046ee5b02266",
+            "757f011fdd8553f4",
+            "17933c1abdaaad6a"
+        ],
+        "x": 194,
+        "y": 1399,
+        "w": 942,
+        "h": 202
+    },
+    {
+        "id": "5c28a10fbee2f081",
+        "type": "junction",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "x": 720,
+        "y": 1020,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "76ba4a5853f64d0e",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "2ef94a2b874e3cf1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "eba1d4accae60675"
+            ]
+        ]
+    },
+    {
+        "id": "eba1d4accae60675",
+        "type": "mqtt out",
+        "z": "5ba8e216a11fc282",
+        "g": "2ef94a2b874e3cf1",
+        "name": "",
+        "topic": "overlay1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1c8577c336ad4ca6",
+        "x": 550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5cc9dd03d80d44ab",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Add Overlay",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "4d0812e2eae2dd15"
+            ]
+        ]
+    },
+    {
+        "id": "2d4f891306dc5d4f",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "addText",
+        "func": "/*\nAddText Dynamic Overlay API\nhttps://www.axis.com/vapix-library/subjects/t10175981/section/t10007638/display?section=t10007638-t10007638\n*/\n\n\nmsg.payload = {\n    apiVersion: \"1.0\",\n    context: \"321\",\n    method: \"addText\",\n    params: {\n        camera: 1,\n        text: \"%c\",\n        fontSize: 96,\n        position: [-0.6, -0.2],\n        textColor: \"white\",\n        textBGColor: \"semiTransparent\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "7c65c9de820202f0"
+            ]
+        ]
+    },
+    {
+        "id": "529549ce9ec5f626",
+        "type": "change",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "overlay",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 480,
+        "wires": [
+            [
+                "fac036acbfe30842"
+            ]
+        ]
+    },
+    {
+        "id": "fac036acbfe30842",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "debug 202",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "7c65c9de820202f0",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 750,
+        "y": 480,
+        "wires": [
+            [
+                "84ed3ea53d43af89"
+            ]
+        ]
+    },
+    {
+        "id": "4d0812e2eae2dd15",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Remove previous",
+        "func": "var overlay = flow.get(\"overlay\");\nif( !overlay ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = {\n    apiVersion: overlay.apiVersion,\n    context: \"321\",\n    method: \"remove\",\n    params: {\n        identity: overlay.data.identity\n    }\n}\n\nflow.set(\"overlay\");\nnode.send([msg,null]);\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "a3f5b95779230ac0"
+            ],
+            [
+                "2d4f891306dc5d4f"
+            ]
+        ]
+    },
+    {
+        "id": "a3f5b95779230ac0",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 750,
+        "y": 420,
+        "wires": [
+            [
+                "2d4f891306dc5d4f",
+                "7730f095f6ce4341"
+            ]
+        ]
+    },
+    {
+        "id": "84ed3ea53d43af89",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Error",
+        "func": "if( msg.payload.hasOwnProperty(\"error\") )\n    node.send([null,msg]);\nelse\n    node.send([msg,null]);\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "529549ce9ec5f626"
+            ],
+            [
+                "6a298726e11658b0"
+            ]
+        ]
+    },
+    {
+        "id": "6a298726e11658b0",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "debug 203",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7730f095f6ce4341",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "debug 204",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "59f2f5eaa81f9b8e",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "d1e9ee55b3f580ce"
+            ]
+        ]
+    },
+    {
+        "id": "d1e9ee55b3f580ce",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "setText",
+        "func": "var overlay = flow.get(\"overlay\");\n\nif(!overlay)\n    return;\n\nmsg.payload = {\n    apiVersion: overlay.apiVersion,\n    context: overlay.context,\n    method: \"setText\",\n    params: {\n        identity: overlay.data.identity,\n        text: msg.payload,\n  }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 580,
+        "wires": [
+            [
+                "b49a781a12526b47"
+            ]
+        ]
+    },
+    {
+        "id": "be971700549b2588",
+        "type": "comment",
+        "z": "5ba8e216a11fc282",
+        "g": "2ef94a2b874e3cf1",
+        "name": "Overlay 1 Camera MQTT Overlay [Click to read]",
+        "info": "This method only requires Camera configuration and MQTT Broker\n\nIn the camera:\n1. Setup MQTT connection\n2. Setup MQTT Overlay to subscribe to topic \"overlay1\"\n3. Add a text overlay with date/time and end with #XMP0\n\nClick the inject node to test.",
+        "x": 390,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b49a781a12526b47",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "68d7fcf733914019"
+            ]
+        ]
+    },
+    {
+        "id": "656d1028ac8978be",
+        "type": "comment",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Overlay 2 Dynamic Overlay API [Click to read]",
+        "info": "This method uses the Cameras Dynamic Overlay API.\nIt is commonly used when you don't want to alter the \"default\" text overlay or when you need full control of one or more overlays.\n\n* The first flow (Add Overlay) creates a new overlay using the dynamicoverlay.cgi.  The id needs to be stored when updating the text.\n  You can alter settings by modifying the \"addText\" node.\n* The second flow updates the text\n* The third flow remove the text overlay.\n",
+        "x": 390,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "68d7fcf733914019",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "debug 205",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "463410580a048b2d",
+        "type": "comment",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Overlay 3 Video Overlay ACAP[Click to read]",
+        "info": "This method is similar to the method 1 (Camera MQTT Subscribe) but may be simpler to setup and configure.\n\nInstall Video Overlay ACAP\nhttps://acap.juhlin.me/package/xoverlay\n\n1. Start ACAP and go to user interface\n2. Setup MQTT connection\n3. Setup MQTT Overlay to subscribe to topic \"overlay3\"\n\n",
+        "x": 390,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3d4d05a39d8591d6",
+        "type": "mqtt in",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "topic": "overlay2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1c8577c336ad4ca6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 620,
+        "wires": [
+            [
+                "d1e9ee55b3f580ce"
+            ]
+        ]
+    },
+    {
+        "id": "676831e8c30f986a",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "overlay3",
+        "payload": "Hello World",
+        "payloadType": "str",
+        "x": 330,
+        "y": 900,
+        "wires": [
+            [
+                "d0b4d98b52e79c95"
+            ]
+        ]
+    },
+    {
+        "id": "d0b4d98b52e79c95",
+        "type": "mqtt out",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "topic": "overlay3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1c8577c336ad4ca6",
+        "x": 560,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "bc224b9d9f548871",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Circle 1",
+        "func": "msg.payload = {\n    id: \"Circle1\",\n    type: \"circle\",\n    x: 200,\n    y: 500,\n    r: 150,\n    line: 5,\n    color: {r:0.83,g:0.45,b:0.67},\n    background: {r:0.23,g:0.45,b:0.67,a:0.3}\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1140,
+        "wires": [
+            [
+                "90bffa9c26960ff6",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "4ffb85345c2a0920",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Circle 1",
+        "func": "msg.payload = {\n    id: \"Circle1\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1140,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "6538a55887b44210",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Line 1",
+        "func": "msg.payload = {\n    id: \"Line1\",\n    type: \"line\",\n    x1: 0,\n    y1: 0,\n    x2: 1920,\n    y2: 1080,\n    width: 5,\n    color: {r:1,g:1,b:1},\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1220,
+        "wires": [
+            [
+                "8ec4e7f821027eb5",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "98c66a0433fcc77d",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Line 1",
+        "func": "msg.payload = {\n    id: \"Line1\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1220,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "a466d1a7d49a2cc5",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Line 2",
+        "func": "msg.payload = {\n    id: \"Line2\",\n    type: \"line\",\n    x1: 1920,\n    y1: 0,\n    x2: 0,\n    y2: 1080,\n    width: 5,\n    color: {r:0,g:1,b:0},\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1260,
+        "wires": [
+            [
+                "51b2737d5dfb4204",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "65d946f25cecc109",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Line 2",
+        "func": "msg.payload = {\n    id: \"Line2\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1260,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "27c60a2447bfb3da",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Box 1",
+        "func": "msg.payload = {\n    id: \"Box1\",\n    type: \"box\",\n    x: 1500,\n    y: 500,\n    w: 300,\n    h: 300,\n    color: {r:0,g:0,b:1},\n    line: 6,\n    background: {r:1,g:1,b:1,a:0.5}    \n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1300,
+        "wires": [
+            [
+                "dc40ed30f64d02cf",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "ba66a028e18cc516",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Box 1",
+        "func": "msg.payload = {\n    id: \"Box1\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1300,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "2c88557d2c46f169",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "af24169f6bd7b963"
+            ]
+        ]
+    },
+    {
+        "id": "af24169f6bd7b963",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Text 1",
+        "func": "msg.payload = {\n    id: \"Text1\",\n    type: \"text\",\n    x: 700,\n    y: 200,\n    text: \"Hello Bold World\",\n    size: 140,\n    color: {r:1,g:1,b:0,a:1.0},\n    font: {\n        bold: true\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1060,
+        "wires": [
+            [
+                "823ba948ee4dd8bb",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "761eef5d0505dd6a",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Remove",
+        "func": "msg.payload = {\n    id: \"Text1\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1060,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "bb58f058812647fc",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Text 2",
+        "func": "msg.payload = {\n    id: \"Text2\",\n    type: \"text\",\n    x: 700,\n    y: 400,\n    text: \"Hello World again\",\n    size: 140,\n    color: {r:1,g:1,b:0,a:1.0},\n    font: {\n        bold: false\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1100,
+        "wires": [
+            [
+                "86daac5f2ee6545a",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "a4b9b94884042185",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Text 2",
+        "func": "msg.payload = {\n    id: \"Text2\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1100,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "ed213509076c1b62",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "ClearAll",
+        "func": "msg.payload = [];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1020,
+        "wires": [
+            [
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "981a3e07236ef505",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 1020,
+        "wires": [
+            [
+                "ed213509076c1b62"
+            ]
+        ]
+    },
+    {
+        "id": "6ab7257e3e0b2048",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1100,
+        "wires": [
+            [
+                "bb58f058812647fc"
+            ]
+        ]
+    },
+    {
+        "id": "ea13065c82ca2f92",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1140,
+        "wires": [
+            [
+                "bc224b9d9f548871"
+            ]
+        ]
+    },
+    {
+        "id": "cf6e27bf6d758521",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1220,
+        "wires": [
+            [
+                "6538a55887b44210"
+            ]
+        ]
+    },
+    {
+        "id": "1647428fe195863f",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1260,
+        "wires": [
+            [
+                "a466d1a7d49a2cc5"
+            ]
+        ]
+    },
+    {
+        "id": "3044c9ebc9cc2d0d",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1300,
+        "wires": [
+            [
+                "27c60a2447bfb3da"
+            ]
+        ]
+    },
+    {
+        "id": "4dcedf7f08c47fd4",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Text Box",
+        "func": "//Alert textbox for a camera with resolution 1920x1080\n\nvar resolutionWidth = 1920;\nvar resolutionHeight = 1080;\n\nvar width = 640;\nvar height = 200;\n\nmsg.payload = {\n    id: \"TextBox1\",\n    type: \"textbox\",\n    text: \" ALERT\",\n    x: parseInt((resolutionWidth/2) - (width/2)),\n    y: parseInt((resolutionHeight/2) - (height/2)),\n    w: width,\n    h: height,\n    background: { r: 1.00, g: 0.00, b: 0.00, a: 0.5 },\n    color: {r: 1.00,g: 1.00,b: 0.00,a: 1 },\n    border: {\n        width: 3,\n        color: { r: 0.00, g: 0.00, b: 1.00, a: 1}\n    },\n    font: {}\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1180,
+        "wires": [
+            [
+                "c21508c17c042fef",
+                "5c28a10fbee2f081"
+            ]
+        ]
+    },
+    {
+        "id": "bb2e154fb61383a4",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Display",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 1180,
+        "wires": [
+            [
+                "4dcedf7f08c47fd4"
+            ]
+        ]
+    },
+    {
+        "id": "4ca6cc94475da0b5",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Clear Text Box",
+        "func": "msg.payload = {\n    id: \"Textbox1\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1180,
+        "wires": [
+            [
+                "c8ca64a42a59eed3"
+            ]
+        ]
+    },
+    {
+        "id": "c8ca64a42a59eed3",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "CGI",
+        "func": "msg.cgi = \"/local/xoverlay/overlay?draw=\" + JSON.stringify(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1250,
+        "y": 1020,
+        "wires": [
+            [
+                "cefe29c3517309cb",
+                "4259b53802cc9a6e"
+            ]
+        ]
+    },
+    {
+        "id": "823ba948ee4dd8bb",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1060,
+        "wires": [
+            [
+                "761eef5d0505dd6a"
+            ]
+        ]
+    },
+    {
+        "id": "86daac5f2ee6545a",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1100,
+        "wires": [
+            [
+                "a4b9b94884042185"
+            ]
+        ]
+    },
+    {
+        "id": "90bffa9c26960ff6",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1140,
+        "wires": [
+            [
+                "4ffb85345c2a0920"
+            ]
+        ]
+    },
+    {
+        "id": "c21508c17c042fef",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1180,
+        "wires": [
+            [
+                "4ca6cc94475da0b5"
+            ]
+        ]
+    },
+    {
+        "id": "8ec4e7f821027eb5",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1220,
+        "wires": [
+            [
+                "98c66a0433fcc77d"
+            ]
+        ]
+    },
+    {
+        "id": "51b2737d5dfb4204",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1260,
+        "wires": [
+            [
+                "65d946f25cecc109"
+            ]
+        ]
+    },
+    {
+        "id": "dc40ed30f64d02cf",
+        "type": "delay",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 1300,
+        "wires": [
+            [
+                "ba66a028e18cc516"
+            ]
+        ]
+    },
+    {
+        "id": "cefe29c3517309cb",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "debug 206",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "4259b53802cc9a6e",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Get",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 1440,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8f5fa68f9eebe2a",
+        "type": "comment",
+        "z": "5ba8e216a11fc282",
+        "g": "0a11e7c396233a97",
+        "name": "Play with drawing textm boxes and graphical objects",
+        "info": "Besides the main text overlay, Video Overlay ACAP also supports varios graphical objects\n- Text\n- Text Box\n- Line\n- Box\n- Circle\n\nThey can all have various thickness, colors, backgrounds and transparancy",
+        "x": 410,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "c19f5fb614ede661",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Remove",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "aed5692eb91c987b"
+            ]
+        ]
+    },
+    {
+        "id": "aed5692eb91c987b",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "Remove",
+        "func": "var overlay = flow.get(\"overlay\");\nif( overlay )\n    return;\n\nmsg.payload = {\n    apiVersion: overlay.apiVersion,\n    context: \"321\",\n    method: \"remove\",\n    params: {\n        identity: overlay.data.identity\n    }\n}\n\nflow.set(\"overlay\");\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 700,
+        "wires": [
+            [
+                "d3264bc0f80736db"
+            ]
+        ]
+    },
+    {
+        "id": "d3264bc0f80736db",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "dd2ff02fe5254a50",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 650,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28e864c390085eef",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "Every second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 1500,
+        "wires": [
+            [
+                "5b2f15261c0e08ec"
+            ]
+        ]
+    },
+    {
+        "id": "5b2f15261c0e08ec",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "Random value",
+        "func": "var value = flow.get(\"value\") || 50;\n\nvar change = parseInt((Math.floor(Math.random() * 100) - 50)/10);\nmsg.payload = value + change;\nif( msg.payload < 1)\n    msg.payload = 1;\nif (msg.payload >= 100)\n    msg.payload = 100;\n\nflow.set(\"value\",msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1500,
+        "wires": [
+            [
+                "5850d98e21de6d0b"
+            ]
+        ]
+    },
+    {
+        "id": "5850d98e21de6d0b",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "Gauge",
+        "func": "var camera = global.get(\"camera\");\nif(!camera) {\n    node.warn(\"Unable to find global.camera\");\n    return;\n}\nvar width = parseInt(camera.largest.split('x')[0]);\nvar height = parseInt(camera.largest.split('x')[1]);\nvar max = 100;\nvar min = 0;\nvar value = msg.payload;\n\nvar x = width - parseInt(width * 0.05 );\nvar y = 0;\nvar w = parseInt(width * 0.05);\nvar h = height;\n\nvar gaugeHeight = parseInt( (value / (max - min)) * height );\nvar gaugeTop = height - gaugeHeight;\n\nvar color = {r: 0,g: 0,b: 1,a: 1}\n\nif ((value / (max - min)) > 0.33 ) \n    var color = {r: 0,g: 1,b: 0,a: 1}\n\nif ((value / (max - min)) > 0.66)\n    var color = {r: 1,g: 0, b: 0,a: 1}\n\n\n\nmsg.payload = [\n    { id: \"Backdrop\", type: \"box\",\n        x: x, y: y, w: w, h: h,\n        color: {r:0,g:0,b:1},\n        line: 6,\n        background: {r:0,g:0,b:0,a:0.4}    \n    },\n    {\n        id: \"Gauge\", type: \"box\",\n        x: x, y: gaugeTop, w: w, h: gaugeHeight,\n        color: { r: 0, g: 0, b: 1 },\n        line: 6,\n        background: color\n    },\n    {\n        id:\"GaugeValue\",\n        type:\"text\",\n        x: x + 25,\n        y: gaugeTop - 5,\n        text: value.toString(),\n        size:40,\n        color:{\"r\":1,\"g\":1,\"b\":1,\"a\":1},\n    }    \n]\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 1500,
+        "wires": [
+            [
+                "ce7f5395df0a036c"
+            ]
+        ]
+    },
+    {
+        "id": "ce7f5395df0a036c",
+        "type": "function",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "CGI",
+        "func": "msg.cgi = \"/local/xoverlay/overlay?draw=\" + JSON.stringify(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1500,
+        "wires": [
+            [
+                "a21d33191947395e",
+                "17933c1abdaaad6a"
+            ]
+        ]
+    },
+    {
+        "id": "a21d33191947395e",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "HTTP Get",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 1020,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3ce9c77c47c5a21",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "Reset value",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 1560,
+        "wires": [
+            [
+                "4996046ee5b02266"
+            ]
+        ]
+    },
+    {
+        "id": "4996046ee5b02266",
+        "type": "change",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "value",
+                "pt": "flow",
+                "to": "50",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "757f011fdd8553f4",
+        "type": "comment",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "Overlay 4 Graphical bar gauge",
+        "info": "This is an example of combining graphical objects to display a value \nas a gauge in the form of a bar on the left side.\nThe bar will show different colors depending if the value is low, menium or high.\n\nRandom values are generated every second but can easily be\nreplaced with an MQTT subscribe.\n\nIf Video Overlay ACAP is not installed, download https://acap.juhlin.me/package/xoverlay\n\nYou can alter the gauge by modifying the \"Guage\" node.\n",
+        "x": 350,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "17933c1abdaaad6a",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "g": "77f0623101177cd6",
+        "name": "debug 208",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f44fe9f3d669eadb",
+        "type": "inject",
+        "z": "5ba8e216a11fc282",
+        "name": "Initialize",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 60,
+        "wires": [
+            [
+                "d542716bb4ad93be",
+                "61217dde58cf7b05"
+            ]
+        ]
+    },
+    {
+        "id": "d542716bb4ad93be",
+        "type": "Axis device",
+        "z": "5ba8e216a11fc282",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 450,
+        "y": 60,
+        "wires": [
+            [
+                "d1ddfa348cf296b5"
+            ]
+        ]
+    },
+    {
+        "id": "61217dde58cf7b05",
+        "type": "Axis camera",
+        "z": "5ba8e216a11fc282",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Camera Info",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "7cf24a4b554648ff"
+            ]
+        ]
+    },
+    {
+        "id": "d1ddfa348cf296b5",
+        "type": "change",
+        "z": "5ba8e216a11fc282",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 60,
+        "wires": [
+            [
+                "48cd6359f4f304ce"
+            ]
+        ]
+    },
+    {
+        "id": "48cd6359f4f304ce",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "name": "debug 209",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7cf24a4b554648ff",
+        "type": "change",
+        "z": "5ba8e216a11fc282",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camera",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 100,
+        "wires": [
+            [
+                "5d4b54312713dcb0"
+            ]
+        ]
+    },
+    {
+        "id": "5d4b54312713dcb0",
+        "type": "debug",
+        "z": "5ba8e216a11fc282",
+        "name": "debug 210",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1c8577c336ad4ca6",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "mqtt.juhlin.me",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
