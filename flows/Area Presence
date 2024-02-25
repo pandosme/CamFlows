@@ -269,9 +269,9 @@
         "id": "123d2fdfb9028726",
         "type": "comment",
         "z": "667718535317c178",
-        "name": "Version 1.0",
+        "name": "Version 1.0.1",
         "info": "",
-        "x": 370,
+        "x": 380,
         "y": 60,
         "wires": []
     },
