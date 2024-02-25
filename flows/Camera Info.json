@@ -1,0 +1,198 @@
+[
+    {
+        "id": "c2b58eaa1ca9aca2",
+        "type": "tab",
+        "label": "Camera Info",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "917f68e036f39a1b",
+        "type": "change",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 100,
+        "wires": [
+            [
+                "a21be0d7857d18ea"
+            ]
+        ]
+    },
+    {
+        "id": "c12d0df60d8e6d4a",
+        "type": "inject",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 100,
+        "wires": [
+            [
+                "e727cb13b7127295",
+                "47a86eeccc81a73f",
+                "62ab7bc486fae478"
+            ]
+        ]
+    },
+    {
+        "id": "a21be0d7857d18ea",
+        "type": "debug",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "debug 187",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e727cb13b7127295",
+        "type": "Axis device",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "917f68e036f39a1b"
+            ]
+        ]
+    },
+    {
+        "id": "47a86eeccc81a73f",
+        "type": "Axis camera",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Camera Info",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "024db0c299fcf8cb"
+            ]
+        ]
+    },
+    {
+        "id": "f0737759e98080cf",
+        "type": "debug",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "debug 193",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "024db0c299fcf8cb",
+        "type": "change",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camera",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 160,
+        "wires": [
+            [
+                "f0737759e98080cf"
+            ]
+        ]
+    },
+    {
+        "id": "62ab7bc486fae478",
+        "type": "change",
+        "z": "c2b58eaa1ca9aca2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "global",
+                "to": "Driveway",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
