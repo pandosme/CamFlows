@@ -1,0 +1,2287 @@
+[
+    {
+        "id": "d4569767844ab3fb",
+        "type": "tab",
+        "label": "Area Presence",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6c016464da6372dd",
+        "type": "group",
+        "z": "d4569767844ab3fb",
+        "name": "Settings",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "8d0b7dc5d0d19cee",
+            "e3ceebddbd09bdf7",
+            "c1c133efc184c27f",
+            "68fa6a72b65471d3",
+            "8c23f23a7ce17991",
+            "419cde55e2a2e463",
+            "14808843f2e8c8a0",
+            "a6666546d86a6319",
+            "501354401c3df616",
+            "6a7fc0416912eea1",
+            "e187341ff5063109",
+            "8ea8ebf4a469bfad",
+            "99515a96a877e673",
+            "4fb8bb1e3e3a300e",
+            "bed2b1bae178d364",
+            "b1e14f28e9404c71",
+            "acb9ec89d407650a",
+            "3f38b264a2d2afb9",
+            "c6dadd701b3bd14b",
+            "9b028354890b7e4e",
+            "fdcbb71f03465da3",
+            "ef7fe59546e7f62c",
+            "61b4481d0d9280b3",
+            "adfbbd795134b21c",
+            "15e401445603981e",
+            "40612287cc9b1f29",
+            "b1e564858c2fea2d",
+            "63b378cec612aa87",
+            "21ac49ab0ff7b410",
+            "87bcffece7ef0ec4",
+            "89e03c71f507d6f6",
+            "a7b893552cc1c291"
+        ],
+        "x": 294,
+        "y": 899,
+        "w": 1212,
+        "h": 502
+    },
+    {
+        "id": "07dd13891d47c084",
+        "type": "group",
+        "z": "d4569767844ab3fb",
+        "name": "Output",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "0481b76aa29f4936",
+            "8701f518df7aff1e",
+            "be09d6ba50e60b46",
+            "fe795eb0c79a313a",
+            "a8c5830c570a4fa7"
+        ],
+        "x": 294,
+        "y": 119,
+        "w": 742,
+        "h": 202
+    },
+    {
+        "id": "9061c05a239c4aa0",
+        "type": "group",
+        "z": "d4569767844ab3fb",
+        "name": "Dashboard",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "ea8d72c27fd14ba9",
+            "8e62aa28e4b47154",
+            "002e580d6e078ef4",
+            "9d7fe791622855ff",
+            "d574c6cbf030e7dd",
+            "6bc69dd70d6d09b6"
+        ],
+        "x": 294,
+        "y": 379,
+        "w": 692,
+        "h": 162
+    },
+    {
+        "id": "81aa2a72190ea65b",
+        "type": "group",
+        "z": "d4569767844ab3fb",
+        "name": "Initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "286b786cc926c30d",
+            "ba608ef415bccb1d",
+            "68d06bbfee25016d",
+            "c1861099c02dc1ad",
+            "8678ec46ddd19c24",
+            "d483b8c91eb07a6c",
+            "fa7716e7e8ea833e",
+            "26cd9c24fdf6af3a",
+            "d05f1ef6ca967e05",
+            "6997d8d4ad3a755c",
+            "940d7ee022f560d9",
+            "084f0abf61187262",
+            "42014a059d883ca9",
+            "45d23e9cf5d355a2"
+        ],
+        "x": 294,
+        "y": 599,
+        "w": 852,
+        "h": 242
+    },
+    {
+        "id": "a52e1a0578ebace1",
+        "type": "group",
+        "z": "d4569767844ab3fb",
+        "name": "Exceptions",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b156824d44f9e3c6",
+            "b0c2a67eb66bf6d9",
+            "4b0ecaa37c36b6fa",
+            "afc91e06c94578c8"
+        ],
+        "x": 214,
+        "y": 1619,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "99515a96a877e673",
+        "type": "junction",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "x": 1380,
+        "y": 940,
+        "wires": [
+            [
+                "e52a54462defdd83"
+            ]
+        ]
+    },
+    {
+        "id": "26cd9c24fdf6af3a",
+        "type": "junction",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "286b786cc926c30d",
+                "940d7ee022f560d9",
+                "42014a059d883ca9"
+            ]
+        ]
+    },
+    {
+        "id": "6997d8d4ad3a755c",
+        "type": "junction",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "x": 320,
+        "y": 800,
+        "wires": [
+            [
+                "8678ec46ddd19c24"
+            ]
+        ]
+    },
+    {
+        "id": "fdcbb71f03465da3",
+        "type": "junction",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "x": 320,
+        "y": 940,
+        "wires": [
+            [
+                "a6666546d86a6319",
+                "c6dadd701b3bd14b"
+            ]
+        ]
+    },
+    {
+        "id": "a7b893552cc1c291",
+        "type": "junction",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "x": 860,
+        "y": 1320,
+        "wires": [
+            [
+                "f5bc119181c46078",
+                "c6dadd701b3bd14b"
+            ]
+        ]
+    },
+    {
+        "id": "a23ad569e66c66df",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Detections",
+        "mode": "link",
+        "links": [
+            "764bef079574585a",
+            "dc6624d09529e99d"
+        ],
+        "x": 1245,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "764bef079574585a",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "Visualize",
+        "links": [
+            "91467ae0b488c8e0",
+            "a23ad569e66c66df",
+            "ef266590d130a22e",
+            "89fdf8a12a15475d",
+            "830da760c6b54dbe",
+            "0b669916f0fece01",
+            "3d2170bb736bbc89",
+            "f5bc119181c46078",
+            "339fe94ddaadd11f",
+            "763a1a0ff669fe37"
+        ],
+        "x": 135,
+        "y": 460,
+        "wires": [
+            [
+                "002e580d6e078ef4"
+            ]
+        ]
+    },
+    {
+        "id": "2e957b38120744e6",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Version 1.0",
+        "info": "",
+        "x": 370,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a4d99828a1b4bf5c",
+        "type": "inject",
+        "z": "d4569767844ab3fb",
+        "name": "On start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 680,
+        "wires": [
+            [
+                "26cd9c24fdf6af3a"
+            ]
+        ]
+    },
+    {
+        "id": "1a49f945f36a0384",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "detections",
+        "info": "",
+        "x": 1130,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "339fe94ddaadd11f",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Initialized",
+        "mode": "link",
+        "links": [
+            "bfa9e27303d1d4ca",
+            "1f0c7e0f6c07cf80",
+            "764bef079574585a"
+        ],
+        "x": 1325,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "75d6447d811f5159",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "Update Settings",
+        "links": [
+            "e52a54462defdd83",
+            "78d1081e3d1fe717",
+            "f5bc119181c46078"
+        ],
+        "x": 145,
+        "y": 800,
+        "wires": [
+            [
+                "6997d8d4ad3a755c"
+            ]
+        ]
+    },
+    {
+        "id": "fca59a2cf2c9961f",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Init",
+        "info": "",
+        "x": 1230,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "370d894f57ea83c8",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Update",
+        "info": "",
+        "x": 230,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "bfa9e27303d1d4ca",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "link in 46",
+        "links": [
+            "339fe94ddaadd11f",
+            "de8a5e5e2cb27a9b"
+        ],
+        "x": 145,
+        "y": 940,
+        "wires": [
+            [
+                "fdcbb71f03465da3"
+            ]
+        ]
+    },
+    {
+        "id": "e52a54462defdd83",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Settings updated",
+        "mode": "link",
+        "links": [
+            "75d6447d811f5159",
+            "7629d04ef4c084e4"
+        ],
+        "x": 1675,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "c174e008e31684c4",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Init",
+        "info": "",
+        "x": 230,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "573784589a6eb3f5",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Updated",
+        "info": "",
+        "x": 1580,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "04977496117120b1",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Visualize",
+        "info": "",
+        "x": 220,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ae46bacc2f205933",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "link in 47",
+        "links": [
+            "14e860de50b1c9ac"
+        ],
+        "x": 145,
+        "y": 640,
+        "wires": [
+            [
+                "26cd9c24fdf6af3a"
+            ]
+        ]
+    },
+    {
+        "id": "14e860de50b1c9ac",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Start",
+        "mode": "link",
+        "links": [
+            "ae46bacc2f205933",
+            "32d5a316a5c9eb71"
+        ],
+        "x": 1245,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "51514b5900ea99c4",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Start",
+        "info": "",
+        "x": 1130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "95c96b188484046a",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Areas",
+        "info": "",
+        "x": 1130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "570e914f91f2b46f",
+        "type": "ui_toast",
+        "z": "d4569767844ab3fb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 990,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dffd91cb4456fe23",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "exception",
+        "info": "",
+        "x": 980,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "21f2f0d6e05ecab9",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "exception",
+        "mode": "link",
+        "links": [
+            "3c2ea4cc7b1c8688"
+        ],
+        "x": 1085,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "f5ef6fc67098fb73",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Use this link for other flows that needs transitions",
+        "info": "",
+        "x": 1410,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8d0b7dc5d0d19cee",
+        "type": "ui_numeric",
+        "z": "d4569767844ab3fb",
+        "d": true,
+        "g": "6c016464da6372dd",
+        "name": "",
+        "label": "Minimum age",
+        "tooltip": "",
+        "group": "9eaa73148f46d2bf",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}s",
+        "min": 0,
+        "max": 10,
+        "step": "0.5",
+        "className": "",
+        "x": 880,
+        "y": 1020,
+        "wires": [
+            [
+                "c1c133efc184c27f"
+            ]
+        ]
+    },
+    {
+        "id": "e3ceebddbd09bdf7",
+        "type": "ui_numeric",
+        "z": "d4569767844ab3fb",
+        "d": true,
+        "g": "6c016464da6372dd",
+        "name": "",
+        "label": "Minimum distance",
+        "tooltip": "",
+        "group": "9eaa73148f46d2bf",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}%",
+        "min": 0,
+        "max": "100",
+        "step": "5",
+        "className": "",
+        "x": 890,
+        "y": 1060,
+        "wires": [
+            [
+                "68fa6a72b65471d3"
+            ]
+        ]
+    },
+    {
+        "id": "c1c133efc184c27f",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.age",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 1020,
+        "wires": [
+            [
+                "99515a96a877e673"
+            ]
+        ]
+    },
+    {
+        "id": "68fa6a72b65471d3",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.distance",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 1060,
+        "wires": [
+            [
+                "99515a96a877e673"
+            ]
+        ]
+    },
+    {
+        "id": "8c23f23a7ce17991",
+        "type": "ui_dropdown",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "Classes",
+        "label": "Classes",
+        "tooltip": "",
+        "place": "Select detection",
+        "group": "9eaa73148f46d2bf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Human",
+                "value": "Human",
+                "type": "str"
+            },
+            {
+                "label": "Face",
+                "value": "Face",
+                "type": "str"
+            },
+            {
+                "label": "Head",
+                "value": "Head",
+                "type": "str"
+            },
+            {
+                "label": "Bag",
+                "value": "Bag",
+                "type": "str"
+            },
+            {
+                "label": "Car",
+                "value": "Car",
+                "type": "str"
+            },
+            {
+                "label": "Truck",
+                "value": "Truck",
+                "type": "str"
+            },
+            {
+                "label": "Bus",
+                "value": "Bus",
+                "type": "str"
+            },
+            {
+                "label": "Bike",
+                "value": "Bike",
+                "type": "str"
+            },
+            {
+                "label": "Vehicle",
+                "value": "Vehicle",
+                "type": "str"
+            },
+            {
+                "label": "License plate",
+                "value": "License plate",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 860,
+        "y": 980,
+        "wires": [
+            [
+                "419cde55e2a2e463"
+            ]
+        ]
+    },
+    {
+        "id": "419cde55e2a2e463",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.classes",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 980,
+        "wires": [
+            [
+                "99515a96a877e673"
+            ]
+        ]
+    },
+    {
+        "id": "14808843f2e8c8a0",
+        "type": "ui_dropdown",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "label": "Confidence",
+        "tooltip": "",
+        "place": "Select detection",
+        "group": "9eaa73148f46d2bf",
+        "order": 4,
+        "width": "6",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "10",
+                "value": 10,
+                "type": "num"
+            },
+            {
+                "label": "20",
+                "value": 20,
+                "type": "num"
+            },
+            {
+                "label": "30",
+                "value": 30,
+                "type": "num"
+            },
+            {
+                "label": "40",
+                "value": 40,
+                "type": "num"
+            },
+            {
+                "label": "50",
+                "value": 50,
+                "type": "num"
+            },
+            {
+                "label": "60",
+                "value": 60,
+                "type": "num"
+            },
+            {
+                "label": "70",
+                "value": 70,
+                "type": "num"
+            },
+            {
+                "label": "80",
+                "value": 80,
+                "type": "num"
+            },
+            {
+                "label": "90",
+                "value": 90,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 870,
+        "y": 940,
+        "wires": [
+            [
+                "4fb8bb1e3e3a300e"
+            ]
+        ]
+    },
+    {
+        "id": "a6666546d86a6319",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 940,
+        "wires": [
+            [
+                "501354401c3df616",
+                "6a7fc0416912eea1",
+                "e187341ff5063109",
+                "8ea8ebf4a469bfad",
+                "bed2b1bae178d364"
+            ]
+        ]
+    },
+    {
+        "id": "501354401c3df616",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "confidence",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.confidence",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 940,
+        "wires": [
+            [
+                "14808843f2e8c8a0"
+            ]
+        ]
+    },
+    {
+        "id": "6a7fc0416912eea1",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "classes",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.classes",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 980,
+        "wires": [
+            [
+                "8c23f23a7ce17991"
+            ]
+        ]
+    },
+    {
+        "id": "e187341ff5063109",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "age",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.age",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 1020,
+        "wires": [
+            [
+                "8d0b7dc5d0d19cee"
+            ]
+        ]
+    },
+    {
+        "id": "8ea8ebf4a469bfad",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "distance",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.distance",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1060,
+        "wires": [
+            [
+                "e3ceebddbd09bdf7"
+            ]
+        ]
+    },
+    {
+        "id": "4fb8bb1e3e3a300e",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "set flow.settings.confidence",
+        "func": "var settings = flow.get(\"settings\");\nsettings.confidence = parseInt(msg.payload);\nflow.set(\"settings\", settings);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 940,
+        "wires": [
+            [
+                "99515a96a877e673"
+            ]
+        ]
+    },
+    {
+        "id": "bed2b1bae178d364",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "timeout",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.transition",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1100,
+        "wires": [
+            [
+                "b1e14f28e9404c71"
+            ]
+        ]
+    },
+    {
+        "id": "b1e14f28e9404c71",
+        "type": "ui_numeric",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "label": "Transition",
+        "tooltip": "",
+        "group": "9eaa73148f46d2bf",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}s",
+        "min": 0,
+        "max": "100",
+        "step": "1",
+        "className": "",
+        "x": 860,
+        "y": 1100,
+        "wires": [
+            [
+                "acb9ec89d407650a"
+            ]
+        ]
+    },
+    {
+        "id": "acb9ec89d407650a",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.transition",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 1100,
+        "wires": [
+            [
+                "99515a96a877e673"
+            ]
+        ]
+    },
+    {
+        "id": "0481b76aa29f4936",
+        "type": "Objects",
+        "z": "d4569767844ab3fb",
+        "g": "07dd13891d47c084",
+        "version": "2",
+        "output": "1",
+        "classFilter": "-1",
+        "confidence": "40",
+        "rotation": "0",
+        "cog": "1",
+        "predictions": "0",
+        "attributes": "50",
+        "idle": "0",
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "8701f518df7aff1e"
+            ]
+        ]
+    },
+    {
+        "id": "8701f518df7aff1e",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "07dd13891d47c084",
+        "name": "Detections filter",
+        "func": "\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nvar list = [];\n\nmsg.payload.forEach( function(item){\n    if (item.confidence < settings.confidence)\n        return;\n    if( item.age < settings.age)\n        return;\n    var dx = (item.cx - item.bx);\n    dx = dx * dx;\n    var dy = (item.cy - item.by);\n    dy = dy * dy;\n    item.distance = parseInt(Math.sqrt(dx+dy)/10);\n    if( item.distance < settings.distance )\n        return;\n\n    var clasMatch = false;\n    settings.classes.forEach(function (element) {\n        if (element === item.class)\n            clasMatch = true;\n    });\n    if (!clasMatch)\n        return;\n\n    if( item.cx < settings.aoi.x1 )\n        return;\n    if (item.cx > settings.aoi.x2)\n        return;\n    if (item.cy < settings.aoi.y1)\n        return;\n    if (item.cy > settings.aoi.y2)\n        return;\n    list.push(item);\n});\n\n\nmsg.payload = list;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "be09d6ba50e60b46"
+            ]
+        ]
+    },
+    {
+        "id": "ea8d72c27fd14ba9",
+        "type": "ui_button",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "name": "",
+        "group": "f2f96b09eaa7c0f5",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "Refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "8e62aa28e4b47154"
+            ]
+        ]
+    },
+    {
+        "id": "8e62aa28e4b47154",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "name": "Init",
+        "func": "msg.topic = \"init\";\nmsg.payload = {\n    aspect: \"16:9\",\n    rotation: 0,\n    resolution: \"1280x720\"\n}\n\nvar camera = global.get(\"camera\");\nif ( camera ) {\n    msg.payload.aspect = camera.aspect;\n    msg.payload.rotation = camera.rotation;\n    msg.payload.resolution = camera.largest;\n}\n\nflow.set(\"selectedArea\");\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 420,
+        "wires": [
+            [
+                "002e580d6e078ef4",
+                "14e860de50b1c9ac"
+            ]
+        ]
+    },
+    {
+        "id": "002e580d6e078ef4",
+        "type": "ui_template",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "group": "f2f96b09eaa7c0f5",
+        "name": "Visualization",
+        "order": 4,
+        "width": "16",
+        "height": "16",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'areas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    <canvas id=\"{{'detections_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar pathList = [];\nvar trackers = {};\nvar selectArea = null;\nvar selectionType = \"None\";\nvar ctxAreas = null;\nvar ctxDetections = null;\nvar area = null;\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"init\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            ClearCanvas();\n            init(scope,msg.payload);\n            break;\n\n        case \"parking\":\n            drawParking( msg.payload );\n            break;\n\n        case \"detections\":\n            drawdetections( msg.payload );\n            break;\n\n        case \"selectedArea\":\n            DrawSelectedArea( msg.payload);\n            return;\n\n        case \"updateAreas\":\n            if(ctxDetections) {\n                ctxDetections.beginPath();\n                ctxDetections.clearRect(0, 0, 1000, 1000 );\n                ctxDetections.stroke();\n            }\n            DrawAreas( msg.payload);\n            return;\n\n        case \"reset\":\n        case \"clear\":\n        case \"save\":\n            ClearCanvas();\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            DrawAreas( msg.payload);\n            break;\n\n        case \"editArea\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            area = msg.payload;\n            var x1 = parseInt(area.x1 / 1000 * imageWidth);\n            var x2 = parseInt(area.x2 / 1000 * imageWidth);\n            var y1 = parseInt(area.y1 / 1000 * imageHeight);\n            var y2 = parseInt(area.y2 / 1000 * imageHeight);\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                x1:x1, y1:y1, x2:x2, y2:y2,\n                show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                onSelectEnd: function( image, selectionArea ) {\n                    area.x1 = parseInt((selectionArea.x1/imageWidth) * 1000);\n                    area.x2 = parseInt((selectionArea.x2/imageWidth) * 1000);\n                    area.y1 = parseInt((selectionArea.y1/imageHeight) * 1000);\n                    area.y2 = parseInt((selectionArea.y2/imageHeight) * 1000);\n                    scope.send({\n                        topic: \"area\",\n                        payload: area\n                    });\n                }\n            });\n            selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n\nfunction init( scope, camera ) {\n    imageWidth = 800;\n    imageHeight = 450;\n    var aspect = camera.aspect || \"16:9\";\n    var rotation = camera.rotation || 0;\n    var resolution = camera.resolution || \"1280x720\";\n\n    if( aspect === \"1:1\")\n        imageHeight = 800;\n\n    if( aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( rotation === 90 || rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+ resolution +'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n        \n    var canvas = document.getElementById(\"areas_\"+scope.$id);\n    ctxAreas = canvas.getContext(\"2d\");\n    canvas = document.getElementById(\"detections_\"+scope.$id);\n    ctxDetections = canvas.getContext(\"2d\");\n\n    if( selectArea ) {\n        selectArea.setOptions({ hide: true });\n        delete selectArea;\n    }\n}\n\nfunction ClearCanvas() {\n    if(ctxAreas) {\n        ctxAreas.beginPath();\n        ctxAreas.clearRect(0, 0, 1000, 1000 );\n        ctxAreas.stroke();\n    }\n}\n\nfunction drawdetections( detections ) {\n    if(!ctxDetections)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.clearRect(0, 0, 1000, 1000 );\n    ctxDetections.stroke();\n\n    if( detections.length === 0)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.lineWidth = 3;\n    ctxDetections.font = \"30px Arial\";\n    ctxDetections.fillStyle = '#FFFF00';\n    ctxDetections.strokeStyle = '#FFFF00';\n    \n    detections.forEach( function(detection){\n        ctxDetections.moveTo(detection.cx, detection.cy );\n        ctxDetections.arc(detection.cx, detection.cy, 6, 0, 2 * Math.PI);\n        ctxDetections.fill();\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" [\" + detection.confidence + ']';\n        ctxDetections.fillText(text, detection.cx - 50, detection.cy - 15 );\n        if( detection.hasOwnProperty(\"age\") ) {\n            var time = parseInt(detection.age);\n            text = time + ' s';\n            if( time > 60 ) {\n                time = parseInt( time / 60);\n                text = time + ' m';\n                if( time > 60 ) {\n                    time = parseInt( time / 60);\n                    text = time + ' h';\n                    if( time > 24 )\n                        text = parseInt( time / 24) + ' d';\n                }\n            }\n            ctxDetections.fillText(text, detection.cx - 25, detection.cy + 35 );\n        }\n    });\n    ctxDetections.stroke();\n}\n\n\n\nfunction drawParking( data ) {\n    if(!ctxAreas)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctxAreas.globalAlpha = strength;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#00FF00';\n    ctxAreas.font = \"30px Arial\";\n    ctxAreas.fillStyle = '#FFFF00';\n    ctxAreas.moveTo(first.x, first.y );\n    ctxAreas.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctxAreas.fillText(data.class, first.x, first.y - 10 );\n    ctxAreas.stroke();\n\n    ctxAreas.beginPath();\n    ctxAreas.strokeStyle = '#FFFF00';\n    ctxAreas.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctxAreas.lineTo(data.path[i].x,data.path[i].y ); ctxAreas.lineTo(last.x,last.y );\n    ctxAreas.stroke();\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth=3;\n    ctxAreas.strokeStyle='#FF0000';\n    ctxAreas.moveTo(last.x, last.y );\n    ctxAreas.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctxAreas.stroke();\n}\n\nfunction DrawSelectedArea( area ) {\n    if(!ctxAreas)\n        return;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#0000FF';\n    ctxAreas.font = \"30px Arial\";\n    var width = Math.abs(area.x2 - area.x1);\n    var height = Math.abs(area.y2 - area.y1);\n    ctxAreas.beginPath();\n    ctxAreas.rect(area.x1,area.y1,width,height);\n    ctxAreas.stroke();\n}\n\n\nfunction DrawAreas(list) {\n    if(!ctxAreas)\n        return;\n\n    ctxAreas.lineWidth = 3;\n    ctxAreas.font = \"30px Arial\";\n\n    list.forEach(function(area){\n        ctxAreas.strokeStyle = '#0000FF';\n        if( area.state === true)\n            ctxAreas.strokeStyle = '#FF0000';\n        if( area.state === false)\n            ctxAreas.strokeStyle = '#00FF00';\n        ctxAreas.beginPath();\n        var width = Math.abs(area.x2 - area.x1);\n        var height = Math.abs(area.y2 - area.y1);\n        ctxAreas.beginPath();\n        ctxAreas.rect(area.x1,area.y1,width,height);\n        ctxAreas.stroke();\n    });\n}\n\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 460,
+        "wires": [
+            [
+                "9d7fe791622855ff"
+            ]
+        ]
+    },
+    {
+        "id": "286b786cc926c30d",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "flow.settings",
+        "func": "msg.payload = {\n    classes: [\"Car\",\"Truck\",\"Bus\",\"Bike\"],\n    age: 3,\n    distance: 0,\n    confidence: 20,\n    aoi: {\n        x1: 0,\n        y1: 0,\n        x2: 1000,\n        y2: 1000\n    },\n    timeout: 5,\n    areas: []\n}\n\nvar device = global.get(\"device\");\nif( device ) \n    msg.payload.name = device.hostname || device.serial;\n\nflow.set(\"settings\",msg.payload);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 640,
+        "wires": [
+            [
+                "d05f1ef6ca967e05"
+            ]
+        ]
+    },
+    {
+        "id": "ba608ef415bccb1d",
+        "type": "json",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 870,
+        "y": 640,
+        "wires": [
+            [
+                "68d06bbfee25016d"
+            ]
+        ]
+    },
+    {
+        "id": "68d06bbfee25016d",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "updateAreas",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings.areas",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 640,
+        "wires": [
+            [
+                "339fe94ddaadd11f"
+            ]
+        ]
+    },
+    {
+        "id": "c1861099c02dc1ad",
+        "type": "catch",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "scope": [
+            "d05f1ef6ca967e05"
+        ],
+        "uncaught": false,
+        "x": 1040,
+        "y": 800,
+        "wires": [
+            [
+                "78d1081e3d1fe717"
+            ]
+        ]
+    },
+    {
+        "id": "8678ec46ddd19c24",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "flow.settings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 430,
+        "y": 800,
+        "wires": [
+            [
+                "d483b8c91eb07a6c"
+            ]
+        ]
+    },
+    {
+        "id": "d483b8c91eb07a6c",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "pretty",
+        "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 800,
+        "wires": [
+            [
+                "fa7716e7e8ea833e"
+            ]
+        ]
+    },
+    {
+        "id": "fa7716e7e8ea833e",
+        "type": "file",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "filename": "sdcard/Presence.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 780,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b156824d44f9e3c6",
+        "type": "catch",
+        "z": "d4569767844ab3fb",
+        "g": "a52e1a0578ebace1",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 320,
+        "y": 1660,
+        "wires": [
+            [
+                "b0c2a67eb66bf6d9",
+                "4b0ecaa37c36b6fa"
+            ]
+        ]
+    },
+    {
+        "id": "b0c2a67eb66bf6d9",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "a52e1a0578ebace1",
+        "name": "Error message",
+        "func": "msg.topic = \"exception/precense\";\nmsg.payload = msg.error;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1660,
+        "wires": [
+            [
+                "afc91e06c94578c8",
+                "21f2f0d6e05ecab9"
+            ]
+        ]
+    },
+    {
+        "id": "4b0ecaa37c36b6fa",
+        "type": "debug",
+        "z": "d4569767844ab3fb",
+        "g": "a52e1a0578ebace1",
+        "name": "debug 216",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "afc91e06c94578c8",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "a52e1a0578ebace1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1720,
+        "wires": [
+            [
+                "570e914f91f2b46f"
+            ]
+        ]
+    },
+    {
+        "id": "be09d6ba50e60b46",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "07dd13891d47c084",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "detections",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            [
+                "a23ad569e66c66df",
+                "fe795eb0c79a313a"
+            ]
+        ]
+    },
+    {
+        "id": "d574c6cbf030e7dd",
+        "type": "ui_button",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "name": "",
+        "group": "fba096d0ee7d620d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Add",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 370,
+        "y": 500,
+        "wires": [
+            [
+                "6bc69dd70d6d09b6"
+            ]
+        ]
+    },
+    {
+        "id": "6bc69dd70d6d09b6",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "name": "New area",
+        "func": "msg.topic = \"editArea\";\nvar settings = flow.get(\"settings\");\nif(!settings) {\n    node.warn(\"Invalid settings\");\n    return;\n}\n\nmsg.payload = {\n    name: \"New area\",\n    id: new Date().getTime().toString(),\n    x1: 300,\n    x2: 700,\n    y1: 300,\n    y2: 700,\n    state: false,\n    counter: 0,\n    transition: false,\n    edit: true,\n    timestamp: 0\n}\n\nsettings.areas.push(msg.payload);\nflow.set(\"settings\",settings);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "830da760c6b54dbe",
+                "002e580d6e078ef4"
+            ]
+        ]
+    },
+    {
+        "id": "830da760c6b54dbe",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Areas",
+        "mode": "link",
+        "links": [
+            "764bef079574585a",
+            "f32c12e58877984d"
+        ],
+        "x": 1245,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "78d1081e3d1fe717",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "link out 34",
+        "mode": "link",
+        "links": [
+            "75d6447d811f5159"
+        ],
+        "x": 1335,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d05f1ef6ca967e05",
+        "type": "file in",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "filename": "sdcard/Presence.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 660,
+        "y": 640,
+        "wires": [
+            [
+                "ba608ef415bccb1d"
+            ]
+        ]
+    },
+    {
+        "id": "940d7ee022f560d9",
+        "type": "Axis device",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "preset": "798a40a1a6d011bd",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "084f0abf61187262"
+            ]
+        ]
+    },
+    {
+        "id": "084f0abf61187262",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42014a059d883ca9",
+        "type": "Axis camera",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "preset": "798a40a1a6d011bd",
+        "action": "Camera Info",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 430,
+        "y": 720,
+        "wires": [
+            [
+                "45d23e9cf5d355a2"
+            ]
+        ]
+    },
+    {
+        "id": "45d23e9cf5d355a2",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "81aa2a72190ea65b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camera",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d7fe791622855ff",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "9061c05a239c4aa0",
+        "name": "area",
+        "func": "if(msg.topic !== \"area\")\n    return;\nvar selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\nselectedArea.x1 = msg.payload.x1;\nselectedArea.x2 = msg.payload.x2;\nselectedArea.y1 = msg.payload.y1;\nselectedArea.y2 = msg.payload.y2;\n\nflow.set(\"selectedArea\",selectedArea);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6dadd701b3bd14b",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings.areas",
+                "tot": "flow",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 1180,
+        "wires": [
+            [
+                "9b028354890b7e4e",
+                "b1e564858c2fea2d"
+            ]
+        ]
+    },
+    {
+        "id": "9b028354890b7e4e",
+        "type": "ui_table",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "group": "fba096d0ee7d620d",
+        "name": "Areas",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "columns": [
+            {
+                "field": "name",
+                "title": "Name or ID",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 710,
+        "y": 1180,
+        "wires": [
+            [
+                "ef7fe59546e7f62c",
+                "61b4481d0d9280b3"
+            ]
+        ]
+    },
+    {
+        "id": "3f38b264a2d2afb9",
+        "type": "ui_button",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "group": "fba096d0ee7d620d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "save",
+        "topicType": "str",
+        "x": 550,
+        "y": 1320,
+        "wires": [
+            [
+                "40612287cc9b1f29"
+            ]
+        ]
+    },
+    {
+        "id": "3d2170bb736bbc89",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "link out 35",
+        "mode": "link",
+        "links": [
+            "764bef079574585a",
+            "fef670bda459c77d"
+        ],
+        "x": 1675,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f5bc119181c46078",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "link out 37",
+        "mode": "link",
+        "links": [
+            "764bef079574585a",
+            "75d6447d811f5159",
+            "fef670bda459c77d",
+            "32d5a316a5c9eb71"
+        ],
+        "x": 1675,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "fe795eb0c79a313a",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "07dd13891d47c084",
+        "name": "Area State",
+        "func": "var settings = flow.get(\"settings\");\nvar detections = msg.payload;\n\nvar now = new Date().getTime();\n\nsettings.areas.forEach(function(area){\n    var counter = 0;\n    detections.forEach(function(detection){\n\n        if( detection.age > area.transition &&\n            detection.cx >= area.x1 &&\n            detection.cx <= area.x2 &&\n            detection.cy >= area.y1 &&\n            detection.cy <= area.y2)\n              counter++;\n    });\n\n    if( area.state === false && area.transition === false && area.counter === 0 && counter > 0 ) {\nnode.warn(\"new\");\n        area.counter = counter;\n        area.state = true;\n        area.transition = false;\n        area.timestamp = now;\n        msg.payload = area;\n        msg.topic = \"occupied\";\n        node.send(msg);\n    }\n\n    if( area.state === true && area.counter > 0 && counter > 0 ) {\n        area.counter = counter;\n        area.transition = false;\n        area.counter = counter;\n    }\n\n    if( area.state === true && area.transition === false && counter === 0) {\nnode.warn(\"lost\");\n        area.transition = true;\n        area.counter = 0;\n        area.transitionTime = now;\n    }\n\n    if( area.state === true && area.transition === true && counter === 0 ) {\n        var duration = parseInt((now - area.timestamp) / 1000);\n//node.warn(duration);\n        if( duration > area.transition ) {\n            area.counter = 0;\n            area.transition = false;\n            area.state = false;\n            area.timestamp = now;\n            msg.payload = area;\n            msg.topic = \"free\";\n            node.send(msg);\n        }\n    }\n});\n\nflow.set(\"settings\",settings);\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 220,
+        "wires": [
+            [
+                "a8c5830c570a4fa7",
+                "f20d5cd875e5aa2a"
+            ]
+        ]
+    },
+    {
+        "id": "ef7fe59546e7f62c",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "Selected Area",
+        "func": "var settings = flow.get(\"settings\");\nvar areas = settings.areas;\nvar area = null;\nareas.forEach(function(item){\n    if( item.id === msg.payload.id) \n        area = JSON.parse(JSON.stringify(item));\n});\n\nif( !area )\n    return;\n\narea.state = false;\narea.transition = false;\narea.timestamp = new Date().getTime();\narea.counter = 0;\narea.edit = true;\nflow.set(\"settings\",settings);\nmsg.payload = area;\nmsg.topic = \"editArea\";\nflow.set(\"selectedArea\",area);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1180,
+        "wires": [
+            [
+                "3d2170bb736bbc89"
+            ]
+        ]
+    },
+    {
+        "id": "a8c5830c570a4fa7",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "07dd13891d47c084",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "settings.areas",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "updateAreas",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "763a1a0ff669fe37"
+            ]
+        ]
+    },
+    {
+        "id": "763a1a0ff669fe37",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "link out 38",
+        "mode": "link",
+        "links": [
+            "764bef079574585a"
+        ],
+        "x": 1245,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a1b2767b0e4c16d4",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Transition",
+        "info": "",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f20d5cd875e5aa2a",
+        "type": "link out",
+        "z": "d4569767844ab3fb",
+        "name": "Transition",
+        "mode": "link",
+        "links": [],
+        "x": 1635,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c9e67c416cba9acd",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Areas",
+        "info": "",
+        "x": 1140,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "61b4481d0d9280b3",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 1220,
+        "wires": [
+            [
+                "adfbbd795134b21c"
+            ]
+        ]
+    },
+    {
+        "id": "adfbbd795134b21c",
+        "type": "ui_text_input",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "label": "Name",
+        "tooltip": "",
+        "group": "fba096d0ee7d620d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1170,
+        "y": 1220,
+        "wires": [
+            [
+                "15e401445603981e"
+            ]
+        ]
+    },
+    {
+        "id": "15e401445603981e",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "selectedArea.name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 1220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40612287cc9b1f29",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "Update Areas",
+        "func": "var selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\n\nvar settings = flow.get(\"settings\");\nvar areas = settings.areas;\n\nareas.forEach(function(area){\n    if( area.id === selectedArea.id) {\n        area.name = selectedArea.name;\n        area.x1 = selectedArea.x1;\n        area.x2 = selectedArea.x2;\n        area.y1 = selectedArea.y1;\n        area.y2 = selectedArea.y2;\n        area.state = false;\n        area.transition = false;\n        area.timestamp = new Date().getTime();\n        area.counter = 0;\n        area.edit = false;\n    }\n})\n\nflow.set(\"settings\",settings);\nmsg.payload = areas;\nmsg.topic = \"save\";\nflow.set(\"selectedArea\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1320,
+        "wires": [
+            [
+                "a7b893552cc1c291"
+            ]
+        ]
+    },
+    {
+        "id": "b1e564858c2fea2d",
+        "type": "debug",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "debug 227",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "63b378cec612aa87",
+        "type": "change",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 1260,
+        "wires": [
+            [
+                "adfbbd795134b21c"
+            ]
+        ]
+    },
+    {
+        "id": "21ac49ab0ff7b410",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "Editing?",
+        "func": "var selectedArea = flow.get(\"selectedArea\");\nmsg.enabled = false;\nif( selectedArea )\n    msg.enabled = true;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1320,
+        "wires": [
+            [
+                "3f38b264a2d2afb9",
+                "87bcffece7ef0ec4"
+            ]
+        ]
+    },
+    {
+        "id": "fef670bda459c77d",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "link in 49",
+        "links": [
+            "f5bc119181c46078",
+            "3d2170bb736bbc89"
+        ],
+        "x": 145,
+        "y": 1320,
+        "wires": [
+            [
+                "21ac49ab0ff7b410"
+            ]
+        ]
+    },
+    {
+        "id": "87bcffece7ef0ec4",
+        "type": "ui_button",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "",
+        "group": "fba096d0ee7d620d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Remove",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "red",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "save",
+        "topicType": "str",
+        "x": 560,
+        "y": 1360,
+        "wires": [
+            [
+                "89e03c71f507d6f6"
+            ]
+        ]
+    },
+    {
+        "id": "32d5a316a5c9eb71",
+        "type": "link in",
+        "z": "d4569767844ab3fb",
+        "name": "link in 50",
+        "links": [
+            "f5bc119181c46078",
+            "14e860de50b1c9ac"
+        ],
+        "x": 145,
+        "y": 1260,
+        "wires": [
+            [
+                "63b378cec612aa87"
+            ]
+        ]
+    },
+    {
+        "id": "89e03c71f507d6f6",
+        "type": "function",
+        "z": "d4569767844ab3fb",
+        "g": "6c016464da6372dd",
+        "name": "Remove Area",
+        "func": "var selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\n\nvar settings = flow.get(\"settings\");\nvar areas = settings.areas;\n\nvar index = -1;\nvar counter = 0;\n\nareas.forEach(function(area){\n    if( area.id === selectedArea.id)\n        index = counter;\n    counter++;\n})\n\nif( index >= 0 )\n    areas.splice(index, 1);\n\nflow.set(\"settings\",settings);\nmsg.payload = areas;\nmsg.topic = \"save\";\nflow.set(\"selectedArea\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1360,
+        "wires": [
+            [
+                "a7b893552cc1c291"
+            ]
+        ]
+    },
+    {
+        "id": "a64461ceb04e3da4",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Start",
+        "info": "",
+        "x": 230,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "94961701e67817f1",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Reset",
+        "info": "",
+        "x": 230,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "954bea825187f68c",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Edit",
+        "info": "",
+        "x": 230,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "a2aeb32ed1310d1c",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Area",
+        "info": "",
+        "x": 1570,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "93b6a70371b1618c",
+        "type": "comment",
+        "z": "d4569767844ab3fb",
+        "name": "Updated",
+        "info": "",
+        "x": 1580,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "9eaa73148f46d2bf",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "2d3dacb1a7639ea6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2f96b09eaa7c0f5",
+        "type": "ui_group",
+        "name": "Visualization",
+        "tab": "2d3dacb1a7639ea6",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fba096d0ee7d620d",
+        "type": "ui_group",
+        "name": "Areas",
+        "tab": "2d3dacb1a7639ea6",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "798a40a1a6d011bd",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "2d3dacb1a7639ea6",
+        "type": "ui_tab",
+        "name": "Presence",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
