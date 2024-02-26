@@ -1,0 +1,365 @@
+[
+    {
+        "id": "7141b33b78239667",
+        "type": "tab",
+        "label": "FW Upgrade MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "067ae66ab6e75ccc",
+        "type": "junction",
+        "z": "7141b33b78239667",
+        "x": 1000,
+        "y": 100,
+        "wires": [
+            [
+                "1b3742adf82e9cb1",
+                "aefd990269e3d193"
+            ]
+        ]
+    },
+    {
+        "id": "13ea176909442828",
+        "type": "exec",
+        "z": "7141b33b78239667",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            [
+                "1b34dbd45fac664b",
+                "09fb90f567bd8055"
+            ]
+        ]
+    },
+    {
+        "id": "1b34dbd45fac664b",
+        "type": "switch",
+        "z": "7141b33b78239667",
+        "name": "Download failed",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 160,
+        "wires": [
+            [
+                "639bc8271089ee8a"
+            ]
+        ]
+    },
+    {
+        "id": "09fb90f567bd8055",
+        "type": "switch",
+        "z": "7141b33b78239667",
+        "name": "Download success",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 220,
+        "wires": [
+            [
+                "ac894a9a5ae8e46c",
+                "1d1fb5875bc83ad5"
+            ]
+        ]
+    },
+    {
+        "id": "1d1fb5875bc83ad5",
+        "type": "Axis device",
+        "z": "7141b33b78239667",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Upgrade firmware",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "sdcard/firmware.bin",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "530f0eb1fd2696cb"
+            ]
+        ]
+    },
+    {
+        "id": "e63fe50c027b587a",
+        "type": "catch",
+        "z": "7141b33b78239667",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 640,
+        "y": 340,
+        "wires": [
+            [
+                "c2837ed0841ad8fa"
+            ]
+        ]
+    },
+    {
+        "id": "747e8c693532ee2a",
+        "type": "mqtt in",
+        "z": "7141b33b78239667",
+        "name": "",
+        "topic": "axis/upgrade",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "b62aab3f6796f712",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "7b72527350aeebb4"
+            ]
+        ]
+    },
+    {
+        "id": "7b72527350aeebb4",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "Validate",
+        "func": "var device = global.get(\"device\");\nif (!device)\n    return;\n\nif( !msg.payload.hasOwnProperty(\"targets\") ) {\n//    node.error(\"Invalid input\",\"targets required\");\n    return;\n}\n\nif (!msg.payload.hasOwnProperty(\"url\")) {\n//    node.error(\"Invalid input\", \"url required\");\n    return;\n}    \n\nif (!msg.payload.hasOwnProperty(\"version\"))\n    msg.payload.version = \"latest\";\n\nvar match = false;\nmsg.payload.targets.forEach(function(serial){\n    if( device.serial === serial)\n        match = true;\n})\n\nif(!match)\n    return;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "ec675e74e8009908",
+                "e141ff8e364756de"
+            ]
+        ]
+    },
+    {
+        "id": "e141ff8e364756de",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "curl download",
+        "func": "msg.payload = \"curl -o sdcard/firmware.bin \" + msg.payload.url;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "13ea176909442828"
+            ]
+        ]
+    },
+    {
+        "id": "ec675e74e8009908",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "status",
+        "func": "msg.topic = \"axis/upgrade/status/\" + global.get(\"device\").serial;\nmsg.payload = \"Downloading firmware\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 100,
+        "wires": [
+            [
+                "067ae66ab6e75ccc"
+            ]
+        ]
+    },
+    {
+        "id": "1b3742adf82e9cb1",
+        "type": "mqtt out",
+        "z": "7141b33b78239667",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b62aab3f6796f712",
+        "x": 1150,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "639bc8271089ee8a",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "status",
+        "func": "msg.topic = \"axis/upgrade/status/\" + global.get(\"device\").serial;\nmsg.payload = \"Firmware download failed.\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 160,
+        "wires": [
+            [
+                "067ae66ab6e75ccc"
+            ]
+        ]
+    },
+    {
+        "id": "ac894a9a5ae8e46c",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "status",
+        "func": "msg.topic = \"axis/upgrade/status/\" + global.get(\"device\").serial;\nmsg.payload = \"Firmware downloaded.  Starting upgrade\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 220,
+        "wires": [
+            [
+                "067ae66ab6e75ccc"
+            ]
+        ]
+    },
+    {
+        "id": "530f0eb1fd2696cb",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "status",
+        "func": "msg.topic = \"axis/upgrade/status/\" + global.get(\"device\").serial;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 280,
+        "wires": [
+            [
+                "067ae66ab6e75ccc"
+            ]
+        ]
+    },
+    {
+        "id": "c2837ed0841ad8fa",
+        "type": "function",
+        "z": "7141b33b78239667",
+        "name": "status",
+        "func": "msg.topic = \"axis/upgrade/status/\" + global.get(\"device\").serial;\nmsg.payload = \"Firmware upgrade failed\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 340,
+        "wires": [
+            [
+                "067ae66ab6e75ccc"
+            ]
+        ]
+    },
+    {
+        "id": "aefd990269e3d193",
+        "type": "debug",
+        "z": "7141b33b78239667",
+        "name": "debug 206",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "b62aab3f6796f712",
+        "type": "mqtt-broker",
+        "name": "Broker",
+        "broker": "10.13.8.20",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
