@@ -2,7 +2,7 @@
     {
         "id": "3f9fbf9fc83bc7d6",
         "type": "tab",
-        "label": "Object Detection",
+        "label": "Object Detections",
         "disabled": false,
         "info": "",
         "env": []
@@ -100,7 +100,7 @@
         ],
         "x": 274,
         "y": 499,
-        "w": 1112,
+        "w": 1102,
         "h": 302
     },
     {
@@ -194,7 +194,7 @@
         "type": "comment",
         "z": "3f9fbf9fc83bc7d6",
         "name": "Version 1.1 [README]   ",
-        "info": "NOTE: This flow requires the \"Common Flows\".\nImport the following flow into your Node-RED and set the cameras credentials\n",
+        "info": "It is recommeded to install the flow \"Device Info\") from examples or\nhttps://github.com/pandosme/CamFlows/blob/master/flows/Device%20Info.json.\nThis flows the data that the flow stores in global.context.\n",
         "x": 380,
         "y": 60,
         "wires": []
@@ -488,16 +488,6 @@
         "info": "",
         "x": 170,
         "y": 900,
-        "wires": []
-    },
-    {
-        "id": "d4305780925fded2",
-        "type": "comment",
-        "z": "3f9fbf9fc83bc7d6",
-        "name": "Common Flows [Import]     ",
-        "info": "NOTE: This flow requires the \"Common Flows\".\nImport the following flow into your Node-RED and set the cameras and MQTT Settings.\n\n[\n    {\n        \"id\": \"5c11fed7a3291d98\",\n        \"type\": \"tab\",\n        \"label\": \"Common flows\",\n        \"disabled\": false,\n        \"info\": \"\",\n        \"env\": []\n    },\n    {\n        \"id\": \"02db7f93b04a492f\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 690,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"b5b64f4f7b769d83\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"fa380eb259be45b7\",\n        \"type\": \"inject\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 250,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"c8ef8d97328edd23\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5b64f4f7b769d83\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 187\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 100,\n        \"wires\": []\n    },\n    {\n        \"id\": \"aa43617de91eb980\",\n        \"type\": \"link in\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"links\": [\n            \"36a1c5493dd38891\",\n            \"87da02126678c337\",\n            \"dc22d2beb6b89bfc\",\n            \"9322bf42526aebb4\",\n            \"0d0b351adc05d714\",\n            \"3d409c678d9a4f7a\"\n        ],\n        \"x\": 245,\n        \"y\": 340,\n        \"wires\": [\n            [\n                \"b5d16c19b87890af\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5d16c19b87890af\",\n        \"type\": \"mqtt out\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 410,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"b95457e9f5c0bad5\",\n        \"type\": \"comment\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"info\": \"\",\n        \"x\": 140,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"c8ef8d97328edd23\",\n        \"type\": \"Axis device\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Device Info\",\n        \"cgi\": \"\",\n        \"data\": \"\",\n        \"options\": \"\",\n        \"filename\": \"\",\n        \"x\": 470,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"02db7f93b04a492f\",\n                \"c73446698e69b019\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"c73446698e69b019\",\n        \"type\": \"Axis camera\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Camera Info\",\n        \"resolution\": \"640x360\",\n        \"output\": \"Base64\",\n        \"filename\": \"\",\n        \"options\": \"\",\n        \"data\": \"\",\n        \"x\": 470,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"83dd6a8c155a030a\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"1d5013c65acf6edc\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 193\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 160,\n        \"wires\": []\n    },\n    {\n        \"id\": \"83dd6a8c155a030a\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device.camera\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 710,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"1d5013c65acf6edc\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"d1d53d1e87be4083\",\n        \"type\": \"mqtt-broker\",\n        \"name\": \"MQTT Broker\",\n        \"broker\": \"10.13.8.20\",\n        \"port\": \"1883\",\n        \"clientid\": \"\",\n        \"autoConnect\": true,\n        \"usetls\": false,\n        \"protocolVersion\": \"4\",\n        \"keepalive\": \"60\",\n        \"cleansession\": true,\n        \"autoUnsubscribe\": true,\n        \"birthTopic\": \"\",\n        \"birthQos\": \"0\",\n        \"birthRetain\": \"false\",\n        \"birthPayload\": \"\",\n        \"birthMsg\": {},\n        \"closeTopic\": \"\",\n        \"closeQos\": \"0\",\n        \"closeRetain\": \"false\",\n        \"closePayload\": \"\",\n        \"closeMsg\": {},\n        \"willTopic\": \"\",\n        \"willQos\": \"0\",\n        \"willRetain\": \"false\",\n        \"willPayload\": \"\",\n        \"willMsg\": {},\n        \"userProps\": \"\",\n        \"sessionExpiry\": \"\"\n    },\n    {\n        \"id\": \"a5d60ef5587cc8fc\",\n        \"type\": \"Device Access\",\n        \"name\": \"Localhost\",\n        \"address\": \"localhost\",\n        \"protocol\": \"http\"\n    }\n]\n\n",
-        "x": 620,
-        "y": 60,
         "wires": []
     },
     {
