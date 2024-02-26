@@ -1449,7 +1449,7 @@
         "type": "comment",
         "z": "07af90e564fe3f82",
         "name": "Version 2.1 [README]",
-        "info": "It is recommeded to install the flow \"Camera Info\") from examples or\nhttps://github.com/pandosme/CamFlows/blob/master/flows/Camera%20Info.json.\nThis flows the data that the flow stores in global.context.\n",
+        "info": "It is recommeded to install the flow \"Device Info\" from examples or\nhttps://github.com/pandosme/CamFlows/blob/master/flows/Device%20Info.json.\nThis flows the data that the flow stores in global.context.\n",
         "x": 380,
         "y": 60,
         "wires": []
