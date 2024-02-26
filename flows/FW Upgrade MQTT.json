@@ -325,6 +325,16 @@
         "wires": []
     },
     {
+        "id": "2c5c1d7f08838f84",
+        "type": "comment",
+        "z": "7141b33b78239667",
+        "name": "Version 1.0 ",
+        "info": "# Overview\nEnables triggering FW upgraqde on Axis Device when MQTT topic/Payload sent.\n\n## Prerequisites\n1. Axis Device\n   - SD Card mounted\n   - DNS Server sent\n   -  Internet access\n2. [Node-RED Installer](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html)\n3. MQTT client to issue command and monitor upgrade status.\n",
+        "x": 250,
+        "y": 40,
+        "wires": []
+    },
+    {
         "id": "a5d60ef5587cc8fc",
         "type": "Device Access",
         "name": "Localhost",
