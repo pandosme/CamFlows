@@ -1,11 +1,6 @@
 [
     {
-        "id": "e727cb13b7127295",
-        "type": "Axis device",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",[
-    {
-        "id": "bd9f6fdbe7f66c18",
+        "id": "a7c304843d52f197",
         "type": "tab",
         "label": "Device Info",
         "disabled": false,
@@ -13,9 +8,9 @@
         "env": []
     },
     {
-        "id": "db3951492e4297c6",
+        "id": "4a93e5bf484aa792",
         "type": "Axis device",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Device Info",
@@ -27,14 +22,14 @@
         "y": 160,
         "wires": [
             [
-                "332790fe926eec5c"
+                "71db74e45a37804d"
             ]
         ]
     },
     {
-        "id": "332790fe926eec5c",
+        "id": "71db74e45a37804d",
         "type": "change",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "rules": [
             {
@@ -54,14 +49,14 @@
         "y": 160,
         "wires": [
             [
-                "689623e05a50d528"
+                "3dc4f62e779bfaf9"
             ]
         ]
     },
     {
-        "id": "56533fb4868c109a",
+        "id": "636c4ca12e96dea0",
         "type": "inject",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "props": [
             {
@@ -83,16 +78,16 @@
         "y": 160,
         "wires": [
             [
-                "db3951492e4297c6",
-                "d4dc91a1f2c9a541",
-                "e93d2ad04808dbb9"
+                "4a93e5bf484aa792",
+                "f8d009da87a2f577",
+                "b79e1a4495d79c80"
             ]
         ]
     },
     {
-        "id": "689623e05a50d528",
+        "id": "3dc4f62e779bfaf9",
         "type": "debug",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "debug 204",
         "active": true,
         "tosidebar": true,
@@ -106,9 +101,9 @@
         "wires": []
     },
     {
-        "id": "d4dc91a1f2c9a541",
+        "id": "f8d009da87a2f577",
         "type": "Axis camera",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Camera Info",
@@ -121,16 +116,16 @@
         "y": 220,
         "wires": [
             [
-                "2bfbd621660c0f8f"
+                "5ffa99d6cf77bcf2"
             ]
         ]
     },
     {
-        "id": "c5f621e1eb34baf9",
+        "id": "d7d4c708a3cc57a7",
         "type": "debug",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "debug 205",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -142,9 +137,9 @@
         "wires": []
     },
     {
-        "id": "2bfbd621660c0f8f",
+        "id": "5ffa99d6cf77bcf2",
         "type": "change",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "rules": [
             {
@@ -164,14 +159,14 @@
         "y": 220,
         "wires": [
             [
-                "c5f621e1eb34baf9"
+                "d7d4c708a3cc57a7"
             ]
         ]
     },
     {
-        "id": "e93d2ad04808dbb9",
+        "id": "b79e1a4495d79c80",
         "type": "change",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "",
         "rules": [
             {
@@ -194,207 +189,13 @@
         ]
     },
     {
-        "id": "6fb403faf7321f19",
+        "id": "5f5f476ed805ccf3",
         "type": "comment",
-        "z": "bd9f6fdbe7f66c18",
+        "z": "a7c304843d52f197",
         "name": "Set your device credentials and inject.  Stores dave information in global.context used by other flows",
         "info": "",
         "x": 440,
         "y": 100,
-        "wires": []
-    },
-    {
-        "id": "a5d60ef5587cc8fc",
-        "type": "Device Access",
-        "name": "Localhost",
-        "address": "localhost",
-        "protocol": "http"
-    }
-]
-        "preset": "a5d60ef5587cc8fc",
-        "action": "Device Info",
-        "cgi": "",
-        "data": "",
-        "options": "",
-        "filename": "",
-        "x": 370,
-        "y": 140,
-        "wires": [
-            [
-                "917f68e036f39a1b"
-            ]
-        ]
-    },
-    {
-        "id": "917f68e036f39a1b",
-        "type": "change",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "device",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 140,
-        "wires": [
-            [
-                "a21be0d7857d18ea"
-            ]
-        ]
-    },
-    {
-        "id": "c12d0df60d8e6d4a",
-        "type": "inject",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 140,
-        "wires": [
-            [
-                "e727cb13b7127295",
-                "47a86eeccc81a73f",
-                "62ab7bc486fae478"
-            ]
-        ]
-    },
-    {
-        "id": "a21be0d7857d18ea",
-        "type": "debug",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "debug 187",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 830,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "47a86eeccc81a73f",
-        "type": "Axis camera",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",
-        "preset": "a5d60ef5587cc8fc",
-        "action": "Camera Info",
-        "resolution": "640x360",
-        "output": "Base64",
-        "filename": "",
-        "options": "",
-        "data": "",
-        "x": 370,
-        "y": 200,
-        "wires": [
-            [
-                "024db0c299fcf8cb"
-            ]
-        ]
-    },
-    {
-        "id": "f0737759e98080cf",
-        "type": "debug",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "debug 193",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 830,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "024db0c299fcf8cb",
-        "type": "change",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "camera",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 200,
-        "wires": [
-            [
-                "f0737759e98080cf"
-            ]
-        ]
-    },
-    {
-        "id": "62ab7bc486fae478",
-        "type": "change",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "name",
-                "pt": "global",
-                "to": "Democam",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "99dc1eb36a842636",
-        "type": "comment",
-        "z": "c2b58eaa1ca9aca2",
-        "name": "Set your device credentials and inject.  Stores dave information in global.context used by other flows",
-        "info": "",
-        "x": 410,
-        "y": 80,
         "wires": []
     },
     {
