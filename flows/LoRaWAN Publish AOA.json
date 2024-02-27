@@ -1,0 +1,3052 @@
+[
+    {
+        "id": "cd759b87e964dbf0",
+        "type": "tab",
+        "label": "LoraWAN Publish",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0ab51cb8743f804",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Counter data input",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "0314ab107f1c67d0",
+            "97020498c0fea8f9",
+            "fa6559293f994835",
+            "b3a674020bdbb84b",
+            "95b44f1cc98edc33"
+        ],
+        "x": 334,
+        "y": 419,
+        "w": 922,
+        "h": 202
+    },
+    {
+        "id": "0827adc65ce63fdf",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Automatic Camera Configuration",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffefbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "090ea3334cc0bc93",
+            "ad8ab4cebd5b4789",
+            "329284ae83a3ae6c",
+            "ce7e2d6de3483ee2",
+            "904f2fee03504e76",
+            "3ed743faf11ec5a5",
+            "ac43dce5df7607a8",
+            "17f7071ccc401bf8",
+            "e64433fd5f7e10e9",
+            "e8d7df9f151ec4ef",
+            "0cef406afafcdd1f",
+            "45a2a3f3e6f80728",
+            "745e161f9760ff3b",
+            "4d24fbcdd37e5838",
+            "529e49df5610b9a3",
+            "eab2700ba5973342",
+            "9256166a1403b220",
+            "0ca291c9eae20bec",
+            "fd452030307fd6c6",
+            "edea42a8b687edf7",
+            "795d5aa679350af2",
+            "5929c615cd559d83",
+            "482d575c313c657d",
+            "f7bb92b98d83c374",
+            "23c34ee91bc38251",
+            "9792a035a7583992",
+            "5be5f8fb8bf0cd7d",
+            "d7baf06ae79019e5",
+            "6ca205f337b37d51",
+            "a9d681f32e15df5a",
+            "574820360d08a3d4",
+            "e19d5afeecfa6f4b",
+            "810da27502d9e4c8",
+            "87459e2d81f10d73"
+        ],
+        "x": 334,
+        "y": 959,
+        "w": 812,
+        "h": 802
+    },
+    {
+        "id": "0d8463754f6ce919",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Discover Camera address and set camera credentials",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.28",
+            "color": "#000000"
+        },
+        "nodes": [
+            "1d1ced7117d532af",
+            "fbb27cf20c31ef84",
+            "c8f3ae40eee24380",
+            "ab355f5f12b0e2a5",
+            "1540cefd825d5c66",
+            "ea9a86b29f4ad680",
+            "0867bc3230ef41ab",
+            "38cd9065ef3331d4",
+            "017736ab156bb0b1"
+        ],
+        "x": 334,
+        "y": 679,
+        "w": 1252,
+        "h": 202
+    },
+    {
+        "id": "75e45f831078de62",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Lora Publish",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "8dd88a7bbb821b0e",
+            "a9427ef0b706bc62",
+            "cf5ff22b16121693",
+            "f6d1b831bce3df45",
+            "c95ee970824aa693"
+        ],
+        "x": 334,
+        "y": 219,
+        "w": 712,
+        "h": 142
+    },
+    {
+        "id": "2f857c3b428fe918",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Reset counters",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "fill-opacity": "0.52",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4905fbd66cb82d31",
+            "3251634fc43188dc",
+            "4198b9958f7ed4e0",
+            "748abe5aa817a1fd",
+            "7ec76ec456cccf8b",
+            "f8e9fd29f8a5e57e",
+            "9dba775de47ea63c",
+            "4de571506eca4d21"
+        ],
+        "x": 354,
+        "y": 1819,
+        "w": 772,
+        "h": 262
+    },
+    {
+        "id": "55c6caf8c0f0fb65",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Parse Incoming data",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffefbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "94f2f5be5066383d",
+            "38684141e716c33c",
+            "8767f9fff32e4c08",
+            "7523b0292e8325d8",
+            "cd95a95d28aa29cc",
+            "612bef4b7e37288b",
+            "cbe8e15c405b3de1",
+            "f4bfee6ea920d997",
+            "25555f716cba9a2c",
+            "f5440136903ac748",
+            "769835a37915d9f4",
+            "2c3706baafe9360e",
+            "806d5474038e3451",
+            "72c69f2e48418109",
+            "60af604b86dd1f2e"
+        ],
+        "x": 334,
+        "y": 2139,
+        "w": 1512,
+        "h": 242
+    },
+    {
+        "id": "df39e695f3d17a86",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Process Downlink",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#dbcbe7",
+            "fill-opacity": "0.63",
+            "color": "#000000"
+        },
+        "nodes": [
+            "02c60f789785f9d6",
+            "149636474fc36563",
+            "e8b5bb30e5c184ab",
+            "c3dccba66defe431",
+            "5accf3d7c8b8810f",
+            "265e36fa1647ea5a",
+            "98fadf7395134fe4",
+            "318fc351dffb873d",
+            "b31cb07113bf260d",
+            "669a20930eec62cc",
+            "3c2f5074858afc6a",
+            "de71fa91eb04dbf9",
+            "fbb00487eff2f7d0",
+            "6b65724a966aa33b",
+            "dea85f2ce2a4ab5a",
+            "ffa2b08d9266ef25",
+            "2e3c899b74c405b2",
+            "0fde661fe11e3072",
+            "e8daf1ca963cbaf2",
+            "8b32bc186f01fb8f"
+        ],
+        "x": 334,
+        "y": 2479,
+        "w": 1352,
+        "h": 522
+    },
+    {
+        "id": "08b57baa1d9be285",
+        "type": "group",
+        "z": "cd759b87e964dbf0",
+        "name": "Timer",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffff",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "acba4521a34cc1c2"
+        ],
+        "x": 334,
+        "y": 79,
+        "w": 272,
+        "h": 82
+    },
+    {
+        "id": "1540cefd825d5c66",
+        "type": "junction",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "x": 1360,
+        "y": 840,
+        "wires": [
+            [
+                "ebcd6da33fcb853a"
+            ]
+        ]
+    },
+    {
+        "id": "0314ab107f1c67d0",
+        "type": "mqtt in",
+        "z": "cd759b87e964dbf0",
+        "g": "b0ab51cb8743f804",
+        "name": "",
+        "topic": "events/CameraApplicationPlatform/ObjectAnalytics/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "fe5a39a9546f9a7e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 560,
+        "y": 520,
+        "wires": [
+            [
+                "97020498c0fea8f9"
+            ]
+        ]
+    },
+    {
+        "id": "97020498c0fea8f9",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "b0ab51cb8743f804",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message.data",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 520,
+        "wires": [
+            [
+                "fa6559293f994835"
+            ]
+        ]
+    },
+    {
+        "id": "fa6559293f994835",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "b0ab51cb8743f804",
+        "name": "Update flow.counterX",
+        "func": "if (msg.payload.scenario === \"Counter 1\") {\n    flow.set(\"counter1\",{\n        car: parseInt(msg.payload.totalCar),\n        truck: parseInt(msg.payload.totalTruck),\n        bus: parseInt(msg.payload.totalBus),\n        bike: parseInt(msg.payload.totalBike),\n        human: parseInt(msg.payload.totalHuman)\n    });\n    msg.topic = \"counter1\";\n    msg.payload = flow.get(\"counter1\");\n    return msg;\n}\n\nif (msg.payload.scenario === \"Counter 2\") {\n    flow.set(\"counter2\", {\n        car: parseInt(msg.payload.totalCar),\n        truck: parseInt(msg.payload.totalTruck),\n        bus: parseInt(msg.payload.totalBus),\n        bike: parseInt(msg.payload.totalBike),\n        human: parseInt(msg.payload.totalHuman)\n    });\n    msg.topic = \"counter2\";\n    msg.payload = flow.get(\"counter2\");\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 580,
+        "wires": [
+            [
+                "95b44f1cc98edc33"
+            ]
+        ]
+    },
+    {
+        "id": "95b44f1cc98edc33",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "b0ab51cb8743f804",
+        "name": "Counter data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b3a674020bdbb84b",
+        "type": "aedes broker",
+        "z": "cd759b87e964dbf0",
+        "g": "b0ab51cb8743f804",
+        "name": "Local Node-RED Broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "persistence_bind": "memory",
+        "dburl": "",
+        "usetls": false,
+        "x": 470,
+        "y": 460,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "25a6361d82091022",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "Every second",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "acba4521a34cc1c2"
+            ]
+        ]
+    },
+    {
+        "id": "8dd88a7bbb821b0e",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "75e45f831078de62",
+        "name": "Port: 1 Counter payload",
+        "func": "//Lora payload is a 20 byte buffer (Little Endian)\nmsg.port = 1;\n\nvar counter1 = flow.get(\"counter1\") || { \"car\": 0, \"truck\": 0, \"bus\": 0, \"bike\": 0, \"human\": 0 };\nvar counter2 = flow.get(\"counter2\") || { \"car\": 0, \"truck\": 0, \"bus\": 0, \"bike\": 0, \"human\": 0 };\n\nconst buf = Buffer.allocUnsafe(20);\n\n//Counter1\nbuf.writeUInt16LE(counter1.car & 0xFFFF, 0);\nbuf.writeUInt16LE(counter1.truck & 0xFFFF, 2);\nbuf.writeUInt16LE(counter1.bus & 0xFFFF, 4);\nbuf.writeUInt16LE(counter1.bike & 0xFFFF, 6);\nbuf.writeUInt16LE(counter1.human & 0xFFFF, 8);\n\n//Counter2\nbuf.writeUInt16LE(counter2.car & 0xFFFF, 10);\nbuf.writeUInt16LE(counter2.truck & 0xFFFF, 12);\nbuf.writeUInt16LE(counter2.bus & 0xFFFF, 14);\nbuf.writeUInt16LE(counter2.bike & 0xFFFF, 16);\nbuf.writeUInt16LE(counter2.human & 0xFFFF, 18);\n\nmsg.payload = buf;\nmsg.input = buf;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "a9427ef0b706bc62"
+            ]
+        ]
+    },
+    {
+        "id": "a9427ef0b706bc62",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "75e45f831078de62",
+        "name": "Convert to HCI",
+        "func": "const CRC16_Table =\n[\n0x0000, 0x1189, 0x2312, 0x329B, 0x4624, 0x57AD, 0x6536, 0x74BF,\n0x8C48, 0x9DC1, 0xAF5A, 0xBED3, 0xCA6C, 0xDBE5, 0xE97E, 0xF8F7,\n0x1081, 0x0108, 0x3393, 0x221A, 0x56A5, 0x472C, 0x75B7, 0x643E,\n0x9CC9, 0x8D40, 0xBFDB, 0xAE52, 0xDAED, 0xCB64, 0xF9FF, 0xE876,\n0x2102, 0x308B, 0x0210, 0x1399, 0x6726, 0x76AF, 0x4434, 0x55BD,\n0xAD4A, 0xBCC3, 0x8E58, 0x9FD1, 0xEB6E, 0xFAE7, 0xC87C, 0xD9F5,\n0x3183, 0x200A, 0x1291, 0x0318, 0x77A7, 0x662E, 0x54B5, 0x453C,\n0xBDCB, 0xAC42, 0x9ED9, 0x8F50, 0xFBEF, 0xEA66, 0xD8FD, 0xC974,\n0x4204, 0x538D, 0x6116, 0x709F, 0x0420, 0x15A9, 0x2732, 0x36BB,\n0xCE4C, 0xDFC5, 0xED5E, 0xFCD7, 0x8868, 0x99E1, 0xAB7A, 0xBAF3,\n0x5285, 0x430C, 0x7197, 0x601E, 0x14A1, 0x0528, 0x37B3, 0x263A,\n0xDECD, 0xCF44, 0xFDDF, 0xEC56, 0x98E9, 0x8960, 0xBBFB, 0xAA72,\n0x6306, 0x728F, 0x4014, 0x519D, 0x2522, 0x34AB, 0x0630, 0x17B9,\n0xEF4E, 0xFEC7, 0xCC5C, 0xDDD5, 0xA96A, 0xB8E3, 0x8A78, 0x9BF1,\n0x7387, 0x620E, 0x5095, 0x411C, 0x35A3, 0x242A, 0x16B1, 0x0738,\n0xFFCF, 0xEE46, 0xDCDD, 0xCD54, 0xB9EB, 0xA862, 0x9AF9, 0x8B70,\n0x8408, 0x9581, 0xA71A, 0xB693, 0xC22C, 0xD3A5, 0xE13E, 0xF0B7,\n0x0840, 0x19C9, 0x2B52, 0x3ADB, 0x4E64, 0x5FED, 0x6D76, 0x7CFF,\n0x9489, 0x8500, 0xB79B, 0xA612, 0xD2AD, 0xC324, 0xF1BF, 0xE036,\n0x18C1, 0x0948, 0x3BD3, 0x2A5A, 0x5EE5, 0x4F6C, 0x7DF7, 0x6C7E,\n0xA50A, 0xB483, 0x8618, 0x9791, 0xE32E, 0xF2A7, 0xC03C, 0xD1B5,\n0x2942, 0x38CB, 0x0A50, 0x1BD9, 0x6F66, 0x7EEF, 0x4C74, 0x5DFD,\n0xB58B, 0xA402, 0x9699, 0x8710, 0xF3AF, 0xE226, 0xD0BD, 0xC134,\n0x39C3, 0x284A, 0x1AD1, 0x0B58, 0x7FE7, 0x6E6E, 0x5CF5, 0x4D7C,\n0xC60C, 0xD785, 0xE51E, 0xF497, 0x8028, 0x91A1, 0xA33A, 0xB2B3,\n0x4A44, 0x5BCD, 0x6956, 0x78DF, 0x0C60, 0x1DE9, 0x2F72, 0x3EFB,\n0xD68D, 0xC704, 0xF59F, 0xE416, 0x90A9, 0x8120, 0xB3BB, 0xA232,\n0x5AC5, 0x4B4C, 0x79D7, 0x685E, 0x1CE1, 0x0D68, 0x3FF3, 0x2E7A,\n0xE70E, 0xF687, 0xC41C, 0xD595, 0xA12A, 0xB0A3, 0x8238, 0x93B1,\n0x6B46, 0x7ACF, 0x4854, 0x59DD, 0x2D62, 0x3CEB, 0x0E70, 0x1FF9,\n0xF78F, 0xE606, 0xD49D, 0xC514, 0xB1AB, 0xA022, 0x92B9, 0x8330,\n0x7BC7, 0x6A4E, 0x58D5, 0x495C, 0x3DE3, 0x2C6A, 0x1EF1, 0x0F78\n];\n\n\nconst CRC16_INIT_VALUE = 0xFFFF;\nconst CRC16_POLYNOM = 0x8408 ;        // 16-BIT CRC CCITT POLYNOM\nconst WIMOD_HCI_MSG_PAYLOAD_SIZE = 255;\nconst WIMOD_HCI_MSG_HEADER_SIZE = 2;\nconst WIMOD_HCI_MSG_FCS_SIZE = 2;\nconst LORAWAN_SAP_ID = 0x10;\nconst LORAWAN_MSG_SEND_UDATA_REQ = 0x0D;\nconst SLIP_END = 0xC0;\nconst SLIP_ESC = 0xDB;\nconst SLIP_ESC_END = 0xDC;\nconst SLIP_ESC_ESC = 0xDD;\n\nfunction CRC16_Calc(data,bytes,initVal) {\n  // init crc\n  let crc = initVal;\n  // iterate over all bytes\n  let i = 0;\n  while (bytes--) {\n    // calc new crc\n    crc = (crc >>> 8) ^ CRC16_Table[(crc ^ data[i++]) & 0x00FF];\n  }\n  // return result\n  return crc;\n}\n\nlet newmsg = {};\nlet TxMessage = {Payload : []};\nlet TxIndex = 0;\nlet TxBuffer = [];\nif (msg.input == null) return newmsg;\n\nlet port = msg.port || 0x21;\nif (msg.input.length > (WIMOD_HCI_MSG_PAYLOAD_SIZE - 1)) {\n  node.error(\"Buffer too big\");\n  return;\n}\n\nTxMessage.SapID = LORAWAN_SAP_ID;\nTxMessage.MsgID = LORAWAN_MSG_SEND_UDATA_REQ;\nTxMessage.Length = 4 + msg.input.length;\n// 3. init payload\nTxMessage.Payload = [TxMessage.SapID, TxMessage.MsgID, port, ...Buffer.from(msg.input)];\n\n\n// 2. Calculate CRC16 over header and optional payload\n//\n//crc16 = CRC16_Calc([TxMessage.SapID, TxMessage.MsgID, TxMessage.Length, ...TxMessage.Payload],\nvar crc16 = CRC16_Calc([...TxMessage.Payload],\n//                   TxMessage.Length + WIMOD_HCI_MSG_HEADER_SIZE,\n                   TxMessage.Length - 1,\n                   CRC16_INIT_VALUE);\n// 2.1 get 1's complement !!!\n//\ncrc16 = ~crc16 & 0xFFFF;\nnewmsg.CRC = crc16;\nTxMessage.Length = TxMessage.Length - 1;\n// 2.2 attach CRC16 and correct length, LSB first\n//\nTxMessage.Payload[TxMessage.Length] = crc16 & 0xFF;  //low byte\nTxMessage.Payload[TxMessage.Length + 1] = crc16 >>> 8; //high byte\n// 3. perform SLIP encoding into new buffer and\n// - start transmission with SAP ID\n// - correct length by header size\n//txLength = SLIP_EncodeData(TxBuffer,\n//                           sizeof(TxBuffer),\n//                           &txMessage->SapID,\n//                           txMessage->Length + WIMOD_HCI_MSG_HEADER_SIZE + WIMOD_HCI_MSG_FCS_SIZE);\n\nlet MsgSize = TxMessage.Length + WIMOD_HCI_MSG_HEADER_SIZE\nTxBuffer[TxIndex++] = SLIP_END;\n// iterate over all message bytes\nlet i = 0;\nwhile (i < MsgSize) {\n  //SLIP encode into buffer\n  switch (TxMessage.Payload[i]) {\n  case SLIP_END:\n    TxBuffer[TxIndex++] = SLIP_ESC;\n    TxBuffer[TxIndex++] = SLIP_ESC_END;\n    break;\n  case SLIP_ESC:\n    TxBuffer[TxIndex++] = SLIP_ESC;\n    TxBuffer[TxIndex++] = SLIP_ESC_ESC;\n    break;\n  default:\n    TxBuffer[TxIndex++] = TxMessage.Payload[i];\n    break;\n  }\n  // next byte\n  i++;\n}\n// send end of SLIP message\nTxBuffer[TxIndex++] = SLIP_END;\n\nnewmsg.payload = TxBuffer.toString();\nnewmsg.payload = Buffer.from(TxBuffer);\n//newmsg.packet = TxBuffer;\nreturn newmsg;\n\n                           \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "cf5ff22b16121693",
+                "c95ee970824aa693"
+            ]
+        ]
+    },
+    {
+        "id": "cf5ff22b16121693",
+        "type": "serial out",
+        "z": "cd759b87e964dbf0",
+        "g": "75e45f831078de62",
+        "name": "",
+        "serial": "c3800a3cd5f6c079",
+        "x": 940,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1d1ced7117d532af",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Manual address and credentials settings",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "017736ab156bb0b1"
+            ]
+        ]
+    },
+    {
+        "id": "090ea3334cc0bc93",
+        "type": "NetworkIntf",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "",
+        "x": 430,
+        "y": 1000,
+        "wires": [
+            [
+                "ad8ab4cebd5b4789"
+            ]
+        ]
+    },
+    {
+        "id": "ad8ab4cebd5b4789",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "RasPi Address",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.networkInterfaces.eth0[0].address",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "raspi",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Raspberry address",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1000,
+        "wires": [
+            [
+                "6ca205f337b37d51",
+                "d7baf06ae79019e5"
+            ]
+        ]
+    },
+    {
+        "id": "329284ae83a3ae6c",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "",
+        "preset": "b59b5b20bb164a3d",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 530,
+        "y": 1120,
+        "wires": [
+            [
+                "ce7e2d6de3483ee2"
+            ]
+        ]
+    },
+    {
+        "id": "ce7e2d6de3483ee2",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 1120,
+        "wires": [
+            [
+                "edea42a8b687edf7",
+                "9792a035a7583992"
+            ]
+        ]
+    },
+    {
+        "id": "904f2fee03504e76",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "MQTT Config",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"apiVersion\":\"1.5\",\n    \"method\":\"configureClient\",\n    \"params\":{\n        \"autoReconnect\":true,\n        \"cleanSession\":true,\n        \"clientId\":\"client_ACCC8EC66720\",\n        \"connectTimeout\":60,\n        \"deviceTopicPrefix\":\"axis\",\n        \"id\":\"MqttClientConfig\",\n        \"keepAliveInterval\":60,\n        \"server\":{\n            \"host\":\"{{flow.raspi}}\",\n            \"id\":\"MqttClientServer\",\n            \"port\":1883,\n            \"protocol\":\"tcp\"\n        },\n        \"username\":\"lora\",\n        \"password\":\"axis\",\n        \"keepExistingPassword\":false\n    }\n}",
+        "output": "str",
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            [
+                "ac43dce5df7607a8"
+            ]
+        ]
+    },
+    {
+        "id": "3ed743faf11ec5a5",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Start MQTT",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"apiVersion\":\"1.5\",\n    \"method\":\"activateClient\"\n}",
+        "output": "str",
+        "x": 510,
+        "y": 1300,
+        "wires": [
+            [
+                "17f7071ccc401bf8"
+            ]
+        ]
+    },
+    {
+        "id": "ac43dce5df7607a8",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/axis-cgi/mqtt/client.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/mqtt/client.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 740,
+        "y": 1240,
+        "wires": [
+            [
+                "3ed743faf11ec5a5",
+                "795d5aa679350af2"
+            ]
+        ]
+    },
+    {
+        "id": "17f7071ccc401bf8",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/axis-cgi/mqtt/client.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/mqtt/client.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 740,
+        "y": 1300,
+        "wires": [
+            [
+                "e64433fd5f7e10e9",
+                "a9d681f32e15df5a"
+            ]
+        ]
+    },
+    {
+        "id": "e64433fd5f7e10e9",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Events Setup",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\t\"apiVersion\": \"1.2\",\n\t\"method\": \"configureEventPublication\",\n\t\"params\": {\n\t\t\"appendEventTopic\": true,\n\t\t\"customTopicPrefix\": \"events\",\n\t\t\"eventFilterList\": [],\n\t\t\"includeSerialNumberInPayload\": true,\n\t\t\"includeTopicNamespaces\": false,\n\t\t\"topicPrefix\": \"custom\"\n\t}\n}",
+        "output": "str",
+        "x": 520,
+        "y": 1360,
+        "wires": [
+            [
+                "e8d7df9f151ec4ef"
+            ]
+        ]
+    },
+    {
+        "id": "e8d7df9f151ec4ef",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/axis-cgi/mqtt/event.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/mqtt/event.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 740,
+        "y": 1360,
+        "wires": [
+            [
+                "0cef406afafcdd1f",
+                "574820360d08a3d4"
+            ]
+        ]
+    },
+    {
+        "id": "0cef406afafcdd1f",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Publish Setup",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\t\"apiVersion\": \"1.2\",\n\t\"method\": \"configureEventPublication\",\n\t\"params\": {\n\t\t\"appendEventTopic\": true,\n\t\t\"customTopicPrefix\": \"events\",\n\t\t\"eventFilterList\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t],\n\t\t\"includeSerialNumberInPayload\": false,\n\t\t\"includeTopicNamespaces\": false,\n\t\t\"topicPrefix\": \"custom\"\n\t}\n}\n",
+        "output": "str",
+        "x": 520,
+        "y": 1420,
+        "wires": [
+            [
+                "45a2a3f3e6f80728"
+            ]
+        ]
+    },
+    {
+        "id": "45a2a3f3e6f80728",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/axis-cgi/mqtt/event.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/axis-cgi/mqtt/event.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 740,
+        "y": 1420,
+        "wires": [
+            [
+                "5929c615cd559d83",
+                "e19d5afeecfa6f4b"
+            ]
+        ]
+    },
+    {
+        "id": "745e161f9760ff3b",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Counter 1",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\t\"apiVersion\": \"1.6\",\n\t\"context\": \"AOA_NATIVE_UI\",\n\t\"method\": \"setConfiguration\",\n\t\"params\": {\n\t\t\"devices\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"isActive\": true,\n\t\t\t\t\"rotation\": 0,\n\t\t\t\t\"type\": \"camera\"\n\t\t\t}\n\t\t],\n\t\t\"metadataOverlay\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"resolutions\": [\n\t\t\t\t\t\"{{flow.resolution}}\"\n\t\t\t\t]\n\t\t\t}\n\t\t],\n\t\t\"scenarios\": [\n\t\t\t{\n\t\t\t\t\"accumulatedCounts\": {\n\t\t\t\t\t\"timedResetEnabled\": true\n\t\t\t\t},\n\t\t\t\t\"devices\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id\": 1\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"filters\": [],\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"metadataOverlay\": 1,\n\t\t\t\t\"name\": \"Counter 1\",\n\t\t\t\t\"objectClassifications\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\": \"human\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"subTypes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"motorcycle/bicycle\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"car\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"bus\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"truck\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"unknown\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"type\": \"vehicle\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"passthroughConfiguration\": {\n\t\t\t\t\t\"enabled\": false,\n\t\t\t\t\t\"period\": 1\n\t\t\t\t},\n\t\t\t\t\"triggers\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"countingDirection\": \"leftToRight\",\n\t\t\t\t\t\t\"type\": \"countingLine\",\n\t\t\t\t\t\t\"vertices\": [\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t-0.7\n\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t0.7\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"type\": \"crosslinecounting\"\n\t\t\t}\n\t\t]\n\t}\n}",
+        "output": "str",
+        "x": 500,
+        "y": 1660,
+        "wires": [
+            [
+                "529e49df5610b9a3"
+            ]
+        ]
+    },
+    {
+        "id": "4d24fbcdd37e5838",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Counter 2",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\t\"apiVersion\": \"1.6\",\n\t\"context\": \"AOA_NATIVE_UI\",\n\t\"method\": \"setConfiguration\",\n\t\"params\": {\n\t\t\"devices\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"isActive\": true,\n\t\t\t\t\"rotation\": 0,\n\t\t\t\t\"type\": \"camera\"\n\t\t\t}\n\t\t],\n\t\t\"metadataOverlay\": [\n\t\t\t{\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"resolutions\": [\n\t\t\t\t\t\"{{flow.resolution}}\"\n\t\t\t\t]\n\t\t\t}\n\t\t],\n\t\t\"scenarios\": [\n\t\t\t{\n\t\t\t\t\"accumulatedCounts\": {\n\t\t\t\t\t\"timedResetEnabled\": true\n\t\t\t\t},\n\t\t\t\t\"devices\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id\": 1\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"filters\": [],\n\t\t\t\t\"id\": 1,\n\t\t\t\t\"metadataOverlay\": 1,\n\t\t\t\t\"name\": \"Counter 1\",\n\t\t\t\t\"objectClassifications\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\": \"human\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"subTypes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"motorcycle/bicycle\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"car\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"bus\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"truck\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"unknown\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"type\": \"vehicle\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"passthroughConfiguration\": {\n\t\t\t\t\t\"enabled\": false,\n\t\t\t\t\t\"period\": 1\n\t\t\t\t},\n\t\t\t\t\"triggers\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"countingDirection\": \"leftToRight\",\n\t\t\t\t\t\t\"type\": \"countingLine\",\n\t\t\t\t\t\t\"vertices\": [\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t-0.7\n\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t0.7\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"type\": \"crosslinecounting\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"accumulatedCounts\": {\n\t\t\t\t\t\"timedResetEnabled\": true\n\t\t\t\t},\n\t\t\t\t\"devices\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"id\": 1\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"filters\": [],\n\t\t\t\t\"id\": 2,\n\t\t\t\t\"metadataOverlay\": 1,\n\t\t\t\t\"name\": \"Counter 2\",\n\t\t\t\t\"objectClassifications\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"type\": \"human\"\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"subTypes\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"motorcycle/bicycle\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"car\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"bus\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"truck\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"type\": \"unknown\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t],\n\t\t\t\t\t\t\"type\": \"vehicle\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"passthroughConfiguration\": {\n\t\t\t\t\t\"enabled\": false,\n\t\t\t\t\t\"period\": 1\n\t\t\t\t},\n\t\t\t\t\"triggers\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"countingDirection\": \"rightToLeft\",\n\t\t\t\t\t\t\"type\": \"countingLine\",\n\t\t\t\t\t\t\"vertices\": [\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t-0.7\n\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t[\n\t\t\t\t\t\t\t\t0,\n\t\t\t\t\t\t\t\t0.7\n\t\t\t\t\t\t\t]\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"type\": \"crosslinecounting\"\n\t\t\t}\n\t\t]\n\t}\n}",
+        "output": "str",
+        "x": 500,
+        "y": 1720,
+        "wires": [
+            [
+                "eab2700ba5973342"
+            ]
+        ]
+    },
+    {
+        "id": "529e49df5610b9a3",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/local/objectanalytics/control.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 770,
+        "y": 1660,
+        "wires": [
+            [
+                "4d24fbcdd37e5838",
+                "f7bb92b98d83c374"
+            ]
+        ]
+    },
+    {
+        "id": "eab2700ba5973342",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/local/objectanalytics/control.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 770,
+        "y": 1720,
+        "wires": [
+            [
+                "23c34ee91bc38251"
+            ]
+        ]
+    },
+    {
+        "id": "9256166a1403b220",
+        "type": "template",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "AOA config",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\t\"apiVersion\": \"1.6\",\n\t\"context\": \"AOA_NATIVE_UI\",\n\t\"method\": \"getConfiguration\",\n\t\"params\": {}\n}",
+        "output": "str",
+        "x": 510,
+        "y": 1540,
+        "wires": [
+            [
+                "0ca291c9eae20bec"
+            ]
+        ]
+    },
+    {
+        "id": "0ca291c9eae20bec",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "/local/objectanalytics/control.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 770,
+        "y": 1540,
+        "wires": [
+            [
+                "fd452030307fd6c6"
+            ]
+        ]
+    },
+    {
+        "id": "fd452030307fd6c6",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Check that two scenarios are configured",
+        "property": "payload.data.scenarios.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 600,
+        "y": 1600,
+        "wires": [
+            [
+                "87459e2d81f10d73"
+            ],
+            [
+                "745e161f9760ff3b"
+            ]
+        ]
+    },
+    {
+        "id": "edea42a8b687edf7",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Camera",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "795d5aa679350af2",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "MQTT Result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "5929c615cd559d83",
+        "type": "Axis ACAP",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Start Axis AOA",
+        "preset": "b59b5b20bb164a3d",
+        "action": "Start ACAP",
+        "acap": "objectanalytics",
+        "filename": "",
+        "x": 520,
+        "y": 1480,
+        "wires": [
+            [
+                "9256166a1403b220",
+                "482d575c313c657d"
+            ]
+        ]
+    },
+    {
+        "id": "482d575c313c657d",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "AOA Started",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "f7bb92b98d83c374",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "debug 82",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "23c34ee91bc38251",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "debug 83",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "9792a035a7583992",
+        "type": "Axis camera",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "",
+        "preset": "b59b5b20bb164a3d",
+        "action": "Camera Info",
+        "resolution": "640x360",
+        "output": "Base64",
+        "filename": "",
+        "options": "",
+        "data": "",
+        "x": 530,
+        "y": 1180,
+        "wires": [
+            [
+                "810da27502d9e4c8"
+            ]
+        ]
+    },
+    {
+        "id": "5be5f8fb8bf0cd7d",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Resolution",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d7baf06ae79019e5",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Camera connection",
+        "rules": [
+            {
+                "t": "set",
+                "p": "address",
+                "pt": "msg",
+                "to": "address",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "msg",
+                "to": "user",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "msg",
+                "to": "password",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 1060,
+        "wires": [
+            [
+                "329284ae83a3ae6c"
+            ]
+        ]
+    },
+    {
+        "id": "6ca205f337b37d51",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "RasPi Address",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "a9d681f32e15df5a",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "MQTT Result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "574820360d08a3d4",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "MQTT Result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "e19d5afeecfa6f4b",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "MQTT Result",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "810da27502d9e4c8",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.largest",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "resolution",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 1180,
+        "wires": [
+            [
+                "904f2fee03504e76",
+                "5be5f8fb8bf0cd7d",
+                "a737cceae7647aaa"
+            ]
+        ]
+    },
+    {
+        "id": "87459e2d81f10d73",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0827adc65ce63fdf",
+        "name": "Done",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "fbb27cf20c31ef84",
+        "type": "Axis Discovery",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "",
+        "output": "Every",
+        "x": 600,
+        "y": 720,
+        "wires": [
+            [
+                "0867bc3230ef41ab"
+            ]
+        ]
+    },
+    {
+        "id": "c8f3ae40eee24380",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Camera address",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ab355f5f12b0e2a5",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Stop",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 760,
+        "wires": [
+            [
+                "fbb27cf20c31ef84"
+            ]
+        ]
+    },
+    {
+        "id": "ebcd6da33fcb853a",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "6833561e309c78a5"
+        ],
+        "x": 1705,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "b8dfc4326505d091",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Camera setup",
+        "info": "",
+        "x": 1790,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "6833561e309c78a5",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "link in 2",
+        "links": [
+            "ebcd6da33fcb853a"
+        ],
+        "x": 275,
+        "y": 1000,
+        "wires": [
+            [
+                "090ea3334cc0bc93"
+            ]
+        ]
+    },
+    {
+        "id": "512683f951c4b168",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Camera setup",
+        "info": "",
+        "x": 180,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "418767a68df7a72f",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "On Boot",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 220,
+        "y": 720,
+        "wires": [
+            [
+                "fbb27cf20c31ef84"
+            ]
+        ]
+    },
+    {
+        "id": "e28fd393af541c1d",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Found",
+        "info": "",
+        "x": 210,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "38931b68efd45a17",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "link in 3",
+        "links": [
+            "a737cceae7647aaa"
+        ],
+        "x": 275,
+        "y": 760,
+        "wires": [
+            [
+                "ab355f5f12b0e2a5"
+            ]
+        ]
+    },
+    {
+        "id": "07054982240b0494",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 210,
+        "y": 800,
+        "wires": [
+            [
+                "ab355f5f12b0e2a5"
+            ]
+        ]
+    },
+    {
+        "id": "ea9a86b29f4ad680",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Camera access",
+        "rules": [
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "flow",
+                "to": "lora",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "flow",
+                "to": "axis",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 720,
+        "wires": [
+            [
+                "c8f3ae40eee24380",
+                "1540cefd825d5c66"
+            ]
+        ]
+    },
+    {
+        "id": "3d65d725c28070fd",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "Manual",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 1060,
+        "wires": [
+            [
+                "090ea3334cc0bc93"
+            ]
+        ]
+    },
+    {
+        "id": "0867bc3230ef41ab",
+        "type": "trigger",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "pay",
+        "duration": "1",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 830,
+        "y": 720,
+        "wires": [
+            [
+                "38cd9065ef3331d4"
+            ]
+        ]
+    },
+    {
+        "id": "38cd9065ef3331d4",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Set address",
+        "func": "msg.payload  = msg.payload.linkLocal || msg.payload.address; \nflow.set(\"address\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "ea9a86b29f4ad680"
+            ]
+        ]
+    },
+    {
+        "id": "a737cceae7647aaa",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "Device Found",
+        "mode": "link",
+        "links": [
+            "c0e58cb2d0159f68",
+            "38931b68efd45a17"
+        ],
+        "x": 1225,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "5186a1e6955aa83b",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Device Found",
+        "info": "",
+        "x": 1330,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "017736ab156bb0b1",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "0d8463754f6ce919",
+        "name": "Camera access",
+        "rules": [
+            {
+                "t": "set",
+                "p": "address",
+                "pt": "flow",
+                "to": "front.juhlin.me",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "flow",
+                "to": "lora",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "flow",
+                "to": "axis",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 840,
+        "wires": [
+            [
+                "1540cefd825d5c66"
+            ]
+        ]
+    },
+    {
+        "id": "9f22177bdb9c34da",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "Manual",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 1900,
+        "wires": [
+            [
+                "748abe5aa817a1fd"
+            ]
+        ]
+    },
+    {
+        "id": "4905fbd66cb82d31",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "Reset Scenario 1",
+        "func": "msg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"context\": \"nodered\",\n    \"method\": \"resetAccumulatedCounts\",\n    \"params\": {\n        \"scenario\": 1\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1920,
+        "wires": [
+            [
+                "3251634fc43188dc"
+            ]
+        ]
+    },
+    {
+        "id": "3251634fc43188dc",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "/local/objectanalytics/control.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 730,
+        "y": 1920,
+        "wires": [
+            [
+                "4198b9958f7ed4e0",
+                "7ec76ec456cccf8b"
+            ]
+        ]
+    },
+    {
+        "id": "4198b9958f7ed4e0",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "debug 106",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "748abe5aa817a1fd",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "Camera connection",
+        "rules": [
+            {
+                "t": "set",
+                "p": "address",
+                "pt": "msg",
+                "to": "address",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "msg",
+                "to": "user",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "msg",
+                "to": "password",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 1860,
+        "wires": [
+            [
+                "4905fbd66cb82d31"
+            ]
+        ]
+    },
+    {
+        "id": "7ec76ec456cccf8b",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "Reset Scenario 1",
+        "func": "msg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"context\": \"nodered\",\n    \"method\": \"resetAccumulatedCounts\",\n    \"params\": {\n        \"scenario\": 2\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1980,
+        "wires": [
+            [
+                "f8e9fd29f8a5e57e"
+            ]
+        ]
+    },
+    {
+        "id": "f8e9fd29f8a5e57e",
+        "type": "Axis device",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "/local/objectanalytics/control.cgi",
+        "preset": "b59b5b20bb164a3d",
+        "action": "HTTP Post",
+        "cgi": "/local/objectanalytics/control.cgi",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 730,
+        "y": 1980,
+        "wires": [
+            [
+                "9dba775de47ea63c",
+                "4de571506eca4d21"
+            ]
+        ]
+    },
+    {
+        "id": "9dba775de47ea63c",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "debug 107",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "052b57c5f34915e8",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Counter",
+        "links": [
+            "22bc16de6440875c",
+            "0cdfcb7d7e88984d"
+        ],
+        "x": 285,
+        "y": 260,
+        "wires": [
+            [
+                "8dd88a7bbb821b0e"
+            ]
+        ]
+    },
+    {
+        "id": "e173a5edbd4a44d4",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Counter",
+        "info": "",
+        "x": 180,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4de571506eca4d21",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "2f857c3b428fe918",
+        "name": "reset context",
+        "func": "flow.set(\"counter1\", {\n    \"car\": 0,\n    \"truck\": 0,\n    \"bus\": 0,\n    \"bike\": 0,\n    \"human\": 0\n});\n\nflow.set(\"counter2\", {\n    \"car\": 0,\n    \"truck\": 0,\n    \"bus\": 0,\n    \"bike\": 0,\n    \"human\": 0\n});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 2040,
+        "wires": [
+            [
+                "f8e6088df60ef37c"
+            ]
+        ]
+    },
+    {
+        "id": "f8e6088df60ef37c",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "Counters are reset",
+        "mode": "link",
+        "links": [],
+        "x": 1165,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "f6d1b831bce3df45",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "75e45f831078de62",
+        "name": "Payload process (set msg.port)",
+        "func": "if( typeof msg.payload  == msg.payload )\n    msg.payload = JSON.stringify( msg.payload );\nmsg.input = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "a9427ef0b706bc62"
+            ]
+        ]
+    },
+    {
+        "id": "4a688e4dcfc7b02a",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "link in 5",
+        "links": [
+            "5e1f5b189f96b98e",
+            "dc76c0dadac88293"
+        ],
+        "x": 195,
+        "y": 2520,
+        "wires": [
+            [
+                "149636474fc36563"
+            ]
+        ]
+    },
+    {
+        "id": "94f2f5be5066383d",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "HCI_Process",
+        "func": "let packet = Buffer.from(msg.payload);\nlet newmsg = {};\nnewmsg.payload = packet;\nreturn newmsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 2220,
+        "wires": [
+            [
+                "7523b0292e8325d8",
+                "cd95a95d28aa29cc"
+            ]
+        ]
+    },
+    {
+        "id": "38684141e716c33c",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "SLIP_DecodeData",
+        "func": "const SLIP_END = 0xC0;\nconst SLIP_ESC = 0xDB;\nconst SLIP_ESC_END = 0xDC;\nconst SLIP_ESC_ESC = 0xDD;\n\nlet payload = Buffer.from(msg.payload);\n// iterate over all received bytes\nlet i = 0;\nlet j = 0;\nlet newmsg = {payload : []};\nwhile (i < payload.length) {\n    var c = payload[i++];\n    switch (c) {\n    // if it’s an END character then we’re done with the packet\n    case SLIP_END:\n      // a minor optimization: if there is no\n      // data in the packet, ignore it. This is\n      // meant to avoid bothering IP with all\n      // the empty packets generated by the\n      // duplicate END characters which are in\n      // turn sent to try to detect line noise.\n      if(j) j = 0;\n      break;\n    // if it’s the same code as an ESC character, wait and get another\n    // character and then figure out what to store in the packet based on that.\n    case SLIP_ESC:\n      c = payload[i++];\n      // if \"c\" is not one of these two, then we have a protocol violation.\n      // The best bet seems to be to leave the byte alone and just stuff\n      // it into the packet\n      switch(c) {\n      case SLIP_ESC_END:\n        c = SLIP_END;\n        break;\n      case SLIP_ESC_ESC:\n        c = SLIP_ESC;\n        break;\n      }\n      // here we fall into the default handler and let it store the character for us\n    default:\n      newmsg.payload[j++] = c;\n    }\n}\nreturn newmsg; \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 2220,
+        "wires": [
+            [
+                "94f2f5be5066383d",
+                "72c69f2e48418109"
+            ]
+        ]
+    },
+    {
+        "id": "8767f9fff32e4c08",
+        "type": "serial in",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "",
+        "serial": "c3800a3cd5f6c079",
+        "x": 430,
+        "y": 2220,
+        "wires": [
+            [
+                "38684141e716c33c",
+                "60af604b86dd1f2e"
+            ]
+        ]
+    },
+    {
+        "id": "7523b0292e8325d8",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "HCI Processed",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "cd95a95d28aa29cc",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0x01",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0x03",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0x10",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1030,
+        "y": 2240,
+        "wires": [
+            [
+                "612bef4b7e37288b"
+            ],
+            [
+                "f5440136903ac748"
+            ],
+            [
+                "f4bfee6ea920d997"
+            ],
+            [
+                "2c3706baafe9360e"
+            ]
+        ]
+    },
+    {
+        "id": "612bef4b7e37288b",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "LoRaWAN_Process_DevMgmt_Message",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 2220,
+        "wires": [
+            [
+                "cbe8e15c405b3de1"
+            ]
+        ]
+    },
+    {
+        "id": "cbe8e15c405b3de1",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Device Management",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1640,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "f4bfee6ea920d997",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "LoRaWAN_Process_LoRaWAN_Message",
+        "func": "const LORAWAN_MSG_SEND_UDATA_REQ = 0x0D;\nconst LORAWAN_MSG_SEND_UDATA_RSP = 0x0E;\nconst LORAWAN_MSG_SEND_UDATA_TX_IND = 0x0F;\nconst LORAWAN_MSG_RECV_UDATA_IND = 0x10;\nconst LORAWAN_MSG_RECV_ACK_IND = 0x15;\nconst LORAWAN_MSG_RECV_NO_DATA_IND = 0x16;\n\nconst LORAWAN_STATUS_OK = 0x00;\nconst LORAWAN_STATUS_CHANNEL_BLOCKED = 0x0A;\n\nlet newmsg = {};\nlet MsgID = msg.payload[1];\nswitch(MsgID) {\ncase LORAWAN_MSG_SEND_UDATA_RSP:\n  switch(msg.payload[2]) {\n  case LORAWAN_STATUS_OK :\n    newmsg.payload = \"Transmitted OK\";\n    break;\n  case LORAWAN_STATUS_CHANNEL_BLOCKED :\n    newmsg.payload = \"Channel blocked\";\n    break;\n  default :\n    newmsg.payload = \"Status : \" + msg.payload[2];\n  }\n  break;\n  default :\n    newmsg.payload = msg.payload;\n}\nreturn newmsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 2300,
+        "wires": [
+            [
+                "25555f716cba9a2c",
+                "806d5474038e3451"
+            ]
+        ]
+    },
+    {
+        "id": "25555f716cba9a2c",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Transmission acknowledged",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "f5440136903ac748",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "LoRaWAN_Process_RadioLink_Message",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 2260,
+        "wires": [
+            [
+                "769835a37915d9f4"
+            ]
+        ]
+    },
+    {
+        "id": "769835a37915d9f4",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Radio Link Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1640,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "2c3706baafe9360e",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Undefined Downlink",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "\"Unknown Endpoint ID\"",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "806d5474038e3451",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Code from IMST",
+        "func": "\n/*\n * IMST example code for Indesmatech for handling downlinks\n * 2023-10-25   1.0         MR          initial version\n */\n\n//const IDs\nconst ENDPOINT_ID_POS = 0;\nconst MSG_ID_POS = 1;\nconst STATUS_POS = 2;\nconst LORAWAN_ID = 0x10;\nconst LORAWAN_MSG_RECV_UDATA_IND = 0x10;\nconst LORAWAN_MSG_RECV_CDATA_IND = 0x14;\n\n//const data indication\nconst DATA_INDICATION_MIN_LENGTH = 3;\nconst PORT_POS = 3;\nconst DATA_POS = 4;\nconst RX_CHANNEL_INFO_BIT_MASK = 1 << 0;\n\nfunction identifyEndpoint(payload) {\n    let ret = {};\n    if (payload.length >= (ENDPOINT_ID_POS + 1)) {\n        switch (payload[ENDPOINT_ID_POS]) {\n            case LORAWAN_ID:\n                {\n                    return identifyLoRaWANMessage(payload);\n                    break;\n                }\n        }\n    }\n    return null;  //ret.info = \"no known endpoint id found\";\n}\n\n\nfunction identifyLoRaWANMessage(payload) {\n    let ret = {}\n    if (payload.length >= (MSG_ID_POS + 1)) {\n        switch (payload[MSG_ID_POS]) {\n            case LORAWAN_MSG_RECV_UDATA_IND:\n                {\n                    return analyzeUnreliableDataIndication(payload);\n                }\n            case LORAWAN_MSG_RECV_CDATA_IND:\n                {\n                    return analyzeReliableDataIndication(payload);\n                }\n        }\n    }\n    ret = null; //ret.info = \"no known endpoint id found\";\n    return ret;\n}\n\nfunction analyzeUnreliableDataIndication(payload) {\n    return analyzeDataIndication(payload);\n}\n\nfunction analyzeReliableDataIndication(payload) {\n    return analyzeDataIndication(payload);\n}\n\nfunction analyzeDataIndication(payload) {\n    let ret = {};\n    if (payload.length >= (DATA_POS + 1)) {\n        let status = payload[STATUS_POS];\n        let port = payload[PORT_POS];\n        let length = payload.length;\n        if ((status && RX_CHANNEL_INFO_BIT_MASK) == RX_CHANNEL_INFO_BIT_MASK) {\n            //substract channel info from data length\n            length = -5\n            ret.channelIndex = payload.at(-5);\n            ret.datareateIndex = payload.at(-4);\n            ret.rssiIndex = payload.at(-3);\n            ret.snrIndex = payload.at(-2);\n            ret.rxSlotIndex = payload.at(-1);\n        }\n        let data = payload.slice(DATA_POS, length);\n        ret.port = port;\n        ret.payload = data;\n    }\n    else {\n        node.warn(\"length failure for data indication\");\n        ret = null;\n    }\n    return ret;\n}\n\nmsg.payload = msg.payload.slice(0, -2);  //Remove CRC\nmsg.payload = identifyEndpoint(msg.payload);\nif( !msg.payload )\n    return;\n\nmsg.port = msg.payload.port;\nmsg.topic = \"Port \" + msg.port;\nmsg.payload = msg.payload.payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 2300,
+        "wires": [
+            [
+                "5e1f5b189f96b98e"
+            ]
+        ]
+    },
+    {
+        "id": "72c69f2e48418109",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Slip Decoded",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "60af604b86dd1f2e",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "55c6caf8c0f0fb65",
+        "name": "Incoming",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "5e1f5b189f96b98e",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "4a688e4dcfc7b02a"
+        ],
+        "x": 1905,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "604672fba58dbe07",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Downlink",
+        "info": "",
+        "x": 1990,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "02c60f789785f9d6",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Port 12: Camera",
+        "property": "port",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "12",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 2880,
+        "wires": [
+            [
+                "e8b5bb30e5c184ab",
+                "318fc351dffb873d"
+            ]
+        ]
+    },
+    {
+        "id": "149636474fc36563",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Has payload?",
+        "property": "payload.length",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 2520,
+        "wires": [
+            [
+                "265e36fa1647ea5a",
+                "98fadf7395134fe4",
+                "02c60f789785f9d6"
+            ]
+        ]
+    },
+    {
+        "id": "e8b5bb30e5c184ab",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Action 1: Reset Counter",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 2880,
+        "wires": [
+            [
+                "c3dccba66defe431"
+            ]
+        ]
+    },
+    {
+        "id": "c3dccba66defe431",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Valid Reset?",
+        "property": "payload[1]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 2880,
+        "wires": [
+            [
+                "5accf3d7c8b8810f",
+                "22bc16de6440875c"
+            ]
+        ]
+    },
+    {
+        "id": "270901dc67b984f6",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "Reset Counters",
+        "links": [
+            "22bc16de6440875c",
+            "0568be2cd1622f1d"
+        ],
+        "x": 285,
+        "y": 1860,
+        "wires": [
+            [
+                "748abe5aa817a1fd"
+            ]
+        ]
+    },
+    {
+        "id": "2e6fb2c771021452",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Reset Counters",
+        "info": "",
+        "x": 180,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "5accf3d7c8b8810f",
+        "type": "delay",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "250",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1570,
+        "y": 2920,
+        "wires": [
+            [
+                "0568be2cd1622f1d"
+            ]
+        ]
+    },
+    {
+        "id": "0568be2cd1622f1d",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "270901dc67b984f6"
+        ],
+        "x": 1765,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "22bc16de6440875c",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "052b57c5f34915e8",
+            "270901dc67b984f6"
+        ],
+        "x": 1765,
+        "y": 2880,
+        "wires": []
+    },
+    {
+        "id": "d84e03ada0649fc6",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Counter",
+        "info": "",
+        "x": 1880,
+        "y": 2880,
+        "wires": []
+    },
+    {
+        "id": "64496afff4a8dfce",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Reset Counters",
+        "info": "",
+        "x": 1880,
+        "y": 2920,
+        "wires": []
+    },
+    {
+        "id": "5f03d2dd4ecde265",
+        "type": "link in",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish data",
+        "links": [
+            "738b3844f3e50e40",
+            "5f8c28f734409826",
+            "72ba2724bd651f0b",
+            "735e4bd5835b7876"
+        ],
+        "x": 285,
+        "y": 320,
+        "wires": [
+            [
+                "f6d1b831bce3df45"
+            ]
+        ]
+    },
+    {
+        "id": "d71df2a1ee435e04",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Data",
+        "info": "",
+        "x": 170,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "265e36fa1647ea5a",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Port 10: Lora",
+        "property": "port",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "10",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 2520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98fadf7395134fe4",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Port 11: Server",
+        "property": "port",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "11",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 2580,
+        "wires": [
+            [
+                "2e3c899b74c405b2",
+                "0fde661fe11e3072"
+            ]
+        ]
+    },
+    {
+        "id": "318fc351dffb873d",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Action 2: Request Info",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 920,
+        "y": 2960,
+        "wires": [
+            [
+                "b31cb07113bf260d"
+            ]
+        ]
+    },
+    {
+        "id": "b31cb07113bf260d",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Port 5: Camera Info",
+        "func": "msg.port = 5;\nvar device = flow.get(\"device\");\nif(!device) {\n    msg.payload = \"\"\n    return msg;\n}\nmsg.payload = device.model + ',';\nmsg.payload += device.serial + ',';\nmsg.payload += device.address + ',';\nmsg.payload += device.firmware;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 2960,
+        "wires": [
+            [
+                "669a20930eec62cc"
+            ]
+        ]
+    },
+    {
+        "id": "669a20930eec62cc",
+        "type": "delay",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "4",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1580,
+        "y": 2960,
+        "wires": [
+            [
+                "738b3844f3e50e40"
+            ]
+        ]
+    },
+    {
+        "id": "738b3844f3e50e40",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "5f03d2dd4ecde265"
+        ],
+        "x": 1765,
+        "y": 2960,
+        "wires": []
+    },
+    {
+        "id": "4f844fc47ef94b47",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Data",
+        "info": "",
+        "x": 1870,
+        "y": 2960,
+        "wires": []
+    },
+    {
+        "id": "b28abe298b1d9ec3",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Downlink",
+        "info": "",
+        "x": 120,
+        "y": 2520,
+        "wires": []
+    },
+    {
+        "id": "2e3c899b74c405b2",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Action 2: Request Info",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 2640,
+        "wires": [
+            [
+                "3c2f5074858afc6a"
+            ]
+        ]
+    },
+    {
+        "id": "3c2f5074858afc6a",
+        "type": "OS",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "x": 1070,
+        "y": 2640,
+        "wires": [
+            [
+                "de71fa91eb04dbf9"
+            ]
+        ]
+    },
+    {
+        "id": "fbb00487eff2f7d0",
+        "type": "Uptime",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "x": 1420,
+        "y": 2640,
+        "wires": [
+            [
+                "dea85f2ce2a4ab5a"
+            ]
+        ]
+    },
+    {
+        "id": "6b65724a966aa33b",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Port 6: Host Info",
+        "func": "msg.port = 6;\nvar ethernet = msg.payload.eth0 || null;\nvar address = \"\";\nvar mac = \"\";\nvar interfaces = msg.payload.networkInterfaces || null;\nif (interfaces && interfaces.hasOwnProperty(\"eth0\") && interfaces.eth0.length > 0 ) {\n    address = interfaces.eth0[0].address;\n    mac = interfaces.eth0[0].mac;\n}\n\nvar minutes = flow.get(\"timerSeconds\") || 300;\nminutes /= 60;\n\nmsg.payload = msg.name + \",\" + address + \",\" + mac.toUpperCase() + \",\" + minutes + \",\" + parseInt(msg.uptime);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 2680,
+        "wires": [
+            [
+                "8b32bc186f01fb8f"
+            ]
+        ]
+    },
+    {
+        "id": "de71fa91eb04dbf9",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "msg.name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "msg",
+                "to": "payload.hostname",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 2640,
+        "wires": [
+            [
+                "fbb00487eff2f7d0"
+            ]
+        ]
+    },
+    {
+        "id": "ffa2b08d9266ef25",
+        "type": "NetworkIntf",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "x": 1090,
+        "y": 2680,
+        "wires": [
+            [
+                "6b65724a966aa33b"
+            ]
+        ]
+    },
+    {
+        "id": "dea85f2ce2a4ab5a",
+        "type": "change",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "msg.uptime",
+        "rules": [
+            {
+                "t": "set",
+                "p": "uptime",
+                "pt": "msg",
+                "to": "payload.uptime",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1590,
+        "y": 2640,
+        "wires": [
+            [
+                "ffa2b08d9266ef25"
+            ]
+        ]
+    },
+    {
+        "id": "72ba2724bd651f0b",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "5f03d2dd4ecde265"
+        ],
+        "x": 1765,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "f68d2e76e1d8ba41",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Data",
+        "info": "",
+        "x": 1860,
+        "y": 2680,
+        "wires": []
+    },
+    {
+        "id": "0fde661fe11e3072",
+        "type": "switch",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Action 1: Set frequency",
+        "property": "payload[0]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 2580,
+        "wires": [
+            [
+                "e8daf1ca963cbaf2"
+            ]
+        ]
+    },
+    {
+        "id": "e8daf1ca963cbaf2",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "Set publish frequency timer",
+        "func": "var minutes = msg.payload[1];\nif( minutes <= 0 ) minutes = 5;\nif (minutes > 120) minutes = 120;\n\nmsg.payload = minutes * 60;\nflow.set(\"timerSeconds\", msg.payload );\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 2580,
+        "wires": [
+            [
+                "4810d59b3353efbb"
+            ]
+        ]
+    },
+    {
+        "id": "acba4521a34cc1c2",
+        "type": "function",
+        "z": "cd759b87e964dbf0",
+        "g": "08b57baa1d9be285",
+        "name": "timerSeconds frequency",
+        "func": "var now = new Date().getTime();\nvar lastPublish = flow.get(\"lastPublish\");\nif(!lastPublish)\n    now;\n\nvar timerSeconds = flow.get(\"timerSeconds\") || 300;  //Set 5 minutes as default;\n\nif( now - lastPublish < (timerSeconds * 1000) )\n    return;\n \nflow.set(\"lastPublish\", now);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 120,
+        "wires": [
+            [
+                "0cdfcb7d7e88984d"
+            ]
+        ]
+    },
+    {
+        "id": "0cdfcb7d7e88984d",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "052b57c5f34915e8"
+        ],
+        "x": 685,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4810d59b3353efbb",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "name": "debug 115",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 2580,
+        "wires": []
+    },
+    {
+        "id": "0b8d758d32e11407",
+        "type": "catch",
+        "z": "cd759b87e964dbf0",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 420,
+        "y": 40,
+        "wires": [
+            [
+                "65f4a5980e0c26a7"
+            ]
+        ]
+    },
+    {
+        "id": "5e6db8e1e0addca6",
+        "type": "comment",
+        "z": "cd759b87e964dbf0",
+        "name": "Publish Counter",
+        "info": "",
+        "x": 800,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "65f4a5980e0c26a7",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "name": "debug 116",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8b32bc186f01fb8f",
+        "type": "delay",
+        "z": "cd759b87e964dbf0",
+        "g": "df39e695f3d17a86",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1580,
+        "y": 2680,
+        "wires": [
+            [
+                "72ba2724bd651f0b"
+            ]
+        ]
+    },
+    {
+        "id": "c0db6bb3612f940a",
+        "type": "inject",
+        "z": "cd759b87e964dbf0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "port",
+                "v": "7",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "735e4bd5835b7876"
+            ]
+        ]
+    },
+    {
+        "id": "735e4bd5835b7876",
+        "type": "link out",
+        "z": "cd759b87e964dbf0",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "5f03d2dd4ecde265"
+        ],
+        "x": 1325,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c95ee970824aa693",
+        "type": "debug",
+        "z": "cd759b87e964dbf0",
+        "g": "75e45f831078de62",
+        "name": "debug 117",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fe5a39a9546f9a7e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c3800a3cd5f6c079",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "500",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "b59b5b20bb164a3d",
+        "type": "Device Access",
+        "name": "Camera",
+        "address": "192.168.0.90",
+        "protocol": "http"
+    }
+]
