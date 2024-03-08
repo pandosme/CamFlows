@@ -22,7 +22,8 @@
         "y": 160,
         "wires": [
             [
-                "71db74e45a37804d"
+                "71db74e45a37804d",
+                "5beb0c4424b7a9d8"
             ]
         ]
     },
@@ -45,7 +46,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
+        "x": 610,
         "y": 160,
         "wires": [
             [
@@ -79,8 +80,7 @@
         "wires": [
             [
                 "4a93e5bf484aa792",
-                "f8d009da87a2f577",
-                "b79e1a4495d79c80"
+                "f8d009da87a2f577"
             ]
         ]
     },
@@ -88,15 +88,16 @@
         "id": "3dc4f62e779bfaf9",
         "type": "debug",
         "z": "a7c304843d52f197",
-        "name": "debug 204",
+        "name": "Device",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 830,
         "y": 160,
         "wires": []
     },
@@ -112,8 +113,8 @@
         "filename": "",
         "options": "",
         "data": "",
-        "x": 400,
-        "y": 220,
+        "x": 390,
+        "y": 240,
         "wires": [
             [
                 "5ffa99d6cf77bcf2"
@@ -124,16 +125,17 @@
         "id": "d7d4c708a3cc57a7",
         "type": "debug",
         "z": "a7c304843d52f197",
-        "name": "debug 205",
+        "name": "Camera",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
-        "y": 220,
+        "x": 840,
+        "y": 240,
         "wires": []
     },
     {
@@ -155,37 +157,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 220,
+        "x": 610,
+        "y": 240,
         "wires": [
             [
                 "d7d4c708a3cc57a7"
             ]
-        ]
-    },
-    {
-        "id": "b79e1a4495d79c80",
-        "type": "change",
-        "z": "a7c304843d52f197",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "name",
-                "pt": "global",
-                "to": "Democam",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 410,
-        "y": 280,
-        "wires": [
-            []
         ]
     },
     {
@@ -196,6 +173,50 @@
         "info": "",
         "x": 440,
         "y": 100,
+        "wires": []
+    },
+    {
+        "id": "5beb0c4424b7a9d8",
+        "type": "change",
+        "z": "a7c304843d52f197",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "global",
+                "to": "payload.hostname",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 200,
+        "wires": [
+            [
+                "4ea742e2fa2b2927"
+            ]
+        ]
+    },
+    {
+        "id": "4ea742e2fa2b2927",
+        "type": "debug",
+        "z": "a7c304843d52f197",
+        "name": "Name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 200,
         "wires": []
     },
     {
