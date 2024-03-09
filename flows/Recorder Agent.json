@@ -55,7 +55,9 @@
             "99b1c8bf2f6aa856",
             "05af19596dd7d92d",
             "fea21fd8941cea17",
-            "e709218a2b83062c"
+            "e709218a2b83062c",
+            "0285105333ed4378",
+            "456303b76d962790"
         ],
         "x": 274,
         "y": 119,
@@ -250,6 +252,32 @@
             [
                 "c68c18f906416fb8",
                 "960744bf18228ec4"
+            ]
+        ]
+    },
+    {
+        "id": "0285105333ed4378",
+        "type": "junction",
+        "z": "6ddb378507d315af",
+        "g": "d9f5e1bea21875f1",
+        "x": 1060,
+        "y": 280,
+        "wires": [
+            [
+                "e709218a2b83062c"
+            ]
+        ]
+    },
+    {
+        "id": "456303b76d962790",
+        "type": "junction",
+        "z": "6ddb378507d315af",
+        "g": "d9f5e1bea21875f1",
+        "x": 1060,
+        "y": 320,
+        "wires": [
+            [
+                "e709218a2b83062c"
             ]
         ]
     },
@@ -1601,18 +1629,18 @@
         "z": "6ddb378507d315af",
         "g": "d9f5e1bea21875f1",
         "name": "AOA Detection",
-        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\nif( settings.trigger !== \"aoa\")\n    return;\nif (msg.topic !== \"cameraapplicationplatform/objectanalytics/device1scenarioany\")\n    return; \n\nmsg.tag = \"AOA\";\nmsg.topic = \"AOA\";\nmsg.payload = msg.payload.active;\n\n\n\nreturn msg;\n",
+        "func": "if (msg.topic !== \"cameraapplicationplatform/objectanalytics/device1scenarioany\")\n    return; \n\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nif( settings.trigger !== \"aoa\")\n    return;\n\nmsg.tag = \"AOA\";\nmsg.topic = \"AOA\";\nmsg.payload = msg.payload.active;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 960,
+        "x": 640,
         "y": 280,
         "wires": [
             [
-                "e709218a2b83062c"
+                "0285105333ed4378"
             ]
         ]
     },
@@ -1622,18 +1650,18 @@
         "z": "6ddb378507d315af",
         "g": "d9f5e1bea21875f1",
         "name": "Motion Detection",
-        "func": "var settings = flow.get(\"settings\");\nif(!settings)\n    return;\nif( settings.trigger !== \"vmd\")\n    return;\nif (msg.topic !== \"cameraapplicationplatform/vmd/camera1profileany\")\n    return; \n\nmsg.tag = \"VMD\";\nmsg.topic = \"VMD\";\nmsg.payload = msg.payload.active;\n\nreturn msg;\n",
+        "func": "if (msg.topic !== \"cameraapplicationplatform/vmd/camera1profileany\")\n    return; \n\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nif( settings.trigger !== \"vmd\")\n    return;\n\nmsg.tag = \"VMD\";\nmsg.topic = \"VMD\";\nmsg.payload = msg.payload.active;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
+        "x": 640,
         "y": 320,
         "wires": [
             [
-                "e709218a2b83062c"
+                "456303b76d962790"
             ]
         ]
     },
