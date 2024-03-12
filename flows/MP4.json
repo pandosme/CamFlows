@@ -1,6 +1,6 @@
 [
     {
-        "id": "20516e3186d34f4d",
+        "id": "0050d9ae56377048",
         "type": "tab",
         "label": "MP4",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "c954873debaf9f63",
+        "id": "e557bf789a82c34c",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Monitor changes on SD Card",
         "style": {
             "label": true,
@@ -19,20 +19,20 @@
             "color": "#000000"
         },
         "nodes": [
-            "d03fa93b8bea4541",
-            "930bf11a7701cf6b",
-            "a1b44f535460f7b6",
-            "348e644d6e72b1a9"
+            "fdc9c1108e5965fd",
+            "ce18b9c67275fa52",
+            "068538a9c080413e",
+            "f5241f23ecaa10e5"
         ],
         "x": 234,
-        "y": 1279,
+        "y": 1259,
         "w": 752,
         "h": 82
     },
     {
-        "id": "9327e070aef88d7b",
+        "id": "e342d4ca6dee8fec",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Initialization.  Create recording directory and list",
         "style": {
             "label": true,
@@ -41,27 +41,27 @@
             "color": "#000000"
         },
         "nodes": [
-            "d18be08338c9f05e",
-            "af5b63141f07a0c4",
-            "19002ae5f07f28fe",
-            "0a5cf719c9178283",
-            "e1eefef1b490172e",
-            "e919d8719f4884d3",
-            "40b372419e2dfcad",
-            "81f7c32209fe2419",
-            "e01ec20af9f37bc2",
-            "1aa0aeea8b0d5cc2",
-            "2a7ec0377cda89cf"
+            "de2ee0a1d802f75c",
+            "b5206d44633f2a65",
+            "ed4ed1dae504b9cf",
+            "6aa6474471c207a5",
+            "996975f29da2d0ec",
+            "4c77f6d110b3724b",
+            "5ff2811f2fa742a3",
+            "6cd7fa1ba2cab1da",
+            "53c28cfcd525e316",
+            "e93a6532d793421e",
+            "193d5541b5a48ede"
         ],
         "x": 234,
-        "y": 1039,
+        "y": 1019,
         "w": 1232,
         "h": 182
     },
     {
-        "id": "8b9cf245db5d5d52",
+        "id": "aa062806b52f8a46",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Convert & Output",
         "style": {
             "label": true,
@@ -70,24 +70,24 @@
             "color": "#000000"
         },
         "nodes": [
-            "ae4d90452bb9c010",
-            "e980235465d68ba4",
-            "74895a4fefa25fad",
-            "33d807de59ec0f59",
-            "23d00a273ad354d5",
-            "eb8fbd3bd70a8548",
-            "40b08c8bfd32e924",
-            "e6dafae4b94ec0cf",
-            "a9fb9dca2ba6e8ab",
-            "acbb0a064ef41343",
-            "86b2bb910c199785",
-            "12f3933f40c74b67",
-            "5ff8ed96835350d8",
-            "436cdefe5ee52ef3",
-            "fe804bbddb18dc0f",
-            "4a84baf27088864f",
-            "376ffaeb57d72e65",
-            "60851ecb4adf1a31"
+            "d8ffab0d2a4acefd",
+            "332d681851308e98",
+            "528cb5202c2a4018",
+            "cbc93b2a3e3655cb",
+            "138bc790473a3db5",
+            "81537698c0c353a8",
+            "2c3d65e57e83259a",
+            "a43e7dc78904e242",
+            "e5575a71f4858edd",
+            "8a2937f5b6697bea",
+            "d0bd05f7775410b7",
+            "e4a7ff5032ff8d8e",
+            "85bb456f10f19515",
+            "80d510a628748a10",
+            "5f1dc739038c92e5",
+            "cca71cba6c739e05",
+            "9ea3876eae208d6e",
+            "f4e2c3380cfc971a"
         ],
         "x": 234,
         "y": 99,
@@ -95,9 +95,9 @@
         "h": 382
     },
     {
-        "id": "ec5bead24fd3bd6a",
+        "id": "c28641a5b1106a2d",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Error handling",
         "style": {
             "label": true,
@@ -106,19 +106,19 @@
             "color": "#000000"
         },
         "nodes": [
-            "773af4cb12d59af4",
-            "40644d7853f33ef6",
-            "13882d2645cd38bc"
+            "3bc873d31ade7952",
+            "fddc1f1f93a826d8",
+            "9ae45793d0323c88"
         ],
         "x": 234,
-        "y": 1419,
+        "y": 1399,
         "w": 552,
         "h": 122
     },
     {
-        "id": "b3d43664317ba3c7",
+        "id": "9ea7fe9cba30ca87",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "API Export List",
         "style": {
             "label": true,
@@ -127,29 +127,27 @@
             "color": "#000000"
         },
         "nodes": [
-            "fadaf89e6c7756cd",
-            "3543e2bf87891cdb",
-            "25ab506ae960c47e",
-            "c08635844af852f5",
-            "2e261f5239633489",
-            "382e28a9fa6a27b3",
-            "d824d98f36f4369d",
-            "46ec352279209ceb",
-            "44db09ed5a44b602",
-            "bea2ca45124a7e43",
-            "d0cd0cb2db555129",
-            "95975b22c1d5ea5f",
-            "ccfbc1ae45e86a3d"
+            "71be0ff75a5c8732",
+            "bb1bce8e909cbd33",
+            "18fc14d4493012f1",
+            "24634ebf13450117",
+            "0bb34d4577390760",
+            "93ecd0a99971a6ee",
+            "cb877a5d79167a1b",
+            "9cdd253c01821dbf",
+            "c43057de7d7f9476",
+            "8513b5653a372edb",
+            "2ed07042fa568816"
         ],
         "x": 234,
         "y": 539,
-        "w": 942,
-        "h": 242
+        "w": 872,
+        "h": 202
     },
     {
-        "id": "b984595cb20d0c6e",
+        "id": "28990bcb85af5da3",
         "type": "group",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Retention period",
         "style": {
             "label": true,
@@ -158,25 +156,25 @@
             "color": "#000000"
         },
         "nodes": [
-            "04f205e32b468a53",
-            "20a4d9729e8422a5",
-            "7bf1f5d45e8210b6",
-            "5cd1ecf218273855",
-            "8c6ea004d2a52144",
-            "7124708bbaa532f4",
-            "74f3951ff52f107a",
-            "12649b2baceec7a0"
+            "23d54322b565f3cf",
+            "80582f4142c6b5e5",
+            "86a98827d848a3b8",
+            "a7a6c44e91114a47",
+            "d1c5f81cbd35847d",
+            "4a16a630f1718d66",
+            "96af1d3849a8ae5a",
+            "8ee1a53d84c4e6bf"
         ],
         "x": 234,
-        "y": 831.5,
+        "y": 811.5,
         "w": 1092,
         "h": 149.5
     },
     {
-        "id": "d18be08338c9f05e",
+        "id": "de2ee0a1d802f75c",
         "type": "inject",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "Init",
         "props": [
             {
@@ -195,19 +193,19 @@
         "payload": "",
         "payloadType": "date",
         "x": 330,
-        "y": 1080,
+        "y": 1060,
         "wires": [
             [
-                "af5b63141f07a0c4",
-                "19002ae5f07f28fe"
+                "b5206d44633f2a65",
+                "ed4ed1dae504b9cf"
             ]
         ]
     },
     {
-        "id": "af5b63141f07a0c4",
+        "id": "b5206d44633f2a65",
         "type": "exec",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "command": "mkdir sdcard/mp4",
         "addpay": "",
         "append": "",
@@ -217,20 +215,20 @@
         "oldrc": false,
         "name": "",
         "x": 510,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             [],
             [],
             [
-                "e1eefef1b490172e"
+                "996975f29da2d0ec"
             ]
         ]
     },
     {
-        "id": "ae4d90452bb9c010",
+        "id": "d8ffab0d2a4acefd",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "GStreamer",
         "func": "msg.payload = 'gst-launch-1.0 filesrc location=' + msg.payload.fullpath + ' ! matroskademux ! h264parse ! mp4mux ! filesink location=sdcard/mp4/' + msg.payload.name + '.mp4';\nreturn msg;",
         "outputs": 1,
@@ -243,30 +241,30 @@
         "y": 320,
         "wires": [
             [
-                "23d00a273ad354d5"
+                "138bc790473a3db5"
             ]
         ]
     },
     {
-        "id": "e980235465d68ba4",
+        "id": "332d681851308e98",
         "type": "Events",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "group": "storage",
         "initialization": false,
         "x": 340,
         "y": 140,
         "wires": [
             [
-                "74895a4fefa25fad"
+                "528cb5202c2a4018"
             ]
         ]
     },
     {
-        "id": "74895a4fefa25fad",
+        "id": "528cb5202c2a4018",
         "type": "switch",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Recording Event?",
         "property": "topic",
         "propertyType": "msg",
@@ -284,15 +282,15 @@
         "y": 140,
         "wires": [
             [
-                "33d807de59ec0f59"
+                "cbc93b2a3e3655cb"
             ]
         ]
     },
     {
-        "id": "33d807de59ec0f59",
+        "id": "cbc93b2a3e3655cb",
         "type": "switch",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Recording stopped?",
         "property": "payload.recording",
         "propertyType": "msg",
@@ -310,15 +308,15 @@
         "y": 200,
         "wires": [
             [
-                "a9fb9dca2ba6e8ab"
+                "e5575a71f4858edd"
             ]
         ]
     },
     {
-        "id": "23d00a273ad354d5",
+        "id": "138bc790473a3db5",
         "type": "exec",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "command": "",
         "addpay": "payload",
         "append": "",
@@ -332,18 +330,18 @@
         "wires": [
             [],
             [
-                "5ff8ed96835350d8"
+                "85bb456f10f19515"
             ],
             [
-                "eb8fbd3bd70a8548"
+                "81537698c0c353a8"
             ]
         ]
     },
     {
-        "id": "eb8fbd3bd70a8548",
+        "id": "81537698c0c353a8",
         "type": "switch",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "OK",
         "property": "payload.code",
         "propertyType": "msg",
@@ -361,15 +359,15 @@
         "y": 380,
         "wires": [
             [
-                "40b08c8bfd32e924"
+                "2c3d65e57e83259a"
             ]
         ]
     },
     {
-        "id": "40b08c8bfd32e924",
+        "id": "2c3d65e57e83259a",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Complete",
         "func": "msg.topic = \"mp4\";\nvar recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
         "outputs": 1,
@@ -382,16 +380,16 @@
         "y": 380,
         "wires": [
             [
-                "84244e5d83dcdcc9",
-                "4a84baf27088864f"
+                "c8f625c43c683a59",
+                "cca71cba6c739e05"
             ]
         ]
     },
     {
-        "id": "e6dafae4b94ec0cf",
+        "id": "a43e7dc78904e242",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Get Video Data",
         "func": "var recording = flow.get(\"recording\");\nvar items = recording.fullpath.split('/');\nmsg.filename = items[0] + '/' + items[1] + '/' + items[2] + '/' + items[3] + '/recording.xml';\nreturn msg;",
         "outputs": 1,
@@ -404,15 +402,15 @@
         "y": 260,
         "wires": [
             [
-                "acbb0a064ef41343"
+                "8a2937f5b6697bea"
             ]
         ]
     },
     {
-        "id": "a9fb9dca2ba6e8ab",
+        "id": "e5575a71f4858edd",
         "type": "trigger",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "",
         "op1": "",
         "op2": "",
@@ -430,15 +428,15 @@
         "y": 200,
         "wires": [
             [
-                "e6dafae4b94ec0cf"
+                "a43e7dc78904e242"
             ]
         ]
     },
     {
-        "id": "acbb0a064ef41343",
+        "id": "8a2937f5b6697bea",
         "type": "file in",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -451,15 +449,15 @@
         "y": 260,
         "wires": [
             [
-                "86b2bb910c199785"
+                "d0bd05f7775410b7"
             ]
         ]
     },
     {
-        "id": "86b2bb910c199785",
+        "id": "d0bd05f7775410b7",
         "type": "xml",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "",
         "property": "payload",
         "attr": "",
@@ -468,15 +466,15 @@
         "y": 260,
         "wires": [
             [
-                "12f3933f40c74b67"
+                "e4a7ff5032ff8d8e"
             ]
         ]
     },
     {
-        "id": "12f3933f40c74b67",
+        "id": "e4a7ff5032ff8d8e",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Data",
         "func": "var recording = flow.get(\"recording\");\nrecording.token = msg.payload.Recording.$.RecordingToken;\nrecording.start = new Date(msg.payload.Recording.StartTime[0]).getTime();\nrecording.end = new Date(msg.payload.Recording.StopTime[0]).getTime();\nrecording.duration = (recording.end - recording.start) / 1000;\nrecording.width = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Width[0]);\nrecording.height = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Height[0]);\nrecording.fps = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Framerate[0]);\nrecording.tag = msg.payload.Recording.CustomAttributes[0].TriggerName[0];\nrecording.mp4 = null;\nflow.set(\"recording\",recording);\nmsg.payload = recording;\nreturn msg;",
         "outputs": 1,
@@ -489,31 +487,31 @@
         "y": 260,
         "wires": [
             [
-                "ae4d90452bb9c010"
+                "d8ffab0d2a4acefd"
             ]
         ]
     },
     {
-        "id": "d03fa93b8bea4541",
+        "id": "fdc9c1108e5965fd",
         "type": "watch",
-        "z": "20516e3186d34f4d",
-        "g": "c954873debaf9f63",
+        "z": "0050d9ae56377048",
+        "g": "e557bf789a82c34c",
         "name": "",
         "files": "sdcard",
         "recursive": true,
         "x": 310,
-        "y": 1320,
+        "y": 1300,
         "wires": [
             [
-                "930bf11a7701cf6b"
+                "ce18b9c67275fa52"
             ]
         ]
     },
     {
-        "id": "930bf11a7701cf6b",
+        "id": "ce18b9c67275fa52",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "c954873debaf9f63",
+        "z": "0050d9ae56377048",
+        "g": "e557bf789a82c34c",
         "name": "msg.recording",
         "func": "msg.recording = {\n    fullpath: msg.payload\n}\nvar pathItems = msg.recording.fullpath.split(\"/\");\nmsg.recording.file = pathItems[pathItems.length-1];\nmsg.recording.name = msg.recording.file.split(\".\")[0];\nmsg.recording.ext = msg.recording.file.split(\".\")[1];\n\nmsg.payload = msg.recording;\n return msg;",
         "outputs": 1,
@@ -523,18 +521,18 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 1320,
+        "y": 1300,
         "wires": [
             [
-                "348e644d6e72b1a9"
+                "f5241f23ecaa10e5"
             ]
         ]
     },
     {
-        "id": "a1b44f535460f7b6",
+        "id": "068538a9c080413e",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "c954873debaf9f63",
+        "z": "0050d9ae56377048",
+        "g": "e557bf789a82c34c",
         "name": "",
         "rules": [
             {
@@ -551,16 +549,16 @@
         "to": "",
         "reg": false,
         "x": 870,
-        "y": 1320,
+        "y": 1300,
         "wires": [
             []
         ]
     },
     {
-        "id": "348e644d6e72b1a9",
+        "id": "f5241f23ecaa10e5",
         "type": "switch",
-        "z": "20516e3186d34f4d",
-        "g": "c954873debaf9f63",
+        "z": "0050d9ae56377048",
+        "g": "e557bf789a82c34c",
         "name": "Only MKV",
         "property": "payload.ext",
         "propertyType": "msg",
@@ -575,25 +573,25 @@
         "repair": false,
         "outputs": 1,
         "x": 680,
-        "y": 1320,
+        "y": 1300,
         "wires": [
             [
-                "a1b44f535460f7b6"
+                "068538a9c080413e"
             ]
         ]
     },
     {
-        "id": "5ff8ed96835350d8",
+        "id": "85bb456f10f19515",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Message",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "GStreamer conversion failed",
+                "to": "Conversion failed",
                 "tot": "str"
             }
         ],
@@ -606,56 +604,56 @@
         "y": 320,
         "wires": [
             [
-                "436cdefe5ee52ef3"
+                "80d510a628748a10"
             ]
         ]
     },
     {
-        "id": "b6e6ccd6c41842bb",
+        "id": "654b0e93d15ea254",
         "type": "link in",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "link in 17",
         "links": [
             "9e83f48031d222fe",
-            "436cdefe5ee52ef3"
+            "80d510a628748a10"
         ],
         "x": 185,
-        "y": 1460,
+        "y": 1440,
         "wires": [
             [
-                "773af4cb12d59af4"
+                "3bc873d31ade7952"
             ]
         ]
     },
     {
-        "id": "436cdefe5ee52ef3",
+        "id": "80d510a628748a10",
         "type": "link out",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "link out 16",
         "mode": "link",
         "links": [
-            "b6e6ccd6c41842bb"
+            "654b0e93d15ea254"
         ],
         "x": 895,
         "y": 320,
         "wires": []
     },
     {
-        "id": "af22bb029a01d3c5",
+        "id": "3e8941675dd3384b",
         "type": "comment",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Error",
         "info": "",
         "x": 100,
-        "y": 1460,
+        "y": 1440,
         "wires": []
     },
     {
-        "id": "fe804bbddb18dc0f",
+        "id": "5f1dc739038c92e5",
         "type": "comment",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Error",
         "info": "",
         "x": 970,
@@ -663,10 +661,10 @@
         "wires": []
     },
     {
-        "id": "773af4cb12d59af4",
+        "id": "3bc873d31ade7952",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "ec5bead24fd3bd6a",
+        "z": "0050d9ae56377048",
+        "g": "c28641a5b1106a2d",
         "name": "Message",
         "func": "msg.topic = \"MP4\"\nreturn msg;",
         "outputs": 1,
@@ -676,18 +674,18 @@
         "finalize": "",
         "libs": [],
         "x": 700,
-        "y": 1460,
+        "y": 1440,
         "wires": [
             [
-                "58e9721c1868fcec"
+                "87b30c2989a071dc"
             ]
         ]
     },
     {
-        "id": "fadaf89e6c7756cd",
+        "id": "71be0ff75a5c8732",
         "type": "http in",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "url": "/mp4",
         "method": "get",
@@ -697,15 +695,15 @@
         "y": 580,
         "wires": [
             [
-                "3543e2bf87891cdb"
+                "bb1bce8e909cbd33"
             ]
         ]
     },
     {
-        "id": "3543e2bf87891cdb",
+        "id": "bb1bce8e909cbd33",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "file",
         "func": "msg.filename = 'sdcard/mp4/' + msg.payload.file;\nmsg.name = msg.payload.file;\nreturn msg;",
         "outputs": 1,
@@ -718,15 +716,15 @@
         "y": 580,
         "wires": [
             [
-                "25ab506ae960c47e"
+                "18fc14d4493012f1"
             ]
         ]
     },
     {
-        "id": "25ab506ae960c47e",
+        "id": "18fc14d4493012f1",
         "type": "file in",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -739,15 +737,15 @@
         "y": 580,
         "wires": [
             [
-                "bea2ca45124a7e43"
+                "9cdd253c01821dbf"
             ]
         ]
     },
     {
-        "id": "c08635844af852f5",
+        "id": "24634ebf13450117",
         "type": "http response",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -756,29 +754,28 @@
         "wires": []
     },
     {
-        "id": "2e261f5239633489",
+        "id": "0bb34d4577390760",
         "type": "catch",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "scope": [
-            "25ab506ae960c47e"
+            "18fc14d4493012f1"
         ],
         "uncaught": false,
         "x": 620,
         "y": 640,
         "wires": [
             [
-                "382e28a9fa6a27b3",
-                "46ec352279209ceb"
+                "93ecd0a99971a6ee"
             ]
         ]
     },
     {
-        "id": "382e28a9fa6a27b3",
+        "id": "93ecd0a99971a6ee",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "rules": [
             {
@@ -798,15 +795,15 @@
         "y": 640,
         "wires": [
             [
-                "d824d98f36f4369d"
+                "cb877a5d79167a1b"
             ]
         ]
     },
     {
-        "id": "d824d98f36f4369d",
+        "id": "cb877a5d79167a1b",
         "type": "http response",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "statusCode": "400",
         "headers": {},
@@ -815,22 +812,22 @@
         "wires": []
     },
     {
-        "id": "84244e5d83dcdcc9",
+        "id": "c8f625c43c683a59",
         "type": "link out",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "MP4",
         "mode": "link",
         "links": [
-            "5df528ecf701f78c"
+            "232995a9d0dce135"
         ],
         "x": 1225,
         "y": 380,
         "wires": []
     },
     {
-        "id": "61ecdd8705260b4c",
+        "id": "d8157d21f04b2e34",
         "type": "comment",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "MP4",
         "info": "",
         "x": 1130,
@@ -838,51 +835,11 @@
         "wires": []
     },
     {
-        "id": "46ec352279209ceb",
+        "id": "9cdd253c01821dbf",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
-        "name": "exception/SERIAL",
-        "func": "var name = flow.get(\"camera\").hostname || flow.get(\"camera\").serial;\nmsg.topic = \"exception/\" + name;\nmsg.payload = msg.error.message;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 810,
-        "y": 680,
-        "wires": [
-            [
-                "44db09ed5a44b602"
-            ]
-        ]
-    },
-    {
-        "id": "44db09ed5a44b602",
-        "type": "mqtt out",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
-        "name": "",
-        "topic": "exception/democam",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "d1d53d1e87be4083",
-        "x": 1050,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "bea2ca45124a7e43",
-        "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
-        "name": "function 1",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
+        "name": "Header",
         "func": "msg.headers = {\n    \"Content-type\": \"video/mp4\",\n    \"Content-Length\": msg.payload.length\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -894,15 +851,15 @@
         "y": 580,
         "wires": [
             [
-                "c08635844af852f5"
+                "24634ebf13450117"
             ]
         ]
     },
     {
-        "id": "04f205e32b468a53",
+        "id": "23d54322b565f3cf",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "Retention 5 days",
         "func": "//Change number days if needed\nvar days = 5;\n\nvar recordings = flow.get(\"recordings\");\nvar remove = [];\nvar keep = [];\n\nvar removeOlderThen = new Date().getTime() - (days * 24 * 3600 * 1000);\n\nrecordings.forEach(function(item){\n    if (item.start < removeOlderThen )\n        remove.push(item);\n    else\n        keep.push(item);\n});\n\nflow.set(\"recordings\",keep);\nmsg.payload = remove;\n\nreturn msg;",
         "outputs": 1,
@@ -912,19 +869,19 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
-                "5cd1ecf218273855",
-                "74f3951ff52f107a"
+                "a7a6c44e91114a47",
+                "96af1d3849a8ae5a"
             ]
         ]
     },
     {
-        "id": "20a4d9729e8422a5",
+        "id": "80582f4142c6b5e5",
         "type": "inject",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "Every midnight",
         "props": [
             {
@@ -943,18 +900,18 @@
         "payload": "",
         "payloadType": "date",
         "x": 360,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
-                "04f205e32b468a53"
+                "23d54322b565f3cf"
             ]
         ]
     },
     {
-        "id": "7bf1f5d45e8210b6",
+        "id": "86a98827d848a3b8",
         "type": "exec",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "command": "rm ",
         "addpay": "payload",
         "append": "",
@@ -964,7 +921,7 @@
         "oldrc": false,
         "name": "",
         "x": 1110,
-        "y": 880,
+        "y": 860,
         "wires": [
             [],
             [],
@@ -972,9 +929,9 @@
         ]
     },
     {
-        "id": "e54b7b714537fd84",
+        "id": "aaa068646f0bf1a4",
         "type": "comment",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "Version 2.0",
         "info": "Converts all SD Card recordings to MP4 files.\n\nOnce an SD recording is complete, the flow converts the MKV file to MP4 and stores it on a different directory on the SD Card.\nOther flows can link to the \"MP4\" link node to create actions and integrations when an MP4 file is complete.\nThe payload includes all neccessery information.\n\nThe flow provides HTTP API to export and list recordings.\n\nThe MP4 recordings will be automatically removed (default after 5 days).  The number of days can be changed in the retention section.\n",
         "x": 310,
@@ -982,39 +939,39 @@
         "wires": []
     },
     {
-        "id": "40644d7853f33ef6",
+        "id": "fddc1f1f93a826d8",
         "type": "catch",
-        "z": "20516e3186d34f4d",
-        "g": "ec5bead24fd3bd6a",
+        "z": "0050d9ae56377048",
+        "g": "c28641a5b1106a2d",
         "name": "",
         "scope": null,
         "uncaught": false,
         "x": 320,
-        "y": 1500,
+        "y": 1480,
         "wires": [
             [
-                "13882d2645cd38bc"
+                "9ae45793d0323c88"
             ]
         ]
     },
     {
-        "id": "58e9721c1868fcec",
+        "id": "87b30c2989a071dc",
         "type": "link out",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "exception",
         "mode": "link",
         "links": [
             "3c2ea4cc7b1c8688"
         ],
         "x": 975,
-        "y": 1460,
+        "y": 1440,
         "wires": []
     },
     {
-        "id": "13882d2645cd38bc",
+        "id": "9ae45793d0323c88",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "ec5bead24fd3bd6a",
+        "z": "0050d9ae56377048",
+        "g": "c28641a5b1106a2d",
         "name": "",
         "rules": [
             {
@@ -1031,28 +988,28 @@
         "to": "",
         "reg": false,
         "x": 500,
-        "y": 1500,
+        "y": 1480,
         "wires": [
             [
-                "773af4cb12d59af4"
+                "3bc873d31ade7952"
             ]
         ]
     },
     {
-        "id": "3f6e357279fd4fb9",
+        "id": "acd5936732a9a9a0",
         "type": "comment",
-        "z": "20516e3186d34f4d",
+        "z": "0050d9ae56377048",
         "name": "exception",
         "info": "",
         "x": 880,
-        "y": 1460,
+        "y": 1440,
         "wires": []
     },
     {
-        "id": "19002ae5f07f28fe",
+        "id": "ed4ed1dae504b9cf",
         "type": "Axis device",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Device Info",
@@ -1061,18 +1018,18 @@
         "options": "",
         "filename": "",
         "x": 530,
-        "y": 1080,
+        "y": 1060,
         "wires": [
             [
-                "0a5cf719c9178283"
+                "6aa6474471c207a5"
             ]
         ]
     },
     {
-        "id": "0a5cf719c9178283",
+        "id": "6aa6474471c207a5",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "rules": [
             {
@@ -1089,16 +1046,16 @@
         "to": "",
         "reg": false,
         "x": 900,
-        "y": 1080,
+        "y": 1060,
         "wires": [
             []
         ]
     },
     {
-        "id": "e1eefef1b490172e",
+        "id": "996975f29da2d0ec",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "flow.recordings",
         "rules": [
             {
@@ -1115,18 +1072,18 @@
         "to": "",
         "reg": false,
         "x": 720,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             [
-                "e919d8719f4884d3"
+                "4c77f6d110b3724b"
             ]
         ]
     },
     {
-        "id": "e919d8719f4884d3",
+        "id": "4c77f6d110b3724b",
         "type": "file in",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "filename": "sdcard/mp4/recordings.json",
         "filenameType": "str",
@@ -1136,35 +1093,35 @@
         "encoding": "none",
         "allProps": false,
         "x": 960,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             [
-                "40b372419e2dfcad"
+                "5ff2811f2fa742a3"
             ]
         ]
     },
     {
-        "id": "40b372419e2dfcad",
+        "id": "5ff2811f2fa742a3",
         "type": "json",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
         "x": 1170,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             [
-                "81f7c32209fe2419"
+                "6cd7fa1ba2cab1da"
             ]
         ]
     },
     {
-        "id": "81f7c32209fe2419",
+        "id": "6cd7fa1ba2cab1da",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "flow.recordings",
         "rules": [
             {
@@ -1181,34 +1138,34 @@
         "to": "",
         "reg": false,
         "x": 1360,
-        "y": 1140,
+        "y": 1120,
         "wires": [
             []
         ]
     },
     {
-        "id": "e01ec20af9f37bc2",
+        "id": "53c28cfcd525e316",
         "type": "catch",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "scope": [
-            "e919d8719f4884d3"
+            "4c77f6d110b3724b"
         ],
         "uncaught": false,
         "x": 690,
-        "y": 1180,
+        "y": 1160,
         "wires": [
             [
-                "1aa0aeea8b0d5cc2"
+                "e93a6532d793421e"
             ]
         ]
     },
     {
-        "id": "2a7ec0377cda89cf",
+        "id": "193d5541b5a48ede",
         "type": "file",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "",
         "filename": "sdcard/mp4/recordings.json",
         "filenameType": "str",
@@ -1217,16 +1174,16 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1060,
-        "y": 1180,
+        "y": 1160,
         "wires": [
             []
         ]
     },
     {
-        "id": "1aa0aeea8b0d5cc2",
+        "id": "e93a6532d793421e",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "9327e070aef88d7b",
+        "z": "0050d9ae56377048",
+        "g": "e342d4ca6dee8fec",
         "name": "Reset",
         "rules": [
             {
@@ -1243,18 +1200,18 @@
         "to": "",
         "reg": false,
         "x": 850,
-        "y": 1180,
+        "y": 1160,
         "wires": [
             [
-                "2a7ec0377cda89cf"
+                "193d5541b5a48ede"
             ]
         ]
     },
     {
-        "id": "4a84baf27088864f",
+        "id": "cca71cba6c739e05",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "Update recording list",
         "func": "var recordings = flow.get(\"recordings\");\nif(!recordings)\n    return;\nrecordings.push(msg.payload);\nflow.set(\"recordings\",recordings);\nmsg.payload = recordings;\nreturn msg;",
         "outputs": 1,
@@ -1267,15 +1224,15 @@
         "y": 440,
         "wires": [
             [
-                "376ffaeb57d72e65"
+                "9ea3876eae208d6e"
             ]
         ]
     },
     {
-        "id": "376ffaeb57d72e65",
+        "id": "9ea3876eae208d6e",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "pretty",
         "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
         "outputs": 1,
@@ -1288,15 +1245,15 @@
         "y": 440,
         "wires": [
             [
-                "60851ecb4adf1a31"
+                "f4e2c3380cfc971a"
             ]
         ]
     },
     {
-        "id": "60851ecb4adf1a31",
+        "id": "f4e2c3380cfc971a",
         "type": "file",
-        "z": "20516e3186d34f4d",
-        "g": "8b9cf245db5d5d52",
+        "z": "0050d9ae56377048",
+        "g": "aa062806b52f8a46",
         "name": "",
         "filename": "sdcard/mp4/recordings.json",
         "filenameType": "str",
@@ -1311,10 +1268,10 @@
         ]
     },
     {
-        "id": "5cd1ecf218273855",
+        "id": "a7a6c44e91114a47",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "",
         "rules": [
             {
@@ -1331,18 +1288,18 @@
         "to": "",
         "reg": false,
         "x": 800,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
-                "8c6ea004d2a52144"
+                "d1c5f81cbd35847d"
             ]
         ]
     },
     {
-        "id": "8c6ea004d2a52144",
+        "id": "d1c5f81cbd35847d",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "pretty",
         "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
         "outputs": 1,
@@ -1352,18 +1309,18 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
-                "7124708bbaa532f4"
+                "4a16a630f1718d66"
             ]
         ]
     },
     {
-        "id": "7124708bbaa532f4",
+        "id": "4a16a630f1718d66",
         "type": "file",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "",
         "filename": "sdcard/mp4/recordings.json",
         "filenameType": "str",
@@ -1372,16 +1329,16 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 1180,
-        "y": 940,
+        "y": 920,
         "wires": [
             []
         ]
     },
     {
-        "id": "74f3951ff52f107a",
+        "id": "96af1d3849a8ae5a",
         "type": "split",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "",
         "splt": "\\n",
         "spltType": "str",
@@ -1390,18 +1347,18 @@
         "stream": false,
         "addname": "",
         "x": 770,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
-                "12649b2baceec7a0"
+                "8ee1a53d84c4e6bf"
             ]
         ]
     },
     {
-        "id": "12649b2baceec7a0",
+        "id": "8ee1a53d84c4e6bf",
         "type": "function",
-        "z": "20516e3186d34f4d",
-        "g": "b984595cb20d0c6e",
+        "z": "0050d9ae56377048",
+        "g": "28990bcb85af5da3",
         "name": "remove",
         "func": "msg.payload = \"sdcard/mp4/\" + msg.payload.id + \".mp4\";\nreturn msg;",
         "outputs": 1,
@@ -1411,36 +1368,36 @@
         "finalize": "",
         "libs": [],
         "x": 930,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
-                "7bf1f5d45e8210b6"
+                "86a98827d848a3b8"
             ]
         ]
     },
     {
-        "id": "d0cd0cb2db555129",
+        "id": "c43057de7d7f9476",
         "type": "http in",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "url": "/mp4/list",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
         "x": 330,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
-                "95975b22c1d5ea5f"
+                "8513b5653a372edb"
             ]
         ]
     },
     {
-        "id": "95975b22c1d5ea5f",
+        "id": "8513b5653a372edb",
         "type": "change",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "rules": [
             {
@@ -1456,58 +1413,27 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 740,
+        "x": 540,
+        "y": 700,
         "wires": [
             [
-                "ccfbc1ae45e86a3d"
+                "2ed07042fa568816"
             ]
         ]
     },
     {
-        "id": "ccfbc1ae45e86a3d",
+        "id": "2ed07042fa568816",
         "type": "http response",
-        "z": "20516e3186d34f4d",
-        "g": "b3d43664317ba3c7",
+        "z": "0050d9ae56377048",
+        "g": "9ea7fe9cba30ca87",
         "name": "",
         "statusCode": "",
         "headers": {
             "content-type": "application/json"
         },
         "x": 710,
-        "y": 740,
+        "y": 700,
         "wires": []
-    },
-    {
-        "id": "d1d53d1e87be4083",
-        "type": "mqtt-broker",
-        "name": "MQTT Broker",
-        "broker": "10.13.8.20",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
     },
     {
         "id": "a5d60ef5587cc8fc",
