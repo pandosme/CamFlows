@@ -369,7 +369,7 @@
         "z": "0050d9ae56377048",
         "g": "aa062806b52f8a46",
         "name": "Complete",
-        "func": "msg.topic = \"mp4\";\nvar recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
+        "func": "msg.topic = \"mp4\";\nvar recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/exportrecording.cgi?schemaversion=1&diskid=SD_DISK&exportformat=matroska&recordingid=' + flow.get(\"recordingID\"),\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -503,7 +503,8 @@
         "y": 1300,
         "wires": [
             [
-                "ce18b9c67275fa52"
+                "ce18b9c67275fa52",
+                "2b9d1d025c30b0fd"
             ]
         ]
     },
@@ -513,7 +514,7 @@
         "z": "0050d9ae56377048",
         "g": "e557bf789a82c34c",
         "name": "msg.recording",
-        "func": "msg.recording = {\n    fullpath: msg.payload\n}\nvar pathItems = msg.recording.fullpath.split(\"/\");\nmsg.recording.file = pathItems[pathItems.length-1];\nmsg.recording.name = msg.recording.file.split(\".\")[0];\nmsg.recording.ext = msg.recording.file.split(\".\")[1];\n\nmsg.payload = msg.recording;\n return msg;",
+        "func": "msg.recording = {\n    fullpath: msg.payload\n}\nvar pathItems = msg.recording.fullpath.split(\"/\");\nmsg.recording.file = pathItems[pathItems.length-1];\nmsg.recording.name = msg.recording.file.split(\".\")[0];\nmsg.recording.ext = msg.recording.file.split(\".\")[1];\n\nif( msg.recording.name === \"recording\" && msg.recording.ext === \"xml\")\n    flow.set(\"recordingID\", pathItems[3]);\n\nmsg.payload = msg.recording;\n return msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -551,7 +552,9 @@
         "x": 870,
         "y": 1300,
         "wires": [
-            []
+            [
+                "e8aa092f4e267003"
+            ]
         ]
     },
     {
@@ -1433,6 +1436,38 @@
         },
         "x": 710,
         "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e8aa092f4e267003",
+        "type": "debug",
+        "z": "0050d9ae56377048",
+        "name": "debug 237",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "2b9d1d025c30b0fd",
+        "type": "debug",
+        "z": "0050d9ae56377048",
+        "name": "debug 238",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1360,
         "wires": []
     },
     {
