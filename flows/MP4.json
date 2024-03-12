@@ -1,0 +1,1519 @@
+[
+    {
+        "id": "20516e3186d34f4d",
+        "type": "tab",
+        "label": "MP4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c954873debaf9f63",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "Monitor changes on SD Card",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "d03fa93b8bea4541",
+            "930bf11a7701cf6b",
+            "a1b44f535460f7b6",
+            "348e644d6e72b1a9"
+        ],
+        "x": 234,
+        "y": 1279,
+        "w": 752,
+        "h": 82
+    },
+    {
+        "id": "9327e070aef88d7b",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "Initialization.  Create recording directory and list",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "d18be08338c9f05e",
+            "af5b63141f07a0c4",
+            "19002ae5f07f28fe",
+            "0a5cf719c9178283",
+            "e1eefef1b490172e",
+            "e919d8719f4884d3",
+            "40b372419e2dfcad",
+            "81f7c32209fe2419",
+            "e01ec20af9f37bc2",
+            "1aa0aeea8b0d5cc2",
+            "2a7ec0377cda89cf"
+        ],
+        "x": 234,
+        "y": 1039,
+        "w": 1232,
+        "h": 182
+    },
+    {
+        "id": "8b9cf245db5d5d52",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "Convert & Output",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "ae4d90452bb9c010",
+            "e980235465d68ba4",
+            "74895a4fefa25fad",
+            "33d807de59ec0f59",
+            "23d00a273ad354d5",
+            "eb8fbd3bd70a8548",
+            "40b08c8bfd32e924",
+            "e6dafae4b94ec0cf",
+            "a9fb9dca2ba6e8ab",
+            "acbb0a064ef41343",
+            "86b2bb910c199785",
+            "12f3933f40c74b67",
+            "5ff8ed96835350d8",
+            "436cdefe5ee52ef3",
+            "fe804bbddb18dc0f",
+            "4a84baf27088864f",
+            "376ffaeb57d72e65",
+            "60851ecb4adf1a31"
+        ],
+        "x": 234,
+        "y": 99,
+        "w": 812,
+        "h": 382
+    },
+    {
+        "id": "ec5bead24fd3bd6a",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "Error handling",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "color": "#000000"
+        },
+        "nodes": [
+            "773af4cb12d59af4",
+            "40644d7853f33ef6",
+            "13882d2645cd38bc"
+        ],
+        "x": 234,
+        "y": 1419,
+        "w": 552,
+        "h": 122
+    },
+    {
+        "id": "b3d43664317ba3c7",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "API Export List",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "fadaf89e6c7756cd",
+            "3543e2bf87891cdb",
+            "25ab506ae960c47e",
+            "c08635844af852f5",
+            "2e261f5239633489",
+            "382e28a9fa6a27b3",
+            "d824d98f36f4369d",
+            "46ec352279209ceb",
+            "44db09ed5a44b602",
+            "bea2ca45124a7e43",
+            "d0cd0cb2db555129",
+            "95975b22c1d5ea5f",
+            "ccfbc1ae45e86a3d"
+        ],
+        "x": 234,
+        "y": 539,
+        "w": 942,
+        "h": 242
+    },
+    {
+        "id": "b984595cb20d0c6e",
+        "type": "group",
+        "z": "20516e3186d34f4d",
+        "name": "Retention period",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "04f205e32b468a53",
+            "20a4d9729e8422a5",
+            "7bf1f5d45e8210b6",
+            "5cd1ecf218273855",
+            "8c6ea004d2a52144",
+            "7124708bbaa532f4",
+            "74f3951ff52f107a",
+            "12649b2baceec7a0"
+        ],
+        "x": 234,
+        "y": 831.5,
+        "w": 1092,
+        "h": 149.5
+    },
+    {
+        "id": "d18be08338c9f05e",
+        "type": "inject",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "Init",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 1080,
+        "wires": [
+            [
+                "af5b63141f07a0c4",
+                "19002ae5f07f28fe"
+            ]
+        ]
+    },
+    {
+        "id": "af5b63141f07a0c4",
+        "type": "exec",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "command": "mkdir sdcard/mp4",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 510,
+        "y": 1140,
+        "wires": [
+            [],
+            [],
+            [
+                "e1eefef1b490172e"
+            ]
+        ]
+    },
+    {
+        "id": "ae4d90452bb9c010",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "GStreamer",
+        "func": "msg.payload = 'gst-launch-1.0 filesrc location=' + msg.payload.fullpath + ' ! matroskademux ! h264parse ! mp4mux ! filesink location=sdcard/mp4/' + msg.payload.name + '.mp4';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 320,
+        "wires": [
+            [
+                "23d00a273ad354d5"
+            ]
+        ]
+    },
+    {
+        "id": "e980235465d68ba4",
+        "type": "Events",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "group": "storage",
+        "initialization": false,
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "74895a4fefa25fad"
+            ]
+        ]
+    },
+    {
+        "id": "74895a4fefa25fad",
+        "type": "switch",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Recording Event?",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "storage/recording",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "33d807de59ec0f59"
+            ]
+        ]
+    },
+    {
+        "id": "33d807de59ec0f59",
+        "type": "switch",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Recording stopped?",
+        "property": "payload.recording",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "a9fb9dca2ba6e8ab"
+            ]
+        ]
+    },
+    {
+        "id": "23d00a273ad354d5",
+        "type": "exec",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [],
+            [
+                "5ff8ed96835350d8"
+            ],
+            [
+                "eb8fbd3bd70a8548"
+            ]
+        ]
+    },
+    {
+        "id": "eb8fbd3bd70a8548",
+        "type": "switch",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "OK",
+        "property": "payload.code",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "40b08c8bfd32e924"
+            ]
+        ]
+    },
+    {
+        "id": "40b08c8bfd32e924",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Complete",
+        "func": "msg.topic = \"mp4\";\nvar recording = flow.get(\"recording\");\nvar camera = flow.get(\"camera\");\nrecording.mp4 = recording.name + \".mp4\";\nflow.set(\"recording\",recording);\nmsg.payload = {\n    serial: camera.serial,\n    address: camera.IPv4,\n    model: camera.model,\n    id: recording.name,\n    source: \"SD\",\n    url: \"http://\" + camera.IPv4 + ':1880/mp4?file=' + recording.mp4,\n    mkv: \"http://\" + camera.IPv4 + '/axis-cgi/record/export/properties.cgi?schemaversion=1?diskid=SD_DISK&recordingid=' + recording.name,\n    start: recording.start,\n    end: recording.end,\n    duration: recording.duration,\n    resolution: recording.width + \"x\" + recording.height,\n    fps: recording.fps\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 380,
+        "wires": [
+            [
+                "84244e5d83dcdcc9",
+                "4a84baf27088864f"
+            ]
+        ]
+    },
+    {
+        "id": "e6dafae4b94ec0cf",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Get Video Data",
+        "func": "var recording = flow.get(\"recording\");\nvar items = recording.fullpath.split('/');\nmsg.filename = items[0] + '/' + items[1] + '/' + items[2] + '/' + items[3] + '/recording.xml';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 260,
+        "wires": [
+            [
+                "acbb0a064ef41343"
+            ]
+        ]
+    },
+    {
+        "id": "a9fb9dca2ba6e8ab",
+        "type": "trigger",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "",
+        "op1": "",
+        "op2": "",
+        "op1type": "nul",
+        "op2type": "payl",
+        "duration": "500",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            [
+                "e6dafae4b94ec0cf"
+            ]
+        ]
+    },
+    {
+        "id": "acbb0a064ef41343",
+        "type": "file in",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "86b2bb910c199785"
+            ]
+        ]
+    },
+    {
+        "id": "86b2bb910c199785",
+        "type": "xml",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "12f3933f40c74b67"
+            ]
+        ]
+    },
+    {
+        "id": "12f3933f40c74b67",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Data",
+        "func": "var recording = flow.get(\"recording\");\nrecording.token = msg.payload.Recording.$.RecordingToken;\nrecording.start = new Date(msg.payload.Recording.StartTime[0]).getTime();\nrecording.end = new Date(msg.payload.Recording.StopTime[0]).getTime();\nrecording.duration = (recording.end - recording.start) / 1000;\nrecording.width = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Width[0]);\nrecording.height = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Height[0]);\nrecording.fps = parseInt(msg.payload.Recording.Track[0].VideoAttributes[0].Framerate[0]);\nrecording.tag = msg.payload.Recording.CustomAttributes[0].TriggerName[0];\nrecording.mp4 = null;\nflow.set(\"recording\",recording);\nmsg.payload = recording;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "ae4d90452bb9c010"
+            ]
+        ]
+    },
+    {
+        "id": "d03fa93b8bea4541",
+        "type": "watch",
+        "z": "20516e3186d34f4d",
+        "g": "c954873debaf9f63",
+        "name": "",
+        "files": "sdcard",
+        "recursive": true,
+        "x": 310,
+        "y": 1320,
+        "wires": [
+            [
+                "930bf11a7701cf6b"
+            ]
+        ]
+    },
+    {
+        "id": "930bf11a7701cf6b",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "c954873debaf9f63",
+        "name": "msg.recording",
+        "func": "msg.recording = {\n    fullpath: msg.payload\n}\nvar pathItems = msg.recording.fullpath.split(\"/\");\nmsg.recording.file = pathItems[pathItems.length-1];\nmsg.recording.name = msg.recording.file.split(\".\")[0];\nmsg.recording.ext = msg.recording.file.split(\".\")[1];\n\nmsg.payload = msg.recording;\n return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1320,
+        "wires": [
+            [
+                "348e644d6e72b1a9"
+            ]
+        ]
+    },
+    {
+        "id": "a1b44f535460f7b6",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "c954873debaf9f63",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recording",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "348e644d6e72b1a9",
+        "type": "switch",
+        "z": "20516e3186d34f4d",
+        "g": "c954873debaf9f63",
+        "name": "Only MKV",
+        "property": "payload.ext",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "mkv",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 1320,
+        "wires": [
+            [
+                "a1b44f535460f7b6"
+            ]
+        ]
+    },
+    {
+        "id": "5ff8ed96835350d8",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "GStreamer conversion failed",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "436cdefe5ee52ef3"
+            ]
+        ]
+    },
+    {
+        "id": "b6e6ccd6c41842bb",
+        "type": "link in",
+        "z": "20516e3186d34f4d",
+        "name": "link in 17",
+        "links": [
+            "9e83f48031d222fe",
+            "436cdefe5ee52ef3"
+        ],
+        "x": 185,
+        "y": 1460,
+        "wires": [
+            [
+                "773af4cb12d59af4"
+            ]
+        ]
+    },
+    {
+        "id": "436cdefe5ee52ef3",
+        "type": "link out",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "link out 16",
+        "mode": "link",
+        "links": [
+            "b6e6ccd6c41842bb"
+        ],
+        "x": 895,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "af22bb029a01d3c5",
+        "type": "comment",
+        "z": "20516e3186d34f4d",
+        "name": "Error",
+        "info": "",
+        "x": 100,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "fe804bbddb18dc0f",
+        "type": "comment",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Error",
+        "info": "",
+        "x": 970,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "773af4cb12d59af4",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "ec5bead24fd3bd6a",
+        "name": "Message",
+        "func": "msg.topic = \"MP4\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1460,
+        "wires": [
+            [
+                "58e9721c1868fcec"
+            ]
+        ]
+    },
+    {
+        "id": "fadaf89e6c7756cd",
+        "type": "http in",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "url": "/mp4",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "3543e2bf87891cdb"
+            ]
+        ]
+    },
+    {
+        "id": "3543e2bf87891cdb",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "file",
+        "func": "msg.filename = 'sdcard/mp4/' + msg.payload.file;\nmsg.name = msg.payload.file;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 580,
+        "wires": [
+            [
+                "25ab506ae960c47e"
+            ]
+        ]
+    },
+    {
+        "id": "25ab506ae960c47e",
+        "type": "file in",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 690,
+        "y": 580,
+        "wires": [
+            [
+                "bea2ca45124a7e43"
+            ]
+        ]
+    },
+    {
+        "id": "c08635844af852f5",
+        "type": "http response",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "2e261f5239633489",
+        "type": "catch",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "scope": [
+            "25ab506ae960c47e"
+        ],
+        "uncaught": false,
+        "x": 620,
+        "y": 640,
+        "wires": [
+            [
+                "382e28a9fa6a27b3",
+                "46ec352279209ceb"
+            ]
+        ]
+    },
+    {
+        "id": "382e28a9fa6a27b3",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "No recording found",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 640,
+        "wires": [
+            [
+                "d824d98f36f4369d"
+            ]
+        ]
+    },
+    {
+        "id": "d824d98f36f4369d",
+        "type": "http response",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "statusCode": "400",
+        "headers": {},
+        "x": 1010,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "84244e5d83dcdcc9",
+        "type": "link out",
+        "z": "20516e3186d34f4d",
+        "name": "MP4",
+        "mode": "link",
+        "links": [
+            "5df528ecf701f78c"
+        ],
+        "x": 1225,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "61ecdd8705260b4c",
+        "type": "comment",
+        "z": "20516e3186d34f4d",
+        "name": "MP4",
+        "info": "",
+        "x": 1130,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "46ec352279209ceb",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "exception/SERIAL",
+        "func": "var name = flow.get(\"camera\").hostname || flow.get(\"camera\").serial;\nmsg.topic = \"exception/\" + name;\nmsg.payload = msg.error.message;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 680,
+        "wires": [
+            [
+                "44db09ed5a44b602"
+            ]
+        ]
+    },
+    {
+        "id": "44db09ed5a44b602",
+        "type": "mqtt out",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "topic": "exception/democam",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d1d53d1e87be4083",
+        "x": 1050,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "bea2ca45124a7e43",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "function 1",
+        "func": "msg.headers = {\n    \"Content-type\": \"video/mp4\",\n    \"Content-Length\": msg.payload.length\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 580,
+        "wires": [
+            [
+                "c08635844af852f5"
+            ]
+        ]
+    },
+    {
+        "id": "04f205e32b468a53",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "Retention 5 days",
+        "func": "//Change number days if needed\nvar days = 5;\n\nvar recordings = flow.get(\"recordings\");\nvar remove = [];\nvar keep = [];\n\nvar removeOlderThen = new Date().getTime() - (days * 24 * 3600 * 1000);\n\nrecordings.forEach(function(item){\n    if (item.start < removeOlderThen )\n        remove.push(item);\n    else\n        keep.push(item);\n});\n\nflow.set(\"recordings\",keep);\nmsg.payload = remove;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 880,
+        "wires": [
+            [
+                "5cd1ecf218273855",
+                "74f3951ff52f107a"
+            ]
+        ]
+    },
+    {
+        "id": "20a4d9729e8422a5",
+        "type": "inject",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "Every midnight",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "04f205e32b468a53"
+            ]
+        ]
+    },
+    {
+        "id": "7bf1f5d45e8210b6",
+        "type": "exec",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "command": "rm ",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1110,
+        "y": 880,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e54b7b714537fd84",
+        "type": "comment",
+        "z": "20516e3186d34f4d",
+        "name": "Version 2.0",
+        "info": "Converts all SD Card recordings to MP4 files.\n\nOnce an SD recording is complete, the flow converts the MKV file to MP4 and stores it on a different directory on the SD Card.\nOther flows can link to the \"MP4\" link node to create actions and integrations when an MP4 file is complete.\nThe payload includes all neccessery information.\n\nThe flow provides HTTP API to export and list recordings.\n\nThe MP4 recordings will be automatically removed (default after 5 days).  The number of days can be changed in the retention section.\n",
+        "x": 310,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "40644d7853f33ef6",
+        "type": "catch",
+        "z": "20516e3186d34f4d",
+        "g": "ec5bead24fd3bd6a",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 320,
+        "y": 1500,
+        "wires": [
+            [
+                "13882d2645cd38bc"
+            ]
+        ]
+    },
+    {
+        "id": "58e9721c1868fcec",
+        "type": "link out",
+        "z": "20516e3186d34f4d",
+        "name": "exception",
+        "mode": "link",
+        "links": [
+            "3c2ea4cc7b1c8688"
+        ],
+        "x": 975,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "13882d2645cd38bc",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "ec5bead24fd3bd6a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "error.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1500,
+        "wires": [
+            [
+                "773af4cb12d59af4"
+            ]
+        ]
+    },
+    {
+        "id": "3f6e357279fd4fb9",
+        "type": "comment",
+        "z": "20516e3186d34f4d",
+        "name": "exception",
+        "info": "",
+        "x": 880,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "19002ae5f07f28fe",
+        "type": "Axis device",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 530,
+        "y": 1080,
+        "wires": [
+            [
+                "0a5cf719c9178283"
+            ]
+        ]
+    },
+    {
+        "id": "0a5cf719c9178283",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "camera",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1eefef1b490172e",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "flow.recordings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recordings",
+                "pt": "flow",
+                "to": "[]",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 1140,
+        "wires": [
+            [
+                "e919d8719f4884d3"
+            ]
+        ]
+    },
+    {
+        "id": "e919d8719f4884d3",
+        "type": "file in",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "filename": "sdcard/mp4/recordings.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 960,
+        "y": 1140,
+        "wires": [
+            [
+                "40b372419e2dfcad"
+            ]
+        ]
+    },
+    {
+        "id": "40b372419e2dfcad",
+        "type": "json",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1170,
+        "y": 1140,
+        "wires": [
+            [
+                "81f7c32209fe2419"
+            ]
+        ]
+    },
+    {
+        "id": "81f7c32209fe2419",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "flow.recordings",
+        "rules": [
+            {
+                "t": "set",
+                "p": "recordings",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1360,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e01ec20af9f37bc2",
+        "type": "catch",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "scope": [
+            "e919d8719f4884d3"
+        ],
+        "uncaught": false,
+        "x": 690,
+        "y": 1180,
+        "wires": [
+            [
+                "1aa0aeea8b0d5cc2"
+            ]
+        ]
+    },
+    {
+        "id": "2a7ec0377cda89cf",
+        "type": "file",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "",
+        "filename": "sdcard/mp4/recordings.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1aa0aeea8b0d5cc2",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "9327e070aef88d7b",
+        "name": "Reset",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[]",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1180,
+        "wires": [
+            [
+                "2a7ec0377cda89cf"
+            ]
+        ]
+    },
+    {
+        "id": "4a84baf27088864f",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "Update recording list",
+        "func": "var recordings = flow.get(\"recordings\");\nif(!recordings)\n    return;\nrecordings.push(msg.payload);\nflow.set(\"recordings\",recordings);\nmsg.payload = recordings;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 440,
+        "wires": [
+            [
+                "376ffaeb57d72e65"
+            ]
+        ]
+    },
+    {
+        "id": "376ffaeb57d72e65",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "pretty",
+        "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "60851ecb4adf1a31"
+            ]
+        ]
+    },
+    {
+        "id": "60851ecb4adf1a31",
+        "type": "file",
+        "z": "20516e3186d34f4d",
+        "g": "8b9cf245db5d5d52",
+        "name": "",
+        "filename": "sdcard/mp4/recordings.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 860,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cd1ecf218273855",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "recordings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 940,
+        "wires": [
+            [
+                "8c6ea004d2a52144"
+            ]
+        ]
+    },
+    {
+        "id": "8c6ea004d2a52144",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "pretty",
+        "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 940,
+        "wires": [
+            [
+                "7124708bbaa532f4"
+            ]
+        ]
+    },
+    {
+        "id": "7124708bbaa532f4",
+        "type": "file",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "",
+        "filename": "sdcard/mp4/recordings.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1180,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74f3951ff52f107a",
+        "type": "split",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 770,
+        "y": 880,
+        "wires": [
+            [
+                "12649b2baceec7a0"
+            ]
+        ]
+    },
+    {
+        "id": "12649b2baceec7a0",
+        "type": "function",
+        "z": "20516e3186d34f4d",
+        "g": "b984595cb20d0c6e",
+        "name": "remove",
+        "func": "msg.payload = \"sdcard/mp4/\" + msg.payload.id + \".mp4\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 880,
+        "wires": [
+            [
+                "7bf1f5d45e8210b6"
+            ]
+        ]
+    },
+    {
+        "id": "d0cd0cb2db555129",
+        "type": "http in",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "url": "/mp4/list",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 740,
+        "wires": [
+            [
+                "95975b22c1d5ea5f"
+            ]
+        ]
+    },
+    {
+        "id": "95975b22c1d5ea5f",
+        "type": "change",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "recordings",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 740,
+        "wires": [
+            [
+                "ccfbc1ae45e86a3d"
+            ]
+        ]
+    },
+    {
+        "id": "ccfbc1ae45e86a3d",
+        "type": "http response",
+        "z": "20516e3186d34f4d",
+        "g": "b3d43664317ba3c7",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 710,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "d1d53d1e87be4083",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "10.13.8.20",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
