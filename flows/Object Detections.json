@@ -2,7 +2,7 @@
     {
         "id": "3f9fbf9fc83bc7d6",
         "type": "tab",
-        "label": "Object Detection",
+        "label": "Object Detections",
         "disabled": false,
         "info": "",
         "env": []
@@ -25,11 +25,8 @@
             "b05ba25a2a473fea",
             "ae7eadaa49a34761",
             "d6fe682dc2b9c6e6",
-            "ce0b7bf69c5bb341",
-            "7ba083278b033afd",
             "f43bf9577ea0da76",
             "69bdbe0cfda4303b",
-            "7d5eea7e0ba98650",
             "5828ec6601beb7b6",
             "64b28fd44c923071",
             "0428ab2696b0a4e2",
@@ -39,14 +36,16 @@
             "19af0fdf408294e6",
             "4cdadd28d820d5a3",
             "4b5e463082725f71",
-            "efc4029ded5ad2bd",
             "69a0f7d7ee9f79f4",
             "ba4c5b53b341fbde",
             "70426b6d99f8f877",
-            "c5cf63b0b72fb442"
+            "c5cf63b0b72fb442",
+            "93ada226d1366dcb",
+            "898e617b28fcac46",
+            "e5d7dd53e212efa7"
         ],
         "x": 274,
-        "y": 1159,
+        "y": 979,
         "w": 1012,
         "h": 422
     },
@@ -64,10 +63,6 @@
         "nodes": [
             "2ad717d740ca2244",
             "dea53715435964d0",
-            "aff39c1e058d8524",
-            "f592af23793ef5cc",
-            "8feb3dc413629483",
-            "2dfadf22db39c7a3",
             "ccf4ab6299e103f9",
             "2fd4b1d80e7acec3",
             "6816c4835ad9ae7f"
@@ -75,7 +70,7 @@
         "x": 274,
         "y": 139,
         "w": 952,
-        "h": 302
+        "h": 162
     },
     {
         "id": "766bfdf553109fb9",
@@ -89,19 +84,17 @@
             "color": "#000000"
         },
         "nodes": [
-            "51c993b26356a0a4",
             "3bc1dc58ceca337c",
             "2e24a6a118370c0d",
-            "6bad7908cd983833",
-            "6d9af5747621d99b",
-            "9d978e2b2df72656",
             "274d6ac4a4ac58d0",
-            "c3f20841277e98e2"
+            "c3f20841277e98e2",
+            "f1761832d81305e2",
+            "e2d189ae490bc365"
         ],
         "x": 274,
-        "y": 499,
-        "w": 1102,
-        "h": 302
+        "y": 359,
+        "w": 732,
+        "h": 262
     },
     {
         "id": "8b3e0f497cf37dd6",
@@ -126,9 +119,31 @@
             "9d63bd528379b58c"
         ],
         "x": 274,
-        "y": 859,
+        "y": 679,
         "w": 1052,
         "h": 242
+    },
+    {
+        "id": "8134229cbfc4ff1a",
+        "type": "group",
+        "z": "3f9fbf9fc83bc7d6",
+        "name": "Exceptions",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffbfbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "aff39c1e058d8524",
+            "f592af23793ef5cc",
+            "2dfadf22db39c7a3",
+            "8feb3dc413629483"
+        ],
+        "x": 274,
+        "y": 1459,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "f1834d1e5829e0c6",
@@ -136,7 +151,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "f7dde0e372b88bf8",
         "x": 1260,
-        "y": 1200,
+        "y": 1020,
         "wires": [
             [
                 "03d4d4ea47ae1a22"
@@ -149,7 +164,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "f7dde0e372b88bf8",
         "x": 1020,
-        "y": 1500,
+        "y": 1320,
         "wires": [
             [
                 "9b27de4068a8df1a"
@@ -160,11 +175,10 @@
         "id": "ab30931705df01ba",
         "type": "link out",
         "z": "3f9fbf9fc83bc7d6",
-        "name": "Detections",
+        "name": "detections",
         "mode": "link",
         "links": [
-            "3e6d968759419b65",
-            "916ecc70f32d8e38"
+            "3e6d968759419b65"
         ],
         "x": 1415,
         "y": 180,
@@ -182,10 +196,10 @@
             "89fdf8a12a15475d"
         ],
         "x": 105,
-        "y": 540,
+        "y": 480,
         "wires": [
             [
-                "51c993b26356a0a4"
+                "f1761832d81305e2"
             ]
         ]
     },
@@ -193,8 +207,8 @@
         "id": "79a4159d78d89bab",
         "type": "comment",
         "z": "3f9fbf9fc83bc7d6",
-        "name": "Version 1.2 [README]   ",
-        "info": "NOTE: This flow requires the \"Device Info flow\".\nhttps://github.com/pandosme/CamFlows/blob/master/flows/Device%20Info.json\nImport the flow into your Node-RED and set the cameras credentials.\n",
+        "name": "Version 1.3 [README]   ",
+        "info": "This node provides Object Detection Analytics Data.\nCommon use cases are:\n* Presence transitions\n* Queue management\n\nThe Dashboard nodes provides a way for installers and administrators to filter out unwanted detections.\n\nTo use in a custom service, creat a new tab and link to one or more\n* detections\n* counter\n* state\n* exceptions\n\n\nNOTE: This flow requires the \"Device Info\" flow\" from examples or\nhttps://github.com/pandosme/CamFlows/blob/master/flows/Device%20Info.json\nThis flow stores information about the camera in global context.",
         "x": 380,
         "y": 60,
         "wires": []
@@ -220,33 +234,12 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 940,
+        "x": 180,
+        "y": 760,
         "wires": [
             [
                 "7170f64f2c031b86"
             ]
-        ]
-    },
-    {
-        "id": "69063184c6306f83",
-        "type": "ui_toast",
-        "z": "3f9fbf9fc83bc7d6",
-        "position": "dialog",
-        "displayTime": "3",
-        "highlight": "",
-        "sendall": true,
-        "outputs": 1,
-        "ok": "OK",
-        "cancel": "",
-        "raw": false,
-        "className": "",
-        "topic": "",
-        "name": "",
-        "x": 1350,
-        "y": 400,
-        "wires": [
-            []
         ]
     },
     {
@@ -269,7 +262,7 @@
             "338c26761a633ad5"
         ],
         "x": 1495,
-        "y": 900,
+        "y": 720,
         "wires": []
     },
     {
@@ -282,7 +275,7 @@
             "03d4d4ea47ae1a22"
         ],
         "x": 105,
-        "y": 1060,
+        "y": 880,
         "wires": [
             [
                 "a386f3625a3b3a68"
@@ -296,7 +289,7 @@
         "name": "Init",
         "info": "",
         "x": 1390,
-        "y": 900,
+        "y": 720,
         "wires": []
     },
     {
@@ -309,8 +302,8 @@
             "a2dd5368205501eb",
             "7629d04ef4c084e4"
         ],
-        "x": 1555,
-        "y": 540,
+        "x": 1185,
+        "y": 480,
         "wires": []
     },
     {
@@ -320,7 +313,7 @@
         "name": "Update",
         "info": "",
         "x": 190,
-        "y": 1060,
+        "y": 880,
         "wires": []
     },
     {
@@ -333,7 +326,7 @@
             "de8a5e5e2cb27a9b"
         ],
         "x": 105,
-        "y": 1200,
+        "y": 1020,
         "wires": [
             [
                 "69bdbe0cfda4303b"
@@ -351,7 +344,7 @@
             "7629d04ef4c084e4"
         ],
         "x": 1455,
-        "y": 1200,
+        "y": 1020,
         "wires": []
     },
     {
@@ -361,7 +354,7 @@
         "name": "Init",
         "info": "",
         "x": 190,
-        "y": 1200,
+        "y": 1020,
         "wires": []
     },
     {
@@ -371,7 +364,7 @@
         "name": "Updated",
         "info": "",
         "x": 1360,
-        "y": 1200,
+        "y": 1020,
         "wires": []
     },
     {
@@ -381,7 +374,7 @@
         "name": "Visualize",
         "info": "",
         "x": 200,
-        "y": 540,
+        "y": 480,
         "wires": []
     },
     {
@@ -394,7 +387,7 @@
             "3e6d968759419b65"
         ],
         "x": 1455,
-        "y": 1500,
+        "y": 1320,
         "wires": []
     },
     {
@@ -403,8 +396,8 @@
         "z": "3f9fbf9fc83bc7d6",
         "name": "Updated",
         "info": "",
-        "x": 1460,
-        "y": 540,
+        "x": 1090,
+        "y": 480,
         "wires": []
     },
     {
@@ -414,28 +407,7 @@
         "name": "Visualize",
         "info": "",
         "x": 1360,
-        "y": 1500,
-        "wires": []
-    },
-    {
-        "id": "64082d9b6f78f2a4",
-        "type": "link out",
-        "z": "3f9fbf9fc83bc7d6",
-        "name": "exceptions",
-        "mode": "link",
-        "links": [],
-        "x": 1415,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "0a9588f71dac5f55",
-        "type": "comment",
-        "z": "3f9fbf9fc83bc7d6",
-        "name": "exceptions",
-        "info": "",
-        "x": 1320,
-        "y": 340,
+        "y": 1320,
         "wires": []
     },
     {
@@ -446,8 +418,8 @@
         "links": [
             "6d2d1062de721a60"
         ],
-        "x": 85,
-        "y": 900,
+        "x": 105,
+        "y": 720,
         "wires": [
             [
                 "7170f64f2c031b86"
@@ -464,8 +436,8 @@
             "f857d9d446b150f3",
             "8b80d877c2d860b0"
         ],
-        "x": 1535,
-        "y": 660,
+        "x": 1175,
+        "y": 400,
         "wires": []
     },
     {
@@ -474,8 +446,8 @@
         "z": "3f9fbf9fc83bc7d6",
         "name": "Start",
         "info": "",
-        "x": 1450,
-        "y": 660,
+        "x": 1090,
+        "y": 400,
         "wires": []
     },
     {
@@ -484,18 +456,8 @@
         "z": "3f9fbf9fc83bc7d6",
         "name": "Start",
         "info": "",
-        "x": 170,
-        "y": 900,
-        "wires": []
-    },
-    {
-        "id": "d4305780925fded2",
-        "type": "comment",
-        "z": "3f9fbf9fc83bc7d6",
-        "name": "Common Flows [Import]     ",
-        "info": "NOTE: This flow requires the \"Common Flows\".\nImport the following flow into your Node-RED and set the cameras and MQTT Settings.\n\n[\n    {\n        \"id\": \"5c11fed7a3291d98\",\n        \"type\": \"tab\",\n        \"label\": \"Common flows\",\n        \"disabled\": false,\n        \"info\": \"\",\n        \"env\": []\n    },\n    {\n        \"id\": \"02db7f93b04a492f\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 690,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"b5b64f4f7b769d83\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"fa380eb259be45b7\",\n        \"type\": \"inject\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"props\": [\n            {\n                \"p\": \"payload\"\n            },\n            {\n                \"p\": \"topic\",\n                \"vt\": \"str\"\n            }\n        ],\n        \"repeat\": \"\",\n        \"crontab\": \"\",\n        \"once\": true,\n        \"onceDelay\": 0.1,\n        \"topic\": \"\",\n        \"payload\": \"\",\n        \"payloadType\": \"date\",\n        \"x\": 250,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"c8ef8d97328edd23\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5b64f4f7b769d83\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 187\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 100,\n        \"wires\": []\n    },\n    {\n        \"id\": \"aa43617de91eb980\",\n        \"type\": \"link in\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"links\": [\n            \"36a1c5493dd38891\",\n            \"87da02126678c337\",\n            \"dc22d2beb6b89bfc\",\n            \"9322bf42526aebb4\",\n            \"0d0b351adc05d714\",\n            \"3d409c678d9a4f7a\"\n        ],\n        \"x\": 245,\n        \"y\": 340,\n        \"wires\": [\n            [\n                \"b5d16c19b87890af\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"b5d16c19b87890af\",\n        \"type\": \"mqtt out\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"topic\": \"\",\n        \"qos\": \"\",\n        \"retain\": \"\",\n        \"respTopic\": \"\",\n        \"contentType\": \"\",\n        \"userProps\": \"\",\n        \"correl\": \"\",\n        \"expiry\": \"\",\n        \"broker\": \"d1d53d1e87be4083\",\n        \"x\": 410,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"b95457e9f5c0bad5\",\n        \"type\": \"comment\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"Send MQTT\",\n        \"info\": \"\",\n        \"x\": 140,\n        \"y\": 340,\n        \"wires\": []\n    },\n    {\n        \"id\": \"c8ef8d97328edd23\",\n        \"type\": \"Axis device\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Device Info\",\n        \"cgi\": \"\",\n        \"data\": \"\",\n        \"options\": \"\",\n        \"filename\": \"\",\n        \"x\": 470,\n        \"y\": 100,\n        \"wires\": [\n            [\n                \"02db7f93b04a492f\",\n                \"c73446698e69b019\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"c73446698e69b019\",\n        \"type\": \"Axis camera\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"preset\": \"a5d60ef5587cc8fc\",\n        \"action\": \"Camera Info\",\n        \"resolution\": \"640x360\",\n        \"output\": \"Base64\",\n        \"filename\": \"\",\n        \"options\": \"\",\n        \"data\": \"\",\n        \"x\": 470,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"83dd6a8c155a030a\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"1d5013c65acf6edc\",\n        \"type\": \"debug\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"debug 193\",\n        \"active\": false,\n        \"tosidebar\": true,\n        \"console\": false,\n        \"tostatus\": false,\n        \"complete\": \"false\",\n        \"statusVal\": \"\",\n        \"statusType\": \"auto\",\n        \"x\": 930,\n        \"y\": 160,\n        \"wires\": []\n    },\n    {\n        \"id\": \"83dd6a8c155a030a\",\n        \"type\": \"change\",\n        \"z\": \"5c11fed7a3291d98\",\n        \"name\": \"\",\n        \"rules\": [\n            {\n                \"t\": \"set\",\n                \"p\": \"device.camera\",\n                \"pt\": \"global\",\n                \"to\": \"payload\",\n                \"tot\": \"msg\"\n            }\n        ],\n        \"action\": \"\",\n        \"property\": \"\",\n        \"from\": \"\",\n        \"to\": \"\",\n        \"reg\": false,\n        \"x\": 710,\n        \"y\": 160,\n        \"wires\": [\n            [\n                \"1d5013c65acf6edc\"\n            ]\n        ]\n    },\n    {\n        \"id\": \"d1d53d1e87be4083\",\n        \"type\": \"mqtt-broker\",\n        \"name\": \"MQTT Broker\",\n        \"broker\": \"10.13.8.20\",\n        \"port\": \"1883\",\n        \"clientid\": \"\",\n        \"autoConnect\": true,\n        \"usetls\": false,\n        \"protocolVersion\": \"4\",\n        \"keepalive\": \"60\",\n        \"cleansession\": true,\n        \"autoUnsubscribe\": true,\n        \"birthTopic\": \"\",\n        \"birthQos\": \"0\",\n        \"birthRetain\": \"false\",\n        \"birthPayload\": \"\",\n        \"birthMsg\": {},\n        \"closeTopic\": \"\",\n        \"closeQos\": \"0\",\n        \"closeRetain\": \"false\",\n        \"closePayload\": \"\",\n        \"closeMsg\": {},\n        \"willTopic\": \"\",\n        \"willQos\": \"0\",\n        \"willRetain\": \"false\",\n        \"willPayload\": \"\",\n        \"willMsg\": {},\n        \"userProps\": \"\",\n        \"sessionExpiry\": \"\"\n    },\n    {\n        \"id\": \"a5d60ef5587cc8fc\",\n        \"type\": \"Device Access\",\n        \"name\": \"Localhost\",\n        \"address\": \"localhost\",\n        \"protocol\": \"http\"\n    }\n]\n\n",
-        "x": 620,
-        "y": 60,
+        "x": 190,
+        "y": 720,
         "wires": []
     },
     {
@@ -520,7 +482,7 @@
         "step": "0.5",
         "className": "",
         "x": 790,
-        "y": 1320,
+        "y": 1100,
         "wires": [
             [
                 "2d332fe7d0e20f06"
@@ -549,7 +511,7 @@
         "step": "5",
         "className": "",
         "x": 800,
-        "y": 1360,
+        "y": 1140,
         "wires": [
             [
                 "b05ba25a2a473fea"
@@ -576,8 +538,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1060,
-        "y": 1320,
+        "x": 1080,
+        "y": 1100,
         "wires": [
             [
                 "f1834d1e5829e0c6"
@@ -604,8 +566,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1050,
-        "y": 1360,
+        "x": 1070,
+        "y": 1140,
         "wires": [
             [
                 "f1834d1e5829e0c6"
@@ -631,11 +593,6 @@
             {
                 "label": "Human",
                 "value": "Human",
-                "type": "str"
-            },
-            {
-                "label": "Face",
-                "value": "Face",
                 "type": "str"
             },
             {
@@ -684,7 +641,7 @@
         "topicType": "msg",
         "className": "",
         "x": 800,
-        "y": 1280,
+        "y": 1060,
         "wires": [
             [
                 "d6fe682dc2b9c6e6"
@@ -712,64 +669,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1050,
-        "y": 1280,
-        "wires": [
-            [
-                "f1834d1e5829e0c6"
-            ]
-        ]
-    },
-    {
-        "id": "ce0b7bf69c5bb341",
-        "type": "ui_text_input",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "f7dde0e372b88bf8",
-        "name": "",
-        "label": "Name",
-        "tooltip": "",
-        "group": "fb7dc356b5701bac",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "mode": "text",
-        "delay": 300,
-        "topic": "topic",
-        "sendOnBlur": true,
-        "className": "",
-        "topicType": "msg",
-        "x": 790,
-        "y": 1200,
-        "wires": [
-            [
-                "7ba083278b033afd"
-            ]
-        ]
-    },
-    {
-        "id": "7ba083278b033afd",
-        "type": "change",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "f7dde0e372b88bf8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "settings.name",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1060,
-        "y": 1200,
+        "x": 1070,
+        "y": 1060,
         "wires": [
             [
                 "f1834d1e5829e0c6"
@@ -843,7 +744,7 @@
         "topicType": "msg",
         "className": "",
         "x": 810,
-        "y": 1240,
+        "y": 1020,
         "wires": [
             [
                 "69a0f7d7ee9f79f4"
@@ -871,43 +772,15 @@
         "to": "",
         "reg": false,
         "x": 390,
-        "y": 1200,
+        "y": 1020,
         "wires": [
             [
-                "7d5eea7e0ba98650",
                 "5828ec6601beb7b6",
                 "64b28fd44c923071",
                 "0428ab2696b0a4e2",
                 "9591cbb2fee56712",
-                "ba4c5b53b341fbde"
-            ]
-        ]
-    },
-    {
-        "id": "7d5eea7e0ba98650",
-        "type": "change",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "f7dde0e372b88bf8",
-        "name": "name",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.name",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 600,
-        "y": 1200,
-        "wires": [
-            [
-                "ce0b7bf69c5bb341"
+                "ba4c5b53b341fbde",
+                "93ada226d1366dcb"
             ]
         ]
     },
@@ -931,8 +804,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 1240,
+        "x": 630,
+        "y": 1020,
         "wires": [
             [
                 "f43bf9577ea0da76"
@@ -959,8 +832,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1280,
+        "x": 620,
+        "y": 1060,
         "wires": [
             [
                 "ae7eadaa49a34761"
@@ -987,8 +860,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 1320,
+        "x": 610,
+        "y": 1100,
         "wires": [
             [
                 "cdc605c7f7dde43e"
@@ -1015,8 +888,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1360,
+        "x": 620,
+        "y": 1140,
         "wires": [
             [
                 "83735be0e9d78bc7"
@@ -1045,7 +918,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 380,
-        "y": 1500,
+        "y": 1320,
         "wires": [
             [
                 "19af0fdf408294e6"
@@ -1080,7 +953,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 1500,
+        "y": 1320,
         "wires": [
             [
                 "4b5e463082725f71"
@@ -1106,45 +979,10 @@
         "icon": "",
         "payload": "false",
         "payloadType": "bool",
-        "topic": "aoi",
+        "topic": "save",
         "topicType": "str",
         "x": 690,
-        "y": 1540,
-        "wires": [
-            [
-                "efc4029ded5ad2bd"
-            ]
-        ]
-    },
-    {
-        "id": "efc4029ded5ad2bd",
-        "type": "change",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "f7dde0e372b88bf8",
-        "name": "Hide AOI",
-        "rules": [
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "aoi",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "false",
-                "tot": "bool"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 880,
-        "y": 1540,
+        "y": 1360,
         "wires": [
             [
                 "4b5e463082725f71"
@@ -1164,8 +1002,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
-        "y": 1240,
+        "x": 1060,
+        "y": 1020,
         "wires": [
             [
                 "f1834d1e5829e0c6"
@@ -1181,11 +1019,11 @@
         "output": "1",
         "classFilter": "-1",
         "confidence": "20",
-        "rotation": "0",
+        "rotation": "270",
         "cog": "0",
         "predictions": "0",
         "attributes": "50",
-        "idle": "600",
+        "idle": "60",
         "x": 400,
         "y": 180,
         "wires": [
@@ -1200,7 +1038,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "0290d3ecc4e84233",
         "name": "Detections filter",
-        "func": "\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nvar list = [];\n\nmsg.payload.forEach( function(item){\n    if (item.confidence < settings.confidence)\n        return;\n    if( item.age < settings.age)\n        return;\n    var dx = (item.cx - item.bx);\n    dx = dx * dx;\n    var dy = (item.cy - item.by);\n    dy = dy * dy;\n    item.distance = parseInt(Math.sqrt(dx+dy)/10);\n    if( item.distance < settings.distance )\n        return;\n\n    var clasMatch = false;\n    settings.classes.forEach(function (element) {\n        if (element === item.class)\n            clasMatch = true;\n    });\n    if (!clasMatch)\n        return;\n\n    if( item.cx < settings.aoi.x1 )\n        return;\n    if (item.cx > settings.aoi.x2)\n        return;\n    if (item.cy < settings.aoi.y1)\n        return;\n    if (item.cy > settings.aoi.y2)\n        return;\n    list.push(item);\n});\n\n\nmsg.payload = list;\n\nreturn msg;\n",
+        "func": "\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nvar list = [];\n\nmsg.payload.forEach( function(item){\n    if (item.confidence < settings.confidence)\n        return;\n    if( item.age < settings.age)\n        return;\n    var dx = (item.cx - item.bx);\n    dx = dx * dx;\n    var dy = (item.cy - item.by);\n    dy = dy * dy;\n    item.distance = parseInt(Math.sqrt(dx+dy)/10);\n    if( item.distance < settings.distance )\n        return;\n\n    var classMatch = false;\n    settings.classes.forEach(function (element) {\n        if (element === item.class)\n            classMatch = true;\n        if( item.class === \"Face\" && element === \"Head\")\n            classMatch = true;\n    });\n    if (!classMatch)\n        return;\n\n    if( item.cx < settings.aoi.x1 )\n        return;\n    if (item.cx > settings.aoi.x2)\n        return;\n    if (item.cy < settings.aoi.y1)\n        return;\n    if (item.cy > settings.aoi.y2)\n        return;\n    list.push(item);\n});\n\n\nmsg.payload = list;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1214,115 +1052,6 @@
                 "ab30931705df01ba",
                 "ccf4ab6299e103f9",
                 "2fd4b1d80e7acec3"
-            ]
-        ]
-    },
-    {
-        "id": "aff39c1e058d8524",
-        "type": "catch",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "0290d3ecc4e84233",
-        "name": "",
-        "scope": null,
-        "uncaught": true,
-        "x": 390,
-        "y": 340,
-        "wires": [
-            [
-                "f592af23793ef5cc",
-                "2dfadf22db39c7a3"
-            ]
-        ]
-    },
-    {
-        "id": "f592af23793ef5cc",
-        "type": "function",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "0290d3ecc4e84233",
-        "name": "Message",
-        "func": "var device = global.get(\"device\");\nif(!device)\n    return;\nvar service = flow.get(\"service\")\nif(!service)\n    return;\nmsg.topic = \"exception/\" + service.name + \"/\" + device.serial;\nmsg.payload = msg.error;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 340,
-        "wires": [
-            [
-                "8feb3dc413629483",
-                "64082d9b6f78f2a4"
-            ]
-        ]
-    },
-    {
-        "id": "8feb3dc413629483",
-        "type": "change",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "0290d3ecc4e84233",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.message",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 820,
-        "y": 400,
-        "wires": [
-            [
-                "69063184c6306f83"
-            ]
-        ]
-    },
-    {
-        "id": "2dfadf22db39c7a3",
-        "type": "debug",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "0290d3ecc4e84233",
-        "name": "debug 198",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "error",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "51c993b26356a0a4",
-        "type": "ui_template",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "766bfdf553109fb9",
-        "group": "5f090a4ecb012945",
-        "name": "Visualization",
-        "order": 6,
-        "width": "16",
-        "height": "16",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\nvar trackers = {};\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\n\nfunction setupVideo( scope, data ) {\n    videoWidth = 800;\n    videoHeight = 450;\n\n    if(data.aspect === \"1:1\") {\n        videoWidth = 800;\n        videoHeight = 800;\n    }\n\n    if(data.aspect === \"4:3\") {\n        videoWidth = 800;\n        videoHeight = 600;\n    }\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+videoWidth+'x'+videoHeight+'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n}\n\nfunction setupImage( scope, data ) {\n    imageWidth = 800;\n    imageHeight = 450;\n\n    if( data.camera.aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(data.camera.aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( data.camera.rotation === 90 || data.camera.rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.payload )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.payload);\n    else\n    $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n\n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawDetections( detections ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n    if( detections.length === 0)\n        return;\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.strokeStyle = '#FFFF00';\n    detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" \" + detection.confidence;\n        if( detection.hasOwnProperty(\"age\") )\n            text += \" \" + detection.age + \"s\";\n        ctx.fillText(text, detection.x, detection.y-10 );\n    });\n    ctx.stroke();\n}\n\nfunction drawTracker( tracker ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n\n    trackers[tracker.id] = tracker;\n    if( tracker.active === false )\n        delete trackers[tracker.id];\n    ctx.beginPath();\n    for(var id in trackers) {\n        if( trackers[id].hasOwnProperty(\"bx\")) {\n            ctx.moveTo(trackers[id].bx,trackers[id].by);\n            ctx.lineTo(trackers[id].cx,trackers[id].cy);\n        }\n        ctx.rect(trackers[id].x, trackers[id].y,trackers[id].w,trackers[id].h );\n        var text = trackers[id].class || \"Undefined\";\n        if( trackers[id].hasOwnProperty(\"confidence\"))\n            text += \" \" + trackers[id].confidence;\n        if( trackers[id].hasOwnProperty(\"age\"))\n            text += \" \" + trackers[id].age + \"s\";\n        ctx.fillText(text, trackers[id].x, trackers[id].y-10);\n    }\n    ctx.stroke();\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            setupVideo(scope,msg.payload);\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            break;\n\n        case \"detections\":\n            drawDetections( msg.payload );\n            break;\n\n        case \"tracker\":\n            drawTracker(msg.payload);\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 1050,
-        "y": 540,
-        "wires": [
-            [
-                "3bc1dc58ceca337c"
             ]
         ]
     },
@@ -1346,8 +1075,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 540,
+        "x": 890,
+        "y": 480,
         "wires": [
             [
                 "7cd22aae86dc94e6"
@@ -1376,70 +1105,11 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 350,
-        "y": 660,
+        "y": 400,
         "wires": [
             [
-                "9d978e2b2df72656",
-                "6d2d1062de721a60"
-            ]
-        ]
-    },
-    {
-        "id": "6bad7908cd983833",
-        "type": "Camera",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "766bfdf553109fb9",
-        "resolution": "1280x720",
-        "overlay": "yes",
-        "channel": "1",
-        "output": "base64",
-        "x": 680,
-        "y": 600,
-        "wires": [
-            [
-                "6d9af5747621d99b"
-            ]
-        ]
-    },
-    {
-        "id": "6d9af5747621d99b",
-        "type": "function",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "766bfdf553109fb9",
-        "name": "Image",
-        "func": "var device = global.get(\"device\");\nif(!device)\n    return;\nif( !device.hasOwnProperty(\"camera\") )\n    return;\n\nmsg.topic = \"image\";\n\nmsg.payload = {\n    camera: device.camera,\n    image: msg.payload\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 830,
-        "y": 600,
-        "wires": [
-            [
-                "51c993b26356a0a4"
-            ]
-        ]
-    },
-    {
-        "id": "9d978e2b2df72656",
-        "type": "function",
-        "z": "3f9fbf9fc83bc7d6",
-        "g": "766bfdf553109fb9",
-        "name": "Resolution",
-        "func": "var device = global.get(\"device\");\nif (!device) {\n    node.error(\"Missing global.device. Check Readme\", msg);\n    return;\n}\nif (!device.hasOwnProperty(\"camera\")) {\n    node.error(\"Missing global.device.camera. Check Readme\", msg);\n    return;\n}\n\nmsg.topic = \"image\";\nmsg.camera = device.camera;\nmsg.resolution = device.camera.medium;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 600,
-        "wires": [
-            [
-                "6bad7908cd983833"
+                "6d2d1062de721a60",
+                "e2d189ae490bc365"
             ]
         ]
     },
@@ -1449,7 +1119,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "8b3e0f497cf37dd6",
         "name": "Default settings",
-        "func": "msg.payload = {\n    service: \"ObjectDetections\",\n    name: global.get(\"device\").serial || \"Undefined\",\n    aoi: {\n        id: \"aoi\",\n        x1: 200,\n        y1: 200,\n        x2: 800,\n        y2: 800\n    },\n    age: 2,\n    distance: 10,\n    confidence: 30,\n    classes: [\"Human\", \"Car\"],\n    timeout: 5\n}\n\nvar device = global.get(\"device\");\nif( !device) \n    return msg;\n\nif( device.hostname )\n    msg.payload.name = device.hostname;\n\nreturn msg;\n",
+        "func": "msg.payload = {\n    service: \"ObjectDetections\",\n    name: global.get(\"device\").serial || \"Undefined\",\n    aoi: {\n        id: \"aoi\",\n        x1: 200,\n        y1: 200,\n        x2: 800,\n        y2: 800\n    },\n    age: 2,\n    distance: 10,\n    confidence: 30,\n    classes: [\"Human\", \"Car\"],\n    timeout: 5,\n    threshold: 1\n}\n\nvar device = global.get(\"device\");\nif( !device) \n    return msg;\n\nif( device.hostname )\n    msg.payload.name = device.hostname;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1457,7 +1127,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 900,
+        "y": 720,
         "wires": [
             [
                 "dcee1590a75bfb11"
@@ -1485,7 +1155,7 @@
         "to": "",
         "reg": false,
         "x": 580,
-        "y": 900,
+        "y": 720,
         "wires": [
             [
                 "6af2a1b6be084f8b"
@@ -1498,7 +1168,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "8b3e0f497cf37dd6",
         "name": "",
-        "filename": "sdcardObjectDetections.json",
+        "filename": "sdcard/ObjectDetections.json",
         "filenameType": "str",
         "format": "utf8",
         "chunk": false,
@@ -1506,7 +1176,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 840,
-        "y": 900,
+        "y": 720,
         "wires": [
             [
                 "532c07dfbb29a904"
@@ -1523,7 +1193,7 @@
         "action": "",
         "pretty": false,
         "x": 1070,
-        "y": 900,
+        "y": 720,
         "wires": [
             [
                 "1bdf4a743e5c848e"
@@ -1551,7 +1221,7 @@
         "to": "",
         "reg": false,
         "x": 1230,
-        "y": 900,
+        "y": 720,
         "wires": [
             [
                 "c65096c362c8fef0"
@@ -1569,7 +1239,7 @@
         ],
         "uncaught": false,
         "x": 360,
-        "y": 980,
+        "y": 800,
         "wires": [
             [
                 "a386f3625a3b3a68"
@@ -1597,7 +1267,7 @@
         "to": "",
         "reg": false,
         "x": 530,
-        "y": 1060,
+        "y": 880,
         "wires": [
             [
                 "29d182aa8e594864"
@@ -1618,7 +1288,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 1060,
+        "y": 880,
         "wires": [
             [
                 "9d63bd528379b58c"
@@ -1631,14 +1301,14 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "8b3e0f497cf37dd6",
         "name": "",
-        "filename": "sdcardObjectDetections.json",
+        "filename": "sdcard/ObjectDetections.json",
         "filenameType": "str",
         "appendNewline": false,
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
         "x": 900,
-        "y": 1060,
+        "y": 880,
         "wires": [
             []
         ]
@@ -1669,15 +1339,15 @@
         "type": "function",
         "z": "3f9fbf9fc83bc7d6",
         "g": "0290d3ecc4e84233",
-        "name": "presence/state/SERIAL",
-        "func": "var device = global.get(\"device\");\nif(!device) {\n    node.error(\"Missing global.device. Check Readme\",msg);\n    return;\n}\n\nif( msg.payload.length === 0)\n    return;\n\nmsg.topic = \"presence/state/\" + device.serial;\nmsg.delay = flow.get(\"settings\").timeout * 1000;\nreturn msg;",
+        "name": "Presence state",
+        "func": "var threshold = flow.get(\"settings\").threshold || 1;\n\nif (msg.payload.length < threshold)\n    return;\n\nmsg.delay = flow.get(\"settings\").timeout * 1000;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
+        "x": 880,
         "y": 260,
         "wires": [
             [
@@ -1754,8 +1424,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
-        "y": 1400,
+        "x": 620,
+        "y": 1180,
         "wires": [
             [
                 "70426b6d99f8f877"
@@ -1768,7 +1438,7 @@
         "z": "3f9fbf9fc83bc7d6",
         "g": "f7dde0e372b88bf8",
         "name": "",
-        "label": "Presence timeout",
+        "label": "Presence transition",
         "tooltip": "",
         "group": "fb7dc356b5701bac",
         "order": 7,
@@ -1783,8 +1453,8 @@
         "max": "100",
         "step": "1",
         "className": "",
-        "x": 840,
-        "y": 1400,
+        "x": 830,
+        "y": 1180,
         "wires": [
             [
                 "c5cf63b0b72fb442"
@@ -1811,10 +1481,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 1400,
+        "x": 1070,
+        "y": 1180,
         "wires": [
-            []
+            [
+                "f1834d1e5829e0c6"
+            ]
         ]
     },
     {
@@ -1835,8 +1507,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 390,
-        "y": 720,
+        "x": 400,
+        "y": 540,
         "wires": []
     },
     {
@@ -1848,8 +1520,8 @@
             "41e82f8305a8e7a2",
             "3ecb626b56361038"
         ],
-        "x": 115,
-        "y": 720,
+        "x": 105,
+        "y": 540,
         "wires": [
             [
                 "274d6ac4a4ac58d0"
@@ -1862,8 +1534,8 @@
         "z": "3f9fbf9fc83bc7d6",
         "name": "Counter",
         "info": "",
-        "x": 200,
-        "y": 720,
+        "x": 210,
+        "y": 540,
         "wires": []
     },
     {
@@ -1874,8 +1546,8 @@
         "links": [
             "f2db1cc6ac8e0108"
         ],
-        "x": 115,
-        "y": 760,
+        "x": 105,
+        "y": 580,
         "wires": [
             [
                 "c3f20841277e98e2"
@@ -1888,8 +1560,8 @@
         "z": "3f9fbf9fc83bc7d6",
         "name": "State",
         "info": "",
-        "x": 200,
-        "y": 760,
+        "x": 210,
+        "y": 580,
         "wires": []
     },
     {
@@ -1910,8 +1582,8 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 390,
-        "y": 760,
+        "x": 400,
+        "y": 580,
         "wires": []
     },
     {
@@ -1921,7 +1593,9 @@
         "name": "state",
         "mode": "link",
         "links": [
-            "791d4108e767e78b"
+            "791d4108e767e78b",
+            "8c93538ef61c66b4",
+            "4ec48c6f57b6de7b"
         ],
         "x": 1415,
         "y": 260,
@@ -1936,6 +1610,263 @@
         "x": 1310,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "aff39c1e058d8524",
+        "type": "catch",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "8134229cbfc4ff1a",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 380,
+        "y": 1500,
+        "wires": [
+            [
+                "f592af23793ef5cc",
+                "2dfadf22db39c7a3"
+            ]
+        ]
+    },
+    {
+        "id": "f592af23793ef5cc",
+        "type": "function",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "8134229cbfc4ff1a",
+        "name": "Message",
+        "func": "msg.topic = \"ObjectDetections\";\nmsg.payload = msg.error;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1500,
+        "wires": [
+            [
+                "8feb3dc413629483",
+                "64082d9b6f78f2a4"
+            ]
+        ]
+    },
+    {
+        "id": "2dfadf22db39c7a3",
+        "type": "debug",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "8134229cbfc4ff1a",
+        "name": "debug 198",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "8feb3dc413629483",
+        "type": "change",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "8134229cbfc4ff1a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.message",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 1560,
+        "wires": [
+            [
+                "69063184c6306f83"
+            ]
+        ]
+    },
+    {
+        "id": "69063184c6306f83",
+        "type": "ui_toast",
+        "z": "3f9fbf9fc83bc7d6",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1040,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0a9588f71dac5f55",
+        "type": "comment",
+        "z": "3f9fbf9fc83bc7d6",
+        "name": "exceptions",
+        "info": "",
+        "x": 1010,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "64082d9b6f78f2a4",
+        "type": "link out",
+        "z": "3f9fbf9fc83bc7d6",
+        "name": "exceptions",
+        "mode": "link",
+        "links": [],
+        "x": 1105,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "93ada226d1366dcb",
+        "type": "change",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "f7dde0e372b88bf8",
+        "name": "threshold",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.threshold",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 1220,
+        "wires": [
+            [
+                "898e617b28fcac46"
+            ]
+        ]
+    },
+    {
+        "id": "898e617b28fcac46",
+        "type": "ui_numeric",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "f7dde0e372b88bf8",
+        "name": "",
+        "label": "Presence threshold",
+        "tooltip": "",
+        "group": "fb7dc356b5701bac",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}} objects",
+        "min": "1",
+        "max": "10",
+        "step": "1",
+        "className": "",
+        "x": 830,
+        "y": 1220,
+        "wires": [
+            [
+                "e5d7dd53e212efa7"
+            ]
+        ]
+    },
+    {
+        "id": "e5d7dd53e212efa7",
+        "type": "change",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "f7dde0e372b88bf8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.threshold",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 1220,
+        "wires": [
+            [
+                "f1834d1e5829e0c6"
+            ]
+        ]
+    },
+    {
+        "id": "e2d189ae490bc365",
+        "type": "function",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "766bfdf553109fb9",
+        "name": "Init",
+        "func": "msg.topic = \"init\";\nmsg.payload = {\n    aspect: \"16:9\",\n    rotation: 0,\n    resolution: \"1280x720\"\n}\n\nvar camera = global.get(\"camera\");\nif ( camera ) {\n    msg.payload.aspect = camera.aspect;\n    msg.payload.rotation = camera.rotation;\n    msg.payload.resolution = camera.largest;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 440,
+        "wires": [
+            [
+                "f1761832d81305e2"
+            ]
+        ]
+    },
+    {
+        "id": "f1761832d81305e2",
+        "type": "ui_template",
+        "z": "3f9fbf9fc83bc7d6",
+        "g": "766bfdf553109fb9",
+        "group": "5f090a4ecb012945",
+        "name": "Visualization",
+        "order": 6,
+        "width": "16",
+        "height": "16",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar pathList = [];\nvar trackers = {};\nvar selectArea = null;\nvar selectionType = \"None\";\nvar ctx = null;\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"init\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            ClearCanvas();\n            init(scope,msg.payload);\n            break;\n\n        case \"detections\":\n            drawDetections( msg.payload );\n            break;\n\n        case \"tracker\":\n            drawTracker( msg.payload );\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n        case \"clear\":\n        case \"save\":\n            ClearCanvas();\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            break;\n\n        case \"aoi\":\n        case \"birth\":\n        case \"death\":\n            selectionType = msg.topic;\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            var x1 = parseInt(msg.payload.x1 / 1000 * imageWidth);\n            var x2 = parseInt(msg.payload.x2 / 1000 * imageWidth);\n            var y1 = parseInt(msg.payload.y1 / 1000 * imageHeight);\n            var y2 = parseInt(msg.payload.y2 / 1000 * imageHeight);\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                x1:x1, y1:y1, x2:x2, y2:y2,\n                show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                onSelectEnd: function( image, area ) {\n                    var area = {\n                        id: selectionType,\n                        x1: parseInt((area.x1/imageWidth) * 1000),\n                        x2: parseInt((area.x2/imageWidth) * 1000),\n                        y1: parseInt((area.y1/imageHeight) * 1000),\n                        y2: parseInt((area.y2/imageHeight) * 1000)\n                    }\n                    scope.send({\n                        topic: selectionType,\n                        payload: area\n                    });\n                }\n            });\n            selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n\nfunction init( scope, camera ) {\n    imageWidth = 800;\n    imageHeight = 450;\n    var aspect = camera.aspect || \"16:9\";\n    var rotation = camera.rotation || 0;\n    var resolution = camera.resolution || \"1280x720\";\n\n    if( aspect === \"1:1\")\n        imageHeight = 800;\n\n    if( aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( rotation === 90 || rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+ resolution +'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n\n    if( selectArea ) {\n        selectArea.setOptions({ hide: true });\n        delete selectArea;\n    }\n}\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n}\n\nfunction drawDetections( detections ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n    if( detections.length === 0)\n        return;\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.strokeStyle = '#FFFF00';\n    detections.forEach( function(detection){\n        ctx.rect(detection.x, detection.y,detection.w,detection.h );\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" \" + detection.confidence;\n        if( detection.hasOwnProperty(\"age\") )\n            text += \" \" + detection.age + \"s\";\n        ctx.fillText(text, detection.x, detection.y-10 );\n    });\n    ctx.stroke();\n}\n\nfunction drawTracker( tracker ) {\n    if(!ctx)\n        return;\n    ClearCanvas();\n\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#FFFF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n\n    trackers[tracker.id] = tracker;\n    if( tracker.active === false )\n        delete trackers[tracker.id];\n    ctx.beginPath();\n    for(var id in trackers) {\n        if( trackers[id].hasOwnProperty(\"bx\")) {\n            ctx.moveTo(trackers[id].bx,trackers[id].by);\n            ctx.lineTo(trackers[id].cx,trackers[id].cy);\n        }\n        ctx.rect(trackers[id].x, trackers[id].y,trackers[id].w,trackers[id].h );\n        var text = trackers[id].class || \"Undefined\";\n        if( trackers[id].hasOwnProperty(\"confidence\"))\n            text += \" \" + trackers[id].confidence;\n        if( trackers[id].hasOwnProperty(\"age\"))\n            text += \" \" + trackers[id].age + \"s\";\n        ctx.fillText(text, trackers[id].x, trackers[id].y-10);\n    }\n    ctx.stroke();\n}\n\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 480,
+        "wires": [
+            [
+                "3bc1dc58ceca337c"
+            ]
+        ]
     },
     {
         "id": "fb7dc356b5701bac",
