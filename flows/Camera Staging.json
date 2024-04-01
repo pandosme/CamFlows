@@ -1,0 +1,2329 @@
+[{
+	"id": "e15fac10c62cf84d",
+	"type": "tab",
+	"label": "Camera Staging",
+	"disabled": false,
+	"info": "",
+	"env": []
+}, {
+	"id": "d59a9bd1a415a250",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["e1286c40dcf7568d", "cedf593c6a7aef3e", "d9a04d5b2306219a", "85ea9aa0e626974d", "53496d08319c9280", "d44bd5cd65c56501", "bce5ad96a0ba5468"],
+	"x": 274,
+	"y": 259,
+	"w": 492,
+	"h": 262
+}, {
+	"id": "30b4c8c5f8232864",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"label": true,
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"color": "#000000"
+	},
+	"nodes": ["b0e0684dabf64d30", "f59daf2c7bcc8cce", "eed5a4c7d3939f17", "978fd7fb69ada307", "d954db7fb8351626"],
+	"x": 284,
+	"y": 619,
+	"w": 582,
+	"h": 167
+}, {
+	"id": "97ead11cafbe1cfa",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["e354c06bef83de7c", "8a1884a12b422229", "36e46166374ac1eb"],
+	"x": 294,
+	"y": 919,
+	"w": 392,
+	"h": 142
+}, {
+	"id": "38ec015ec12b6366",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["aeda80e0196141ce", "f17b035754bfd535", "98e0205b07cf0101", "38af6e4f5c8b7820", "f13f53365bf242a0"],
+	"x": 294,
+	"y": 1179,
+	"w": 442,
+	"h": 202
+}, {
+	"id": "82df3c3c98ac7505",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["98288255e2fe3dfa", "13c3db811ee7d258", "b89b82eae389aea0", "23af683df6b9cd0c", "b9bb2ffa5b0cff07", "e54a9a34b097ac18", "09601b097bc04402"],
+	"x": 294,
+	"y": 1479,
+	"w": 792,
+	"h": 222
+}, {
+	"id": "a2c47a84286e7c3e",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"fill": "#ffffbf",
+		"label": true
+	},
+	"nodes": ["38c7a162377bb7ea", "f8697a9ef1ca3513", "665e6cecbf193535", "a8a47a3e2d4ecd31", "ad176434137ca83c", "f32a77bf16cf8a68", "7c654252d954a855", "8e88c16dada07222", "6efe86438de0260a", "50782c9d3df8cb42", "4b1ad7c2cc77f4cc"],
+	"x": 314,
+	"y": 1819,
+	"w": 912,
+	"h": 262
+}, {
+	"id": "7285430e159a17ba",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffbfbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["c41f074789803758", "4645e267682deb82", "eb4b4184965ea208", "93e4fdfda8236924", "fdb58a0e505684bb", "a17df90923f30f69", "595fdeac73435c3a", "14ee848f70a09b4e", "82ef52d15efa5320", "fc6a322d5b539f31", "a113c394ae6d308e", "1443df25890ed3e7"],
+	"x": 1574,
+	"y": 2719,
+	"w": 952,
+	"h": 302
+}, {
+	"id": "9e0a2924d3f75cd4",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffbfbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["ab568ffc61480c89", "7e6adc59e4fcd597", "3545703241551da6", "9973f43957aeb37a", "169f414500e405bb", "de41108a1b10579c", "1fa6068d949bbeb5", "dd9d4021062a0355"],
+	"x": 1614,
+	"y": 2179,
+	"w": 612,
+	"h": 302
+}, {
+	"id": "ec7b5afc46b49773",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"label": true,
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"color": "#000000"
+	},
+	"nodes": ["aaa6ca31e8bc3ae4", "d86feeacb8712942", "48b2f3f9d9f38d06", "d507cac1679a16db", "f1ffd8843aff0ca9", "bcb212ab719c6d76", "b6b0199269a15564", "c47caa16f6a3bba4", "ca5bcbb2d96271d6", "c070f99f874313c4", "eec9112e750a02d9", "6d1b419af6015a73", "48677cdba54c5c80", "bdbff66c812e4645", "bcbdcd8b574f5e5f", "2aa613cbba224d13", "2a87f33eea1193b4", "3d93e04c82378823", "e92fa5a324ddde95", "e864970b3d4e6821", "a3319e79f4249931", "ba81896ff1172717", "9798cf9f9cba6d88"],
+	"x": 304,
+	"y": 2179,
+	"w": 1082,
+	"h": 462
+}, {
+	"id": "abff311c34cba438",
+	"type": "group",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"style": {
+		"stroke": "#000000",
+		"fill": "#ffffbf",
+		"label": true,
+		"color": "#000000"
+	},
+	"nodes": ["069d34490e4423b4", "6301df50827ca6db", "df4a4d87968796f2", "76c92aa64e5c46a9", "2af834a49f049f4b", "e36b4741a73ac4c3", "0bb974026c599352", "b64b96f7b5d2198d", "5c47acb8194fac18", "d4688851ba596b6a", "36629888ab22174f", "3e76439006d09e90", "89b3a6fb674d2401", "28f04bdd364771cf"],
+	"x": 314,
+	"y": 2719,
+	"w": 962,
+	"h": 302
+}, {
+	"id": "d954db7fb8351626",
+	"type": "junction",
+	"z": "e15fac10c62cf84d",
+	"g": "30b4c8c5f8232864",
+	"x": 460,
+	"y": 760,
+	"wires": [
+		["2bc4e8bb4ea15e0b"]
+	]
+}, {
+	"id": "6efe86438de0260a",
+	"type": "junction",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"x": 1200,
+	"y": 2040,
+	"wires": [
+		["3e33c74ae937c8c3"]
+	]
+}, {
+	"id": "e92fa5a324ddde95",
+	"type": "junction",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"x": 1340,
+	"y": 2320,
+	"wires": [
+		["a3319e79f4249931"]
+	]
+}, {
+	"id": "5e73627715dcbd67",
+	"type": "inject",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"props": [{
+		"p": "payload"
+	}, {
+		"p": "topic",
+		"vt": "str"
+	}],
+	"repeat": "",
+	"crontab": "",
+	"once": false,
+	"onceDelay": 0.1,
+	"topic": "",
+	"payload": "",
+	"payloadType": "date",
+	"x": 370,
+	"y": 140,
+	"wires": [
+		["30f3495e2ce2b99d"]
+	]
+}, {
+	"id": "30f3495e2ce2b99d",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"name": "Device Inventory",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "json",
+	"syntax": "mustache",
+	"template": "[\n    {\n        \"address\":\"10.13.8.167\",\n        \"name\": \"democam\"\n    }\n]\n",
+	"output": "json",
+	"x": 610,
+	"y": 140,
+	"wires": [
+		["079c7e25da260bbe"]
+	]
+}, {
+	"id": "079c7e25da260bbe",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "For Each Cameras",
+	"func": "msg.payload.forEach(function(device){\n    msg.address = device.address;\n    msg.name = device.name\n    node.send(msg);\n});\n",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 830,
+	"y": 140,
+	"wires": [
+		["498295a502c53c4d"]
+	]
+}, {
+	"id": "e1286c40dcf7568d",
+	"type": "Axis Security",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"address": "",
+	"action": "Set account",
+	"data": "",
+	"options": "",
+	"x": 610,
+	"y": 360,
+	"wires": [
+		["d9a04d5b2306219a"]
+	]
+}, {
+	"id": "cedf593c6a7aef3e",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "Main Account",
+	"func": "msg.user = \"root\";\nmsg.password = \"rootpandosme\";\n\nmsg.payload = {\n    \"name\": msg.user,\n    \"password\": msg.password,\n    \"privileges\": \"Admin\"\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 400,
+	"y": 360,
+	"wires": [
+		["e1286c40dcf7568d"]
+	]
+}, {
+	"id": "d9a04d5b2306219a",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "2:nd Account",
+	"func": "msg.payload = {\n    \"name\": \"nodered\",\n    \"password\": \"rednode\",\n    \"privileges\": \"Admin\"\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 400,
+	"y": 420,
+	"wires": [
+		["85ea9aa0e626974d"]
+	]
+}, {
+	"id": "85ea9aa0e626974d",
+	"type": "Axis Security",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"address": "",
+	"action": "Set account",
+	"data": "",
+	"options": "",
+	"x": 590,
+	"y": 420,
+	"wires": [
+		["53496d08319c9280"]
+	]
+}, {
+	"id": "53496d08319c9280",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "3:nd Account",
+	"func": "msg.payload = {\n    \"name\": \"fred\",\n    \"password\": \"pass\",\n    \"privileges\": \"Admin\"\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 400,
+	"y": 480,
+	"wires": [
+		["d44bd5cd65c56501"]
+	]
+}, {
+	"id": "d44bd5cd65c56501",
+	"type": "Axis Security",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"address": "",
+	"action": "Set account",
+	"data": "",
+	"options": "",
+	"x": 590,
+	"y": 480,
+	"wires": [
+		["0925c70efc1b8655"]
+	]
+}, {
+	"id": "b0e0684dabf64d30",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "30b4c8c5f8232864",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Set name",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 780,
+	"y": 720,
+	"wires": [
+		["2bc4e8bb4ea15e0b"]
+	]
+}, {
+	"id": "f59daf2c7bcc8cce",
+	"type": "change",
+	"z": "e15fac10c62cf84d",
+	"g": "30b4c8c5f8232864",
+	"name": "",
+	"rules": [{
+		"t": "set",
+		"p": "payload",
+		"pt": "msg",
+		"to": "name",
+		"tot": "msg"
+	}],
+	"action": "",
+	"property": "",
+	"from": "",
+	"to": "",
+	"reg": false,
+	"x": 570,
+	"y": 720,
+	"wires": [
+		["b0e0684dabf64d30"]
+	]
+}, {
+	"id": "aeda80e0196141ce",
+	"type": "change",
+	"z": "e15fac10c62cf84d",
+	"g": "38ec015ec12b6366",
+	"name": "",
+	"rules": [{
+		"t": "set",
+		"p": "payload",
+		"pt": "msg",
+		"to": "true",
+		"tot": "bool"
+	}],
+	"action": "",
+	"property": "",
+	"from": "",
+	"to": "",
+	"reg": false,
+	"x": 430,
+	"y": 1280,
+	"wires": [
+		["f17b035754bfd535"]
+	]
+}, {
+	"id": "f17b035754bfd535",
+	"type": "Axis Security",
+	"z": "e15fac10c62cf84d",
+	"g": "38ec015ec12b6366",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"address": "",
+	"action": "Allow SSH",
+	"data": "",
+	"options": "",
+	"x": 640,
+	"y": 1280,
+	"wires": [
+		["98e0205b07cf0101"]
+	]
+}, {
+	"id": "98e0205b07cf0101",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"g": "38ec015ec12b6366",
+	"name": "SSH User",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "handlebars",
+	"syntax": "mustache",
+	"template": "{\n    \"name\":\"fred\",\n    \"password\":\"pass\",\n    \"comment\":\"Admin\"\n}",
+	"output": "json",
+	"x": 410,
+	"y": 1340,
+	"wires": [
+		["38af6e4f5c8b7820"]
+	]
+}, {
+	"id": "38af6e4f5c8b7820",
+	"type": "Axis Security",
+	"z": "e15fac10c62cf84d",
+	"g": "38ec015ec12b6366",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"address": "",
+	"action": "Set SSH User",
+	"data": "",
+	"options": "",
+	"x": 620,
+	"y": 1340,
+	"wires": [
+		["06f67f92e48f3ed7"]
+	]
+}, {
+	"id": "98288255e2fe3dfa",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "Set TLS Policy",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "handlebars",
+	"syntax": "mustache",
+	"template": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n <Header/>\n <Body >\n<SetWebServerTlsConfiguration xmlns=\"http://www.axis.com/vapix/ws/webserver\" xmlns:acert=\"http://www.axis.com/vapix/ws/cert\">\n          <Configuration>\n              <Tls>true</Tls>\n              <ConnectionPolicies>\n                  <Admin>HttpAndHttps</Admin>\n              </ConnectionPolicies>\n              <Ciphers>\n                  <acert:Cipher>ECDHE-ECDSA-AES128-GCM-SHA256</acert:Cipher><acert:Cipher>ECDHE-RSA-AES128-GCM-SHA256</acert:Cipher><acert:Cipher>ECDHE-ECDSA-AES256-GCM-SHA384</acert:Cipher><acert:Cipher>ECDHE-RSA-AES256-GCM-SHA384</acert:Cipher><acert:Cipher>ECDHE-ECDSA-CHACHA20-POLY1305</acert:Cipher><acert:Cipher>ECDHE-RSA-CHACHA20-POLY1305</acert:Cipher><acert:Cipher>DHE-RSA-AES128-GCM-SHA256</acert:Cipher><acert:Cipher>DHE-RSA-AES256-GCM-SHA384</acert:Cipher>\n              </Ciphers>\n              <CertificateSet>\n                  <acert:Certificates><acert:Id>{{payload}}</acert:Id></acert:Certificates>\n                  <acert:CACertificates></acert:CACertificates>\n                  <acert:TrustedCertificates></acert:TrustedCertificates>\n              </CertificateSet>\n          </Configuration>\n      </SetWebServerTlsConfiguration>\n </Body>\n</Envelope>",
+	"output": "str",
+	"x": 420,
+	"y": 1660,
+	"wires": [
+		["13c3db811ee7d258"]
+	]
+}, {
+	"id": "13c3db811ee7d258",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "/vapix/services",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/vapix/services",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 640,
+	"y": 1660,
+	"wires": [
+		["9db8b20c7b0811f0"]
+	]
+}, {
+	"id": "0be82ee69b679e97",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"name": "debug 142",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "false",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 890,
+	"y": 3340,
+	"wires": []
+}, {
+	"id": "b89b82eae389aea0",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "Get TLS Policy",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "handlebars",
+	"syntax": "mustache",
+	"template": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n <Header/>\n <Body >\n<GetWebServerTlsConfiguration xmlns=\"http://www.axis.com/vapix/ws/webserver\">\n    </GetWebServerTlsConfiguration>\n </Body>\n</Envelope>",
+	"output": "str",
+	"x": 420,
+	"y": 1580,
+	"wires": [
+		["23af683df6b9cd0c"]
+	]
+}, {
+	"id": "23af683df6b9cd0c",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "/vapix/services",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/vapix/services",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 640,
+	"y": 1580,
+	"wires": [
+		["b9bb2ffa5b0cff07"]
+	]
+}, {
+	"id": "b9bb2ffa5b0cff07",
+	"type": "xml",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "",
+	"property": "payload",
+	"attr": "",
+	"chr": "",
+	"x": 810,
+	"y": 1580,
+	"wires": [
+		["e54a9a34b097ac18"]
+	]
+}, {
+	"id": "e54a9a34b097ac18",
+	"type": "change",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "Certificate ID",
+	"rules": [{
+		"t": "set",
+		"p": "payload",
+		"pt": "msg",
+		"to": "payload['SOAP-ENV:Envelope']['SOAP-ENV:Body'][0]['aweb:GetWebServerTlsConfigurationResponse'][0]['aweb:Configuration'][0]['aweb:CertificateSet'][0]['acert:Certificates'][0]['acert:Id'][0]",
+		"tot": "msg"
+	}],
+	"action": "",
+	"property": "",
+	"from": "",
+	"to": "",
+	"reg": false,
+	"x": 990,
+	"y": 1580,
+	"wires": [
+		["98288255e2fe3dfa"]
+	]
+}, {
+	"id": "e354c06bef83de7c",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "97ead11cafbe1cfa",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Set time",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 600,
+	"y": 1020,
+	"wires": [
+		["7ad78836429c045e"]
+	]
+}, {
+	"id": "8a1884a12b422229",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "97ead11cafbe1cfa",
+	"name": "Timezone",
+	"func": "/*\n{\n  timezone: \"Europe/London\",\n  ntp: [\"1.2.3.4\",\"2.3.4.5\"]\n}\n*/\n\nmsg.payload = {\n    timezone: \"Europe/Stockholm\"\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 380,
+	"y": 1020,
+	"wires": [
+		["e354c06bef83de7c"]
+	]
+}, {
+	"id": "f61050dcfe57c39e",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 1",
+	"links": ["498295a502c53c4d"],
+	"x": 235,
+	"y": 360,
+	"wires": [
+		["cedf593c6a7aef3e"]
+	]
+}, {
+	"id": "0925c70efc1b8655",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 1",
+	"mode": "link",
+	"links": ["e66860cced9ac8cd"],
+	"x": 805,
+	"y": 480,
+	"wires": []
+}, {
+	"id": "e66860cced9ac8cd",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 2",
+	"links": ["0925c70efc1b8655"],
+	"x": 225,
+	"y": 720,
+	"wires": [
+		["eed5a4c7d3939f17"]
+	]
+}, {
+	"id": "2bc4e8bb4ea15e0b",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 2",
+	"mode": "link",
+	"links": ["10e8715146383884"],
+	"x": 955,
+	"y": 760,
+	"wires": []
+}, {
+	"id": "10e8715146383884",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 3",
+	"links": ["2bc4e8bb4ea15e0b"],
+	"x": 255,
+	"y": 1020,
+	"wires": [
+		["8a1884a12b422229"]
+	]
+}, {
+	"id": "7ad78836429c045e",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 3",
+	"mode": "link",
+	"links": ["3526f9f3c5106797"],
+	"x": 815,
+	"y": 1020,
+	"wires": []
+}, {
+	"id": "3526f9f3c5106797",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 4",
+	"links": ["7ad78836429c045e"],
+	"x": 255,
+	"y": 1280,
+	"wires": [
+		["aeda80e0196141ce"]
+	]
+}, {
+	"id": "06f67f92e48f3ed7",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 4",
+	"mode": "link",
+	"links": ["9598319bac7ab372"],
+	"x": 785,
+	"y": 1340,
+	"wires": []
+}, {
+	"id": "9598319bac7ab372",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 5",
+	"links": ["06f67f92e48f3ed7"],
+	"x": 245,
+	"y": 1580,
+	"wires": [
+		["b89b82eae389aea0"]
+	]
+}, {
+	"id": "498295a502c53c4d",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 6",
+	"mode": "link",
+	"links": ["f61050dcfe57c39e"],
+	"x": 1005,
+	"y": 140,
+	"wires": []
+}, {
+	"id": "9db8b20c7b0811f0",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 7",
+	"mode": "link",
+	"links": ["816c4e57754346ff"],
+	"x": 1135,
+	"y": 1660,
+	"wires": []
+}, {
+	"id": "1bfe9fdeb96a430c",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 6",
+	"links": ["024a96ba864f44f1"],
+	"x": 345,
+	"y": 3340,
+	"wires": [
+		["62b1147298b892fa"]
+	]
+}, {
+	"id": "62b1147298b892fa",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Device Info",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 650,
+	"y": 3340,
+	"wires": [
+		["0be82ee69b679e97"]
+	]
+}, {
+	"id": "ba4f9ecaa50fc32d",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 8",
+	"links": ["69cc836cc4c42a90", "3e33c74ae937c8c3"],
+	"x": 255,
+	"y": 2260,
+	"wires": [
+		["b6b0199269a15564"]
+	]
+}, {
+	"id": "f1efac2ef5218e49",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 4",
+	"mode": "link",
+	"links": ["fb2d2a3491dbcd04"],
+	"x": 1425,
+	"y": 2520,
+	"wires": []
+}, {
+	"id": "bce5ad96a0ba5468",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "d59a9bd1a415a250",
+	"name": "Set Accounts.  Device may be allready set or factory default",
+	"info": "",
+	"x": 520,
+	"y": 300,
+	"wires": []
+}, {
+	"id": "eed5a4c7d3939f17",
+	"type": "switch",
+	"z": "e15fac10c62cf84d",
+	"g": "30b4c8c5f8232864",
+	"name": "If set",
+	"property": "name.length",
+	"propertyType": "msg",
+	"rules": [{
+		"t": "gt",
+		"v": "0",
+		"vt": "num"
+	}, {
+		"t": "else"
+	}],
+	"checkall": "true",
+	"repair": false,
+	"outputs": 2,
+	"x": 370,
+	"y": 720,
+	"wires": [
+		["f59daf2c7bcc8cce"],
+		["d954db7fb8351626"]
+	]
+}, {
+	"id": "978fd7fb69ada307",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "30b4c8c5f8232864",
+	"name": "Set name for host, PnP and Bonjour",
+	"info": "",
+	"x": 450,
+	"y": 660,
+	"wires": []
+}, {
+	"id": "816c4e57754346ff",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 9",
+	"links": ["9db8b20c7b0811f0", "7fb999c1b5956b26"],
+	"x": 255,
+	"y": 1900,
+	"wires": [
+		["f8697a9ef1ca3513"]
+	]
+}, {
+	"id": "3e33c74ae937c8c3",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 5",
+	"mode": "link",
+	"links": ["ba4f9ecaa50fc32d"],
+	"x": 1315,
+	"y": 2040,
+	"wires": []
+}, {
+	"id": "38c7a162377bb7ea",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "XML",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "handlebars",
+	"syntax": "mustache",
+	"template": "<? xml version = \"1.0\" encoding = \"UTF-8\" ?>\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Header />\n    <Body >\n        <CreateUsers xmlns=\"http://www.onvif.org/ver10/device/wsdl\" xmlns:tt=\"http://www.onvif.org/ver10/schema\">\n            <User>\n                <tt:Username>{{payload.name}}</tt:Username>\n                <tt:Password>{{payload.password}}</tt:Password>\n                <tt:UserLevel>{{payload.privileges}}</tt:UserLevel>\n            </User>\n        </CreateUsers>\n    </Body>\n</Envelope>\n",
+	"output": "str",
+	"x": 830,
+	"y": 1900,
+	"wires": [
+		["665e6cecbf193535"]
+	]
+}, {
+	"id": "f8697a9ef1ca3513",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "ONVIF USER 1",
+	"func": "msg.payload = {\n    name: \"test1\",\n    password: \"test1\",\n    privileges: \"Administrator\",\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 620,
+	"y": 1900,
+	"wires": [
+		["38c7a162377bb7ea"]
+	]
+}, {
+	"id": "665e6cecbf193535",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "Add ONVIF User 1",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/vapix/services",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1050,
+	"y": 1900,
+	"wires": [
+		["f32a77bf16cf8a68"]
+	]
+}, {
+	"id": "a8a47a3e2d4ecd31",
+	"type": "catch",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "",
+	"scope": ["665e6cecbf193535"],
+	"uncaught": false,
+	"x": 410,
+	"y": 1960,
+	"wires": [
+		["f32a77bf16cf8a68"]
+	]
+}, {
+	"id": "ad176434137ca83c",
+	"type": "template",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "XML",
+	"field": "payload",
+	"fieldType": "msg",
+	"format": "handlebars",
+	"syntax": "mustache",
+	"template": "<? xml version = \"1.0\" encoding = \"UTF-8\" ?>\n<Envelope xmlns=\"http://www.w3.org/2003/05/soap-envelope\">\n    <Header />\n    <Body >\n        <CreateUsers xmlns=\"http://www.onvif.org/ver10/device/wsdl\" xmlns:tt=\"http://www.onvif.org/ver10/schema\">\n            <User>\n                <tt:Username>{{payload.name}}</tt:Username>\n                <tt:Password>{{payload.password}}</tt:Password>\n                <tt:UserLevel>{{payload.privileges}}</tt:UserLevel>\n            </User>\n        </CreateUsers>\n    </Body>\n</Envelope>\n",
+	"output": "str",
+	"x": 830,
+	"y": 1960,
+	"wires": [
+		["7c654252d954a855"]
+	]
+}, {
+	"id": "f32a77bf16cf8a68",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "ONVIF USER 2",
+	"func": "msg.payload = {\n    name: \"test2\",\n    password: \"test2\",\n    privileges: \"Administrator\",\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 620,
+	"y": 1960,
+	"wires": [
+		["ad176434137ca83c"]
+	]
+}, {
+	"id": "7c654252d954a855",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "Add ONVIF User 2",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/vapix/services",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1050,
+	"y": 1960,
+	"wires": [
+		["6efe86438de0260a"]
+	]
+}, {
+	"id": "8e88c16dada07222",
+	"type": "catch",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "",
+	"scope": ["7c654252d954a855"],
+	"uncaught": false,
+	"x": 920,
+	"y": 2040,
+	"wires": [
+		["6efe86438de0260a"]
+	]
+}, {
+	"id": "50782c9d3df8cb42",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "Set ONVIF users",
+	"info": "",
+	"x": 420,
+	"y": 1860,
+	"wires": []
+}, {
+	"id": "f13f53365bf242a0",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "38ec015ec12b6366",
+	"name": "Enable SSH",
+	"info": "",
+	"x": 390,
+	"y": 1220,
+	"wires": []
+}, {
+	"id": "36e46166374ac1eb",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "97ead11cafbe1cfa",
+	"name": "Timezone                                            ",
+	"info": "",
+	"x": 380,
+	"y": 960,
+	"wires": []
+}, {
+	"id": "09601b097bc04402",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "82df3c3c98ac7505",
+	"name": "Set access policy (HTTP and/or HTTP)",
+	"info": "",
+	"x": 470,
+	"y": 1520,
+	"wires": []
+}, {
+	"id": "c41f074789803758",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Install ACAP",
+	"acap": "",
+	"filename": "",
+	"x": 2210,
+	"y": 2980,
+	"wires": [
+		["93e4fdfda8236924"]
+	]
+}, {
+	"id": "4645e267682deb82",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Motion Guard Installed",
+	"preset": "1af13a1540441ff9",
+	"action": "ACAP Status",
+	"acap": "motionguard",
+	"filename": "",
+	"x": 1770,
+	"y": 2920,
+	"wires": [
+		["93e4fdfda8236924"]
+	]
+}, {
+	"id": "eb4b4184965ea208",
+	"type": "catch",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Install",
+	"scope": ["4645e267682deb82"],
+	"uncaught": false,
+	"x": 1710,
+	"y": 2980,
+	"wires": [
+		["fc6a322d5b539f31"]
+	]
+}, {
+	"id": "93e4fdfda8236924",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Start MotionGuard",
+	"preset": "1af13a1540441ff9",
+	"action": "Start ACAP",
+	"acap": "motionguard",
+	"filename": "",
+	"x": 2410,
+	"y": 2920,
+	"wires": [
+		["6c5984415ef6d969"]
+	]
+}, {
+	"id": "f27f30080d64c7e0",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 10",
+	"links": [],
+	"x": 1525,
+	"y": 2920,
+	"wires": [
+		["4645e267682deb82"]
+	]
+}, {
+	"id": "fdb58a0e505684bb",
+	"type": "inject",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Download",
+	"props": [{
+		"p": "payload"
+	}, {
+		"p": "topic",
+		"vt": "str"
+	}],
+	"repeat": "",
+	"crontab": "",
+	"once": false,
+	"onceDelay": 0.1,
+	"topic": "",
+	"payload": "",
+	"payloadType": "date",
+	"x": 1680,
+	"y": 2820,
+	"wires": [
+		["a17df90923f30f69", "14ee848f70a09b4e"]
+	]
+}, {
+	"id": "a17df90923f30f69",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Motion Guard ArmVh7",
+	"method": "GET",
+	"ret": "bin",
+	"paytoqs": "ignore",
+	"url": "http://ftp.axis.com/pub_soft/applications/ACAP/AXIS_Motion_Guard/2_3_6/ARTPEC-7/2242/AXIS_Motion_Guard_2_3_6.eap",
+	"tls": "",
+	"persist": false,
+	"proxy": "",
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 1910,
+	"y": 2820,
+	"wires": [
+		["595fdeac73435c3a"]
+	]
+}, {
+	"id": "595fdeac73435c3a",
+	"type": "file",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "",
+	"filename": "/data/files/MotionGuard-armv7hf.eap",
+	"filenameType": "str",
+	"appendNewline": false,
+	"createDir": true,
+	"overwriteFile": "true",
+	"encoding": "none",
+	"x": 2220,
+	"y": 2820,
+	"wires": [
+		[]
+	]
+}, {
+	"id": "14ee848f70a09b4e",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Motion Guard AARCH-64",
+	"method": "GET",
+	"ret": "bin",
+	"paytoqs": "ignore",
+	"url": "http://ftp.axis.com/pub_soft/applications/ACAP/AXIS_Motion_Guard/2_3_6/ARTPEC-8/2245/AXIS_Motion_Guard_2_3_6.eap",
+	"tls": "",
+	"persist": false,
+	"proxy": "",
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 1910,
+	"y": 2860,
+	"wires": [
+		["82ef52d15efa5320"]
+	]
+}, {
+	"id": "82ef52d15efa5320",
+	"type": "file",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "",
+	"filename": "/data/files/MotionGuard-aarch64.eap",
+	"filenameType": "str",
+	"appendNewline": false,
+	"createDir": true,
+	"overwriteFile": "true",
+	"encoding": "none",
+	"x": 2220,
+	"y": 2860,
+	"wires": [
+		[]
+	]
+}, {
+	"id": "fc6a322d5b539f31",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Device Info",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1870,
+	"y": 2980,
+	"wires": [
+		["a113c394ae6d308e"]
+	]
+}, {
+	"id": "a113c394ae6d308e",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "filename",
+	"func": "msg.filename = null;\nif (msg.payload.platform === \"armv7hf\")\n    msg.filename = \"/data/files/MotionGuard-armv7hf.eap\";\nif (msg.payload.platform === \"aarch64\")\n    msg.filename = \"/data/files/MotionGuard-aarch.eap\";\n\nreturn msg;",
+	"outputs": 1,
+	"timeout": "",
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 2040,
+	"y": 2980,
+	"wires": [
+		["c41f074789803758"]
+	]
+}, {
+	"id": "6c5984415ef6d969",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 8",
+	"mode": "link",
+	"links": [],
+	"x": 2575,
+	"y": 2920,
+	"wires": []
+}, {
+	"id": "1443df25890ed3e7",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "7285430e159a17ba",
+	"name": "Install Axis Motion Guard",
+	"info": "",
+	"x": 1730,
+	"y": 2760,
+	"wires": []
+}, {
+	"id": "ab568ffc61480c89",
+	"type": "inject",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "Download",
+	"props": [{
+		"p": "payload"
+	}, {
+		"p": "topic",
+		"vt": "str"
+	}],
+	"repeat": "",
+	"crontab": "",
+	"once": false,
+	"onceDelay": 0.1,
+	"topic": "",
+	"payload": "",
+	"payloadType": "date",
+	"x": 1720,
+	"y": 2280,
+	"wires": [
+		["7e6adc59e4fcd597"]
+	]
+}, {
+	"id": "7e6adc59e4fcd597",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "",
+	"method": "GET",
+	"ret": "bin",
+	"paytoqs": "ignore",
+	"url": "https://blogsenclasse.fr/23-bourganeuf-college-jeanpicartledoux-club-journal/wp-content/uploads/sites/361/2020/12/kisspng-megadeth-dave-tumblr-5bae41dad049e2.5155379115381467788532-min.jpg",
+	"tls": "",
+	"persist": false,
+	"proxy": "",
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 1910,
+	"y": 2280,
+	"wires": [
+		["3545703241551da6"]
+	]
+}, {
+	"id": "3545703241551da6",
+	"type": "file",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "",
+	"filename": "files/smiley.png",
+	"filenameType": "str",
+	"appendNewline": false,
+	"createDir": true,
+	"overwriteFile": "true",
+	"encoding": "none",
+	"x": 2120,
+	"y": 2280,
+	"wires": [
+		[]
+	]
+}, {
+	"id": "9973f43957aeb37a",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "Image Overlay",
+	"info": "",
+	"x": 1720,
+	"y": 2220,
+	"wires": []
+}, {
+	"id": "169f414500e405bb",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "Upload Overlay",
+	"func": "msg.payload = {\n    scale: true\n//    alpha: 0\n}\n\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1740,
+	"y": 2360,
+	"wires": [
+		["de41108a1b10579c"]
+	]
+}, {
+	"id": "de41108a1b10579c",
+	"type": "Axis camera",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Upload overlay",
+	"resolution": "640x360",
+	"output": "Base64",
+	"filename": "/home/fred/files/smiley.png",
+	"options": "",
+	"data": "",
+	"x": 2000,
+	"y": 2360,
+	"wires": [
+		["1fa6068d949bbeb5"]
+	]
+}, {
+	"id": "1fa6068d949bbeb5",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "Set Overlay",
+	"func": "msg.payload = {\n    \"apiVersion\":\"1.6\",\n    \"method\":\"addImage\",\n    \"params\":{\n        \"camera\":1,\n        \"overlayPath\":\"/etc/overlays/smiley.ovl\",\n        \"position\":\"bottomRight\"\n    }\n}\n\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1730,
+	"y": 2440,
+	"wires": [
+		["dd9d4021062a0355"]
+	]
+}, {
+	"id": "dd9d4021062a0355",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "9e0a2924d3f75cd4",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 2010,
+	"y": 2440,
+	"wires": [
+		["aafe4ec3d07c3fb8"]
+	]
+}, {
+	"id": "7e617f0392379983",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 11",
+	"links": [],
+	"x": 1515,
+	"y": 2360,
+	"wires": [
+		["169f414500e405bb"]
+	]
+}, {
+	"id": "aafe4ec3d07c3fb8",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 9",
+	"mode": "link",
+	"links": [],
+	"x": 2285,
+	"y": 2440,
+	"wires": []
+}, {
+	"id": "aaa6ca31e8bc3ae4",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "dynamicoverlay.cgi",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1030,
+	"y": 2400,
+	"wires": [
+		["d507cac1679a16db"]
+	]
+}, {
+	"id": "d86feeacb8712942",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Top-Right Overlay",
+	"func": "/*\nAddText Dynamic Overlay API\nhttps://www.axis.com/vapix-library/subjects/t10175981/section/t10007638/display?section=t10007638-t10007638\n*/\n\nmsg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"method\": \"addText\",\n    \"params\": {\n        \"text\": \"#n\",\n        \"camera\": 1,\n        \"position\": \"topRight\",\n        \"reference\": \"channel\",\n        \"textColor\": \"white\",\n        \"textBGColor\": \"transparent\",\n        \"textOLColor\": \"transparent\",\n        \"fontSize\": 48\n    }\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 790,
+	"y": 2460,
+	"wires": [
+		["48b2f3f9d9f38d06"]
+	]
+}, {
+	"id": "48b2f3f9d9f38d06",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "dynamicoverlay.cgi",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1030,
+	"y": 2460,
+	"wires": [
+		["bcb212ab719c6d76"]
+	]
+}, {
+	"id": "d507cac1679a16db",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Check error",
+	"func": "if( msg.payload.hasOwnProperty(\"error\") ) {\n    node.error( msg.payload.error.message, msg);\n    return;\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1250,
+	"y": 2400,
+	"wires": [
+		["e864970b3d4e6821"]
+	]
+}, {
+	"id": "f1ffd8843aff0ca9",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Add TopLeft Overlay",
+	"func": "msg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"method\": \"addText\",\n    \"params\": {\n        \"text\": \"%F %X\",\n        \"camera\": 1,\n        \"position\": \"topLeft\",\n        \"reference\": \"channel\",\n        \"textColor\": \"white\",\n        \"textBGColor\": \"black\",\n        \"textOLColor\": \"transparent\",\n        \"fontSize\": 48\n    }\n}\nreturn msg;",
+	"outputs": 1,
+	"timeout": "",
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 800,
+	"y": 2400,
+	"wires": [
+		["aaa6ca31e8bc3ae4"]
+	]
+}, {
+	"id": "bcb212ab719c6d76",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Check error",
+	"func": "if( msg.payload.hasOwnProperty(\"error\") ) {\n    node.error( msg.payload.error.message, msg);\n    return;\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1250,
+	"y": 2460,
+	"wires": [
+		["ba81896ff1172717"]
+	]
+}, {
+	"id": "b6b0199269a15564",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "List Overlay",
+	"func": "msg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"method\": \"list\",\n    \"params\": {}\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 400,
+	"y": 2260,
+	"wires": [
+		["ca5bcbb2d96271d6"]
+	]
+}, {
+	"id": "c47caa16f6a3bba4",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Check error",
+	"func": "if( msg.payload.hasOwnProperty(\"error\") ) {\n    node.error( msg.payload.error.message, msg);\n    return;\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 790,
+	"y": 2260,
+	"wires": [
+		["c070f99f874313c4"]
+	]
+}, {
+	"id": "ca5bcbb2d96271d6",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "dynamicoverlay.cgi",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 590,
+	"y": 2260,
+	"wires": [
+		["c47caa16f6a3bba4"]
+	]
+}, {
+	"id": "c070f99f874313c4",
+	"type": "change",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "textOverlays",
+	"rules": [{
+		"t": "set",
+		"p": "imageOverlays",
+		"pt": "msg",
+		"to": "payload.imageOverlays",
+		"tot": "msg"
+	}, {
+		"t": "set",
+		"p": "payload",
+		"pt": "msg",
+		"to": "payload.data.textOverlays",
+		"tot": "msg"
+	}],
+	"action": "",
+	"property": "",
+	"from": "",
+	"to": "",
+	"reg": false,
+	"x": 970,
+	"y": 2260,
+	"wires": [
+		["bcbdcd8b574f5e5f"]
+	]
+}, {
+	"id": "eec9112e750a02d9",
+	"type": "split",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "",
+	"splt": "\\n",
+	"spltType": "str",
+	"arraySplt": 1,
+	"arraySpltType": "len",
+	"stream": false,
+	"addname": "",
+	"x": 560,
+	"y": 2320,
+	"wires": [
+		["6d1b419af6015a73"]
+	]
+}, {
+	"id": "6d1b419af6015a73",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Remove",
+	"func": "msg.payload = {\n    \"apiVersion\": \"1.6\",\n    \"method\": \"remove\",\n    \"params\": {\n         \"identity\": msg.payload.identity \n    }\n}\nreturn msg;",
+	"outputs": 1,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 710,
+	"y": 2320,
+	"wires": [
+		["48677cdba54c5c80"]
+	]
+}, {
+	"id": "48677cdba54c5c80",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "dynamicoverlay.cgi",
+	"preset": "1af13a1540441ff9",
+	"action": "HTTP Post",
+	"cgi": "/axis-cgi/dynamicoverlay/dynamicoverlay.cgi",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 910,
+	"y": 2320,
+	"wires": [
+		["bdbff66c812e4645"]
+	]
+}, {
+	"id": "bdbff66c812e4645",
+	"type": "join",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "",
+	"mode": "auto",
+	"build": "object",
+	"property": "payload",
+	"propertyType": "msg",
+	"key": "topic",
+	"joiner": "\\n",
+	"joinerType": "str",
+	"accumulate": "false",
+	"timeout": "",
+	"count": "",
+	"reduceRight": false,
+	"x": 1110,
+	"y": 2320,
+	"wires": [
+		["e92fa5a324ddde95"]
+	]
+}, {
+	"id": "bcbdcd8b574f5e5f",
+	"type": "switch",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Found previous",
+	"property": "payload.length",
+	"propertyType": "msg",
+	"rules": [{
+		"t": "eq",
+		"v": "0",
+		"vt": "num"
+	}, {
+		"t": "else"
+	}],
+	"checkall": "true",
+	"repair": false,
+	"outputs": 2,
+	"x": 1180,
+	"y": 2260,
+	"wires": [
+		["e92fa5a324ddde95"],
+		["eec9112e750a02d9"]
+	]
+}, {
+	"id": "2aa613cbba224d13",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Add Overlay 1",
+	"info": "",
+	"x": 400,
+	"y": 2400,
+	"wires": []
+}, {
+	"id": "2a87f33eea1193b4",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Add Overlay 2",
+	"info": "",
+	"x": 410,
+	"y": 2460,
+	"wires": []
+}, {
+	"id": "3d93e04c82378823",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "Remove previous overlays and set overlays",
+	"info": "",
+	"x": 500,
+	"y": 2220,
+	"wires": []
+}, {
+	"id": "e864970b3d4e6821",
+	"type": "delay",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "",
+	"pauseType": "delay",
+	"timeout": "3",
+	"timeoutUnits": "seconds",
+	"rate": "1",
+	"nbRateUnits": "1",
+	"rateUnits": "second",
+	"randomFirst": "1",
+	"randomLast": "5",
+	"randomUnits": "seconds",
+	"drop": false,
+	"allowrate": false,
+	"outputs": 1,
+	"x": 580,
+	"y": 2460,
+	"wires": [
+		["d86feeacb8712942"]
+	]
+}, {
+	"id": "a3319e79f4249931",
+	"type": "delay",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "",
+	"pauseType": "delay",
+	"timeout": "7",
+	"timeoutUnits": "seconds",
+	"rate": "1",
+	"nbRateUnits": "1",
+	"rateUnits": "second",
+	"randomFirst": "1",
+	"randomLast": "5",
+	"randomUnits": "seconds",
+	"drop": false,
+	"allowrate": false,
+	"outputs": 1,
+	"x": 580,
+	"y": 2400,
+	"wires": [
+		["f1ffd8843aff0ca9"]
+	]
+}, {
+	"id": "ba81896ff1172717",
+	"type": "delay",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "",
+	"pauseType": "delay",
+	"timeout": "3",
+	"timeoutUnits": "seconds",
+	"rate": "1",
+	"nbRateUnits": "1",
+	"rateUnits": "second",
+	"randomFirst": "1",
+	"randomLast": "5",
+	"randomUnits": "seconds",
+	"drop": false,
+	"allowrate": false,
+	"outputs": 1,
+	"x": 1220,
+	"y": 2520,
+	"wires": [
+		["f1efac2ef5218e49"]
+	]
+}, {
+	"id": "9798cf9f9cba6d88",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "ec7b5afc46b49773",
+	"name": "It seems delays are needed as camera blocks requests after overlay has changed",
+	"info": "",
+	"x": 1070,
+	"y": 2600,
+	"wires": []
+}, {
+	"id": "4b1ad7c2cc77f4cc",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "a2c47a84286e7c3e",
+	"name": "On error, user already exists.",
+	"info": "",
+	"x": 1060,
+	"y": 1860,
+	"wires": []
+}, {
+	"id": "fb2d2a3491dbcd04",
+	"type": "link in",
+	"z": "e15fac10c62cf84d",
+	"name": "link in 12",
+	"links": ["f1efac2ef5218e49"],
+	"x": 265,
+	"y": 2920,
+	"wires": [
+		["6301df50827ca6db"]
+	]
+}, {
+	"id": "024a96ba864f44f1",
+	"type": "link out",
+	"z": "e15fac10c62cf84d",
+	"name": "link out 10",
+	"mode": "link",
+	"links": ["1bfe9fdeb96a430c"],
+	"x": 1315,
+	"y": 2920,
+	"wires": []
+}, {
+	"id": "069d34490e4423b4",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Install ACAP",
+	"acap": "",
+	"filename": "",
+	"x": 970,
+	"y": 2980,
+	"wires": [
+		["76c92aa64e5c46a9"]
+	]
+}, {
+	"id": "6301df50827ca6db",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Nodered installed",
+	"preset": "1af13a1540441ff9",
+	"action": "ACAP Status",
+	"acap": "Nodered",
+	"filename": "",
+	"x": 490,
+	"y": 2920,
+	"wires": [
+		["76c92aa64e5c46a9"]
+	]
+}, {
+	"id": "df4a4d87968796f2",
+	"type": "catch",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Install",
+	"scope": ["6301df50827ca6db"],
+	"uncaught": false,
+	"x": 450,
+	"y": 2980,
+	"wires": [
+		["0bb974026c599352"]
+	]
+}, {
+	"id": "76c92aa64e5c46a9",
+	"type": "Axis ACAP",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Start Nodered",
+	"preset": "1af13a1540441ff9",
+	"action": "Start ACAP",
+	"acap": "Nodered",
+	"filename": "",
+	"x": 1140,
+	"y": 2920,
+	"wires": [
+		["024a96ba864f44f1"]
+	]
+}, {
+	"id": "2af834a49f049f4b",
+	"type": "inject",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Download",
+	"props": [{
+		"p": "payload"
+	}, {
+		"p": "topic",
+		"vt": "str"
+	}],
+	"repeat": "",
+	"crontab": "",
+	"once": false,
+	"onceDelay": 0.1,
+	"topic": "",
+	"payload": "",
+	"payloadType": "date",
+	"x": 420,
+	"y": 2820,
+	"wires": [
+		["e36b4741a73ac4c3"]
+	]
+}, {
+	"id": "e36b4741a73ac4c3",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Download Node-RED Installer",
+	"method": "GET",
+	"ret": "bin",
+	"paytoqs": "ignore",
+	"url": "https://acap.juhlin.me/package/Nodered",
+	"tls": "16a9661c34f2a51f",
+	"persist": false,
+	"proxy": "",
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 670,
+	"y": 2820,
+	"wires": [
+		["d4688851ba596b6a"]
+	]
+}, {
+	"id": "0bb974026c599352",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Device Info",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 610,
+	"y": 2980,
+	"wires": [
+		["b64b96f7b5d2198d"]
+	]
+}, {
+	"id": "b64b96f7b5d2198d",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "filename",
+	"func": "msg.filename = null;\nif (msg.payload.platform === \"armv7hf\")\n    msg.filename = \"/data/files/Node-RED_4_0_0_armv7hf.eap\";\nif (msg.payload.platform === \"aarch64\")\n    msg.filename = \"/data/files/Node-RED_4_0_0_aarch64.eap\";\n\nreturn msg;",
+	"outputs": 1,
+	"timeout": "",
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 800,
+	"y": 2980,
+	"wires": [
+		["069d34490e4423b4"]
+	]
+}, {
+	"id": "5c47acb8194fac18",
+	"type": "comment",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Install Node-RED",
+	"info": "",
+	"x": 450,
+	"y": 2760,
+	"wires": []
+}, {
+	"id": "d4688851ba596b6a",
+	"type": "zip",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "",
+	"mode": "decompress",
+	"filename": "",
+	"compressionlevel": 6,
+	"outasstring": false,
+	"x": 930,
+	"y": 2820,
+	"wires": [
+		["36629888ab22174f", "28f04bdd364771cf"]
+	]
+}, {
+	"id": "36629888ab22174f",
+	"type": "split",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "",
+	"splt": "\\n",
+	"spltType": "str",
+	"arraySplt": 1,
+	"arraySpltType": "len",
+	"stream": false,
+	"addname": "",
+	"x": 590,
+	"y": 2860,
+	"wires": [
+		["3e76439006d09e90"]
+	]
+}, {
+	"id": "3e76439006d09e90",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "Files",
+	"func": "msg.filename = \"/data/files/\" + msg.payload.filename;\nmsg.payload = msg.payload.payload;\nreturn msg;",
+	"outputs": 1,
+	"timeout": "",
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 730,
+	"y": 2860,
+	"wires": [
+		["89b3a6fb674d2401"]
+	]
+}, {
+	"id": "89b3a6fb674d2401",
+	"type": "file",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "",
+	"filename": "filename",
+	"filenameType": "msg",
+	"appendNewline": false,
+	"createDir": true,
+	"overwriteFile": "true",
+	"encoding": "none",
+	"x": 920,
+	"y": 2860,
+	"wires": [
+		[]
+	]
+}, {
+	"id": "28f04bdd364771cf",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"g": "abff311c34cba438",
+	"name": "debug 143",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "false",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 1160,
+	"y": 2820,
+	"wires": []
+}, {
+	"id": "dd983e5b7fbd6118",
+	"type": "inject",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"props": [{
+		"p": "payload"
+	}, {
+		"p": "topic",
+		"vt": "str"
+	}, {
+		"p": "address",
+		"v": "democam.juhlin.me",
+		"vt": "str"
+	}, {
+		"p": "user",
+		"v": "nodered",
+		"vt": "str"
+	}, {
+		"p": "password",
+		"v": "rednode",
+		"vt": "str"
+	}],
+	"repeat": "",
+	"crontab": "",
+	"once": false,
+	"onceDelay": 0.1,
+	"topic": "",
+	"payload": "",
+	"payloadType": "date",
+	"x": 1460,
+	"y": 3180,
+	"wires": [
+		["63f584154f4b8a36"]
+	]
+}, {
+	"id": "63f584154f4b8a36",
+	"type": "Axis device",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"preset": "1af13a1540441ff9",
+	"action": "Device Info",
+	"cgi": "",
+	"data": "",
+	"options": "",
+	"filename": "",
+	"x": 1670,
+	"y": 3180,
+	"wires": [
+		["ed8df39e05ca8cb5"]
+	]
+}, {
+	"id": "172e1248df8a3ad9",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"name": "Error",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "payload",
+	"targetType": "msg",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 2470,
+	"y": 3180,
+	"wires": []
+}, {
+	"id": "ed8df39e05ca8cb5",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "Init URL",
+	"func": "msg.ftp = \"http://ftp.axis.com/pub_soft/MPQT/\" + msg.payload.model + \"/latest/\";\nmsg.firmware = msg.payload.firmware;\nmsg.model = msg.payload.model;\nmsg.acap = msg.payload.model + \".bin\";\n\nmsg.url = msg.ftp + \"ver.txt\";\n\nreturn msg;",
+	"outputs": 1,
+	"timeout": 0,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1860,
+	"y": 3180,
+	"wires": [
+		["8be18fd2f399395c"]
+	]
+}, {
+	"id": "8be18fd2f399395c",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"method": "GET",
+	"ret": "txt",
+	"paytoqs": false,
+	"url": "",
+	"persist": false,
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 2050,
+	"y": 3180,
+	"wires": [
+		["181160d509c0ec43"]
+	]
+}, {
+	"id": "181160d509c0ec43",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "Error",
+	"func": "if( msg.statusCode >= 400 ) {\n    msg.payload = \"Invalid URL for \" + msg.model + \"\\n\" + msg.url;\n    node.send([null,msg]);\n}\nnode.send([null,msg]);",
+	"outputs": 2,
+	"timeout": 0,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 2250,
+	"y": 3180,
+	"wires": [
+		["172e1248df8a3ad9"],
+		["215c3e824477c583"]
+	]
+}, {
+	"id": "215c3e824477c583",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "Needs Update",
+	"func": "if( msg.payload === msg.firmware ) {\n    msg.payload = msg.model + \" is already upto date\";\n    node.send([msg,null]);\n}\nnode.send([[null,msg]]);\n",
+	"outputs": 2,
+	"timeout": 0,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1690,
+	"y": 3240,
+	"wires": [
+		["9aef0da9f7ce09eb", "e8281d6fc84a8c4a"],
+		[]
+	]
+}, {
+	"id": "9aef0da9f7ce09eb",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"name": "No update needed",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "payload",
+	"targetType": "msg",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 1980,
+	"y": 3240,
+	"wires": []
+}, {
+	"id": "cb7a5744fee422a1",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"name": "debug 144",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "url",
+	"targetType": "msg",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 1990,
+	"y": 3380,
+	"wires": []
+}, {
+	"id": "e8281d6fc84a8c4a",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "Download request",
+	"func": "msg.url = msg.ftp + msg.model + \".bin\"\nreturn msg;",
+	"outputs": 1,
+	"timeout": 0,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 1700,
+	"y": 3300,
+	"wires": [
+		["cb7a5744fee422a1", "5b1d47206d16bf0e"]
+	]
+}, {
+	"id": "5b1d47206d16bf0e",
+	"type": "http request",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"method": "GET",
+	"ret": "bin",
+	"paytoqs": "ignore",
+	"url": "",
+	"tls": "",
+	"persist": false,
+	"proxy": "",
+	"insecureHTTPParser": false,
+	"authType": "",
+	"senderr": false,
+	"headers": [],
+	"x": 1940,
+	"y": 3300,
+	"wires": [
+		["cfe14108183ea6f6"]
+	]
+}, {
+	"id": "cfe14108183ea6f6",
+	"type": "function",
+	"z": "e15fac10c62cf84d",
+	"name": "Filename",
+	"func": "msg.filename = \"/data/files/\" + msg.model + \".bin\";\nreturn msg;",
+	"outputs": 1,
+	"timeout": 0,
+	"noerr": 0,
+	"initialize": "",
+	"finalize": "",
+	"libs": [],
+	"x": 2110,
+	"y": 3300,
+	"wires": [
+		["0de37bb1362e893f"]
+	]
+}, {
+	"id": "0de37bb1362e893f",
+	"type": "file",
+	"z": "e15fac10c62cf84d",
+	"name": "",
+	"filename": "filename",
+	"filenameType": "str",
+	"appendNewline": false,
+	"createDir": true,
+	"overwriteFile": "false",
+	"encoding": "none",
+	"x": 2280,
+	"y": 3300,
+	"wires": [
+		["011d2118ccffcb86"]
+	]
+}, {
+	"id": "011d2118ccffcb86",
+	"type": "debug",
+	"z": "e15fac10c62cf84d",
+	"name": "debug 145",
+	"active": true,
+	"tosidebar": true,
+	"console": false,
+	"tostatus": false,
+	"complete": "false",
+	"statusVal": "",
+	"statusType": "auto",
+	"x": 2460,
+	"y": 3300,
+	"wires": []
+}, {
+	"id": "1af13a1540441ff9",
+	"type": "Device Access",
+	"name": "Main account",
+	"address": "",
+	"protocol": "http"
+}, {
+	"id": "16a9661c34f2a51f",
+	"type": "tls-config",
+	"name": "Verify",
+	"cert": "",
+	"key": "",
+	"ca": "",
+	"certname": "",
+	"keyname": "",
+	"caname": "",
+	"servername": "",
+	"verifyservercert": true,
+	"alpnprotocol": ""
+}]
