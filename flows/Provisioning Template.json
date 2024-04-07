@@ -4540,7 +4540,7 @@
             "2f1d487d78f1ef81"
         ],
         "x": 274,
-        "y": 79,
+        "y": 139,
         "w": 712,
         "h": 202
     },
@@ -4567,7 +4567,7 @@
             "2df14614c63a0f70"
         ],
         "x": 274,
-        "y": 339,
+        "y": 399,
         "w": 552,
         "h": 262
     },
@@ -4593,7 +4593,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 120,
-        "y": 180,
+        "y": 240,
         "wires": [
             [
                 "fb255cfa555a8da1"
@@ -4605,7 +4605,7 @@
         "type": "template",
         "z": "326c4a626204f486",
         "g": "7d2a0e11852d6272",
-        "name": "System Config",
+        "name": "Device Config",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
@@ -4613,7 +4613,7 @@
         "template": "{\n    \"accounts\": [\n        {\n            \"name\": \"root\",\n            \"password\": \"pass\",\n            \"privileges\": \"Admin\"\n        }\n    ],\n    \"timezone\": \"Europe/Stockholm\",\n    \"zipstream\": {\n        \"strength\": 20,\n        \"minfps\": 15\n    },\n    \"tls\": {\n        \"policy\": \"HttpAndHttps\"\n    },\n    \"textOverlays\": [\n        {\n            \"text\": \"%F %X\",\n            \"position\": \"topLeft\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"black\",\n            \"fontSize\": 48\n        },\n        {\n            \"text\": \"#n\",\n            \"position\": \"topRight\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"transparent\",\n            \"fontSize\": 48\n        }\n    ], \n    \"imageOverlay\": {\n        \"filepath\": \"\",\n        \"position\":\"bottomRight\",\n        \"scale\": true,\n        \"alpha\": 0\n    },\n    \"onvif\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        }\n    ],\n    \"mqtt\": {\n        \"address\":\"\",\n        \"user\": \"\",\n        \"password\":\"\",\n        \"publish\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t]\n    },\n    \"ssh\": {\n        \"user\": \"\",\n        \"password\":\"\"\n    },\n    \"acaps\": []\n}\n",
         "output": "json",
         "x": 400,
-        "y": 180,
+        "y": 240,
         "wires": [
             [
                 "06f1570875e71943"
@@ -4641,7 +4641,7 @@
         "to": "",
         "reg": false,
         "x": 610,
-        "y": 180,
+        "y": 240,
         "wires": [
             [
                 "d8eb2f83ff36d2e9"
@@ -4658,10 +4658,10 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "[\n    {\n        \"address\":\"10.13.8.167\",\n        \"properties\": {\n            \"name\":\"democam\"\n        }\n    }\n]\n",
+        "template": "[\n    {\n        \"address\":\"\",\n        \"properties\": {\n            \"name\": \"hostname\"\n        }\n    }\n]\n",
         "output": "json",
         "x": 410,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "0b4544f00b60691a"
@@ -4689,7 +4689,7 @@
         "to": "",
         "reg": false,
         "x": 620,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "2f1d487d78f1ef81"
@@ -4704,7 +4704,7 @@
         "name": "Provisioning",
         "info": "",
         "x": 370,
-        "y": 120,
+        "y": 180,
         "wires": []
     },
     {
@@ -4714,7 +4714,7 @@
         "g": "7d2a0e11852d6272",
         "name": "",
         "x": 860,
-        "y": 240,
+        "y": 300,
         "wires": [
             [
                 "ef523ffae4bf709f"
@@ -4746,7 +4746,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 190,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "14d1bb0d25c5e34e"
@@ -4767,7 +4767,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 560,
+        "y": 620,
         "wires": []
     },
     {
@@ -4788,7 +4788,7 @@
         "senderr": false,
         "headers": [],
         "x": 360,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "36ec9aa9f03fb57b"
@@ -4816,7 +4816,7 @@
         "to": "",
         "reg": false,
         "x": 560,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "0ab143285ae40096"
@@ -4836,7 +4836,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 740,
-        "y": 440,
+        "y": 500,
         "wires": [
             [
                 "5192c645b523eaf1"
@@ -4861,7 +4861,7 @@
         "senderr": false,
         "headers": [],
         "x": 380,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "e77fc24f5b651c0a"
@@ -4889,7 +4889,7 @@
         "to": "",
         "reg": false,
         "x": 560,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "88c34674e1843f3d"
@@ -4909,7 +4909,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 740,
-        "y": 500,
+        "y": 560,
         "wires": [
             [
                 "049df5a9d65afd82"
@@ -4930,7 +4930,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "2df14614c63a0f70"
@@ -4945,7 +4945,7 @@
         "name": "Download MotionGuard",
         "info": "",
         "x": 400,
-        "y": 380,
+        "y": 440,
         "wires": []
     },
     {
@@ -4961,7 +4961,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 660,
-        "y": 560,
+        "y": 620,
         "wires": [
             [
                 "d4d0006e51d687be"
@@ -4982,7 +4982,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1070,
-        "y": 220,
+        "y": 280,
         "wires": []
     },
     {
@@ -4999,7 +4999,17 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1080,
-        "y": 260,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a6147d8c6683a737",
+        "type": "comment",
+        "z": "326c4a626204f486",
+        "name": "Open the subflow \"Provision Axis Devices\" and check readme for documentation",
+        "info": "",
+        "x": 560,
+        "y": 80,
         "wires": []
     }
 ]
