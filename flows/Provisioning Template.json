@@ -28,11 +28,11 @@
                 ]
             },
             {
-                "x": 360,
+                "x": 500,
                 "y": 4140,
                 "wires": [
                     {
-                        "id": "37dea7ee1c18ce88",
+                        "id": "d85803a6276e5e71",
                         "port": 0
                     }
                 ]
@@ -754,7 +754,7 @@
         "z": "239c26887e43f290",
         "g": "78e5b9e77637ac1e",
         "name": "SSH",
-        "func": "if( !msg.config.hasOwnProperty(\"ssh\") || !msg.config.ssh || typeof msg.config.ssh !== \"object\" ) {\n  node.send([null,msg]);\n  return;\n}\n\nif( msg.config.ssh === false || msg.config.ssh === null )\n    msg.payload = false;\nelse    \n    msg.payload = true;\nnode.send([msg,null]);\n",
+        "func": "if( !msg.config.hasOwnProperty(\"ssh\") ) {\n  node.send([null,msg]);\n  return;\n}\n\nif( msg.config.ssh === false || msg.config.ssh === null )\n    msg.payload = false;\nelse    \n    msg.payload = true;\nnode.send([msg,null]);\n",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -891,7 +891,7 @@
         "z": "239c26887e43f290",
         "g": "0c19df79a4395818",
         "name": "Set MQTT Client",
-        "func": "if (!msg.config.hasOwnProperty(\"mqtt\") || !msg.config.mqtt || typeof msg.config.mqtt || typeof msg.config.mqtt !== \"object\" ) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.mqtt.hasOwnProperty(\"address\") || msg.config.mqtt.address.length < 5) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.mqtt.hasOwnProperty(\"port\") )\n    msg.config.mqtt.port = \"1880\";\n\nif (!msg.config.mqtt.hasOwnProperty(\"user\"))\n    msg.config.mqtt.user = \"\";\n\nif (!msg.config.mqtt.hasOwnProperty(\"password\"))\n    msg.config.mqtt.pasword = \"\";\n\nnode.send([msg,null]);",
+        "func": "if (!msg.config.hasOwnProperty(\"mqtt\") || !msg.config.mqtt || typeof msg.config.mqtt !== \"object\" ) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.mqtt.hasOwnProperty(\"address\") || msg.config.mqtt.address.length < 5) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.mqtt.hasOwnProperty(\"port\") )\n    msg.config.mqtt.port = \"1880\";\n\nif (!msg.config.mqtt.hasOwnProperty(\"user\"))\n    msg.config.mqtt.user = \"\";\n\nif (!msg.config.mqtt.hasOwnProperty(\"password\"))\n    msg.config.mqtt.pasword = \"\";\n\nnode.send([msg,null]);",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -1412,7 +1412,7 @@
         "z": "239c26887e43f290",
         "g": "42e180ea108ec9cd",
         "name": "ONVIF USER 1",
-        "func": "if (!msg.config.hasOwnProperty(\"onvif\") || !msg.config.onvif || !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 1 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[0].hasOwnproperty(\"name\") || !msg.config.onvif[0].name || typeof msg.config.onvif[0].name !== \"string\" || msg.config.onvif[0].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[0].hasOwnproperty(\"password\") || !msg.config.onvif[0].password || typeof msg.config.onvif[0].password !== \"string\" || msg.config.onvif[0].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[0];\nnode.send([msg,null]);",
+        "func": "if (!msg.config.hasOwnProperty(\"onvif\") || !msg.config.onvif || !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 1 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[0].hasOwnProperty(\"name\") || !msg.config.onvif[0].name || typeof msg.config.onvif[0].name !== \"string\" || msg.config.onvif[0].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[0].hasOwnProperty(\"password\") || !msg.config.onvif[0].password || typeof msg.config.onvif[0].password !== \"string\" || msg.config.onvif[0].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[0];\nnode.send([msg,null]);",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -1495,7 +1495,7 @@
         "z": "239c26887e43f290",
         "g": "42e180ea108ec9cd",
         "name": "ONVIF USER 2",
-        "func": "if (!msg.config.hasOwnProperty(\"onvif\") ||  !msg.config.onvif ||  !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 2) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.onvif[1].hasOwnproperty(\"name\") || !msg.config.onvif[1].name || typeof msg.config.onvif[1].name !== \"string\" || msg.config.onvif[1].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[1].hasOwnproperty(\"password\") || !msg.config.onvif[1].password || typeof msg.config.onvif[1].password !== \"string\" || msg.config.onvif[1].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[1];\nnode.send([msg, null]);",
+        "func": "if (!msg.config.hasOwnProperty(\"onvif\") ||  !msg.config.onvif ||  !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 2) {\n    node.send([null, msg]);\n    return;\n}\n\nif (!msg.config.onvif[1].hasOwnProperty(\"name\") || !msg.config.onvif[1].name || typeof msg.config.onvif[1].name !== \"string\" || msg.config.onvif[1].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[1].hasOwnProperty(\"password\") || !msg.config.onvif[1].password || typeof msg.config.onvif[1].password !== \"string\" || msg.config.onvif[1].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[1];\nnode.send([msg, null]);",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -1580,7 +1580,7 @@
         "z": "239c26887e43f290",
         "g": "42e180ea108ec9cd",
         "name": "ONVIF USER 3",
-        "func": "if (!msg.config.hasOwnProperty(\"onvif\") ||  !msg.config.onvif || !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 3) {\n    node.send([null, msg]);\n    return;\n}\n\n\nif (!msg.config.onvif[2].hasOwnproperty(\"name\") || !msg.config.onvif[2].name || typeof msg.config.onvif[2].name !== \"string\" || msg.config.onvif[2].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[2].hasOwnproperty(\"password\") || !msg.config.onvif[2].password || typeof msg.config.onvif[2].password !== \"string\" || msg.config.onvif[2].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[2];\nnode.send([msg, null]);",
+        "func": "if (!msg.config.hasOwnProperty(\"onvif\") ||  !msg.config.onvif || !Array.isArray(msg.config.onvif) || msg.config.onvif.length < 3) {\n    node.send([null, msg]);\n    return;\n}\n\n\nif (!msg.config.onvif[2].hasOwnProperty(\"name\") || !msg.config.onvif[2].name || typeof msg.config.onvif[2].name !== \"string\" || msg.config.onvif[2].name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif (!msg.config.onvif[2].hasOwnProperty(\"password\") || !msg.config.onvif[2].password || typeof msg.config.onvif[2].password !== \"string\" || msg.config.onvif[2].password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = msg.config.onvif[2];\nnode.send([msg, null]);",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -3221,7 +3221,9 @@
         "x": 225,
         "y": 4140,
         "wires": [
-            []
+            [
+                "d85803a6276e5e71"
+            ]
         ]
     },
     {
@@ -3254,7 +3256,7 @@
         "z": "239c26887e43f290",
         "g": "78e5b9e77637ac1e",
         "name": "user",
-        "func": "if( !msg.config.ssh.hasOwnProperty(\"user\") || msg.config.ssh.name.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.ssh.hasOwnProperty(\"password\") || msg.config.ssh.password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = {\n    name: msg.config.ssh.user,\n    password: msg.config.ssh.password\n}\nreturn msg;",
+        "func": "if( !msg.config.ssh.hasOwnProperty(\"user\") || msg.config.ssh.user.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.ssh.hasOwnProperty(\"password\") || msg.config.ssh.password.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = {\n    name: msg.config.ssh.user,\n    password: msg.config.ssh.password\n}\nreturn msg;",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -3454,9 +3456,9 @@
         "type": "comment",
         "z": "239c26887e43f290",
         "g": "403724321bfbf304",
-        "name": "xFram.  Enable camer web interface to be included in an HTML iframe",
+        "name": "xFrame.  Enable camer web interface to be included in an HTML iframe",
         "info": "",
-        "x": 490,
+        "x": 500,
         "y": 3500,
         "wires": []
     },
@@ -3508,6 +3510,24 @@
             [
                 "809dfba10581f45b"
             ]
+        ]
+    },
+    {
+        "id": "d85803a6276e5e71",
+        "type": "function",
+        "z": "239c26887e43f290",
+        "name": "Complete",
+        "func": "msg.topic = \"complete\";\nmsg.payload = msg.device.serial + \": Complete\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 4140,
+        "wires": [
+            []
         ]
     },
     {
@@ -4260,9 +4280,9 @@
             "9578fc11726b1b5e",
             "72850669f838e787"
         ],
-        "x": 214,
+        "x": 204,
         "y": 2239,
-        "w": 1452,
+        "w": 1462,
         "h": 207
     },
     {
@@ -4292,9 +4312,9 @@
             "bd0fc5227068d866",
             "ebe981bb609f9fcd"
         ],
-        "x": 214,
+        "x": 204,
         "y": 2039,
-        "w": 1852,
+        "w": 1862,
         "h": 167
     },
     {
@@ -4428,9 +4448,9 @@
             "cd070c3e14ac0112",
             "558507635359d4d5"
         ],
-        "x": 204,
+        "x": 214,
         "y": 559,
-        "w": 982,
+        "w": 972,
         "h": 207
     },
     {
@@ -4479,9 +4499,9 @@
             "96350bb5e54dbf2e",
             "262a1f163bc63220"
         ],
-        "x": 214,
+        "x": 204,
         "y": 3459,
-        "w": 832,
+        "w": 842,
         "h": 227
     },
     {
@@ -4541,7 +4561,7 @@
         ],
         "x": 274,
         "y": 139,
-        "w": 712,
+        "w": 722,
         "h": 202
     },
     {
@@ -4610,7 +4630,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n    \"accounts\": [\n        {\n            \"name\": \"root\",\n            \"password\": \"pass\",\n            \"privileges\": \"Admin\"\n        }\n    ],\n    \"timezone\": \"Europe/Stockholm\",\n    \"zipstream\": {\n        \"strength\": 20,\n        \"minfps\": 15\n    },\n    \"tls\": {\n        \"policy\": \"HttpAndHttps\"\n    },\n    \"textOverlays\": [\n        {\n            \"text\": \"%F %X\",\n            \"position\": \"topLeft\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"black\",\n            \"fontSize\": 48\n        },\n        {\n            \"text\": \"#n\",\n            \"position\": \"topRight\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"transparent\",\n            \"fontSize\": 48\n        }\n    ], \n    \"imageOverlay\": {\n        \"filepath\": \"\",\n        \"position\":\"bottomRight\",\n        \"scale\": true,\n        \"alpha\": 0\n    },\n    \"onvif\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        }\n    ],\n    \"mqtt\": {\n        \"address\":\"\",\n        \"user\": \"\",\n        \"password\":\"\",\n        \"publish\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t]\n    },\n    \"ssh\": {\n        \"user\": \"\",\n        \"password\":\"\"\n    },\n    \"acaps\": []\n}\n",
+        "template": "{\n    \"accounts\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Admin\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Operator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Viewer\"\n        }\n    ],\n    \"timezone\": \"Europe/Stockholm\",\n    \"zipstream\": {\n        \"strength\": 20,\n        \"minfps\": 15\n    },\n    \"tls\": {\n        \"policy\": \"HttpAndHttps\"\n    },\n    \"textOverlays\": [\n        {\n            \"text\": \"%F %X\",\n            \"position\": \"topLeft\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"black\",\n            \"fontSize\": 48\n        },\n        {\n            \"text\": \"#n\",\n            \"position\": \"topRight\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"transparent\",\n            \"fontSize\": 48\n        }\n    ], \n    \"imageOverlay\": {\n        \"filepath\": \"\",\n        \"position\":\"bottomRight\",\n        \"scale\": true,\n        \"alpha\": 0\n    },\n    \"onvif\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        }\n    ],\n    \"mqtt\": {\n        \"address\":\"\",\n        \"port\": \"1880\",\n        \"user\": \"\",\n        \"password\":\"\",\n        \"publish\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t]\n    },\n    \"ssh\": {\n        \"user\": \"\",\n        \"password\":\"\"\n    },\n    \"acaps\": [\n    ]\n}\n",
         "output": "json",
         "x": 400,
         "y": 240,
@@ -4658,7 +4678,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "[\n    {\n        \"address\":\"\",\n        \"properties\": {\n            \"name\": \"hostname\"\n        }\n    }\n]\n",
+        "template": "[\n    {\n        \"address\":\"10.13.8.167\",\n        \"properties\": {\n            \"name\": \"democam\"\n        }\n    }\n]\n",
         "output": "json",
         "x": 410,
         "y": 300,
