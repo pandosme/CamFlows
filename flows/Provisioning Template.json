@@ -4807,7 +4807,7 @@
                 "t": "set",
                 "p": "filepath",
                 "pt": "msg",
-                "to": "staging/MotionGuard/aarch64.eap",
+                "to": "Provisioning/MotionGuard/aarch64.eap",
                 "tot": "str"
             }
         ],
@@ -4880,7 +4880,7 @@
                 "t": "set",
                 "p": "filepath",
                 "pt": "msg",
-                "to": "staging/MotionGuard/armv7hf.eap",
+                "to": "Provisioning\\MotionGuard/armv7hf.eap",
                 "tot": "str"
             }
         ],
@@ -4923,7 +4923,7 @@
         "z": "326c4a626204f486",
         "g": "6817f7b65bab465e",
         "name": "Append output to Config",
-        "func": "msg.filepath = \"Provisioning/MotionGuard/info.json\";\nmsg.payload = {\n    package: \"motionguard\",\n    version: \"2.3-2\",\n    source: \"http://ftp.axis.com/pub_soft/applications/acap/MotionGuard/2_3_2/\",\n    armv7hf: \"Provisioning/MotionGuard/armv7hf.eap\",\n    aarch64: \"Provisioning/MotionGuard/aarch64.eap\",\n    config: null\n}\nmsg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
+        "func": "msg.filepath = \"Provisioning/MotionGuard/info.json\";\nmsg.payload = {\n    package: \"motionguard\",\n    version: \"2.3-2\",\n    armv7hf: \"Provisioning/MotionGuard/armv7hf.eap\",\n    aarch64: \"Provisioning/MotionGuard/aarch64.eap\",\n    config: null\n}\nmsg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
