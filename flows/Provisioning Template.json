@@ -2703,7 +2703,7 @@
         "z": "239c26887e43f290",
         "g": "fcc7013c4998248c",
         "name": "2:nd Account",
-        "func": "if( msg.config.accounts.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = {\n    name: msg.config.accounts[1].name,\n    password: msg.config.accounts[1].password,\n    privileges: msg.config.accounts[1].privileges\n}\nnode.send([msg,null]);",
+        "func": "if( msg.config.accounts.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.accounts[1].hasOwnProperty(\"name\") || !msg.config.accounts[1].name || msg.config.accounts[1].name.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.accounts[1].hasOwnProperty(\"password\") || !msg.config.accounts[1].password || msg.config.accounts[1].password.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nmsg.payload = {\n    name: msg.config.accounts[1].name,\n    password: msg.config.accounts[1].password,\n    privileges: msg.config.accounts[1].privileges\n}\nnode.send([msg,null]);",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -2747,7 +2747,7 @@
         "z": "239c26887e43f290",
         "g": "fcc7013c4998248c",
         "name": "3:nd Account",
-        "func": "if( msg.config.accounts.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = {\n    name: msg.config.accounts[2].name,\n    password: msg.config.accounts[2].password,\n    privileges: msg.config.accounts[2].privileges\n}\nnode.send([msg,null]);",
+        "func": "if( msg.config.accounts.length < 3 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.accounts[2].hasOwnProperty(\"name\") || !msg.config.accounts[2].name || msg.config.accounts[2].name.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !msg.config.accounts[2].hasOwnProperty(\"password\") || !msg.config.accounts[2].password || msg.config.accounts[2].password.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = {\n    name: msg.config.accounts[2].name,\n    password: msg.config.accounts[2].password,\n    privileges: msg.config.accounts[2].privileges\n}\nnode.send([msg,null]);",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -2842,7 +2842,7 @@
         "links": [
             "f99142019a931cd1"
         ],
-        "x": 1245,
+        "x": 1235,
         "y": 740,
         "wires": []
     },
@@ -2942,7 +2942,8 @@
             "9a8dfd6a9a65eecd",
             "ef815f69e0c74c13",
             "6c5fa9235181a814",
-            "637896cd93f1d3c2"
+            "637896cd93f1d3c2",
+            "f9b9a00fc93348b1"
         ],
         "x": 765,
         "y": 100,
@@ -3118,7 +3119,7 @@
         "z": "239c26887e43f290",
         "g": "d92ea06a7bbc0b8b",
         "name": "Name",
-        "func": "if( !msg.hasOwnProperty(\"properties\") || !msg.properties  ) {\n    node.send([null,msg]);\n    return;\n}\n\n\nif( msg.properties.hasOwnProperty(\"name\") || !msg.properties.name || typeof msg.properties.name !== \"string\" || msg.properties.name.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = msg.properties.name;\nnode.send([msg],null);\n",
+        "func": "node.warn(msg.properties);\nif( !msg.hasOwnProperty(\"properties\") || !msg.properties  ) {\n    node.send([null,msg]);\n    return;\n}\n\nnode.warn(\"debug 2\");\n\nif( !msg.properties.hasOwnProperty(\"name\") || !msg.properties.name || typeof msg.properties.name !== \"string\" || msg.properties.name.length < 2 ) {\n    node.send([null,msg]);\n    return;\n}\n\nnode.warn(\"debug 3\");\n\nmsg.payload = msg.properties.name;\nnode.send([msg],null);\n",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -4630,7 +4631,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n    \"accounts\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Admin\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Operator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Viewer\"\n        }\n    ],\n    \"timezone\": \"Europe/Stockholm\",\n    \"zipstream\": {\n        \"strength\": 20,\n        \"minfps\": 15\n    },\n    \"tls\": {\n        \"policy\": \"HttpAndHttps\"\n    },\n    \"textOverlays\": [\n        {\n            \"text\": \"%F %X\",\n            \"position\": \"topLeft\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"black\",\n            \"fontSize\": 48\n        },\n        {\n            \"text\": \"#n\",\n            \"position\": \"topRight\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"transparent\",\n            \"fontSize\": 48\n        }\n    ], \n    \"imageOverlay\": {\n        \"filepath\": \"\",\n        \"position\":\"bottomRight\",\n        \"scale\": true,\n        \"alpha\": 0\n    },\n    \"onvif\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        }\n    ],\n    \"mqtt\": {\n        \"address\":\"\",\n        \"port\": \"1880\",\n        \"user\": \"\",\n        \"password\":\"\",\n        \"publish\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t]\n    },\n    \"ssh\": {\n        \"user\": \"\",\n        \"password\":\"\"\n    },\n    \"acaps\": [\n    ]\n}\n",
+        "template": "{\n    \"accounts\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Admin\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Operator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Viewer\"\n        }\n    ],\n    \"timezone\": \"Europe/Stockholm\",\n    \"zipstream\": {\n        \"strength\": 20,\n        \"minfps\": 15\n    },\n    \"tls\": {\n        \"policy\": \"HttpAndHttps\"\n    },\n    \"textOverlays\": [\n        {\n            \"text\": \"%F %X\",\n            \"position\": \"topLeft\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"black\",\n            \"fontSize\": 48\n        },\n        {\n            \"text\": \"#n\",\n            \"position\": \"topRight\",\n            \"textColor\": \"white\",\n            \"textBGColor\": \"transparent\",\n            \"fontSize\": 48\n        }\n    ], \n    \"imageOverlay\": {\n        \"filepath\": \"\",\n        \"position\":\"bottomRight\",\n        \"scale\": true,\n        \"alpha\": 0\n    },\n    \"onvif\": [\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        },\n        {\n            \"name\": \"\",\n            \"password\": \"\",\n            \"privileges\": \"Administrator\"\n        }\n    ],\n    \"mqtt\": {\n        \"address\":\"10.13.8.20\",\n        \"port\": \"1880\",\n        \"user\": \"\",\n        \"password\":\"\",\n        \"publish\": [\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario1\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"qos\": 0,\n\t\t\t\t\"retain\": \"none\",\n\t\t\t\t\"topicFilter\": \"axis:CameraApplicationPlatform/ObjectAnalytics/Device1Scenario2\"\n\t\t\t}\n\t\t]\n    },\n    \"ssh\": {\n        \"user\": \"\",\n        \"password\":\"\"\n    },\n    \"acaps\": [\n    ]\n}\n",
         "output": "json",
         "x": 400,
         "y": 240,
@@ -4678,7 +4679,7 @@
         "fieldType": "msg",
         "format": "json",
         "syntax": "mustache",
-        "template": "[\n    {\n        \"address\":\"10.13.8.167\",\n        \"properties\": {\n            \"name\": \"democam\"\n        }\n    }\n]\n",
+        "template": "[\n    {\n        \"address\":\"\",\n        \"properties\": {\n            \"name\": \"\"\n        }\n    }\n]\n",
         "output": "json",
         "x": 410,
         "y": 300,
