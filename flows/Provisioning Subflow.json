@@ -1120,11 +1120,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
+        "x": 850,
         "y": 3380,
         "wires": [
             [
-                "589a48123f0f6e37"
+                "589a48123f0f6e37",
+                "58869f2483d31d21"
             ]
         ]
     },
@@ -1166,8 +1167,7 @@
                 "b576e4918ad5cac8"
             ],
             [
-                "1ec4fa0197a70334",
-                "11697d9f8c0f7233"
+                "1ec4fa0197a70334"
             ]
         ]
     },
@@ -2979,7 +2979,7 @@
         "reduceInitType": "",
         "reduceFixup": "",
         "x": 1420,
-        "y": 3440,
+        "y": 3460,
         "wires": [
             [
                 "a6d5343b7d107066"
@@ -3071,7 +3071,7 @@
             "3f61b9b71ea88809"
         ],
         "x": 1745,
-        "y": 3480,
+        "y": 3500,
         "wires": []
     },
     {
@@ -3288,7 +3288,7 @@
         "template": "{\n    \"apiVersion\": \"1.0\",\n    \"context\":\"OptionalContext\",\n    \"method\":\"set\",\n    \"params\":{\n        \"X-Frame-Options\": \"*\",\n        \"Content-Security-Policy\": \"\"\n    }\n}\n",
         "output": "str",
         "x": 450,
-        "y": 3960,
+        "y": 4020,
         "wires": [
             [
                 "6e2aa7ea52190f17"
@@ -3308,7 +3308,7 @@
         "options": "",
         "filename": "",
         "x": 710,
-        "y": 3960,
+        "y": 4020,
         "wires": [
             [
                 "2e6c91bc5312f883",
@@ -3330,7 +3330,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 3960,
+        "y": 4020,
         "wires": [
             [
                 "c14e8b254aaaf7d9"
@@ -3350,7 +3350,7 @@
             "2c3b0c096ccd6092"
         ],
         "x": 175,
-        "y": 3960,
+        "y": 4020,
         "wires": [
             [
                 "b69e0535406e6083"
@@ -3367,7 +3367,7 @@
             "fd813139961b13e6"
         ],
         "x": 1135,
-        "y": 3960,
+        "y": 4020,
         "wires": []
     },
     {
@@ -3380,7 +3380,7 @@
             "4409070b748256e5"
         ],
         "x": 1135,
-        "y": 4060,
+        "y": 4120,
         "wires": []
     },
     {
@@ -3397,7 +3397,7 @@
         "finalize": "",
         "libs": [],
         "x": 970,
-        "y": 3960,
+        "y": 4020,
         "wires": [
             [
                 "f24dfada3b507dfc"
@@ -3411,7 +3411,7 @@
         "name": "When Adding more configurations, add them below this comment before potentially device changes to fixed IP",
         "info": "",
         "x": 590,
-        "y": 4140,
+        "y": 4200,
         "wires": []
     },
     {
@@ -3422,7 +3422,7 @@
         "name": "xFrame.  Enable camer web interface to be included in an HTML iframe",
         "info": "",
         "x": 500,
-        "y": 3900,
+        "y": 3960,
         "wires": []
     },
     {
@@ -3437,7 +3437,7 @@
         ],
         "uncaught": false,
         "x": 1030,
-        "y": 3440,
+        "y": 3460,
         "wires": [
             [
                 "fdbe155fc9141766"
@@ -3458,7 +3458,7 @@
         "finalize": "",
         "libs": [],
         "x": 1190,
-        "y": 3440,
+        "y": 3460,
         "wires": [
             [
                 "139603f1191905d6"
@@ -3489,7 +3489,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "7f637aa563c1770a",
         "name": "Status",
-        "func": "msg.payload = msg.device.serial + \": Installing ACAP\";\nreturn msg;",
+        "func": "msg.payload = msg.device.serial + \": Installing \" + msg.acap.package;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3497,7 +3497,7 @@
         "finalize": "",
         "libs": [],
         "x": 1470,
-        "y": 3340,
+        "y": 3420,
         "wires": [
             [
                 "8f55c63b83b2328c"
@@ -3513,7 +3513,7 @@
             "6030aa150ff838f3"
         ],
         "x": 175,
-        "y": 3660,
+        "y": 3720,
         "wires": [
             [
                 "6a18d98e605fd305"
@@ -3526,7 +3526,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "041b20d0789a6844",
         "name": "VAPIX",
-        "func": "if( !msg.config.hasOwnProperty(\"vapix\") ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !Array.isArray(msg.config.vapix) ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( Array.isArray(msg.config.vapix.length < 1 ) ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = msg.config.vapix;\nnode.send([msg],null);\n",
+        "func": "if( !msg.config.hasOwnProperty(\"vapix\") ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( !Array.isArray(msg.config.vapix) ) {\n    node.send([null,msg]);\n    return;\n}\n\nif( msg.config.vapix.length < 1  ) {\n    node.send([null,msg]);\n    return;\n}\n\nmsg.payload = msg.config.vapix;\nnode.send([msg,null]);\n",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -3534,7 +3534,7 @@
         "finalize": "",
         "libs": [],
         "x": 290,
-        "y": 3660,
+        "y": 3720,
         "wires": [
             [
                 "84a58015f56e282d"
@@ -3554,7 +3554,7 @@
             "23d2a5e773d5e946"
         ],
         "x": 1365,
-        "y": 3800,
+        "y": 3860,
         "wires": []
     },
     {
@@ -3570,7 +3570,7 @@
         "stream": false,
         "addname": "",
         "x": 480,
-        "y": 3660,
+        "y": 3720,
         "wires": [
             [
                 "445d57d05ad9e0c8"
@@ -3591,7 +3591,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 3660,
+        "y": 3720,
         "wires": [
             [
                 "5b1d4e2f67d651cf"
@@ -3622,7 +3622,7 @@
         "count": "",
         "reduceRight": false,
         "x": 1160,
-        "y": 3760,
+        "y": 3820,
         "wires": [
             [
                 "cb745dbe07b94249"
@@ -3642,7 +3642,7 @@
         "options": "",
         "filename": "",
         "x": 850,
-        "y": 3600,
+        "y": 3660,
         "wires": [
             [
                 "925b5b036e82bc89",
@@ -3664,7 +3664,7 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 3600,
+        "y": 3660,
         "wires": [
             [
                 "95d88d6640e961f1"
@@ -3681,7 +3681,7 @@
             "fd813139961b13e6"
         ],
         "x": 1365,
-        "y": 3600,
+        "y": 3660,
         "wires": []
     },
     {
@@ -3695,7 +3695,7 @@
         ],
         "uncaught": false,
         "x": 840,
-        "y": 3640,
+        "y": 3700,
         "wires": [
             [
                 "a0abcc8262210030",
@@ -3711,7 +3711,12 @@
         "links": [
             "513453f276e3a282",
             "a046d81f10eda1c3",
-            "c64db13b914c3dd8"
+            "c64db13b914c3dd8",
+            "bcdd7059f925f8a4",
+            "2067fa751b7765a5",
+            "3b1f8963418a1a10",
+            "a6692862b7544fde",
+            "67226b0b7857937b"
         ],
         "x": 1425,
         "y": 360,
@@ -3742,7 +3747,7 @@
         "options": "",
         "filename": "",
         "x": 860,
-        "y": 3680,
+        "y": 3740,
         "wires": [
             [
                 "39e098e46f709d10",
@@ -3764,7 +3769,7 @@
         "finalize": "",
         "libs": [],
         "x": 1030,
-        "y": 3680,
+        "y": 3740,
         "wires": [
             [
                 "3af3e207e5bfeda5"
@@ -3782,7 +3787,7 @@
         ],
         "uncaught": false,
         "x": 840,
-        "y": 3720,
+        "y": 3780,
         "wires": [
             [
                 "a046d81f10eda1c3",
@@ -3800,7 +3805,7 @@
             "09eb56c5433ca289"
         ],
         "x": 1365,
-        "y": 3640,
+        "y": 3700,
         "wires": []
     },
     {
@@ -3813,7 +3818,7 @@
             "09eb56c5433ca289"
         ],
         "x": 1365,
-        "y": 3720,
+        "y": 3780,
         "wires": []
     },
     {
@@ -3826,7 +3831,7 @@
             "fd813139961b13e6"
         ],
         "x": 1365,
-        "y": 3680,
+        "y": 3740,
         "wires": []
     },
     {
@@ -3837,7 +3842,7 @@
         "name": "VAPIX",
         "info": "",
         "x": 290,
-        "y": 3580,
+        "y": 3640,
         "wires": []
     },
     {
@@ -4147,7 +4152,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "7f637aa563c1770a",
         "x": 410,
-        "y": 3480,
+        "y": 3500,
         "wires": [
             [
                 "a6d5343b7d107066"
@@ -4160,7 +4165,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "7f637aa563c1770a",
         "x": 1650,
-        "y": 3480,
+        "y": 3500,
         "wires": [
             [
                 "6030aa150ff838f3"
@@ -4576,7 +4581,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "35bf777b2ebfe389",
         "x": 380,
-        "y": 4060,
+        "y": 4120,
         "wires": [
             [
                 "6feb3086c321cf21"
@@ -4589,7 +4594,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "35bf777b2ebfe389",
         "x": 900,
-        "y": 4060,
+        "y": 4120,
         "wires": [
             [
                 "d8c5893e5cb8553d"
@@ -4614,7 +4619,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "041b20d0789a6844",
         "x": 410,
-        "y": 3800,
+        "y": 3860,
         "wires": [
             [
                 "cb745dbe07b94249"
@@ -4627,7 +4632,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "041b20d0789a6844",
         "x": 790,
-        "y": 3760,
+        "y": 3820,
         "wires": [
             [
                 "a0abcc8262210030"
@@ -4640,7 +4645,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "041b20d0789a6844",
         "x": 1270,
-        "y": 3800,
+        "y": 3860,
         "wires": [
             [
                 "2c3b0c096ccd6092"
@@ -4670,6 +4675,19 @@
         "wires": [
             [
                 "881a3255ec577797"
+            ]
+        ]
+    },
+    {
+        "id": "58869f2483d31d21",
+        "type": "junction",
+        "z": "6d42dc07fde7a1cc",
+        "g": "7f637aa563c1770a",
+        "x": 980,
+        "y": 3420,
+        "wires": [
+            [
+                "11697d9f8c0f7233"
             ]
         ]
     },
@@ -4790,12 +4808,13 @@
             "139603f1191905d6",
             "0c86d8fe4e3bc8e0",
             "fdbe155fc9141766",
-            "11697d9f8c0f7233"
+            "11697d9f8c0f7233",
+            "58869f2483d31d21"
         ],
-        "x": 214,
+        "x": 204,
         "y": 3199,
-        "w": 1462,
-        "h": 307
+        "w": 1472,
+        "h": 327
     },
     {
         "id": "3763a604cedcadd6",
@@ -4862,9 +4881,9 @@
             "c8cff23232942cbb",
             "36d9e67fd9a82ce3"
         ],
-        "x": 214,
+        "x": 204,
         "y": 1679,
-        "w": 2032,
+        "w": 2042,
         "h": 322
     },
     {
@@ -4893,9 +4912,9 @@
             "99b3908b2a9bf0d7",
             "a275a52bb44e23b8"
         ],
-        "x": 214,
+        "x": 204,
         "y": 2279,
-        "w": 1452,
+        "w": 1462,
         "h": 207
     },
     {
@@ -4986,9 +5005,9 @@
             "cbd106422127709a",
             "ed02a84657b2c2ac"
         ],
-        "x": 214,
+        "x": 204,
         "y": 799,
-        "w": 512,
+        "w": 522,
         "h": 167
     },
     {
@@ -5120,9 +5139,9 @@
             "6feb3086c321cf21",
             "27759148675546cf"
         ],
-        "x": 214,
-        "y": 3859,
-        "w": 832,
+        "x": 204,
+        "y": 3919,
+        "w": 842,
         "h": 227
     },
     {
@@ -5153,7 +5172,7 @@
             "e16638baaa19dc6a"
         ],
         "x": 214,
-        "y": 3539,
+        "y": 3599,
         "w": 1082,
         "h": 287
     },
@@ -5167,10 +5186,10 @@
     {
         "id": "97a054e1f9fc6e45",
         "type": "subflow:6d42dc07fde7a1cc",
-        "z": "5dc2a5e94885e9b6",
+        "z": "ec7375e436783988",
         "name": "",
         "x": 660,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "e96c574a1e107957"
