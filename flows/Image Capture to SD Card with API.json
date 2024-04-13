@@ -8,31 +8,147 @@
         "env": []
     },
     {
-        "id": "a74703b918a945d1",
-        "type": "inject",
+        "id": "d878a90837cef791",
+        "type": "group",
         "z": "37f8f560a1959259",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
+        "name": "Dashboard",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "911df7b39359ba8d",
+            "cb1d749cc3fe6285",
+            "09e075912b9c8a40",
+            "cff29bc5546e105d"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 260,
+        "x": 234,
+        "y": 1319,
+        "w": 472,
+        "h": 122
+    },
+    {
+        "id": "3dd1e2454c188439",
+        "type": "group",
+        "z": "37f8f560a1959259",
+        "name": "On-boot initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "3cf57cafb6dcc3d3",
+            "ca7c2e415bdf030b",
+            "f1a4a9e3f5f55822",
+            "173f30106de6d1e4",
+            "5470daa5f078afea",
+            "ef248485bfa5d603",
+            "b06790a0766b8ac8",
+            "aac7770f248c3c2a"
+        ],
+        "x": 234,
+        "y": 1479,
+        "w": 812,
+        "h": 162
+    },
+    {
+        "id": "84761d4d517365ab",
+        "type": "group",
+        "z": "37f8f560a1959259",
+        "name": "API",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "d91c06b669dc9871",
+            "4b264b8c96083687",
+            "a3a87e78479dfbc6",
+            "d969705607b9f20e",
+            "1ba3ea454153812e",
+            "26a9d79aae5e9c5f",
+            "337165086de8456f",
+            "7d042a9abf48e724",
+            "94571d22ead54aa8",
+            "8e0c8165d92dbb32",
+            "7f6dd7bd9712a209",
+            "8029e4de0b76c144",
+            "867f5d262d5ee042",
+            "b6e04e545878d00e",
+            "d5f9b9029cc031f6",
+            "c697c44a53d7ebf0",
+            "41498f18f8a6d084",
+            "63b2dc7de55ede4c",
+            "ddfbd8d39fa54b0f",
+            "57e29337ea6a91b2",
+            "80ae8d0ef38e89c6",
+            "1f82952bf6f6ce6c",
+            "f04f1610dc8d6008",
+            "057dcfa5897a9831",
+            "2eb4f16072be6264",
+            "1c03b13726ca2b6a",
+            "e1fe421ffb0e4bfd",
+            "40e2d9a8dd8f7639",
+            "9619ed37d64b6451",
+            "06a56281b5a1d416",
+            "731da7b671c3dd45",
+            "2e19409f42399a89",
+            "73fd26e321d3fa81",
+            "2c1f9384ac4a0bf1",
+            "e3c9b04beddb820b",
+            "b1ed2527c1adb0fb",
+            "db7c439cc52e924c",
+            "96d97ce92878299f",
+            "aeb861f80e8b2efb",
+            "1c80c4846963520d",
+            "be8818f851523c35"
+        ],
+        "x": 234,
+        "y": 299,
+        "w": 912,
+        "h": 1002
+    },
+    {
+        "id": "99ef3276c47a09bc",
+        "type": "group",
+        "z": "37f8f560a1959259",
+        "name": "Capture",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "2e0dd1a895b607e0",
+            "659dfd4fce11dc4a",
+            "51f989f1cabbb667",
+            "2426cbb3d763427e",
+            "5e3673a10230eec4",
+            "17f338dac803c5de",
+            "f9d10644fc27b8a4"
+        ],
+        "x": 234,
+        "y": 119,
+        "w": 932,
+        "h": 162
+    },
+    {
+        "id": "be8818f851523c35",
+        "type": "junction",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "x": 440,
+        "y": 540,
         "wires": [
             [
-                "2e0dd1a895b607e0"
+                "1c9b4eeeb762d217"
             ]
         ]
     },
@@ -40,12 +156,13 @@
         "id": "2e0dd1a895b607e0",
         "type": "Camera",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "resolution": "1280x720",
         "overlay": "yes",
         "channel": "1",
         "output": "buffer",
-        "x": 380,
-        "y": 260,
+        "x": 320,
+        "y": 200,
         "wires": [
             [
                 "659dfd4fce11dc4a"
@@ -56,6 +173,7 @@
         "id": "659dfd4fce11dc4a",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "name": "Filepath",
         "func": "var images = flow.get(\"images\") || [];\nvar timestamp = new Date().getTime();\nmsg.filepath = \"sdcard/images/\" + timestamp + \".jpeg\";\nimages.push(timestamp);\nflow.set(\"images\",images);\nreturn msg;",
         "outputs": 1,
@@ -64,8 +182,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 260,
+        "x": 480,
+        "y": 200,
         "wires": [
             [
                 "51f989f1cabbb667",
@@ -77,6 +195,7 @@
         "id": "51f989f1cabbb667",
         "type": "file",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "name": "Save Image",
         "filename": "filepath",
         "filenameType": "msg",
@@ -84,16 +203,19 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 750,
-        "y": 260,
+        "x": 650,
+        "y": 200,
         "wires": [
-            []
+            [
+                "205cfa667e005e67"
+            ]
         ]
     },
     {
         "id": "3cf57cafb6dcc3d3",
         "type": "inject",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "On boot",
         "props": [
             {
@@ -111,8 +233,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
-        "y": 100,
+        "x": 340,
+        "y": 1560,
         "wires": [
             [
                 "ca7c2e415bdf030b"
@@ -123,6 +245,7 @@
         "id": "ca7c2e415bdf030b",
         "type": "file in",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "",
         "filename": "sdcard/images/images.json",
         "filenameType": "str",
@@ -131,8 +254,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 440,
-        "y": 100,
+        "x": 560,
+        "y": 1560,
         "wires": [
             [
                 "f1a4a9e3f5f55822"
@@ -143,12 +266,13 @@
         "id": "f1a4a9e3f5f55822",
         "type": "json",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 100,
+        "x": 770,
+        "y": 1560,
         "wires": [
             [
                 "173f30106de6d1e4"
@@ -159,6 +283,7 @@
         "id": "173f30106de6d1e4",
         "type": "change",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "",
         "rules": [
             {
@@ -174,8 +299,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
-        "y": 100,
+        "x": 940,
+        "y": 1560,
         "wires": [
             []
         ]
@@ -184,13 +309,14 @@
         "id": "5470daa5f078afea",
         "type": "catch",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "",
         "scope": [
             "ca7c2e415bdf030b"
         ],
         "uncaught": false,
-        "x": 370,
-        "y": 140,
+        "x": 490,
+        "y": 1600,
         "wires": [
             [
                 "ef248485bfa5d603"
@@ -201,6 +327,7 @@
         "id": "ef248485bfa5d603",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "Initialize images",
         "func": "flow.set(\"images\",[]);\nmsg.payload = \"[]\";\nreturn msg;",
         "outputs": 1,
@@ -209,8 +336,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 140,
+        "x": 660,
+        "y": 1600,
         "wires": [
             [
                 "b06790a0766b8ac8"
@@ -221,6 +348,7 @@
         "id": "b06790a0766b8ac8",
         "type": "file",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "",
         "filename": "sdcard/images/images.json",
         "filenameType": "str",
@@ -228,8 +356,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 780,
-        "y": 140,
+        "x": 900,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -238,6 +366,7 @@
         "id": "2426cbb3d763427e",
         "type": "change",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "name": "",
         "rules": [
             {
@@ -253,8 +382,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
-        "y": 320,
+        "x": 660,
+        "y": 240,
         "wires": [
             [
                 "5e3673a10230eec4"
@@ -265,12 +394,13 @@
         "id": "5e3673a10230eec4",
         "type": "json",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "name": "",
         "property": "payload",
         "action": "str",
         "pretty": false,
-        "x": 930,
-        "y": 320,
+        "x": 810,
+        "y": 240,
         "wires": [
             [
                 "17f338dac803c5de"
@@ -281,6 +411,7 @@
         "id": "17f338dac803c5de",
         "type": "file",
         "z": "37f8f560a1959259",
+        "g": "99ef3276c47a09bc",
         "name": "",
         "filename": "sdcard/images/images.json",
         "filenameType": "str",
@@ -288,8 +419,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 1140,
-        "y": 320,
+        "x": 1020,
+        "y": 240,
         "wires": [
             []
         ]
@@ -298,13 +429,14 @@
         "id": "d91c06b669dc9871",
         "type": "http in",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "url": "/list",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 180,
-        "y": 400,
+        "x": 320,
+        "y": 380,
         "wires": [
             [
                 "4b264b8c96083687"
@@ -315,6 +447,7 @@
         "id": "4b264b8c96083687",
         "type": "change",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "rules": [
             {
@@ -330,8 +463,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 400,
+        "x": 500,
+        "y": 380,
         "wires": [
             [
                 "a3a87e78479dfbc6"
@@ -342,24 +475,26 @@
         "id": "a3a87e78479dfbc6",
         "type": "http response",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 530,
-        "y": 400,
+        "x": 670,
+        "y": 380,
         "wires": []
     },
     {
         "id": "d969705607b9f20e",
         "type": "http in",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "url": "/image/:timestamp",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 220,
-        "y": 520,
+        "x": 360,
+        "y": 660,
         "wires": [
             [
                 "26a9d79aae5e9c5f"
@@ -370,19 +505,21 @@
         "id": "1ba3ea454153812e",
         "type": "http response",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "statusCode": "",
         "headers": {
             "content-type": "image/jpeg"
         },
-        "x": 810,
-        "y": 520,
+        "x": 950,
+        "y": 660,
         "wires": []
     },
     {
         "id": "26a9d79aae5e9c5f",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "filepath",
         "func": "msg.filepath = \"sdcard/images/\" + msg.req.params.timestamp + \".jpeg\";\nreturn msg;",
         "outputs": 1,
@@ -391,8 +528,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 520,
+        "x": 580,
+        "y": 660,
         "wires": [
             [
                 "337165086de8456f"
@@ -403,6 +540,7 @@
         "id": "337165086de8456f",
         "type": "file in",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "filename": "filepath",
         "filenameType": "msg",
@@ -411,8 +549,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 610,
-        "y": 520,
+        "x": 750,
+        "y": 660,
         "wires": [
             [
                 "1ba3ea454153812e"
@@ -423,13 +561,14 @@
         "id": "7d042a9abf48e724",
         "type": "catch",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "scope": [
             "337165086de8456f"
         ],
         "uncaught": false,
-        "x": 430,
-        "y": 560,
+        "x": 570,
+        "y": 700,
         "wires": [
             [
                 "94571d22ead54aa8"
@@ -440,6 +579,7 @@
         "id": "94571d22ead54aa8",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "function 1",
         "func": "msg.statusCode = 404;\nmsg.payload = \"Image does not exist\"\nreturn msg;",
         "outputs": 1,
@@ -448,8 +588,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 560,
+        "x": 740,
+        "y": 700,
         "wires": [
             [
                 "1ba3ea454153812e"
@@ -460,13 +600,14 @@
         "id": "8e0c8165d92dbb32",
         "type": "http in",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "url": "/download/:timestamp",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 230,
-        "y": 660,
+        "x": 370,
+        "y": 820,
         "wires": [
             [
                 "8029e4de0b76c144"
@@ -477,17 +618,19 @@
         "id": "7f6dd7bd9712a209",
         "type": "http response",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 930,
-        "y": 660,
+        "x": 1070,
+        "y": 820,
         "wires": []
     },
     {
         "id": "8029e4de0b76c144",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "filepath",
         "func": "msg.timestamp = msg.req.params.timestamp;\nmsg.filepath = \"sdcard/images/\" + msg.timestamp + \".jpeg\";\nreturn msg;",
         "outputs": 1,
@@ -496,8 +639,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 660,
+        "x": 580,
+        "y": 820,
         "wires": [
             [
                 "867f5d262d5ee042"
@@ -508,6 +651,7 @@
         "id": "867f5d262d5ee042",
         "type": "file in",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "filename": "filepath",
         "filenameType": "msg",
@@ -516,8 +660,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 600,
-        "y": 660,
+        "x": 740,
+        "y": 820,
         "wires": [
             [
                 "c697c44a53d7ebf0"
@@ -528,13 +672,14 @@
         "id": "b6e04e545878d00e",
         "type": "catch",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "",
         "scope": [
             "867f5d262d5ee042"
         ],
         "uncaught": false,
-        "x": 590,
-        "y": 700,
+        "x": 730,
+        "y": 860,
         "wires": [
             [
                 "d5f9b9029cc031f6"
@@ -545,6 +690,7 @@
         "id": "d5f9b9029cc031f6",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "function 2",
         "func": "msg.statusCode = 404;\nmsg.payload = \"Image does not exist\"\nreturn msg;",
         "outputs": 1,
@@ -553,8 +699,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 700,
+        "x": 920,
+        "y": 860,
         "wires": [
             [
                 "7f6dd7bd9712a209"
@@ -565,6 +711,7 @@
         "id": "c697c44a53d7ebf0",
         "type": "function",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "headers",
         "func": "msg.headers = {\n    \"content-type\": \"image/jpeg\",\n    \"Content-Disposition\": \"attachment; filename=\\\"\" + msg.timestamp + \".jpeg\\\"\"\n}\nreturn msg;",
         "outputs": 1,
@@ -573,8 +720,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 660,
+        "x": 920,
+        "y": 820,
         "wires": [
             [
                 "7f6dd7bd9712a209"
@@ -585,50 +732,702 @@
         "id": "41498f18f8a6d084",
         "type": "comment",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "API to list all timestamp image was capture",
         "info": "",
-        "x": 290,
-        "y": 360,
+        "x": 420,
+        "y": 340,
         "wires": []
     },
     {
         "id": "63b2dc7de55ede4c",
         "type": "comment",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "API to fetch an image.  ...:1880/image/TIMESTAMP",
         "info": "",
-        "x": 310,
-        "y": 480,
+        "x": 450,
+        "y": 620,
         "wires": []
     },
     {
         "id": "ddfbd8d39fa54b0f",
         "type": "comment",
         "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
         "name": "API to download an image.  ...:1880/download/TIMESTAMP",
         "info": "",
-        "x": 340,
-        "y": 620,
+        "x": 470,
+        "y": 780,
         "wires": []
     },
     {
         "id": "f9d10644fc27b8a4",
         "type": "comment",
         "z": "37f8f560a1959259",
-        "name": "Set and trigger/event to capture an image",
+        "g": "99ef3276c47a09bc",
+        "name": "Image capture. Modify the resolution",
         "info": "",
-        "x": 280,
-        "y": 220,
+        "x": 400,
+        "y": 160,
         "wires": []
     },
     {
         "id": "aac7770f248c3c2a",
         "type": "comment",
         "z": "37f8f560a1959259",
+        "g": "3dd1e2454c188439",
         "name": "Initialize the image timestamp list",
         "info": "",
-        "x": 260,
+        "x": 390,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "52ebd45c36e8a173",
+        "type": "link in",
+        "z": "37f8f560a1959259",
+        "name": "Capture",
+        "links": [
+            "1c9b4eeeb762d217",
+            "d11f7c2419b19e45",
+            "38a73866a627d45c"
+        ],
+        "x": 75,
+        "y": 200,
+        "wires": [
+            [
+                "2e0dd1a895b607e0"
+            ]
+        ]
+    },
+    {
+        "id": "7f5b5ee06d9bfab1",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "Capture",
+        "info": "",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "57e29337ea6a91b2",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "url": "/capture",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "80ae8d0ef38e89c6",
+                "be8818f851523c35"
+            ]
+        ]
+    },
+    {
+        "id": "80ae8d0ef38e89c6",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 500,
+        "wires": [
+            [
+                "1f82952bf6f6ce6c"
+            ]
+        ]
+    },
+    {
+        "id": "1f82952bf6f6ce6c",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f04f1610dc8d6008",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "API for external clients to trigger capture ...:1880/capture",
+        "info": "",
+        "x": 470,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "911df7b39359ba8d",
+        "type": "ui_template",
+        "z": "37f8f560a1959259",
+        "g": "d878a90837cef791",
+        "group": "a8260b149807227d",
+        "name": "",
+        "order": 3,
+        "width": "24",
+        "height": "13",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb1d749cc3fe6285",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "g": "d878a90837cef791",
+        "name": "Table",
+        "func": "var images = flow.get(\"images\");\nvar row = 0;\nvar i;\n\nvar html = '<table style=\"width:100%\">\\n';\nvar amount = images.length + 3;\nnode.warn(amount);\nfor(row = 0; row < amount; row += 4) {\n    html += '<tr>\\n';\n    for( i = 0; i < 4; i++ ) {\n        var index = row + i;\n        if( index < images.length ) {\n            var image = images[index];\n            html += '<td style=\"width:25%\"><a href=\"/download/' + image + '\"><img src=\"/image/' + image + '\" width=\"310\"></a></td>\\n';\n        }\n    }\n    html += \"</tr>\\n\"\n}\n\nhtml += '</table>';\n\nmsg.payload = html;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 1360,
+        "wires": [
+            [
+                "911df7b39359ba8d"
+            ]
+        ]
+    },
+    {
+        "id": "09e075912b9c8a40",
+        "type": "ui_button",
+        "z": "37f8f560a1959259",
+        "g": "d878a90837cef791",
+        "name": "",
+        "group": "a8260b149807227d",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "label": "refresh",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "refresh",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1360,
+        "wires": [
+            [
+                "cb1d749cc3fe6285"
+            ]
+        ]
+    },
+    {
+        "id": "057dcfa5897a9831",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "url": "/remove/:timestamp",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 370,
+        "y": 960,
+        "wires": [
+            [
+                "1c03b13726ca2b6a",
+                "06a56281b5a1d416",
+                "9619ed37d64b6451"
+            ]
+        ]
+    },
+    {
+        "id": "2eb4f16072be6264",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "1c03b13726ca2b6a",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "filepath",
+        "func": "msg.timestamp = msg.req.params.timestamp;\nmsg.payload = \"sdcard/images/\" + msg.timestamp + \".jpeg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1020,
+        "wires": [
+            [
+                "40e2d9a8dd8f7639"
+            ]
+        ]
+    },
+    {
+        "id": "e1fe421ffb0e4bfd",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "API to remove image.  ...:1880/remove/TIMESTAMP",
+        "info": "",
+        "x": 450,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "40e2d9a8dd8f7639",
+        "type": "exec",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "command": "rm",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 770,
+        "y": 1020,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9619ed37d64b6451",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 960,
+        "wires": [
+            [
+                "2eb4f16072be6264"
+            ]
+        ]
+    },
+    {
+        "id": "06a56281b5a1d416",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "Remove",
+        "func": "var images = flow.get(\"images\");\nvar timestamp = parseInt(msg.req.params.timestamp);\nnode.warn(timestamp);\nvar remove = -1;\nimages.forEach(function(element,index) {\n    node.warn(element);\n    if( element === timestamp )\n        remove = index;\n});\n\nif( remove < 0 ) \n    return;\n\nimages.splice(remove,1);\nflow.set(\"images\",images);\nmsg.payload = images;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1080,
+        "wires": [
+            [
+                "731da7b671c3dd45"
+            ]
+        ]
+    },
+    {
+        "id": "731da7b671c3dd45",
+        "type": "json",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 730,
+        "y": 1080,
+        "wires": [
+            [
+                "2e19409f42399a89"
+            ]
+        ]
+    },
+    {
+        "id": "2e19409f42399a89",
+        "type": "file",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "filename": "sdcard/images/images.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 980,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73fd26e321d3fa81",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "url": "/flush",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 1180,
+        "wires": [
+            [
+                "e3c9b04beddb820b",
+                "96d97ce92878299f"
+            ]
+        ]
+    },
+    {
+        "id": "2c1f9384ac4a0bf1",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 830,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "e3c9b04beddb820b",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "filepath",
+        "func": "msg.payload = \"sdcard/images/*\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1220,
+        "wires": [
+            [
+                "db7c439cc52e924c"
+            ]
+        ]
+    },
+    {
+        "id": "b1ed2527c1adb0fb",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "API to remove all images.  ...:1880/flush",
+        "info": "",
+        "x": 410,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "db7c439cc52e924c",
+        "type": "exec",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "command": "rm",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 670,
+        "y": 1220,
+        "wires": [
+            [],
+            [],
+            [
+                "aeb861f80e8b2efb"
+            ]
+        ]
+    },
+    {
+        "id": "96d97ce92878299f",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OK",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1180,
+        "wires": [
+            [
+                "2c1f9384ac4a0bf1"
+            ]
+        ]
+    },
+    {
+        "id": "aeb861f80e8b2efb",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "Remove",
+        "func": "flow.set(\"images\",[]);\nmsg.payload = \"[]\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1260,
+        "wires": [
+            [
+                "1c80c4846963520d"
+            ]
+        ]
+    },
+    {
+        "id": "1c80c4846963520d",
+        "type": "file",
+        "z": "37f8f560a1959259",
+        "g": "84761d4d517365ab",
+        "name": "",
+        "filename": "sdcard/images/images.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 900,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c9b4eeeb762d217",
+        "type": "link out",
+        "z": "37f8f560a1959259",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "52ebd45c36e8a173"
+        ],
+        "x": 1187.0999755859375,
+        "y": 541.1000061035156,
+        "wires": []
+    },
+    {
+        "id": "205cfa667e005e67",
+        "type": "link out",
+        "z": "37f8f560a1959259",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "eb26aed8873c9665"
+        ],
+        "x": 1225,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cff29bc5546e105d",
+        "type": "ui_button",
+        "z": "37f8f560a1959259",
+        "g": "d878a90837cef791",
+        "name": "",
+        "group": "a8260b149807227d",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Capture",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "camera",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1400,
+        "wires": [
+            [
+                "d11f7c2419b19e45"
+            ]
+        ]
+    },
+    {
+        "id": "d11f7c2419b19e45",
+        "type": "link out",
+        "z": "37f8f560a1959259",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "52ebd45c36e8a173"
+        ],
+        "x": 755,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "eb26aed8873c9665",
+        "type": "link in",
+        "z": "37f8f560a1959259",
+        "name": "Refresh",
+        "links": [
+            "205cfa667e005e67"
+        ],
+        "x": 75,
+        "y": 1360,
+        "wires": [
+            [
+                "09e075912b9c8a40"
+            ]
+        ]
+    },
+    {
+        "id": "a0fa3046380151a9",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "Refresh",
+        "info": "",
+        "x": 170,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "cf972de0ffbcea9a",
+        "type": "inject",
+        "z": "37f8f560a1959259",
+        "name": "Capture",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "38a73866a627d45c"
+            ]
+        ]
+    },
+    {
+        "id": "38a73866a627d45c",
+        "type": "link out",
+        "z": "37f8f560a1959259",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "52ebd45c36e8a173"
+        ],
+        "x": 265,
         "y": 60,
         "wires": []
+    },
+    {
+        "id": "a8260b149807227d",
+        "type": "ui_group",
+        "name": "Images",
+        "tab": "6c7a07bac1740c8d",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6c7a07bac1740c8d",
+        "type": "ui_tab",
+        "name": "SD Card",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]
