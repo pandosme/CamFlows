@@ -1,0 +1,634 @@
+[
+    {
+        "id": "37f8f560a1959259",
+        "type": "tab",
+        "label": "Image SD Card Capture",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a74703b918a945d1",
+        "type": "inject",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "2e0dd1a895b607e0"
+            ]
+        ]
+    },
+    {
+        "id": "2e0dd1a895b607e0",
+        "type": "Camera",
+        "z": "37f8f560a1959259",
+        "resolution": "1280x720",
+        "overlay": "yes",
+        "channel": "1",
+        "output": "buffer",
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "659dfd4fce11dc4a"
+            ]
+        ]
+    },
+    {
+        "id": "659dfd4fce11dc4a",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "Filepath",
+        "func": "var images = flow.get(\"images\") || [];\nvar timestamp = new Date().getTime();\nmsg.filepath = \"sdcard/images/\" + timestamp + \".jpeg\";\nimages.push(timestamp);\nflow.set(\"images\",images);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 260,
+        "wires": [
+            [
+                "51f989f1cabbb667",
+                "2426cbb3d763427e"
+            ]
+        ]
+    },
+    {
+        "id": "51f989f1cabbb667",
+        "type": "file",
+        "z": "37f8f560a1959259",
+        "name": "Save Image",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 750,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cf57cafb6dcc3d3",
+        "type": "inject",
+        "z": "37f8f560a1959259",
+        "name": "On boot",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "ca7c2e415bdf030b"
+            ]
+        ]
+    },
+    {
+        "id": "ca7c2e415bdf030b",
+        "type": "file in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "filename": "sdcard/images/images.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 440,
+        "y": 100,
+        "wires": [
+            [
+                "f1a4a9e3f5f55822"
+            ]
+        ]
+    },
+    {
+        "id": "f1a4a9e3f5f55822",
+        "type": "json",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 650,
+        "y": 100,
+        "wires": [
+            [
+                "173f30106de6d1e4"
+            ]
+        ]
+    },
+    {
+        "id": "173f30106de6d1e4",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "images",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5470daa5f078afea",
+        "type": "catch",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "scope": [
+            "ca7c2e415bdf030b"
+        ],
+        "uncaught": false,
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "ef248485bfa5d603"
+            ]
+        ]
+    },
+    {
+        "id": "ef248485bfa5d603",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "Initialize images",
+        "func": "flow.set(\"images\",[]);\nmsg.payload = \"[]\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 140,
+        "wires": [
+            [
+                "b06790a0766b8ac8"
+            ]
+        ]
+    },
+    {
+        "id": "b06790a0766b8ac8",
+        "type": "file",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "filename": "sdcard/images/images.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 780,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2426cbb3d763427e",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "images",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 320,
+        "wires": [
+            [
+                "5e3673a10230eec4"
+            ]
+        ]
+    },
+    {
+        "id": "5e3673a10230eec4",
+        "type": "json",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 930,
+        "y": 320,
+        "wires": [
+            [
+                "17f338dac803c5de"
+            ]
+        ]
+    },
+    {
+        "id": "17f338dac803c5de",
+        "type": "file",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "filename": "sdcard/images/images.json",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1140,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d91c06b669dc9871",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "url": "/list",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "4b264b8c96083687"
+            ]
+        ]
+    },
+    {
+        "id": "4b264b8c96083687",
+        "type": "change",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "images",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "a3a87e78479dfbc6"
+            ]
+        ]
+    },
+    {
+        "id": "a3a87e78479dfbc6",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d969705607b9f20e",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "url": "/image/:timestamp",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "26a9d79aae5e9c5f"
+            ]
+        ]
+    },
+    {
+        "id": "1ba3ea454153812e",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "image/jpeg"
+        },
+        "x": 810,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "26a9d79aae5e9c5f",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "filepath",
+        "func": "msg.filepath = \"sdcard/images/\" + msg.req.params.timestamp + \".jpeg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 520,
+        "wires": [
+            [
+                "337165086de8456f"
+            ]
+        ]
+    },
+    {
+        "id": "337165086de8456f",
+        "type": "file in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "1ba3ea454153812e"
+            ]
+        ]
+    },
+    {
+        "id": "7d042a9abf48e724",
+        "type": "catch",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "scope": [
+            "337165086de8456f"
+        ],
+        "uncaught": false,
+        "x": 430,
+        "y": 560,
+        "wires": [
+            [
+                "94571d22ead54aa8"
+            ]
+        ]
+    },
+    {
+        "id": "94571d22ead54aa8",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "function 1",
+        "func": "msg.statusCode = 404;\nmsg.payload = \"Image does not exist\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "1ba3ea454153812e"
+            ]
+        ]
+    },
+    {
+        "id": "8e0c8165d92dbb32",
+        "type": "http in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "url": "/download/:timestamp",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "8029e4de0b76c144"
+            ]
+        ]
+    },
+    {
+        "id": "7f6dd7bd9712a209",
+        "type": "http response",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 930,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "8029e4de0b76c144",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "filepath",
+        "func": "msg.timestamp = msg.req.params.timestamp;\nmsg.filepath = \"sdcard/images/\" + msg.timestamp + \".jpeg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 660,
+        "wires": [
+            [
+                "867f5d262d5ee042"
+            ]
+        ]
+    },
+    {
+        "id": "867f5d262d5ee042",
+        "type": "file in",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 600,
+        "y": 660,
+        "wires": [
+            [
+                "c697c44a53d7ebf0"
+            ]
+        ]
+    },
+    {
+        "id": "b6e04e545878d00e",
+        "type": "catch",
+        "z": "37f8f560a1959259",
+        "name": "",
+        "scope": [
+            "867f5d262d5ee042"
+        ],
+        "uncaught": false,
+        "x": 590,
+        "y": 700,
+        "wires": [
+            [
+                "d5f9b9029cc031f6"
+            ]
+        ]
+    },
+    {
+        "id": "d5f9b9029cc031f6",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "function 2",
+        "func": "msg.statusCode = 404;\nmsg.payload = \"Image does not exist\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 700,
+        "wires": [
+            [
+                "7f6dd7bd9712a209"
+            ]
+        ]
+    },
+    {
+        "id": "c697c44a53d7ebf0",
+        "type": "function",
+        "z": "37f8f560a1959259",
+        "name": "headers",
+        "func": "msg.headers = {\n    \"content-type\": \"image/jpeg\",\n    \"Content-Disposition\": \"attachment; filename=\\\"\" + msg.timestamp + \".jpeg\\\"\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 660,
+        "wires": [
+            [
+                "7f6dd7bd9712a209"
+            ]
+        ]
+    },
+    {
+        "id": "41498f18f8a6d084",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "API to list all timestamp image was capture",
+        "info": "",
+        "x": 290,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "63b2dc7de55ede4c",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "API to fetch an image.  ...:1880/image/TIMESTAMP",
+        "info": "",
+        "x": 310,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ddfbd8d39fa54b0f",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "API to download an image.  ...:1880/download/TIMESTAMP",
+        "info": "",
+        "x": 340,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "f9d10644fc27b8a4",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "Set and trigger/event to capture an image",
+        "info": "",
+        "x": 280,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "aac7770f248c3c2a",
+        "type": "comment",
+        "z": "37f8f560a1959259",
+        "name": "Initialize the image timestamp list",
+        "info": "",
+        "x": 260,
+        "y": 60,
+        "wires": []
+    }
+]
