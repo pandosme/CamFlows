@@ -1,6 +1,6 @@
 [
     {
-        "id": "667718535317c178",
+        "id": "ef4882e5c9666d93",
         "type": "tab",
         "label": "Area Presence",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "656307df201fd722",
+        "id": "afac76f069f774e4",
         "type": "group",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Settings",
         "style": {
             "stroke": "#000000",
@@ -19,37 +19,40 @@
             "color": "#000000"
         },
         "nodes": [
-            "7dd1f7c434c387a0",
-            "828369dbde110713",
-            "f78b8751d98534ea",
-            "014d1793b552abc6",
-            "1e91ce29a444f748",
-            "5dd855b5e297afd4",
-            "6023568b2e880e08",
-            "cdc7d1454a7091f5",
-            "1c29c4736e845ba4",
-            "fccaf13405326cd4",
-            "3539bbd4073e7274",
-            "8ff310d9c1d5f989",
-            "93fee120f87912fb",
-            "6b4e1884f253d780",
-            "078e9458ee056d2d",
-            "fb5218cb2ecf9988",
-            "1e6b28087024d3eb",
-            "942a2e2bb280a956",
-            "99eef953d9b4afa6",
-            "9b1960bee66f38b2",
-            "61275201c95f1003",
-            "a13c427488afe126",
-            "a522091027956c2c",
-            "0b0ed9f9fe96118b",
-            "bdde392aa4777e8f",
-            "4cf32f0061e79776",
-            "578d13bad79d2645",
-            "e5bdf2b3c7003dc3",
-            "a271ff5bfbdf730d",
-            "6df7a2346685e778",
-            "935c4e2405f54009"
+            "ba82578dfd17e00e",
+            "7f1c1859c911ece5",
+            "3fd9fecb0e83d983",
+            "aa5e5e9a62da4689",
+            "da95475de4061217",
+            "755df1769a234817",
+            "885da4c0b4a46a88",
+            "34b8065475d79806",
+            "8670ed7ab84f7a13",
+            "b1ae4c74c064e42a",
+            "99b1a6f9f467d423",
+            "7a4f0fb7e73bcfe7",
+            "29e3cc402930ebdd",
+            "4029310095ed292a",
+            "127b6e4b6ebc4fd9",
+            "de061d18cf9873dc",
+            "ee47cb7063178d18",
+            "1a6a08383e4a0862",
+            "47fa703cc3551897",
+            "6271cb07ba7b6d77",
+            "70c33c97d9e6bd0f",
+            "fceae7670c66090f",
+            "62ee58e47be1c277",
+            "515ea1e44c8dd67a",
+            "06993a5c66ba5e4a",
+            "d83ee0a7692f9dc8",
+            "82bc9f06b9f0e15e",
+            "0d53d6664af44d6d",
+            "8d614023edbe3deb",
+            "aa8db4ad090ec0f1",
+            "e19a90b248925e8b",
+            "6a646e187da57a77",
+            "0eac5531b41dc38c",
+            "ca588a1d88e6abe1"
         ],
         "x": 294,
         "y": 899,
@@ -57,9 +60,9 @@
         "h": 502
     },
     {
-        "id": "e00b3ed9cbfe319f",
+        "id": "914f01c926dbd028",
         "type": "group",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Output",
         "style": {
             "stroke": "#000000",
@@ -68,11 +71,11 @@
             "color": "#000000"
         },
         "nodes": [
-            "8e617c3bfd4d08b9",
-            "a0c127a03d616e57",
-            "6482be22f7f67a92",
-            "5f6b27873c67469a",
-            "f5e42d84e18cce6c"
+            "b88f84ae9928f40b",
+            "3279e3665d1dffdd",
+            "f4bf7ade8755efc6",
+            "71bf52c1157d335e",
+            "f3fcaea19ce98c96"
         ],
         "x": 294,
         "y": 119,
@@ -80,9 +83,9 @@
         "h": 202
     },
     {
-        "id": "ea8d2a195e554a4c",
+        "id": "522ef7cd858acdaa",
         "type": "group",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Dashboard",
         "style": {
             "stroke": "#000000",
@@ -91,12 +94,12 @@
             "color": "#000000"
         },
         "nodes": [
-            "4e97dd27dc3703b3",
-            "aa177468748afdbf",
-            "912a46e219ca470e",
-            "721bf3023624e62d",
-            "50f619345c385b37",
-            "c4482c8cd5968e9e"
+            "63318299a5ac6c35",
+            "78841423d5931128",
+            "2a89d09fb1c55d98",
+            "d0e1edab2cd92dc5",
+            "6ee38b06e2bd5b9a",
+            "d02d7ac2cca5c7f8"
         ],
         "x": 294,
         "y": 379,
@@ -104,9 +107,9 @@
         "h": 162
     },
     {
-        "id": "f576cc85c5a857a6",
+        "id": "2b3a2c42a4787181",
         "type": "group",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Initialization",
         "style": {
             "stroke": "#000000",
@@ -115,20 +118,20 @@
             "color": "#000000"
         },
         "nodes": [
-            "db9baede6ea07cb7",
-            "b17164e8a19961e3",
-            "aa246f56838c943f",
-            "57f91605c7e627c2",
-            "f4243c7fe244ba73",
-            "b457505760729adb",
-            "c932fd5b8d5c5a56",
-            "b5463be8cd74dae7",
-            "bb98db6d3a82d5f9",
-            "7e543cc1dd5e5a4c",
-            "0e24e9d889238483",
-            "0f3e3348af2c3ab4",
-            "9ec4297f62883613",
-            "64bb05819731d049"
+            "89264d4378b8bd68",
+            "53c70662035f2deb",
+            "61d2cb19d6bf3a39",
+            "7e55ec2be90f3201",
+            "eb7a3950a505f108",
+            "296ee8369a4bc599",
+            "cb005773e8db70fe",
+            "ff43af2933fdf176",
+            "0e4792aab595ea78",
+            "e20a54c960a7dd0a",
+            "3ce717621d946575",
+            "73e02917bbfb4dbe",
+            "849259909c820b50",
+            "6529fb7eb40c0ebe"
         ],
         "x": 294,
         "y": 599,
@@ -136,9 +139,9 @@
         "h": 242
     },
     {
-        "id": "8ac9f7dd65c05994",
+        "id": "2bf2bd140713be4d",
         "type": "group",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Exceptions",
         "style": {
             "stroke": "#000000",
@@ -147,10 +150,10 @@
             "color": "#000000"
         },
         "nodes": [
-            "961823b2d01a8533",
-            "73f11cf970a57979",
-            "fd6bc88c820e6f94",
-            "3640880d0ae80c29"
+            "de3869baf14afb2f",
+            "12d2886f5e60e5e5",
+            "2d57347de5a35e89",
+            "1cc0e26fb64cceb8"
         ],
         "x": 214,
         "y": 1619,
@@ -158,82 +161,82 @@
         "h": 142
     },
     {
-        "id": "93fee120f87912fb",
+        "id": "29e3cc402930ebdd",
         "type": "junction",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "x": 1380,
         "y": 940,
         "wires": [
             [
-                "2a71e0d2d0bc9b83"
+                "603a75d6d7a225c7"
             ]
         ]
     },
     {
-        "id": "b5463be8cd74dae7",
+        "id": "ff43af2933fdf176",
         "type": "junction",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "x": 320,
         "y": 640,
         "wires": [
             [
-                "db9baede6ea07cb7",
-                "9ec4297f62883613",
-                "64bb05819731d049"
+                "89264d4378b8bd68",
+                "849259909c820b50",
+                "6529fb7eb40c0ebe"
             ]
         ]
     },
     {
-        "id": "7e543cc1dd5e5a4c",
+        "id": "e20a54c960a7dd0a",
         "type": "junction",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "x": 320,
         "y": 800,
         "wires": [
             [
-                "f4243c7fe244ba73"
+                "eb7a3950a505f108"
             ]
         ]
     },
     {
-        "id": "61275201c95f1003",
+        "id": "70c33c97d9e6bd0f",
         "type": "junction",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "x": 320,
         "y": 940,
         "wires": [
             [
-                "cdc7d1454a7091f5",
-                "99eef953d9b4afa6"
+                "34b8065475d79806",
+                "47fa703cc3551897"
             ]
         ]
     },
     {
-        "id": "935c4e2405f54009",
+        "id": "e19a90b248925e8b",
         "type": "junction",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "x": 860,
         "y": 1320,
         "wires": [
             [
-                "47a2d3abcbc09f17",
-                "99eef953d9b4afa6"
+                "54256b6875e3609a",
+                "47fa703cc3551897"
             ]
         ]
     },
     {
-        "id": "54ba086a93697f98",
+        "id": "624d2c241496647c",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Detections",
         "mode": "link",
         "links": [
-            "30a205078b489092",
+            "6e1b259547d36d93",
             "dc6624d09529e99d"
         ],
         "x": 1245,
@@ -241,44 +244,44 @@
         "wires": []
     },
     {
-        "id": "30a205078b489092",
+        "id": "6e1b259547d36d93",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Visualize",
         "links": [
             "91467ae0b488c8e0",
-            "54ba086a93697f98",
+            "624d2c241496647c",
             "ef266590d130a22e",
             "89fdf8a12a15475d",
-            "63484fdb6588c7c8",
+            "af21903dad8b62b8",
             "0b669916f0fece01",
-            "c796332d1f02c3e3",
-            "47a2d3abcbc09f17",
-            "80d6bfaf54d9b7e0",
-            "8a15f82bfebc33e3"
+            "d59950d738bce15b",
+            "54256b6875e3609a",
+            "39d66a3db5fa3b2f",
+            "35c0cbbe35d5bf99"
         ],
         "x": 135,
         "y": 460,
         "wires": [
             [
-                "912a46e219ca470e"
+                "2a89d09fb1c55d98"
             ]
         ]
     },
     {
-        "id": "123d2fdfb9028726",
+        "id": "6a7415e22a692313",
         "type": "comment",
-        "z": "667718535317c178",
-        "name": "Version 1.0.1",
+        "z": "ef4882e5c9666d93",
+        "name": "Version 1.0.2",
         "info": "",
         "x": 380,
         "y": 60,
         "wires": []
     },
     {
-        "id": "67eafd9c333aa8a8",
+        "id": "fdce908410117081",
         "type": "inject",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "On start",
         "props": [
             {
@@ -300,14 +303,14 @@
         "y": 680,
         "wires": [
             [
-                "b5463be8cd74dae7"
+                "ff43af2933fdf176"
             ]
         ]
     },
     {
-        "id": "8c653ba6c6559077",
+        "id": "df3f09475f7f91ae",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "detections",
         "info": "",
         "x": 1130,
@@ -315,42 +318,42 @@
         "wires": []
     },
     {
-        "id": "80d6bfaf54d9b7e0",
+        "id": "39d66a3db5fa3b2f",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Initialized",
         "mode": "link",
         "links": [
-            "100fb76d59e86278",
+            "7a1c7416fc6f844a",
             "1f0c7e0f6c07cf80",
-            "30a205078b489092"
+            "6e1b259547d36d93"
         ],
         "x": 1325,
         "y": 640,
         "wires": []
     },
     {
-        "id": "bf1402738ffb3070",
+        "id": "c80a773cc3dc2049",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Update Settings",
         "links": [
-            "2a71e0d2d0bc9b83",
-            "dbdb4c1f11e53904",
-            "47a2d3abcbc09f17"
+            "603a75d6d7a225c7",
+            "3233cba1e73c6669",
+            "54256b6875e3609a"
         ],
         "x": 145,
         "y": 800,
         "wires": [
             [
-                "7e543cc1dd5e5a4c"
+                "e20a54c960a7dd0a"
             ]
         ]
     },
     {
-        "id": "e731361cf697ca5c",
+        "id": "6c810a7d7b5a7c2c",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Init",
         "info": "",
         "x": 1230,
@@ -358,9 +361,9 @@
         "wires": []
     },
     {
-        "id": "8f72efc9685b905b",
+        "id": "9d6542913fe4b393",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Update",
         "info": "",
         "x": 230,
@@ -368,30 +371,30 @@
         "wires": []
     },
     {
-        "id": "100fb76d59e86278",
+        "id": "7a1c7416fc6f844a",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link in 46",
         "links": [
-            "80d6bfaf54d9b7e0",
+            "39d66a3db5fa3b2f",
             "de8a5e5e2cb27a9b"
         ],
         "x": 145,
         "y": 940,
         "wires": [
             [
-                "61275201c95f1003"
+                "70c33c97d9e6bd0f"
             ]
         ]
     },
     {
-        "id": "2a71e0d2d0bc9b83",
+        "id": "603a75d6d7a225c7",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Settings updated",
         "mode": "link",
         "links": [
-            "bf1402738ffb3070",
+            "c80a773cc3dc2049",
             "7629d04ef4c084e4"
         ],
         "x": 1675,
@@ -399,9 +402,9 @@
         "wires": []
     },
     {
-        "id": "937984d3ffba9c72",
+        "id": "4ca018d9f0d1e6de",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Init",
         "info": "",
         "x": 230,
@@ -409,9 +412,9 @@
         "wires": []
     },
     {
-        "id": "6d841536d24b7eda",
+        "id": "e43f7b54749ff5b8",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Updated",
         "info": "",
         "x": 1580,
@@ -419,9 +422,9 @@
         "wires": []
     },
     {
-        "id": "095311633b16e577",
+        "id": "eb0abc164870057b",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Visualize",
         "info": "",
         "x": 220,
@@ -429,39 +432,39 @@
         "wires": []
     },
     {
-        "id": "bfe9c046e3baf86b",
+        "id": "292f9e5b9e49e10c",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link in 47",
         "links": [
-            "8090087e21676af5"
+            "23920654030c23ca"
         ],
         "x": 145,
         "y": 640,
         "wires": [
             [
-                "b5463be8cd74dae7"
+                "ff43af2933fdf176"
             ]
         ]
     },
     {
-        "id": "8090087e21676af5",
+        "id": "23920654030c23ca",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Start",
         "mode": "link",
         "links": [
-            "bfe9c046e3baf86b",
-            "20acb95e4c037424"
+            "292f9e5b9e49e10c",
+            "96462c6acda527c7"
         ],
         "x": 1245,
         "y": 420,
         "wires": []
     },
     {
-        "id": "db815c241bc75536",
+        "id": "5eaad0a2a6df053e",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Start",
         "info": "",
         "x": 1130,
@@ -469,9 +472,9 @@
         "wires": []
     },
     {
-        "id": "505bd98149417721",
+        "id": "442fafde369c9185",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Areas",
         "info": "",
         "x": 1130,
@@ -479,9 +482,9 @@
         "wires": []
     },
     {
-        "id": "37311256be71867f",
+        "id": "99f609fd6e32766c",
         "type": "ui_toast",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "position": "dialog",
         "displayTime": "3",
         "highlight": "",
@@ -500,9 +503,9 @@
         ]
     },
     {
-        "id": "a731cf19de7a2018",
+        "id": "bcf21984d8a760b7",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "exception",
         "info": "",
         "x": 980,
@@ -510,9 +513,9 @@
         "wires": []
     },
     {
-        "id": "a49a0fdac4827608",
+        "id": "427a4dc5b5501610",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "exception",
         "mode": "link",
         "links": [
@@ -523,25 +526,15 @@
         "wires": []
     },
     {
-        "id": "97b0aedf90cc7bcb",
-        "type": "comment",
-        "z": "667718535317c178",
-        "name": "Use this link for other flows that needs transitions",
-        "info": "",
-        "x": 1410,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "7dd1f7c434c387a0",
+        "id": "ba82578dfd17e00e",
         "type": "ui_numeric",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "d": true,
-        "g": "656307df201fd722",
+        "g": "afac76f069f774e4",
         "name": "",
         "label": "Minimum age",
         "tooltip": "",
-        "group": "9eaa73148f46d2bf",
+        "group": "b8c60865127a1f40",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -558,20 +551,20 @@
         "y": 1020,
         "wires": [
             [
-                "f78b8751d98534ea"
+                "3fd9fecb0e83d983"
             ]
         ]
     },
     {
-        "id": "828369dbde110713",
+        "id": "7f1c1859c911ece5",
         "type": "ui_numeric",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "d": true,
-        "g": "656307df201fd722",
+        "g": "afac76f069f774e4",
         "name": "",
         "label": "Minimum distance",
         "tooltip": "",
-        "group": "9eaa73148f46d2bf",
+        "group": "b8c60865127a1f40",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -588,15 +581,15 @@
         "y": 1060,
         "wires": [
             [
-                "014d1793b552abc6"
+                "aa5e5e9a62da4689"
             ]
         ]
     },
     {
-        "id": "f78b8751d98534ea",
+        "id": "3fd9fecb0e83d983",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -616,15 +609,15 @@
         "y": 1020,
         "wires": [
             [
-                "93fee120f87912fb"
+                "29e3cc402930ebdd"
             ]
         ]
     },
     {
-        "id": "014d1793b552abc6",
+        "id": "aa5e5e9a62da4689",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -644,20 +637,20 @@
         "y": 1060,
         "wires": [
             [
-                "93fee120f87912fb"
+                "29e3cc402930ebdd"
             ]
         ]
     },
     {
-        "id": "1e91ce29a444f748",
+        "id": "da95475de4061217",
         "type": "ui_dropdown",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "Classes",
         "label": "Classes",
         "tooltip": "",
         "place": "Select detection",
-        "group": "9eaa73148f46d2bf",
+        "group": "b8c60865127a1f40",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -723,15 +716,15 @@
         "y": 980,
         "wires": [
             [
-                "5dd855b5e297afd4"
+                "755df1769a234817"
             ]
         ]
     },
     {
-        "id": "5dd855b5e297afd4",
+        "id": "755df1769a234817",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -752,20 +745,20 @@
         "y": 980,
         "wires": [
             [
-                "93fee120f87912fb"
+                "29e3cc402930ebdd"
             ]
         ]
     },
     {
-        "id": "6023568b2e880e08",
+        "id": "885da4c0b4a46a88",
         "type": "ui_dropdown",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "label": "Confidence",
         "tooltip": "",
         "place": "Select detection",
-        "group": "9eaa73148f46d2bf",
+        "group": "b8c60865127a1f40",
         "order": 4,
         "width": "6",
         "height": "1",
@@ -826,15 +819,15 @@
         "y": 940,
         "wires": [
             [
-                "6b4e1884f253d780"
+                "4029310095ed292a"
             ]
         ]
     },
     {
-        "id": "cdc7d1454a7091f5",
+        "id": "34b8065475d79806",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -854,19 +847,20 @@
         "y": 940,
         "wires": [
             [
-                "1c29c4736e845ba4",
-                "fccaf13405326cd4",
-                "3539bbd4073e7274",
-                "8ff310d9c1d5f989",
-                "078e9458ee056d2d"
+                "8670ed7ab84f7a13",
+                "b1ae4c74c064e42a",
+                "99b1a6f9f467d423",
+                "7a4f0fb7e73bcfe7",
+                "127b6e4b6ebc4fd9",
+                "6a646e187da57a77"
             ]
         ]
     },
     {
-        "id": "1c29c4736e845ba4",
+        "id": "8670ed7ab84f7a13",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "confidence",
         "rules": [
             {
@@ -886,15 +880,15 @@
         "y": 940,
         "wires": [
             [
-                "6023568b2e880e08"
+                "885da4c0b4a46a88"
             ]
         ]
     },
     {
-        "id": "fccaf13405326cd4",
+        "id": "b1ae4c74c064e42a",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "classes",
         "rules": [
             {
@@ -914,15 +908,15 @@
         "y": 980,
         "wires": [
             [
-                "1e91ce29a444f748"
+                "da95475de4061217"
             ]
         ]
     },
     {
-        "id": "3539bbd4073e7274",
+        "id": "99b1a6f9f467d423",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "age",
         "rules": [
             {
@@ -942,15 +936,15 @@
         "y": 1020,
         "wires": [
             [
-                "7dd1f7c434c387a0"
+                "ba82578dfd17e00e"
             ]
         ]
     },
     {
-        "id": "8ff310d9c1d5f989",
+        "id": "7a4f0fb7e73bcfe7",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "distance",
         "rules": [
             {
@@ -970,15 +964,15 @@
         "y": 1060,
         "wires": [
             [
-                "828369dbde110713"
+                "7f1c1859c911ece5"
             ]
         ]
     },
     {
-        "id": "6b4e1884f253d780",
+        "id": "4029310095ed292a",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "set flow.settings.confidence",
         "func": "var settings = flow.get(\"settings\");\nsettings.confidence = parseInt(msg.payload);\nflow.set(\"settings\", settings);\nreturn msg;",
         "outputs": 1,
@@ -991,22 +985,22 @@
         "y": 940,
         "wires": [
             [
-                "93fee120f87912fb"
+                "29e3cc402930ebdd"
             ]
         ]
     },
     {
-        "id": "078e9458ee056d2d",
+        "id": "127b6e4b6ebc4fd9",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "timeout",
         "rules": [
             {
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "payload.transition",
+                "to": "payload.endTransition",
                 "tot": "msg"
             }
         ],
@@ -1019,19 +1013,19 @@
         "y": 1100,
         "wires": [
             [
-                "fb5218cb2ecf9988"
+                "de061d18cf9873dc"
             ]
         ]
     },
     {
-        "id": "fb5218cb2ecf9988",
+        "id": "de061d18cf9873dc",
         "type": "ui_numeric",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
-        "label": "Transition",
+        "label": "Free transition",
         "tooltip": "",
-        "group": "9eaa73148f46d2bf",
+        "group": "b8c60865127a1f40",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -1041,27 +1035,27 @@
         "topicType": "msg",
         "format": "{{value}}s",
         "min": 0,
-        "max": "100",
-        "step": "1",
+        "max": "600",
+        "step": "10",
         "className": "",
-        "x": 860,
+        "x": 880,
         "y": 1100,
         "wires": [
             [
-                "1e6b28087024d3eb"
+                "ee47cb7063178d18"
             ]
         ]
     },
     {
-        "id": "1e6b28087024d3eb",
+        "id": "ee47cb7063178d18",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "settings.transition",
+                "p": "settings.endTransition",
                 "pt": "flow",
                 "to": "payload",
                 "tot": "msg"
@@ -1072,24 +1066,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
+        "x": 1160,
         "y": 1100,
         "wires": [
             [
-                "93fee120f87912fb"
+                "29e3cc402930ebdd"
             ]
         ]
     },
     {
-        "id": "8e617c3bfd4d08b9",
+        "id": "b88f84ae9928f40b",
         "type": "Objects",
-        "z": "667718535317c178",
-        "g": "e00b3ed9cbfe319f",
+        "z": "ef4882e5c9666d93",
+        "g": "914f01c926dbd028",
         "version": "2",
         "output": "1",
         "classFilter": "-1",
-        "confidence": "40",
-        "rotation": "0",
+        "confidence": "0",
+        "rotation": "270",
         "cog": "1",
         "predictions": "0",
         "attributes": "50",
@@ -1098,15 +1092,15 @@
         "y": 160,
         "wires": [
             [
-                "a0c127a03d616e57"
+                "3279e3665d1dffdd"
             ]
         ]
     },
     {
-        "id": "a0c127a03d616e57",
+        "id": "3279e3665d1dffdd",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "e00b3ed9cbfe319f",
+        "z": "ef4882e5c9666d93",
+        "g": "914f01c926dbd028",
         "name": "Detections filter",
         "func": "\nvar settings = flow.get(\"settings\");\nif(!settings)\n    return;\n\nvar list = [];\n\nmsg.payload.forEach( function(item){\n    if (item.confidence < settings.confidence)\n        return;\n    if( item.age < settings.age)\n        return;\n    var dx = (item.cx - item.bx);\n    dx = dx * dx;\n    var dy = (item.cy - item.by);\n    dy = dy * dy;\n    item.distance = parseInt(Math.sqrt(dx+dy)/10);\n    if( item.distance < settings.distance )\n        return;\n\n    var clasMatch = false;\n    settings.classes.forEach(function (element) {\n        if (element === item.class)\n            clasMatch = true;\n    });\n    if (!clasMatch)\n        return;\n\n    if( item.cx < settings.aoi.x1 )\n        return;\n    if (item.cx > settings.aoi.x2)\n        return;\n    if (item.cy < settings.aoi.y1)\n        return;\n    if (item.cy > settings.aoi.y2)\n        return;\n    list.push(item);\n});\n\n\nmsg.payload = list;\n\nreturn msg;\n",
         "outputs": 1,
@@ -1119,17 +1113,17 @@
         "y": 160,
         "wires": [
             [
-                "6482be22f7f67a92"
+                "f4bf7ade8755efc6"
             ]
         ]
     },
     {
-        "id": "4e97dd27dc3703b3",
+        "id": "63318299a5ac6c35",
         "type": "ui_button",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
         "name": "",
-        "group": "f2f96b09eaa7c0f5",
+        "group": "13a00f8a1a87fa4f",
         "order": 1,
         "width": "3",
         "height": "1",
@@ -1148,15 +1142,15 @@
         "y": 420,
         "wires": [
             [
-                "aa177468748afdbf"
+                "78841423d5931128"
             ]
         ]
     },
     {
-        "id": "aa177468748afdbf",
+        "id": "78841423d5931128",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
         "name": "Init",
         "func": "msg.topic = \"init\";\nmsg.payload = {\n    aspect: \"16:9\",\n    rotation: 0,\n    resolution: \"1280x720\"\n}\n\nvar camera = global.get(\"camera\");\nif ( camera ) {\n    msg.payload.aspect = camera.aspect;\n    msg.payload.rotation = camera.rotation;\n    msg.payload.resolution = camera.largest;\n}\n\nflow.set(\"selectedArea\");\n\nreturn msg;\n",
         "outputs": 1,
@@ -1169,22 +1163,22 @@
         "y": 420,
         "wires": [
             [
-                "912a46e219ca470e",
-                "8090087e21676af5"
+                "2a89d09fb1c55d98",
+                "23920654030c23ca"
             ]
         ]
     },
     {
-        "id": "912a46e219ca470e",
+        "id": "2a89d09fb1c55d98",
         "type": "ui_template",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
-        "group": "f2f96b09eaa7c0f5",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
+        "group": "13a00f8a1a87fa4f",
         "name": "Visualization",
         "order": 4,
         "width": "16",
         "height": "16",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'areas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    <canvas id=\"{{'detections_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar pathList = [];\nvar trackers = {};\nvar selectArea = null;\nvar selectionType = \"None\";\nvar ctxAreas = null;\nvar ctxDetections = null;\nvar area = null;\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"init\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            ClearCanvas();\n            init(scope,msg.payload);\n            break;\n\n        case \"parking\":\n            drawParking( msg.payload );\n            break;\n\n        case \"detections\":\n            drawdetections( msg.payload );\n            break;\n\n        case \"selectedArea\":\n            DrawSelectedArea( msg.payload);\n            return;\n\n        case \"updateAreas\":\n            if(ctxDetections) {\n                ctxDetections.beginPath();\n                ctxDetections.clearRect(0, 0, 1000, 1000 );\n                ctxDetections.stroke();\n            }\n            DrawAreas( msg.payload);\n            return;\n\n        case \"reset\":\n        case \"clear\":\n        case \"save\":\n            ClearCanvas();\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            DrawAreas( msg.payload);\n            break;\n\n        case \"editArea\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            area = msg.payload;\n            var x1 = parseInt(area.x1 / 1000 * imageWidth);\n            var x2 = parseInt(area.x2 / 1000 * imageWidth);\n            var y1 = parseInt(area.y1 / 1000 * imageHeight);\n            var y2 = parseInt(area.y2 / 1000 * imageHeight);\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                x1:x1, y1:y1, x2:x2, y2:y2,\n                show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                onSelectEnd: function( image, selectionArea ) {\n                    area.x1 = parseInt((selectionArea.x1/imageWidth) * 1000);\n                    area.x2 = parseInt((selectionArea.x2/imageWidth) * 1000);\n                    area.y1 = parseInt((selectionArea.y1/imageHeight) * 1000);\n                    area.y2 = parseInt((selectionArea.y2/imageHeight) * 1000);\n                    scope.send({\n                        topic: \"area\",\n                        payload: area\n                    });\n                }\n            });\n            selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n\nfunction init( scope, camera ) {\n    imageWidth = 800;\n    imageHeight = 450;\n    var aspect = camera.aspect || \"16:9\";\n    var rotation = camera.rotation || 0;\n    var resolution = camera.resolution || \"1280x720\";\n\n    if( aspect === \"1:1\")\n        imageHeight = 800;\n\n    if( aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( rotation === 90 || rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+ resolution +'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n        \n    var canvas = document.getElementById(\"areas_\"+scope.$id);\n    ctxAreas = canvas.getContext(\"2d\");\n    canvas = document.getElementById(\"detections_\"+scope.$id);\n    ctxDetections = canvas.getContext(\"2d\");\n\n    if( selectArea ) {\n        selectArea.setOptions({ hide: true });\n        delete selectArea;\n    }\n}\n\nfunction ClearCanvas() {\n    if(ctxAreas) {\n        ctxAreas.beginPath();\n        ctxAreas.clearRect(0, 0, 1000, 1000 );\n        ctxAreas.stroke();\n    }\n}\n\nfunction drawdetections( detections ) {\n    if(!ctxDetections)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.clearRect(0, 0, 1000, 1000 );\n    ctxDetections.stroke();\n\n    if( detections.length === 0)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.lineWidth = 3;\n    ctxDetections.font = \"30px Arial\";\n    ctxDetections.fillStyle = '#FFFF00';\n    ctxDetections.strokeStyle = '#FFFF00';\n    \n    detections.forEach( function(detection){\n        ctxDetections.moveTo(detection.cx, detection.cy );\n        ctxDetections.arc(detection.cx, detection.cy, 6, 0, 2 * Math.PI);\n        ctxDetections.fill();\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" [\" + detection.confidence + ']';\n        ctxDetections.fillText(text, detection.cx - 50, detection.cy - 15 );\n        if( detection.hasOwnProperty(\"age\") ) {\n            var time = parseInt(detection.age);\n            text = time + ' s';\n            if( time > 60 ) {\n                time = parseInt( time / 60);\n                text = time + ' m';\n                if( time > 60 ) {\n                    time = parseInt( time / 60);\n                    text = time + ' h';\n                    if( time > 24 )\n                        text = parseInt( time / 24) + ' d';\n                }\n            }\n            ctxDetections.fillText(text, detection.cx - 25, detection.cy + 35 );\n        }\n    });\n    ctxDetections.stroke();\n}\n\n\n\nfunction drawParking( data ) {\n    if(!ctxAreas)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctxAreas.globalAlpha = strength;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#00FF00';\n    ctxAreas.font = \"30px Arial\";\n    ctxAreas.fillStyle = '#FFFF00';\n    ctxAreas.moveTo(first.x, first.y );\n    ctxAreas.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctxAreas.fillText(data.class, first.x, first.y - 10 );\n    ctxAreas.stroke();\n\n    ctxAreas.beginPath();\n    ctxAreas.strokeStyle = '#FFFF00';\n    ctxAreas.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctxAreas.lineTo(data.path[i].x,data.path[i].y ); ctxAreas.lineTo(last.x,last.y );\n    ctxAreas.stroke();\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth=3;\n    ctxAreas.strokeStyle='#FF0000';\n    ctxAreas.moveTo(last.x, last.y );\n    ctxAreas.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctxAreas.stroke();\n}\n\nfunction DrawSelectedArea( area ) {\n    if(!ctxAreas)\n        return;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#0000FF';\n    ctxAreas.font = \"30px Arial\";\n    var width = Math.abs(area.x2 - area.x1);\n    var height = Math.abs(area.y2 - area.y1);\n    ctxAreas.beginPath();\n    ctxAreas.rect(area.x1,area.y1,width,height);\n    ctxAreas.stroke();\n}\n\n\nfunction DrawAreas(list) {\n    if(!ctxAreas)\n        return;\n\n    ctxAreas.lineWidth = 3;\n    ctxAreas.font = \"30px Arial\";\n\n    list.forEach(function(area){\n        ctxAreas.strokeStyle = '#0000FF';\n        if( area.state === true)\n            ctxAreas.strokeStyle = '#FF0000';\n        if( area.state === false)\n            ctxAreas.strokeStyle = '#00FF00';\n        ctxAreas.beginPath();\n        var width = Math.abs(area.x2 - area.x1);\n        var height = Math.abs(area.y2 - area.y1);\n        ctxAreas.beginPath();\n        ctxAreas.rect(area.x1,area.y1,width,height);\n        ctxAreas.stroke();\n    });\n}\n\n</script>",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n<script src=\"/js/media-stream-player.min.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <div id=\"{{'video_'+$id}}\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></div>\n    <canvas id=\"{{'areas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n    <canvas id=\"{{'detections_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar pathList = [];\nvar trackers = {};\nvar selectArea = null;\nvar selectionType = \"None\";\nvar ctxAreas = null;\nvar ctxDetections = null;\nvar area = null;\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"init\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            ClearCanvas();\n            init(scope,msg.payload);\n            break;\n\n        case \"parking\":\n            drawParking( msg.payload );\n            break;\n\n        case \"detections\":\n            drawdetections( msg.payload );\n            break;\n\n        case \"selectedArea\":\n            DrawSelectedArea( msg.payload);\n            return;\n\n        case \"updateAreas\":\n            if(ctxDetections) {\n                ctxDetections.beginPath();\n                ctxDetections.clearRect(0, 0, 1000, 1000 );\n                ctxDetections.stroke();\n            }\n            DrawAreas( msg.payload);\n            return;\n\n        case \"reset\":\n        case \"clear\":\n        case \"save\":\n            ClearCanvas();\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            DrawAreas( msg.payload);\n            break;\n\n        case \"editArea\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                delete selectArea;\n                selectArea = null;\n            }\n            area = msg.payload;\n            var x1 = parseInt(area.x1 / 1000 * imageWidth);\n            var x2 = parseInt(area.x2 / 1000 * imageWidth);\n            var y1 = parseInt(area.y1 / 1000 * imageHeight);\n            var y2 = parseInt(area.y2 / 1000 * imageHeight);\n            selectArea = $(\"#view_\"+scope.$id).imgAreaSelect( {\n                x1:x1, y1:y1, x2:x2, y2:y2,\n                show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                onSelectEnd: function( image, selectionArea ) {\n                    area.x1 = parseInt((selectionArea.x1/imageWidth) * 1000);\n                    area.x2 = parseInt((selectionArea.x2/imageWidth) * 1000);\n                    area.y1 = parseInt((selectionArea.y1/imageHeight) * 1000);\n                    area.y2 = parseInt((selectionArea.y2/imageHeight) * 1000);\n                    scope.send({\n                        topic: \"area\",\n                        payload: area\n                    });\n                }\n            });\n            selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n\nfunction init( scope, camera ) {\n    imageWidth = 800;\n    imageHeight = 450;\n    var aspect = camera.aspect || \"16:9\";\n    var rotation = camera.rotation || 0;\n    var resolution = camera.resolution || \"1280x720\";\n\n    if( aspect === \"1:1\")\n        imageHeight = 800;\n\n    if( aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if( rotation === 90 || rotation === 270 ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    $(\"#video_\"+scope.$id).empty();\n    var player = '<media-stream-player hostname=\"'+window.location.hostname+'\" format=\"RTP_H264\" compression=\"40\" audio=\"0\" resolution=\"'+ resolution +'\" variant=\"basic\" autoplay></media-stream-player>';\n    $(\"#video_\"+scope.$id).append(player);\n        \n    var canvas = document.getElementById(\"areas_\"+scope.$id);\n    ctxAreas = canvas.getContext(\"2d\");\n    canvas = document.getElementById(\"detections_\"+scope.$id);\n    ctxDetections = canvas.getContext(\"2d\");\n\n    if( selectArea ) {\n        selectArea.setOptions({ hide: true });\n        delete selectArea;\n    }\n}\n\nfunction ClearCanvas() {\n    if(ctxAreas) {\n        ctxAreas.beginPath();\n        ctxAreas.clearRect(0, 0, 1000, 1000 );\n        ctxAreas.stroke();\n    }\n}\n\nfunction drawdetections( detections ) {\n    if(!ctxDetections)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.clearRect(0, 0, 1000, 1000 );\n    ctxDetections.stroke();\n\n    if( detections.length === 0)\n        return;\n\n    ctxDetections.beginPath();\n    ctxDetections.lineWidth = 3;\n    ctxDetections.font = \"30px Arial\";\n    ctxDetections.fillStyle = '#FFFF00';\n    ctxDetections.strokeStyle = '#FFFF00';\n    \n    detections.forEach( function(detection){\n        ctxDetections.moveTo(detection.cx, detection.cy );\n        ctxDetections.arc(detection.cx, detection.cy, 6, 0, 2 * Math.PI);\n        ctxDetections.fill();\n        var text = detection.class || \"Undefined\";\n        if( detection.hasOwnProperty(\"confidence\"))\n            text += \" [\" + detection.confidence + ']';\n        ctxDetections.fillText(text, detection.cx - 50, detection.cy - 15 );\n        if( detection.hasOwnProperty(\"age\") ) {\n            var time = parseInt(detection.age);\n            text = time + ' s';\n            if( time > 60 ) {\n                time = parseInt( time / 60);\n                text = time + ' m';\n                if( time > 60 ) {\n                    time = parseInt( time / 60);\n                    text = time + ' h';\n                    if( time > 24 )\n                        text = parseInt( time / 24) + ' d';\n                }\n            }\n            ctxDetections.fillText(text, detection.cx - 25, detection.cy + 35 );\n        }\n    });\n    ctxDetections.stroke();\n}\n\n\n\nfunction drawParking( data ) {\n    if(!ctxAreas)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctxAreas.globalAlpha = strength;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#00FF00';\n    ctxAreas.font = \"30px Arial\";\n    ctxAreas.fillStyle = '#FFFF00';\n    ctxAreas.moveTo(first.x, first.y );\n    ctxAreas.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctxAreas.fillText(data.class, first.x, first.y - 10 );\n    ctxAreas.stroke();\n\n    ctxAreas.beginPath();\n    ctxAreas.strokeStyle = '#FFFF00';\n    ctxAreas.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctxAreas.lineTo(data.path[i].x,data.path[i].y ); ctxAreas.lineTo(last.x,last.y );\n    ctxAreas.stroke();\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth=3;\n    ctxAreas.strokeStyle='#FF0000';\n    ctxAreas.moveTo(last.x, last.y );\n    ctxAreas.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctxAreas.stroke();\n}\n\nfunction DrawSelectedArea( area ) {\n    if(!ctxAreas)\n        return;\n    ctxAreas.beginPath();\n    ctxAreas.lineWidth = 3;\n    ctxAreas.strokeStyle = '#0000FF';\n    ctxAreas.font = \"30px Arial\";\n    var width = Math.abs(area.x2 - area.x1);\n    var height = Math.abs(area.y2 - area.y1);\n    ctxAreas.beginPath();\n    ctxAreas.rect(area.x1,area.y1,width,height);\n    ctxAreas.stroke();\n}\n\n\nfunction DrawAreas(list) {\n    if(!ctxAreas)\n        return;\n\n    ctxAreas.lineWidth = 3;\n    ctxAreas.font = \"30px Arial\";\n\n    list.forEach(function(area){\n        ctxAreas.strokeStyle = '#0000FF';\n        if( area.occupied === true)\n            ctxAreas.strokeStyle = '#FF0000';\n        if( area.occupied === false)\n            ctxAreas.strokeStyle = '#00FF00';\n        ctxAreas.beginPath();\n        var width = Math.abs(area.x2 - area.x1);\n        var height = Math.abs(area.y2 - area.y1);\n        ctxAreas.beginPath();\n        ctxAreas.rect(area.x1,area.y1,width,height);\n        ctxAreas.stroke();\n    });\n}\n\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
@@ -1194,17 +1188,17 @@
         "y": 460,
         "wires": [
             [
-                "721bf3023624e62d"
+                "d0e1edab2cd92dc5"
             ]
         ]
     },
     {
-        "id": "db9baede6ea07cb7",
+        "id": "89264d4378b8bd68",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "flow.settings",
-        "func": "msg.payload = {\n    classes: [\"Car\",\"Truck\",\"Bus\",\"Bike\"],\n    age: 3,\n    distance: 0,\n    confidence: 20,\n    aoi: {\n        x1: 0,\n        y1: 0,\n        x2: 1000,\n        y2: 1000\n    },\n    timeout: 5,\n    areas: []\n}\n\nvar device = global.get(\"device\");\nif( device ) \n    msg.payload.name = device.hostname || device.serial;\n\nflow.set(\"settings\",msg.payload);\n\nreturn msg;\n",
+        "func": "msg.payload = {\n    classes: [\"Car\",\"Truck\",\"Bus\",\"Bike\"],\n    age: 3,\n    distance: 0,\n    confidence: 20,\n    aoi: {\n        x1: 0,\n        y1: 0,\n        x2: 1000,\n        y2: 1000\n    },\n    beginTransition: 5,\n    endTransition: 60,\n    areas: []\n}\n\nvar device = global.get(\"device\");\nif( device ) \n    msg.payload.name = device.hostname || device.serial;\n\nflow.set(\"settings\",msg.payload);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1215,15 +1209,15 @@
         "y": 640,
         "wires": [
             [
-                "bb98db6d3a82d5f9"
+                "0e4792aab595ea78"
             ]
         ]
     },
     {
-        "id": "b17164e8a19961e3",
+        "id": "53c70662035f2deb",
         "type": "json",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "property": "payload",
         "action": "",
@@ -1232,15 +1226,15 @@
         "y": 640,
         "wires": [
             [
-                "aa246f56838c943f"
+                "61d2cb19d6bf3a39"
             ]
         ]
     },
     {
-        "id": "aa246f56838c943f",
+        "id": "61d2cb19d6bf3a39",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "flow.settings",
         "rules": [
             {
@@ -1274,33 +1268,33 @@
         "y": 640,
         "wires": [
             [
-                "80d6bfaf54d9b7e0"
+                "39d66a3db5fa3b2f"
             ]
         ]
     },
     {
-        "id": "57f91605c7e627c2",
+        "id": "7e55ec2be90f3201",
         "type": "catch",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "scope": [
-            "bb98db6d3a82d5f9"
+            "0e4792aab595ea78"
         ],
         "uncaught": false,
         "x": 1040,
         "y": 800,
         "wires": [
             [
-                "dbdb4c1f11e53904"
+                "3233cba1e73c6669"
             ]
         ]
     },
     {
-        "id": "f4243c7fe244ba73",
+        "id": "eb7a3950a505f108",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "flow.settings",
         "rules": [
             {
@@ -1320,15 +1314,15 @@
         "y": 800,
         "wires": [
             [
-                "b457505760729adb"
+                "296ee8369a4bc599"
             ]
         ]
     },
     {
-        "id": "b457505760729adb",
+        "id": "296ee8369a4bc599",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "pretty",
         "func": "msg.payload = JSON.stringify(msg.payload,null,2);\nreturn msg;",
         "outputs": 1,
@@ -1341,15 +1335,15 @@
         "y": 800,
         "wires": [
             [
-                "c932fd5b8d5c5a56"
+                "cb005773e8db70fe"
             ]
         ]
     },
     {
-        "id": "c932fd5b8d5c5a56",
+        "id": "cb005773e8db70fe",
         "type": "file",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "filename": "sdcard/Presence.json",
         "filenameType": "str",
@@ -1364,10 +1358,10 @@
         ]
     },
     {
-        "id": "961823b2d01a8533",
+        "id": "de3869baf14afb2f",
         "type": "catch",
-        "z": "667718535317c178",
-        "g": "8ac9f7dd65c05994",
+        "z": "ef4882e5c9666d93",
+        "g": "2bf2bd140713be4d",
         "name": "",
         "scope": null,
         "uncaught": true,
@@ -1375,16 +1369,16 @@
         "y": 1660,
         "wires": [
             [
-                "73f11cf970a57979",
-                "fd6bc88c820e6f94"
+                "12d2886f5e60e5e5",
+                "2d57347de5a35e89"
             ]
         ]
     },
     {
-        "id": "73f11cf970a57979",
+        "id": "12d2886f5e60e5e5",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "8ac9f7dd65c05994",
+        "z": "ef4882e5c9666d93",
+        "g": "2bf2bd140713be4d",
         "name": "Error message",
         "func": "msg.topic = \"exception/precense\";\nmsg.payload = msg.error;\nreturn msg;",
         "outputs": 1,
@@ -1397,16 +1391,16 @@
         "y": 1660,
         "wires": [
             [
-                "3640880d0ae80c29",
-                "a49a0fdac4827608"
+                "1cc0e26fb64cceb8",
+                "427a4dc5b5501610"
             ]
         ]
     },
     {
-        "id": "fd6bc88c820e6f94",
+        "id": "2d57347de5a35e89",
         "type": "debug",
-        "z": "667718535317c178",
-        "g": "8ac9f7dd65c05994",
+        "z": "ef4882e5c9666d93",
+        "g": "2bf2bd140713be4d",
         "name": "debug 216",
         "active": true,
         "tosidebar": true,
@@ -1421,10 +1415,10 @@
         "wires": []
     },
     {
-        "id": "3640880d0ae80c29",
+        "id": "1cc0e26fb64cceb8",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "8ac9f7dd65c05994",
+        "z": "ef4882e5c9666d93",
+        "g": "2bf2bd140713be4d",
         "name": "",
         "rules": [
             {
@@ -1444,15 +1438,15 @@
         "y": 1720,
         "wires": [
             [
-                "37311256be71867f"
+                "99f609fd6e32766c"
             ]
         ]
     },
     {
-        "id": "6482be22f7f67a92",
+        "id": "f4bf7ade8755efc6",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "e00b3ed9cbfe319f",
+        "z": "ef4882e5c9666d93",
+        "g": "914f01c926dbd028",
         "name": "",
         "rules": [
             {
@@ -1472,18 +1466,18 @@
         "y": 160,
         "wires": [
             [
-                "54ba086a93697f98",
-                "5f6b27873c67469a"
+                "624d2c241496647c",
+                "71bf52c1157d335e"
             ]
         ]
     },
     {
-        "id": "50f619345c385b37",
+        "id": "6ee38b06e2bd5b9a",
         "type": "ui_button",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
         "name": "",
-        "group": "22b0cd4424c8b8e8",
+        "group": "3a648bd6f4b6045e",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1502,17 +1496,17 @@
         "y": 500,
         "wires": [
             [
-                "c4482c8cd5968e9e"
+                "d02d7ac2cca5c7f8"
             ]
         ]
     },
     {
-        "id": "c4482c8cd5968e9e",
+        "id": "d02d7ac2cca5c7f8",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
         "name": "New area",
-        "func": "msg.topic = \"editArea\";\nvar settings = flow.get(\"settings\");\nif(!settings) {\n    node.warn(\"Invalid settings\");\n    return;\n}\n\nmsg.payload = {\n    name: \"New area\",\n    id: new Date().getTime().toString(),\n    x1: 300,\n    x2: 700,\n    y1: 300,\n    y2: 700,\n    state: false,\n    counter: 0,\n    transition: false,\n    edit: true,\n    timestamp: 0\n}\n\nsettings.areas.push(msg.payload);\nflow.set(\"settings\",settings);\nreturn msg;",
+        "func": "msg.topic = \"editArea\";\nvar settings = flow.get(\"settings\");\nif(!settings) {\n    node.warn(\"Invalid settings\");\n    return;\n}\n\nmsg.payload = {\n    name: \"New area\",\n    id: new Date().getTime().toString(),\n    x1: 300,\n    x2: 700,\n    y1: 300,\n    y2: 700,\n    occupied: false,\n    startTransition: false,\n    endTransition: false,\n    edit: true,\n    timestamp: 0\n}\n\nsettings.areas.push(msg.payload);\nflow.set(\"settings\",settings);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1523,19 +1517,19 @@
         "y": 500,
         "wires": [
             [
-                "63484fdb6588c7c8",
-                "912a46e219ca470e"
+                "af21903dad8b62b8",
+                "2a89d09fb1c55d98"
             ]
         ]
     },
     {
-        "id": "63484fdb6588c7c8",
+        "id": "af21903dad8b62b8",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Areas",
         "mode": "link",
         "links": [
-            "30a205078b489092",
+            "6e1b259547d36d93",
             "f32c12e58877984d"
         ],
         "x": 1245,
@@ -1543,23 +1537,23 @@
         "wires": []
     },
     {
-        "id": "dbdb4c1f11e53904",
+        "id": "3233cba1e73c6669",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link out 34",
         "mode": "link",
         "links": [
-            "bf1402738ffb3070"
+            "c80a773cc3dc2049"
         ],
         "x": 1335,
         "y": 800,
         "wires": []
     },
     {
-        "id": "bb98db6d3a82d5f9",
+        "id": "0e4792aab595ea78",
         "type": "file in",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "filename": "sdcard/Presence.json",
         "filenameType": "str",
@@ -1572,15 +1566,15 @@
         "y": 640,
         "wires": [
             [
-                "b17164e8a19961e3"
+                "53c70662035f2deb"
             ]
         ]
     },
     {
-        "id": "0e24e9d889238483",
+        "id": "3ce717621d946575",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "rules": [
             {
@@ -1603,10 +1597,10 @@
         ]
     },
     {
-        "id": "0f3e3348af2c3ab4",
+        "id": "73e02917bbfb4dbe",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "rules": [
             {
@@ -1629,10 +1623,10 @@
         ]
     },
     {
-        "id": "721bf3023624e62d",
+        "id": "d0e1edab2cd92dc5",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "ea8d2a195e554a4c",
+        "z": "ef4882e5c9666d93",
+        "g": "522ef7cd858acdaa",
         "name": "area",
         "func": "if(msg.topic !== \"area\")\n    return;\nvar selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\nselectedArea.x1 = msg.payload.x1;\nselectedArea.x2 = msg.payload.x2;\nselectedArea.y1 = msg.payload.y1;\nselectedArea.y2 = msg.payload.y2;\n\nflow.set(\"selectedArea\",selectedArea);\n\nreturn msg;",
         "outputs": 1,
@@ -1648,10 +1642,10 @@
         ]
     },
     {
-        "id": "99eef953d9b4afa6",
+        "id": "47fa703cc3551897",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -1672,16 +1666,16 @@
         "y": 1180,
         "wires": [
             [
-                "9b1960bee66f38b2"
+                "6271cb07ba7b6d77"
             ]
         ]
     },
     {
-        "id": "9b1960bee66f38b2",
+        "id": "6271cb07ba7b6d77",
         "type": "ui_table",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
-        "group": "22b0cd4424c8b8e8",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
+        "group": "3a648bd6f4b6045e",
         "name": "Areas",
         "order": 2,
         "width": "6",
@@ -1704,18 +1698,18 @@
         "y": 1180,
         "wires": [
             [
-                "a13c427488afe126",
-                "a522091027956c2c"
+                "fceae7670c66090f",
+                "62ee58e47be1c277"
             ]
         ]
     },
     {
-        "id": "942a2e2bb280a956",
+        "id": "1a6a08383e4a0862",
         "type": "ui_button",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
-        "group": "22b0cd4424c8b8e8",
+        "group": "3a648bd6f4b6045e",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -1734,47 +1728,47 @@
         "y": 1320,
         "wires": [
             [
-                "4cf32f0061e79776"
+                "d83ee0a7692f9dc8"
             ]
         ]
     },
     {
-        "id": "c796332d1f02c3e3",
+        "id": "d59950d738bce15b",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link out 35",
         "mode": "link",
         "links": [
-            "30a205078b489092",
-            "ed1c8290648e6795"
+            "6e1b259547d36d93",
+            "d6ab9f5d440d3a9c"
         ],
         "x": 1675,
         "y": 1180,
         "wires": []
     },
     {
-        "id": "47a2d3abcbc09f17",
+        "id": "54256b6875e3609a",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link out 37",
         "mode": "link",
         "links": [
-            "30a205078b489092",
-            "bf1402738ffb3070",
-            "ed1c8290648e6795",
-            "20acb95e4c037424"
+            "6e1b259547d36d93",
+            "c80a773cc3dc2049",
+            "d6ab9f5d440d3a9c",
+            "96462c6acda527c7"
         ],
         "x": 1675,
         "y": 1320,
         "wires": []
     },
     {
-        "id": "5f6b27873c67469a",
+        "id": "71bf52c1157d335e",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "e00b3ed9cbfe319f",
+        "z": "ef4882e5c9666d93",
+        "g": "914f01c926dbd028",
         "name": "Area State",
-        "func": "var settings = flow.get(\"settings\");\nvar detections = msg.payload;\n\nvar now = new Date().getTime();\n\nsettings.areas.forEach(function(area){\n    var counter = 0;\n    detections.forEach(function(detection){\n\n        if( detection.age > area.transition &&\n            detection.cx >= area.x1 &&\n            detection.cx <= area.x2 &&\n            detection.cy >= area.y1 &&\n            detection.cy <= area.y2)\n              counter++;\n    });\n\n    if( area.state === false && area.transition === false && area.counter === 0 && counter > 0 ) {\nnode.warn(\"new\");\n        area.counter = counter;\n        area.state = true;\n        area.transition = false;\n        area.timestamp = now;\n        msg.payload = area;\n        msg.topic = \"occupied\";\n        node.send(msg);\n    }\n\n    if( area.state === true && area.counter > 0 && counter > 0 ) {\n        area.counter = counter;\n        area.transition = false;\n        area.counter = counter;\n    }\n\n    if( area.state === true && area.transition === false && counter === 0) {\nnode.warn(\"lost\");\n        area.transition = true;\n        area.counter = 0;\n        area.transitionTime = now;\n    }\n\n    if( area.state === true && area.transition === true && counter === 0 ) {\n        var duration = parseInt((now - area.timestamp) / 1000);\n//node.warn(duration);\n        if( duration > area.transition ) {\n            area.counter = 0;\n            area.transition = false;\n            area.state = false;\n            area.timestamp = now;\n            msg.payload = area;\n            msg.topic = \"free\";\n            node.send(msg);\n        }\n    }\n});\n\nflow.set(\"settings\",settings);\n\n",
+        "func": "var settings = flow.get(\"settings\");\nvar detections = msg.payload;\n\nvar now = new Date().getTime();\nvar occupied = false;\n\nsettings.areas.forEach(function(area){\n    occupied = false;\n    detections.forEach(function(detection){\n        if( detection.age > area.transition &&\n            detection.cx >= area.x1 &&\n            detection.cx <= area.x2 &&\n            detection.cy >= area.y1 &&\n            detection.cy <= area.y2)\n              occupied = true;\n    });\n\n\n    if( occupied ) {\n        if( area.occupied === false && area.startTransition === false ) {\n            area.timestamp = now;\n            area.startTransition = true;\n        }\n        if( area.occupied === false && area.startTransition === true ) {\n            var duration = (now - area.timestamp)/1000;\n            if( duration > settings.beginTransition ) {\n                area.occupied = true;\n                area.startTransition = false;\n                area.endTransition = false;\n                msg.payload = area;\n                msg.topic = \"occupied\";\n                node.send(msg);\n            }\n        }\n        if( area.occupied && area.endTransition === true ) {\n            area.endTransition = false;\n        }\n    } else {\n        if( area.occupied === false && area.startTransition === true ) {\n            area.startTransition === false;\n        }\n        if( area.occupied && area.endTransition === false ) {\n            area.endTransition = true;\n            area.timestamp = now;\n        }\n\n        if( area.occupied && area.endTransition === true ) {\n            var duration = parseInt((now - area.timestamp) / 1000);\n            if( duration > settings.endTransition ) {\n                area.startTransition = false;\n                area.endTransition = false;\n                area.occupied = false;\n                area.timestamp = now;\n                msg.payload = area;\n                msg.topic = \"free\";\n                node.send(msg);\n            }\n        }\n    }\n});\n\nflow.set(\"settings\",settings);\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1785,16 +1779,16 @@
         "y": 220,
         "wires": [
             [
-                "f5e42d84e18cce6c",
-                "edd4dc69efaa56e0"
+                "f3fcaea19ce98c96",
+                "e1b29d8655049976"
             ]
         ]
     },
     {
-        "id": "a13c427488afe126",
+        "id": "fceae7670c66090f",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "Selected Area",
         "func": "var settings = flow.get(\"settings\");\nvar areas = settings.areas;\nvar area = null;\nareas.forEach(function(item){\n    if( item.id === msg.payload.id) \n        area = JSON.parse(JSON.stringify(item));\n});\n\nif( !area )\n    return;\n\narea.state = false;\narea.transition = false;\narea.timestamp = new Date().getTime();\narea.counter = 0;\narea.edit = true;\nflow.set(\"settings\",settings);\nmsg.payload = area;\nmsg.topic = \"editArea\";\nflow.set(\"selectedArea\",area);\nreturn msg;",
         "outputs": 1,
@@ -1807,15 +1801,15 @@
         "y": 1180,
         "wires": [
             [
-                "c796332d1f02c3e3"
+                "d59950d738bce15b"
             ]
         ]
     },
     {
-        "id": "f5e42d84e18cce6c",
+        "id": "f3fcaea19ce98c96",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "e00b3ed9cbfe319f",
+        "z": "ef4882e5c9666d93",
+        "g": "914f01c926dbd028",
         "name": "",
         "rules": [
             {
@@ -1842,27 +1836,27 @@
         "y": 280,
         "wires": [
             [
-                "8a15f82bfebc33e3"
+                "35c0cbbe35d5bf99"
             ]
         ]
     },
     {
-        "id": "8a15f82bfebc33e3",
+        "id": "35c0cbbe35d5bf99",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link out 38",
         "mode": "link",
         "links": [
-            "30a205078b489092"
+            "6e1b259547d36d93"
         ],
         "x": 1245,
         "y": 280,
         "wires": []
     },
     {
-        "id": "a9ef75fe0f46bd38",
+        "id": "c5ac684843cbb8bd",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Transition",
         "info": "",
         "x": 1130,
@@ -1870,20 +1864,20 @@
         "wires": []
     },
     {
-        "id": "edd4dc69efaa56e0",
+        "id": "e1b29d8655049976",
         "type": "link out",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Transition",
         "mode": "link",
         "links": [],
-        "x": 1635,
+        "x": 1245,
         "y": 220,
         "wires": []
     },
     {
-        "id": "6156ab7a21b5cd30",
+        "id": "f351054b2e5c2a8b",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Areas",
         "info": "",
         "x": 1140,
@@ -1891,10 +1885,10 @@
         "wires": []
     },
     {
-        "id": "a522091027956c2c",
+        "id": "62ee58e47be1c277",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -1914,19 +1908,19 @@
         "y": 1220,
         "wires": [
             [
-                "0b0ed9f9fe96118b"
+                "515ea1e44c8dd67a"
             ]
         ]
     },
     {
-        "id": "0b0ed9f9fe96118b",
+        "id": "515ea1e44c8dd67a",
         "type": "ui_text_input",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "label": "Name",
         "tooltip": "",
-        "group": "22b0cd4424c8b8e8",
+        "group": "3a648bd6f4b6045e",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -1941,15 +1935,15 @@
         "y": 1220,
         "wires": [
             [
-                "bdde392aa4777e8f"
+                "06993a5c66ba5e4a"
             ]
         ]
     },
     {
-        "id": "bdde392aa4777e8f",
+        "id": "06993a5c66ba5e4a",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -1972,10 +1966,10 @@
         ]
     },
     {
-        "id": "4cf32f0061e79776",
+        "id": "d83ee0a7692f9dc8",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "Update Areas",
         "func": "var selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\n\nvar settings = flow.get(\"settings\");\nvar areas = settings.areas;\n\nareas.forEach(function(area){\n    if( area.id === selectedArea.id) {\n        area.name = selectedArea.name;\n        area.x1 = selectedArea.x1;\n        area.x2 = selectedArea.x2;\n        area.y1 = selectedArea.y1;\n        area.y2 = selectedArea.y2;\n        area.state = false;\n        area.transition = false;\n        area.timestamp = new Date().getTime();\n        area.counter = 0;\n        area.edit = false;\n    }\n})\n\nflow.set(\"settings\",settings);\nmsg.payload = areas;\nmsg.topic = \"save\";\nflow.set(\"selectedArea\");\nreturn msg;",
         "outputs": 1,
@@ -1988,15 +1982,15 @@
         "y": 1320,
         "wires": [
             [
-                "935c4e2405f54009"
+                "e19a90b248925e8b"
             ]
         ]
     },
     {
-        "id": "578d13bad79d2645",
+        "id": "82bc9f06b9f0e15e",
         "type": "change",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
         "rules": [
             {
@@ -2016,15 +2010,15 @@
         "y": 1260,
         "wires": [
             [
-                "0b0ed9f9fe96118b"
+                "515ea1e44c8dd67a"
             ]
         ]
     },
     {
-        "id": "e5bdf2b3c7003dc3",
+        "id": "0d53d6664af44d6d",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "Editing?",
         "func": "var selectedArea = flow.get(\"selectedArea\");\nmsg.enabled = false;\nif( selectedArea )\n    msg.enabled = true;\nreturn msg;",
         "outputs": 1,
@@ -2037,35 +2031,35 @@
         "y": 1320,
         "wires": [
             [
-                "942a2e2bb280a956",
-                "a271ff5bfbdf730d"
+                "1a6a08383e4a0862",
+                "8d614023edbe3deb"
             ]
         ]
     },
     {
-        "id": "ed1c8290648e6795",
+        "id": "d6ab9f5d440d3a9c",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link in 49",
         "links": [
-            "47a2d3abcbc09f17",
-            "c796332d1f02c3e3"
+            "54256b6875e3609a",
+            "d59950d738bce15b"
         ],
         "x": 145,
         "y": 1320,
         "wires": [
             [
-                "e5bdf2b3c7003dc3"
+                "0d53d6664af44d6d"
             ]
         ]
     },
     {
-        "id": "a271ff5bfbdf730d",
+        "id": "8d614023edbe3deb",
         "type": "ui_button",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "",
-        "group": "22b0cd4424c8b8e8",
+        "group": "3a648bd6f4b6045e",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -2084,32 +2078,32 @@
         "y": 1360,
         "wires": [
             [
-                "6df7a2346685e778"
+                "aa8db4ad090ec0f1"
             ]
         ]
     },
     {
-        "id": "20acb95e4c037424",
+        "id": "96462c6acda527c7",
         "type": "link in",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "link in 50",
         "links": [
-            "47a2d3abcbc09f17",
-            "8090087e21676af5"
+            "54256b6875e3609a",
+            "23920654030c23ca"
         ],
         "x": 145,
         "y": 1260,
         "wires": [
             [
-                "578d13bad79d2645"
+                "82bc9f06b9f0e15e"
             ]
         ]
     },
     {
-        "id": "6df7a2346685e778",
+        "id": "aa8db4ad090ec0f1",
         "type": "function",
-        "z": "667718535317c178",
-        "g": "656307df201fd722",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
         "name": "Remove Area",
         "func": "var selectedArea = flow.get(\"selectedArea\");\nif(!selectedArea)\n    return;\n\nvar settings = flow.get(\"settings\");\nvar areas = settings.areas;\n\nvar index = -1;\nvar counter = 0;\n\nareas.forEach(function(area){\n    if( area.id === selectedArea.id)\n        index = counter;\n    counter++;\n})\n\nif( index >= 0 )\n    areas.splice(index, 1);\n\nflow.set(\"settings\",settings);\nmsg.payload = areas;\nmsg.topic = \"save\";\nflow.set(\"selectedArea\");\nreturn msg;",
         "outputs": 1,
@@ -2122,14 +2116,14 @@
         "y": 1360,
         "wires": [
             [
-                "935c4e2405f54009"
+                "e19a90b248925e8b"
             ]
         ]
     },
     {
-        "id": "4e9f1ed5a82de0df",
+        "id": "f6ea600d3a8e6dc7",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Start",
         "info": "",
         "x": 230,
@@ -2137,9 +2131,9 @@
         "wires": []
     },
     {
-        "id": "a86997148852963c",
+        "id": "65dd0d61b4867b87",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Reset",
         "info": "",
         "x": 230,
@@ -2147,9 +2141,9 @@
         "wires": []
     },
     {
-        "id": "554bdc56ba777584",
+        "id": "b47e1023a33fc6a2",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Edit",
         "info": "",
         "x": 230,
@@ -2157,9 +2151,9 @@
         "wires": []
     },
     {
-        "id": "f70b6fa4dc7357c4",
+        "id": "beb6c9035eda5895",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Area",
         "info": "",
         "x": 1570,
@@ -2167,9 +2161,9 @@
         "wires": []
     },
     {
-        "id": "af20aa7ce343ad80",
+        "id": "b9d9e5a28cafd3e1",
         "type": "comment",
-        "z": "667718535317c178",
+        "z": "ef4882e5c9666d93",
         "name": "Updated",
         "info": "",
         "x": 1580,
@@ -2177,10 +2171,10 @@
         "wires": []
     },
     {
-        "id": "64bb05819731d049",
+        "id": "6529fb7eb40c0ebe",
         "type": "Axis camera",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Camera Info",
@@ -2193,15 +2187,15 @@
         "y": 720,
         "wires": [
             [
-                "0f3e3348af2c3ab4"
+                "73e02917bbfb4dbe"
             ]
         ]
     },
     {
-        "id": "9ec4297f62883613",
+        "id": "849259909c820b50",
         "type": "Axis device",
-        "z": "667718535317c178",
-        "g": "f576cc85c5a857a6",
+        "z": "ef4882e5c9666d93",
+        "g": "2b3a2c42a4787181",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Device Info",
@@ -2213,15 +2207,100 @@
         "y": 680,
         "wires": [
             [
-                "0e24e9d889238483"
+                "3ce717621d946575"
             ]
         ]
     },
     {
-        "id": "9eaa73148f46d2bf",
+        "id": "6a646e187da57a77",
+        "type": "change",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
+        "name": "timeout",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.beginTransition",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 1140,
+        "wires": [
+            [
+                "0eac5531b41dc38c"
+            ]
+        ]
+    },
+    {
+        "id": "0eac5531b41dc38c",
+        "type": "ui_numeric",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
+        "name": "",
+        "label": "Occupied transition",
+        "tooltip": "",
+        "group": "b8c60865127a1f40",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}s",
+        "min": 0,
+        "max": "20",
+        "step": "1",
+        "className": "",
+        "x": 890,
+        "y": 1140,
+        "wires": [
+            [
+                "ca588a1d88e6abe1"
+            ]
+        ]
+    },
+    {
+        "id": "ca588a1d88e6abe1",
+        "type": "change",
+        "z": "ef4882e5c9666d93",
+        "g": "afac76f069f774e4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "settings.beginTransition",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1160,
+        "y": 1140,
+        "wires": [
+            [
+                "29e3cc402930ebdd"
+            ]
+        ]
+    },
+    {
+        "id": "b8c60865127a1f40",
         "type": "ui_group",
         "name": "Settings",
-        "tab": "2d3dacb1a7639ea6",
+        "tab": "c484ed310bc56088",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -2229,10 +2308,10 @@
         "className": ""
     },
     {
-        "id": "f2f96b09eaa7c0f5",
+        "id": "13a00f8a1a87fa4f",
         "type": "ui_group",
         "name": "Visualization",
-        "tab": "2d3dacb1a7639ea6",
+        "tab": "c484ed310bc56088",
         "order": 1,
         "disp": false,
         "width": "16",
@@ -2240,10 +2319,10 @@
         "className": ""
     },
     {
-        "id": "22b0cd4424c8b8e8",
+        "id": "3a648bd6f4b6045e",
         "type": "ui_group",
         "name": "Areas",
-        "tab": "2d3dacb1a7639ea6",
+        "tab": "c484ed310bc56088",
         "order": 3,
         "disp": true,
         "width": "6",
@@ -2258,7 +2337,7 @@
         "protocol": "http"
     },
     {
-        "id": "2d3dacb1a7639ea6",
+        "id": "c484ed310bc56088",
         "type": "ui_tab",
         "name": "Area Presence",
         "icon": "dashboard",
