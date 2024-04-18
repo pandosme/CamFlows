@@ -22,12 +22,13 @@
             "911df7b39359ba8d",
             "cb1d749cc3fe6285",
             "09e075912b9c8a40",
-            "cff29bc5546e105d"
+            "cff29bc5546e105d",
+            "6086537d369502de"
         ],
         "x": 234,
         "y": 1319,
-        "w": 472,
-        "h": 122
+        "w": 672,
+        "h": 162
     },
     {
         "id": "3dd1e2454c188439",
@@ -51,7 +52,7 @@
             "aac7770f248c3c2a"
         ],
         "x": 234,
-        "y": 1479,
+        "y": 1499,
         "w": 812,
         "h": 162
     },
@@ -234,7 +235,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 340,
-        "y": 1560,
+        "y": 1580,
         "wires": [
             [
                 "ca7c2e415bdf030b"
@@ -255,7 +256,7 @@
         "encoding": "none",
         "allProps": false,
         "x": 560,
-        "y": 1560,
+        "y": 1580,
         "wires": [
             [
                 "f1a4a9e3f5f55822"
@@ -272,7 +273,7 @@
         "action": "",
         "pretty": false,
         "x": 770,
-        "y": 1560,
+        "y": 1580,
         "wires": [
             [
                 "173f30106de6d1e4"
@@ -300,7 +301,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 1560,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -316,7 +317,7 @@
         ],
         "uncaught": false,
         "x": 490,
-        "y": 1600,
+        "y": 1620,
         "wires": [
             [
                 "ef248485bfa5d603"
@@ -337,7 +338,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 1600,
+        "y": 1620,
         "wires": [
             [
                 "b06790a0766b8ac8"
@@ -357,7 +358,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 900,
-        "y": 1600,
+        "y": 1620,
         "wires": [
             []
         ]
@@ -780,7 +781,7 @@
         "name": "Initialize the image timestamp list",
         "info": "",
         "x": 390,
-        "y": 1520,
+        "y": 1540,
         "wires": []
     },
     {
@@ -897,7 +898,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 620,
+        "x": 820,
         "y": 1360,
         "wires": [
             []
@@ -909,14 +910,14 @@
         "z": "37f8f560a1959259",
         "g": "d878a90837cef791",
         "name": "Table",
-        "func": "var images = flow.get(\"images\");\nvar row = 0;\nvar i;\n\nvar html = '<table style=\"width:100%\">\\n';\nvar amount = images.length + 3;\nnode.warn(amount);\nfor(row = 0; row < amount; row += 4) {\n    html += '<tr>\\n';\n    for( i = 0; i < 4; i++ ) {\n        var index = row + i;\n        if( index < images.length ) {\n            var image = images[index];\n            html += '<td style=\"width:25%\"><a href=\"/download/' + image + '\"><img src=\"/image/' + image + '\" width=\"310\"></a></td>\\n';\n        }\n    }\n    html += \"</tr>\\n\"\n}\n\nhtml += '</table>';\n\nmsg.payload = html;\n\nreturn msg;",
+        "func": "var images = flow.get(\"images\");\nvar row = 0;\nvar i;\n\nvar html = '<table style=\"width:100%\">\\n';\nvar amount = images.length + 3;\nnode.warn(amount);\nfor(row = 0; row < amount; row += 4) {\n    html += '<tr>\\n';\n    for( i = 0; i < 4; i++ ) {\n        var index = row + i;\n        if( index < images.length ) {\n            var image = images[index];\n            html += '<td style=\"width:25%\"><a href=\"/download/' + image + '\" target=\"_blank\"><img src=\"/image/' + image + '\" width=\"310\"></a></td>\\n';\n        }\n    }\n    html += \"</tr>\\n\"\n}\n\nhtml += '</table>';\n\nmsg.payload = html;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 650,
         "y": 1360,
         "wires": [
             [
@@ -1323,10 +1324,11 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 320,
-        "y": 1400,
+        "y": 1440,
         "wires": [
             [
-                "d11f7c2419b19e45"
+                "d11f7c2419b19e45",
+                "6086537d369502de"
             ]
         ]
     },
@@ -1339,34 +1341,8 @@
         "links": [
             "52ebd45c36e8a173"
         ],
-        "x": 755,
-        "y": 1400,
-        "wires": []
-    },
-    {
-        "id": "eb26aed8873c9665",
-        "type": "link in",
-        "z": "37f8f560a1959259",
-        "name": "Refresh",
-        "links": [
-            "205cfa667e005e67"
-        ],
-        "x": 75,
-        "y": 1360,
-        "wires": [
-            [
-                "09e075912b9c8a40"
-            ]
-        ]
-    },
-    {
-        "id": "a0fa3046380151a9",
-        "type": "comment",
-        "z": "37f8f560a1959259",
-        "name": "Refresh",
-        "info": "",
-        "x": 170,
-        "y": 1360,
+        "x": 965,
+        "y": 1440,
         "wires": []
     },
     {
@@ -1412,6 +1388,32 @@
         "wires": []
     },
     {
+        "id": "6086537d369502de",
+        "type": "delay",
+        "z": "37f8f560a1959259",
+        "g": "d878a90837cef791",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "250",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1400,
+        "wires": [
+            [
+                "cb1d749cc3fe6285"
+            ]
+        ]
+    },
+    {
         "id": "a8260b149807227d",
         "type": "ui_group",
         "name": "Images",
@@ -1427,6 +1429,7 @@
         "type": "ui_tab",
         "name": "SD Card",
         "icon": "dashboard",
+        "order": 5,
         "disabled": false,
         "hidden": false
     }
