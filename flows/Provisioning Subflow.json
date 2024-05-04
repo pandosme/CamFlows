@@ -4179,7 +4179,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "f4161a57e9f69912",
         "name": "VAPIX",
-        "func": "msg.payload = [];\n\nif (msg.config.hasOwnProperty(\"vapix\") && Array.isArray(msg.config.vapix) && msg.config.length > 0 )\n    msg.payload = msg.payload.concat(msg.config.vapix);\n\nif( msg.properties && msg.properties.hasOwnProperty(\"vapix\") && Array.isArray(msg.properties.vapix) && msg.properties.vapix.length > 0 )\n    msg.payload = msg.payload.concat(msg.properties.vapix);\n\nif ( msg.payload.length === 0 ) {\n    msg.payload = null;\n    node.send([null,msg]);\n    return;\n}\nnode.send([msg],null);\n",
+        "func": "msg.payload = [];\n\nif (msg.config.hasOwnProperty(\"vapix\") && Array.isArray(msg.config.vapix) && msg.config.vapix.length > 0 )\n    msg.payload = msg.payload.concat(msg.config.vapix);\n\nif( msg.properties && msg.properties.hasOwnProperty(\"vapix\") && Array.isArray(msg.properties.vapix) && msg.properties.vapix.length > 0 )\n    msg.payload = msg.payload.concat(msg.properties.vapix);\n\nif ( msg.payload.length === 0 ) {\n    msg.payload = null;\n    node.send([null,msg]);\n    return;\n}\nnode.send([msg],null);\n",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -4223,7 +4223,7 @@
         "z": "6d42dc07fde7a1cc",
         "g": "f4161a57e9f69912",
         "name": "function 1",
-        "func": "if( !msg.payload.hasOwnProperty(\"method\") ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( typeof msg.payload.method !== \"string\" || msg.payload.method.length < 2 ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( !msg.payload.hasOwnProperty(\"cgi\") ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( typeof msg.payload.cgi !== \"string\" || msg.payload.cgi.length < 5 ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nvar body = null;\nif( msg.payload.hasOwnProperty(\"body\") )\n    body = msg.payload.body;\nif( msg.payload.hasOwnProperty(\"data\") )\n    body = msg.payload.data;\nif( msg.payload.hasOwnProperty(\"payload\") )\n    body = msg.payload.payload;\n\nswitch( msg.payload.method ) {\n    case \"get\":\n        msg.cgi = msg.payload.cgi;\n        node.send([msg,null,null]);\n        break;\n    case \"post\":\n        if(!body) {\n            node.error(\"HTTP Popst body missing\");\n            node.send([null,null,msg]);\n            return;\n        }\n        msg.cgi = msg.payload.cgi;\n        msg.payload = body;\n        node.send([null,msg,null]);\n        break;\n    default:\n        node.send([null,null,msg]);\n        break;\n}\n",
+        "func": "if( !msg.payload.hasOwnProperty(\"method\") ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( typeof msg.payload.method !== \"string\" || msg.payload.method.length < 2 ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( !msg.payload.hasOwnProperty(\"cgi\") ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nif( typeof msg.payload.cgi !== \"string\" || msg.payload.cgi.length < 5 ) {\n    node.send([null,null,msg]);\n    return;\n}\n\nvar body = null;\nif( msg.payload.hasOwnProperty(\"body\") )\n    body = msg.payload.body;\nif( msg.payload.hasOwnProperty(\"data\") )\n    body = msg.payload.data;\nif( msg.payload.hasOwnProperty(\"payload\") )\n    body = msg.payload.payload;\n\nswitch( msg.payload.method ) {\n    case \"get\":\n        msg.cgi = msg.payload.cgi;\n        node.send([msg,null,null]);\n        break;\n    case \"post\":\n        if(!body) {\n            node.error(\"No body\",msg);\n            node.error(\"HTTP Popst body missing\");\n            node.send([null,null,msg]);\n            return;\n        }\n        msg.cgi = msg.payload.cgi;\n        msg.payload = body;\n        node.send([null,msg,null]);\n        break;\n    default:\n        node.send([null,null,msg]);\n        break;\n}\n",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
@@ -5167,9 +5167,9 @@
             "284779d89bfd4a43",
             "f429dd5d45654cb8"
         ],
-        "x": 214,
+        "x": 204,
         "y": 499,
-        "w": 972,
+        "w": 982,
         "h": 247
     },
     {
@@ -5590,21 +5590,17 @@
         "protocol": "http"
     },
     {
-        "id": "ad59cd0b2ab4d039",
+        "id": "31315090304498e4",
         "type": "subflow:6d42dc07fde7a1cc",
-        "z": "6ee61647354d9d97",
+        "z": "dd0842dec6264c99",
         "name": "",
-        "x": 1460,
-        "y": 440,
+        "x": 1840,
+        "y": 460,
         "wires": [
+            [],
+            [],
             [
-                "2af2e0e1bf3ec1c2"
-            ],
-            [
-                "cfde79286d48607d"
-            ],
-            [
-                "d6d856a2f4c61087"
+                "01a87c96d17dcc0c"
             ]
         ]
     }
