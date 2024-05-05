@@ -1,6 +1,6 @@
 [
     {
-        "id": "7497b37a51b0ccd4",
+        "id": "874e5624d1b709a5",
         "type": "tab",
         "label": "Firmware upgrade",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "69a6827d7e30ddc7",
+        "id": "d48f037796138a6f",
         "type": "group",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Refresh Information",
         "style": {
             "stroke": "#000000",
@@ -18,18 +18,18 @@
             "label": true
         },
         "nodes": [
-            "f882660864db6601",
-            "03ccbe88b6215127",
-            "4009fd33cfa0a014",
-            "49653aaa372f465a",
-            "65e8f959c9c22845",
-            "cc80e30e56062eed",
-            "64eba8d373a901d6",
-            "27d57d9522ef4b37",
-            "febf982927565a3e",
-            "a0cae333fb11e90e",
-            "2a3c754aed4ab048",
-            "14a1170e8a2a5574"
+            "fb21015c2a1cd268",
+            "f092ddcd618c369e",
+            "f717625ba3b4bcdf",
+            "c0aa0d7dc5e30e0d",
+            "95ab10886ae91ab7",
+            "614b47cc5644c7c0",
+            "1f39517eccb099f1",
+            "9cac5406b6e253c3",
+            "89aca8e617d907bd",
+            "54e276c2a7ea94a0",
+            "7e87ff727d5c5f4d",
+            "bc902889375ffc78"
         ],
         "x": 314,
         "y": 199,
@@ -37,9 +37,9 @@
         "h": 382
     },
     {
-        "id": "a34aee74e091cd2b",
+        "id": "885f6b0fd35850f0",
         "type": "group",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Download latest if needed",
         "style": {
             "label": true,
@@ -48,16 +48,16 @@
             "color": "#000000"
         },
         "nodes": [
-            "569b327c238cb57e",
-            "2ee1f4f830ca9548",
-            "9152b30290fdb4a4",
-            "c9a7e43d8ae16952",
-            "aaf19a5baf1d4032",
-            "3215c31d0b13680e",
-            "e32d095189265dfb",
-            "ea38537980e4336d",
-            "24cc0fe57e4c17ba",
-            "59720ee692de3a93"
+            "bb398b21157061bc",
+            "491121e20872c641",
+            "c329b24abc7b9184",
+            "18f2a6b7a0a7b73a",
+            "8627d456b4bcb113",
+            "2c0c836a025d539f",
+            "f7dd7834d2987a1c",
+            "4735afecbf76ac43",
+            "df0c46fcf74dd122",
+            "8faf9f06664e6d79"
         ],
         "x": 314,
         "y": 639,
@@ -65,9 +65,9 @@
         "h": 242
     },
     {
-        "id": "f2b7a7fd2d8ff58f",
+        "id": "919242b0e0657f89",
         "type": "group",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Upgrade",
         "style": {
             "stroke": "#000000",
@@ -76,14 +76,14 @@
             "color": "#000000"
         },
         "nodes": [
-            "0b4845eb00c1a767",
-            "51babea9b53c89bd",
-            "ea657e9184231e0e",
-            "756bb201fc53da66",
-            "24d4c191cdb02d9f",
-            "a508a750a3a8906c",
-            "d8d1a3786ddca838",
-            "b03989c79406b6de"
+            "a3facbae2804b3fd",
+            "b6d74bb6238ef2cf",
+            "01e1817631b84c25",
+            "189868e0177bd459",
+            "d63d809aeee84778",
+            "d860407e7bd243c4",
+            "6b55a99bafde02e7",
+            "a4e36f92de6a4ba9"
         ],
         "x": 314,
         "y": 939,
@@ -91,63 +91,63 @@
         "h": 202
     },
     {
-        "id": "14a1170e8a2a5574",
+        "id": "bc902889375ffc78",
         "type": "junction",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "x": 1100,
         "y": 400,
         "wires": [
             [
-                "27d57d9522ef4b37",
-                "765b497efd036aa8"
+                "9cac5406b6e253c3",
+                "94da8e478db0991f"
             ]
         ]
     },
     {
-        "id": "24cc0fe57e4c17ba",
+        "id": "df0c46fcf74dd122",
         "type": "junction",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "x": 1100,
         "y": 740,
         "wires": [
             [
-                "4bae3eb5a8024f98"
+                "eb370c20b9efbbcc"
             ]
         ]
     },
     {
-        "id": "59720ee692de3a93",
+        "id": "8faf9f06664e6d79",
         "type": "junction",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "x": 1000,
         "y": 800,
         "wires": [
             [
-                "24cc0fe57e4c17ba"
+                "df0c46fcf74dd122"
             ]
         ]
     },
     {
-        "id": "b03989c79406b6de",
+        "id": "a4e36f92de6a4ba9",
         "type": "junction",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "x": 1020,
         "y": 980,
         "wires": [
             [
-                "390b878838b858a3"
+                "65b635d640934c28"
             ]
         ]
     },
     {
-        "id": "569b327c238cb57e",
+        "id": "bb398b21157061bc",
         "type": "exec",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "command": "",
         "addpay": "payload",
         "append": "",
@@ -162,15 +162,15 @@
             [],
             [],
             [
-                "e32d095189265dfb"
+                "f7dd7834d2987a1c"
             ]
         ]
     },
     {
-        "id": "9152b30290fdb4a4",
+        "id": "c329b24abc7b9184",
         "type": "delay",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "",
         "pauseType": "delayv",
         "timeout": "5",
@@ -188,15 +188,15 @@
         "y": 680,
         "wires": [
             [
-                "3215c31d0b13680e"
+                "2c0c836a025d539f"
             ]
         ]
     },
     {
-        "id": "c9a7e43d8ae16952",
+        "id": "18f2a6b7a0a7b73a",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "",
         "rules": [
             {
@@ -216,18 +216,18 @@
         "y": 680,
         "wires": [
             [
-                "9152b30290fdb4a4"
+                "c329b24abc7b9184"
             ]
         ]
     },
     {
-        "id": "6142429506edebf5",
+        "id": "78de28e79b82b4c6",
         "type": "mqtt out",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "axis/upgrade/+",
         "topic": "",
-        "qos": "",
-        "retain": "",
+        "qos": "0",
+        "retain": "true",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
@@ -239,9 +239,9 @@
         "wires": []
     },
     {
-        "id": "e3072dc93ddc861c",
+        "id": "d1967be45ef0809d",
         "type": "inject",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "",
         "props": [
             {
@@ -263,15 +263,15 @@
         "y": 240,
         "wires": [
             [
-                "2a3c754aed4ab048"
+                "7e87ff727d5c5f4d"
             ]
         ]
     },
     {
-        "id": "f882660864db6601",
+        "id": "fb21015c2a1cd268",
         "type": "Axis device",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Device Info",
@@ -283,15 +283,15 @@
         "y": 300,
         "wires": [
             [
-                "03ccbe88b6215127"
+                "f092ddcd618c369e"
             ]
         ]
     },
     {
-        "id": "03ccbe88b6215127",
+        "id": "f092ddcd618c369e",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "rules": [
             {
@@ -311,16 +311,16 @@
         "y": 300,
         "wires": [
             [
-                "4009fd33cfa0a014",
-                "a7e24bebbde32d81"
+                "f717625ba3b4bcdf",
+                "b2eb2723441d2a8d"
             ]
         ]
     },
     {
-        "id": "4009fd33cfa0a014",
+        "id": "f717625ba3b4bcdf",
         "type": "file in",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "filename": "sdcard/firmware/ver.txt",
         "filenameType": "str",
@@ -333,33 +333,33 @@
         "y": 360,
         "wires": [
             [
-                "cc80e30e56062eed"
+                "614b47cc5644c7c0"
             ]
         ]
     },
     {
-        "id": "49653aaa372f465a",
+        "id": "c0aa0d7dc5e30e0d",
         "type": "catch",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "scope": [
-            "4009fd33cfa0a014"
+            "f717625ba3b4bcdf"
         ],
         "uncaught": false,
         "x": 390,
         "y": 400,
         "wires": [
             [
-                "64eba8d373a901d6"
+                "1f39517eccb099f1"
             ]
         ]
     },
     {
-        "id": "65e8f959c9c22845",
+        "id": "95ab10886ae91ab7",
         "type": "file",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "filename": "sdcard/firmware/ver.txt",
         "filenameType": "str",
@@ -371,15 +371,15 @@
         "y": 400,
         "wires": [
             [
-                "14a1170e8a2a5574"
+                "bc902889375ffc78"
             ]
         ]
     },
     {
-        "id": "cc80e30e56062eed",
+        "id": "614b47cc5644c7c0",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "rules": [
             {
@@ -399,15 +399,15 @@
         "y": 360,
         "wires": [
             [
-                "14a1170e8a2a5574"
+                "bc902889375ffc78"
             ]
         ]
     },
     {
-        "id": "64eba8d373a901d6",
+        "id": "1f39517eccb099f1",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "rules": [
             {
@@ -434,15 +434,15 @@
         "y": 400,
         "wires": [
             [
-                "65e8f959c9c22845"
+                "95ab10886ae91ab7"
             ]
         ]
     },
     {
-        "id": "27d57d9522ef4b37",
+        "id": "9cac5406b6e253c3",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "Get latest version",
         "func": "var model = flow.get(\"device\").model.replace(/ /g, \"_\");\nmsg.url = \"http://ftp.axis.com/pub_soft/MPQT/\" + model + \"/latest/ver.txt\";\nreturn msg;",
         "outputs": 1,
@@ -455,15 +455,15 @@
         "y": 480,
         "wires": [
             [
-                "febf982927565a3e"
+                "89aca8e617d907bd"
             ]
         ]
     },
     {
-        "id": "febf982927565a3e",
+        "id": "89aca8e617d907bd",
         "type": "http request",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "",
         "method": "GET",
         "ret": "txt",
@@ -480,16 +480,16 @@
         "y": 480,
         "wires": [
             [
-                "a0cae333fb11e90e",
-                "9e230b8f33f2dc76"
+                "54e276c2a7ea94a0",
+                "f5619d9a0561d396"
             ]
         ]
     },
     {
-        "id": "a0cae333fb11e90e",
+        "id": "54e276c2a7ea94a0",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "Initialize",
         "func": "if(msg.statusCode >= 400) {\n    flow.set(\"latest\",\"Error\");\n    node.error(\"Axis FTP responded \" + msg.statusCode,msg);\n    return;\n}\n\nflow.set(\"latest\",msg.payload);\n\nvar busy = flow.get(\"busy\") || false;\nflow.set(\"busy\",busy);\nflow.set(\"message\",\"Info updated\");\nif( flow.get(\"device\").authenticated === false )\n    flow.set(\"message\",\"Error: Device credentials unautorized.  Check user/password\");\nreturn msg;",
         "outputs": 1,
@@ -502,46 +502,46 @@
         "y": 540,
         "wires": [
             [
-                "64bb6cb69c58370f"
+                "84016e6df0cd93a2"
             ]
         ]
     },
     {
-        "id": "aac2c9106397b469",
+        "id": "134e37ec28676dd3",
         "type": "link in",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "link in 53",
         "links": [
-            "64bb6cb69c58370f",
-            "4bae3eb5a8024f98",
-            "390b878838b858a3"
+            "84016e6df0cd93a2",
+            "eb370c20b9efbbcc",
+            "65b635d640934c28"
         ],
         "x": 115,
         "y": 100,
         "wires": [
             [
-                "ca23a46ba217df08"
+                "628a72aff67e70e4"
             ]
         ]
     },
     {
-        "id": "64bb6cb69c58370f",
+        "id": "84016e6df0cd93a2",
         "type": "link out",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "link out 41",
         "mode": "link",
         "links": [
-            "aac2c9106397b469",
-            "ff9e76d4b967d1f9"
+            "134e37ec28676dd3",
+            "a46f79e226519254"
         ],
         "x": 1335,
         "y": 540,
         "wires": []
     },
     {
-        "id": "2738fa9daf34a418",
+        "id": "2fc3dfc374409a62",
         "type": "comment",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Refresh",
         "info": "",
         "x": 1230,
@@ -549,9 +549,9 @@
         "wires": []
     },
     {
-        "id": "e0aada17e9d47e81",
+        "id": "f18be84b9d77bddc",
         "type": "debug",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "debug 246",
         "active": true,
         "tosidebar": true,
@@ -566,9 +566,9 @@
         "wires": []
     },
     {
-        "id": "a7e24bebbde32d81",
+        "id": "b2eb2723441d2a8d",
         "type": "debug",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "debug 247",
         "active": false,
         "tosidebar": true,
@@ -582,9 +582,9 @@
         "wires": []
     },
     {
-        "id": "765b497efd036aa8",
+        "id": "94da8e478db0991f",
         "type": "debug",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "debug 248",
         "active": false,
         "tosidebar": true,
@@ -598,9 +598,9 @@
         "wires": []
     },
     {
-        "id": "ca23a46ba217df08",
+        "id": "628a72aff67e70e4",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Message",
         "func": "var device = flow.get(\"device\");\n\nmsg.topic =\"axis/upgrade/\" + device.serial;\nmsg.payload = {\n    message: flow.get(\"message\"),\n    group: flow.get(\"group\") || \"Undefined\",\n    location: flow.get(\"location\") || \"Undefined\",\n    serial: device.serial, \n    model: device.model,\n    firmware: device.firmware,\n    downloaded: flow.get(\"downloaded\"),\n    latest:  flow.get(\"latest\"),\n    timestamp: new Date().getTime()\n}\nreturn msg;",
         "outputs": 1,
@@ -613,30 +613,30 @@
         "y": 100,
         "wires": [
             [
-                "e0aada17e9d47e81",
-                "6142429506edebf5"
+                "f18be84b9d77bddc",
+                "78de28e79b82b4c6"
             ]
         ]
     },
     {
-        "id": "2a3c754aed4ab048",
+        "id": "7e87ff727d5c5f4d",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "69a6827d7e30ddc7",
+        "z": "874e5624d1b709a5",
+        "g": "d48f037796138a6f",
         "name": "Set Location and Group Here",
         "rules": [
             {
                 "t": "set",
                 "p": "location",
                 "pt": "flow",
-                "to": "Somewhere",
+                "to": "Home",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "group",
                 "pt": "flow",
-                "to": "Group 1",
+                "to": "Production",
                 "tot": "str"
             }
         ],
@@ -649,14 +649,14 @@
         "y": 240,
         "wires": [
             [
-                "f882660864db6601"
+                "fb21015c2a1cd268"
             ]
         ]
     },
     {
-        "id": "9e230b8f33f2dc76",
+        "id": "f5619d9a0561d396",
         "type": "debug",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "debug 249",
         "active": false,
         "tosidebar": true,
@@ -670,9 +670,9 @@
         "wires": []
     },
     {
-        "id": "b61d9a273afb4569",
+        "id": "336dfefddeafd4b7",
         "type": "catch",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "",
         "scope": null,
         "uncaught": true,
@@ -680,33 +680,33 @@
         "y": 140,
         "wires": [
             [
-                "7b7b65da348de6b9"
+                "58211845d01fb2c2"
             ]
         ]
     },
     {
-        "id": "ff9e76d4b967d1f9",
+        "id": "a46f79e226519254",
         "type": "link in",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "link in 54",
         "links": [
-            "64bb6cb69c58370f"
+            "84016e6df0cd93a2"
         ],
         "x": 205,
         "y": 680,
         "wires": [
             [
-                "aaf19a5baf1d4032"
+                "8627d456b4bcb113"
             ]
         ]
     },
     {
-        "id": "aaf19a5baf1d4032",
+        "id": "8627d456b4bcb113",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "Download latest?",
-        "func": "var busy = flow.get(\"busy\") || false;\nif( busy )\n    return;\n    \nif( flow.get(\"latest\") === flow.get(\"downloaded\") ) \n    return msg;",
+        "func": "var busy = flow.get(\"busy\") || false;\nif( busy )\n    return;\n    \nif( flow.get(\"latest\") === flow.get(\"downloaded\") )\n    return;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -717,15 +717,15 @@
         "y": 680,
         "wires": [
             [
-                "2ee1f4f830ca9548"
+                "491121e20872c641"
             ]
         ]
     },
     {
-        "id": "3215c31d0b13680e",
+        "id": "2c0c836a025d539f",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "Download",
         "func": "flow.set(\"message\",\"Downloading firmware version \" + flow.get(\"latest\") + \".\");\nflow.set(\"busy\",true);\n\nvar model = flow.get(\"device\").model.replace(/ /g, \"_\");\nvar url = \"http://ftp.axis.com/pub_soft/MPQT/\" + model + \"/latest/\" + model + \".bin\";\n\nmsg.payload = \"curl -o sdcard/firmware/firmware.bin \" + url;\nreturn msg;\n",
         "outputs": 1,
@@ -738,29 +738,29 @@
         "y": 740,
         "wires": [
             [
-                "569b327c238cb57e",
-                "24cc0fe57e4c17ba"
+                "bb398b21157061bc",
+                "df0c46fcf74dd122"
             ]
         ]
     },
     {
-        "id": "4bae3eb5a8024f98",
+        "id": "eb370c20b9efbbcc",
         "type": "link out",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "link out 42",
         "mode": "link",
         "links": [
-            "aac2c9106397b469"
+            "134e37ec28676dd3"
         ],
         "x": 1335,
         "y": 740,
         "wires": []
     },
     {
-        "id": "e32d095189265dfb",
+        "id": "f7dd7834d2987a1c",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "Result",
         "func": "flow.set(\"busy\",false);\n\nif( msg.payload.code !== 0 ) {  //\n    flow.set(\"message\",\"Error: Firmware download failed\");\n    node.send([msg,null]);\n    return \n}\n\nflow.set(\"message\",\"Firmware \" + flow.get(\"latest\") + \" downloaded\");\nflow.set(\"downloaded\",flow.get(\"latest\"));\nmsg.payload =  flow.get(\"latest\");\nnode.send([null,msg]);\n\n",
         "outputs": 2,
@@ -773,18 +773,18 @@
         "y": 820,
         "wires": [
             [
-                "59720ee692de3a93"
+                "8faf9f06664e6d79"
             ],
             [
-                "ea38537980e4336d"
+                "4735afecbf76ac43"
             ]
         ]
     },
     {
-        "id": "ea38537980e4336d",
+        "id": "4735afecbf76ac43",
         "type": "file",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "",
         "filename": "sdcard/firmware/ver.txt",
         "filenameType": "str",
@@ -796,14 +796,14 @@
         "y": 840,
         "wires": [
             [
-                "59720ee692de3a93"
+                "8faf9f06664e6d79"
             ]
         ]
     },
     {
-        "id": "7b7b65da348de6b9",
+        "id": "58211845d01fb2c2",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Message",
         "func": "var device = flow.get(\"device\");\n\nmsg.topic =\"axis/upgrade/\" + device.serial;\nmsg.payload = {\n    message: \"Error: \" + msg.error.message,\n    group: flow.get(\"group\") || \"Undefined\",\n    location: flow.get(\"location\") || \"Undefined\",\n    serial: device.serial, \n    model: device.model,\n    firmware: device.firmware,\n    downloaded: flow.get(\"downloaded\"),\n    latest:  flow.get(\"latest\"),\n    timestamp: new Date().getTime()\n}\nreturn msg;",
         "outputs": 1,
@@ -816,15 +816,15 @@
         "y": 140,
         "wires": [
             [
-                "6142429506edebf5",
-                "e0aada17e9d47e81"
+                "78de28e79b82b4c6",
+                "f18be84b9d77bddc"
             ]
         ]
     },
     {
-        "id": "c7fca5bbc836d051",
+        "id": "dc7bed35ad4ddbd7",
         "type": "mqtt in",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "",
         "topic": "axis/upgrade",
         "qos": "2",
@@ -838,15 +838,15 @@
         "y": 980,
         "wires": [
             [
-                "0b4845eb00c1a767"
+                "a3facbae2804b3fd"
             ]
         ]
     },
     {
-        "id": "0b4845eb00c1a767",
+        "id": "a3facbae2804b3fd",
         "type": "function",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "Check to see if upgrade applies",
         "func": "if( flow.get(\"busy\") )\n    return;\n\nif( flow.get(\"device\").firmware === flow.get(\"latest\"))\n    return;\n\nif( msg.payload.hasOwnProperty(\"location\") )\n    if( flow.get(\"location\") != msg.payload.location)\n        return;\n\nif( msg.payload.hasOwnProperty(\"group\") )\n    if( flow.get(\"group\") != msg.payload.group)\n        return;\n\nif( msg.payload.hasOwnProperty(\"model\") )\n    if( flow.get(\"device\").model != msg.payload.model )\n        return;\n\nif( msg.payload.hasOwnProperty(\"serial\") ) {\n    if( typeof msg.payload.serial === \"string\") {\n        if( msg.payload.serial !== flow.get(\"device\").serial) \n            return;\n    } else {\n        if( Array.isArray(msg.payload.serial) ) {\n            var match = false;\n            msg.payload.serial.forEach(function(item){\n                if( item === flow.get(\"device\").serial)\n                    match = true;\n            });\n            if( !match )\n                return;\n        }\n    }\n}\n\nreturn msg;",
         "outputs": 1,
@@ -859,15 +859,15 @@
         "y": 980,
         "wires": [
             [
-                "51babea9b53c89bd"
+                "b6d74bb6238ef2cf"
             ]
         ]
     },
     {
-        "id": "51babea9b53c89bd",
+        "id": "b6d74bb6238ef2cf",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "Message",
         "rules": [
             {
@@ -894,28 +894,28 @@
         "y": 980,
         "wires": [
             [
-                "b03989c79406b6de",
-                "ea657e9184231e0e"
+                "a4e36f92de6a4ba9",
+                "01e1817631b84c25"
             ]
         ]
     },
     {
-        "id": "390b878838b858a3",
+        "id": "65b635d640934c28",
         "type": "link out",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "link out 43",
         "mode": "link",
         "links": [
-            "aac2c9106397b469"
+            "134e37ec28676dd3"
         ],
         "x": 1335,
         "y": 980,
         "wires": []
     },
     {
-        "id": "707e071d175e7175",
+        "id": "13a51156ac974b6b",
         "type": "comment",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Status",
         "info": "",
         "x": 1230,
@@ -923,9 +923,9 @@
         "wires": []
     },
     {
-        "id": "d70b24cb46da959b",
+        "id": "ed3eb698b7fb3b9f",
         "type": "comment",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Status",
         "info": "",
         "x": 1230,
@@ -933,10 +933,10 @@
         "wires": []
     },
     {
-        "id": "ea657e9184231e0e",
+        "id": "01e1817631b84c25",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "Firmware file",
         "rules": [
             {
@@ -963,15 +963,15 @@
         "y": 1040,
         "wires": [
             [
-                "756bb201fc53da66"
+                "189868e0177bd459"
             ]
         ]
     },
     {
-        "id": "756bb201fc53da66",
+        "id": "189868e0177bd459",
         "type": "Axis device",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "",
         "preset": "a5d60ef5587cc8fc",
         "action": "Upgrade firmware",
@@ -983,15 +983,15 @@
         "y": 1040,
         "wires": [
             [
-                "24d4c191cdb02d9f"
+                "d63d809aeee84778"
             ]
         ]
     },
     {
-        "id": "24d4c191cdb02d9f",
+        "id": "d63d809aeee84778",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "Message",
         "rules": [
             {
@@ -1018,33 +1018,33 @@
         "y": 1040,
         "wires": [
             [
-                "b03989c79406b6de"
+                "a4e36f92de6a4ba9"
             ]
         ]
     },
     {
-        "id": "a508a750a3a8906c",
+        "id": "d860407e7bd243c4",
         "type": "catch",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "",
         "scope": [
-            "756bb201fc53da66"
+            "189868e0177bd459"
         ],
         "uncaught": false,
         "x": 590,
         "y": 1100,
         "wires": [
             [
-                "d8d1a3786ddca838"
+                "6b55a99bafde02e7"
             ]
         ]
     },
     {
-        "id": "d8d1a3786ddca838",
+        "id": "6b55a99bafde02e7",
         "type": "change",
-        "z": "7497b37a51b0ccd4",
-        "g": "f2b7a7fd2d8ff58f",
+        "z": "874e5624d1b709a5",
+        "g": "919242b0e0657f89",
         "name": "Message",
         "rules": [
             {
@@ -1071,14 +1071,14 @@
         "y": 1100,
         "wires": [
             [
-                "b03989c79406b6de"
+                "a4e36f92de6a4ba9"
             ]
         ]
     },
     {
-        "id": "42c601865ffb888f",
+        "id": "b5f1127af0bf9b5a",
         "type": "comment",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "Version 1.0.0",
         "info": "",
         "x": 170,
@@ -1086,10 +1086,10 @@
         "wires": []
     },
     {
-        "id": "2ee1f4f830ca9548",
+        "id": "491121e20872c641",
         "type": "random",
-        "z": "7497b37a51b0ccd4",
-        "g": "a34aee74e091cd2b",
+        "z": "874e5624d1b709a5",
+        "g": "885f6b0fd35850f0",
         "name": "",
         "low": "1000",
         "high": "21600000",
@@ -1099,14 +1099,14 @@
         "y": 680,
         "wires": [
             [
-                "c9a7e43d8ae16952"
+                "18f2a6b7a0a7b73a"
             ]
         ]
     },
     {
-        "id": "694d41a6b0620652",
+        "id": "cbf7f8158feb443c",
         "type": "inject",
-        "z": "7497b37a51b0ccd4",
+        "z": "874e5624d1b709a5",
         "name": "",
         "props": [
             {
@@ -1124,11 +1124,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 740,
+        "x": 170,
+        "y": 640,
         "wires": [
             [
-                "3215c31d0b13680e"
+                "8627d456b4bcb113"
             ]
         ]
     },
