@@ -1,0 +1,1144 @@
+[
+    {
+        "id": "c454693b955178fa",
+        "type": "tab",
+        "label": "Firmware upgrade",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a92c7bd0b30490c",
+        "type": "group",
+        "z": "c454693b955178fa",
+        "name": "Refresh Information",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "474a578c1b41454b",
+            "a0dc3cc693df9ecf",
+            "ef0bd6f0ddcc600e",
+            "99a85fbea0c1e980",
+            "a53cd182c03038bd",
+            "790d5787018fc704",
+            "13c255cee99243e7",
+            "d2efd326b7d7c506",
+            "c76639cb457f4f47",
+            "cf2882cbf88a5858",
+            "aee94c5cf5f75fcb",
+            "ec2c1a185173f464"
+        ],
+        "x": 314,
+        "y": 199,
+        "w": 812,
+        "h": 382
+    },
+    {
+        "id": "6e6be291561a920a",
+        "type": "group",
+        "z": "c454693b955178fa",
+        "name": "Download latest if needed",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "color": "#000000"
+        },
+        "nodes": [
+            "f9a5ed408078edf4",
+            "30af73f44828cd2a",
+            "70c75493b37f2481",
+            "e4eb97b287058742",
+            "c6e5384a2419350b",
+            "8aefda3258fd52c8",
+            "e8be8159356693c6",
+            "8e84bc257b13de04",
+            "618be6bfbca0d288",
+            "559ffcc73289940a"
+        ],
+        "x": 314,
+        "y": 639,
+        "w": 812,
+        "h": 242
+    },
+    {
+        "id": "9f7fc3a4948fb381",
+        "type": "group",
+        "z": "c454693b955178fa",
+        "name": "Upgrade",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "f89a913e162b6a1a",
+            "e9a059b961e814e8",
+            "81218491f0cc6cf4",
+            "b54743684498a44b",
+            "a5bee89feb7b1506",
+            "867ce8f62e8980fc",
+            "f7809529f587d889",
+            "0209149bc3841791"
+        ],
+        "x": 314,
+        "y": 939,
+        "w": 732,
+        "h": 202
+    },
+    {
+        "id": "ec2c1a185173f464",
+        "type": "junction",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "x": 1100,
+        "y": 400,
+        "wires": [
+            [
+                "d2efd326b7d7c506",
+                "e108cf73539b9e19"
+            ]
+        ]
+    },
+    {
+        "id": "618be6bfbca0d288",
+        "type": "junction",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "x": 1100,
+        "y": 740,
+        "wires": [
+            [
+                "52f21de4e184ebed"
+            ]
+        ]
+    },
+    {
+        "id": "559ffcc73289940a",
+        "type": "junction",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "x": 1000,
+        "y": 800,
+        "wires": [
+            [
+                "618be6bfbca0d288"
+            ]
+        ]
+    },
+    {
+        "id": "0209149bc3841791",
+        "type": "junction",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "x": 1020,
+        "y": 980,
+        "wires": [
+            [
+                "42e643d9e28ca699"
+            ]
+        ]
+    },
+    {
+        "id": "f9a5ed408078edf4",
+        "type": "exec",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [],
+            [],
+            [
+                "e8be8159356693c6"
+            ]
+        ]
+    },
+    {
+        "id": "30af73f44828cd2a",
+        "type": "random",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "",
+        "low": "1000",
+        "high": "21600000",
+        "inte": "true",
+        "property": "payload",
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "e4eb97b287058742"
+            ]
+        ]
+    },
+    {
+        "id": "70c75493b37f2481",
+        "type": "delay",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 740,
+        "wires": [
+            [
+                "8aefda3258fd52c8"
+            ]
+        ]
+    },
+    {
+        "id": "e4eb97b287058742",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "delay",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 740,
+        "wires": [
+            [
+                "70c75493b37f2481"
+            ]
+        ]
+    },
+    {
+        "id": "28fa70b93eee2aef",
+        "type": "mqtt out",
+        "z": "c454693b955178fa",
+        "name": "axis/upgrade/+",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "de0debe784ae927d",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b3d0af3548e82d22",
+        "type": "inject",
+        "z": "c454693b955178fa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 240,
+        "wires": [
+            [
+                "aee94c5cf5f75fcb"
+            ]
+        ]
+    },
+    {
+        "id": "474a578c1b41454b",
+        "type": "Axis device",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "a0dc3cc693df9ecf"
+            ]
+        ]
+    },
+    {
+        "id": "a0dc3cc693df9ecf",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 300,
+        "wires": [
+            [
+                "ef0bd6f0ddcc600e",
+                "23dce5f2dd3bbf0c"
+            ]
+        ]
+    },
+    {
+        "id": "ef0bd6f0ddcc600e",
+        "type": "file in",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "filename": "sdcard/firmware/ver.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "790d5787018fc704"
+            ]
+        ]
+    },
+    {
+        "id": "99a85fbea0c1e980",
+        "type": "catch",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "scope": [
+            "ef0bd6f0ddcc600e"
+        ],
+        "uncaught": false,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "13c255cee99243e7"
+            ]
+        ]
+    },
+    {
+        "id": "a53cd182c03038bd",
+        "type": "file",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "filename": "sdcard/firmware/ver.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 780,
+        "y": 400,
+        "wires": [
+            [
+                "ec2c1a185173f464"
+            ]
+        ]
+    },
+    {
+        "id": "790d5787018fc704",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "downloaded",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 360,
+        "wires": [
+            [
+                "ec2c1a185173f464"
+            ]
+        ]
+    },
+    {
+        "id": "13c255cee99243e7",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "downloaded",
+                "pt": "flow",
+                "to": "Undefined",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Undefined",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "a53cd182c03038bd"
+            ]
+        ]
+    },
+    {
+        "id": "d2efd326b7d7c506",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "Get latest version",
+        "func": "var model = flow.get(\"device\").model.replace(/ /g, \"_\");\nmsg.url = \"http://ftp.axis.com/pub_soft/MPQT/\" + model + \"/latest/ver.txt\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "c76639cb457f4f47"
+            ]
+        ]
+    },
+    {
+        "id": "c76639cb457f4f47",
+        "type": "http request",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "cf2882cbf88a5858",
+                "6a61783069340119"
+            ]
+        ]
+    },
+    {
+        "id": "cf2882cbf88a5858",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "Initialize",
+        "func": "if(msg.statusCode >= 400) {\n    flow.set(\"latest\",\"Error\");\n    node.error(\"Axis FTP responded \" + msg.statusCode,msg);\n    return;\n}\n\nflow.set(\"latest\",msg.payload);\n\nvar busy = flow.get(\"busy\") || false;\nflow.set(\"busy\",busy);\nflow.set(\"message\",\"Info updated\");\nif( flow.get(\"device\").authenticated === false )\n    flow.set(\"message\",\"Error: Device credentials unautorized.  Check user/password\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "d9c1e83f45e6ff7c"
+            ]
+        ]
+    },
+    {
+        "id": "ed416df4ad9c6f58",
+        "type": "link in",
+        "z": "c454693b955178fa",
+        "name": "link in 53",
+        "links": [
+            "d9c1e83f45e6ff7c",
+            "52f21de4e184ebed",
+            "42e643d9e28ca699"
+        ],
+        "x": 115,
+        "y": 100,
+        "wires": [
+            [
+                "d044032e75dacdb5"
+            ]
+        ]
+    },
+    {
+        "id": "d9c1e83f45e6ff7c",
+        "type": "link out",
+        "z": "c454693b955178fa",
+        "name": "link out 41",
+        "mode": "link",
+        "links": [
+            "ed416df4ad9c6f58",
+            "9e231e92da900754"
+        ],
+        "x": 1335,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e1180e681c9f07a1",
+        "type": "comment",
+        "z": "c454693b955178fa",
+        "name": "Refresh",
+        "info": "",
+        "x": 1230,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ebcc1dd30977ad46",
+        "type": "debug",
+        "z": "c454693b955178fa",
+        "name": "debug 246",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "23dce5f2dd3bbf0c",
+        "type": "debug",
+        "z": "c454693b955178fa",
+        "name": "debug 247",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e108cf73539b9e19",
+        "type": "debug",
+        "z": "c454693b955178fa",
+        "name": "debug 248",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d044032e75dacdb5",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "name": "Message",
+        "func": "var device = flow.get(\"device\");\n\nmsg.topic =\"axis/upgrade/\" + device.serial;\nmsg.payload = {\n    message: flow.get(\"message\"),\n    group: flow.get(\"group\") || \"Undefined\",\n    location: flow.get(\"location\") || \"Undefined\",\n    serial: device.serial, \n    model: device.model,\n    firmware: device.firmware,\n    downloaded: flow.get(\"downloaded\"),\n    latest:  flow.get(\"latest\"),\n    timestamp: new Date().getTime()\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "ebcc1dd30977ad46",
+                "28fa70b93eee2aef"
+            ]
+        ]
+    },
+    {
+        "id": "aee94c5cf5f75fcb",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9a92c7bd0b30490c",
+        "name": "Set Location and Group Here",
+        "rules": [
+            {
+                "t": "set",
+                "p": "location",
+                "pt": "flow",
+                "to": "Genarp",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "group",
+                "pt": "flow",
+                "to": "Test",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 240,
+        "wires": [
+            [
+                "474a578c1b41454b"
+            ]
+        ]
+    },
+    {
+        "id": "6a61783069340119",
+        "type": "debug",
+        "z": "c454693b955178fa",
+        "name": "debug 249",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "055771c384940265",
+        "type": "catch",
+        "z": "c454693b955178fa",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "f7578db39b170bdc"
+            ]
+        ]
+    },
+    {
+        "id": "9e231e92da900754",
+        "type": "link in",
+        "z": "c454693b955178fa",
+        "name": "link in 54",
+        "links": [
+            "d9c1e83f45e6ff7c"
+        ],
+        "x": 205,
+        "y": 680,
+        "wires": [
+            [
+                "c6e5384a2419350b"
+            ]
+        ]
+    },
+    {
+        "id": "c6e5384a2419350b",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "Download latest?",
+        "func": "var busy = flow.get(\"busy\") || false;\nif( busy )\n    return;\n    \nif( flow.get(\"latest\") === flow.get(\"downloaded\") ) \n    return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 680,
+        "wires": [
+            [
+                "30af73f44828cd2a"
+            ]
+        ]
+    },
+    {
+        "id": "8aefda3258fd52c8",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "Download",
+        "func": "flow.message = \"Downloading firmware version \" + flow.get(\"latest\") + \".\";\nflow.set(\"busy\",true);\n\nvar model = flow.get(\"device\").model.replace(/ /g, \"_\");\nvar url = \"http://ftp.axis.com/pub_soft/MPQT/\" + model + \"/latest/\" + model + \".bin\";\n\nmsg.payload = \"curl -o sdcard/firmware/firmware.bin \" + url;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 740,
+        "wires": [
+            [
+                "f9a5ed408078edf4",
+                "618be6bfbca0d288"
+            ]
+        ]
+    },
+    {
+        "id": "52f21de4e184ebed",
+        "type": "link out",
+        "z": "c454693b955178fa",
+        "name": "link out 42",
+        "mode": "link",
+        "links": [
+            "ed416df4ad9c6f58"
+        ],
+        "x": 1335,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "e8be8159356693c6",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "Result",
+        "func": "flow.set(\"busy\",false);\n\nif( msg.payload.code !== 0 ) {  //\n    flow.set(\"message\",\"Error: Firmware download failed\");\n    node.send([msg,null]);\n    return \n}\n\nflow.set(\"message\",\"Firmware \" + flow.get(\"latest\") + \" downloaded\");\nflow.set(\"downloaded\",flow.get(\"latest\"));\nmsg.payload =  flow.get(\"latest\");\nnode.send([null,msg]);\n\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "559ffcc73289940a"
+            ],
+            [
+                "8e84bc257b13de04"
+            ]
+        ]
+    },
+    {
+        "id": "8e84bc257b13de04",
+        "type": "file",
+        "z": "c454693b955178fa",
+        "g": "6e6be291561a920a",
+        "name": "",
+        "filename": "sdcard/firmware/ver.txt",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 800,
+        "y": 840,
+        "wires": [
+            [
+                "559ffcc73289940a"
+            ]
+        ]
+    },
+    {
+        "id": "f7578db39b170bdc",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "name": "Message",
+        "func": "var device = flow.get(\"device\");\n\nmsg.topic =\"axis/upgrade/\" + device.serial;\nmsg.payload = {\n    message: \"Error: \" + msg.error.message,\n    group: flow.get(\"group\") || \"Undefined\",\n    location: flow.get(\"location\") || \"Undefined\",\n    serial: device.serial, \n    model: device.model,\n    firmware: device.firmware,\n    downloaded: flow.get(\"downloaded\"),\n    latest:  flow.get(\"latest\"),\n    timestamp: new Date().getTime()\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 140,
+        "wires": [
+            [
+                "28fa70b93eee2aef",
+                "ebcc1dd30977ad46"
+            ]
+        ]
+    },
+    {
+        "id": "b5a9802d94d80689",
+        "type": "mqtt in",
+        "z": "c454693b955178fa",
+        "name": "",
+        "topic": "axis/upgrade",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "de0debe784ae927d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 980,
+        "wires": [
+            [
+                "f89a913e162b6a1a"
+            ]
+        ]
+    },
+    {
+        "id": "f89a913e162b6a1a",
+        "type": "function",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "Check to see if upgrade applies",
+        "func": "if( flow.get(\"busy\") )\n    return;\n\nif( flow.get(\"device\").firmware === flow.get(\"latest\"))\n    return;\n\nif( msg.payload.hasOwnProperty(\"location\") )\n    if( flow.get(\"location\") != msg.payload.location)\n        return;\n\nif( msg.payload.hasOwnProperty(\"group\") )\n    if( flow.get(\"group\") != msg.payload.group)\n        return;\n\nif( msg.payload.hasOwnProperty(\"model\") )\n    if( flow.get(\"device\").model != msg.payload.model )\n        return;\n\nif( msg.payload.hasOwnProperty(\"serial\") ) {\n    if( typeof msg.payload.serial === \"string\") {\n        if( msg.payload.serial !== flow.get(\"device\").serial) \n            return;\n    } else {\n        if( Array.isArray(msg.payload.serial) ) {\n            var match = false;\n            msg.payload.serial.forEach(function(item){\n                if( item === flow.get(\"device\").serial)\n                    match = true;\n            });\n            if( !match )\n                return;\n        }\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 980,
+        "wires": [
+            [
+                "e9a059b961e814e8"
+            ]
+        ]
+    },
+    {
+        "id": "e9a059b961e814e8",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "flow",
+                "to": "Firmware upgrade started",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "busy",
+                "pt": "flow",
+                "to": "true",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 980,
+        "wires": [
+            [
+                "0209149bc3841791",
+                "81218491f0cc6cf4"
+            ]
+        ]
+    },
+    {
+        "id": "42e643d9e28ca699",
+        "type": "link out",
+        "z": "c454693b955178fa",
+        "name": "link out 43",
+        "mode": "link",
+        "links": [
+            "ed416df4ad9c6f58"
+        ],
+        "x": 1335,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "36a30c5854b9b1a5",
+        "type": "comment",
+        "z": "c454693b955178fa",
+        "name": "Status",
+        "info": "",
+        "x": 1230,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "68835be95a44a819",
+        "type": "comment",
+        "z": "c454693b955178fa",
+        "name": "Status",
+        "info": "",
+        "x": 1230,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "81218491f0cc6cf4",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "Firmware file",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "sdcard/firmware/firmware.bin",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "sdcard/firmware/firmware.bin",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "b54743684498a44b"
+            ]
+        ]
+    },
+    {
+        "id": "b54743684498a44b",
+        "type": "Axis device",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "",
+        "preset": "a5d60ef5587cc8fc",
+        "action": "Upgrade firmware",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 630,
+        "y": 1040,
+        "wires": [
+            [
+                "a5bee89feb7b1506"
+            ]
+        ]
+    },
+    {
+        "id": "a5bee89feb7b1506",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "flow",
+                "to": "Upgrade complete.  Restarting.",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "busy",
+                "pt": "flow",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1040,
+        "wires": [
+            [
+                "0209149bc3841791"
+            ]
+        ]
+    },
+    {
+        "id": "867ce8f62e8980fc",
+        "type": "catch",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "",
+        "scope": [
+            "b54743684498a44b"
+        ],
+        "uncaught": false,
+        "x": 590,
+        "y": 1100,
+        "wires": [
+            [
+                "f7809529f587d889"
+            ]
+        ]
+    },
+    {
+        "id": "f7809529f587d889",
+        "type": "change",
+        "z": "c454693b955178fa",
+        "g": "9f7fc3a4948fb381",
+        "name": "Message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "flow",
+                "to": "Error: Upgrade failed.",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "busy",
+                "pt": "flow",
+                "to": "false",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 1100,
+        "wires": [
+            [
+                "0209149bc3841791"
+            ]
+        ]
+    },
+    {
+        "id": "990c591161ab25c7",
+        "type": "comment",
+        "z": "c454693b955178fa",
+        "name": "Version 1.0.0",
+        "info": "",
+        "x": 170,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "de0debe784ae927d",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": "10.13.8.20",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a5d60ef5587cc8fc",
+        "type": "Device Access",
+        "name": "Localhost",
+        "address": "localhost",
+        "protocol": "http"
+    }
+]
